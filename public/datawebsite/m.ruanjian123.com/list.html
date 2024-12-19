@@ -1,0 +1,71 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta name="applicable-device" content="mobile">
+    <meta id="viewport" name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <link href="{$theme_path}/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="{$theme_path}/css/general.css" rel="stylesheet" type="text/css">
+    <link href="{$theme_path}/css/custom.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="{$theme_path}/js/jquery.js"></script>
+    <script src="{$theme_path}/js/general.js"></script>
+</head>
+
+<body>
+    <header class="g-top-full g-top-full-list"> <a href="javascript:void(0);" class="g-back-home"><b></b></a>
+        <h1 class="g-name-top">{$keywords}</h1>
+        <p> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <b class="m-navshow-btn">展开</b> </p>
+
+        <ul class="m-navshow-ul" data-row="4">
+            <li><a href="/"><b></b><strong>{随机栏目}</strong></a></li>
+            <li><a href="/ruanj"><b></b><strong>{随机栏目}</strong></a></li>
+            <li><a href="/youxi"><b></b><strong>{随机栏目}</strong></a></li>
+            <li><a href="/news"><b></b><strong>{随机栏目}</strong></a></li>
+        </ul> <b class="m-black"></b>
+    </header>
+    <nav class="g-nav-full clearfix g-nav-box"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>| <a href="{随机栏目URL}"
+            title="{随机栏目}">{随机栏目}</a>| <a href="{随机栏目URL}" class="on" title="{随机栏目}">{随机栏目}</a>| <a href="{随机栏目URL}"
+            title="{随机栏目}">{随机栏目}</a>| <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </nav>
+    <section>
+        <ul id="infocon" class="m-cp2" data-row="24">
+            {loop type="arclist" row="32" tpl="" islist=""}
+            <li class="g-cont-game m-nodown-box"> <a href="{$vo.url}" class="g-game-img"> <img src="{$vo.pic}"
+                        alt="{$vo.title}">
+                    <p> <strong>{$vo.title}</strong> <img src="{$vo.pic}"> <b>角色扮演 / <span
+                                class="m-softsize"><em>{randstr type="2" num="3"/}.{randstr type="2" num="2"/}M</em> /
+                            </span>{$vo.postdate}</b> </p>
+                </a> <a href="{$vo.url}" class="g-game-btn" title="下载">下载</a> </li>
+            {/loop}
+        </ul>
+        <p class="g-more-box"><a href="{随机栏目URL}" id="more" class="more" title="{随机栏目}">{随机栏目}</a></p>
+    </section>
+    <footer> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> | <a href="{随机栏目URL}" title="{随机栏目}">{$keywords} {随机栏目}</a> </footer>
+    <div style="display:none"></div>
+    <script type="text/javascript" src="{$theme_path}/js/m_base.js"></script>
+    <script language="javascript" type="text/javascript"> $(function () {
+            var pagenum = 1;
+            var www_kaifadou_com_zongpage = 0; var currentclass = 228;
+            $('#more').click(function () {
+                www_kaifadou_com_zongpage = 193;
+                $.ajax({
+                    url: '/kaifadou/azgame-getajax.php', type: 'get',
+                    data: { "next": pagenum, 'classid': currentclass }, dataType: 'html',
+                    beforeSend: function () { $('#more').text('加载中...'); },
+                    success: function (data) {
+                        if (data != '') {
+                            $('#infocon').append(data);
+                            $('#more').text('加载更多'); pagenum++;
+                        } else {
+                            $('#more').text('加载完毕');
+                            return false;
+                        }
+                    }
+                });
+            })
+        }); 
+    </script>
+</body>

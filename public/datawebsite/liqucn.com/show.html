@@ -1,0 +1,306 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="Cache-Control" content="no-transform ">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>{$toptitle}</title>
+    <meta name="description" content="{$description}">
+    <meta name="keywords" content="{$keywords}">
+    <link rel="canonical" href="{$theme_path}/css/935119.shtml">
+    <script> function is_pc() { var userAgentInfo = navigator.userAgent; var ua = userAgentInfo; var AgentsStr = 'WindowsNT|Windows NT|Macintosh|Ubuntu|iPad'; var Agents1 = AgentsStr.split("|"); var flag1 = 0; for (var v = 0; v < Agents1.length; v++) { if (ua.indexOf(Agents1[v]) > -1) { flag1 = 1; break; } } if ((ua.indexOf('baidu Transcoder') > -1) || (ua.indexOf('Google Wireless Transcoder') > -1)) { flag1 = 0; } if ((ua.indexOf('X11;') > -1) && (ua.indexOf('Firefox') > -1 || ua.indexOf('Edg') > -1 || ua.indexOf('Chrome') > -1)) { flag1 = 1; } if (flag1 > 0) { return true; } else { return false; } } function is_mobile() { var userAgentInfo = navigator.userAgent; var ua = userAgentInfo; var AgentsStr = 'Windows Phone|IEMobile|Mobile Safari|iPhone|Android|android|X11;|UCWEB|Google Wireless Transcoder|baidu Transcoder|baiduboxapp'; var Agents1 = AgentsStr.split("|"); var flag1 = 0; for (var v = 0; v < Agents1.length; v++) { if (ua.indexOf(Agents1[v]) > -1) { flag1 = 1; break; } } if ((ua.indexOf('X11;') > -1) && (ua.indexOf('Firefox') > -1 || ua.indexOf('Edg') > -1 || ua.indexOf('Chrome') > -1)) { flag1 = 0; } if (ua.indexOf('iPad') > -1) { flag1 = 0; } if (flag1 > 0) { return true; } else { return false; } } function wap_to_www(wap_node_url) { var www_node_url = wap_node_url; www_node_url = www_node_url.replace('.wml', '.shtml'); if (/\/\/m.liqucn.com\/os\/([^/]+)\/(.*)$/.test(www_node_url)) { www_node_url = www_node_url.replace(/\/\/m.liqucn.com\/os\/([^/]+)\/(.*)$/, '//os-$1.liqucn.com/$2'); } if (www_node_url.indexOf('//m.liqucn.com/search/s.php') > -1) { www_node_url = www_node_url.replace('//m.liqucn.com/search/', '//s.liqucn.com/'); } else { www_node_url = www_node_url.replace('//m.liqucn.com/', '//www.liqucn.com/'); } www_node_url = www_node_url.replace('//search.liqucn.com/m/', '//s.liqucn.com/'); www_node_url = www_node_url.replace('//s.liqucn.com/m/', '//s.liqucn.com/'); www_node_url = www_node_url.replace('//m.liqucn.com/', '//www.liqucn.com/'); www_node_url = www_node_url.replace('//s.nongjia888.com/m/', '//s.nongjia888.com/'); if (www_node_url.indexOf("showcat/")) { www_node_url = www_node_url.replace("showcat/", ""); } return www_node_url; } function get_urlos_from_device() { var nA = navigator.userAgent; var device_urlos = ''; if (nA.indexOf("Android") > -1) device_urlos = 'android'; else if ((nA.indexOf("UCWEB") > -1 || nA.indexOf("UCBrowser") > -1 || nA.indexOf("MQQBrowser") > -1) && nA.indexOf("Adr ") > -1) device_urlos = 'android'; else if (nA.indexOf("iPad") > -1 || nA.indexOf("iOS ") > -1 || nA.indexOf("iOS;") > -1 || nA.indexOf("CPU iPhone OS") > -1 || nA.indexOf("iPod") > -1 || nA.indexOf("iTouch") > -1) device_urlos = 'ios'; return device_urlos; } function is_bot() {
+            var nA = navigator.userAgent; 	// keywords regular expression of search engine spiders 	
+            var kw_spiders = 'Baiduspider|Googlebot|Feedfetcher-Google|Yahoo! Slurp|MSNBOT|QBCrawler|Mobier|iaskspider|YodaoBot|YoudaoBot|Sosospider|bingbot|Sosoimagespider|Sogou Web Sprider|Sogou Orion spider|pic.sogou.com|Sogou-Test-Spider|Sogou web spider|New-Sogou-Spider|JikeSpider|qihoobot@qihoo.net|360Spider|HaosouSpider|EasouSpider|YisouSpider|www.baidu.com/search/spider.html';
+            var arr_kw_spiders = kw_spiders.split('|'); for (var i = 0; i < arr_kw_spiders.length; i++) {
+                if (nA.toLowerCase().indexOf(arr_kw_spiders[i].toLowerCase()) > -1) return true;
+            } return false;
+        } function getCookie(name) {
+            var strcookie = document.cookie;//&#33719;&#21462;cookie&#23383;&#31526;&#20018;     
+            var arrcookie = strcookie.split("; ");//&#20998;&#21106;     //&#36941;&#21382;&#21305;&#37197;     
+            for (var i = 0; i < arrcookie.length; i++) {
+                var arr = arrcookie[i].split("=");
+                if (arr[0] == name) {
+                    return arr[1];
+                }
+            }
+            return '';
+        }
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = ";expires=" + d.toGMTString();
+            document.cookie = cname + "=" + escape(cvalue) + (exdays ? expires : '') + ";path=/";
+        }
+        if (is_pc() && !is_mobile() && getCookie("force_www_or_wap") != 'wap') {
+            var wap_node_url = window.location.href;     //&#36807;&#28388;&#25481;page&#21442;&#25968; 	
+            if (wap_node_url.indexOf("?page=") > -1) {
+                wap_node_url = wap_node_url.replace(/\?page=(\d+)/i, '?');
+            } else if (wap_node_url.indexOf("&page=") > -1) {
+                wap_node_url = wap_node_url.replace(/&page=(\d+)/i, '&');
+            }
+            var str_www_jump_url = wap_to_www(wap_node_url);
+            if (str_www_jump_url && str_www_jump_url != wap_node_url)
+                window.location.href = str_www_jump_url;
+        } 
+    </script>
+    <link rel="shortcut icon" href="{$theme_path}/css/favicon.ico" type="image/x-icon">
+    <link type="text/css" href="{$theme_path}/css/style.css?v=20240418" rel="stylesheet">
+</head>
+
+<body>
+    <div id="menu">
+        <ul data-row="9">
+            <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+        </ul>
+    </div> <!-- menu over -->
+    <div id="header" class="search_list">
+        <div class="menu_open"></div>
+        <div class="top_tit">历趣安卓应用商店</div> <a href="{$vo.url}" class="search_btn" title="{$vo.title}">{$vo.title}</a>
+    </div><!-- container -->
+    <div id="container">
+        <div class="pos"> <a href="/" title="{随机栏目}">{随机栏目}</a> 　&gt;　<a href="{随机栏目URL}"
+                title="{随机栏目}">{随机栏目URL}</a>　&gt;　<a href="{$url}" title="{$title}">{$title}</a>
+        </div>
+        <div class="wrap">
+            <div class="detail_top">
+                <div class="de_pic fl"><img src="{$pic}"></div>
+                <div class="de_info">
+                    <div style="display: flex;">
+                        <h1>{$keywords}</h1>
+                        <h2>{$title}</h2></div>
+                    <p id="device_match_replace3">平台：安卓 大小：74.6MB</p>
+                    <p>类型：生活            热度：<span class="star" title="热度评级：9.5/10"><span
+                                style="width:95%"></span></span><br> 最新版本(2024-12-12)：<span id="device_match_replace2">
+                            5.70.0 </span> </p>
+                </div>
+            </div>
+            <div class="css_xiazai_wrap" id="down_btn_url_os_android"> <span class="dw_checkbox"
+                    id="down_app">优先下载应用市场安装，更安全</span> <a href="" class="btn_safe" id="high_btn_safe"
+                    onclick="_track_event(this,'d_high','high','click','Android-0')">高速下<span></span>载</a> <a href=""
+                    class="btn_normal" id="pain_btn_normal" style="display:none"
+                    onclick="xiazai_count(this,'android')">浏览器下<span></span>载</a> </div>
+            <div class="css_xiazai_tips warning" id="device_match_warning" style="display:none;"></div>
+        </div>
+        <div class="wrap">
+            <ul class="triad_tit triad_vh" data-row="4">
+                <li class="triad_on">软件介绍</li>
+                <li>技巧攻略</li>
+                <li>全部平台</li>
+                <li>历史版本</li>
+            </ul>
+            <div class="info_box nshow">
+                <div class="section">
+                    <div class="info_tips"><b>标签：</b>
+                        {loop type="arclist" row="5" tpl="" islist=""}
+                        <a href="{$vo.url}" class="tip_red" title="{$vo.title}">{$vo.title}</a>
+                        {/loop}
+                    </div>
+                </div>
+                <div class="pic_screenshot">
+                    <ul id="category-head" data-row="4">
+                        {loop type="arclist" row="4" tpl="" islist=""}
+                        <li><img src="{$vo.pic}"></li>
+                        {/loop}
+                    </ul>
+                </div>
+                <div class="section">
+                    <div class="info_con">
+                        {$body}
+                    </div>
+                </div>
+                <div class="section" id="android_permiss_box">
+                    <div class="info_ctit permissions_tit">权限信息 <i class="per_i permissions"></i> <a href=""
+                            target="_blank" ref="nofollow" class="link_privacy" title="">[隐私政策]</a>
+                    </div>
+                    <ul class="authority_list" data-row="16">
+                        {loop type="arclist" row="16" tpl="" islist=""}
+                        <li>{$vo.title}</li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrap nshow">
+            <h2 class="tit"><b>猜你喜欢</b></h2>
+            <div class="tips_tab">
+                {loop type="arclist" row="4" tpl="" islist=""}
+                <a onclick="getTagDta(this);return false;" data-op="getTagDataForID" data-tag_id="6028" href="{$vo.url}"
+                    class="on" title="{$vo.title}">{$vo.title}</a>
+                {/loop}
+            </div>
+            <div class="tips_box">
+                <dl>
+                    <dt><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></dt>
+                    <dd class="rank_info_1030">
+                        现在有钱买得起房子，装修费也得花一大笔，市场上的装修软件app有很多，合适的装修app能帮助你起到事半功倍的效果。装修软件有哪些，手机哪个装修软件好用？小编悉心整理了手机装修软件排行榜、设计装修软件、办公室装修软件。小编为大家推荐最流行的专业装修软件。
+                    </dd>
+                </dl>
+                <div class="rank_list_1030">
+                    {loop type="arclist" row="1" tpl="" islist=""}
+                    <div class="rank_bg"> <img src="{$vo.pic}"> </div>
+                    {/loop}
+                    <ul data-row="8">
+                        {loop type="arclist" row="8" tpl="" islist=""}
+                        <li><a href="{$vo.url}"><img src="{$vo.pic}">
+                                <p>{$vo.title}</p>
+                            </a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrap nshow">
+            <h2 class="tit"><a href="/zhuanqu/935119" style="color:#333;"><b>酷家乐设计师手机版技巧攻略</b></a><a
+                    name="zixun">{$vo.title}</a></h2>
+            <ul class="list_gba" data-row="8">
+                {loop type="arclist" row="8" tpl="" islist=""}
+                <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="wrap nshow">
+            <h2 class="tit"><b>手机酷家乐设计师全部平台版本</b></h2>
+            <ul class="system_version" data-row="2">
+                {loop type="arclist" row="2" tpl="" islist=""}
+                <li>
+                    <section> <a href="{$vo.url}">
+                            <h3><s></s>{$vo.title}</h3>
+                            <p>大小：<i>74.6MB</i>时间：<i class="on">2024-12-12</i></p>
+                        </a> </section> <a href="{$vo.url}" class="sv_btn">下<span></span>载</a>
+                </li>{/loop}
+            </ul>
+        </div> <!-- &#21382;&#21490;&#29256;&#26412; -->
+        <div class="wrap_w0">
+            <h2 class="tit"><a href="/rj/935119-history.wml" class="tit_more" title="{随机标题}">{随机标题}</a><a
+                    href="/rj/935119-history.wml" class="t_sq"><b>酷家乐设计师历史版本（10个）</b></a>
+            </h2>
+            <div class="vh_box vh_1022">
+                <ul id="tcontent" data-row="2">
+                    {loop type="arclist" row="2" tpl="" islist=""}
+                    <li> <a href="{$vo.url}">
+                            <h3><em>APK</em>5.69.0</h3> <span>{$vo.title}</span> <span>{$vo.title}</span>
+                            <span>{$vo.postdate}</span>
+                        </a> <em class="vh_more">...</em>
+                        <div class="vh_info"> <b>更新说明：</b>
+                            <div class="game_txt">
+                                {$vo.info}
+                            </div>
+                        </div>
+                    </li>{/loop}
+                </ul>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div class="wrap nshow">
+            <h2 class="tit"><b>相关合辑</b></h2>
+            <div class="hotCloud">
+                <div class="hotTags"> <a href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a><a href="{随机内容URL}"
+                        class="size_1" title="{随机标题}">{随机标题}</a><a href="{随机内容URL}" class="size_1"
+                        title="{随机标题}">{随机标题}</a><a href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a><a
+                        href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a><a href="{随机内容URL}" class="size_1"
+                        title="{随机标题}">{随机标题}</a><a href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a><a
+                        href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a><a href="{随机内容URL}" class="size_1"
+                        title="{随机标题}">{随机标题}</a><a href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a><a
+                        href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a><a href="{随机内容URL}" class="size_1"
+                        title="{随机标题}">{随机标题}</a><a href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a><a
+                        href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a><a href="{随机内容URL}" class="size_1"
+                        title="{随机标题}">{随机标题}</a><a href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a><a
+                        href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a><a href="{随机内容URL}" class="size_1"
+                        title="{随机标题}">{随机标题}</a><a href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a><a
+                        href="{随机内容URL}" class="size_1" title="{随机标题}">{随机标题}</a> </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <h2 class="tit"><a href="/os/android/applike/935119"><b>酷家乐设计师2024相似推荐</b></a></h2>
+            <ul class="list_team" data-row="8">
+                {loop type="arclist" row="8" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="search_words"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a><a href="{随机栏目URL}"
+                title="{随机栏目}">{随机栏目}</a><a href="{随机栏目URL}" target="_blank"
+                title="{随机栏目}">{随机栏目}</a>、<a href="{随机栏目URL}" target="_blank"
+                title="{随机栏目}">{随机栏目}</a>、<a href="{随机栏目URL}" target="_blank"
+                title="{随机栏目}">{随机栏目}</a>、<em>广告</em></div> <span id="liqu_count_analytics"
+            style="display:none"></span>
+        <script>var liqu_count_url = 'https://count.liqucn.com/publish/counter.php?o=counter&id=73331899363&table_flag=app&urlos=android&from_type=wap&referer=' + document.referrer.split('?')[0]; var liqu_count_script = document.createElement('script'); liqu_count_script.src = liqu_count_url; var liqu_count_obj = document.getElementById('liqu_count_analytics'); liqu_count_obj.insertBefore(liqu_count_script, liqu_count_obj.firstChild);</script>
+        <script> 		function _track_event(a_obj, t, p1, p2, p3) { if (typeof (a_obj.target) == "string" && navigator.userAgent.indexOf("Firefox") > 0) a_obj.target = "_blank"; _hmt.push(['_trackEvent', p1, p2, p3]); var url = 'https://count.liqucn.com/publish/counter.php?o=track_event&type=' + t + '&p1=' + encodeURIComponent(p1) + '&p2=' + encodeURIComponent(p2) + '&p3=' + encodeURIComponent(p3); var script = document.createElement('script'); script.src = url; document.body.appendChild(script); } function xiazai_count(a_obj, urlos) { if (typeof (a_obj.target) == "string" && navigator.userAgent.indexOf("Firefox") > 0) a_obj.target = "_blank"; var url = 'https://count.liqucn.com/d_counter.php?o=download_count&id=73331899363&from_type=wap'; if (urlos == 'pc') url += ''; else if (urlos == 'history') url += '&urlos=android&vc_offset='; else if (urlos == 'ios') url += '&urlos=ios&down_type=itunes'; else if (urlos) url += '&urlos=' + urlos; var script = document.createElement('script'); script.src = url; document.body.appendChild(script); } 	</script>
+        <script>  	//&#24494;&#20449;&#35775;&#38382;UI 	var nA = navigator.userAgent;  	var device_is_weixin = /MicroMessenger/i.test(nA);  	if(device_is_weixin && document.referrer.indexOf("sogou.com/")==-1){ 		if(window.location.hash.indexOf("weixin_share=1")==-1)	window.location.href='?#weixin_share=1';	//&#24494;&#20449;&#35775;&#38382;&#30340;&#39029;&#38754;location&#19968;&#19979;&#65292;&#24102;&#19978;# 	} 	 	var IndexID = "935119";	//20210707 	 	//&#26469;&#33258;&#24494;&#20449;&#37324;&#29992;&#27983;&#35272;&#22120;&#25171;&#24320;&#30340;&#39029;&#38754;&#65288;&#26379;&#21451;&#36319;&#26379;&#21451;&#25512;&#33616;&#65289;&#65292;&#19981;&#26174;&#31034;high 	if(window.location.hash.indexOf("weixin_share=1")>-1){ 		var no_show_high=true; 	} 	//is_cp = 1 &#40664;&#35748;&#19981;&#36873;&#20013;high 	var app_is_cp = '0'; 	if(app_is_cp == "1"){ 		var no_show_high=true; 	} 	//wap normal visit no high 	if(document.referrer.indexOf("m.liqucn.com/")>-1||document.referrer==''){ 		//var no_show_high=true; 	} 	//high 6hour&#23637;&#31034;&#36807;&#19968;&#27425;&#21017;&#19981;&#23637;&#31034;&#31532;&#20108;&#27425; 	if(getCookie('last_visit_contentpage_time')!=''&&Date.parse(new Date())-getCookie('last_visit_contentpage_time')<=3600*6*1000){ 		//var no_show_high=true; 	} 	if(no_show_high){ 		//&#26469;&#33258;db box  		var new_obj_highdownload_btn = document.getElementById('down_app'); 		var new_high_btn_safe =  document.getElementById('high_btn_safe'); 		var new_high_btn_safe_ad =  document.getElementById('high_btn_safe_ad'); 		var new_pain_btn_normal =  document.getElementById('pain_btn_normal'); 		if(typeof(new_obj_highdownload_btn)!="undefined") new_obj_highdownload_btn.setAttribute('class','dw_checkno'); 		if(typeof(new_high_btn_safe)!="undefined") new_high_btn_safe.style.display="none"; 		if(typeof(new_high_btn_safe_ad)!="undefined" &&  new_high_btn_safe_ad) new_high_btn_safe_ad.style.display="none"; 		if(typeof(new_pain_btn_normal)!="undefined") new_pain_btn_normal.style.display="block"; 		// var obj_360_ad = document.getElementById('top_fx_id'); 		// if(typeof(obj_360_ad)!="undefined")	obj_360_ad.style.display="none";	//&#38544;&#34255;360&#21355;&#22763;&#39030;&#37096;&#24191;&#21578; 	} 	setCookie('last_visit_contentpage_time',Date.parse(new Date()),1); 	</script>
+        <div class="foot">
+            <div class="finner">
+                <em>android版专区</em><br>
+                <a href="{当前地址}" title="{$vo.title}">{网站地址}</a>|<a href="{当前地址}" title="{$keywords}">{$keywords}</a>
+                <br>声明：为严格遵守广告法，站点已将"第一","最"等极限词汇屏蔽，请知悉
+            </div>
+        </div>
+        <script type="text/javascript" src="{$theme_path}/js/zepto.min.js"></script>
+        <script type="text/javascript" src="{$theme_path}/js/script.js?v=20240514"></script>
+        <script type="text/javascript" src="{$theme_path}/js/iscroll.js?v=20190110"></script>
+        <script type="text/javascript" src="{$theme_path}/js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="{$theme_path}/js/layer.js"></script>
+        <script type="text/javascript" src="{$theme_path}/js/fly-zomm-img.js?v=20200803"></script>
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                var str_bdtj_code = "lqf7dc19c0893ea0350eba4fe5a5f1e8e" + "f";
+                hm.src = "//hm.bai" + "du.com/hm.js?" + str_bdtj_code.substr(2);
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+        <script>
+            function a_replace() {
+                var a = document.getElementsByTagName("a");
+                for (var i = 0; i < a.length; i++) {
+                    if (a[i].href.indexOf('spam#') != -1 && a[i].href.indexOf('(dot)') != -1) {
+                        a[i].href = a[i].href.replace('spam#', '@');
+                        a[i].href = a[i].href.replace('(dot)', '.');
+                    }
+                    if (a[i].innerHTML.indexOf('spam#') != -1 && a[i].innerHTML.indexOf('(dot)') != -1) {
+                        a[i].innerHTML = a[i].innerHTML.replace('spam#', '@');
+                        a[i].innerHTML = a[i].innerHTML.replace('(dot)', '.');
+                    }
+                }
+            }
+            a_replace();
+        </script>
+        <script type="text/javascript">
+
+            var myScroll;
+            var myScroll2;
+
+            function loaded() {
+                myScroll = new IScroll('#wrapper', {
+                    scrollX: true,
+                    scrollY: false,
+                    momentum: false,
+                    snap: true,
+                    snapSpeed: 400,
+                    keyBindings: true
+                });
+
+                myScroll2 = new IScroll('#wrapper2', {
+                    scrollX: true,
+                    scrollY: false,
+                    momentum: false,
+                    snap: true,
+                    snapSpeed: 400,
+                    keyBindings: true
+                });
+            }
+
+            document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+                capture: false,
+                passive: false
+            } : false);
+        </script>
+        <script>
+            window.onload = function () {
+                var current_page_urlos = "android";
+                var device_urlos = get_urlos_from_device();
+            }
+        </script>
+
+</body>

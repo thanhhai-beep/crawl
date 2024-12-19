@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    html
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="email=no,telephone=no" name="format-detection">
+        <title>{$toptitle}</title>
+        <meta name="keywords" content="{$keywords}">
+        <meta name="description" content="{$description}">
+        <link rel="shortcut icon" href="{$theme_path}/css/favicon.ico?1">
+        <link href="{$theme_path}/css/androidmobile.css" type="text/css" rel="stylesheet">
+    </head>
+    
+    <body> <img src="{$vo.pic}" alt="4399游戏盒" class="u_logo">
+        <div class="m_fixed_download_bar" id="j-fixed-download-bar" style="display: none;">
+            <div class="filter"></div>
+            <div class="close" id="j-fixed-download-bar-close"></div>
+            <div class="logo"></div>
+            <div class="info">
+                <p class="title">{随机栏目}</p> <span>好游戏，一起玩</span>
+            </div> <a data-href="/" data-target="main" class="btn j-launchApp">{随机栏目}</a>
+        </div>
+        <div class="m_header">
+            <div class="logo"> <a href="#" marks="wap-a-shouye-daohang-name"> <img src="{$vo.pic}" alt="4399手机游戏网"> </a>
+            </div> <a class="m_download_btn j-launchApp" data-href="/" data-target="main"
+                marks="wap-a-shouye-daohang-download">{随机栏目}</a>
+            <div class="m-login j-login">
+                <div class="bg"></div>
+            </div>
+        </div>
+        <div class="m_search_normal">
+            <div class="box"> <a href="/mobile/search.html" marks="wap-a-shouye-search"> <i class="icon_search"></i>
+                    <span>斗罗大陆：猎魂世界</span> </a> </div>
+        </div>
+        <div class="m_category_index m_category_index-no">
+            <ul data-row="5">
+                <li> <a href="{随机栏目URL}" data-cache="1" marks="wap-a-shouye-xinyou"> <i
+                            style="background-image:url(http://f1.img4399.com/mi~729_20190924100932_5d897adcbb31c.png?t=1569290972)"></i>
+                        <p>{随机栏目}</p>
+                    </a> </li>
+                <li> <a href="{随机栏目URL}" marks="wap-a-shouye-fenlei"> <i
+                            style="background-image:url(http://f1.img4399.com/mi~729_20190924100932_5d897adcbb31c.png?t=1569290972)"></i>
+                        <p>{随机栏目}</p>
+                    </a> </li>
+                <li> <a href="{随机栏目URL}" marks="wap-a-shouye-lianji"> <i
+                            style="background-image:url(http://f1.img4399.com/mi~729_20190924100932_5d897adcbb31c.png?t=1569290972)"></i>
+                        <p>{随机栏目}</p>
+                    </a> </li>
+                <li class="rank"> <a href="{随机栏目URL}" marks="wap-a-shouye-paihang"> <i
+                            style="background-image:url(http://f1.img4399.com/mi~729_20190924100932_5d897adcbb31c.png?t=1569290972)"></i>
+                        <p>{随机栏目}</p>
+                    </a> </li>
+                <li> <a href="{随机栏目URL}" marks="wap-a-shouye-danji"> <i
+                            style="background-image:url(http://f1.img4399.com/mi~729_20190924100932_5d897adcbb31c.png?t=1569290972)"></i>
+                        <p>{随机栏目}</p>
+                    </a> </li>
+            </ul>
+        </div> <!-- 下载游戏盒 -->
+        <div class="m_download">
+            {loop type="arclist" row="1" tpl="" islist=""}
+            <a data-href="/" class="link banner j-launchApp j-hfck" elementname="下载按钮" elementcontent="wap首页横幅"
+                marks="wap-a-shouye-guanggao1" data-target="main" target="_blank"> <img src="{$vo.pic}" alt="{$vo.title}">
+            </a>
+            {/loop}
+        </div> <!-- 游戏下载 -->
+        <h1 class="tdk-h1">{$keywords}</h1>
+        <div class="m_game_list" style="margin-bottom:0.35rem;">
+            <ul class="j-lazyimg" data-row="4">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                <li href="{$vo.url}" markpre="321078">
+                    <div class="logo"> <img src="{$vo.pic}" data-src="{$vo.pic}" alt="{$vo.title}-预下载"> </div>
+                    <div class="info" data-kid="2">
+                        <p class="name">{$vo.tilte}</p>
+                        <p class="other">{randstr type="2" num="2"/}.{randstr type="2" num="2"/} MB万+ 下载 <em>
+                                {randstr type="2" num="2"/}.{randstr type="2" num="2"/} G</em></p>
+                        <p class="decs">{$vo.postdate}</p>
+                    </div>
+                    <div data-href="{$vo.url}" class="btn j-download" data-id="321078" data-dlurl="{$vo.url}"
+                        data-name="{$vo.title}-预下载" data-status="1">下载</div>
+                </li>
+                {/loop}
+            </ul>
+        </div> <!--每日特推-->
+        <div class="m_recommendGame">
+            <div class="title"> <a href="/" marks="wap-a-shouye-tetui-more"><span>每日特推</span><b class="more">更多</b></a>
+            </div>
+            <div class="m_recommendGame_roll">
+                <ul class="j-lazyimg count97" data-row="97">
+                    {loop type="arclist" row="100" tpl="" islist=""}
+                    <li> <a href="{$vo.url}" marks="wap-a-shouye-tetui-first"> <span class="m_recommendDateline"
+                                data-dateline="1734364800"></span> <img src="{$vo.pic}" data-src="{$vo.pic}"
+                                alt="{$vo.pic}">
+                            <p style="-webkit-box-orient: vertical;">{$vo.tilte}</p>
+                        </a> </li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+        <div class="m_game_list" style="margin-bottom:0.35rem;">
+            <ul class="j-lazyimg" data-row="4">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                <li href="{$vo.url}" markpre="321078">
+                    <div class="logo"> <img src="{$vo.pic}" data-src="{$vo.pic}" alt="{$vo.title}-预下载"> </div>
+                    <div class="info" data-kid="2">
+                        <p class="name">{$vo.tilte}</p>
+                        <p class="other">{randstr type="2" num="2"/}.{randstr type="2" num="2"/} MB万+ 下载 <em>
+                                {randstr type="2" num="2"/}.{randstr type="2" num="2"/} G</em></p>
+                        <p class="decs">{$vo.postdate}</p>
+                    </div>
+                    <div data-href="{$vo.url}" class="btn j-download" data-id="321078" data-dlurl="{$vo.url}"
+                        data-name="{$vo.title}-预下载" data-status="1">下载</div>
+                </li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="m_game_list" style="margin-bottom:0.35rem;">
+            <ul class="j-lazyimg" data-row="4">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                <li href="{$vo.url}" markpre="321078">
+                    <div class="logo"> <img src="{$vo.pic}" data-src="{$vo.pic}" alt="{$vo.title}-预下载"> </div>
+                    <div class="info" data-kid="2">
+                        <p class="name">{$vo.tilte}</p>
+                        <p class="other">{randstr type="2" num="2"/}.{randstr type="2" num="2"/} MB万+ 下载 <em>
+                                {randstr type="2" num="2"/}.{randstr type="2" num="2"/} G</em></p>
+                        <p class="decs">{$vo.postdate}</p>
+                    </div>
+                    <div data-href="{$vo.url}" class="btn j-download" data-id="321078" data-dlurl="{$vo.url}"
+                        data-name="{$vo.title}-预下载" data-status="1">下载</div>
+                </li>
+                {/loop}
+            </ul>
+        </div> <!-- 在线小游戏 -->
+        <div class="m_online">
+            <div class="title">
+                <a href="/" marks="wap-a-shouye-xiaoyouxi-more">
+                    <span>在线小游戏</span>
+                    <b class="more">更多</b>
+                </a>
+            </div>
+            <ul class="j-lazyimg" data-row="4">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                <li> <a href="{$vo.url}" marks="wap-a-shouye-xiaoyouxi-details"> <img src="{$vo.pic}" data-src="{$vo.pic}"
+                            alt="{$vo.title}">
+                        <p>{$vo.title}</p>
+                    </a> </li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="m_game_list" style="margin-bottom:0.35rem;">
+            <ul class="j-lazyimg" data-row="4">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                <li href="{$vo.url}" markpre="321078">
+                    <div class="logo"> <img src="{$vo.pic}" data-src="{$vo.pic}" alt="{$vo.title}-预下载"> </div>
+                    <div class="info" data-kid="2">
+                        <p class="name">{$vo.tilte}</p>
+                        <p class="other">{randstr type="2" num="2"/}.{randstr type="2" num="2"/} MB万+ 下载 <em>
+                                {randstr type="2" num="2"/}.{randstr type="2" num="2"/} G</em></p>
+                        <p class="decs">{$vo.postdate}</p>
+                    </div>
+                    <div data-href="{$vo.url}" class="btn j-download" data-id="321078" data-dlurl="{$vo.url}"
+                        data-name="{$vo.title}-预下载" data-status="1">下载</div>
+                </li>
+                {/loop}
+            </ul>
+        </div> <!-- 猜你喜欢 -->
+        <section class="m_guess">
+            <div class="header"> <span>{$keywords} 猜你喜欢</span> <a href="javascript:;" id="j-change-btn"><i></i>换一批</a> </div>
+            <div class="box">
+                <div class="wrap">
+                    <ul id="j-flag" data-row="16">
+                        <li><a data-cache="1" href="{随机栏目URL}" class="active_0" title="{$vo.title}">{$vo.title}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class="active_2" title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class="active_5" title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class="active_8" title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class="active_13" title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class title="{随机栏目}">{随机栏目}</a></li>
+                        <li><a data-cache="1" href="{随机栏目URL}" class="active_15" title="{随机栏目}">{随机栏目}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="m_game_list" style="margin-bottom:0.35rem;">
+    
+            <ul class="j-lazyimg" data-row="91">
+                {loop type="arclist" row="100" tpl="" islist=""}
+                <li href="{$vo.url}" markpre="321078">
+                    <div class="logo"> <img src="{$vo.pic}" data-src="{$vo.pic}" alt="{$vo.title}-预下载"> </div>
+                    <div class="info" data-kid="2">
+                        <p class="name">{$vo.tilte}</p>
+                        <p class="other">{randstr type="2" num="2"/}.{randstr type="2" num="2"/} MB万+ 下载 <em>
+                                {randstr type="2" num="2"/}.{randstr type="2" num="2"/} G</em></p>
+                        <p class="decs">{$vo.postdate}</p>
+                    </div>
+                    <div data-href="{$vo.url}" class="btn j-download" data-id="321078" data-dlurl="{$vo.url}"
+                        data-name="{$vo.title}-预下载" data-status="1">下载</div>
+                </li>
+                {/loop}
+            </ul>
+        </div> <!-- 游戏下载提示 -->
+        <section class="m_download_tips"> <a data-href="/" class="j-launchApp" data-target="main"> {$keywords} 
+            {随机关键词}<em>免费</em>下载 <i></i> </a> </section> <!-- 友情链接 -->
+        <div class="m_link">
+            <div class="header"> <i></i>{随机关键词} </div>
+            <div class="box"> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                    marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian"
+                    title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a
+                    href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                    marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian"
+                    title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a
+                    href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                    marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian"
+                    title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a>
+            </div>
+        </div> <!-- 切换 4399 -->
+        <div class="m_switch_4399"> <a href="{随机栏目URL}" marks="wap-a-shouye-qiehuan" title="{随机栏目}">{随机栏目}</a>
+            <div class="m_footer_tips">
+                <p class="title">{网站名称} |&nbsp;<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>&nbsp;|&nbsp;<a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></p>
+                <p class="content">{随机栏目}</p>
+                <p class="content">{随机栏目}</p>
+                <p class="title">纠纷处理(客服电话):{随机数字}-{随机数字}-{随机数字} <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></p>
+                <p class="content"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                        title="{随机栏目}">{随机栏目}</a></p>
+                <p class="title"><a href="/"><i class="mww">&nbsp;</i>闽网文〔{随机数字}〕{随机数字}{随机数字}号</a></p>
+                <p class="title"><a href="/"><i class="mgw">&nbsp;</i>闽公网安备 {随机数字}{随机数字}号</a></p>
+                <p class="content">Copyright©2004 - <span id="j-yearTime">{网站地址} All Rights Reserved.</p>
+                <p class="content">{随机栏目}</p>
+                <script>
+                    var currentDate = new Date();
+                    var year = currentDate.getFullYear();
+                    document.getElementById("j-yearTime").innerText = year;
+                </script>
+            </div>
+        </div> <!--返回顶部-->
+        <div class="m_totop" id="j-totop" marks="wap-a-shouye-top"></div>
+        <section class="m_tips_dialog" id="j-limit-dialog" style="display: none">
+            <div class="filter"></div> <i class="wxDownload_arrow"></i>
+            <div class="wxDownload_tips"></div>
+        </section>
+        <div class="m_pureMode" id="j-pureMode">
+            <div class="m_pureMode_tips">
+                <div class="m_pureMode_btn" id="j-pureMode_btn">知道了<div> </div>
+                </div>
+            </div>
+        </div>
+        <script> window.config = { module: 'PageIndex', download_allow: '0' } </script>
+        <script type="text/javascript" src="{$theme_path}/js/filtratebrowser.js?3458e8b"></script>
+        <script type="text/javascript" src="{$theme_path}/js/androidmobile.js?3458e8b"></script>
+        <script src="{$theme_path}/js/vendors.js?3458e8b"></script>
+        <script src="{$theme_path}/js/commjs.js?3458e8b"></script>
+    </body>
+</html>

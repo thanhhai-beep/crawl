@@ -1,0 +1,227 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>{$toptitle}</title>
+  <meta name="keywords" content="{$keywords}">
+  <meta name="description" content="{$description}">
+  <meta name="applicable-device" content="mobile">
+  <meta id="viewport" name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <link rel="stylesheet" href="{$theme_path}/css/swiper.min.css">
+  <link href="{$theme_path}/css/public2018.css" rel="stylesheet" type="text/css">
+  <link href="{$theme_path}/css/m-index2018.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="{$theme_path}/js/jquery.min.js"></script>
+  <script type="text/javascript" src="{$theme_path}/js/mhome.js"></script>
+</head>
+
+<body>
+  <header class="g-top-full" id="backTop"> <a href="{随机栏目URL}" class="g-logo" title="{随机栏目}">{随机栏目}</a>
+    <div class="g-index-search">
+      <form action="/e/search/index.php" method="post">
+        <input type="search" class="search-input" name="keyboard" value="吃鸡手游"
+          onblur="if(this.value==''){this.value='吃鸡手游';}" onfocus="if(this.value==this.defaultValue){this.value='';}">
+        <input class="search-button" type="submit" value>
+        <input type="hidden" name="show" value="title">
+        <input type="hidden" name="tempid" value="2" id="tid">
+        <input type="hidden" name="tbname" value="azgame" id="bname">
+      </form>
+      <b class="m-navshow-btn">展开</b>
+    </div>
+    <ul class="m-navshow-ul" data-row="4">
+      <li><a href="/"><b></b><strong>{随机栏目}</strong></a></li>
+      <li><a href="/ruanj"><b></b><strong>{随机栏目}</strong></a></li>
+      <li><a href="/youxi"><b></b><strong>{随机栏目}</strong></a></li>
+      <li><a href="/news"><b></b><strong>{随机栏目}</strong></a></li>
+    </ul>
+    <b class="m-black"></b>
+  </header>
+  <nav class="g-nav-full clearfix g-nav-box">
+    <a href="{随机栏目URL}" class="m-hover" title="{随机栏目}">{随机栏目}</a>| <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>| <a
+      href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>| <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>| <a href="{随机栏目URL}"
+      title="{随机栏目}">{随机栏目}</a>
+  </nav>
+  <section>
+    <div class="scroll clearfix">
+      <div class="scroll_box" id="scroll_img">
+        <ul class="scroll_wrap" data-row="0">
+        </ul>
+        <ul class="scroll_position" id="scroll_position" data-row="0">
+        </ul>
+      </div>
+    </div>
+  </section>
+  <nav class="g-bg clearfix">
+    <ul class="nfxSubmenuList" data-row="4">
+      <li><a href="/ruanj.html"><b class="icon1"></b><span>淘应用</span></a></li>
+      <li><a href="/youxi.html"><b class="icon2"></b><span>玩游戏</span></a></li>
+      <li><a href="/rank.html"><b class="icon3"></b><span>手游榜单</span></a></li>
+      <li><a href="/topic.html"><b class="icon4"></b><span>手游专区</span></a></li>
+    </ul>
+  </nav>
+  <section class="margin10">
+    <div class="g-ntjp-title"><h1 style="font-size: 18px">{$keywords}</h1></div>
+    <div class="g-dome-left">
+      <div class="swiper-container" style="height: 100px">
+        <div class="swiper-wrapper">
+          {loop type="arclist" row="10" tpl="" islist=""}
+          <div class="swiper-slide"> <a href="{$vo.url}" title="{$vo.title}">
+              <p><img src="{$vo.pic}" alt=""><strong>>{$vo.title}</strong></p>
+            </a>
+          </div>
+          {/loop}
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="clearfix margin10">
+      <div class="g-title"><strong>{随机栏目}</strong><a class="u-more" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></div>
+      <ul class="g-newgame-recomd" data-row="4">
+        {loop type="arclist" row="4" tpl="" islist=""}
+        <li><a href="{$vo.url}" title="{$vo.title}"><img src="{$vo.pic}" alt="{$vo.title}"><b
+              class="g-newgame-introd"><strong>{$vo.title}</strong><em> / {randstr type="2" num="2"/}.{randstr type="2" num="2"/}GB /
+                {$vo.postdate}</em>
+              <p><span>小编点评：</span></p>
+            </b><b class="g-newgame-btn">下载</b></a></li>
+        {/loop}
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div class="margin10 clearfix">
+      <div class="g-title"><strong>{随机栏目}</strong><a class="u-more" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></div>
+      <ul class="g-newgame-game clearfix" data-row="12">
+        {loop type="arclist" row="12" tpl="" islist=""}
+        <li><a href="{$vo.url}" title="{$vo.title}"><img src="{$vo.pic}"
+              alt="{$vo.title}"><strong>{$vo.title}</strong></a></li>
+        {/loop}
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div class="clearfix margin10">
+      <div class="g-title"><strong>{$keywords} {随机栏目}</strong><a class="u-more" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></div>
+      <div class="g-yxzq scroll-module clearfix">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="g-rank margin10 clearfix">
+      <div class="g-title"><strong> {随机栏目}</strong>
+        <div class="g-rank-links f-click-a"><a href="javascript:void(0)" title="{随机栏目}">{随机栏目}</a><i class="line">/</i><a
+            href="javascript:void(0)" title="{随机栏目}">{随机栏目}</a><i class="line">/</i><a href="javascript:void(0)" title="{随机栏目}">{随机栏目}</a>
+        </div>
+      </div>
+      <ul class="g-rank-bd block" data-row="6">
+        {loop type="arclist" row="6" tpl="" islist=""}
+        <li><a href="{$vo.url}" title="{$vo.title}"><strong><img src="{$vo.pic}" alt="{$vo.title}"></strong>
+            <p>{$vo.title}</p>
+            <span><img src="{$vo.pic}"></span><em>生活服务 / {randstr type="2" num="1"/}.{randstr type="2" num="2"/}M /
+              <font>{$vo.postdate}</font>
+            </em><i>下载</i>
+          </a></li>
+        {/loop}
+      </ul>
+      <ul class="g-rank-bd" data-row="6">
+        {loop type="arclist" row="6" tpl="" islist=""}
+        <li><a href="{$vo.url}" title="{$vo.title}"><strong><img src="{$vo.pic}" alt="{$vo.title}"></strong>
+            <p>{$vo.title}</p>
+            <span><img src="{$vo.pic}"></span><em>生活服务 / {randstr type="2" num="1"/}.{randstr type="2" num="2"/}M /
+              <font>{$vo.postdate}</font>
+            </em><i>下载</i>
+          </a></li>
+        {/loop}
+      </ul>
+      <ul class="g-rank-bd" data-row="6">
+        {loop type="arclist" row="6" tpl="" islist=""}
+        <li><a href="{$vo.url}" title="{$vo.title}"><strong><img src="{$vo.pic}" alt="{$vo.title}"></strong>
+            <p>{$vo.title}</p>
+            <span><img src="{$vo.pic}"></span><em>生活服务 / {randstr type="2" num="1"/}.{randstr type="2" num="2"/}M /
+              <font>{$vo.postdate}</font>
+            </em><i>下载</i>
+          </a></li>
+        {/loop}
+      </ul>
+      <a href="/ruanj" class="m-btn-more">点击查看更多<b></b></a>
+    </div>
+  </section>
+  <section>
+    <div class="margin10 clearfix">
+      <div class="g-title"><strong>{随机栏目}</strong><a class="u-more" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></div>
+      <div class="g-zthj scroll-module clearfix">
+        <span></span>
+        {loop type="arclist" row="6" tpl="" islist=""}
+        <a href="{$vo.url}" title="{$vo.title}"><img src="{$vo.pic}" alt="{$vo.title}"><strong>{$vo.title}</strong></a>
+        {/loop}
+        <span></span>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="margin10 clearfix">
+      <div class="g-title"><strong>{随机栏目}</strong><a class="u-more" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></div>
+      <div class="g-peo-like g-hot-label">
+        <ul data-row="12">
+          {loop type="arclist" row="12" tpl="" islist=""}
+          <li><a href="{$vo.url}">
+              <p>{$vo.title}</p>
+            </a></li>
+          {/loop}
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="margin10 clearfix">
+      <div class="g-title"><strong>{$keywords} {随机栏目}</strong></div>
+      <ul class="g-friend-ul" data-row="2">
+
+        <li><a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a></li>
+
+        <li><a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a></li>
+      </ul>
+    </div>
+  </section>
+  <footer><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> | <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></footer>
+  <script src="{$theme_path}/js/hhSwipe.js"></script>
+  <script src="{$theme_path}/js/swiper.min.js"></script>
+  <script type="text/javascript">
+    var slider = Swipe(document.getElementById('scroll_img'), {
+      auto: 5000,
+      continuous: true,
+      callback: function (pos) {
+        var i = bullets.length;
+        while (i--) {
+          bullets[i].className = ' ';
+        }
+        bullets[pos].className = 'on';
+      }
+    });
+    var bullets = document.getElementById('scroll_position').getElementsByTagName('li');
+    $(function () {
+      $('.scroll_position_bg').css({
+        width: $('#scroll_position').width()
+      });
+    });
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <div style="display:none"></div>
+</body>

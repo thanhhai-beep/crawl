@@ -1,0 +1,345 @@
+<head>
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="applicable-device" content="mobile">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="google" value="notranslate">
+    <meta name="theme-color" content="#43B753">
+    <meta name="generate_time" content="2024-12-12 16:46:19">
+    <meta name="generate_url" content="http://m.appchina.com/app/com.tencent.mobile">
+    <meta name="baidu-site-verification" content="codeva-B4kr1xfidl">
+    <meta name="google-site-verification" content="Rp_kqs_jBu5f_sRR5MPjXD5qm4mNtTlpSuqOqohWy8I">
+    <link rel="apple-touch-icon" href="{$theme_path}/css/yyh.png">
+    <link rel="shortcut icon" type="image/ico" href="{$theme_path}/css/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/common20241010.css">
+    <script src="{$theme_path}/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/jquery.cookie.js"></script>
+    <script src="{$theme_path}/js/common20241010.js"></script>
+    <script type="text/javascript">     var _hmt = _hmt || []; (function () { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?a815cf1e7fdfb2515bf0df67d9800141"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();      //声明_czc对象:     
+        var _czc = _czc || [];     //绑定siteid     
+        _czc.push(["_setAccount", "1257962242"]); </script>
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/seo0327.css">
+</head>
+
+<body>
+    <header class="Header">
+        <div id="yyh-bottom" class="yyh-bottom">
+            <a class="a" id="yyh-download"
+                onclick="_czc.push(['_trackEvent', 'top', '{网站名称} 下载', 'com.yingyonghui.market','','yyh-download']);"
+                href="">
+
+                <img class="img" alt src="{$theme_path}/images/top_download.png">
+            </a>
+        </div>
+        <div class="Top">
+            <a href="/" class="logo"><img alt class="logo_img" src="{$theme_path}/images/logo3.png"></a>
+            <div class="SearchBox">
+                <form action="/search/" method="GET" onsubmit="return search();">
+                    <div class="Search_Input">
+                        <input type="text" id="keyword" class="s_input" placeholder="搜索">
+                    </div>
+                    <div class="i-input" onclick="return search();">
+                        <img src="{$theme_path}/images/search_icon.png" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        {loop type="catelog" row="6" tpl="" islist=""}
+        <li class="navi-index Navigation_Check">
+            <a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+        </li>
+        {/loop}
+    </nav>
+    <div class="main">
+        <div class="mainpage">
+            <div class="breadcrumb"> <a href="/" title="{随机栏目}">{随机栏目}</a> &gt; <a href="{随机栏目URL}"
+                    title="{随机栏目}">{随机栏目}</a> &gt; <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+            <div class="AppBox">
+                <div class="app-details"> <img class="app-details-icon" height="51px" width="51px" alt="{$title}"
+                        title="{$title}" src="{$pic}">
+                    <div class="app-details-det">
+                        <div class="app-details-appname">
+                            <h1>{$keywords}</h1>
+                            <h3>{$title}</h3>
+                        </div>
+                        <div class="app-details-appdes">
+                            <h3>{随机栏目}</h3>
+                        </div>
+                        <div class="app-details-appinfo">
+                            <div><span>307.98MB</span> </div>
+                            <div>|</div>
+                            <div><span>版本 9.1.25</span></div>
+                        </div>
+                        <div class="app-details-like">
+                            <div> <img alt="喜欢" src="{$vo.pic}"> <span>73%好评(25141人)</span> </div>
+                            <div> <img alt="评论" src="{$vo.pic}"> <span>{随机数字}</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-display-a">
+                    <div class="download_btn_col"> <a class="high-speed-down-btn" href=""
+                            onclick="return ckHighSpeedBtn('com.tencent.mobile','Down_A')">
+                            <div> <img alt style="width: 18px;height: 17px" src="{$vo.pic}"> <span> 高速下载</span> </div>
+                        </a> <a class="normal-down-btn" href=""
+                            onclick="return ckNormalDownBtn('com.tencent.mobile','Down_A')" title="{随机栏目}">{随机栏目}</a>
+                    </div>
+                    <div class="b-text"> <span class="span">下载应用汇 安装你想要的应用 更方便 更快捷 发现更多</span> </div>
+                </div>
+                <div id="none_display" style="display:none;">
+                    <script>         /*<![CDATA[*/
+                        var packageName = 'com.tencent.mobile';
+                        var offShelf = false; var prePublish = false;
+                        var showCnzz = 'cnzz_a'; var channel = readCookie("yyhchannel");
+                        var blackSpiderUa = ['Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)'];
+                        if (blackSpiderUa.indexOf(navigator.userAgent) < 0) { $(document).ready(function () { appDetailCnzz(); }); }
+                        function appDetailCnzz(appDetails) {
+                            if (appDetails === undefined || appDetails === null) { appDetails = 'App_Details'; }
+                            var param = null; if (offShelf || prePublish) {
+                                param = 'Down_No';
+                                _czc.push(['_trackEvent', appDetails, param, '', '', '']);
+                                _czc.push(['_trackEvent', appDetails, param, packageName, '', '']); return;
+                            }
+                            param = 'Ap_Down'; if (channel) { param = '商务推广'; } _czc.push(['_trackEvent', appDetails, param, '', '', '']);
+                        }          /*]]>*/     
+                    </script>
+                </div>
+                <div class="App_Img">
+                    <div class="App_ImgBox"> 
+                        {loop type="arclist" row="4" tpl="" islist=""}
+                        <img alt="截图0" src="{$vo.pic}" id="img_{$vo.i}"> 
+                        {/loop}
+                    </div>
+                </div>
+                <div class="App_Category">
+                    <div class="App_SpreadBox">
+                        <div class="App_SpreadTitle">
+                            <div class="App_SpreadTitle_Info">
+                                <div class="App_SpreadTitle_Module"></div> <span>详细信息</span>
+                            </div>
+                            <div class="icon"></div>
+                        </div>
+                        <div class="App_SpreadTitle_Line"></div>
+                        <ul class="App_SpreadContent" data-row="9">
+                            <li> <span class="fl">{$vo.postdate}</span> <span class="fl">{$vo.postdate}</span> </li>
+                            <li> <span class="fl">最后更新:</span> <span class="fl">2024-12-11</span> </li>
+                            <li> <span class="fl">最新版本:</span> <span class="fl">9.1.25</span> </li>
+                            <li> <span class="fl">文件格式:</span> <span class="fl">apk</span> </li>
+                            <li> <span class="fl">应用分类:</span> <span class="fl"><a class="CategoryLink" href="{随机栏目URL}"
+                                        title="{随机栏目}">{随机栏目}</a></span> </li>
+                            <li> <span class="fl">使用语言:</span> <span class="fl">中文</span> </li>
+                            <li> <span class="fl">网络支持:</span> <span class="fl">需要联网</span> </li>
+                            <li> <span class="fl">系统要求:</span> <span class="fl">6.0以上</span> </li>
+                            <li> <span class="fl" style="display: inline-block">开发者:</span> <a class="fl"
+                                    style="color: #057ff1;" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        </ul>
+                    </div>
+                    <div class="App_SpreadBox">
+                        <div class="App_SpreadTitle">
+                            <div class="App_SpreadTitle_Info">
+                                <div class="App_SpreadTitle_Module"></div> <span>应用介绍</span>
+                            </div>
+                            <div class="icon"></div>
+                        </div>
+                        <div class="App_SpreadTitle_Line"></div>
+                        <div class="App_SpreadContent App_Introduce"> <span>9 轻松做自己 <br> <br>在，轻松社交 <br>-
+                                [聊天消息]随时随地好友和群消息； <br>- [语音通话]、[视频聊天]和亲友自在畅聊； <br>- [文件传输]手机电脑多端互传，轻松便捷。 <br>
+                                <br>在，轻松生活 <br>- [空间动态]快速获知好友动态，随时分享生活； <br>- [移动支付]话费充值、转账收款、网购一应俱全； <br>-
+                                [关怀模式]大字体、大图标，操作更简单，长辈使用更方便。 <br> <br>在，轻松娱乐 <br>- [游戏中心]体验热门手游乐趣，还有更多大神攻略分享； <br>-
+                                [个性装扮]各种主题、名片、彩铃、气泡、挂件自由选。 <br> <br>9将功能赋能，打造轻松欢乐的社交、娱乐与生活体验。 <br> <br>
+                                <br>-----联系我们----- <br>如在使用过程中遇到任何问题，请联系我们： <br>- 在线帮助：进入设置 -&gt; 关于 -&gt; 帮助与反馈
+                                <br>- 客服热线：4006 700 700（服务时间：8:00 - 23:00） <br>
+                                <br>*加入寻找丢失儿童公益项目，GPS在后台运行可能会影响电池续航时间</span>
+                            <div class="get_more">加载更多</div>
+                        </div>
+                    </div>
+                    <div class="App_SpreadBox">
+                        <div class="App_SpreadTitle">
+                            <div class="App_SpreadTitle_Info">
+                                <div class="App_SpreadTitle_Module"></div> <span>开发者的其他应用</span>
+                            </div>
+                            <div class="icon"></div>
+                        </div>
+                        <div class="App_SpreadTitle_Line"></div>
+                        <div class="App_SpreadContent App_SpreadContent_App_List">
+                            {loop type="arclist" row="8" tpl="" islist=""}
+                            <div class="App_SpreadContent_App_List_Item">
+                                <div class="App_SpreadContent_App_List_Item_Content"> <a href="{$vo.url}"> <img
+                                            class="img" src="{$vo.pic}" alt="腾讯手机管家">
+                                        <p class="app-name">{$vo.title}</p>
+                                        <p class="app-size">{$vo.hits}M</p>
+                                    </a> </div>
+                            </div>
+                            {/loop}
+                        </div>
+                    </div>
+                    <div class="App_SpreadBox">
+                        <div class="App_SpreadTitle">
+                            <div class="App_SpreadTitle_Info">
+                                <div class="App_SpreadTitle_Module"></div> <span> 类似软件</span> <span></span>
+                            </div>
+                            <div class="icon"></div>
+                        </div>
+                        <div class="App_SpreadTitle_Line"></div>
+                        <div class="App_SpreadContent App_SpreadContent_App_List">
+
+                            {loop type="arclist" row="8" tpl="" islist=""}
+                            <div class="App_SpreadContent_App_List_Item">
+                                <div class="App_SpreadContent_App_List_Item_Content"> <a href="{$vo.url}"> <img
+                                            class="img" src="{$vo.pic}" alt="腾讯手机管家">
+                                        <p class="app-name">{$vo.title}</p>
+                                        <p class="app-size">{$vo.hits}M</p>
+                                    </a> </div>
+                            </div>
+                            {/loop}
+                        </div>
+                    </div>
+                    <div class="App_SpreadBox">
+                        <div class="App_SpreadTitle">
+                            <div class="App_SpreadTitle_Info">
+                                <div class="App_SpreadTitle_Module"></div> <span>猜你喜欢</span>
+                            </div>
+                            <div class="icon"></div>
+                        </div>
+                        <div class="App_SpreadTitle_Line"></div>
+                        <div class="App_SpreadContent App_SpreadContent_App_List">
+
+                            {loop type="arclist" row="8" tpl="" islist=""}
+                            <div class="App_SpreadContent_App_List_Item">
+                                <div class="App_SpreadContent_App_List_Item_Content"> <a href="{$vo.url}"> <img
+                                            class="img" src="{$vo.pic}" alt="腾讯手机管家">
+                                        <p class="app-name">{$vo.title}</p>
+                                        <p class="app-size">{$vo.hits}M</p>
+                                    </a> </div>
+                            </div>
+                            {/loop}
+                        </div>
+                    </div>
+                    <div class="App_SpreadBox">
+                        <div class="App_SpreadTitle">
+                            <div class="App_SpreadTitle_Info">
+                                <div class="App_SpreadTitle_Module"></div> <span>相关攻略</span>
+                            </div>
+                            <div class="icon"></div>
+                        </div>
+                        <div class="App_SpreadTitle_Line"></div>
+                        <div class="App_SpreadContent">
+                            <ul data-row="1">
+                                <li class="StrategyList_Content">
+                                    <div class="StrategyList_ContentTitle ml0"> <a href="/article_detail/1124">
+                                            <div>，一款让你离不开的社交软件</div>
+                                        </a> </div>
+                                    <div class="StrategyList_TimeBox"> <span
+                                            style="line-height: 40px;">{$vo.postdate}</span> </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="App_SpreadBox">
+                        <div class="App_SpreadTitle">
+                            <div class="App_SpreadTitle_Info">
+                                <div class="App_SpreadTitle_Module"></div> <span>包含的应用集</span>
+                            </div>
+                            <div class="icon"></div>
+                        </div>
+                        <div class="App_SpreadTitle_Line"></div>
+                        <div class="App_SpreadContent">
+                            <ul class="Applications_list list_con" data-row="6">
+                                {loop type="arclist" row="6" tpl="" islist=""}
+                                    <li class="Application_content">
+                                        <div class="Application_img_set ml0"> <a href="{$vo.url}"> <img
+                                                    class="small" src="{$vo.pic}" alt="{$vo.title}"> </a> <a
+                                                href="{$vo.url}"> <img class="middle" src="{$vo.pic}"
+                                                    alt="{$vo.title}"> </a> <a href="{$vo.url}"> <img
+                                                    class="bigger" src="{$vo.pic}" alt="{$vo.title}"> </a> </div> <a
+                                            href="{$vo.url}">
+                                            <div class="Application_app">
+                                                <div class="Application_app_tit">{$vo.title}</div>
+                                                <div class="Application_app_user">我的肾坏了</div>
+                                                <div class="Application_app_oth"> <span><img src="{$vo.pic}"
+                                                            alt="1360526">1360526</span> <span><img src="{$vo.pic}"
+                                                            alt="11841">11841</span> <span>{$vo.postdate}</span> </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="App_SpreadBox">
+                        <div class="App_SpreadTitle">
+                            <div class="App_SpreadTitle_Info">
+                                <div class="App_SpreadTitle_Module"></div> <span>评论</span>
+                            </div>
+                            <div class="icon"></div>
+                        </div>
+                        <div class="App_SpreadTitle_Line"></div>
+                        <div class="App_SpreadContent app-details-comment">
+                            <ul data-row="10">
+                                {loop type="arclist" row="10" tpl="" islist=""}
+                                <li>
+                                    <table>
+                                        <tr>
+                                            <td style="width:230px;">江成.</td>
+                                            <td>30分钟前</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"
+                                                style="color:#44423C; text-align:justify; text-justify:distribute-all-lines;word-wrap:break-word;word-break:break-all;">{$vo.title}</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                {/loop}
+                            </ul> <a href="/le/comments_1.html">
+                                <div class="link_more">更多评论</div>
+                            </a>
+                        </div>
+                    </div>
+                </div> <input id="SpreadBox_Open" type="hidden"
+                    value="http://static.yingyonghui.com/resource/msite/static/images/icon_06.png"> <input
+                    id="SpreadBox_Close" type="hidden"
+                    value="http://static.yingyonghui.com/resource/msite/static/images/icon_05.png">
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="Footer-line"></div>
+            <div class="Footer-Company"> <span>北京掌汇天下科技有限公司 版权所有</span> </div>
+            <div class="Footer-Other"> <span>公司地址：北京市西城区西绒线胡同51号南门</span> </div>
+            <div class="Footer-Other"> <a href="{随机栏目URL}" rel="nofollow" target="_blank" title="{随机栏目}">{随机栏目}</a> | <a
+                    href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+            <div class="Footer-Other"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> | <a href="{随机栏目URL}"
+                    rel="nofollow" target="_blank" title="{随机栏目}">{随机栏目}</a> </div>
+            <div class="Footer-Other"> <span class="Footer-com">AppChina <a title="{随机栏目}" href="{随机栏目URL}">{随机栏目}</a>
+                    -安卓手机网上最贴心的Android软件应用平台!</span> </div>
+        </div>
+        <div class="fixed-footer"> <a class="a" id="yyh-footer-download"
+                onclick="_czc.push(['_trackEvent', 'bottom', 'appchina下载', 'com.yingyonghui.market','','yyh-download']);"
+                href=""> </a> </div>
+        <div id="none_display" style="display:none;">
+            <script
+                type="text/javascript">         /*<![CDATA[*/         
+                var blackSpiderUa = ['Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; +http://www.baidu.com/search/spider.html)']; 
+                if (blackSpiderUa.indexOf(navigator.userAgent) < 0) { var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); 
+                document.write(unescape("%3Cspan id='cnzz_stat_icon_1257962242'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1257962242' type='text/javascript'%3E%3C/script%3E")); 
+                $(document).ready(
+                    function () { getId(); 
+
+                }); }         /*]]>*/    
+                 </script>
+        </div>
+        <script
+            type="text/javascript">     /*<![CDATA[*/     (function () { if (readCookie("yyhchannel") != null) { return; } var from = getParameterByName("from"); if (from != undefined && from != null) { return; } if (window.location.hostname == "m.appchina.com") { var bp = document.createElement('script'); bp.src = '//push.zhanzhang.baidu.com/push.js'; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(bp, s); } })();       /*]]>*/ </script>
+    </div>
+    <script
+        type="text/javascript">     function SetImgBoxWidth() { var app_screenshot_list_width = 0; $('.App_ImgBox').find('img').each(function () { app_screenshot_list_width += $(this).width() + 8; app_screenshot_list_width += 5; }); $(".App_ImgBox").css("width", app_screenshot_list_width + 2); } onload = function () { SetImgBoxWidth(); }; AdjustElement(); </script>
+</body>

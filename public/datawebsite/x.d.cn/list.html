@@ -1,0 +1,400 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <title>{$toptitle}</title>
+    <link rel="stylesheet" href="{$theme_path}/css/style.css?v=1.0.1" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/head.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/reset.css?v=2.0.1" charset="utf-8">
+    <link rel="stylesheet" href="{$theme_path}/css/online.css?v=20210512" charset="utf-8">
+</head>
+
+<body>
+    <header class="header-top"> <a class="back-btn" href="{随机栏目URL}" target="_self" title="{随机栏目}">{随机栏目}</a>
+        <p class="Online_game">{随机栏目}</p>
+        <div class="search_sou">
+            <form action="/channel/search_result.html"> <input placeholder="请输入查询内容" type="text" name="keyword" id
+                    value> <input type="submit" class="icon-bg" value> </form>
+        </div> <a class="login icon-bg user" href="{随机栏目URL}" target="_self" title="{随机栏目}">{随机栏目}</a>
+        <script src="{$theme_path}/js/jquery-3.3.1.min.js?v=2.0.1" type="text/javascript" charset="utf-8"></script>
+        <script src="{$theme_path}/js/login_status_index.js"></script>
+        <section ontouchstart="return false" class="search-hot">
+            <div>
+                <p class="clearfix">大家都在搜<a href="{随机栏目URL}" target="_self" class="close" title="{随机栏目}">{随机栏目}</a></p>
+                <ul class="clearfix" data-row="0">
+                </ul>
+            </div>
+        </section>
+        <section ontouchstart="return false" class="input-list">
+            <div>
+                <ul data-row="0"> </ul> <a href="{随机栏目URL}" target="_self" class="list-close" title="{随机栏目}">{随机栏目}</a>
+            </div>
+        </section>
+    </header>
+    <article>
+        <div class="my_width_2">
+            <nav class="nav_n">
+                <nav class="myNav">
+                    <div class="color_qb">
+                        <p id="tagType" data-id="0">{随机栏目}</p>&nbsp;&nbsp; <i></i>
+                    </div>
+                    <div class="operating">
+                        <p id="opraType" data-id="0">{随机栏目}</p>&nbsp;&nbsp; <i></i>
+                    </div>
+                    <div class="hottest">
+                        <p id="orderby" data-id="9">{随机栏目}</p>&nbsp;&nbsp; <i></i>
+                    </div>
+                </nav>
+            </nav>
+        </div>
+        <div class="bgc"></div>
+        <div class="section_1">
+            <div class="xl_cd1 x_cd">
+                <div class="zhe_cen" ontouchstart="return false"></div>
+                <!-------------------全部下拉菜单     开始------------------------>
+                <div class="submenu" ontouchstart="return false">
+                    <div>
+                        <div class="qie_h">
+                            <button class="switch" data-id="0">全部(425)</button>
+                            {loop type="arclist" row="16" tpl="" islist=""}
+                            <button data-id="{$vo.i}">{$vo.title}</button>
+                            {/loop}
+                        </div>
+                        <div class="qie_h">
+                            {loop type="arclist" row="16" tpl="" islist=""}
+                            <button data-id="{$vo.i}">{$vo.title}</button>
+                            {/loop}
+                        </div>
+                        <div class="qie_h">
+                            {loop type="arclist" row="16" tpl="" islist=""}
+                            <button data-id="{$vo.i}">{$vo.title}</button>
+                            {/loop}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xl_cd2 x_cd">
+                <div class="zhe_cen" ontouchstart="return false"></div>
+                <!-------------------运营状态下拉菜单     开始------------>
+                <div class="yy_submenu" ontouchstart="return false">
+                    <div>
+                        <div class="qie_h"> <button class="switch-opra0 switch_1" data-id="0">全部</button> <button
+                                class="switch-opra2" data-id="2">内测</button> </div>
+                        <div class="qie_h"> <button class="switch-opra1" data-id="1">预告</button> <button
+                                class="switch-opra3" data-id="3">公测</button> </div>
+                        <div class="qie_h"> <button class="switch-opra8" data-id="8">不删档内测</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xl_cd3 x_cd">
+                <div class="outline_border">
+                    <div class="zr_submenu" ontouchstart="return false">
+                        <div></div>
+                        <div> <button class="switch" data-id="9">最热</button> <button data-id="1">最新</button> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xl_cd4">
+                <div class="bear">
+                    <div>
+                        <div> <img src="{$vo.pic}" alt> </div>
+                        <p>{随机栏目}</p>
+                    </div>
+                </div>
+                <section class="game-list box-s">
+                    <p>{随机栏目}</p>
+                    <ul data-row="3">
+                        {loop type="arclist" row="3" tpl="" islist=""}
+                        <li class="clearfix"> <a href="{$vo.url}"> <img src="{$vo.pic}" alt>
+                                <div>
+                                    <h3>{$vo.title}</h3> <em>角色&nbsp; {randstr type="2" num="3"/}.{randstr type="2"
+                                        num="2"/}M</em>
+                                    <p>{$vo.postdate}</p>
+                                </div>
+                            </a> <a href="{随机栏目URL}" class="download" title="下载">下载</a> </li>
+                        {/loop}
+                    </ul>
+                </section>
+            </div>
+            <style type="text/css">
+                .box-s {
+                    box-sizing: border-box;
+                }
+
+                .clearfix:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+                em {
+                    font-style: normal;
+                }
+
+                .fl {
+                    float: left;
+                }
+
+                .fr {
+                    float: right;
+                }
+
+                /*-------------------------搜索没有找不到----------------------------*/
+                section {
+                    width: 100%;
+                    /*height: 500px;*/
+                    /*border: 1px solid red;*/
+                }
+
+                .tui_jan {
+                    margin: 0 15px 0 15px;
+                    /*outline: 1px solid red;*/
+                }
+
+                .tui_jan p {
+                    font-size: 15px;
+                    color: #666666;
+                    padding: 14px 0 6px 0;
+                }
+
+                .bear {
+                    width: 100%;
+                    height: 185px;
+                    /*position: relative;*/
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #f8f8f8;
+                }
+
+                .bear div {
+                    width: 94px;
+                    height: 70px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    /*border: 1px solid red;*/
+                }
+
+                .bear>div>div {
+                    width: 50px;
+                    height: 43px;
+                    /*outline: 1px solid red;*/
+                }
+
+                .bear>div>div>img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .bear>div>p {
+                    font-size: 12px;
+                }
+
+                .xl_cd4 {
+                    display: none;
+                }
+
+                .game-list {
+                    padding: 0 4.16667% 0 4.16667%;
+                    background-color: #fff;
+                    margin-top: 10px;
+                }
+
+                .game-list>p {
+                    color: #7c7c7c;
+                    line-height: 40px;
+                    border-bottom: 1px solid #f8f8f8;
+                    font-size: 14px;
+                }
+
+                .game-list:first-of-type {
+                    margin-top: 0;
+                }
+
+                .game-list.no-marginT {
+                    margin-top: 0;
+                }
+
+                .game-list li {
+                    position: relative;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    box-sizing: border-box;
+                }
+
+                .game-list li:first-of-type {
+                    padding-top: 14px;
+                }
+
+                .game-list li:before {
+                    position: absolute;
+                    content: "";
+                    width: calc(100% - 74px);
+                    height: 1px;
+                    left: 74px;
+                    bottom: 0;
+                    background-color: #f8f8f8;
+                }
+
+                .game-list li:last-of-type:before {
+                    display: none;
+                }
+
+                .game-list li>a>img,
+                .game-list li>a>div {
+                    float: left;
+                }
+
+                .game-list li a:last-of-type {
+                    width: 72px;
+                    line-height: 30px;
+                    float: right;
+                    color: #ff6e00;
+                    text-align: center;
+                    background-color: #f8f8f8;
+                    border-radius: 20px;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    margin-top: -15px;
+                }
+
+                .game-list li>a {
+                    display: block;
+                }
+
+                .game-list li>a>img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 10px;
+                    background-color: #f8f8f8;
+                }
+
+                .game-list li>a>div {
+                    padding-left: 14px;
+                    max-width: 52%;
+                }
+
+                .game-list li>a>div * {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                .game-list li>a>div em {
+                    display: block;
+                    color: #999;
+                    margin: 1px 0;
+                }
+
+                .game-list li>a>div>h3 {
+                    font-size: 15px;
+                    color: #454545;
+                    font-weight: 500;
+                }
+
+                .game-list li>a>div>p {
+                    color: #666;
+                }
+
+                @media only screen and (max-width: 359px) {
+                    .game-list>ul>li>div {
+                        max-width: 48%;
+                    }
+                }
+            </style>
+        </div>
+        <div id="content">
+            <div class="ba_d">
+                {loop type="arclist" row="10" tpl="" islist=""}
+                <div class="besides">
+                    <a href="{$vo.url}">
+                        <div class="tj_game">
+                            <div class="icn_img"> <img src="{$vo.pic}" alt="{$vo.title}"> </div>
+                            <div>
+                                <div class="wb_text">
+                                    {$vo.info}
+                                </div>
+                            </div>
+                        </div>
+                    </a> <a href="{$vo.url}" class="download"> <button>下载</button> </a>
+                </div>
+                {/loop}
+            </div>
+        </div>
+        <div id="more" class="more_m" data-page="2">
+            <div>
+                <div> <img src="{$vo.pic}" alt> </div> <a>
+                    <p id="load_text">{随机栏目}</p>
+                </a>
+            </div>
+        </div>
+        <div id="loading" class="more_m" style="display: none">
+            <div>
+                <div class="classIco"> <img src="{$vo.pic}" alt> </div> <a>
+                    <p id="loading_text">{随机栏目}</p>
+                </a>
+            </div>
+        </div>
+    </article>
+    <div id="footer">
+        <div class="logo"> <i></i> </div>
+        <!-----------------------------------版权信息--------------------------------------------->
+        <div class="copy-right">
+            <p>Copyright © 2004-
+                <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="{随机栏目URL}"
+                    title="{随机栏目}">{随机栏目}</a>. All Rights Reserved.
+            </p>
+            <p>{随机栏目}</p>
+        </div>
+        <style type="text/css">
+            /*---------------------------版权信息----------------------------------*/
+            #footer .copy-right a {
+                color: #ed751a;
+                text-decoration: underline;
+            }
+
+            #footer .copy-right p:nth-child(1) {
+                font-size: 10px;
+                color: #cccccc;
+            }
+
+            #footer .copy-right p:nth-child(2) {
+                font-size: 10px;
+                color: #999999;
+                margin-top: 2px;
+            }
+
+            @media only screen and (max-width: 359px) {
+                header>.logo>img {
+                    height: 18px;
+                }
+
+                nav>a {
+                    font-size: 14px;
+                }
+
+                .download img {
+                    width: 45px;
+                    height: 45px;
+                }
+
+                .download .download-btn {
+                    width: 60px;
+                    line-height: 30px;
+                }
+            }
+        </style>
+    </div>
+    <script src="{$theme_path}/js/jquery-1.11.3.js"></script>
+    <script src="{$theme_path}/js/online.js"></script>
+    <script src="{$theme_path}/js/online_nav.js"></script>
+    <script>      var oldStr = ""; var newStr = ""; function intoInput() { oldStr = $("#key").val(); } function check() { newStr = $("#key").val(); if (newStr.length == 0 || newStr == null || newStr.replace(/(^s*)|(s*$)/g, "").length == 0) { $("#key").val(oldStr); } } </script>
+</body>

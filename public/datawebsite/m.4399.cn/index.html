@@ -1,0 +1,949 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,minimal-ui">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link rel="canonical" href="{$theme_path}/css/www.4399.cn">
+    <link rel="shortcut icon" href="{$theme_path}/css/favicon.ico?3458e8b">
+    <link rel="apple-touch-icon-precomposed" href="{$theme_path}/css/APP-icon.png?3458e8b">
+    <link rel="apple-touch-startup-image" href="{$theme_path}/css/startup.gif?3458e8b">
+    <link rel="apple-touch-startup-image" href="{$theme_path}/css/startup_748x1024.gif?3458e8b"
+        media="screen and (min-device-width: 481px) and (max-device-width:1024px) and (orientation:landscape)">
+    <link rel="apple-touch-startup-image" href="{$theme_path}/css/startup_768x1004.gif?3458e8b"
+        media="screen and (min-device-width: 481px) and (max-device-width:1024px) and (orientation:portrait)">
+    <script> /* document.documentElement.style.fontSize = document.documentElement.getBoundingClientRect().width / 6.4 +'px'; window.addEventListener('resize',function () { document.documentElement.style.fontSize = document.documentElement.getBoundingClientRect().width / 6.4 +'px'; }) */ (function (window, document) { 'use strict'; /** * maxSize页面的最大宽度，customSize设计稿宽度 * @type {number} */ var maxSize = '', customSize = 720; var rem1; window.setFont = function () { rem1 = document.documentElement.clientWidth / customSize * 40; if (maxSize && (document.documentElement.clientWidth > maxSize)) { rem1 = maxSize * 40 / customSize; } document.documentElement.style.fontSize = rem1 + 'px'; var j = parseFloat(window.getComputedStyle(document.documentElement, null).fontSize); if (rem1 != j) { rem1 = rem1 * rem1 / j; document.documentElement.style.fontSize = rem1 + 'px'; } }; setFont(); window.px2rem = function (px) { return parseInt(px, 10) / rem1; }; window.rem2px = function (rem) { return rem * rem1; }; window.addEventListener('resize', function () { setTimeout(setFont, 33); }, false); })(window, document); </script>
+    <script
+        type="text/javascript"> var Emt = (function () { var env = {}, navigator = window.navigator, userAgent = navigator.userAgent, ios = userAgent.match(/(iPad|iPhone|iPod)[^;]*;.+OS\s([\d_\.]+)/), android = userAgent.match(/(Android)\s([\d\.]+)/); env.isAndroid = (/android/gi).test(navigator.appVersion); env.isIDevice = (/iphone|ipad|ipod/gi).test(navigator.appVersion) && navigator.platform != "Linux armv7l"; env.isWebkit = /WebKit\/[\d.]+/i.test(userAgent); env.isSafari = ios ? (navigator.standalone ? env.isWebkit : (/Safari/i.test(userAgent) && !/CriOS/i.test(userAgent) && !/MQQBrowser/i.test(userAgent))) : false; env.isUC = /uc/i.test(); if (ios) { env.device = ios[1]; env.version = ios[2].replace(/_/g, '.'); } else if (android) { env.version = android[2]; } env.standalone = navigator.standalone; env.wechat = navigator.userAgent.indexOf("MicroMessenger") >= 0; return env; })(); if (Emt.standalone && Emt.version < "7.0") { document.write('<meta name="apple-mobile-web-app-capable" content="yes">'); } </script>
+    <script> /* 用于 影藏IOS 入口 页面不会跳跃 */ if (Emt.isIDevice) { var oHead = document.getElementsByTagName('head')[0]; var style = document.createElement('style'); style.innerHTML = '.cn-app_download,.m_download_btn {display:none !important;} '; oHead.appendChild(style); } </script>
+    <!--qq-->
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app"> <!--uc-->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application"> <!--ms-->
+    <meta name="MobileOptimized" content="320">
+    <script> document.domain = "4399.cn"; var _stats4399_ = _stats4399_ || {}; _stats4399_.mark = { 'project': 'cn4399' }; (function () { var stats = document.createElement('script'); stats.src = '//s1.img4399.com/r/tj/click-1.1.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(stats, s); })(); /* 处理 http https */ function changeHtp(str) { var key = 'http:'; var keys = 'https:'; var _reg = new RegExp(key, 'gi'); var _regs = new RegExp(keys, 'gi'); if (str.indexOf(key) !== -1) { str = str.replace(_reg, ""); } if (str.indexOf(keys) !== -1) { str = str.replace(_regs, ""); } return str; } var RESOURCE_URL = "//m.img4399.com/static/mobile/"; var I_RESOURCE_URL = "//m.img4399.com/static/ios/wap/"; var A_RESOURCE_URL = "//m.img4399.com/static/android/wap/"; var ENV = "pro"; var MOBILE_HOST = "http://www.4399.cn"; var I_HOST = "https://i.4399.cn"; /* var A_HOST = "WEB_HOST_A"; */ var A_HOST = changeHtp("http://a.4399.cn"); window.config = { download_allow: '0', } </script>
+    <link href="{$theme_path}/css/cn.css?3458e8b" type="text/css" rel="stylesheet">
+    <link href="{$theme_path}/css/indepDownload.css?3458e8b" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="j-container">
+        <div class="cn-page" style="padding-top:0px;">
+            <header class="cn-header"> <a href="#">
+                    <h1 class="logo"><img src="{$vo.pic}" alt="4399手机游戏网"></h1>
+                </a> <a data-a="https://sj.img4399.com/v/8.7.0.26/4399Game_8.7.0.26..5339.wap4399.b944.apk"
+                    data-a-com="https://sj.img4399.com/v/8.7.0.26/4399Game_8.7.0.26..5339.4399cn.8397.apk"
+                    data-i="https://itunes.apple.com/cn/app/4399you-xi-mi-you-xi-zi-xun/id743599908?mt=8"
+                    class="m_download_btn">{随机栏目}</a> </header>
+            <nav class="cn-nav">
+                <ul class="clearfix j-device-a" style="display:none" data-row="2">
+                    <li style="width:50%"><a href="{随机栏目URL}" class="hashover" title="{$vo.title}">{$vo.title}</a></li>
+                    <li style="width:50%"><a href="{随机栏目URL}" class="hashover" title="{随机栏目}">{随机栏目}</a></li>
+                </ul>
+                <ul class="clearfix j-device-i" style="display:none" data-row="4">
+                    <li style="width:25%"><a href="{随机栏目URL}" class="hashover" title="{$vo.title}">{$vo.title}</a></li>
+                    <li style="width:25%"><a href="{随机栏目URL}" class="hashover" title="{随机栏目}">{随机栏目}</a></li>
+                    <li style="width:25%"><a href="{随机栏目URL}" class="hashover" title="{随机栏目}">{随机栏目}</a></li>
+                    <li style="width:25%"><a href="{随机栏目URL}" class="hashover" title="{随机栏目}">{随机栏目}</a></li>
+                </ul>
+            </nav>
+            <form class="search_form j-device-a" id="j-form-android" action="http://a.4399.cn/mobile/search.html"
+                method="get" style="display: none">
+                <div class="input"> <label class="input_inner" for="search_input"> <input maxlength="30"
+                            id="search_input" type="search" placeholder="请输入游戏名搜索" data-value="微微一笑很倾城单机版" name="key">
+                    </label> </div> <input class="submit_btn hashover" value type="submit">
+            </form>
+            <form class="search_form j-device-i" action="https://i.4399.cn/mobile/search.html" method="get"
+                style="display: none">
+                <div class="input"> <label class="input_inner" for="search_input"> <input maxlength="30"
+                            id="search_input" type="search" placeholder="请输入游戏名搜索" data-value="微微一笑很倾城单机版" name="key">
+                    </label> </div> <input class="submit_btn hashover" value type="submit">
+            </form>
+            <section class="cn-section ">
+                <section class="cn-widget cn-mt0">
+                    <header class="w-hd">
+                        <h2 class="heading"><a href="http://h.4399.com"><i class="i-joypad"></i> 在线小游戏</a></h2>
+                    </header>
+                    <section class="w-bd">
+                        <ul class="cn-itemlist j-device-a" style="display: none" data-row="4">
+                            <li>
+                                <div class="in" title="仙山小农"> <a href="http://h.4399.com/zzy/239931.htm"
+                                        class="thumbnail"><img src="{$vo.pic}" alt="仙山小农"></a> <a href="{随机栏目URL}"
+                                        class="title" title="{$vo.title}">{$vo.title}</a> <a href="{随机栏目URL}"
+                                        class="btn" title="{$vo.title}">{$vo.title}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" title="冒险大作战"> <a href="http://h.4399.com/zzy/236489.htm"
+                                        class="thumbnail"><img src="{$vo.pic}" alt="冒险大作战"></a> <a href="{随机栏目URL}"
+                                        class="title" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn"
+                                        title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" title="造梦无双"> <a href="http://h.4399.com/zzy/210650.htm"
+                                        class="thumbnail"><img src="{$vo.pic}" alt="造梦无双"></a> <a href="{随机栏目URL}"
+                                        class="title" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn"
+                                        title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" title="枫叶岛"> <a href="http://h.4399.com/zzy/236331.htm"
+                                        class="thumbnail"><img src="{$vo.pic}" alt="枫叶岛"></a> <a href="{随机栏目URL}"
+                                        class="title" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn"
+                                        title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                        </ul>
+                        <ul class="cn-itemlist j-device-i" style="display: none" data-row="4">
+                            <li>
+                                <div class="in" title="仙山小农"> <a href="http://h.4399.com/zzy/239931.htm"
+                                        class="thumbnail"><img src="{$vo.pic}" alt="仙山小农"></a> <a href="{随机栏目URL}"
+                                        class="title" title="{$vo.title}">{$vo.title}</a> <a href="{随机栏目URL}"
+                                        class="btn" title="{$vo.title}">{$vo.title}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" title="冒险大作战"> <a href="http://h.4399.com/zzy/236489.htm"
+                                        class="thumbnail"><img src="{$vo.pic}" alt="冒险大作战"></a> <a href="{随机栏目URL}"
+                                        class="title" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn"
+                                        title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" title="造梦无双"> <a href="http://h.4399.com/zzy/210650.htm"
+                                        class="thumbnail"><img src="{$vo.pic}" alt="造梦无双"></a> <a href="{随机栏目URL}"
+                                        class="title" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn"
+                                        title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" title="枫叶岛"> <a href="http://h.4399.com/zzy/236331.htm"
+                                        class="thumbnail"><img src="{$vo.pic}" alt="枫叶岛"></a> <a href="{随机栏目URL}"
+                                        class="title" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn"
+                                        title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                        </ul>
+                    </section>
+                </section> <a class="cn-app_download cn-mt10" target="_blank" elementname="下载按钮" elementcontent="m站首页横幅"
+                    data-channel="4399cn" data-version="8.7.0.26"
+                    data-href="https://sj.img4399.com/v/8.7.0.26/4399Game_8.7.0.26..5339.wap4399.b944.apk"
+                    data-a-com="https://sj.img4399.com/v/8.7.0.26/4399Game_8.7.0.26..5339.4399cn.8397.apk"
+                    data-i="https://itunes.apple.com/cn/app/4399you-xi-mi-you-xi-zi-xun/id743599908?mt=8"
+                    rel="external nofollow" id="j-app_downbtn"> <img class="thumbnail" src="{$vo.pic}" width="48"
+                        height="48" alt="4399游戏盒">
+                    <dl class="info">
+                        <dt>4399游戏盒</dt>
+                        <dd>好游戏 一起玩</dd>
+                        <dd>超值礼包 精品攻略</dd>
+                    </dl> <span class="btn">免费下载</span>
+                </a>
+                <section class="cn-widget j-device-a" style="display: none">
+                    <header class="w-hd">
+                        <h2 class="heading"><a href="http://a.4399.cn/mobile/"><i class="i-fire"></i> 热门游戏</a></h2>
+                        <div class="action"> <a href="http://a.4399.cn/mobile/">更多 <i class="i-arrow"></i></a> </div>
+                    </header>
+                    <section class="w-bd">
+                        <ul class="cn-itemlist" data-row="8">
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/321078.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="航海王壮志雄心-预下载"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{$vo.title}">{$vo.title}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/b8/8b/26/321078_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        title="航海王壮志雄心-预下载" rel="external nofollow" class="j-download btn"
+                                        data-id="321078" data-name="航海王壮志雄心-预下载"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/b8/8b/26/321078_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="321078"
+                                        data-downurl data-package="com.tencent.hhw"
+                                        data-pic="https://f01.img4399.com/ma/321078_logo2_cfad.jpg?1734402978" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{$vo.title}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/183610.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="蛋仔派对-乐园嘉年华"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/ef/a8/8e/183610_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        title="蛋仔派对-乐园嘉年华" rel="external nofollow" class="j-download btn"
+                                        data-id="183610" data-name="蛋仔派对-乐园嘉年华"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/ef/a8/8e/183610_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="183610"
+                                        data-downurl data-package="com.netease.party.m4399"
+                                        data-pic="https://f01.img4399.com/ma/183610_logo2_7c5a.jpg?1734350402" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/321213.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="喵星大作战"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/2a/5c/f0/321213_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        title="喵星大作战" rel="external nofollow" class="j-download btn" data-id="321213"
+                                        data-name="喵星大作战"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/2a/5c/f0/321213_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="321213"
+                                        data-downurl data-package="com.zeptolab.cats.china.m4399"
+                                        data-pic="https://f01.img4399.com/ma/321213_logo2_b390.jpg?1733881499" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/107763.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="第五人格-登录送十连"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/c1/79/d7/107763_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        title="第五人格-登录送十连" rel="external nofollow" class="j-download btn"
+                                        data-id="107763" data-name="第五人格-登录送十连"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/c1/79/d7/107763_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="107763"
+                                        data-downurl data-package="com.netease.dwrg.m4399"
+                                        data-pic="https://f02.img4399.com/ma/107763_logo2_f687.jpg?1734339551" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/115384.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="奇葩战斗家-争渡赛季"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/ee/f8/ac/115384_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        title="奇葩战斗家-争渡赛季" rel="external nofollow" class="j-download btn"
+                                        data-id="115384" data-name="奇葩战斗家-争渡赛季"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/ee/f8/ac/115384_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="115384"
+                                        data-downurl data-package="com.leiting.daluandou.m4399"
+                                        data-pic="https://f03.img4399.com/ma/115384_logo2_a940.jpg?1733910340" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/234182.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="苍翼:混沌效应-双人联机"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/1f/c2/fe/234182_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        title="苍翼:混沌效应-双人联机" rel="external nofollow" class="j-download btn"
+                                        data-id="234182" data-name="苍翼:混沌效应-双人联机"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/1f/c2/fe/234182_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="234182"
+                                        data-downurl data-package="com.actgames.bbee"
+                                        data-pic="https://f01.img4399.com/ma/234182_logo2_04f3.jpg?1733909881" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/145585.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="宝可梦大集结"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/1c/28/cf/145585_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        title="宝可梦大集结" rel="external nofollow" class="j-download btn" data-id="145585"
+                                        data-name="宝可梦大集结"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/1c/28/cf/145585_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="145585"
+                                        data-downurl data-package="com.tencent.pokemonunite.cn"
+                                        data-pic="https://f03.img4399.com/ma/145585_logo2_7429.jpg?1734429030" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/105522.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="三国杀OL-史诗皮肤上新"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/34/df/36/105522_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        title="三国杀OL-史诗皮肤上新" rel="external nofollow" class="j-download btn"
+                                        data-id="105522" data-name="三国杀OL-史诗皮肤上新"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/34/df/36/105522_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="105522"
+                                        data-downurl data-package="com.sanguosha.sgsolly.m4399"
+                                        data-pic="https://f02.img4399.com/ma/105522_logo2_4f69.jpg?1734315928" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="cn-widget j-device-i" style="display: none">
+                    <header class="w-hd">
+                        <h2 class="heading"><a href="https://i.4399.cn/mobile/"><i class="i-fire"></i> 热门游戏</a></h2>
+                        <div class="action"> <a href="http://i.4399.cn/mobile/" mark="wap-m-index-hot-more">更多 <i
+                                    class="i-arrow"></i></a> </div>
+                    </header>
+                    <section class="w-bd">
+                        <ul class="cn-itemlist" data-row="8">
+                            <li>
+                                <div class="in" mark="wap-m-index-hot-game"> <a
+                                        href="https://i.4399.cn/mobile/170569.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="荒野行动"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{$vo.title}">{$vo.title}</a> <a href="{随机栏目URL}" class="btn"
+                                        data-gid="170569" rel="nofollow" mark="wap-m-index-hot-setup"
+                                        title="{$vo.title}">{$vo.title}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hot-game"> <a
+                                        href="https://i.4399.cn/mobile/168779.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="元气骑士"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="168779"
+                                        rel="nofollow" mark="wap-m-index-hot-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hot-game"> <a
+                                        href="https://i.4399.cn/mobile/170355.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="终结者2:审判日"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="170355"
+                                        rel="nofollow" mark="wap-m-index-hot-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hot-game"> <a
+                                        href="https://i.4399.cn/mobile/171090.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="第五人格"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="171090"
+                                        rel="nofollow" mark="wap-m-index-hot-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hot-game"> <a
+                                        href="https://i.4399.cn/mobile/135567.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="我的世界"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="135567"
+                                        rel="nofollow" mark="wap-m-index-hot-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hot-game"> <a
+                                        href="https://i.4399.cn/mobile/164129.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="王者荣耀"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="164129"
+                                        rel="nofollow" mark="wap-m-index-hot-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hot-game"> <a
+                                        href="https://i.4399.cn/mobile/168142.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="迷你世界"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="168142"
+                                        rel="nofollow" mark="wap-m-index-hot-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hot-game"> <a
+                                        href="https://i.4399.cn/mobile/169008.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="造梦西游4手机版"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="169008"
+                                        rel="nofollow" mark="wap-m-index-hot-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="cn-widget j-livepart">
+                    <header class="w-hd">
+                        <h2 class="heading"><a href="http://m.4399youpai.com/"><i class="i-live"></i> 游戏直播</a></h2>
+                        <div class="action"> <a class="j-livenum" href="http://m.4399youpai.com/?channelkey=4399cn"
+                                mark="wap-m-index-moreLive">当前<span style="color:#e8b94d">56</span>个直播 <i
+                                    class="i-arrow"></i></a> </div>
+                    </header>
+                    <section class="w-bd">
+                        <ul class="cn-livelist j-livelist" data-row="2">
+                            <li> <a href="//m.4399youpai.com/zhibo/detail/62582.html">
+                                    <div class="pic"
+                                        style="background-image:url(https://fs.img4399.com/box~cp/5712023/10/07/09_XqPsB_.1920x1080.jpg~480x480)">
+                                        <div class="author_info">森烁丶初心</div>
+                                        <div class="watching-info">50462</div>
+                                        <div class="badge">直播</div>
+                                    </div>
+                                    <div class="info">
+                                        <div class="game_logo"
+                                            style="background-image:url(https://fs.img4399.com/ma~5_20150311163358_54fffdf651fc4.png~280x150)">
+                                        </div>
+                                        <p class="game_name">{$vo.postdate}</p>
+                                        <p class="game_title">{$vo.postdate}</p>
+                                    </div>
+                                </a> </li>
+                            <li> <a href="//m.4399youpai.com/zhibo/detail/548414.html">
+                                    <div class="pic"
+                                        style="background-image:url(https://fs.img4399.com/youpai~ypRoomLogo/2024/12/12/16_RinV7J.1060x596.jpg~480x270)">
+                                        <div class="author_info">吧唧一口贼甜儿๑</div>
+                                        <div class="watching-info">30767</div>
+                                        <div class="badge">直播</div>
+                                    </div>
+                                    <div class="info">
+                                        <div class="game_logo"
+                                            style="background-image:url(https://fs.img4399.com/box~cp/3972021/07/12/14_pEznzJ.250x250.jpg~480x480)">
+                                        </div>
+                                        <p class="game_name">{随机栏目}</p>
+                                        <p class="game_title">{随机栏目}</p>
+                                    </div>
+                                </a> </li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="cn-widget" id="j-category">
+                    <header class="w-hd">
+                        <h2 class="heading"><i class="i-category"></i> 热门游戏标签</h2>
+                    </header>
+                    <section class="w-bd">
+                        <nav class="cn-category clearfix j-device-a" style="display: none">
+                            <ul data-row="16">
+                                <li><a href="{随机栏目URL}" class="highlight" title="{$vo.title}">{$vo.title}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" class="highlight" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" class="highlight" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" class="highlight" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" class="highlight" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="cn-category clearfix j-device-i" style="display: none">
+                            <ul data-row="16">
+                                <li><a href="{随机栏目URL}" class="highlight" title="{$vo.title}">{$vo.title}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" class="highlight" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" class="highlight" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" class="highlight" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" class="highlight" title="{随机栏目}">{随机栏目}</a></li>
+                                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </section>
+                <section class="cn-widget">
+                    <header class="w-hd">
+                        <h2 class="heading"> <a class="j-giftmore" href="javascript:void(0)"><i class="i-gift"></i>
+                                推荐游戏礼包</a></h2>
+                        <div class="action"> <a class="j-giftmore" href="javascript:void(0)">更多 <i
+                                    class="i-arrow"></i></a> </div>
+                    </header>
+                    <section class="w-bd">
+                        <ul class="cn-giftlist j-giftlist j-device-a" data-row="3">
+                            <li data-detail="http://fahao.4399.cn/libao-wap-id-127661.html" data-id="127661"> <a
+                                    href="javascript:void(0)" mark="wap-m-index-Libao1"> <img src="{$vo.pic}">
+                                    <div>
+                                        <p>{$vo.postdate}</p>
+                                        <p>{$vo.postdate}</p> <!-- <p>剩余 <span>2287</span> 份 已领 4713 份</p>-->
+                                    </div> <span class="btn" data-id="127661">{$vo.postdate}</span>
+                                </a> </li>
+                            <li data-detail="http://fahao.4399.cn/libao-wap-id-127669.html" data-id="127669"> <a
+                                    href="javascript:void(0)" mark="wap-m-index-Libao2"> <img src="{$vo.pic}">
+                                    <div>
+                                        <p>{随机栏目}</p>
+                                        <p>{随机栏目}</p> <!-- <p>剩余 <span>398</span> 份 已领 601 份</p>-->
+                                    </div> <span class="btn" data-id="127669">领取</span>
+                                </a> </li>
+                            <li data-detail="http://fahao.4399.cn/libao-wap-id-126394.html" data-id="126394"> <a
+                                    href="javascript:void(0)" mark="wap-m-index-Libao3"> <img src="{$vo.pic}">
+                                    <div>
+                                        <p>{随机栏目}</p>
+                                        <p>{随机栏目}</p> <!-- <p>剩余 <span>121</span> 份 已领 2876 份</p>-->
+                                    </div> <span class="btn" data-id="126394">领取</span>
+                                </a> </li>
+                        </ul>
+                        <ul class="cn-giftlist j-giftlist j-device-i" data-row="0"> </ul>
+                    </section>
+                </section>
+                <section class="cn-widget j-device-a" style="display: none">
+                    <header class="w-hd">
+                        <h2 class="heading"><a href="http://a.4399.cn/mobile/"><i class="i-star"></i> 新游推荐</a></h2>
+                        <div class="action"> <a href="http://a.4399.cn/mobile/">更多 <i class="i-arrow"></i></a> </div>
+                    </header>
+                    <section class="w-bd">
+                        <ul class="cn-itemlist" data-row="8">
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/324968.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="深渊战记"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{$vo.title}">{$vo.title}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/84/b0/dc/324968_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="深渊战记" class="j-download btn" data-id="324968"
+                                        data-name="深渊战记"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/84/b0/dc/324968_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="324968"
+                                        data-downurl data-package="com.syzjyyh.m4399"
+                                        data-pic="https://f01.img4399.com/ma/324968_logo2_a3fc.jpg?1734405679" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{$vo.title}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/235905.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="绝区零"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/94/42/77/235905_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="绝区零" class="j-download btn" data-id="235905"
+                                        data-name="绝区零"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/94/42/77/235905_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="235905"
+                                        data-downurl data-package="com.miHoYo.Nap"
+                                        data-pic="https://f01.img4399.com/ma/235905_logo2_a3dc.jpg?1734487987" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/307499.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="像素射击"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/b9/8f/0c/307499_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="像素射击" class="j-download btn" data-id="307499"
+                                        data-name="像素射击"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/b9/8f/0c/307499_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="307499"
+                                        data-downurl data-package="com.joydo.xssj.m4399"
+                                        data-pic="https://f03.img4399.com/ma/307499_logo2_ab8b.jpg?1733972116" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/260305.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="梦想家园"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/e2/04/ea/260305_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="梦想家园" class="j-download btn" data-id="260305"
+                                        data-name="梦想家园"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/e2/04/ea/260305_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="260305"
+                                        data-downurl data-package="com.pop.game.dreamhome.m4399"
+                                        data-pic="https://f03.img4399.com/ma/260305_logo2_9bdf.jpg?1733970595" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/174903.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="保卫萝卜4"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/19/80/72/174903_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="保卫萝卜4" class="j-download btn" data-id="174903"
+                                        data-name="保卫萝卜4"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/19/80/72/174903_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="174903"
+                                        data-downurl data-package="com.feiyu.luobo4.m4399"
+                                        data-pic="https://f02.img4399.com/ma/174903_logo2_85cf.jpg?1733966016" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/116324.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="弹力果冻"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/c5/82/5a/116324_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="弹力果冻" class="j-download btn" data-id="116324"
+                                        data-name="弹力果冻"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/c5/82/5a/116324_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="116324"
+                                        data-downurl data-package="com.ginicat.sweet.m4399"
+                                        data-pic="https://f04.img4399.com/ma/116324_logo2_d8fa.jpg?1733907759" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/27425.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="节奏大师"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/56/ae/f1/27425_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="节奏大师" class="j-download btn" data-id="27425"
+                                        data-name="节奏大师"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/56/ae/f1/27425_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="27425"
+                                        data-downurl data-package="com.tencent.game.rhythmmaster"
+                                        data-pic="https://f01.img4399.com/ma/27425_logo2_4f15.jpg?1733916476" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/103052.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="伊洛纳"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/56/89/54/103052_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="伊洛纳" class="j-download btn" data-id="103052"
+                                        data-name="伊洛纳"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/56/89/54/103052_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="103052"
+                                        data-downurl data-package="com.leiting.elona.m4399"
+                                        data-pic="https://f03.img4399.com/ma/103052_logo2_2f41.jpg?1734485266" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="cn-widget j-device-i" style="display: none">
+                    <header class="w-hd">
+                        <h2 class="heading"><a href="https://i.4399.cn/mobile/"><i class="i-star"></i> 新游推荐</a></h2>
+                        <div class="action"> <a href="http://i.4399.cn/mobile/" mark="wap-m-index-new-more">更多 <i
+                                    class="i-arrow"></i></a> </div>
+                    </header>
+                    <section class="w-bd">
+                        <ul class="cn-itemlist" data-row="8">
+                            <li>
+                                <div class="in" marks="wap-m-index-new-game"> <a
+                                        href="https://i.4399.cn/mobile/171919.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="武林闲侠"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{$vo.title}">{$vo.title}</a> <a href="{随机栏目URL}" class="btn"
+                                        data-gid="171919" rel="nofollow" mark="wap-m-index-new-setup"
+                                        title="{$vo.title}">{$vo.title}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" marks="wap-m-index-new-game"> <a
+                                        href="https://i.4399.cn/mobile/171914.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="黑月Extend"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="171914"
+                                        rel="nofollow" mark="wap-m-index-new-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" marks="wap-m-index-new-game"> <a
+                                        href="https://i.4399.cn/mobile/171903.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="神角技巧"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="171903"
+                                        rel="nofollow" mark="wap-m-index-new-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" marks="wap-m-index-new-game"> <a
+                                        href="https://i.4399.cn/mobile/171796.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="数码宝贝:新世纪"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="171796"
+                                        rel="nofollow" mark="wap-m-index-new-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" marks="wap-m-index-new-game"> <a
+                                        href="https://i.4399.cn/mobile/171527.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="英雄联盟"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="171527"
+                                        rel="nofollow" mark="wap-m-index-new-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" marks="wap-m-index-new-game"> <a
+                                        href="https://i.4399.cn/mobile/171884.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="漫威对决"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="171884"
+                                        rel="nofollow" mark="wap-m-index-new-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" marks="wap-m-index-new-game"> <a
+                                        href="https://i.4399.cn/mobile/171844.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="哈利波特：魔法觉醒"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="171844"
+                                        rel="nofollow" mark="wap-m-index-new-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" marks="wap-m-index-new-game"> <a
+                                        href="https://i.4399.cn/mobile/171867.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="金铲铲之战"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="171867"
+                                        rel="nofollow" mark="wap-m-index-new-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="cn-widget" style="display: none;">
+                    <header class="w-hd">
+                        <h2 class="heading"><a href="http://www.4399.cn/zhuanqu/wap.html"><i class="i-psp"></i> 手游专区</a>
+                        </h2>
+                        <div class="action"> <a href="http://www.4399.cn/zhuanqu/wap.html">更多 <i
+                                    class="i-arrow"></i></a> </div>
+                    </header>
+                    <section class="w-bd">
+                        <ul class="cn-itemlist" data-row="8">
+                            <li> <a class="in" href="http://news.4399.com/aola/"> <span class="thumbnail"><img
+                                            src="{$vo.pic}" alt="奥拉星"></span> <span class="title">{$vo.postdate}</span>
+                                </a> </li>
+                            <li> <a class="in" href="http://m.news.4399.com/pubgsy/"> <span class="thumbnail"><img
+                                            src="{$vo.pic}" alt="和平精英"></span> <span class="title">和平精英</span> </a>
+                            </li>
+                            <li> <a class="in" href="http://m.news.4399.com/survive/"> <span class="thumbnail"><img
+                                            src="{$vo.pic}" alt="明日之后"></span> <span class="title">明日之后</span> </a>
+                            </li>
+                            <li> <a class="in" href="http://m.news.4399.com/wzlm/"> <span class="thumbnail"><img
+                                            src="{$vo.pic}" alt="王者荣耀"></span> <span class="title">王者荣耀</span> </a>
+                            </li>
+                            <li> <a class="in" href="http://m.news.4399.com/fzscjh/"> <span class="thumbnail"><img
+                                            src="{$vo.pic}" alt="方舟生存进化"></span> <span class="title">方舟生存进化</span> </a>
+                            </li>
+                            <li> <a class="in" href="http://m.news.4399.com/blzysy/"> <span class="thumbnail"><img
+                                            src="{$vo.pic}" alt="堡垒之夜"></span> <span class="title">堡垒之夜</span> </a>
+                            </li>
+                            <li> <a class="in" href="http://m.news.4399.com/cfsy/"> <span class="thumbnail"><img
+                                            src="{$vo.pic}" alt="穿越火线"></span> <span class="title">穿越火线</span> </a>
+                            </li>
+                            <li> <a class="in" href="http://m.news.4399.com/wdshijie/"> <span class="thumbnail"><img
+                                            src="{$vo.pic}" alt="我的世界"></span> <span class="title">我的世界</span> </a>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="cn-widget j-device-a" style="display: none">
+                    <header class="w-hd">
+                        <h2 class="heading"><a href="http://a.4399.cn/mobile/"><i class="i-wifi"></i> 热门网游</a></h2>
+                        <div class="action"> <a href="http://a.4399.cn/mobile/">更多 <i class="i-arrow"></i></a> </div>
+                    </header>
+                    <section class="w-bd">
+                        <ul class="cn-itemlist" data-row="8">
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/321652.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="黎明堡垒"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{$vo.title}">{$vo.title}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/56/23/a3/321652_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="黎明堡垒" class="j-download btn" data-id="321652"
+                                        data-name="黎明堡垒"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/56/23/a3/321652_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="321652"
+                                        data-downurl data-package="com.lmbl.im30.cn.m4399"
+                                        data-pic="https://f02.img4399.com/ma/321652_logo2_0a77.jpg?1734145036" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{$vo.title}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/201000.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="永劫无间手游"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/4a/ea/c3/201000_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="永劫无间手游" class="j-download btn" data-id="201000"
+                                        data-name="永劫无间手游"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/4a/ea/c3/201000_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="201000"
+                                        data-downurl data-package="com.netease.l22"
+                                        data-pic="https://f02.img4399.com/ma/201000_logo2_fc6b.jpg?1734335770" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/26444.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="造梦西游OL"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/56/4e/ed/26444_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="造梦西游OL" class="j-download btn" data-id="26444"
+                                        data-name="造梦西游OL"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/56/4e/ed/26444_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="26444"
+                                        data-downurl data-package="org.yjmobile.zmxy"
+                                        data-pic="https://f04.img4399.com/ma/26444_logo2_d6fc.jpg?1734332501" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/50024.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="火线精英OL"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/41/3b/80/50024_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="火线精英OL" class="j-download btn" data-id="50024"
+                                        data-name="火线精英OL"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/41/3b/80/50024_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="50024"
+                                        data-downurl data-package="air.FPS.MOBILE.fpsMProduct"
+                                        data-pic="https://f03.img4399.com/ma/50024_logo2_7038.jpg?1733972082" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/205085.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="星球:重启"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/6e/df/e1/205085_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="星球:重启" class="j-download btn" data-id="205085"
+                                        data-name="星球:重启"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/6e/df/e1/205085_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="205085"
+                                        data-downurl data-package="com.hermes.j1game.m4399"
+                                        data-pic="https://f02.img4399.com/ma/205085_logo2_187a.jpg?1734487062" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/147646.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="西普大陆"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/f4/25/1f/147646_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="西普大陆" class="j-download btn" data-id="147646"
+                                        data-name="西普大陆"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/f4/25/1f/147646_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="147646"
+                                        data-downurl data-package="com.ssjj.xp.m4399"
+                                        data-pic="https://f01.img4399.com/ma/147646_logo2_01d4.jpg?1734057163" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/96569.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="造梦西游外传"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/cf/6e/24/96569_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="造梦西游外传" class="j-download btn" data-id="96569"
+                                        data-name="造梦西游外传"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/cf/6e/24/96569_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="96569"
+                                        data-downurl data-package="com.zmsy.zmxywz.m4399"
+                                        data-pic="https://f03.img4399.com/ma/96569_logo2_05b6.jpg?1733971331" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in"> <a href="http://a.4399.cn/mobile/91371.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="造梦西游4手机版"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a
+                                        data-href="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/95/1e/4b/91371_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        rel="external nofollow" title="造梦西游4手机版" class="j-download btn" data-id="91371"
+                                        data-name="造梦西游4手机版"
+                                        data-dlurl="https://sj.img4399.com/dp/8.7.0.26/v3/gaosu/gaosu/95/1e/4b/91371_4399Game_8.7.0.26..5339.gaosu.414c.apk"
+                                        data-support_focus="0" data-status="1" data-price="0" data-gid="91371"
+                                        data-downurl data-package="org.cocos2dx.zmxy.m4399"
+                                        data-pic="https://f01.img4399.com/ma/91371_logo2_d989.jpg?1733971042" data-md5
+                                        data-channel data-version elementname="下载按钮"
+                                        elementcontent="m站首页游戏下载">{随机栏目}</a> </div>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="cn-widget j-device-i" style="display: none">
+                    <header class="w-hd">
+                        <h2 class="heading"><a href="https://i.4399.cn/mobile/"><i class="i-wifi"></i> 热门网游</a></h2>
+                        <div class="action"> <a href="http://i.4399.cn/mobile/" mark="wap-m-index-hotwy-more">更多 <i
+                                    class="i-arrow"></i></a> </div>
+                    </header>
+                    <section class="w-bd">
+                        <ul class="cn-itemlist" data-row="8">
+                            <li>
+                                <div class="in" mark="wap-m-index-hotwy-game"> <a
+                                        href="https://i.4399.cn/mobile/168849.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="龙之谷"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{$vo.title}">{$vo.title}</a> <a href="{随机栏目URL}" class="btn"
+                                        data-gid="168849" rel="nofollow" mark="wap-m-index-hotwy-setup"
+                                        title="{$vo.title}">{$vo.title}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hotwy-game"> <a
+                                        href="https://i.4399.cn/mobile/170609.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="元气封神"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="170609"
+                                        rel="nofollow" mark="wap-m-index-hotwy-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hotwy-game"> <a
+                                        href="https://i.4399.cn/mobile/154264.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="影之刃"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="154264"
+                                        rel="nofollow" mark="wap-m-index-hotwy-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hotwy-game"> <a
+                                        href="https://i.4399.cn/mobile/171275.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="坦克大决战"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="171275"
+                                        rel="nofollow" mark="wap-m-index-hotwy-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hotwy-game"> <a
+                                        href="https://i.4399.cn/mobile/167431.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="阴阳师"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="167431"
+                                        rel="nofollow" mark="wap-m-index-hotwy-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hotwy-game"> <a
+                                        href="https://i.4399.cn/mobile/169963.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="洛奇英雄传:永恒"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="169963"
+                                        rel="nofollow" mark="wap-m-index-hotwy-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hotwy-game"> <a
+                                        href="https://i.4399.cn/mobile/169668.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="楚乔传"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="169668"
+                                        rel="nofollow" mark="wap-m-index-hotwy-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                            <li>
+                                <div class="in" mark="wap-m-index-hotwy-game"> <a
+                                        href="https://i.4399.cn/mobile/169766.html" class="thumbnail"><img
+                                            src="{$vo.pic}" alt="罗小黑战记妖灵簿"></a> <a href="{随机栏目URL}" class="title"
+                                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="btn" data-gid="169766"
+                                        rel="nofollow" mark="wap-m-index-hotwy-setup" title="{随机栏目}">{随机栏目}</a> </div>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+            </section>
+            <section class="cn-widget">
+                <header class="w-hd">
+                    <h2 class="heading">{随机栏目}</h2>
+                </header>
+                <section class="w-bd">
+                    <nav class="clearfix cn-friendlink">
+                        <ul data-row="13">
+                            <li><a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+            <footer class="cn-footer"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>  <a href="{随机栏目URL}"
+                    title="{随机栏目}">{随机栏目}</a>
+                <div class="m_footer_tips">
+                    <p class="title">本公司产品适用10周岁以上玩家 <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></p>
+
+                    <p class="content"><span>抵制不良游戏，拒绝盗版游戏。</span><span>注意自我保护，谨防受骗上当。</span><br>
+                        <span>适度游戏益脑，沉迷游戏伤身。</span><span>合理安排时间，享受健康生活。</span>
+                    </p>
+
+                    <p class="title">纠纷处理(客服电话):400-683-4399 <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></p>
+
+                    <p class="content"><a
+                            href="https://beian.miit.gov.cn/#/Integrated/index"><span>ICP证:闽B2-20040099</span></a>&nbsp;<a
+                            href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>&nbsp;<span><a href="{随机栏目URL}"
+                                title="{随机栏目}">{随机栏目}</a></span></p>
+
+                    <p class="content"><span>Copyright©2004 - <span id="j-yearTime">2024</span>&nbsp;4399.cn All Rights
+                            Reserved.</span></p>
+
+                    <p class="content"><span>四三九九网络股份有限公司 版权所有</span></p>
+
+                    <p class="title"><a
+                            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35020302001613"><i>&nbsp;</i>闽公网安备
+                            35020302001613号</a></p>
+                    <script>
+                        var currentDate = new Date();
+                        var year = currentDate.getFullYear();
+                        document.getElementById("j-yearTime").innerText = year;
+                    </script>
+                </div>
+            </footer>
+            <div class="topic_bg j-topic_bg"></div>
+            <div class="topic_down j-topic_down"> <i class="close j-close"></i> <img src="{$vo.pic}" width="136" alt>
+                <p class="big">下载<span>4399游戏盒</span></p>
+                <p>{随机栏目}</p> <a class="j-topic_downbtn" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <div class="topic_bigimg j-topic_bigimg"> <img src="{$vo.pic}"> </div>
+        </div>
+    </div> <!--下载游戏盒弹窗-->
+    <div class="libao-dialog j-dldialog">
+        <div class="dialog-wrap">
+            <p class="txt">{随机栏目}</p>
+            <div class="btn clearfix"> <a class="cancel close j-libaoClose" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a class="confirm j-libaoConfirm" href="{随机栏目URL}" data-id="61241" title="{随机栏目}">{随机栏目}</a> </div> <a
+                class="closebtn j-libaoClose" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+        </div>
+    </div>
+    <script> var topicApiUrl = '';/*话题接口 ?n=20&id=x*/ var topicHistoryUrl = ''; var curHotIndex = 0; function getVersion() { var v = navigator.userAgent.match(/(Android)\s([\d\.]+)/); return v && v[2]; } var v_width, v_height; var HIGH_DOWNLOAD_WECHAT = "https://sj.img4399.com/v/8.7.0.26/4399Game_8.7.0.26..5339.newshd.4d1b.apk", HIGH_DOWNLOAD = "https://sj.img4399.com/v/8.7.0.26/4399Game_8.7.0.26..5339.gaosu.414c.apk"; document.addEventListener("DOMContentLoaded", function () { v_height = window.innerHeight || document.documentElement.clientHeight; v_width = window.innerWidth || document.documentElement.clientWidth; $(".j-libaoConfirm").on("click", function () { if (getVersion() && getVersion() < 4) { location.href = "http://sj2.img4399.com/v/2.9.3.2/4399Game_2.9.3.2.my4399.apk"; } else { document.location.href = $(this).attr("href"); } return false; }); /*直播数据刷新*/ function updateLive() { var t = +(new Date()); $.ajax({ url: "https://www.4399youpai.com/tv-hot.html?r=m", jsonp: "_callback_", dataType: "jsonp", success: function (result) { var result = result; if (result.code == 100) { var list = result.result.data; if (!(list && list.length > 0)) { $(".j-livepart").remove(); } var html = ""; for (var i in list) { var curItem = list[i]; if (i > 1) break; html += '<li>' + '<a href="' + curItem.url + '">' + '<div class="pic" style="background-image: url(' + curItem.logo + ')">' + '<div class="author_info">' + curItem.author + '</div>' + '<div class="watching-info">' + curItem.online_nums + '</div>' + '<div class="badge">直播</div>' + '</div>' + '<div class="info">' + '<div class="game_logo" style="background-image: url(' + curItem.game_logo + ')"></div>' + '<p class="game_name">' + curItem.game_name + '</p>' + '<p class="game_title">' + curItem.title + '</p>' + '</div>' + '</a>' + '</li>' } $(".j-livelist").html(html); } } }); $.getJSON("/index-getLivingNum.html?r=m", function (result) { if (result.code == 100) { $(".j-livenum").html('当前<span style="color:#e8b94d">' + result.result + '</span>个直播 <i class="i-arrow"></i>'); } }); } updateLive(); setInterval(updateLive, 60000); var target; if (Emt.isIDevice) { target = document.querySelectorAll(".j-device-i"); var i_home_url = 'http://i.4399.cn/'; if (location.protocol == 'https:') { i_home_url = 'https://i.4399.cn/'; } $(".j-giftmore").attr("href", i_home_url); $(".j-giftlist li").on("click", function () { location.href = i_home_url; }); } else { target = document.querySelectorAll(".j-device-a"); $(".j-giftmore").attr("href", "http://a.4399.cn/mobile/libao.html"); $(".j-giftlist li").on("click", function (e) { var id = $(this).attr("data-id"); AndroidConnect.launch('m4399://giftDetail?id=' + id, function () { $(".j-dldialog").show(); }); e.stopPropagation(); }); $(".m_download_btn").on("click", function () { var url = $(this).attr("data-a"); AndroidConnect.launch('m4399://launch?type=main', function () { location.href = url; }); }); $(".j-libaoClose").on("click", function () { $(".j-dldialog").hide(); }); } for (var i = 0; i < target.length; i++) { target[i].style.display = "block"; } setTimeout(function () { window.scrollTo(0, 1); }, 200); MPage.init(); }, false); var MPage = MPage || {}; MPage.getDataForWeixin = function (data) { var defaults = { appId: "wx9a1089ac593d752e",/*公众号id*/ img: "http://m.img4399.com/mobile/images/APP-icon.png",/*分享的图片*/ url: document.location.href,/*分享的地址*/ title: "推荐一个不错的苹果游戏门户：4399手机游戏",/*分享的标题*/ desc: "4399手机游戏是中国最专业的手机游戏门户,海量精品游戏免费下载,最全视频攻略秘籍,最新好玩的苹果游戏推荐。",/*分享信息描述，给朋友时需要*/ fakeid: "", callback: function () { } }; if (Emt.isAndroid) { defaults = { appId: "wx1131b46b69f840a5",/*公众号id*/ img: "http://m.img4399.com/mobile/images/APP-icon.png",/*分享的图片*/ url: document.location.href,/*分享的地址*/ title: "推荐一个不错的安卓游戏门户：4399手机游戏",/*分享的标题*/ desc: "4399手机游戏是中国最专业的手机游戏门户,海量精品游戏免费下载,最全视频攻略秘籍,最新好玩的安卓游戏推荐。",/*分享信息描述，给朋友时需要*/ fakeid: "", callback: function () { } }; } data = data || {}; for (var p in data) { if (data[p]) { defaults[p] = data[p]; } } return defaults; }; var dataForWeixin = MPage.getDataForWeixin();; (function () { var onBridgeReady = function () { WeixinJSBridge.on('menu:share:appmessage', function (argv) { dataForWeixin.callback('menu:share:appmessage'); WeixinJSBridge.invoke('sendAppMessage', { "appid": dataForWeixin.appId, "img_url": dataForWeixin.img, "img_width": "120", "img_height": "120", "link": dataForWeixin.url, "desc": dataForWeixin.desc, "title": dataForWeixin.title }, function (res) { dataForWeixin.callback('menu:share:appmessage'); }); }); WeixinJSBridge.on('menu:share:timeline', function (argv) { dataForWeixin.callback('menu:share:timeline'); WeixinJSBridge.invoke('shareTimeline', { "img_url": dataForWeixin.img, "img_width": "120", "img_height": "120", "link": dataForWeixin.url, "desc": dataForWeixin.desc, "title": dataForWeixin.title }, function (res) { }); }); WeixinJSBridge.on('menu:share:weibo', function (argv) { dataForWeixin.callback('menu:share:weibo'); WeixinJSBridge.invoke('shareWeibo', { "content": dataForWeixin.title, "url": dataForWeixin.url }, function (res) { dataForWeixin.callback('menu:share:weibo'); }); }); WeixinJSBridge.on('menu:share:facebook', function (argv) { dataForWeixin.callback('menu:share:facebook'); WeixinJSBridge.invoke('shareFB', { "img_url": dataForWeixin.img, "img_width": "120", "img_height": "120", "link": dataForWeixin.url, "desc": dataForWeixin.desc, "title": dataForWeixin.title }, function (res) { }); }); }; document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false); })(); </script>
+    <script type="text/javascript"
+        src="{$theme_path}/js/index.js?file=web%2Fmobile%2Fjs%2Fbase.min%2Ccn.js&amp;v=3458e8b.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/DownloadTips.js?3458e8b"></script>
+    <script type="text/javascript" src="{$theme_path}/js/bdtj.js?3458e8b"></script>
+    <script type="text/javascript" src="{$theme_path}/js/swiper.min.js?3458e8b"></script>
+    <script> $("body").delegate('.hashover', 'touchstart', function (e) { $(this).addClass('ctl-touch'); }).delegate('.hashover', 'touchend', function (e) { $(this).removeClass('ctl-touch'); }); $('#j-search-btn').on('click', function () { var Aurl = 'http://a.4399.cn/mobile/search.html'; var Iurl = 'https://i.4399.cn/mobile/search.html'; if (Emt.isIDevice) { location.assign(Iurl); } else { location.assign(Aurl); } }); $('.submit_btn').on('click', function () { event.preventDefault(); var search_txt = $(this).prev('.input').find('input').val(); var key = encodeURIComponent(search_txt); var Aurl = 'http://a.4399.cn/mobile/search.html' + '#?key=' + key; var Iurl = 'https://i.4399.cn/mobile/search.html' + '#?key=' + key; if (Emt.isIDevice) { location.assign(Iurl); } else { location.assign(Aurl); } }); if (Emt.isIDevice) { $("#j-active-list").hide(); } if (Emt.isAndroid) { new Swiper('.swiper-container', { slidesPerView: 'auto', loopAdditionalSlides: 0, speed: 600, touchRatio: 0.6, longSwipesRatio: 0.1, setWrapperSize: true }) } /* 下载 var seoData = {"zhuanqu":[{"id":"1919","block_key":"cnWapHomeZhuanqu","title":"奥拉星","url":"http:\/\/news.4399.com\/aola\/","display_order":"760","style":"","custom_id":"0","custom_time":"0","pic_url":"http:\/\/f03.img4399.com\/ma~a_111068~78x78?1568941704","description":"","update_time":"1568947645"},{"id":"1923","block_key":"cnWapHomeZhuanqu","title":"和平精英","url":"http:\/\/m.news.4399.com\/pubgsy\/","display_order":"750","style":"","custom_id":"0","custom_time":"0","pic_url":"http:\/\/newsimg.5054399.com\/uploads\/userup\/1905\/0Q4224N596.jpg","description":"","update_time":"1557296614"},{"id":"1924","block_key":"cnWapHomeZhuanqu","title":"明日之后","url":"http:\/\/m.news.4399.com\/survive\/","display_order":"720","style":"","custom_id":"0","custom_time":"0","pic_url":"http:\/\/newsimg.5054399.com\/uploads\/userup\/1903\/ertong_07eef4ce598aff6e1cc7f33aa80648a5.jpg","description":"","update_time":"1551509709"},{"id":"1918","block_key":"cnWapHomeZhuanqu","title":"王者荣耀","url":"http:\/\/m.news.4399.com\/wzlm\/","display_order":"610","style":"","custom_id":"0","custom_time":"0","pic_url":"http:\/\/f04.img4399.com\/ma~a_85014~78x78?1459155746","description":"","update_time":"1551508462"},{"id":"1920","block_key":"cnWapHomeZhuanqu","title":"方舟生存进化","url":"http:\/\/m.news.4399.com\/fzscjh\/","display_order":"500","style":"","custom_id":"0","custom_time":"0","pic_url":"http:\/\/newsimg.5054399.com\/uploads\/userup\/1903\/ertong_42154193963dd7b18f8b1301532f133c.jpg","description":"","update_time":"1551509906"},{"id":"1917","block_key":"cnWapHomeZhuanqu","title":"堡垒之夜","url":"http:\/\/m.news.4399.com\/blzysy\/","display_order":"420","style":"","custom_id":"0","custom_time":"0","pic_url":"http:\/\/newsimg.5054399.com\/uploads\/userup\/1903\/ertong_1fc009f131bff3d26ec9ff91c432ce9a.jpg","description":"","update_time":"1551509955"},{"id":"1921","block_key":"cnWapHomeZhuanqu","title":"穿越火线","url":"http:\/\/m.news.4399.com\/cfsy\/","display_order":"400","style":"","custom_id":"0","custom_time":"0","pic_url":"http:\/\/newsimg.5054399.com\/uploads\/userup\/1905\/0Q425255322.jpg","description":"","update_time":"1557296747"},{"id":"1922","block_key":"cnWapHomeZhuanqu","title":"我的世界","url":"http:\/\/m.news.4399.com\/wdshijie\/","display_order":"300","style":"","custom_id":"0","custom_time":"0","pic_url":"http:\/\/newsimg.5054399.com\/uploads\/userup\/1904\/2Q0524322H.jpg","description":"","update_time":"1556419972"}],"article":[{"title":"生死狙击小说：战火雄心","url":"http:\/\/my.4399.com\/book\/books-info-id-12947&utm_source=cnwap","type":"热门"},{"title":"绝地求生《吃鸡游戏剩者为王》","url":"http:\/\/my.4399.com\/book\/books-info-id-15730&utm_source=cnwap","type":"热门"},{"title":"奥义联盟同人《奥义学院》","url":"http:\/\/my.4399.com\/book\/books-info-id-9815&utm_source=cnwap","type":"推荐"},{"title":"王者荣耀小说之末世生存","url":"http:\/\/my.4399.com\/book\/books-info-id-14457&utm_source=cnwap","type":"推荐"},{"title":"坦克堂同人《星海坦途》","url":"http:\/\/my.4399.com\/book\/books-info-id-9700&utm_source=cnwap","type":"推荐"}],"special":{"id":"840","title":"机甲游戏合辑","info_wap":"宇宙机器人？我们也申请出战！","pic":"http:\/\/f02.img4399.com\/ma~1630_241213164428_IiMA.jpeg","url":"http:\/\/a.4399.cn\/mobile\/special-id-840.html"},"hotTag":[{"title":"吃鸡","tid":151,"red":1,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-151.html"},{"title":"闯关","tid":10,"red":0,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-10.html"},{"title":"手指游戏","tid":32,"red":0,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-32.html"},{"title":"男生精选","tid":91,"red":0,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-91.html"},{"title":"女生精选","tid":14,"red":0,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-14.html"},{"title":"装扮","tid":106,"red":0,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-106.html"},{"title":"赛车","tid":5,"red":0,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-5.html"},{"title":"中文游戏","tid":108,"red":1,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-108.html"},{"title":"跑酷","tid":1,"red":0,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-1.html"},{"title":"精选网游","tid":56,"red":1,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-56.html"},{"title":"格斗","tid":2,"red":0,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-2.html"},{"title":"密室逃脱","tid":127,"red":0,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-127.html"},{"title":"非联网","tid":146,"red":1,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-146.html"},{"title":"枪战","tid":3,"red":0,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-3.html"},{"title":"独立游戏","tid":152,"red":1,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-152.html"},{"title":"英雄","tid":55,"red":0,"url":"http:\/\/a.4399.cn\/mobile\/tag-id-55.html"}],"newGame":{"list":[{"title":"深渊战记","id":324968,"package":"com.syzjyyh.m4399","url":"http:\/\/a.4399.cn\/mobile\/324968.html","downurl":"","md5":"901a876eb2ca52cc1204d321f4cbd6c1","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/84\/b0\/dc\/324968_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f01.img4399.com\/ma\/324968_logo2_a3fc.jpg?1734405679","status":"1","price":"0"},{"title":"绝区零","id":235905,"package":"com.miHoYo.Nap","url":"http:\/\/a.4399.cn\/mobile\/235905.html","downurl":"","md5":"3b2c4f6b662c792b66574992187e6111","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/94\/42\/77\/235905_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f01.img4399.com\/ma\/235905_logo2_a3dc.jpg?1734487987","status":"1","price":"0"},{"title":"像素射击","id":307499,"package":"com.joydo.xssj.m4399","url":"http:\/\/a.4399.cn\/mobile\/307499.html","downurl":"","md5":"89aed1a1c5a6ef453090724b9b3a01c5","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/b9\/8f\/0c\/307499_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f03.img4399.com\/ma\/307499_logo2_ab8b.jpg?1733972116","status":"1","price":"0"},{"title":"梦想家园","id":260305,"package":"com.pop.game.dreamhome.m4399","url":"http:\/\/a.4399.cn\/mobile\/260305.html","downurl":"","md5":"bf1f497ec241762affc2ac9ed9ce2cdd","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/e2\/04\/ea\/260305_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f03.img4399.com\/ma\/260305_logo2_9bdf.jpg?1733970595","status":"1","price":"0"},{"title":"保卫萝卜4","id":174903,"package":"com.feiyu.luobo4.m4399","url":"http:\/\/a.4399.cn\/mobile\/174903.html","downurl":"","md5":"acfc95ed8d396dad7d6c706644e366e9","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/19\/80\/72\/174903_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f02.img4399.com\/ma\/174903_logo2_85cf.jpg?1733966016","status":"1","price":"0"},{"title":"弹力果冻","id":116324,"package":"com.ginicat.sweet.m4399","url":"http:\/\/a.4399.cn\/mobile\/116324.html","downurl":"","md5":"528952006d99b927cf390e22942e5f08","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/c5\/82\/5a\/116324_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f04.img4399.com\/ma\/116324_logo2_d8fa.jpg?1733907759","status":"1","price":"0"},{"title":"节奏大师","id":27425,"package":"com.tencent.game.rhythmmaster","url":"http:\/\/a.4399.cn\/mobile\/27425.html","downurl":"","md5":"036a96157d1af8fafe84facd2e546d28","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/56\/ae\/f1\/27425_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f01.img4399.com\/ma\/27425_logo2_4f15.jpg?1733916476","status":"1","price":"0"},{"title":"伊洛纳","id":103052,"package":"com.leiting.elona.m4399","url":"http:\/\/a.4399.cn\/mobile\/103052.html","downurl":"","md5":"b33b79ee2944cbd3f00220726ad6b681","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/56\/89\/54\/103052_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f03.img4399.com\/ma\/103052_logo2_2f41.jpg?1734485266","status":"1","price":"0"}],"more":"http:\/\/a.4399.cn\/mobile\/","tags":[{"title":"塔防","url":"http:\/\/a.4399.cn\/mobile\/tag-id-8.html"},{"title":"双人","url":"http:\/\/a.4399.cn\/mobile\/tag-id-65.html"}]},"onlineGame":{"list":[{"title":"黎明堡垒","id":321652,"package":"com.lmbl.im30.cn.m4399","url":"http:\/\/a.4399.cn\/mobile\/321652.html","downurl":"","md5":"73e2965c1877a1bd6711a9081f4c380e","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/56\/23\/a3\/321652_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f02.img4399.com\/ma\/321652_logo2_0a77.jpg?1734145036","status":"1","price":"0"},{"title":"永劫无间手游","id":201000,"package":"com.netease.l22","url":"http:\/\/a.4399.cn\/mobile\/201000.html","downurl":"","md5":"8a11f3a80b2d79755b179b2d4620cff0","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/4a\/ea\/c3\/201000_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f02.img4399.com\/ma\/201000_logo2_fc6b.jpg?1734335770","status":"1","price":"0"},{"title":"造梦西游OL","id":26444,"package":"org.yjmobile.zmxy","url":"http:\/\/a.4399.cn\/mobile\/26444.html","downurl":"","md5":"f385f0ffc119d8981b59da1fef4295f7","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/56\/4e\/ed\/26444_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f04.img4399.com\/ma\/26444_logo2_d6fc.jpg?1734332501","status":"1","price":"0"},{"title":"火线精英OL","id":50024,"package":"air.FPS.MOBILE.fpsMProduct","url":"http:\/\/a.4399.cn\/mobile\/50024.html","downurl":"","md5":"12dee3041377c1576432e8bfc22067d2","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/41\/3b\/80\/50024_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f03.img4399.com\/ma\/50024_logo2_7038.jpg?1733972082","status":"1","price":"0"},{"title":"星球:重启","id":205085,"package":"com.hermes.j1game.m4399","url":"http:\/\/a.4399.cn\/mobile\/205085.html","downurl":"","md5":"b7ac15406e2ba4ab7b1a679bfbaadbb8","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/6e\/df\/e1\/205085_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f02.img4399.com\/ma\/205085_logo2_187a.jpg?1734487062","status":"1","price":"0"},{"title":"西普大陆","id":147646,"package":"com.ssjj.xp.m4399","url":"http:\/\/a.4399.cn\/mobile\/147646.html","downurl":"","md5":"7b326f91229f9b581a39efa739328267","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/f4\/25\/1f\/147646_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f01.img4399.com\/ma\/147646_logo2_01d4.jpg?1734057163","status":"1","price":"0"},{"title":"造梦西游外传","id":96569,"package":"com.zmsy.zmxywz.m4399","url":"http:\/\/a.4399.cn\/mobile\/96569.html","downurl":"","md5":"20f58d96bc8b8fa6d2eb388555b5cb78","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/cf\/6e\/24\/96569_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f03.img4399.com\/ma\/96569_logo2_05b6.jpg?1733971331","status":"1","price":"0"},{"title":"造梦西游4手机版","id":91371,"package":"org.cocos2dx.zmxy.m4399","url":"http:\/\/a.4399.cn\/mobile\/91371.html","downurl":"","md5":"f428653a7a83297a3ca1c466b27b49da","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/95\/1e\/4b\/91371_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f01.img4399.com\/ma\/91371_logo2_d989.jpg?1733971042","status":"1","price":"0"}],"more":"http:\/\/a.4399.cn\/mobile\/","tags":[{"title":"卡牌","url":"http:\/\/a.4399.cn\/mobile\/tag-id-21.html"},{"title":"即时","url":"http:\/\/a.4399.cn\/mobile\/tag-id-119.html"}]},"nav":[{"id":"5913","block_key":"cnWapNavA","title":"分类","url":"http:\/\/a.4399.cn\/mobile\/category.html","display_order":"100","style":"หมวดหมู่","custom_id":"0","custom_time":"0","pic_url":"","description":"Classify","update_time":"1502959141"},{"id":"5915","block_key":"cnWapNavA","title":"新游","url":"https:\/\/a.4399.cn\/mobile\/new.html","display_order":"80","style":"เกมล่าสุด","custom_id":"0","custom_time":"0","pic_url":"","description":"Latest Games","update_time":"1709810074"}],"navStyle":50,"hotGame":{"list":[{"title":"航海王壮志雄心-预下载","id":321078,"package":"com.tencent.hhw","url":"http:\/\/a.4399.cn\/mobile\/321078.html","downurl":"","md5":"8ea3128879910899a513253b19c0afed","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/b8\/8b\/26\/321078_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f01.img4399.com\/ma\/321078_logo2_cfad.jpg?1734402978","status":"1","price":"0"},{"title":"蛋仔派对-乐园嘉年华","id":183610,"package":"com.netease.party.m4399","url":"http:\/\/a.4399.cn\/mobile\/183610.html","downurl":"","md5":"226ae260e9eb7d71921d9cdd063e4e88","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/ef\/a8\/8e\/183610_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f01.img4399.com\/ma\/183610_logo2_7c5a.jpg?1734350402","status":"1","price":"0"},{"title":"喵星大作战","id":321213,"package":"com.zeptolab.cats.china.m4399","url":"http:\/\/a.4399.cn\/mobile\/321213.html","downurl":"","md5":"3b7b67443122b766a5cb20ac4c87d088","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/2a\/5c\/f0\/321213_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f01.img4399.com\/ma\/321213_logo2_b390.jpg?1733881499","status":"1","price":"0"},{"title":"第五人格-登录送十连","id":107763,"package":"com.netease.dwrg.m4399","url":"http:\/\/a.4399.cn\/mobile\/107763.html","downurl":"","md5":"81193b5ef7b442b990375b571f8bf8e1","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/c1\/79\/d7\/107763_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f02.img4399.com\/ma\/107763_logo2_f687.jpg?1734339551","status":"1","price":"0"},{"title":"奇葩战斗家-争渡赛季","id":115384,"package":"com.leiting.daluandou.m4399","url":"http:\/\/a.4399.cn\/mobile\/115384.html","downurl":"","md5":"a637b86ae38a6ab6c396a18864f0efce","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/ee\/f8\/ac\/115384_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f03.img4399.com\/ma\/115384_logo2_a940.jpg?1733910340","status":"1","price":"0"},{"title":"苍翼:混沌效应-双人联机","id":234182,"package":"com.actgames.bbee","url":"http:\/\/a.4399.cn\/mobile\/234182.html","downurl":"","md5":"a8a539f058917f3bdb3b6d7b3c7bdcd4","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/1f\/c2\/fe\/234182_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f01.img4399.com\/ma\/234182_logo2_04f3.jpg?1733909881","status":"1","price":"0"},{"title":"宝可梦大集结","id":145585,"package":"com.tencent.pokemonunite.cn","url":"http:\/\/a.4399.cn\/mobile\/145585.html","downurl":"","md5":"ace8e4d9d9f1a925a0e488aff40e68a8","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/1c\/28\/cf\/145585_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f03.img4399.com\/ma\/145585_logo2_7429.jpg?1734429030","status":"1","price":"0"},{"title":"三国杀OL-史诗皮肤上新","id":105522,"package":"com.sanguosha.sgsolly.m4399","url":"http:\/\/a.4399.cn\/mobile\/105522.html","downurl":"","md5":"dea0a474b08a3ce59da9a0c0defb70d2","dl_url":"https:\/\/sj.img4399.com\/dp\/8.7.0.26\/v3\/gaosu\/gaosu\/34\/df\/36\/105522_4399Game_8.7.0.26..5339.gaosu.414c.apk","dl_paid":"0","dl_price":"0.00","pic":"https:\/\/f02.img4399.com\/ma\/105522_logo2_4f69.jpg?1734315928","status":"1","price":"0"}],"more":"http:\/\/a.4399.cn\/mobile\/","tags":[{"title":"动漫","url":"http:\/\/a.4399.cn\/mobile\/tag-id-123.html"},{"title":"迷你游戏","url":"http:\/\/a.4399.cn\/mobile\/tag-id-105.html"}]}}; console.log("fdffgsf:",seoData); */ DownloadTips.init(); window.JssdkinitData = { mediaId: "media-53178c025df24bf6", auto: { click: true, stay: true, }, showLog: true, }; window.JssdkallVariable = { "landing_page_url": window.location.href, }; </script>
+    <script src="{$theme_path}/js/vendors.js?3458e8b"></script>
+    <script src="{$theme_path}/js/commJs.js?3458e8b"></script>
+</body>

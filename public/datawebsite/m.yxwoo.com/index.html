@@ -1,0 +1,421 @@
+<head>
+    <meta charset="UTF-8">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <link rel="stylesheet" href="{$theme_path}/css/swiper4.css">
+    <link rel="stylesheet" href="{$theme_path}/css/base.css">
+    <link rel="stylesheet" href="{$theme_path}/css/common.css">
+    <script type="text/javascript" src="{$theme_path}/js/jq1.9.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/swiper4.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/lazyload.js"></script>
+</head>
+
+<body>
+    <div id="warp">
+        <script src="{$theme_path}/js/device.js"></script>
+        <script type="text/javascript">if (!device.mobile()) {
+                var u = window.location.href; u = u.replace(/:\/\/m./g, "://www.")
+                if (window.location.href !== u) { window.location = u; }
+            }
+        </script>
+        <div class="header">
+            <div class="header_top box_flex">
+                <a href="" class="logo"><img data-original="{$theme_path}/images/logo.png"></a>
+                <div class="search box_flex_1">
+                    <div class="form">
+                        <input type="text" placeholder="请输入您想搜索的内容">
+                        <div class="buttom ico_img2"><a>{随机栏目}</a></div>
+                    </div>
+                </div>
+                <div class="numbox"></div>
+            </div>
+            <div class="swiper_nav">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide on"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+                        <div class="swiper-slide"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+                        <div class="swiper-slide"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+                        <div class="swiper-slide"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+                        <div class="swiper-slide"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+                        <div class="swiper-slide"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+                        <div class="swiper-slide"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+                        <div class="swiper-slide"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="burger" style="display: none;">
+                <div class="nav_">
+                    <ul class="box_flex" data-row="5">
+                        {loop type="arclist" row="6" tpl="" islist=""}
+                        <li class="box_flex_1"><a href="{$vo.url}">
+                                <div class="ico ico1"></div> <span>{$vo.title}</span>
+                            </a></li>
+                        {/loop}
+                    </ul>
+                </div>
+                <div class="item box_flex">
+                    <div class="bt">
+                        <span><i>游戏类型</i></span>
+                    </div>
+                    <div class="ul_ box_flex_1">
+                        <ul class="clearfix" data-row="11">
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item box_flex">
+                    <div class="bt bt2">
+                        <span><i>软件类型</i></span>
+                    </div>
+                    <div class="ul_ box_flex_1">
+                        <ul class="clearfix" data-row="14">
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="swiper_lunbox">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" style="height: 160px">
+                        {loop type="arclist" row="6" tpl="" islist=""}
+                        <div class="swiper-slide">
+                            <a href="{$vo.url}">
+                                <img src="{$vo.pic}" style="height: 150px">
+                                <p><span>{$vo.title}</span></p>
+                            </a>
+                        </div>
+                        {/loop}
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                </div>
+            </div>
+            <div class="item_warp Min_box">
+                <ul class="clearfix" data-row="4">
+                    {loop type="arclist" row="4" tpl="" islist=""}
+                    <li><a href="{随机栏目URL}">
+                            <div class="img"><i class="ico_img2 ico1"></i></div>
+                            <p>{随机栏目}</p>
+                        </a> </li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="Min_box">
+                <!-- <div class="Min1">
+                    <div class="title">
+                        <div class="bt4"><i class="ico1"></i> <h1>{$keywords}</h1></div>
+                        <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+                    </div>-->
+                <div class="Min1">
+                    <div class="swiper-container swiper_scrollbar">
+                        <div class="swiper-wrapper" style="height: 100px;">
+                            {loop type="arclist" row="20" tpl="" islist=""}
+                            <div class="swiper-slide">
+                                <a href="{$vo.url}" class="lis">
+                                    <div class="img"><img src="{$vo.pic}" data-original="{$vo.pic}" alt />
+                                    </div>
+                                    <p class="name">{$vo.title}</p>
+                                </a>
+                            </div>
+                            {/loop}
+                        </div>
+                    </div>
+                </div>
+                <div class="Min3">
+                    <div class="title">
+                        <div class="bt4"><i class="ico2"></i> 装机必备</div>
+                        <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+                    </div>
+                    <ul class="ul" data-row="6">
+                        {loop type="arclist" row="20" tpl="" islist=""}
+                        <li class="box_flex">
+                            <a href="{$vo.url}" class="img"><img data-original="{$vo.pic}" src="{$vo.pic}"></a>
+                            <div class="infor box_flex_1">
+                                <a href="{$vo.url}" class="name" title="{$vo.title}">{$vo.title}</a>
+                                <div class="bq">
+                                    <p>{随机关键词}</p>
+                                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p>
+                                </div>
+                            </div>
+                            <a href="{随机栏目URL}" class="btn" title="详情">详情</a>
+                        </li>
+                        {/loop}
+                    </ul>
+                </div>
+                <div class="switchbox">
+                    <div class="title">
+                        <div class="bt4"><i class="ico3"></i>{$keywords} 最近更新</div>
+                        <div class="lab switchlab">
+                            <a class="a on">{随机栏目}</a>
+                            <a class="a">{随机栏目}</a>
+                        </div>
+                    </div>
+                    <div class="switchitem">
+                        <div class="Min1 item_">
+                            <ul class="clearfix" data-row="12">
+                                {loop type="arclist" row="20" tpl="" islist=""}
+                                <li>
+                                    <a href="{$vo.url}" class="img"><img data-original="{$vo.pic}" />
+                                        <p>{$vo.title}</p>
+                                    </a>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                        <div class="Min1 item_ hide">
+                            <ul class="clearfix" data-row="12">
+                                {loop type="arclist" row="20" tpl="" islist=""}
+                                <li>
+                                    <a href="{$vo.url}" class="img"><img data-original="{$vo.pic}" />
+                                        <p>{$vo.title}</p>
+                                    </a>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="Min2 ">
+                    <div class="title">
+                        <div class="bt4"><i class="ico4"></i> 游戏分类</div>
+                        <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+                    </div>
+                    <div class="clearfix item">
+                        {loop type="arclist" row="10" tpl="" islist=""}
+                        <a class="lis box_flex" href="{$vo.url}">
+                            <div class="box_flex_1">
+                                <div class="name">{$vo.title}</div>
+                                <p>{随机数字}款游戏</p>
+                            </div>
+                            <div class="icoitem">
+                                <div class="ico ico7" title="音乐视频"></div>
+                            </div>
+                        </a>
+                        {/loop}
+                    </div>
+                </div>
+                <div class="Min2 ">
+                    <div class="title">
+                        <div class="bt4"><i class="ico5"></i> 热门合集</div>
+                        <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+                    </div>
+                    <ul class="clearfix ul bglabecolor" data-row="16">
+                        <li class="li2"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li4"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li3"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li5"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li6"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li4"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li2"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li4"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li2"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li6"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li4"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li3"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li5"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li6"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li5"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        <li class="li3"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                    </ul>
+                </div>
+                <div class="Min2 ">
+                    <div class="title">
+                        <div class="bt4"><i class="ico6"></i>{$keywords} 软件分类</div>
+                        <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+                    </div>
+                    <div class="clearfix item">
+                        {loop type="arclist" row="10" tpl="" islist=""}
+                        <a class="lis box_flex" href="{$vo.url}">
+                            <div class="box_flex_1">
+                                <div class="name">{$vo.title}</div>
+                                <p>{随机数字}款游戏</p>
+                            </div>
+                            <div class="icoitem">
+                                <div class="ico ico7" title="音乐视频"></div>
+                            </div>
+                        </a>
+                        {/loop}
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="bt4"><i class="ico7"></i> 热门专区</div>
+                    <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+                </div>
+                <div class="Min1">
+                    <div class="swiper-container swiper_scrollbar">
+                        <div class="swiper-wrapper" style="height: 100px;">
+                            {loop type="arclist" row="20" tpl="" islist=""}
+                            <div class="swiper-slide">
+                                <a href="{$vo.url}" class="lis">
+                                    <div class="img"><img src="{$vo.pic}" data-original="{$vo.pic}" alt />
+                                    </div>
+                                    <p class="name">{$vo.title}</p>
+                                </a>
+                            </div>
+                            {/loop}
+                        </div>
+                    </div>
+                    <div class="clearfix ul">
+                        {loop type="arclist" row="10" tpl="" islist=""}
+                        <div class="li"><a href="{$vo.url}">
+                                <div class="img"><img src="{$vo.pic}" data-original="{$vo.pic}" alt /></div>
+                                <p class="name">{$vo.title}</p>
+                            </a></div>
+                        {/loop}
+                    </div>
+                </div>
+                <div class="Min4 switchbox">
+                    <div class="tilebt">
+                        <div class="switchlab lab">
+                            <a class="a on">{随机栏目}</a>
+                            <a class="a ">{随机栏目}</a>
+                            <a class="a ">{随机栏目}</a>
+                        </div>
+                        <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+                    </div>
+                    <div class="switchitem">
+                        <div class="item_">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    {loop type="arclist" row="50" tpl="" islist=""}
+                                    <div class="swiper-slide">
+                                        <a href="{$vo.url}" class="list">
+                                            <div class="num ico_img2">{$vo.i}</div>
+                                            <div class="img"><img data-original="{$vo.pic}" alt></div>
+                                            <div class="name">{$vo.title}</div>
+                                            <p>热度{随机数字}</p>
+                                            <div class="btn">详情</div>
+                                        </a>
+                                    </div>
+                                    {/loop}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_ hide">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    {loop type="arclist" row="50" tpl="" islist=""}
+                                    <div class="swiper-slide">
+                                        <a href="{$vo.url}" class="list">
+                                            <div class="num ico_img2">{$vo.i}</div>
+                                            <div class="img"><img data-original="{$vo.pic}" alt></div>
+                                            <div class="name">{$vo.title}</div>
+                                            <p>热度{随机数字}</p>
+                                            <div class="btn">详情</div>
+                                        </a>
+                                    </div>
+                                    {/loop}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_ hide">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    {loop type="arclist" row="50" tpl="" islist=""}
+                                    <div class="swiper-slide">
+                                        <a href="{$vo.url}" class="list">
+                                            <div class="num ico_img2">{$vo.i}</div>
+                                            <div class="img"><img data-original="{$vo.pic}" alt></div>
+                                            <div class="name">{$vo.title}</div>
+                                            <p>热度{随机数字}</p>
+                                            <div class="btn">详情</div>
+                                        </a>
+                                    </div>
+                                    {/loop}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Min5">
+                    <div class="tab_bt clearfix">
+                        <a class="on"><i class="ico_img ico1"></i>游戏攻略</a>
+                        <a> <i class="ico_img ico2"></i>软件教程</a>
+                    </div>
+                    <div class="ul_box">
+                        <ul data-row="9">
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <a href="{随机栏目URL}" class="more_link" title="{随机栏目}">{随机栏目}</a>
+                        </ul>
+                        <ul class="hide" data-row="9">
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <a href="{随机栏目URL}" class="more_link" title="{随机栏目}">{随机栏目}</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="Min_box">
+                <div class="title">
+                    <div class="bt2">{$keywords} 友情链接</div>
+                </div>
+                <div class="YQlink">
+                    <div class="but_link">
+                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_top">
+                <a class="logo"><img data-original="{$theme_path}/images/logo.png" src="{$theme_path}/images/logo.png"> </a>
+                <div class="box_flex_1 text">
+                    <p>{随机栏目}</p>
+                    <p><a href="{随机栏目URL}" style="color: #fff" rel="nofollow" title="{随机栏目}">{随机栏目}</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="QZ-up "></div>
+        <script type="text/javascript" src="{$theme_path}/js/base.js?v1.0"></script>
+    </div>
+</body>

@@ -1,0 +1,790 @@
+<head>
+    <meta charset="utf-8">
+    <title>{$toptitle}</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport"
+        name="viewport">
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta content="always" name="referrer">
+    <script type="text/javascript" src="{$theme_path}/js/bundle.js?202412160034"></script>
+    <link rel="stylesheet" href="{$theme_path}/css/viewer.css">
+    <script src="{$theme_path}/js/viewer.js"></script>
+    <style>
+        #con-soft__content video {
+            width: 100%;
+        }
+    </style>
+    <meta name="applicable-device" content="mobile">
+    <link rel="miphtml" href="{$theme_path}/css/1232760.htm">
+    <meta http-equiv="Cache-Control" content="no-transform ">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/SoftDetail.css">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/font_1471340715_136742.css">
+    <script type="text/javascript" src="{$theme_path}/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/swiper-3.3.1.jquery.min.js"></script>
+    <script src="{$theme_path}/js/c.js?appid=1575241911194827"></script>
+    <script src="{$theme_path}/js/abadownload.js"></script>
+    <script src="{$theme_path}/js/xingzhi.js?b9fa" id="xingzhi-js" type="text/javascript" async></script>
+    <meta name="pageClass" content="192-193-202">
+</head>
+
+<body>
+    <header id="header" class="cl">
+        <div class="cl">
+            <div id="search" class="pull-left pos-r">
+                <form method="get" action="/search/" accept-charset="utf-8">
+                    <input class="search-input" type="text" name="scon" placeholder="请输入关键字">
+                    <input type="submit" value class="search-button"> <i class="icon-sousuo"></i>
+                    <input type="hidden" name="sid" id="headSearchType" value="6">
+                    <div class="cl"></div>
+                </form>
+            </div>
+        </div>
+        <div class="pull-left" id="logo">
+            <a href="/">
+                <!-- <div class="logo__img">
+                    <span class="hide">华军软件园</span>
+                </div> -->
+            </a>
+        </div>
+    </header>
+    <nav id="nav" class="side-down">
+        <ul class="cl" data-row="6">
+            <li>
+                <a href="/" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="_6rd5aiqfj1v"></div>
+    <script type="text/javascript" src="{$theme_path}/js/cm.js" async="async" defer="defer">     </script>
+    <article class="box pt-10">
+        <section id="con-soft__info" class="con-soft_info">
+            <dl class="cl">
+                <dt><img src="{$pic}" alt="115生活"></dt>
+                <dd>
+                    <h1>{$keywords}</h1>
+                    <h2>{$title}</h2>
+                    <ul class="cl  provider " data-row="6">
+                        <li>{randstr type="2" num="2"/}.{randstr type="2" num="2"/} M</li>
+                        <li>语言：简体中文</li>
+                        <li>类别： <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li>系统：Andriod</li>
+                        <li>厂商：<span class="cs">{随机关键词}</span></li>
+                        <li class="drop-down"><i></i></li>
+                    </ul>
+                </dd>
+            </dl>
+            <div class="neirongye_xzxx">
+                <div class="label"> <em class="icon checkhover"></em>使用手机助手 </div>
+                <a id="download" style="display:inline;" rel="nofollow"> <button
+                        class="neirongye_xzxx_btn">普通下载</button> </a><a id="spdownload"
+                    onclick="_hmt.push(['_trackEvent','soft','spdownload','spdownload']);" style="display:none;">
+                    <button class="neirongye_xzxx_btn">
+                        <p>安全下载</p>
+                        <p>{随机数字}手机助手</p>
+                    </button> </a>
+            </div>
+        </section>
+        <style>
+            .plate_form {
+                margin: 10px;
+                padding: 0 0.625rem;
+                line-height: 20px;
+            }
+
+            .plate_form a {
+                text-decoration: underline;
+                color: #0984c5;
+            }
+        </style> <!-- 多端软件 -->
+        <section id="con-soft__intro">
+            <div class="bd" id="leftmd">
+                <div id="bigImgModel">
+                    <div class="swiper-container" style="height: 200px;">
+                        <div class="swiper-wrapper">
+                            {loop type="arclist" row="4" tpl="" islist=""}
+                            <div class="swiper-slide"> <a href="{$vo.url}">
+                                    <img src="{$vo.pic}" alt="{$vo.title}" itemprop="thumbnail"> </a> </div>
+                            {/loop}
+                        </div>
+                    </div>
+                    <div id="con-soft__content" class="pt-10 slideup">
+                        {$body}
+                    </div>
+                    <p id="con-soft__content__bottom" data-num="0"> 版本： 
+                        <span>{randstr type="2" num="2"/}.{randstr type="2" num="3"/} 官方版</span> | 更新时间：
+                        <span>{$postdate}</span>
+                    </p>
+                </div>
+            </div>
+        </section> <!-- 详情页广告位置 -->
+        <div class="detail_contentad"></div>
+        <section id="con-soft__morning">
+            <div class="hd">
+                <h3>{随机栏目}</h3>
+            </div>
+            <div class="bd">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                <dl class="cl">
+                    <a href="{$vo.url}">
+                        <dt class>
+                            <img src="{$vo.pic}">
+                        </dt>
+                        <dd>
+                            <ul class="cl" data-row="3">
+                                <li>
+                                    <h2>{$vo.title}</h2>
+                                </li>
+                                <li>
+                                    <span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/} M</span>
+                                    <span class="pipe">/</span>
+                                    <span>{随机关键词}</span>
+                                    <span class="pipe">/</span>
+                                    <span>{$vo.postdate}</span>
+                                </li>
+                                <li>
+                                    <img src="{$theme_path}/images/xx-4.png">
+                                </li>
+                            </ul>
+                        </dd>
+                        <i class="icon-xiazai"></i>
+                    </a>
+                </dl>
+                {/loop}
+            </div>
+        </section>
+        <section id="con-soft__morning">
+            <div class="hd">
+                <h3>{随机栏目}</h3>
+            </div>
+            <div class="bd">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                <dl class="cl">
+                    <a href="{$vo.url}">
+                        <dt class>
+                            <img src="{$vo.pic}">
+                        </dt>
+                        <dd>
+                            <ul class="cl" data-row="3">
+                                <li>
+                                    <h2>{$vo.title}</h2>
+                                </li>
+                                <li>
+                                    <span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/} M</span>
+                                    <span class="pipe">/</span>
+                                    <span>{随机关键词}</span>
+                                    <span class="pipe">/</span>
+                                    <span>{$vo.postdate}</span>
+                                </li>
+                                <li>
+                                    <img src="{$theme_path}/images/xx-4.png">
+                                </li>
+                            </ul>
+                        </dd>
+                        <i class="icon-xiazai"></i>
+                    </a>
+                </dl>
+                {/loop}
+            </div>
+        </section>
+        <script>             (function () { var s = "_" + Math.random().toString(36).slice(2); document.write('<div id="' + s + '"></div>'); (window.slotbydup = window.slotbydup || []).push({ id: '4042237', container: s, size: '20,6', display: 'inlay-fix' }); })();         </script>
+        <script src="{$theme_path}/js/om.js"></script>
+        <section class="xgBox qiehuanBox xgwzQH">
+            <div class="hd">
+                <ul class="cl pos-r" data-row="2">
+                    <li class="on" onclick value="leftmd"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li onclick value="leftmd"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li> <i
+                        class="icon-shu pos-a"></i>
+                </ul>
+            </div>
+            <div class="bd">
+                <div class="xgWzbox qiehuanItm on">
+                    <div>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                    </div>
+                </div>
+                <div class="xgWzbox qiehuanItm">
+                    <div>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                        <p><a href="{随机内容URL}" title="{随机标题}">{随机标题}</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="xgBox">
+            <div class="hd">
+                <h3 onclick value="leftmd">{$keywords} {随机栏目}</h3>
+            </div>
+            <div class="bd">
+                <div class="plbox">
+                    <div class="pllist">
+                        <ul data-row="3">
+                            {loop type="arclist" row="5" tpl="" islist=""}
+                            <li>
+                                <div class="cominfo"> <span class="level">{$vo.i}</span> <span
+                                        class="user">{随机关键词}</span> <span class="utime">{$vo.postdate}</span>
+                                </div>
+                                <div class="plcontent"> <span>{$vo.title}</span> </div>
+                            </li>
+                            {/loop}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="con-soft__boutique">
+            <div class="hd">
+                <h3>{随机栏目}</h3>
+            </div>
+            <div class="bd pt-10">
+                <ul class="cl" data-row="10">
+                    {loop type="arclist" row="100" tpl="" islist=""}
+                    <li> <a href="{$vo.url}" style="height: 70px;"> <img src="{$vo.pic}" alt="{$vo.title}">
+                            <p>{$vo.title}</p>
+                        </a> </li>
+                    {/loop}
+                </ul>
+            </div>
+        </section>
+        <section class="xgBox qiehuanBox xgztQH">
+            <div class="hd">
+                <ul class="cl pos-r" data-row="2">
+                    <li class="on" value="leftmd"> <a href="javascript:void(0);" title="{随机栏目}">{随机栏目}</a> </li>
+                    </li>
+                    <li value="leftmd"> <a href="javascript:void(0);" title="{随机栏目}">{随机栏目}</a> </li> <i
+                        class="icon-shu pos-a"></i>
+                </ul>
+            </div>
+            <div class="bd">
+                <div class="xgWzbox qiehuanItm on">
+                    <div class="hoxGjc">
+                        <ul class="clearfix" data-row="9">
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="xgWzbox qiehuanItm">
+                    <div class="hoxGjc">
+                        <ul class="clearfix" data-row="9">
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="smsearch">
+            <form action="rom=wm683728" method="get"> <input type="text" class="inputk" name="q" value> <input
+                    class="inputb" type="submit" value="全网搜索"> </form>
+        </section>
+    </article> <!-- 百度网盟广告 底部横幅 -->
+    <div class="_6du594vk1lf"></div> <!-- 百度网盟广告 底部横幅 -->
+    <style>
+        .m-click-show {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: none;
+            overflow: hidden;
+            z-index: 99999;
+        }
+
+        .m-black-bg {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.7;
+            display: block;
+            overflow: hidden;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 10;
+        }
+
+        .m-click-show .m-show-cont {
+            width: 94%;
+            height: auto;
+            max-height: 94%;
+            background: #fff;
+            border-radius: 6px;
+            padding: 0 0 62px;
+            box-sizing: border-box;
+            position: fixed;
+            left: 3%;
+            top: 15%;
+            display: block;
+            overflow-x: hidden;
+            z-index: 20;
+        }
+
+        .m-click-show .m-show-cont .g-show-title {
+            width: auto;
+            height: auto;
+            line-height: 24px;
+            font-size: 15px;
+            font-weight: normal;
+            color: #333;
+            margin: 0px 12px 0;
+            display: block;
+            overflow: hidden;
+            border-bottom: 1px solid #eee;
+            padding: 2px 0 8px 0;
+        }
+
+        .m-click-show .m-show-cont .g-show-title p {
+            width: 100%;
+            height: auto;
+            float: left;
+            display: inline;
+            overflow: hidden;
+        }
+
+        .m-click-show .m-show-cont .g-show-title b {
+            width: auto;
+            height: 16px;
+            line-height: 16px;
+            font-size: 14px;
+            font-weight: normal;
+            color: #999;
+            margin: 5px 0 0;
+            float: left;
+            display: inline;
+            overflow: hidden;
+        }
+
+        .m-click-show .m-show-cont .g-show-title b i {
+            width: 16px;
+            height: 16px;
+            border: 1px solid #ccc;
+            float: left;
+            margin: 0 10px 0 0;
+            display: inline;
+        }
+
+        .m-click-show .m-show-cont .g-show-title b i:before {
+            content: "";
+            transform: rotate(-45deg) translate(-2px, 6px);
+            display: block;
+            overflow: hidden;
+            width: 2px;
+            height: 6px;
+            background: #777;
+        }
+
+        .m-click-show .m-show-cont .g-show-title b i:after {
+            content: "";
+            transform: rotate(45deg) translate(3px, -9px);
+            display: block;
+            overflow: hidden;
+            width: 2px;
+            height: 11px;
+            background: #777;
+        }
+
+        .m-click-show .m-show-cont .g-show-title em {
+            float: left;
+            height: 16px;
+            line-height: 16px;
+            font-size: 14px;
+            font-weight: normal;
+            color: #999;
+            float: left;
+            margin: 5px 0 0 10px;
+            display: inline;
+            overflow: hidden
+        }
+
+        .m-click-show .m-show-cont .g-show-title span {
+            color: #008ee1;
+            font-weight: normal;
+        }
+
+        .m-click-show .m-show-cont .g-show-title a {
+            float: right;
+            font-size: 12px;
+            font-weight: normal;
+            color: #999;
+            padding: 0 10px 0 0;
+            display: inline;
+            overflow: hidden;
+        }
+
+        .m-click-show .m-show-cont .m-close-btn {
+            width: auto;
+            height: auto;
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            display: block;
+            overflow: hidden;
+            position: absolute;
+            right: 6px;
+            top: 0;
+            z-index: 30;
+            cursor: pointer;
+        }
+
+        .m-click-show .m-show-cont .m-show-ul {
+            width: 100%;
+            height: auto;
+            display: block;
+            overflow: hidden;
+        }
+
+        .m-click-show .m-show-cont .m-show-ul li {
+            width: 50%;
+            height: auto;
+            float: left;
+            margin: 12px 0 0;
+            display: inline;
+            overflow: hidden;
+        }
+
+        .m-click-show .m-show-cont .m-show-ul li a {
+            width: 100%;
+            height: auto;
+            display: -webkit-box;
+            overflow: hidden;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .m-click-show .m-show-cont .m-show-ul li a img {
+            width: 60px;
+            height: 60px;
+            display: block;
+            overflow: hidden;
+        }
+
+        .m-click-show .m-show-cont .m-show-ul li a p {
+            width: auto;
+            height: auto;
+            padding: 0 0 0 10px;
+            box-sizing: border-box;
+            display: block;
+            overflow: hidden;
+            -webkit-box-flex: 1;
+        }
+
+        .m-click-show .m-show-cont .m-show-ul li a p strong {
+            width: 100%;
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            overflow: hidden;
+        }
+
+        .m-click-show .m-show-cont .m-show-ul li a p em {
+            width: 100%;
+            height: 20px;
+            line-height: 20px;
+            font-size: 12px;
+            font-weight: normal;
+            color: #B5B5B5;
+            display: block;
+            overflow: hidden;
+        }
+
+        .m-click-show .m-show-cont .m-show-ul li a p b {
+            width: 44px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 2px;
+            background: #70E2BA;
+            font-size: 14px;
+            font-weight: normal;
+            color: #fff;
+            text-align: center;
+            display: block;
+            overflow: hidden;
+        }
+
+        .m-hideshow-top {
+            width: 100%;
+            height: auto;
+            padding: 0 0 10px 0;
+            display: block;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .m-hideshow-top li {
+            width: 25%;
+            margin-top: 17px;
+            float: left;
+            text-align: center;
+        }
+
+        .m-hideshow-top li a img {
+            width: 62px;
+            height: 62px;
+            border-radius: 6px;
+            margin: 0 auto;
+            display: block;
+            overflow: hidden;
+        }
+
+        .m-hideshow-top li a strong {
+            width: 70px;
+            line-height: 14px;
+            height: 14px;
+            font-size: 14px;
+            color: #151415;
+            font-weight: normal;
+            text-align: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: block;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+
+        .m-hideshow-top li b {
+            width: 48px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 13px;
+            font-weight: normal;
+            color: #41C1FA;
+            border: 1px #41C1FA solid;
+            border-radius: 3px;
+            margin: 5px auto 0 auto;
+            text-align: center;
+            display: block;
+            overflow: hidden;
+        }
+    </style>
+    <div class="m-click-show">
+        <div class="m-show-cont"><strong class="g-show-title">
+                <p{$keywords} >大家<span>还喜欢</span>这些：</p>
+            </strong><b class="m-close-btn" href="javascript:;">+</b>
+            <ul class="m-hideshow-top" data-row="5">
+                {loop type="arclist" row="10" tpl="" islist=""}
+                <li> <a href="{$vo.url}"><img src="{$vo.pic}">
+                        <p><strong>{$vo.title}</strong><b>下载</b></p>
+                    </a> </li>
+                {/loop}
+            </ul>
+        </div> <b class="m-black-bg"></b>
+    </div>
+    <style type="text/css">
+        .n-click-show {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: none;
+            overflow: hidden;
+            z-index: 99999;
+        }
+
+        .n-clickwp {
+            width: 94%;
+            height: auto;
+            max-height: 94%;
+            background: #fff;
+            border-radius: 6px;
+            box-sizing: border-box;
+            position: fixed;
+            left: 3%;
+            top: 45%;
+            display: block;
+            overflow-x: hidden;
+            z-index: 20;
+        }
+
+        .n-clickwp p {
+            padding: 0 10px;
+        }
+
+        .n-clickwp p:first-child {
+            border-bottom: 1px solid #ccc;
+            height: 50px;
+            line-height: 50px;
+            font-size: 13px;
+        }
+
+        .n-clickwp p:last-child {
+            height: 30px;
+            line-height: 30px;
+            text-align: right;
+            color: #4760ec;
+            font-size: 15px;
+        }
+
+        .n-clickwp .down_mas {
+            font-weight: bold;
+            margin-left: 20px;
+            margin-right: 10px;
+            color: #4760ec;
+        }
+    </style>
+    <div class="n-click-show">
+        <div class="n-clickwp">
+            <p>{随机栏目}</p>
+            <p><span class="hid_mas">取消</span><a class="down_mas" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></p>
+        </div> <b class="m-black-bg"></b>
+    </div>
+    <div id="foot-nav">
+        <ul class="cl" data-row="3">
+            <li> <a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a> </li>
+            <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+            <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+        </ul>
+    </div>
+    <footer> Copyright © 1997- 2024 {$keywords}. </footer>
+    <script src="{$theme_path}/js/do_viewer.js"></script>
+    <script src="{$theme_path}/js/stop_img_jump.js"></script>
+    <script src="{$theme_path}/js/downza-m_home.js"></script>
+    <script>
+        $('.show_relname_mas').click(function () { $('.n-click-show').fadeIn("fast"); })
+        $('.hid_mas,.down_mas,.m-black-bg').click(function () { $('.n-click-show').fadeOut("fast"); })
+    </script>
+    <script type="text/javascript">         //屏蔽处理         
+        var idate = new Date().getTime();
+        var iid = 'hh' + idate;
+        $(document).ready(function () {
+            var baiduspider = function () {
+                var u = navigator.userAgent;
+                return u.indexOf('Baiduspider') > -1
+            }();
+            $("em.icon").removeClass("checkhover");
+            $("#spdownload").show();
+            $("#download").hide();
+            $("#pc_android").hide();
+            $(".text1").hide();
+            $(".text2").show();
+            $("em.icon").click(function () {
+                if ($(this).hasClass("checkhover")) {
+                    // 未勾选                  
+                    $(this).removeClass("checkhover");
+                    $("#download").hide();
+                    $("#spdownload").show();
+                    $("#" + iid).show();
+                    $(".text1").hide();
+                    $(".text2").show();
+                    $('#normal-down').hide();
+                    $('#zhushou').show();
+                } else {
+                    $(this).addClass("checkhover");
+                    $("#spdownload").hide(); $("#" + iid).hide();
+                    $("#download").show(); $(".text2").hide();
+                    $(".text1").show(); $('#normal-down').show();
+                    $('#zhushou').hide();
+                }
+            });
+        });   
+    </script>
+    <script>
+        $(".hid_mas,.down_mas").on('click', function (event) {
+            if ($(this).attr('href')) {
+                $(".g-show-title p").html("大家<span>还下载了</span>这些：")
+            } else {
+                $(".g-show-title p").html("该软件未实名，为您<span>推荐</span>这些：")
+            }
+            $(".m-click-show").fadeIn("fast");
+        }); $(".m-close-btn,.m-black-bg,.m-queding").click(function () { $(".m-click-show").fadeOut("fast") })
+        var storage = {
+            set: function (key, value) { sessionStorage.setItem(key, JSON.stringify(value)); }, get: function (key) {
+                return JSON.parse(sessionStorage.getItem(key));
+            }, remove: function (key) { sessionStorage.removeItem(key); }
+        };
+        var softid = 1232760; var softtitle = "115生活"; var laiyuan = (function () {
+            var ref = document.referrer;
+            if (ref.indexOf("baidu.com") > -1) { return "baidu" } else if (ref.indexOf("so.com") > -1) { return "360" } else { return "" }
+        })();         // 下载器统计         
+        var nowtime = new Date().getFullYear() + "" + new Date().getMonth() + 1 + "" + new Date().getDate();
+        var softidArr = storage.get(nowtime) ? storage.get(nowtime).softidArr : [];
+        $("#download").on("click", function () {
+            var iid = softid + "_1";
+            if ($.inArray(iid, softidArr) < 0) {
+                softidArr.push(softid + "_1");
+                storage.set(nowtime, { "softidArr": softidArr }); $.ajax({
+                    type: "GET",
+                    url: "/api/viewclick/" + softid + "/normal/202", data: {}, dataType: "json",
+                    success: function (data) { }
+                });
+            }
+        })
+        $("#spdownload").on("click", function () {
+            var iid = softid + "_2";
+            if ($.inArray(iid, softidArr) < 0) {
+                softidArr.push(softid + "_2");
+                storage.set(nowtime, { "softidArr": softidArr }); $.ajax({
+                    type: "GET", url: "/api/viewclick/" + softid + "/special/202",
+                    data: {}, dataType: "json", success: function (data) {
+                    }
+                });
+            }
+        })
+    </script>
+    <script>         var device = navigator.userAgent.toLowerCase();
+        var bIsIOS = device.indexOf('iphone') !== -1 || device.indexOf('ipad') !== -1;
+        var bIsAndroid = device.indexOf('android') !== -1; if (['azsoft', 'azgame'].indexOf('azsoft') !== -1 && bIsIOS) {
+            $(".ts_ios").show(); $(".tx_text").hide();
+
+        } else if (['iossoft', 'iosgame'].indexOf('azsoft') !== -1 && bIsAndroid) { $(".ts_android").show(); } else {
+            $(".ts_pc").show(); if (bIsIOS) {
+                $(".ts_pc_ios").show();
+
+            } else { $(".ts_pc_android").show(); }
+        }     </script>
+</body>

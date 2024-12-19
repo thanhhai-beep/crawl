@@ -1,0 +1,442 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="wap-font-scale" content="no">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link rel="stylesheet" href="{$theme_path}/css/base_2.0.css?v=2">
+    <link rel="stylesheet" href="{$theme_path}/css/comment2.0.css?v=1">
+    <link rel="stylesheet" href="{$theme_path}/css/swiper4.css">
+    <script src="{$theme_path}/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <a href="https://appdown.3dmgame.com/sdm-app/sdmgamewz.apk" target="_blank" class="app-downtop">
+        <!--<img src="{$vo.pic}" alt>-->
+    </a>
+    <script type="text/javascript">
+        $(function () {
+            if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                $(".app-downtop").attr('href', 'https://apps.apple.com/app/apple-store/id1662451876?pt=118907887&ct=20240708wzzy&mt=8');
+            }
+        });
+    </script>
+    <div id="content">
+        <script src="{$theme_path}/js/img.js"></script>
+        <div class="header_v2">
+            <div class="top">
+                <a href="{随机栏目URL}" class="logo" title="{随机栏目}">{随机栏目}</a>
+                <div class="rcont">
+                    <a href="" class="btn azh"><span>手机客户端</span></a>
+
+                    <div class="meun" onclick="$('.header_v2,.header_v2 .meun').toggleClass('on');"></div>
+                </div>
+                <a href="{随机栏目URL}" class="ico_calendar" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <div class="box_b">
+                <div class="nav">
+                    {loop type="catelog" row="7" tpl="" islist=""}
+                    <a href="{$vo.url}"><span>{$vo.title}</span></a>
+                    {/loop}
+                </div>
+            </div>
+            <div class="box_a">
+                <div class="nav">
+                    {loop type="catelog" row="7" tpl="" islist=""}
+                    <a href="{$vo.url}"><span>{$vo.title}</span></a>
+                    {/loop}
+                </div>
+                <div class="search_a">
+                    <form action="/" method="get" class="search_box">
+                        <input type="text" maxlength="20" class="ssk" onblur="if (this.value=='') this.value=''" value
+                            this.style.color="#000" onfocus="if (this.value!='') this.value=''" name="keyword">
+                        <input type="hidden" value="4" name="type" id="type">
+                        <input type="hidden" name="subsearch" value="1">
+                        <input class="ssqd" type="submit" value>
+                    </form>
+                    <div class="landing">
+                        <div class="no_logged">
+                            <a href="{随机栏目URL}" onclick="openlogin()" title="{随机栏目}">{随机栏目}</a>
+                            <span></span>
+                            <a href="{随机栏目URL}" onclick="openregister()" title="{随机栏目}">{随机栏目}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--轮播-->
+        <div class="Min_swiper">
+            <div class="swiper-container" style="height: 200px">
+                <div class="swiper-wrapper">
+                    {loop type="arclist" row="7" tpl="" islist=""}
+                    <div class="swiper-slide">
+                        <a href="{$vo.url}"><img src="{$vo.pic}">
+                            <div class="text">
+                                <p>{$vo.title}</p>
+                            </div>
+                        </a>
+                    </div>
+                    {/loop}
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+            </div>
+        </div>
+
+        <!--nav-->
+        <div class="Min_bj Min_nav mt_30" style="height: 100px">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    {loop type="catelog" row="5" tpl="" islist=""}
+                    <div class="swiper-slide"><a href="{$vo.url}">
+                            <div class="ico ico1"></div>
+                            <p>{$vo.title}</p>
+                        </a></div>
+                    {/loop}
+                </div>
+            </div>
+            <div class="bt_tj">
+                <h1><a href="{随机栏目URL}" class="bt_a" title="{$keywords}">{$keywords}</a></h1>
+                <div class="bt_b">
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- 最新原创热门 -->
+        <div class="Min_bj tab_wrap">
+            <div class="tabhd">
+                <span class="on">最新</span>
+                <span>原创</span>
+                <span>热门</span>
+            </div>
+            <div class="tabbd">
+                <!-- 最新 -->
+                <div class="list_tj">
+                    {loop type="arclist" row="10" tpl="" islist=""}
+                    <div class="lis">
+                        <div class="wp_a">
+                            <a class="tx"><img src="{$vo.pic}" alt><span>陶笛</span></a>
+                            <div class="time">24分钟之前</div>
+                        </div>
+                        <div class="wp_b">
+                            <div class="txt">
+                                <a href="{$vo.url}" class="bt" title="{$vo.title}">{$vo.title}</a>
+                                <div class="info">
+                                    <div class="bq">单机</div>
+                                    <a class="pl"><i class="icon ico_pl"></i><span>{$vo.hits}</span></a>
+                                </div>
+                            </div>
+                            <a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt></a>
+                        </div>
+                    </div>
+                    {/loop}
+                </div>
+
+                <!-- 原创 -->
+                <div class="list_tj">
+                    {loop type="arclist" row="10" tpl="" islist=""}
+                    <div class="lis selectpost">
+                        <div class="wp_a">
+                            <a class="tx"><img src="{$vo.pic}" alt><span>陶笛</span></a>
+                            <div class="time">24分钟之前</div>
+                        </div>
+                        <div class="wp_b">
+                            <div class="txt">
+                                <a href="{$vo.url}" class="bt" title="{$vo.title}">{$vo.title}</a>
+                                <div class="info">
+                                    <div class="bq">单机</div>
+                                    <a class="pl"><i class="icon ico_pl"></i><span>{$vo.hits}</span></a>
+                                </div>
+                            </div>
+                            <a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt></a>
+                        </div>
+                    </div>
+                    {/loop}
+                </div>
+
+                <!-- 热门 -->
+                <div class="list_tj">
+                    {loop type="arclist" row="10" tpl="" islist=""}
+                    <div class="lis">
+                        <div class="wp_a">
+                            <a class="tx"><img src="{$vo.pic}" alt><span>陶笛</span></a>
+                            <div class="time">24分钟之前</div>
+                        </div>
+                        <div class="wp_b">
+                            <div class="txt">
+                                <a href="{$vo.url}" class="bt" title="{$vo.title}">{$vo.title}</a>
+                                <div class="info">
+                                    <div class="bq">单机</div>
+                                    <a class="pl"><i class="icon ico_pl"></i><span>{$vo.hits}</span></a>
+                                </div>
+                            </div>
+                            <a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt></a>
+                        </div>
+                    </div>
+                    {/loop}
+                </div>
+
+            </div>
+        </div>
+        <div style="width:100%;height:auto;overflow: hidden;  margin:10px auto ;position: relative">
+            <script>img100(75);</script>
+            <i
+                style="width:26px;height:15px;position:absolute;left:0;bottom:0;background:url(https://img.3dmgame.com/uploads/images/thumbnews/20240718/1721316721_760045.png);"></i>
+        </div>
+
+        <!--即将上市-->
+        <div class="Min_bj ">
+            <div class="title">
+                <div class="bt">即将上市</div>
+            </div>
+            <div class="newgame">
+                {loop type="arclist" row="6" tpl="" islist=""}
+                    <div class="item">
+                        <span class="date">{$vo.postdate}</span>
+                        <div class="ct">
+                            <a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt></a>
+                            <div class="info">
+                                <a href="{随机栏目URL}" class="bt" title="{随机栏目}">{随机栏目}</a>
+                                <p>{随机栏目}</p>
+                                <ul class="tag" data-row="1">
+                                    <li>{$vo.title}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {/loop}
+            </div>
+        </div>
+
+        <!--游戏在线玩-->
+        <div class="Min_bj">
+            <div class="title">
+                <div class="bt">游戏在线玩</div>
+                <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <div class="play_item">
+                {loop type="arclist" row="4" tpl="" islist=""}
+                <div class="lis">
+                    <div class="img"><a href="{$vo.url}"><img src="{$vo.pic}" alt="猫狩纪"></a></div>
+                    <div class="txt">
+                        <a href="{url}" class="bt" title="{随机栏目}">{随机栏目}</a>
+                        <span class="tag">已有 24887 人试玩</span>
+                    </div>
+                    <a href="{随机栏目URL}" class="downl" target="_blank" title="{随机栏目}">{随机栏目}</a>
+                </div>
+                {/loop}
+            </div>
+        </div>
+
+        <!--APP推荐-->
+        <div class="Min_bj">
+            <div class="title">
+                <div class="bt">最新资源</div>
+                <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <div class="Min10">
+                <ul data-row="6">
+                    {loop type="arclist" row="6" tpl="" islist=""}
+                    <li class="box_flex">
+                        <a href="{$vo.url}" class="box_flex_1 a" title="{$vo.title}">{$vo.title}</a>
+                        <span>{$vo.postdate}</span>
+                    </li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+
+        <!--近期大作-->
+        <div class="Min_bj">
+            <div class="title">
+                <div class="bt">近期大作</div>
+            </div>
+            <div class="near_future">
+                {loop type="arclist" row="4" tpl="" islist=""}
+                <div class="item">
+                    <a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt></a>
+                    <div class="info">
+                        <a href="{$vo.url}" class="bt" title="{$vo.title}">{$vo.title}</a>
+                        <ul class="list" data-row="3">
+                            <li>{$vo.title}</li>
+                    {$vo.hits}    <li>类型：
+                                探险 解谜 剧情 潜行 </li>
+                            <li>语言：简中 | 英文 | 多国</li>
+                        </ul>
+                        <div class="btn">
+                            <a href="{随机栏目URL}" class="zq" title="{随机栏目}">{随机栏目}</a>
+                        </div>
+                    </div>
+                    <div class="score">
+                        <span>评分</span>
+                        <p>{随机栏目}</p>
+                    </div>
+                </div>
+                {/loop}
+            </div>
+        </div>
+
+        <!--每日娱乐-->
+        <div class="Min_bj">
+            <div class="title">
+                <div class="bt">每日娱乐</div>
+            </div>
+            <div class="list_tj">
+                {loop type="arclist" row="10" tpl="" islist=""}
+                <div class="lis selectpost">
+                    <div class="wp_a">
+                        <a class="tx"><img src="{$vo.pic}" alt><span>陶笛</span></a>
+                        <div class="time">24分钟之前</div>
+                    </div>
+                    <div class="wp_b">
+                        <div class="txt">
+                            <a href="{$vo.url}" class="bt" title="{$vo.title}">{$vo.title}</a>
+                            <div class="info">
+                                <div class="bq">单机</div>
+                                <a class="pl"><i class="icon ico_pl"></i><span>{$vo.hits}</span></a>
+                            </div>
+                        </div>
+                        <a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt></a>
+                    </div>
+                </div>
+                {/loop}
+            </div>
+        </div>
+
+
+        <div style="width:100%;height:auto;overflow: hidden;  position: relative">
+            <script>img100(81);</script>
+            <i
+                style="width:26px;height:15px;position:absolute;left:0;bottom:0;background:url(https://img.3dmgame.com/uploads/images/thumbnews/20240718/1721316721_760045.png);"></i>
+        </div>
+        <footer>
+            <a href="{随机栏目URL}" class="bot_logo" title="{随机栏目}">{随机栏目}</a>
+            <div class="bot">
+                <a href="https://m.3dmgame.com/" class="home"><i></i><span>首页</span></a>
+                <a href="https://m.3dmgame.com/s/about.html" class="about"><i></i><span>关于我们</span></a>
+
+                <a href="https://apps.apple.com/app/apple-store/id1662451876?pt=118907887&amp;ct=20240228pcdl&amp;mt=8"
+                    class="Phone"><i></i><span>手机客户端</span></a>
+
+                <a href="javascript:void(0)" class="up"><i></i><span>顶部</span></a>
+            </div>
+        </footer>
+        <script src="{$theme_path}/js/lazyload.js"></script>
+        <script src="{$theme_path}/js/common.js"></script>
+        <div style="display: none;">
+            <script>
+                var _hmt = _hmt || [];
+                (function () {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?2928eda95c76ee6f72654d0cc245074c";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+        </div>
+        <script src="{$theme_path}/js/user.js?v=12061"></script>
+        <script src="{$theme_path}/js/TCaptcha.js"></script>
+        <div id="my_login_form" class="login_wrap" style="display: none;">
+            <div class="form_wrap login" style="display: none">
+                <div class="title">账号登录</div>
+                <div class="form_box">
+                    <ul class="inpu_lis" data-row="2">
+                        <li>
+                            <input id="loginname" name="username" type="text" value tabindex="1" class="name" size="30"
+                                autocomplete="off" placeholder="请输入手机号码">
+                        </li>
+                        <li>
+                            <div class="ico-pwd"></div>
+                            <input id="loginpassword" name="passwd" type="password" tabindex="2" class="password"
+                                size="30" value placeholder="密码">
+                        </li>
+                    </ul>
+                    <div class="submit" onclick="login_submit()">登录</div>
+                </div>
+                <div class="btnwrap">
+                    <a href="{随机栏目URL}" class="registered_btn" onclick="openregister()" title="{随机栏目}">{随机栏目}</a>
+                    <a href="{随机栏目URL}" class="reset_btn" title="{随机栏目}">{随机栏目}</a>
+                </div>
+                <div class="other_login">
+                    <div class="txt">使用第三方账号登录</div>
+                    <div class="btn_wrap">
+                        <span class="qq" onclick="qq_login()"><i></i></span>
+                        <span class="sina" onclick="sina_login()"><i></i></span>
+                        <span class="wx" onclick="wechat_login()"><i></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form_wrap registered">
+                <div class="title">账号注册</div>
+                <div class="form_box">
+                    <ul class="inpu_lis" data-row="5">
+                        <li>
+                            <select id="areacode" name="areacode"></select>
+                        </li>
+                        <li>
+                            <input id="mobile" name="mobile" type="text" tabindex="1" class="name" size="30"
+                                autocomplete="off" value placeholder="请输入手机号码">
+                        </li>
+                        <li>
+                            <div class="ico-pwd"></div>
+                            <input id="regpasswd" name="regpasswd" type="password" tabindex="2" class="password"
+                                size="30" value placeholder="请输入密码（6-18位字母、数字、符号）">
+                        </li>
+                        <li>
+                            <div class="ico-pwd"></div>
+                            <input id="checkpasswd" name="checkpasswd" type="password" tabindex="3" class="password2"
+                                size="30" value placeholder="确认密码" fwin="login">
+                        </li>
+                        <li class="yzm_item">
+                            <input id="validate" name="validate" value requiredtitle="输入验证码" type="text" class="yzm-c"
+                                maxlength="16" placeholder="验证码">
+                            <div class="time " id="TencentCaptcha" data-appid="2072025837"
+                                data-cbfn="callback_regcaptcha">获取验证码</div>
+                        </li>
+                    </ul>
+                    <div class="rule_wrap">
+                        <div class="ico_check"></div>
+                        <input id="rule" name="rule" value type="checkbox" autocomplete="off" class="rule common_chk"
+                            checked="checked">
+                        <span>我已阅读并接受</span>
+                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                    </div>
+                    <div class="submit gray" onclick="reg_submit()">注册</div>
+                </div>
+                <div class="other_login">
+                    <div class="txt">使用第三方账号登录</div>
+                    <div class="btn_wrap">
+                        <span class="qq" onclick="qq_login()"><i></i></span>
+                        <span class="sina" onclick="sina_login()"><i></i></span>
+                        <span class="wx" onclick="wechat_login()"><i></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?e2cb760323737cbff1b11c0436ef9629";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+        <script src="{$theme_path}/js/app_cookies_alert.js?v=1206"></script>
+    </div>
+    <script type="text/javascript" src="{$theme_path}/js/commentlist.js"></script>
+    <script src="{$theme_path}/js/swiper4.js"></script>
+    <script src="{$theme_path}/js/comment2.0.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?5b37e4fb704e30e8f24a925d530b7afa";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>

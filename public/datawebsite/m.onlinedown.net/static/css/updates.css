@@ -1,0 +1,110 @@
+.m-coll {
+  position: relative;
+  font-size: 0;
+}
+
+.m-coll .m-coll-item {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.m-coll .m-coll-left {
+  width: 112px;
+  margin-right: 24px;
+}
+
+.m-coll .m-coll-left .item-nav {
+  display: block;
+  width: 100%;
+  height: 38px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 38px;
+  text-align: center;
+  color: #323232;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  box-shadow: 0px 9px 10px 0px rgba(174, 174, 174, 0.03);
+  background: #fff;
+}
+
+.m-coll .m-coll-left .item-nav.z-cur {
+  color: #4182E1;
+}
+
+.m-coll .m-coll-right {
+  width: 1060px;
+  min-height: 694px;
+  opacity: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 0px 4px 24px 0px rgba(209, 204, 255, 0.12);
+}
+
+.m-coll .m-coll-right table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.m-coll .m-coll-right thead tr {
+  height: 54px;
+  line-height: 54px;
+  border-bottom: 1px solid #eee;
+}
+
+.m-coll .m-coll-right thead th {
+  text-align: center;
+  font-size: 16px;
+  color: #969799;
+  border-bottom: 1px solid #eee;
+}
+
+
+.m-coll .m-coll-right tbody tr {
+  height: 54px;
+  line-height: 54px;
+  background: #fff;
+}
+
+.m-coll .m-coll-right tbody tr:nth-child(even) {
+  background: #f7f8fa;
+}
+
+.m-coll .m-coll-right tbody tr td {
+  color: #969799;
+  text-align: center;
+}
+
+.m-coll .m-coll-right thead th,
+.m-coll .m-coll-right tbody tr td {
+  width: 14%;
+}
+
+.m-coll .m-coll-right thead tr th:nth-child(2),
+.m-coll .m-coll-right tbody tr td:nth-child(2) {
+  width: 30%;
+  padding-right: 40px;
+  text-align: left;
+}
+
+.m-coll .m-coll-right tbody tr td:nth-child(1),
+.m-coll .m-coll-right tbody tr td:nth-child(2) {
+  color: #323233;
+}
+
+.m-coll .m-coll-right tbody tr td .star-bar {
+  text-align: left;
+  width: 85px;
+  height: 15px;
+  background: url(../images/icon-star.png) repeat-x 0 0;
+}
+
+.m-coll .m-coll-right tbody tr td .star-bar em {
+  margin-bottom: 15px;
+}

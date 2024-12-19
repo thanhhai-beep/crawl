@@ -1,0 +1,187 @@
+<head>
+    <meta charset="gb2312">
+    <meta name="applicable-device" content="mobile">
+    <link rel="dns-prefetch" href="{$theme_path}/css/m.itmop.com">
+    <link rel="dns-prefetch" href="{$theme_path}/css/img.itmop.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta id="viewport" name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>{$toptitle}</title>
+    <meta name="Keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link rel="stylesheet" href="{$theme_path}/css/downinfo.css">
+    <script src="{$theme_path}/js/jquery.min.js" type="text/javascript"></script>
+    <script src="{$theme_path}/js/idown.js?itmop" type="text/javascript"></script>
+</head>
+
+<body id="down-page">
+    <header class="top"><a href="{随机栏目URL}" id="logo" title="{随机栏目}">{随机栏目}</a>
+        <div class="soBox">
+            <div class="soInput"><input type="text" name="q" class="bdcs-search-form-input" id="bdcs-search-form-input"
+                    placeholder="涓" value="涓" autocomplete="off"></div>
+            <div class="soBtn"><a href="{随机栏目URL}" class="bdcs-search-form-submit" id="bdcs-search-form-submit"
+                    title="{随机栏目}">{随机栏目}</a></div>
+        </div>
+    </header>
+    <nav id="nav">
+        <ul class="mainNav" data-row="5">
+            <li><a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+        </ul>
+        <p class="pullNav"><span><i></i></span></p>
+        <ul class="moreNav" data-row="4">
+            <li><a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+        </ul>
+    </nav>
+    <header id="info" class="bottom_bor" tort="0"><img src="{$pic}" alt="迷你世界0.42.0官方版">
+        <div class="name">
+            <h1>{$keywords}</h1>
+            <h2>{$title}</h2><span class="ver">v{randstr type="2" num="1"/}.{randstr type="2" num="2"/}.0安卓版</span>
+        </div>
+        <p><span id="ResSize">大小：{randstr type="2" num="3"/}.{randstr type="2" num="2"/}
+                MB</span><span>更新：{$postdate}</span></p>
+        <p><span>类别：<s class="cata"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></s></span><span
+                id="ResSystem">系统：Android</span></p> <span id="btns"><a href="{随机栏目URL}" class="dbtn" rel="nofollow"
+                isdown="1" title="{随机栏目}">{随机栏目}</a></span>
+    </header>
+    <nav id="tab"><span class="cur">内容介绍</span><span>相关下载</span><span>评论<i class="plnum">71</i></span></nav>
+    <section class="cont xyc">
+        <div id="wrapper">
+            <div id="scroller">
+                <ul id="thelist" data-row="3">
+                    {loop type="arclist" row="3" tpl="" islist=""}
+                    <li><img src="{$vo.pic}" alt="{$vo.title}"></li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div id="xgk">
+        <ul data-row="0"></ul>
+    </div>
+    <section class="cont bottom_bor">
+        <div class="intro">
+            {$body}
+        </div>
+        <div class="bottom_bor compy" style="margin:0;font-size:14px;">
+            <div class="d_title"><em>存版堕达{$postdate}</em></div>
+            <div class="d_title com-pyxx"><em>绉帮</em></div>
+            <div class="d_title pname"><em>锛</em></div>
+            <div class="d_title md5"><em>MD5锛</em></div>
+        </div>
+        <section class="historyver"></section>
+    </section>
+    <div class="d_title qx"><em>椤荤</em><i class="see_authority">瑰绘ョ</i></em></div>
+    <div class="m-premissions-div"><strong>绠＄椤荤/strong&gt;<ul data-row="1">
+                <li class="m-permission-1"></li>
+            </ul><b class="m-close-permis">抽</b></strong></div> <b class="m-permission-bg"></b>
+    <section class="keytop plist cont bottom_bor p10" id="keygame">
+        <ul class="keynav">
+            {loop type="arclist" row="4" tpl="" islist=""}
+            <li><a href="{$vo.url}" class="tg" softid="16473" onclick="return tgclick(this);"><img
+                        src="{$vo.pic}"><strong>{$vo.title}</strong></a></li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="cont bottom_bor"></section>
+    <section class="cont bottom_bor new" id="comment">
+        <div class="d_title"><em>{$keywords} ╁惰璁</em> QQ缇ゅ374962675</em></div>
+        <div id="view-comment" class="reviews">
+            <div class="post">
+                <header><span class="fb">瑕璺璐</span></header>
+                <ul id="comment-list" data-row="0"></ul>
+                <footer class="button-status-complete"><input type="button" value="村璇璁 class=" style="display:none;">
+                </footer>
+            </div>
+        </div>
+        <div id="submit" class="post">
+            <fieldset class="w-text"><textarea onkeyup="validate()"></textarea></fieldset>
+            <fieldset class="w-button"><input id="verify" class="button disable" type="submit" value="浜よ璐"><span
+                    id="cancel" class="button">娑</span></fieldset><input type="hidden" id="app-id" value="564321">
+        </div>
+    </section>
+    <section class="bottom_bor rela_down xgxz pictxt p10">
+        <div class="d_title"><em>稿虫娓</em></em></div>
+        <div id="tags-main3" style="overflow: hidden;">
+            <div class="tags-main-ul"
+                style="width: 960px; transition-property: -webkit-transform; transform-origin: 0px 0px; transform: translate3d(-320px, 0px, 0px) scale(1);">
+                <div class="tags-main-box" style="width: 304px;">
+                    <ul class="tags-box-ul">
+                        {loop type="arclist" row="8" tpl="" islist=""}
+                        <li><a href="{$vo.url}" class="img"><img class="lazy" data-original="{$vo.pic}"
+                            alt="{$vo.title}" src="{$vo.pic}"
+                            style="display: block;"><span>{$vo.title}</span><em>下载</em></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+                <div class="tags-main-box" style="width: 304px;">
+                    <ul class="tags-box-ul">
+                        {loop type="arclist" row="8" tpl="" islist=""}
+                        <li><a href="{$vo.url}" class="img"><img class="lazy" data-original="{$vo.pic}"
+                            alt="{$vo.title}" src="{$vo.pic}"
+                            style="display: block;"><span>{$vo.title}</span><em>下载</em></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+                <div class="tags-main-box" style="width: 304px;">
+                    <ul class="tags-box-ul">
+                        {loop type="arclist" row="8" tpl="" islist=""}
+                        <li><a href="{$vo.url}" class="img"><img class="lazy" data-original="{$vo.pic}"
+                                alt="{$vo.title}" src="{$vo.pic}"
+                                style="display: block;"><span>{$vo.title}</span><em>下载</em></a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pagenum"></div>
+    </section>
+    <section class="bottom_bor rela_down pictxt p10">
+        <div class="d_title"><em>ㄦ父</em></div>
+        <div id="tags-main4">
+            <div class="tags-main-ul">
+                <ul class="tags-box-ul">
+                    {loop type="arclist" row="8" tpl="" islist=""}
+                    <li><a href="{$vo.url}" class="img"><img class="img" src="{$vo.pic}" data-original="{$vo.pic}"
+                                alt="{$vo.title}"><span>{$vo.title}</span><em>涓杞</em></a></li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="bottom_bor rela_down pictxt p10">
+        <div class="d_title"><span><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></span><em>版娓</em></em></div>
+        <div id="tags-main5">
+            <div class="tags-main-ul">
+                <ul class="tags-box-ul">
+                    {loop type="arclist" row="8" tpl="" islist=""}
+                    <li><a href="{$vo.url}" class="img"><img class="img" src="{$vo.pic}" data-original="{$vo.pic}"
+                                alt="{$vo.title}"><span>{$vo.title}</span><em>涓杞</em></a></li>
+                    {/loop}
+                </ul>
+
+            </div>
+        </div>
+    </section>
+    <footer class="bottom"><em id="goTop"></em>
+        <p><a href="{随机栏目URL}" title="{随机栏目}">{$keywords} {随机栏目}</a>|<a href="/sitemap.html">缃绔板/a&gt;|<a href="{随机栏目URL}"
+                    title="{随机栏目}">{随机栏目}</a></a></p>
+    </footer>
+    <script type="text/javascript">_platformInfo = {};</script>
+    <script
+        type="text/javascript"> var _webInfo = { Username: "AADD", Type: "0", DateTime: "2024/7/5", Id: "564321", cid: "181", rid: "15", name: "down" }; </script>
+    <script type="text/javascript" src="{$theme_path}/js/SoftLinkType.js?v20221212"></script>
+    <script type="text/javascript"> var _downInfo = {}, _downInfos = []; </script>
+    <script> _downInfo = { Address: "", TypeID: "0", SoftLinkID: "713346", SoftID: "564321", Special: "0", Name: "村娓缈 v4.1.13.0瀹" }; _downInfos.push(_downInfo);</script>
+    <script type="text/javascript" src="{$theme_path}/js/downinfo.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/global.js"></script>
+</body>

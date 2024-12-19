@@ -1,0 +1,195 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="wap-font-scale" content="no">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link rel="canonical" href="{$theme_path}/css/original">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/base_2.0.css?v=1">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/comment2.0.css">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/danji.css">
+    <script src="{$theme_path}/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <script src="{$theme_path}/js/img.js"></script>
+        <div class="header_v2">
+            <div class="top">
+                <a href="{随机栏目URL}" class="logo" title="{随机栏目}">{随机栏目}</a>
+                <div class="rcont">
+                    <a href="" class="btn azh"><span>手机客户端</span></a>
+
+                    <div class="meun" onclick="$('.header_v2,.header_v2 .meun').toggleClass('on');"></div>
+                </div>
+                <a href="{随机栏目URL}" class="ico_calendar" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <div class="box_b">
+                <div class="nav">
+                    {loop type="catelog" row="7" tpl="" islist=""}
+                    <a href="{$vo.url}"><span>{$vo.title}</span></a>
+                    {/loop}
+                </div>
+            </div>
+            <div class="box_a">
+                <div class="nav">
+                    {loop type="catelog" row="7" tpl="" islist=""}
+                    <a href="{$vo.url}"><span>{$vo.title}</span></a>
+                    {/loop}
+                </div>
+                <div class="search_a">
+                    <form action="/" method="get" class="search_box">
+                        <input type="text" maxlength="20" class="ssk" onblur="if (this.value=='') this.value=''" value
+                            this.style.color="#000" onfocus="if (this.value!='') this.value=''" name="keyword">
+                        <input type="hidden" value="4" name="type" id="type">
+                        <input type="hidden" name="subsearch" value="1">
+                        <input class="ssqd" type="submit" value>
+                    </form>
+                    <div class="landing">
+                        <div class="no_logged">
+                            <a href="{随机栏目URL}" onclick="openlogin()" title="{随机栏目}">{随机栏目}</a>
+                            <span></span>
+                            <a href="{随机栏目URL}" onclick="openregister()" title="{随机栏目}">{随机栏目}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="crumbs"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a><span>&gt;</span> <a href="{随机栏目URL}"
+                title="{随机栏目}">
+                <h1>{$keywords}</h1>
+            </a> </div>
+        <div class="list_tj no-bord">
+            {loop type="arclist" row="15" tpl="" islist=""}
+            <div class="lis selectpost">
+                <div class="wp_a">
+                    <a class="tx"><img src="{$vo.pic}" alt><span>陶笛</span></a>
+                    <div class="time">24分钟之前</div>
+                </div>
+                <div class="wp_b">
+                    <div class="txt">
+                        <a href="{$vo.url}" class="bt" title="{$vo.title}">{$vo.title}</a>
+                        <div class="info">
+                            <div class="bq">单机</div>
+                            <a class="pl"><i class="icon ico_pl"></i><span>{$vo.hits}</span></a>
+                        </div>
+                    </div>
+                    <a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt></a>
+                </div>
+            </div>
+            {/loop}
+        </div>
+        <div class="page"> <a class="gray-page">{随机栏目}</a> 
+            <a class="gray-page">{随机栏目}</a> 
+            <span>1 
+                <div class="cbtn" style="display: none;"> 
+                    <a class="now" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> 
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> 
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> 
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div> </span> <a href="{随机栏目URL}"
+                title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+        <div style="width:100%;height:auto;overflow: hidden;  position: relative">
+            <script>img100(81);</script> <i
+                style="width:26px;height:15px;position:absolute;left:0;bottom:0;background:url(https://img.3dmgame.com/uploads/images/thumbnews/20240718/1721316721_760045.png);"></i>
+        </div>
+        <footer> <a href="{随机栏目URL}" class="bot_logo" title="{随机栏目}">{随机栏目}</a>
+            <div class="bot"> <a href="/" class="home"><i></i><span>首页</span></a> <a
+                    href="/s/about.html" class="about"><i></i><span>关于我们</span></a> <a
+                    href="" class="Phone"><i></i><span>手机客户端</span></a> <a
+                    href="javascript:void(0)" class="up"><i></i><span>顶部</span></a> </div>
+        </footer>
+        <script src="{$theme_path}/js/lazyload.js"></script>
+        <script src="{$theme_path}/js/common.js"></script>
+        <div style="display: none;">
+            <script>         var _hmt = _hmt || []; (function () { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?2928eda95c76ee6f72654d0cc245074c"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();     </script>
+        </div>
+        <script src="{$theme_path}/js/user.js?v=12061"></script>
+        <script src="{$theme_path}/js/TCaptcha.js"></script>
+        <div id="my_login_form" class="login_wrap" style="display: none;">
+            <div class="form_wrap login" style="display: none">
+                <div class="title">账号登录</div>
+                <div class="form_box">
+                    <ul class="inpu_lis" data-row="2">
+                        <li> <input id="loginname" name="username" type="text" value tabindex="1" class="name" size="30"
+                                autocomplete="off" placeholder="请输入手机号码"> </li>
+                        <li>
+                            <div class="ico-pwd"></div> <input id="loginpassword" name="passwd" type="password"
+                                tabindex="2" class="password" size="30" value placeholder="密码">
+                        </li>
+                    </ul>
+                    <div class="submit" onclick="login_submit()">登录</div>
+                </div>
+                <div class="btnwrap"> <a href="{随机栏目URL}" class="registered_btn" onclick="openregister()"
+                        title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class="reset_btn" title="{随机栏目}">{随机栏目}</a> </div>
+                <div class="other_login">
+                    <div class="txt">使用第三方账号登录</div>
+                    <div class="btn_wrap"> <span class="qq" onclick="qq_login()"><i></i></span> <span class="sina"
+                            onclick="sina_login()"><i></i></span> <span class="wx"
+                            onclick="wechat_login()"><i></i></span> </div>
+                </div>
+            </div>
+            <div class="form_wrap registered">
+                <div class="title">账号注册</div>
+                <div class="form_box">
+                    <ul class="inpu_lis" data-row="5">
+                        <li> <select id="areacode" name="areacode"></select> </li>
+                        <li> <input id="mobile" name="mobile" type="text" tabindex="1" class="name" size="30"
+                                autocomplete="off" value placeholder="请输入手机号码"> </li>
+                        <li>
+                            <div class="ico-pwd"></div> <input id="regpasswd" name="regpasswd" type="password"
+                                tabindex="2" class="password" size="30" value placeholder="请输入密码（6-18位字母、数字、符号）">
+                        </li>
+                        <li>
+                            <div class="ico-pwd"></div> <input id="checkpasswd" name="checkpasswd" type="password"
+                                tabindex="3" class="password2" size="30" value placeholder="确认密码" fwin="login">
+                        </li>
+                        <li class="yzm_item"> <input id="validate" name="validate" value requiredtitle="输入验证码"
+                                type="text" class="yzm-c" maxlength="16" placeholder="验证码">
+                            <div class="time " id="TencentCaptcha" data-appid="2072025837"
+                                data-cbfn="callback_regcaptcha">获取验证码</div>
+                        </li>
+                    </ul>
+                    <div class="rule_wrap">
+                        <div class="ico_check"></div> <input id="rule" name="rule" value type="checkbox"
+                            autocomplete="off" class="rule common_chk" checked="checked"> <span>我已阅读并接受</span> <a
+                            href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                    </div>
+                    <div class="submit gray" onclick="reg_submit()">注册</div>
+                </div>
+                <div class="other_login">
+                    <div class="txt">使用第三方账号登录</div>
+                    <div class="btn_wrap"> <span class="qq" onclick="qq_login()"><i></i></span> <span class="sina"
+                            onclick="sina_login()"><i></i></span> <span class="wx"
+                            onclick="wechat_login()"><i></i></span> </div>
+                </div>
+            </div>
+        </div>
+        <script>     var _hmt = _hmt || []; (function () { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?e2cb760323737cbff1b11c0436ef9629"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>
+        <script src="{$theme_path}/js/app_cookies_alert.js?v=1206"></script>
+    </div>
+    <script type="text/javascript" src="{$theme_path}/js/commentlist.js"></script>
+</body>

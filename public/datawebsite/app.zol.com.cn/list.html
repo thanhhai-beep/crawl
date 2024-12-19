@@ -1,0 +1,325 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="referrer" content="unsafe-url">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="false">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="applicable-device" content="mobile">
+    <meta name="wap-font-scale" content="no">
+    <link rel="stylesheet" href="{$theme_path}/css/z.m.page.appDown-index.css">
+    <script type="text/javascript" src="{$theme_path}/js/index.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/getcook.js?111"></script>
+</head>
+
+<body>
+    <div id="app-down-container" style="display:block;"></div>
+    <header class="global-page-header">
+        <div class="side-box" rel="top-search-box">
+            <a href="{随机栏目URL}" class="iconfont" title="{随机栏目}">{随机栏目}</a>
+        </div>
+        <div class="logo-box">
+            <h2><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></h2>
+        </div>
+        <h2><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></h2>
+    </header>
+    <nav id="top-nav" class="noSelectNav">
+        <div class="scroll-container swiper-container">
+            <div class="swiper-wrapper">
+                <ul class="scroller swiper-slide" data-row="5">
+                    <li class="on">
+                        <a href="{随机栏目URL}" onclick="objectForClickStat.imgStat('m_new_shouye_big_nav_1');"
+                            title="{随机栏目}">{随机栏目}</a>
+                    </li>
+                    <li>
+                        <a href="{随机栏目URL}" onclick="objectForClickStat.imgStat('m_new_shouye_big_nav_2');"
+                            title="{随机栏目}">{随机栏目}</a>
+                    </li>
+                    <li>
+                        <a href="{随机栏目URL}" onclick="objectForClickStat.imgStat('m_new_shouye_big_nav_3');"
+                            title="{随机栏目}">{随机栏目}</a>
+                    </li>
+                    <li>
+                        <a href="{随机栏目URL}" onclick="objectForClickStat.imgStat('m_new_shouye_big_nav_4');"
+                            title="{随机栏目}">{随机栏目}</a>
+                    </li>
+                    <li>
+                        <a href="{随机栏目URL}" onclick="objectForClickStat.imgStat('m_new_shouye_big_nav_5');"
+                            title="{随机栏目}">{随机栏目}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="focus-box">
+        <div class="focus swiper-container">
+            <ul class="container swiper-wrapper" data-row="5">
+                {loop type="arclist" row="10" tpl="" islist=""}
+                <li class="swiper-slide">
+                    <a href="{$vo.url}" title="{$vo.title}" class="flex-pic pic swiper-lazy"
+                        style="background-image: url({$vo.pic})">
+                        <div class="swiper-lazy-preloader"></div>
+                    </a>
+                </li>
+                {/loop}
+            </ul>
+            <div class="caption">
+                <div class="title"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <nav class="sites-nav ml pr p15 mt pt pb">
+        <ul class="sites-list flex-box" data-row="5">
+            <li class="sites-item f12"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li class="sites-item f12"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li class="sites-item f12"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li class="sites-item f12"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li class="sites-item f12"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+        </ul>
+    </nav>
+    <section class="app-recommend pl pr p15 pt pb">
+        <div class="app-mol-tit" style="display: flex; justify-content: space-between;">
+            <h1 style="font-size: 20px;">{$keywords}</h1>
+            <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+        </div>
+        <ul class="apps-mol-list apps-lives-end jingpin-end-bgpic clearfix" data-row="10">
+            {loop type="arclist" row="10" tpl="" islist=""}
+            <li>
+                <a href="{$vo.url}">
+                    <img alt="{$vo.title}" src="{$vo.pic}" width="60" height="60"></a>
+                <span>{$vo.title}</span>
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="app-recommend pl pr p15 pt pb">
+        <div class="app-mol-tit">
+            <h3>好玩的游戏
+                <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+            </h3>
+        </div>
+        <ul class="apps-mol-list apps-lives-end game-end-bgpic clearfix" data-row="10">
+            {loop type="arclist" row="10" tpl="" islist=""}
+            <li>
+                <a href="{$vo.url}">
+                    <img alt="快手" src="{$vo.pic}" width="60" height="60"></a>
+                <span>{$vo.title}</span>
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="app-recommend pl pr p15 pt pb">
+        <div class="app-mol-tit">
+            <h3>有趣的软件
+                <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+            </h3>
+        </div>
+        <ul class="apps-mol-list apps-lives-end software-end-bgpic clearfix" data-row="10">
+            {loop type="arclist" row="10" tpl="" islist=""}
+            <li>
+                <a href="{$vo.url}">
+                    <img alt="快手" src="{$vo.pic}" width="60" height="60"></a>
+                <span>{$vo.title}</span>
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <div>
+        <script>write_ad('app_index_alllook_banner');</script>
+    </div>
+    <section class="app-recommend pl pr p15 pt pb">
+        <div class="app-mol-tit">
+            <h3>{$keywords} {随机栏目}</h3>
+        </div>
+        <ul class="apps-mol-list apps-lives-end look-end-bgpic clearfix" data-row="9">
+            {loop type="arclist" row="10" tpl="" islist=""}
+            <li>
+                <a href="{$vo.url}">
+                    <img alt="快手" src="{$vo.pic}" width="60" height="60"></a>
+                <span>{$vo.title}</span>
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="app-recommend pl pr p15 pt pb">
+        <div class="app-mol-tit">
+            <h3>精选小程序
+                <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+            </h3>
+        </div>
+        <ul class="apps-mol-list apps-lives-end program-end-bgpic clearfix" data-row="10">
+            {loop type="arclist" row="10" tpl="" islist=""}
+            <li>
+                <a href="{$vo.url}">
+                    <img alt="快手" src="{$vo.pic}" width="60" height="60"></a>
+                <span>{$vo.title}</span>
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="app-recommend pl pr p15 pt pb">
+        <div class="app-mol-tit">
+            <h3>精选壁纸
+                <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+            </h3>
+        </div>
+        <ul class="album-list mt" data-row="3">
+            {loop type="arclist" row="3" tpl="" islist=""}
+            <li class="flex-box">
+                {loop type="arclist" row="10" tpl="" islist=""}
+                <a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}"></a>
+                {/loop}
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="app-recommend pl pr p15 pt pb">
+        <div class="app-mol-tit">
+            <h3>{$keywords} 精选经验
+                <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+            </h3>
+        </div>
+        <ul class="album-list mt" data-row="2">
+            {loop type="arclist" row="2" tpl="" islist=""}
+            <li class="flex-box">
+                {loop type="arclist" row="3" tpl="" islist=""}
+                <a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" width="117" height="87">
+                    <div class="detail-text">
+                        <h3 class="title" title="{$vo.title}">{$vo.title}</h3>
+                    </div>
+                </a>
+                {/loop}
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="app-recommend pl pr p15 pt pb">
+        <div class="app-mol-tit">
+            <h3>游戏合集
+                <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+            </h3>
+        </div>
+        <ul class="pic-box-list clearfix" data-row="2">
+            {loop type="arclist" row="2" tpl="" islist=""}
+            <li class="item">
+                <a href="{$vo.url}">
+                    <figure class="pic flex-pic"
+                        style="background-image: url({$vo.pic});">
+                        <img alt="{$vo.title}" src="{$vo.pic}">
+                    </figure>
+                    <div class="detail-text">
+                        <h3 class="title" title="{$vo.title}">{$vo.title}</h3>
+                    </div>
+                </a>
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="app-recommend pl pr p15 pt pb">
+        <div class="app-mol-tit">
+            <h3>{$keywords} 软件合集
+                <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+            </h3>
+        </div>
+        <ul class="pic-box-list clearfix" data-row="6">
+            {loop type="arclist" row="6" tpl="" islist=""}
+            <li class="item">
+                <a href="{$vo.url}">
+                    <figure class="pic flex-pic"
+                        style="background-image: url({$vo.pic});">
+                        <img alt="{$vo.title}" src="{$vo.pic}">
+                    </figure>
+                    <div class="detail-text">
+                        <h3 class="title" title="{$vo.title}">{$vo.title}</h3>
+                    </div>
+                </a>
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <script>
+        var _zpv_cfg = {
+            terminal: 'm',
+            site: 'ZOL',
+            buz: 'xiazai',
+            channel: 'app',
+            pagetype: 'SeriesIndex'
+        };
+    </script>
+    <!-- global page footer start -->
+    <footer class="white-bg global-page-footer">
+        <!-- 广告 -->
+        <script type="text/javascript" src="{$theme_path}/js/index.js"></script>
+        <div style="margin: -10px 0 10px 0; text-align: center;">
+            <script>write_ad('app_xiazai_tonglan');</script>
+        </div>
+
+        <nav id="bottom-nav">
+            <ul data-row="5">
+                <li>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </li>
+                <li>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </li>
+                <li>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </li>
+                <li>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </li>
+                <li>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="mt">
+            <div class="versions m15 ml mr">
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> |
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a class="feedback view-more" rel="nofollow" href="{随机栏目URL}" title="{随机栏目}">{$keywords} {随机栏目}</a>
+            </div>
+        </div>
+        <p class="login">
+            <script type="text/javascript">
+                var userid = get_cookie('zol_userid');
+                var backUrl = window.location.href;
+                if (userid) {
+                    document.write("<a>" + userid + "</a>");
+                    document.write("<a class='button' href='/logout.php?backurl=" + backUrl + "'>退出</a>");
+                } else {
+                    document.write("<a class='button' href='/register.php?backurl=" + backUrl + "'>注册</a>");
+                    document.write("<a class='button' href='/login.php?backurl=" + backUrl + "'>登录</a>");
+                }                 
+            </script>
+        </p>
+        <p id="copyright"></p>
+        <script
+            type="text/javascript">             !(function () { var copyright = document.getElementById('copyright'); copyright && (copyright.innerHTML = '©' + (new Date()).getFullYear() + ' 中关村在线 版权所有 京ICP备14061128号'); })();         </script>
+    </footer>
+    <script src="{$theme_path}/js/wappv.js"></script>
+    <script src="{$theme_path}/js/tongji.js"></script>
+    <script src="{$theme_path}/js/appbar.1.0.1.js" data-selector="#app-down-container"></script>
+    <script>
+        try {
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    window.zol.fixedLayout.setPlaceholderHeight();
+                    var closeBtn = window.zol.fixedLayout.containers.top.querySelector('#app-down-container .close'); closeBtn && closeBtn.addEventListener('click', function () {
+                        setTimeout(function () { window.zol.fixedLayout.setPlaceholderHeight(); }, 0);
+                    });
+                }, 0);
+            });
+        } catch (e) { }      
+    </script>
+    <script src="{$theme_path}/js/z.min.js"></script>
+    <script src="{$theme_path}/js/z.m.page.appDown-class.js"></script>
+</body>

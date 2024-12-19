@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+	<meta name="applicable-device" content="pc">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta name="referrer" content="unsafe-url">
+	<title>{$toptitle}</title>
+	<meta name="description" content="{$description}" />
+	<meta name="keywords" content="{$keywords}" />
+	<meta http-equiv="mobile-agent" content="format=html5; url=http://app.zol.com.cn/android_app/" />
+	<meta charset="gbk">
+	<link href="{$theme_path}/static/css/mobile_systemlist.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="{$theme_path}/static/js/webheadnew.js"></script>
+	<link type="text/css" href="{$theme_path}/static/css/webhead.css" rel="stylesheet" />
+</head>
+
+<body>
+	{include file="header.html"}
+	<div class="nav-path"> <a href="javascript:;" target="_blank" class="collect">手机软件</a>
+		<a class="home" href="/" title="手机软件">手机软件</a><i>&gt;</i>
+		<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a><i>&gt;</i>
+		<span>{随机标题}</span>
+	</div>
+	<div class="wrapper">
+		<div class="section filter-section">
+			<div class="section-header"><a href="{随机栏目URL}" class="more" target="_self">{随机栏目}&raquo;</a>
+				<h1 class="section-title">{随机标题}</h1>
+			</div>
+			<ul class="text-list">
+				<li class="clearfix">
+					<span class="text-title">{随机栏目}<a href="{随机栏目URL}" class="all current"><em>全部</em></a></span>
+					{loop type="arclist" row="35" image="1" info="1"}
+						<a title='{$vo.title}' href='{$vo.url}' target='_self'><em>{$vo.title}</em></a>
+					{/loop}
+				</li>
+				<li class="clearfix">
+					<span class="text-title">{随机栏目}<a href="{随机栏目URL}" class="all current"><em>全部</em></a></span>
+					{loop type="arclist" row="15" image="1" info="1"}
+						<a title='{$vo.title}' href='{$vo.url}' target='_self'><em>{$vo.title}</em></a>
+					{/loop}
+				</li>
+			</ul>
+		</div>
+		<div class="section soft-list-section">
+			<div class="section-header">
+				<ul class="tab-links">
+					<li class="current hover"><a href="{随机栏目URL}">{随机栏目}</a><i class="arrow-icon"></i></li>
+					<li><a href="{随机内容URL}">{随机标题}</a><i class="arrow-icon"></i></li>
+					<li><a href="{随机内容URL}">{随机标题}</a><i class="arrow-icon"></i></li>
+				</ul>
+				<h2 class="section-title">{随机标题}</h2>
+			</div>
+			<div class="soft-list-box">
+				<ul class="soft-list clearfix">
+					{loop type="arclist" row="30" image="1" info="1"}
+						<li class="item"> 
+							<a target="_blank" href="{随机栏目URL}" class="pic">
+								<img loadsrc="{$vo.pic}" title="{$vo.title} " alt="{$vo.title} " width="70" height="70" src="{$vo.pic}" shid="1" style="opacity: 1;">
+							</a>
+							<h4 class="soft-title">
+								<a title="{$vo.title} " href="{随机栏目URL}" target="_blank">{$vo.title} </a>
+							</h4>
+							<p class="time">共100445647次下载</p>
+							<p><span class="soft-star"><span style="width:82.6%"></span></span><em>8.3</em></p>
+							<a href="{随机栏目URL}" target="_blank" class="downLoad-link">立即下载</a>
+						</li>
+					{/loop}
+				</ul>
+			</div>
+		</div>
+		<div class="page-box">
+			<div class="page"> 
+				<span class="active">1</span>
+				<a href="/" target="_self">2</a>
+				<a href="/" target="_self">3</a>
+				<a href="/" target="_self">4</a>
+				<a href="/" target="_self">5</a>
+				<b>...</b>
+				<a id="pageNext" href="/" class="next" target="_self">下一页</a>
+			</div>
+			<span class="tip">可用“←”或“→”方向键快速翻页</span>
+		</div>
+	</div>
+
+	<div class="wrapper section wallpaper-scroll">
+		<div class="section-header clearfix">
+			<div class="links">
+				{loop type="catelog" row="8"}
+					<a href="{$vo.url}" target="_blank">{$vo.title}</a>|
+				{/loop}
+			</div>
+			<h2 class="section-title">热门手机壁纸推荐</h2>
+		</div>
+		<div class="srcoll-box pic-scroll" id="scrollpic">
+			<div class="srcoll-inner">
+				<ul id="scroll_screen2" style="width: 10000px; position: relative;">
+					{loop type="arclist" row="20" image="1" info="1"}
+						<li>
+							<a href="{$vo.url}" class="pic" target="_blank">
+								<img alt="{$vo.title}" title="{$vo.title}" width="180" height="270" loadsrc="{$vo.pic}">
+								<span>{$vo.title}</span>
+							</a>
+						</li>
+					{/loop}
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- <script type="text/javascript" src="{$theme_path}/static/js/web_footc.js"></script> -->
+	<script type="text/javascript" src="{$theme_path}/static/js/web_foot.js"></script>
+	<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=5&amp;pos=right"></script>
+	<script>window._bd_share_config = { "common": { "wbUid": "0", "bdSnsKey": { "douban": "038da04052b48ba40aa8e0c0f81da2ec", "qzone": "99d207b90670adceaaa416b63528d92c", "tsina": "4028615622", "tqq": "99d207b90670adceaaa416b63528d92c" }, "bdText": "����׿�������ء�android����-ZOL�ֻ����� �������� @ZOL����Ӧ��ƽ̨��", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "slide": { "type": "slide", "bdImg": "5", "bdPos": "right", "bdTop": "100" } }; with (document) 0[(getElementsByTagName("head")[0] || body).appendChild(createElement("script")).src = "//icon.zol-img.com.cn/public/bdshare/{$theme_path}/static/api/js/share.js?v=89343201.js?cdnversion=" + ~(-new Date() / 36e5)];</script>
+	<div id="sjCengBj" style="display: none;" class="layerbox-overlay">
+		<iframe style="width:100%;height:100%;filter:alpha(opacity=0)"></iframe>
+	</div>
+	<div id="sjCengBj1" style="display: none;" class="layerbox-overlay">
+		<iframe style="width:100%;height:100%;filter:alpha(opacity=0)"></iframe>
+	</div>
+
+	<script type="text/javascript" src="{$theme_path}/static/js/mobile_systemcate.js"></script>
+	<script>$(document).survey({ pageType: 'sjSystemCate' });</script>
+	<script>
+
+	</script>
+</body>
+
+</html>

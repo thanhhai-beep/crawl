@@ -1,0 +1,59 @@
+
+<div class="header clearfix">
+  <a href="javascript:window.history.go(-1);" class='goback'>返回</a>
+  <div class="logo-box">
+    <a href="{$host}/" target="_blank" class="logo">{网站名称}</a>
+  </div>
+  <ul class="header-links">
+    <li><a target="_blank" href="{$host}/android/">安卓专区</a></li>
+    <li><a target="_blank" href="{$host}/iphone/">iPhone专区</a></li>
+    <li><a target="_blank" href="{$host}/windowsphone/">Windows Phone</a></li>
+    <li><a target="_blank" href="{$host}/baike/">安卓百科</a></li>
+  </ul>
+  <div class="search-box">
+    <form id="search" name="search" target="_blank" action="//xiazai.zol.com.cn/search" method="get">
+      <div class="search-text">
+        <input class="text" name="wd" onclick="JavaScript:if(this.value=='请输入手机应用名称'){this.value='';this.style.color='#000'};" onblur="JavaScript:if(this.value==''){this.value='请输入手机应用名称';this.style.color='#999999'};" type="text" value="请输入手机应用名称" fdprocessedid="sydev6n">
+      </div>
+      <input type="hidden" name="type" value="1" />
+      <input type="hidden" name="workType" value="2" />
+      <input type="submit" hidefocus="true" class="search-btn" value="搜索" />
+    </form>
+  </div>
+</div>
+
+<div class="main-nav">
+  <ul class="nav clearfix" style="padding:0px">
+    <li class="first current"><a href="/android/">Android</a></li>
+    <li><a href="/iphone/">iPhone</a></li>
+    <li><a href="/windowsphone/">Windows Phone</a></li>
+    <li><a href="/s60v5/">塞班V5</a></li>
+    <li><a href="/s60v3/">软件</a></li>
+    <li><a href="/symbian3/">塞班^3^3</a></li>
+    <li><a href="/java/">Java</a></li>
+  </ul>
+</div>
+
+<div class="sub-nav-box">
+  <span class="setting" id="selectModel">设置机型</span>
+  <ul class="sub-nav">
+    <li><a target="_blank" href="/android/">首页</a></li>
+    <li class="sub-item" id="game">
+      <a target="_blank" href="/android_game/">游戏</a>
+      <i class="icon-more"></i>
+      <div class="sub-links clearfix" id="gameList">
+        {loop type="catelog" row="15"}
+          <a href="{$vo.url}" target="_self">{$vo.title}</a>
+        {/loop}
+      </div>
+    </li>
+    <li class="sub-item" id="soft">
+      <a target="_blank" href="/android_app/">软件</a><i class="icon-more"></i>
+      <div class="sub-links clearfix" id="softList">
+        {loop type="catelog" row="35"}
+          <a href="{$vo.url}" target="_self">{$vo.title}</a>
+        {/loop}
+      </div>
+    </li>
+  </ul>
+</div>

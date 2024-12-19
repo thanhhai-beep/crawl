@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<base target="_blank">
+	<link rel="stylesheet" type="text/css" href="https://www.9game.cn/public/stylesheets/pc2/public_9game.css?ver=20140327">
+<link rel="stylesheet" type="text/css" href="https://www.9game.cn/public/stylesheets/pc2/pcnew_public.css?ver=20140327">
+<link rel="stylesheet" type="text/css" href="https://www.9game.cn/public/stylesheets/pc2/public/pub_header.css">
+  <link rel="stylesheet" type="text/css" href="https://www.9game.cn/public/stylesheets/pc2/pcnew_public.css">
+</head>
+<!--[if lte IE 6]>
+<script language="javascript" type="text/javascript" src="https://www.9game.cn/public/javascripts/pc2/common/ie6_png.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('img');
+    </script>
+<![endif]-->
+<body>
+	<div class="pub_9pcheader" id="pub_9pcheader">
+		<div class="top-bar-ph" id="toTop">
+			<ul class="contorl-ph">
+				<li><a data-spm-protocol="i"  href="https://www.9game.cn/" name="totop" data-statis="text:txt_p_gdl_home" class="link">九游门户</a></li>
+				<li><a data-spm-protocol="i"  href="https://app.9game.cn/" rel="nofollow" class="link last">九游APP</a></li>
+          </ul>
+			<ul class="user-bar-ph">
+				
+<li class="right-li-ph"><a data-spm-protocol="i"  data-statis="text:txt_p_gdl_login" class="ulink JS__NG_Login" target="_self" href="/login">登录</a></li>
+
+				<li class="right-li-ph web-site-ph">
+					<div class="site-title">网站导航<span class="site-toward-ph"></span></div>
+					<div class="web-site-pop">
+						<div class="site-con site-con1">
+							<div class="sectitle"><a data-spm-protocol="i"  href="https://www.9game.cn/" data-statis="text:txt_p_dh_home">九游门户</a></div>
+							<div class="site-list-con">
+						<ul class="site-list">
+							<li><a data-spm-protocol="i"  href="https://www.9game.cn/gamestore/" name="uc_gd_adm" gd_stat="273_0" data-statis="text:txt_p_gdl_gds_273_0">找游戏</a></li>
+						    <li><a data-spm-protocol="i"  href="https://www.9game.cn/news/" name="uc_gd_adm" gd_stat="273_0" data-statis="text:txt_p_gdl_gds_273_0">网游资讯</a></li>
+						    <li><a data-spm-protocol="i"  href="https://www.9game.cn/kf/" name="uc_gd_adm" gd_stat="273_0" data-statis="text:txt_p_gdl_gds_273_0">新服表</a></li>
+						    <li><a data-spm-protocol="i"  href="https://www.9game.cn/newgame/" name="uc_gd_adm" gd_stat="273_0" data-statis="text:txt_p_gdl_gds_273_0">新游频道</a></li>
+						</ul>
+						<ul class="site-list">
+						   <li><a data-spm-protocol="i"  href="https://www.9game.cn/category/" name="uc_gd_adm" gd_stat="273_0" data-statis="text:txt_p_gdl_gds_273_0">网游分类</a></li>
+						    <li><a data-spm-protocol="i"  href="https://www.9game.cn/kc/" name="uc_gd_adm" gd_stat="273_0" data-statis="text:txt_p_gdl_gds_273_0">开测表</a></li>
+						    <li><a data-spm-protocol="i"  href="https://android.9game.cn/" name="uc_gd_adm" gd_stat="273_0" data-statis="text:txt_p_gdl_gds_273_0">安卓游戏</a></li>
+						    <li><a data-spm-protocol="i"  href="https://www.9game.cn/danji/" name="uc_gd_adm" gd_stat="273_0" data-statis="text:txt_p_gdl_gds_273_0">手机单机</a></li>
+						</ul>
+						<ul class="site-list">
+						   <li><a data-spm-protocol="i"  href="https://ios.9game.cn/" name="uc_gd_adm" gd_stat="273_0" data-statis="text:txt_p_gdl_gds_273_0">苹果游戏</a></li>
+					       <li><a data-spm-protocol="i"  href="https://www.9game.cn/rank/" name="uc_gd_adm" gd_stat="273_0" data-statis="text:txt_p_gdl_gds_273_0">手游排行</a></li>
+					   </ul>
+							</div>
+						</div>
+						<div class="site-con site-con3">
+							<div class="sectitle"><a data-spm-protocol="i"  href="javascript:void(0);">热门专区</a></div>
+							<div class="site-list-con">
+													<div style="display:none;">t2631_10_2-t2631_10_1:5.0</div>
+													  <div style="display:none;">t2631_10_4-t2631_10_3:4.0</div>
+						<ul class="site-list">
+							<li><a data-spm-protocol="i"  href="https://www.9game.cn/coc/" name="uc_gd_adm" gd_stat="276_0" data-statis="text:txt_p_gdl_gds_276_0">部落冲突</a></li>
+													<div style="display:none;">t2631_10_2-t2631_10_1:6.0</div>
+													  <div style="display:none;">t2631_10_4-t2631_10_3:2.0</div>
+					       <li><a data-spm-protocol="i"  href="https://www.9game.cn/cr/" name="uc_gd_adm" gd_stat="276_0" data-statis="text:txt_p_gdl_gds_276_0">皇室账号绑定</a></li>
+					   </ul>
+							</div>
+						</div>
+						<div class="site-con site-con4">
+							<div class="sectitle"><a data-spm-protocol="i"  href="javascript:void(0);">更多服务</a></div>
+							<div class="site-list-con">
+							<ul class="site-list">
+							<li><a data-spm-protocol="i"  href="https://app.9game.cn/" rel="nofollow" name="uc_gd_adm" gd_stat="277_0" data-statis="text:txt_p_gdl_gds_277_0">九游APP</a></li>
+							<li><a data-spm-protocol="i"  href="https://www.9game.cn/news/5739391.html" rel="nofollow" name="uc_gd_adm">专项公告</a></li>
+						</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div style="display:none;">
+		<p>t2631_2-t2631_1:4.0</p>
+		<p>t2631_3-t2631_2:0.0</p>
+		<p>t2631_4-t2631_3:0.0</p>
+		<p>t2631_5-t2631_4:0.0</p>
+		<p>t2631_6-t2631_5:0.0</p>
+		<p>t2631_7-t2631_6:0.0</p>
+		<p>t2631_8-t2631_7:0.0</p>
+		<p>t2631_9-t2631_8:0.0</p>
+		<p>t2631_10-t2631_9:0.0</p>
+		<p>t2631_11-t2631_10:17.0</p>
+		<p>t2631_12-t2631_11:0.0</p>
+		<p>t2631_12-t2631_1:21.0</p>
+ </div>
+<div class="nav">
+	<div class="nav-main">
+			<div style="display:none;">tsbn_1_2-tsbn_1_1:1.0</div>
+      		<a data-spm-protocol="i"  href="https://www.9game.cn/" title="手机游戏">
+              <img src="https://image.uc.cn/s/uae/g/0h/portal/VI/portal/70%E9%AB%98%E5%BA%A6LOGO.png" class="logo" style="height: 70px;margin-top:12px;" alt="手机游戏" title="手机游戏"/>
+			</a>
+		<div class="search-main">
+			<form  action="https://www.9game.cn/search/" id="search-form">
+				<div class="search-con" data-statis="text:p_error_search">
+						<div style="display:none;">tsbn_2_2-tsbn_2_1:18.0</div>
+					<input type="text" class="search-text" name="keyword" value="秦皇汉武" autocomplete="off" data-statis="text:txt_p_search_gds_207_0">
+					<input type="submit" class="search-sub" value="搜索" name="uc_gd_adm" gd_stat="207_0" data-statis="text:p_search_bottom">
+					<ul class="result-list" id="result_list">
+					</ul>
+				</div>
+			</form>
+			<div class="hot-search">
+				<span class="name">搜索热词：</span>
+						<div style="display:none;">tsbn_3_2-tsbn_3_1:6.0</div>
+						<div style="display:none;">tsbn_3_4-tsbn_3_3:1.0</div>
+						<a data-spm-protocol="i"  href="https://www.9game.cn/xxjqxczhjwq/" data-statis="text:txt_p_search_gds_208_0" title="新仙剑问情" name="uc_gd_adm" gd_stat="208_0">新仙剑问情</a>
+						<div style="display:none;">tsbn_3_2-tsbn_3_1:23.0</div>
+						<div style="display:none;">tsbn_3_4-tsbn_3_3:1.0</div>
+						<a data-spm-protocol="i"  href="https://www.9game.cn/dhracing/" data-statis="text:txt_p_search_gds_208_0" title="巅峰极速" name="uc_gd_adm" gd_stat="208_0">巅峰极速</a>
+						<div style="display:none;">tsbn_3_2-tsbn_3_1:5.0</div>
+						<div style="display:none;">tsbn_3_4-tsbn_3_3:1.0</div>
+						<a data-spm-protocol="i"  href="https://www.9game.cn/dzpd/" data-statis="text:txt_p_search_gds_208_0" title="蛋仔派对" name="uc_gd_adm" gd_stat="208_0">蛋仔派对</a>
+						<div style="display:none;">tsbn_3_2-tsbn_3_1:5.0</div>
+						<div style="display:none;">tsbn_3_4-tsbn_3_3:0.0</div>
+						<a data-spm-protocol="i"  href="https://www.9game.cn/qhhw/" data-statis="text:txt_p_search_gds_208_0" title="秦皇汉武" name="uc_gd_adm" gd_stat="208_0">秦皇汉武</a>
+						<div style="display:none;">tsbn_3_2-tsbn_3_1:8.0</div>
+						<div style="display:none;">tsbn_3_4-tsbn_3_3:2.0</div>
+						<a data-spm-protocol="i"  href="https://www.9game.cn/qsmyzzzbj/" data-statis="text:txt_p_search_gds_208_0" title="秦时明月沧海" name="uc_gd_adm" gd_stat="208_0">秦时明月沧海</a>
+						<div style="display:none;">tsbn_3_2-tsbn_3_1:16.0</div>
+						<div style="display:none;">tsbn_3_4-tsbn_3_3:1.0</div>
+						<a data-spm-protocol="i"  href="https://www.9game.cn/wujianmengjing/" data-statis="text:txt_p_search_gds_208_0" title="无间梦境" name="uc_gd_adm" gd_stat="208_0">无间梦境</a>
+						<div style="display:none;">tsbn_3_2-tsbn_3_1:6.0</div>
+						<div style="display:none;">tsbn_3_4-tsbn_3_3:1.0</div>
+						<a data-spm-protocol="i"  href="https://www.9game.cn/jinghe1/" data-statis="text:txt_p_search_gds_208_0" title="晶核" name="uc_gd_adm" gd_stat="208_0">晶核</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div style="display:none;">
+	<p>tsbn_2-tsbn_1:1.0</p>
+	<p>tsbn_3-tsbn_2:18.0</p>
+	<p>tsbn_4-tsbn_3:77.0</p>
+	<p>tsbn_4-tsbn_1:96.0</p>
+</div>
+<style>
+    .sub-nav .ol-nav a.sp-nav{width: 164px!important;}.sub-nav .ol-nav a.sp-nav.active{width:164px!important;}
+</style>
+ <div class="sub-nav-con">
+        <div class="sub-nav">
+            <div class="ol-nav">
+                <a data-spm-protocol="i"  href="https://www.9game.cn/" class="active sp-nav" data-statis="text:p_error_dh_index" target='_self' title="首页">首页</a>
+                <a data-spm-protocol="i"  href="https://www.9game.cn/gamestore/" class=" sp-nav" data-statis="text:p_error_dh_category" target='_self' title="找游戏">找游戏</a>
+                <a data-spm-protocol="i"  href="https://www.9game.cn/newgame/" class=" sp-nav" data-statis="text:p_error_dh_newgame" target='_self' title="新游">新游</a>
+                <a data-spm-protocol="i"  href="https://www.9game.cn/kc/" class=" sp-nav"data-statis="text:p_error_dh_kc" target='_self' title="开测表">开测表</a>
+                <a data-spm-protocol="i"  href="https://www.9game.cn/kf/" class=" sp-nav" data-statis="text:p_error_dh_kf"  target='_self' title="新服表">新服表</a>
+              	<a data-spm-protocol="i"  href="https://www.9game.cn/news/0_1/" class=" sp-nav" data-statis="text:p_error_dh_news" target='_self' title="网游资讯" >网游资讯</a>
+            </div>
+        </div>
+    </div>
+	<div class="main-con">
+			<div class="con-404">
+				<p style="margin-top: 330px;"></p>
+				<a href="https://www.9game.cn" target="_self" class="home">九游首页</a>
+				<a href="javascript:history.go(-1)" target="_self" class="goback">返回上一页</a>
+			</div>
+	</div>
+</body>
+  <script type="text/javascript" src="https://www.9game.cn/public/javascripts/jquery.js"></script>
+	<script type="text/javascript" src="https://www.9game.cn/public/javascripts/pc2/pcnew201310.js?ver=20140327"></script>
+	<script type="text/javascript" src="https://www.9game.cn/public/javascripts/pc2/search_think.js?ver=20140327"></script>
+	<script type="text/javascript" src="https://www.9game.cn/public/javascripts/pc2/show_game_down.js?ver=20140327"></script>
+	<script type="text/javascript" src="https://www.9game.cn/public/javascripts/pc2/pub_header.js?ver=20140516"></script>
+	<script src="https://www.9game.cn/public/javascripts/common/ucb.js" type="text/javascript"></script>
+	<script src="https://www.9game.cn/public/javascripts/common/portal.js" type="text/javascript"></script>
+  <script>
+		setTimeout(function() {
+			window.location.href = 'https://www.9game.cn';
+		}, 2000);
+  </script>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6e890e978a935949b61a6f4a5752fb7";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?5c9ac1e13171a3863d5af2975ce301b7";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script type="text/javascript">
+window.onload = function() {
+	window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["weixin","copy","tsina","mshare","sqq","tieba","qzone","tqf","douban","meilishuo","ty","huaban","mail","print"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='https://image.uc.cn/s/uae/g/0h/portal/https/baidushare/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+}
+</script>
+<script type="text/javascript">
+	var _paq = _paq || [];
+	(function(){ 
+      			var u="https://track.uc.cn/";
+    			_paq.push(['setSiteId', '027daeb3b728']);
+				_paq.push(['setDocumentTitle', window.location.host + window.location.pathname]);
+				_paq.push(['setTrackerUrl', u+'collect?uc_param_str=dnfrcpve']);
+				_paq.push(['trackPageView']);
+				_paq.push(['enableLinkTracking']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+				g.type='text/javascript'; 
+      			g.defer=true; 
+      			g.async=true; 
+				g.src=u+'uaest.js';
+				s.parentNode.insertBefore(g,s);
+    			}
+    )();
+</script>
+<input type="hidden" id="_aplusSid" value="576ae28e-3405-4505-bd09-4db21314573e">
+<script crossorigin="anonymous" src="https://g.alicdn.com/code/npm/@ali/ieu-member-js-sdk/0.1.15/index.umd.js"></script>
+<script crossorigin="anonymous" src="https://cdn.9game.cn/ngm-portal-jws/public/js/rcdLogin/index.b5513c48.js"></script>
+<script crossorigin="anonymous" src="https://cdn.9game.cn/ngm-portal-jws/public/js/aplus_point/index.901b7a58.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.9game.cn/ngm-portal-jws/public/css/pc_quark_popup/index.978a8e7e.css">
+<div class="qak_popup" data-ch="SO_53">
+  <div class="qak_popup_bg"></div>
+  <div class="qak_popup_main">
+    <div class="qak_popup_main_common JS_QAK_GZ" data-cdgurl="https://www.9game.cn/">
+      <img class="qak_popup_main_common_icon" src="https://cdn.9game.cn/ngm-portal-jws/20240913/no5logo.png" alt="九游云游戏">
+      <div class="qak_popup_main_common_txt">
+        电脑也能玩手游 · 无需下载 · 不占空间 · 点击即玩
+      </div>
+    </div>
+    <div class="qak_popup_main_try JS_QAK_D">在线玩</div>
+  </div>
+  <div class="qak_popup_close JS_QAK_CL"></div>
+</div>
+<script crossorigin="anonymous" src="https://cdn.9game.cn/ngm-portal-jws/public/js/pc_quark_popup/index.97880e9c.js"></script>
+<script crossorigin="anonymous">
+  $('body').find('a[title="玩家客服"]').attr('href', '');
+  $('body').find('a[title="玩家客服"]').on('click', function(e) {
+    e.preventDefault();
+    if ($ && $.ajax) {
+      $.ajax({
+        type: 'GET',
+        url: 'https://customer-service-api.9game.cn/selfservices/toalime?chid=9gameapp',
+        data: {
+          chid: '9gameapp',
+        },
+        timeout: 4000,
+        success(res) {
+          // console.log('获取客服链接成功 数据：', res);
+          if (res && res.state && res.state.code && res.state.code == 2000000) {
+            // console.log('redirectUrl ===》 redirectUrl', res.data.redirectUrl);
+        	window.open(res.data.redirectUrl, '_blank');
+          }
+        },
+        error(err) {
+          console.log('获取客服链接失败 错误：', err);
+        }
+      });
+    }
+  })
+</script>
+</html>

@@ -1,0 +1,443 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="renderer" content="webkit">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta property="og:locale" content="zh-CN">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="{$keywords}">
+    <meta property="og:title" content="{$toptitle}">
+    <meta property="og:description" content="{$description}">
+    <meta property="og:author" content="零空间">
+    <meta property="og:section" content="技术服务">
+    <meta property="og:published_time" content="2024-12-09T15:51:42">
+    <meta property="og:modified_time" content="2024-12-09T15:51:42">
+    <meta property="bytedance:published_time" content="2024-12-09T15:51:42">
+    <meta property="bytedance:updated_time" content="2024-12-09T15:51:42">
+    <meta name="author" content="零空间">
+    <meta property="og:release_date" content="2024-12-09T15:51:42">
+    <meta property="og:updated_time" content="2024-12-09T15:51:42">
+    <meta property="og:article:author" content="零空间">
+    <meta name="generator" content="Z-BlogPHP 1.7.3">
+    <link rel="stylesheet" rev="stylesheet" href="{$theme_path}/css/animate.css" type="text/css" media="all">
+    <link href="{$theme_path}/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="{$theme_path}/css/favicon.ico" type="image/x-icon">
+    <script src="{$theme_path}/js/jquery-2.2.4.min.js"></script>
+    <script src="{$theme_path}/js/zblogphp.js"></script>
+    <script src="{$theme_path}/js/c_html_js_add.php"></script>
+    <script type="text/javascript" src="{$theme_path}/js/sticky-left.js"></script>
+    <link href="{$theme_path}/css/style.css?t=2024-09-25" type="text/css" media="all" rel="stylesheet">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="{$theme_path}/css/?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{$theme_path}/css/wlwmanifest.xml">
+</head>
+
+<body class="custom-background">
+    <div id="header_content">
+        <div id="header">
+            <div class="header">
+                {loop type="arclist" row="1" image="1" info="1"}
+                <h1 id="logo"> <a href="/"><img src="https://wap.jarnorking.com/zb_users/theme/viewlee/style/images/logo.png"
+                            title="{$vo.title}" alt="{$vo.title}"></a> </h1>
+                {/loop}
+                <div id="mainnav" class="header-nav" data-type="article" data-infoid="5">
+                    <ul id="nav" class="nav-pills" data-row="6">
+                        {loop type="catelog" row="6" image="1" info="1"}
+                        <li id="nvabar-item-index"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                        {/loop}
+                    </ul>
+                </div>
+                <div class="rightnav">
+                    <ul data-row="1">
+                        <li>{$keywords} {随机标题}</li>
+                    </ul>
+                </div>
+                <div class="mini_search"><!-- Search begin -->
+                    <form name="search" class="searchform" method="post"
+                        action=""> <input class="searchInput"
+                            type="text" name="q" size="11" placeholder="请输入搜索内容..." id="ls"> <input
+                            class="searchBtn radius" type="submit" title="搜索" value="搜 索"> </form><!-- Search end -->
+                </div> <a id="mo-so" href="javascript:void(0);"><i class="fa fa-search icon-search"></i></a>
+            </div>
+        </div>
+        <div class="jumbotrons pc">
+            <div class="shadow"></div> {loop type="arclist" row="1" image="1" info="1"}<img src="{$vo.pic}" alt="双C接口解析，充电端口识别指南" width="auto" height="auto">{/loop}
+        </div>
+        <div id="wrapper" class="article">
+            <div class="fl-top">
+                <div class="fl_mbx">
+                    <ul class="breadcrumbs place" data-row="1">
+                        <li>您现在的位置：<i class="fa fa-home"></i><a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a><i
+                                class="fa fa-angle-right"></i><a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a> <i
+                                class="fa fa-angle-right"></i><a href="{随机栏目URL}" rel="bookmark" target="_blank"
+                                title="{$vo.title}">{$keywords} {$vo.title}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ads article-ad">
+                <script src="{$theme_path}/js/xgstj.js"></script>
+            </div>
+            <div id="main">
+                <div class="visible-lg-block main-left ">
+                    <div id="sidebar-left-xf">
+                        <section class="sideleft-author">
+                            <section class="author_info">
+                                {loop type="arclist" row="1" image="1" info="1"}
+                                <div class="widget_avatar"
+                                    style="background-image: url({$vo.pic});">
+                                    <a href="{$vo.url}" title="admin"
+                                        class="widget_avatar"><img class="widget_avatar" src="{$vo.pic}" alt="admin"><i
+                                            title="admin" class="author-ident author1"></i></a>
+                                </div>
+                                <h3>admin<span class="admin_field">游客</span></h3>
+                                <div class="author-social">
+                                    <span class="author-weixin"><a title="微信"><i class="fa fa-weixin"></i><em
+                                                style="background-image: url({$vo.pic});"></em></a></span>
+                                    <span class="author-qq"><a
+                                            href=""
+                                            rel="nofollow" target="_blank" title="QQ联系我"><i
+                                                class="fa fa-qq"></i></a></span>
+                                </div>
+                                {/loop}浏览
+                            </section>
+                            <section class="author_count">
+                                <ul data-row="2">
+                                    <li><span>浏览</span><strong>{随机数字}</strong></li>
+                                    <li><span>浏览</span><strong>{随机数字}</strong></li>
+                                </ul>
+                            </section>
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="divPrevious">
+                            <h3 class="sidebox_title">{随机栏目}</h3>
+                            <ul class="sidebar_content divPrevious" data-row="6">
+                                {loop type="arclist" row="6" image="1" info="1"}
+                                <li class="clr">
+                                    <a href="{$vo.url}" title="探究托管规模与效益平衡，合理托管人数是多少？">
+                                        <div class="time">
+                                            <span class="r">10</span>/<span class="y">12月</span>
+                                        </div>
+                                        <div class="title">{$vo.title}</div>
+                                    </a>
+                                </li>
+                                {/loop}
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="divPrevious">
+                            <h3 class="sidebox_title">{随机栏目}</h3>
+                            <ul class="sidebar_content divPrevious" data-row="6">
+                                {loop type="arclist" row="6" image="1" info="1"}
+                                <li class="clr">
+                                    <a href="{$vo.url}" title="{$vo.title}">
+                                        <div class="time">
+                                            <span class="r">10</span>/<span class="y">12月</span>
+                                        </div>
+                                        <div class="title">{$vo.title}</div>
+                                    </a>
+                                </li>
+                                {/loop}
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="divPrevious">
+                            <h3 class="sidebox_title">{随机栏目}</h3>
+                            <ul class="sidebar_content divPrevious" data-row="6">
+                                {loop type="arclist" row="6" image="1" info="1"}
+                                <li class="clr">
+                                    <a href="{$vo.url}" title="{$vo.title}">
+                                        <div class="time">
+                                            <span class="r">10</span>/<span class="y">12月</span>
+                                        </div>
+                                        <div class="title">{$vo.title}</div>
+                                    </a>
+                                </li>
+                                {/loop}
+                        </section>
+                    </div>
+                </div>
+                <div id="wrap">
+                    <div id="article" class>
+                        <div id="post">
+                            <div class="title">
+                                <h1>{$keywords} {随机栏目}</h1>
+                                <div class="post_icon"> 
+                                    <span class="author-head">
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <img alt src="{$vo.pic}" height="96"
+                                            width="96"/>
+                                        {/loop}
+                                            <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                                        </span> 
+                                        <span>
+                                            <i
+                                            class="fa fa-calendar">
+                                        </i> 2024-12-09
+                                    </span> 
+                                    <span class="postcat"><i
+                                        class="fa fa-list-alt"></i> 
+                                        <a href="{随机栏目URL}"
+                                        title="{随机栏目}">{随机栏目}</a>
+                                    </span> 
+                                    <span><i class="fa fa-eye"></i> 1000
+                                    次浏览</span> 
+                                    <span><i class="fa fa-comments-o"></i> 
+                                        <a href="{随机栏目URL}"
+                                        title="{随机栏目}">{随机栏目}</a>
+                                    </span> 
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div id="listree-bodys">
+                                    <blockquote>
+                                        摘要：本文将探究双C接口的相关知识，介绍如何识别充电端口。双C接口是一种新型的充电接口技术，具有快速充电和高效传输数据的特点。本文将通过简单易懂的方式，指导读者如何识别双C接口及其充电端口，帮助用户更好地利用这一技术，提高充电效率和设备使用体验。
+                                    </blockquote>
+                                    <h2>{随机栏目}</h2>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <h2>{随机栏目}</h2>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <h2>{随机栏目}</h2>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    {loop type="arclist" row="1" image="1" info="1"}
+                                    <p style="text-align:center">
+                                        <a class="view-image" href="{$vo.pic}"
+                                            data-fancybox="gallery" title="{$vo.title}"><img class="ue-image"
+                                                src="{$vo.pic}" alt="{$vo.title}"></a>
+                                    </p>
+                                    {/loop}
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    {loop type="arclist" row="1" image="1" info="1"}
+                                    <p style="text-align:center">
+                                        <a class="view-image" href="{$vo.pic}"
+                                            data-fancybox="gallery" title="{$vo.title}"><img class="ue-image"
+                                                src="{$vo.pic}" alt="{$vo.title}"></a>
+                                    </p>
+                                    {/loop}
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <h2>{随机栏目}</h2>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    {loop type="arclist" row="1" image="1" info="1"}
+                                    <p style="text-align:center">
+                                        <a class="view-image" href="{$vo.pic}"
+                                            data-fancybox="gallery" title="{$vo.title}"><img class="ue-image"
+                                                src="{$vo.pic}" alt="{$vo.title}"></a>
+                                    </p>
+                                    {/loop}
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                    <h2>{$keywords} {随机栏目}</h2>
+                                    <p style="text-indent:2em;">{随机栏目}</p>
+                                </div>
+                                <div class="zk_article_recommendation">
+                                    <div class="recommendation-title">你Maybe Interstion：</div>
+                                    <div class="recommendation-list">
+                                        {loop type="arclist" row="8" image="1" info="1"}
+                                        <p class="zk-a-t"> <a
+                                                href="{$vo.url}">{$vo.title}<span
+                                                    class="highlight" style="color:#f73131;">充电</span>{$vo.title}<span
+                                                    class="highlight" style="color:#f73131;">充电</span>功率仅达14千瓦的限制与突破</a>
+                                        </p>
+                                        {/loop}
+                                    </div>
+                                </div>
+                                <style>
+                                    .zk_article_recommendation,
+                                    .zk_article_recommendation * {
+                                        margin: 0;
+                                        padding: 0;
+                                        box-sizing: border-box !important;
+                                        list-style: none;
+                                    }
+
+                                    .zk_article_recommendation .recommendation-title {
+                                        font-size: 18px;
+                                        font-weight: 700;
+                                        margin: 0;
+                                    }
+
+                                    .zk_article_recommendation .recommendation-list {
+                                        margin: 0;
+                                        font-size: 16px;
+                                    }
+
+                                    .zk_article_recommendation .recommendation-list .zk-a-t {
+                                        padding: 2px 0;
+                                        margin: 0;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        text-indent: 0;
+                                    }
+                                </style>
+                            </div>
+                            <div class="post-statement">
+                                <p>转载请注明来自<a href="{随机栏目URL}"
+                                        title="{随机栏目}"><strong>{随机栏目}</strong></a>，本文标题：<a
+                                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></p>
+                            </div>
+                            <div class="post-share"> 百度分享代码，如果开启HTTPS请参考李洋个人博客 </div>
+                            <div id="authorarea">
+                                <div class="authorinfo">
+                                    <div class="author-avater"><img alt src="{$vo.pic}" class="avatar avatar-50 photo"
+                                            height="50" width="50"></div>
+                                    <div class="author-des">
+                                        <div class="author-meta"> <span class="post-author-name"><a href="{随机栏目URL}"
+                                                    title="{随机栏目}" rel="author">{随机栏目}</a></span> <span
+                                                class="post-author-tatus"><a href="{随机栏目URL}" target="_blank"
+                                                    title="{随机栏目}">{随机栏目}</a></span> <span class="post-author-url"><a
+                                                    href="{随机栏目URL}" rel="nofollow" target="_blank"
+                                                    title="{随机栏目}">{随机栏目}</a></span> <span class="post-author-weibo"><a
+                                                    href="{随机栏目URL}" rel="nofollow" target="_blank"
+                                                    title="{随机栏目}">{随机栏目}</a></span> </div>
+                                        <div class="author-description"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="related">
+                            <div class="related-title">{$keywords} 阅读最新文章</div>
+                            <ul class="related_img" data-row="8">
+                                {loop type="arclist" row="8" image="1" info="1"}
+                                <li><a href="{$vo.url}" title="{$vo.title}"
+                                        target="_blank"><img src="{$vo.pic}" alt="{$vo.title}" class="thumbnail">
+                                        <h2>{随机栏目}</h2>
+                                    </a></li>
+                                {/loop}
+                            </ul>
+                        </div>
+                        <div id="comments" class="clearfix"> <!--评论框-->
+                            <div id="comt-respond" class="commentpost wow fadeInDown">
+                                <h4><i class="fa fa-pencil"></i>发表评论<span><a rel="nofollow" id="cancel-reply"
+                                            href="#comment" style="display:none;"><small>取消回复</small></a></span></h4>
+                                <form id="frmSumbit" target="_self" method="post"
+                                    action="/">
+                                    <input type="hidden" name="inpId" id="inpId" value="27307"> <input type="hidden"
+                                        name="inpRevID" id="inpRevID" value="0">
+                                    <div class="comt-box" style="height: auto;">
+                                        <div class="form-group liuyan form-name"><input type="text" id="inpName"
+                                                name="inpName" class="text" value placeholder="昵称" size="28"
+                                                tabindex="1"></div>
+                                        <div class="form-group liuyan form-email"><input type="text" id="inpEmail"
+                                                name="inpEmail" class="text" value placeholder="邮箱" size="28"
+                                                tabindex="2"></div>
+                                        <div class="form-group liuyan form-www"><input type="text" id="inpHomePage"
+                                                name="inpHomePage" class="text" value placeholder="网址" size="28"
+                                                tabindex="3"></div>
+                                    </div>
+                                    <div id="comment-tools"><!--verify-->
+                                        <div class="tools_title"> <span class="com-title">快捷回复：</span> <a title="粗体字"
+                                                onmousedown="InsertText(objActive,ReplaceText(objActive,'[B]','[/B]'),true);"><i
+                                                    class="fa fa-bold"></i></a> <a title="斜体字"
+                                                onmousedown="InsertText(objActive,ReplaceText(objActive,'[I]','[/I]'),true);"><i
+                                                    class="fa fa-italic"></i></a> <a title="下划线"
+                                                onmousedown="InsertText(objActive,ReplaceText(objActive,'[U]','[/U]'),true);"><i
+                                                    class="fa fa-underline"></i></a> <a title="删除线"
+                                                onmousedown="InsertText(objActive,ReplaceText(objActive,'[S]','[/S]'),true);"><i
+                                                    class="fa fa-strikethrough"></i></a> <a
+                                                href="javascript:addNumber('文章不错,写的很好！')" title="文章不错,写的很好！"><i
+                                                    class="fa fa-thumbs-o-up"></i></a> <a
+                                                href="javascript:addNumber('emmmmm。。看不懂怎么破？')"
+                                                title="emmmmm。。看不懂怎么破？"><i class="fa fa-thumbs-o-down"></i></a> <a
+                                                href="javascript:addNumber('赞、狂赞、超赞、不得不赞、史上最赞！')"
+                                                title="赞、狂赞、超赞、不得不赞、史上最赞！"><i class="fa fa-heart"></i></a> </div>
+                                        <div class="tools_text"> <textarea placeholder="请遵守相关法律与法规，文明评论。O(∩_∩)O~~"
+                                                name="txaArticle" id="txaArticle"
+                                                class="text input-block-level comt-area" cols="50" rows="4"
+                                                tabindex="5"></textarea> </div>
+                                    </div>
+                                    <p> <input name="sumbit" type="submit" tabindex="6" value="提交"
+                                            onclick="return zbp.comment.post()" class="button"></p>
+                                </form>
+                            </div>
+                            <div class="commentlist"><!--评论输出-->
+                                <div class="comment-tab">
+                                    <div class="come-comt"> <i class="fa fa-comments"></i>{$keywords} 评论列表 <span
+                                            id="comment_count">（暂无评论，<span
+                                                style="color:#E1171B">1000</span>人围观）</span><span class="iliuyan"><a
+                                                href="{随机栏目URL}"><i
+                                                    class="fa fa-bell"></i>参与讨论</a></span> </div>
+                                </div>
+                                <h2 class="comment-text-center"><i class="fa fa-frown-o"></i> 还没有评论，来说两句吧...</h2><label
+                                    id="AjaxCommentBegin"></label>
+                            </div> <span class="icon icon_comment" title="comment"></span>
+                        </div>
+                    </div>
+                    <div id="sidebar-right" class><!--侧栏-->
+                        <section class="sidebox wow fadeInDown" id="divPrevious">
+                            <h3 class="sidebox_title">{随机栏目}</h3>
+                            <ul class="sidebar_content divPrevious" data-row="6">
+                                {loop type="arclist" row="6" image="1" info="1"}
+                                <li class="clr">
+                                    <a href="{$vo.url}" title="探究托管规模与效益平衡，合理托管人数是多少？">
+                                        <div class="time">
+                                            <span class="r">10</span>/<span class="y">12月</span>
+                                        </div>
+                                        <div class="title">{$vo.title}</div>
+                                    </a>
+                                </li>
+                                {/loop}
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="divPrevious">
+                            <h3 class="sidebox_title">{随机栏目}</h3>
+                            <ul class="sidebar_content divPrevious" data-row="6">
+                                {loop type="arclist" row="6" image="1" info="1"}
+                                <li class="clr">
+                                    <a href="{$vo.url}" title="探究托管规模与效益平衡，合理托管人数是多少？">
+                                        <div class="time">
+                                            <span class="r">10</span>/<span class="y">12月</span>
+                                        </div>
+                                        <div class="title">{$vo.title}</div>
+                                    </a>
+                                </li>
+                                {/loop}
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="divLinkage">
+                            <h3 class="sidebox_title">{随机栏目}</h3>
+                            <ul class="sidebar_content divLinkage" data-row="5">
+                                <li class="link-item"><a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a></li>
+                            </ul>
+                        </section>
+                        <section class="sidebox listree-box wow fadeInDown">
+                            <h3 class="sidebox_title">{随机栏目}</h3>
+                            <ul id="listree-ol" data-row="0"></ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" rev="stylesheet" href="{$theme_path}/css/fancybox.css" type="text/css" media="all">
+        <script src="{$theme_path}/js/fancybox.js"></script>
+        <div id="footer">
+            <div id="footer-bottom">
+                <div class="nav-foot">
+                    <div class="credit"> Copyright<i class="fa fa-copyright"></i>2015-2019
+                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> {$keywords} 基于
+                        <a href="{随机栏目URL}" title="{随机栏目}" target="_blank" rel="noopener norefferrer">{随机栏目}</a>搭建 
+                    </div>
+                    <div class="footernav"> 
+                        <a class="beian-ico" target="_blank" href="" title="京公网安备11000000000001号">
+                            京公网安备11000000000001号
+                        </a>
+                        <a class="beian-ico" href="" rel="nofollow" target="_blank" title="京ICP备11000001号">
+                            蜀ICP备2022005971号-1
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div> <a href="{随机栏目URL}" class="cd-top" title="{随机栏目}">{随机栏目}</a>
+        <div class="none">
+            <script type="text/javascript" src="{$theme_path}/js/viewlee.js?t=2024-09-25"></script>
+            <script type="text/javascript" src="{$theme_path}/js/sticky-sidebar.js"></script>
+            <script src="{$theme_path}/js/wow.min.js"></script>
+        </div>
+    </div>
+</body>

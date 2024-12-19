@@ -1,0 +1,19 @@
+.footer {
+    background-color: #f9f9f9;
+    padding: 45px 0;
+}
+ 
+.footer li {
+    margin-right: 40px;
+    line-height: 1.1;
+    border-bottom: 1px solid #2E89E6;
+}
+ 
+.footer li a {
+    font-weight: bold;
+    color: #2E89E6;
+}
+
+.footer li:nth-last-child(1) {
+    margin-right: 0;
+}

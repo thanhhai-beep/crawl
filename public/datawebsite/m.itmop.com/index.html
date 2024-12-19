@@ -1,0 +1,383 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="applicable-device" content="mobile">
+    <link rel="dns-prefetch" href="{$theme_path}/css/m.itmop.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta id="viewport" name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link rel="stylesheet" href="{$theme_path}/css/app.css">
+</head>
+
+<body id="index-page">
+    <header class="top">
+        <h1><a href="{随机栏目URL}" id="logo" title="{随机栏目}">{随机栏目}</a></h1>
+        <div class="soBox">
+            <div class="soInput"><input name="q" class="bdcs-search-form-input" id="bdcs-search-form-input"
+                    placeholder="我的世界" value="我的世界" autocomplete="off"></div>
+            <div class="soBtn"><a href="{随机栏目URL}" class="bdcs-search-form-submit" id="bdcs-search-form-submit"
+                    title="{随机栏目}">{随机栏目}</a></div>
+        </div>
+    </header>
+    <nav id="nav">
+        <ul class="mainNav" data-row="5">
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+        </ul>
+        <p class="pullNav"><span><i></i></span></p>
+        <ul class="moreNav" data-row="4">
+            <li><a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+        </ul>
+    </nav>
+    <section class="spicSlide">
+        <div id="wrapper">
+            <div id="scroller">
+                <ul id="thelist" data-row="0"></ul>
+            </div>
+        </div>
+    </section>
+    <section class="img-focus">
+        <div id="wrapper8">
+            <div id="scroller8">
+                <ul class="focus-pic" data-row="9">
+                    {loop type="arclist" row="9" tpl="" islist=""}
+                    <li><a href="{$vo.url}" class="swiper-slide"><img alt="文心一言" src="{$vo.pic}"></a></li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="circle"></div>
+        </div>
+    </section>
+    <div class="g-white-box">
+        <ul class="g-link-nav" data-row="8">
+            {loop type="catelog" row="8" tpl="" islist=""}
+            <li><a href="{$vo.url}"><b></b><strong>{$vo.title}</strong></a></li>
+            {/loop}
+        </ul>
+    </div>
+    <p id="sNav"><span class="bibei"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></span><span class="biwan"><a
+                href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></span><span class="sku"><a href="{随机栏目URL}"
+                title="{随机栏目}">{随机栏目}</a></span></p>
+    <section class="game">
+        <p class="bt"><b>热门手游推荐</b><span id="cwc"><s><u class="cur">推荐</u><u>排行</u><u>分类</u></s></span></p>
+        <div class="gwarp">
+            <ul class="vlist on" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                        <span>{$vo.title}</span></a>
+                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p><a href="{$vo.url}" class="btn"
+                        title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+            <ul class="vlist" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                        <span>{$vo.title}</span></a>
+                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p><a href="{$vo.url}" class="btn"
+                        title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+            <ul class="gcata" data-row="13">
+                {loop type="arclist" row="13" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img alt="{$vo.title}" src="{$vo.pic}"
+                            loading="lazy"><span><u>{$vo.title}</u>{$vo.hits}百+款应用</span></a></li>
+                {/loop}
+            </ul>
+            <ul class="vlist on" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                        <span>{$vo.title}</span></a>
+                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p><a href="{$vo.url}" class="btn"
+                        title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+            <ul class="vlist" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                        <span>{$vo.title}</span></a>
+                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p><a href="{$vo.url}" class="btn"
+                        title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+            <ul class="gcata" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img alt="{$vo.title}" src="{$vo.pic}"
+                            loading="lazy"><span><u>{$vo.title}</u>{$vo.hits}百+款应用</span></a></li>
+                {/loop}
+            </ul>
+        </div>
+    </section>
+    <h1>{$keywords}</h1>
+    <section class="game">
+        <p class="bt"><b>热门软件推荐</b><span id="cwc1"><s><u class="cur">推荐</u><u>排行</u><u>分类</u></s></span></p>
+        <div class="gwarp">
+            <ul class="vlist on" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                        <span>{$vo.title}</span></a>
+                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p><a href="{$vo.url}" class="btn"
+                        title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+            <ul class="vlist" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                        <span>{$vo.title}</span></a>
+                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p><a href="{$vo.url}" class="btn"
+                        title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+            <ul class="gcata" data-row="13">
+                {loop type="arclist" row="14" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img alt="{$vo.title}" src="{$vo.pic}"
+                            loading="lazy"><span><u>{$vo.title}</u>{$vo.hits}百+款应用</span></a></li>
+                {/loop}
+            </ul>
+            <ul class="vlist on" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                        <span>{$vo.title}</span></a>
+                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p><a href="{$vo.url}" class="btn"
+                        title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+            <ul class="vlist" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                        <span>{$vo.title}</span></a>
+                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p><a href="{$vo.url}" class="btn"
+                        title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+            <ul class="gcata" data-row="13">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img alt="{$vo.title}" src="{$vo.pic}"
+                            loading="lazy"><span><u>{$vo.title}</u>{$vo.hits}百+款应用</span></a></li>
+                {/loop}
+            </ul>
+        </div>
+    </section>
+    <section class="game">
+        <p class="bt"><b>{$keywords} 火爆软件推荐</b></p>
+        <ul class="glist az" data-row="6">
+            {loop type="arclist" row="6" tpl="" islist=""}
+            <li>
+                <p><a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                    </a><span><u><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></u>
+                        <a href="{$vo.url}" class="btn" title="下载">下载</a>
+                    </span><s>{随机关键词}<em>v{randstr type="2" num="3"/}.{randstr type="2" num="1"/}.{randstr type="2"
+                            num="2"/}</em></s></p>
+            </li>
+            {/loop}
+        </ul>
+        <ul class="glist ios" data-row="6">
+            {loop type="arclist" row="6" tpl="" islist=""}
+            <li>
+                <p><a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                    </a><span><u><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></u>
+                        <a href="{$vo.url}" class="btn" title="下载">下载</a>
+                    </span><s>{随机关键词}<em>v{randstr type="2" num="3"/}.{randstr type="2" num="1"/}.{randstr type="2"
+                            num="2"/}</em></s></p>
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="spicSlide">
+        <div class="zt" id="wrapper1">
+            <div id="scroller1">
+                <ul id="thelist1" data-row="0"></ul>
+            </div>
+        </div>
+    </section>
+    <section class="game">
+        <p class="bt"><b>女生必备</b></p>
+        <ul class="glist az" data-row="8">
+            {loop type="arclist" row="8" tpl="" islist=""}
+            <li>
+                <p><a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                    </a><span><u><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></u>
+                        <a href="{$vo.url}" class="btn" title="下载">下载</a>
+                    </span><s>{随机关键词}<em>v{randstr type="2" num="3"/}.{randstr type="2" num="1"/}.{randstr type="2"
+                            num="2"/}</em></s></p>
+            </li>
+            {/loop}
+        </ul>
+        <ul class="glist ios" data-row="8">
+            {loop type="arclist" row="8" tpl="" islist=""}
+            <li>
+                <p><a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                    </a><span><u><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></u>
+                        <a href="{$vo.url}" class="btn" title="下载">下载</a>
+                    </span><s>{随机关键词}<em>v{randstr type="2" num="3"/}.{randstr type="2" num="1"/}.{randstr type="2"
+                            num="2"/}</em></s></p>
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="spicSlide">
+        <div class="zt" id="wrapper2">
+            <div id="scroller2">
+                <ul id="thelist2" data-row="0"></ul>
+            </div>
+        </div>
+    </section>
+    <section class="game">
+        <p class="bt"><b>热门手游辅助</b><span id="cwc2"><s><u class="cur">推荐</u><u>排行</u><u>分类</u></s></span></p>
+        <div class="gwarp">
+            <ul class="vlist on" data-row="8">
+                {loop type="arclist" row="8" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                        <span>{$vo.title}</span></a>
+                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p><a href="{$vo.url}" class="btn"
+                        title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+            <ul class="vlist" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                        <span>{$vo.title}</span></a>
+                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p><a href="{$vo.url}" class="btn"
+                        title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+            <ul class="gcata" data-row="14">
+                {loop type="arclist" row="14" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img alt="{$vo.title}" src="{$vo.pic}"
+                            loading="lazy"><span><u>{$vo.title}</u>{$vo.hits}百+款应用</span></a></li>
+                {/loop}
+            </ul>
+            <ul class="vlist on" data-row="8">
+                {loop type="arclist" row="8" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                        <span>{$vo.title}</span></a>
+                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p><a href="{$vo.url}" class="btn"
+                        title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+            <ul class="vlist" data-row="8">
+                {loop type="arclist" row="8" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                        <span>{$vo.title}</span></a>
+                    <p>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</p><a href="{$vo.url}" class="btn"
+                        title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+            <ul class="gcata" data-row="13">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img alt="{$vo.title}" src="{$vo.pic}"
+                            loading="lazy"><span><u>{$vo.title}</u>{$vo.hits}百+款应用</span></a></li>
+                {/loop}
+            </ul>
+        </div>
+    </section>
+    <section class="game">
+        <p class="bt"><b>{$keywords} 宅男必备</b></p>
+        <ul class="glist az" data-row="8">
+            {loop type="arclist" row="4" tpl="" islist=""}
+            <li>
+                <p><a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                    </a><span><u><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></u>
+                        <a href="{$vo.url}" class="btn" title="下载">下载</a>
+                    </span><s>{随机关键词}<em>v{randstr type="2" num="3"/}.{randstr type="2" num="1"/}.{randstr type="2"
+                            num="2"/}</em></s></p>
+            </li>
+            {/loop}
+        </ul>
+        <ul class="glist ios" data-row="8">
+            {loop type="arclist" row="4" tpl="" islist=""}
+            <li>
+                <p><a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy">
+                    </a><span><u><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></u>
+                        <a href="{$vo.url}" class="btn" title="下载">下载</a>
+                    </span><s>{随机关键词}<em>v{randstr type="2" num="3"/}.{randstr type="2" num="1"/}.{randstr type="2"
+                            num="2"/}</em></s></p>
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="spicSlide">
+        <div class="zt" id="wrapper3">
+            <div id="scroller3">
+                <ul id="thelist3" data-row="0"></ul>
+            </div>
+        </div>
+    </section>
+    <section class="list">
+        <p class="bt"><b>下拉有惊喜</b></p>
+        <ul class="iList az" data-row="20">
+            {loop type="arclist" row="20" tpl="" islist=""}
+            <li><a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy"></a>
+                <p><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+                    <em class="lstar4"></em>
+                    <span>生活服务<u>{randstr type="2" num="3"/}.{randstr type="2" num="1"/} MB</u>v{randstr type="2"
+                        num="3"/}.{randstr type="2" num="1"/}.{randstr type="2" num="2"/}安卓版</span>
+                </p><a href="{$vo.url}" class="btn" title="下载">下载</a>
+            </li>
+            {/loop}
+        </ul>
+        <ul class="iList ios" data-row="20">
+            {loop type="arclist" row="20" tpl="" islist=""}
+            <li><a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt="{$vo.title}" loading="lazy"></a>
+                <p><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+                    <em class="lstar4"></em>
+                    <span>生活服务<u>{randstr type="2" num="3"/}.{randstr type="2" num="1"/} MB</u>v{randstr type="2"
+                        num="3"/}.{randstr type="2" num="1"/}.{randstr type="2" num="2"/}安卓版</span>
+                </p><a href="{$vo.url}" class="btn" title="下载">下载</a>
+            </li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="tszj">
+        <p><b>特色专辑</b></p>
+        <ul data-row="10">
+            <li><a href="/lushichuanshuo/"><b>炉石传说</b></a></li>
+            <li><a href="/celueshouyou/"><b>策略手游</b></a></li>
+            <li><a href="/laycsy/"><b>恋爱养成</b></a></li>
+            <li><a href="/xiuxianyouxi/"><b>休闲游戏</b></a></li>
+            <li><a href="/celvekapai/"><b>卡牌游戏</b></a></li>
+            <li><a href="/zhiwudazhanjiangshi/"><b>植物大战僵尸</b></a></li>
+            <li><a href="/77top/"><b>77游戏盒</b></a></li>
+            <li><a href="/wangyidashen/"><b>网易大神</b></a></li>
+            <li><a href="/233leyuan/"><b>233乐园</b></a></li>
+            <li><a href="/yuanshenyouxi/"><b>原神</b></a></li>
+        </ul>
+    </section>
+    <section class="yl">
+        <p><b>友情链接</b></p>
+        <ul data-row="3">
+            <li><a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a></li>
+        </ul>
+    </section>
+    <footer class="bottom"><em id="goTop"></em>
+        <p><a href="{随机栏目URL}" title="{随机栏目}">{$keywords} {随机栏目}</a>|<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>|<a
+                href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></p>
+    </footer>
+    <script src="{$theme_path}/js/zepto.js"></script>
+    <script src="{$theme_path}/js/iscrollc.js"></script>
+    <script src="{$theme_path}/js/itmop.js"></script>
+    <script src="{$theme_path}/js/global.js"></script>
+</body>

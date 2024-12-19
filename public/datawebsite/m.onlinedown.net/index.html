@@ -1,0 +1,443 @@
+<head>
+    <meta charset="utf-8">
+    <title>{$toptitle}</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport"
+        name="viewport">
+    <meta name="applicable-device" content="mobile">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="{$keywords}">
+    <meta name="Description" content="{$description}">
+    <meta http-equiv="Cache-Control" content="no-transform ">
+    <script type="text/javascript" src="{$theme_path}/js/bundle.js?20241216174147"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/font_1471340715_136742.css">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/default-skin.min.css">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/photoswipe.min.css">
+    <script type="text/javascript" src="{$theme_path}/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/swiper-3.3.1.jquery.min.js"></script>
+    <script src="{$theme_path}/js/wdj-dl-highspeed-sec.js"></script>
+
+    <script src="{$theme_path}/js/xingzhi.js?b9fa" id="xingzhi-js" type="text/javascript" async></script>
+    <meta name="pageClass" content>
+</head>
+
+<body>
+    <header id="header" class="cl">
+        <div class="cl">
+            <div id="search" class="pull-left pos-r">
+                <form method="get" action="/search/" accept-charset="utf-8">
+                    <input class="search-input" type="text" name="scon" placeholder="请输入关键字">
+                    <input type="submit" value class="search-button"> <i class="icon-sousuo"></i>
+                    <input type="hidden" name="sid" id="headSearchType" value="6">
+                    <div class="cl"></div>
+                </form>
+            </div>
+        </div>
+        <div class="pull-left" id="logo">
+            <a href="/">
+                <!--<div class="logo__img">-->
+                <!--    <span class="hide">华军软件园</span>-->
+                <!--</div>-->
+            </a>
+        </div>
+    </header>
+    <nav id="nav" class="side-down">
+        <ul class="cl" data-row="6">
+            <li>
+                <a href="/" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+        </ul>
+    </nav>
+
+    <article class="box pt-10 list">
+        <div id="cate-top">
+            <ul class="cl" data-row="4">
+                <li>
+                    <a href="{随机栏目URL}">
+                        <p><i class="icon-artboard12"></i></p>
+                        <em>{随机栏目}</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="{随机栏目URL}">
+                        <p><i class="icon-artboard12"></i></p>
+                        <em>{随机栏目}</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="{随机栏目URL}">
+                        <p><i class="icon-artboard12"></i></p>
+                        <em>{随机栏目}</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="{随机栏目URL}">
+                        <p><i class="icon-artboard12"></i></p>
+                        <em>{随机栏目}</em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="blank10"></div>
+        <div id="new-soft">
+            <div class="hd pos-r cl">
+                <cite>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </cite>
+                <h3>{随机栏目}</h3>
+                <h1>{$keywords}</h1>
+                <i class="icon-sanjiaozuo"></i>
+            </div>
+
+            <div class="bd cl">
+                <div class="pull-right" style="width:49%;">
+                    <ul class="cl" data-row="3">
+                        {loop type="arclist" row="5" tpl="" islist=""}
+                        <li>
+                            <a href="{$vo.url}">
+                                <img src="{$vo.pic}" style="width:35px;height:35px;">
+                                <strong>{$vo.title}</strong>
+                                <time>{$vo.postdate}</time>
+                            </a>
+                        </li>
+                        {/loop}
+                    </ul>
+                </div>
+                <div class="pull-left" style="width:49%;">
+                    <dl class="overlay">
+                        {loop type="arclist" row="1" tpl="" islist=""}
+                        <dt>
+                            <a href="{$vo.url}"
+                                onclick="_hmt.push(['_trackEvent','709tick','709tick','709tick_index']);">
+                                <img src="{$vo.pic}">
+                            </a>
+                        </dt>
+                        {/loop}
+                        <dd>
+                            <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                            <span></span>
+                        </dd>
+                    </dl>
+                    <ul class="cl" data-row="1">
+                        {loop type="arclist" row="1" tpl="" islist=""}
+                        <li>
+                            <a href="{$vo.url}">
+                                <img src="{$vo.pic}" style="width:35px;height:35px;">
+                                <strong>{$vo.title}</strong>
+                                <time>{$vo.postdate}</time>
+                            </a>
+                        </li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="index-soft_list">
+            <div class="hd pos-r cl">
+                <cite>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </cite>
+                <h3>{随机栏目}</h3>
+                <span>安卓人气应用风向标</span>
+                <i class="icon-sanjiaozuo"></i>
+            </div>
+            <div class="bd">
+                {loop type="arclist" row="5" tpl="" islist=""}
+                <dl class="cl">
+                    <a href="{$vo.url}">
+                        <dt class>
+                            <img src="{$vo.pic}">
+                        </dt>
+                        <dd>
+                            <ul class="cl" data-row="3">
+                                <li>
+                                    <h2>{$vo.title}</h2>
+                                </li>
+                                <li>
+                                    <span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/} M</span>
+                                    <span class="pipe">/</span>
+                                    <span>{随机关键词}</span>
+                                    <span class="pipe">/</span>
+                                    <span>{$vo.postdate}</span>
+                                </li>
+                                <li>
+                                    <img src="{$theme_path}/images/xx-4.png">
+                                </li>
+                            </ul>
+                        </dd>
+                        <i class="icon-xiazai"></i>
+                    </a>
+                </dl>
+                {/loop}
+            </div>
+            <div class="hd pos-r cl">
+                <cite>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </cite>
+                <h3>{随机栏目}</h3>
+                <span>{$keywords}</span>
+                <i class="icon-sanjiaozuo"></i>
+            </div>
+            <div class="bd">
+                {loop type="arclist" row="5" tpl="" islist=""}
+                <dl class="cl">
+                    <a href="{$vo.url}">
+                        <dt class>
+                            <img src="{$vo.pic}">
+                        </dt>
+                        <dd>
+                            <ul class="cl" data-row="3">
+                                <li>
+                                    <h2>{$vo.title}</h2>
+                                </li>
+                                <li>
+                                    <span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/} M</span>
+                                    <span class="pipe">/</span>
+                                    <span>{随机关键词}</span>
+                                    <span class="pipe">/</span>
+                                    <span>{$vo.postdate}</span>
+                                </li>
+                                <li>
+                                    <img src="{$theme_path}/images/xx-4.png">
+                                </li>
+                            </ul>
+                        </dd>
+                        <i class="icon-xiazai"></i>
+                    </a>
+                </dl>
+                {/loop}
+            </div>
+        </section>
+
+        <section class="index-soft_list">
+            <div class="hd pos-r cl">
+                <cite>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </cite>
+                <h3>{随机栏目}</h3>
+                <span>安卓火爆游戏畅快玩</span>
+                <i class="icon-sanjiaozuo"></i>
+            </div>
+            <div class="bd">
+                {loop type="arclist" row="5" tpl="" islist=""}
+                <dl class="cl">
+                    <a href="{$vo.url}">
+                        <dt class>
+                            <img src="{$vo.pic}">
+                        </dt>
+                        <dd>
+                            <ul class="cl" data-row="3">
+                                <li>
+                                    <h2>{$vo.title}</h2>
+                                </li>
+                                <li>
+                                    <span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/} M</span>
+                                    <span class="pipe">/</span>
+                                    <span>{随机关键词}</span>
+                                    <span class="pipe">/</span>
+                                    <span>{$vo.postdate}</span>
+                                </li>
+                                <li>
+                                    <img src="{$theme_path}/images/xx-4.png">
+                                </li>
+                            </ul>
+                        </dd>
+                        <i class="icon-xiazai"></i>
+                    </a>
+                </dl>
+                {/loop}
+            </div>
+            <div class="hd pos-r cl">
+                <cite>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </cite>
+                <h3>{随机栏目}</h3>
+                <span>{$keywords}</span>
+                <i class="icon-sanjiaozuo"></i>
+            </div>
+            <div class="bd">
+                {loop type="arclist" row="5" tpl="" islist=""}
+                <dl class="cl">
+                    <a href="{$vo.url}">
+                        <dt class>
+                            <img src="{$vo.pic}">
+                        </dt>
+                        <dd>
+                            <ul class="cl" data-row="3">
+                                <li>
+                                    <h2>{$vo.title}</h2>
+                                </li>
+                                <li>
+                                    <span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/} M</span>
+                                    <span class="pipe">/</span>
+                                    <span>{随机关键词}</span>
+                                    <span class="pipe">/</span>
+                                    <span>{$vo.postdate}</span>
+                                </li>
+                                <li>
+                                    <img src="{$theme_path}/images/xx-4.png">
+                                </li>
+                            </ul>
+                        </dd>
+                        <i class="icon-xiazai"></i>
+                    </a>
+                </dl>
+                {/loop}
+            </div>
+        </section>
+
+        <section class="index-soft_list">
+            <div class="hd pos-r cl">
+                <cite>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </cite>
+                <h3>{随机栏目}</h3>
+                <span>安卓软件排行</span>
+                <i class="icon-sanjiaozuo"></i>
+            </div>
+            <div class="bd">
+                {loop type="arclist" row="10" tpl="" islist=""}
+                <dl class="cl">
+                    <a href="{$vo.url}">
+                        <dt class>
+                            <img src="{$vo.pic}">
+                        </dt>
+                        <dd>
+                            <ul class="cl" data-row="3">
+                                <li>
+                                    <h2>{$vo.title}</h2>
+                                </li>
+                                <li>
+                                    <span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/} M</span>
+                                    <span class="pipe">/</span>
+                                    <span>{随机关键词}</span>
+                                    <span class="pipe">/</span>
+                                    <span>{$vo.postdate}</span>
+                                </li>
+                                <li>
+                                    <img src="{$theme_path}/images/xx-4.png">
+                                </li>
+                            </ul>
+                        </dd>
+                        <i class="icon-xiazai"></i>
+                    </a>
+                </dl>
+                {/loop}
+            </div>
+            <div class="hd pos-r cl">
+                <cite>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </cite>
+                <h3>{随机栏目}</h3>
+                <span>苹果软件排行</span>
+                <i class="icon-sanjiaozuo"></i>
+            </div>
+            <div class="bd">
+                {loop type="arclist" row="10" tpl="" islist=""}
+                <dl class="cl">
+                    <a href="{$vo.url}">
+                        <dt class>
+                            <img src="{$vo.pic}">
+                        </dt>
+                        <dd>
+                            <ul class="cl" data-row="3">
+                                <li>
+                                    <h2>{$vo.title}</h2>
+                                </li>
+                                <li>
+                                    <span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/} M</span>
+                                    <span class="pipe">/</span>
+                                    <span>{随机关键词}</span>
+                                    <span class="pipe">/</span>
+                                    <span>{$vo.postdate}</span>
+                                </li>
+                                <li>
+                                    <img src="{$theme_path}/images/xx-4.png">
+                                </li>
+                            </ul>
+                        </dd>
+                        <i class="icon-xiazai"></i>
+                    </a>
+                </dl>
+                {/loop}
+            </div>
+        </section>
+        <section class="index-soft_speciallist ">
+            <div class="hd pos-r cl">
+                <cite>
+                    <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                </cite>
+                <h3>{随机栏目}</h3>
+                <span>{$keywords}</span>
+                <i class="icon-sanjiaozuo"></i>
+            </div>
+            <div class="bd cl">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                <dl>
+                    <a href="{$vo.url}">
+                        <dt>
+                            <img src="{$vo.pic}">
+                        </dt>
+                        <dd>
+                            <strong>{$vo.title}</strong>
+                            <p></p>
+                        </dd>
+                    </a>
+                </dl>
+                {/loop}
+            </div>
+        </section>
+    </article>
+    <div id="foot-nav">
+        <ul class="cl" data-row="3">
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        Copyright © 1997- 2024 {$keywords}.
+    </footer>
+
+    <script>
+        $(function () {
+            $('.icon-sousuo,.search-button').click(function () {
+                var scon = $('.search-input').val();
+                if (scon == '') {
+                    alert('请输入要搜索的内容！！');
+                    return false;
+                } else {
+                    $(this).parents('form').submit();
+                }
+            })
+        })
+
+    </script>
+</body>

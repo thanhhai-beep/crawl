@@ -1,0 +1,411 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "{随机栏目URL}">
+<html xmlns="{随机栏目URL}">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+	<link href="{$theme_path}/css/style.css" rel="stylesheet" media="screen" type="text/css" />
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<!--欢迎栏-->
+	<div class="head">
+		<div class="head_top w">
+			<P>专业软件下载站,为您提供无病毒无木马的纯净绿色软件</P>
+			<div><a href="e/action/ListInfo/?classid=187">最新更新</a>丨<a href="javascript:;"
+					onclick="try{window.external.AddFavorite(location.href,document.title);}catch(e){alert('加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.');}">收藏本站</a>
+			</div>
+		</div>
+	</div>
+	<!--logo-->
+	<div class="logo">
+		<div class="w">
+			<div class="zuo"><a href="/"><img src="{$theme_path}/images/logo.jpg" /></a></div>
+			<div class="you">
+				<form name="formsearch" class="search_form" action="../../e/search/index.php">
+					<input type="hidden" name="action" value="search">
+					<input type="text" name="q" id="search-keyword" placeholder="输入软件名称，例如：百度浏览器" class="search_input">
+					<input type="hidden" name="s" value="5729472019341724614">
+					<input type="hidden" name="ie" value="utf-8">
+					<button class="search_btn" id="search_bt" type="submit">搜索</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--导航栏-->
+	<div class="menu">
+		<div class="w">
+			<div class="menu_cl"><a class="be" href="/">首页</a><a href="e/action/ListInfo/?classid=187">软件下载</a><a
+					id="hot" href="paihangbang.html">排行榜</a></div>
+		</div>
+	</div>
+	<!--精品推荐-->
+	<div class="ruan">
+		<div class="ra w">
+			<ul>
+				{loop type="arclist" row="11" image="1" info="1"}
+				<li><a title="{$vo.title}" href="{$vo.url}"><img alt="{$vo.title}" src="{$vo.pic}">
+						<p>{$vo.title}</p>
+					</a></li>
+				{/loop}
+			</ul>
+		</div>
+	</div>
+	<!--软件分类-->
+	<div class="column">
+		<div class="w">
+			<ul>
+				{loop type="catelog" row="10" image="1" info="1"}
+					<li id="tabnav_btn_{$vo.i}" onmouseover="tabit(this)"><a href="{$vo.url}">{$vo.title}</a></li>
+				{/loop}
+				{loop type="catelog" row="10" image="1" info="1"}
+					<li id="tabnav_btn_{$vo.i}" onmouseover="tabit(this)"><a href="{$vo.url}">{$vo.title}</a></li>
+				{/loop}
+			</ul>
+		</div>
+	</div>
+	<!--中间三块-->
+	<div class="first">
+		<div class="w">
+			<!--左边-->
+			<div class="first_left">
+				<div class="scroll">
+					<div class="hd">
+						<ul>
+							<li class="on"></li>
+							<li class=""></li>
+							<li class=""></li>
+						</ul>
+					</div>
+					<div class="bd">
+						<ul>
+							{loop type="arclist" row="2" image="1" info="1"}
+							<li style="display: none;">
+								<a target="_blank" href="{$vo.url}">
+									<img alt="{$vo.title}" src="{$vo.pic}">
+									<span>{$vo.title}</span>
+									<div></div>
+								</a>
+							</li>
+							{/loop}
+							{loop type="arclist" row="1" image="1" info="1"}
+							<li style="">>
+								<a target="_blank" href="{$vo.url}">
+									<img alt="{$vo.title}" src="{$vo.pic}">
+									<span>{$vo.title}</span>
+									<div></div>
+								</a>
+							</li>
+							{/loop}
+						</ul>
+					</div>
+				</div>
+				<div class="first_new">
+					<ul>
+						{loop type="arclist" row="1" image="1" info="1"}
+						<li class="first_li">
+							<a title="{$vo.title}" target="_blank" href="{$vo.url}">
+								<img alt="{$vo.title}" src="{$vo.pic}">
+								<span>{$vo.title}</span></a>
+							<p>{$vo.info}...</p>
+						</li>
+						{/loop}
+					</ul>
+				</div>
+			</div>
+			<!--中间-->
+			<div class="first_centre">
+				<div class="hd">
+					<ul>
+						<li class="on1 on">聊天</li>
+						<li class="on2s">杀毒</li>
+						<li class="on3">视频</li>
+						<li class="on4">音乐</li>
+					</ul>
+				</div>
+				<div class="bd">
+					<ul>
+						{loop type="arclist" row="1" image="1" info="1"}
+						<li class="bd_li01"><a href="{$vo.url}" title="wecam虚拟摄像头"
+								target="_blank">wecam虚拟摄像头</a><span>电脑软件</span></li>
+						{/loop}
+						{loop type="arclist" row="9" image="1" info="1"}
+						<li>
+							<img alt="{$vo.title}" src="{$vo.pic}">
+							<a href="{$vo.url}" title="{$vo.title}" target="_blank">{$vo.title}</a><em
+								class="new">11-27</em>
+						</li>
+						{/loop}
+					</ul>
+					<ul style="display: none;">
+						{loop type="arclist" row="1" image="1" info="1"}
+						<li class="bd_li01"><a href="{$vo.url}" title="wecam虚拟摄像头"
+								target="_blank">wecam虚拟摄像头</a><span>电脑软件</span></li>
+						{/loop}
+						{loop type="arclist" row="9" image="1" info="1"}
+						<li>
+							<img alt="{$vo.title}" src="{$vo.pic}">
+							<a href="{$vo.url}" title="{$vo.title}" target="_blank">{$vo.title}</a><em
+								class="new">11-27</em>
+						</li>
+						{/loop}
+					</ul>
+					<ul style="display: none;">
+						{loop type="arclist" row="1" image="1" info="1"}
+						<li class="bd_li01"><a href="{$vo.url}" title="wecam虚拟摄像头"
+								target="_blank">wecam虚拟摄像头</a><span>电脑软件</span></li>
+						{/loop}
+						{loop type="arclist" row="9" image="1" info="1"}
+						<li>
+							<img alt="{$vo.title}" src="{$vo.pic}">
+							<a href="{$vo.url}" title="{$vo.title}" target="_blank">{$vo.title}</a><em
+								class="new">11-27</em>
+						</li>
+						{/loop}
+					</ul>
+					<ul style="display: none;">
+						{loop type="arclist" row="1" image="1" info="1"}
+						<li class="bd_li01"><a href="{$vo.url}" title="wecam虚拟摄像头"
+								target="_blank">wecam虚拟摄像头</a><span>电脑软件</span></li>
+						{/loop}
+						{loop type="arclist" row="9" image="1" info="1"}
+						<li>
+							<img alt="{$vo.title}" src="{$vo.pic}">
+							<a href="{$vo.url}" title="{$vo.title}" target="_blank">{$vo.title}</a><em
+								class="new">11-27</em>
+						</li>
+						{/loop}
+					</ul>
+				</div>
+			</div>
+			<!--右边-->
+			<div class="first_right">
+				<div class="first_right01">
+					<h4>本站推荐</h4>
+					<ul>
+						{loop type="arclist" row="5" image="1" info="1"}
+						<li class="hope">
+							<a href="{$vo.url}" title="{$vo.title}" target="_blank">
+								<img alt="{$vo.title}" src="{$vo.pic}">
+								<span>{$vo.title}</span></a>
+							<p>14.01MB / 简体中文</p>
+						</li>
+						{/loop}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--装机必备-->
+	<div class="matlab">
+		<div class="w">
+			<div class="stripe">
+                <div style="display:flex"><h1 style="color: #fff">{$keywords}</h1> <h4> 装机必备</h4></div>
+			</div>
+			<ul class="stripe_k">
+				{loop type="arclist" row="10" image="1" info="1"}
+					<li><a title="{$vo.title}" target="_blank"
+							href="{$vo.url}"><img alt="{$vo.title}"
+								src="{$vo.pic}">
+							<P>{$vo.title}</P><i></i>
+						</a></li>
+				{/loop}
+			</ul>
+		</div>
+	</div>
+	<!--常用软件-->
+	<div class="often">
+		<div class="w">
+			<div class="stripe">
+				<h4>常用软件</h4>
+			</div>
+			<ul class="stripe_k">
+				{loop type="arclist" row="10" image="1" info="1"}
+					<li><a title="{$vo.title}" target="_blank"
+							href="{$vo.url}"><img alt="{$vo.title}"
+								src="{$vo.pic}">
+							<P>{$vo.title}</P><i></i>
+						</a></li>
+				{/loop}
+			</ul>
+		</div>
+	</div>
+	<!--更多-->
+	<div class="more">
+		<div class="w">
+			<div class="stripe">
+				<ul>
+					<li class="on">
+						<a href="#">全部</a>
+					</li>
+					{loop type="catelog" row="10" image="1" info="1"}
+						<li id="tabnav_btn_{$vo.i}" onmouseover="tabit(this)"><a
+									href="{$vo.url}">{$vo.title}</a></li>
+					{/loop}
+				</ul>
+				<p><a href="/">{$keywords} 更多软件 ></a></p>
+			</div>
+			<div class="moreload">
+				<div class="hidden">
+					<ul class="stripe_k">
+						{loop type="arclist" row="1000" image="1" info="1"}
+							<li><a title="{$vo.title}" target="_blank"
+									href="{$vo.url}"><img alt="{$vo.title}"
+										src="{$vo.pic}">
+									<p><strong>{$vo.title}</strong></p><i></i>
+								</a></li>
+						{/loop}
+					</ul>
+				</div>
+				<ul class="stripe_k" id="scrollDiv">数据加载中，请稍后...</ul>
+				<div class="gd"><a href="javascript:;" class="morearticle" id="getMore" pnum="2">加载更多</a></div>
+
+			</div>
+
+
+
+
+
+			<script src="{$theme_path}/js/jquery.min.js"></script>
+			<script>
+				var _content = []; //临时存储li循环内容
+				var moreload = {
+					_default: 30, //默认显示图片个数
+					_loading: 6,  //每次点击按钮后加载的个数
+					init: function () {
+						var lis = $(".moreload .hidden li");
+						$(".moreload ul.stripe_k").html("");
+						for (var n = 0; n < moreload._default; n++) {
+							lis.eq(n).appendTo(".moreload ul.stripe_k");
+						}
+						$(".moreload ul.stripe_k img").each(function () {
+							$(this).attr('src', $(this).attr('realSrc'));
+						})
+						for (var i = moreload._default; i < lis.length; i++) {
+							_content.push(lis.eq(i));
+						}
+						$(".moreload .hidden").html("");
+					},
+					loadMore: function () {
+						var mLis = $(".moreload ul.stripe_k li").length;
+						for (var i = 0; i < moreload._loading; i++) {
+							var target = _content.shift();
+							if (!target) {
+								$('.moreload .gd').html("<p>全部加载完毕...</p>");
+								break;
+							}
+							$(".moreload ul.stripe_k").append(target);
+							$(".moreload ul.stripe_k img").eq(mLis + i).each(function () {
+								$(this).attr('src', $(this).attr('realSrc'));
+							});
+						}
+					}
+				}
+				moreload.init();
+			</script>
+			<!--代码部分end-->
+		</div>
+	</div>
+	<!--友情链接-->
+	<div class="friendship">
+		<div class="w">
+
+			<div class="flinks">
+				<ul>
+					<li class="on">{$keywords} 友情链接</li>
+					<li class="">软件标签</li>
+				</ul>
+				<div class="fbox fb-1 clearfix">
+
+					<a href="/">小猪一键重装系统</a>
+					<a href="/">一键装机工具</a>
+				</div>
+				<div class="rjbq fb-1 clearfix hide">
+					<a class="fc8 f18" href="/e/tags/?tagname=qqwin10版本"
+						target="_blank">qqwin10版本</a>
+					<a class="fc5 f12" href="/e/tags/?tagname=qq正式版9.42"
+						target="_blank">qq正式版9.42</a>
+					<a class="fc8 f16" href="/e/tags/?tagname=微信（防撤回版）V3.3.0.20bet"
+						target="_blank">微信（防撤回版）V3.3.0.20bet</a>
+					<a class="fc4 f15" href="/e/tags/?tagname=微信电脑版" target="_blank">微信电脑版</a>
+					<a class="fc7 f18" href="/e/tags/?tagname=谷歌浏览器(GoogleChrome)V"
+						target="_blank">谷歌浏览器(GoogleChrome)V</a>
+					<a class="fc8 f18" href="/e/tags/?tagname=360安全浏览器"
+						target="_blank">360安全浏览器</a>
+					<a class="fc9 f18" href="/e/tags/?tagname=QQ音乐17.14.0.0"
+						target="_blank">QQ音乐17.14.0.0</a>
+					<a class="fc1 f13" href="/e/tags/?tagname=5sing6.4.1.1"
+						target="_blank">5sing6.4.1.1</a>
+					<a class="fc7 f15" href="/e/tags/?tagname=酷狗音乐9.2.27"
+						target="_blank">酷狗音乐9.2.27</a>
+					<a class="fc1 f15" href="/e/tags/?tagname=迅雷11" target="_blank">迅雷11</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="yanse"></div>
+	<!--版权-->
+	<div class="copyright">
+		<div class="w">
+			<p>{$keywords}</p><p>Copyright 2019 {网站名称} </p>
+		</div>
+	</div>
+	<script type="text/javascript" src="{$theme_path}/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/jquery.SuperSlide.2.1.3.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/index.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			$(".morearticle").click(function () {
+				var ids = $(this).attr("id");
+				if (ids == 'flush') {
+					$("#scrollDiv").html("");
+					$(this).parents("li").attr("class", "on");
+				}
+				var _this = $(this),
+					pnum = _this.attr("pnum"), //分页码
+					typeid = _this.attr("typeid");
+				//typeid = 0; // 栏目ID
+				if (pnum == 0) {
+					return false;
+				}
+
+				typeid = typeid ? typeid : 0;
+
+				$("#loading27").show();
+				$.ajax({
+					url: '/plus/arcajax.php',
+					data: {
+						typeid: typeid,
+						pnum: pnum
+					},
+					success: function (data) {
+						if (data != '') {
+							$("#scrollDiv").append(data); //数据显示到页面
+							_this.attr("pnum", Number(pnum) + 1); //分页+1
+						} else {
+							_this.text("没有更多的数据");
+							_this.attr("pnum", 0)
+						}
+						$("#loading27").hide();
+					}
+				})
+				return false;
+			})
+		})
+
+	</script>
+
+</body>
+
+</html>

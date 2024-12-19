@@ -1,0 +1,87 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link rel="stylesheet" href="{$theme_path}/css/bootstrap.css">
+    <link rel="stylesheet" href="{$theme_path}/css/list.css">
+    <script src="{$theme_path}/js/jquery.min.js"></script>
+    <script>         var as = navigator.userAgent; 
+    if (/mobile/i.test(as) || /(Android|iPhone|iPod|iPad|Windows Phone|webOS)/i.test(as)) { } 
+    else { var path = window.location.pathname; window.location = "https://www.163disk.com" + path; }     
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container" style="height: 100%;">
+            <div class="row" style="height: 100%;">
+                <div class="col-xs-3" style="height: 100%;"> <a href="/"
+                        style="height: 100%;height: 100%;display: block;"> <img src="{$theme_path}/images/logo.png" alt
+                            style="height: 30px;width: 78px;margin-top: 7px;position: absolute;left: 8px;"> </a> </div>
+                <div class="col-xs-8">
+                    <form class="search-software" onsubmit="return false;">
+                        <div class="input-group"> <input type="search" class="form-control" placeholder="请输入关键字"
+                                id="keyword"> <span class="input-group-addon" id="basic-addon">搜索</span> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navs">
+        <ul class="nav nav-pills" style="height: 100%;" data-row="6">
+            {loop type="catelog" row="6" tpl="" islist=""}
+            <li> <a href="{$vo.url}" class="click" title="{$vo.title}">{$vo.title}</a> </li>
+            {/loop}
+        </ul>
+    </div>
+    <div>
+        <div class="content">
+            <div class="phblis Toplist">
+                <ul data-row="17">
+                    {loop type="catelog" row="17" tpl="" islist=""}
+                    <li class="on"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="lists">
+                <div class="Game_list">
+                    <h1>{$keywords}</h1>
+                    <div class="item">
+                        {loop type="arclist" row="20" tpl="" islist=""}
+                        <li class="on"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                            <div class="list"> <a href="{$vo.url}" class="img"><img src="{$vo.pic}" alt="艺术贴贴"></a>
+                                <div class="info"> <a href="{$vo.url}" class="bt" title="{$vo.title}">{$vo.title}</a>
+                                    <p>4.1.0&nbsp;免费版<span>62.6MB</span></p>
+                                    <p>{$vo.title}</p>
+                                </div> <a href="{$vo.url}" class="downl_btn" title="详情">详情</a>
+                            </div>
+                        {/loop}
+                    </div>
+                </div>
+            </div>
+            <div id="page" style="text-align: center">
+                <ul class="pagination" data-row="4">
+                    <ul class="pagination" data-row="4">
+                        <li class="active"><span>1</span></li>
+                        <li><a href="{随机栏目URL}" title="2">2</a></li>
+                        <li><a href="{随机栏目URL}" title="3">3</a></li>
+                        <li><a href="{随机栏目URL}" title="下一页">下一页</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <link rel="shortcut icon" href="{$theme_path}/css/favicon.ico">
+    <script src="{$theme_path}/js/jq.min.js"></script>
+    <footer class="QZfoot">
+        <p>Copyright © 2024</p>
+        <p>
+            <a href="/" rel="nofollow" target="_blank">湘ICP备2021014062号-1</a>
+        </p>
+        <p>举报邮箱：info@163disk.com&nbsp;(本站所提供的资源均来自互联网，侵权及网站其他事宜处理请邮箱联系)</p>
+    </footer>
+    <script> var _hmt = _hmt || []; (function () { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?3f70ddf3744f7e81043d02bac1c990dc"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>
+    <script src="{$theme_path}/js/n_l.js"></script>
+</body>

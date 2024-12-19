@@ -1,0 +1,701 @@
+
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <title>{$toptitle}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="{$description}">
+    <meta name="keywords" content="{$keywords}">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="applicable-device" content="mobile">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <link rel="canonical" href="{$theme_path}/css/soft">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="shortcut icon" href="{$theme_path}/css/favicon.ico">
+    <link href="{$theme_path}/css/reset.css" rel="stylesheet">
+    <script type="text/javascript" src="{$theme_path}/js/jquery.min.js" charset="utf-8"></script>
+    <script src="{$theme_path}/js/flexible.js"></script>
+
+    <link href="{$theme_path}/css/swiper-bundle.min.css" rel="stylesheet" media="screen">
+    <link href="{$theme_path}/css/common.css?v=6" rel="stylesheet" media="screen">
+    <link href="{$theme_path}/css/soft_index.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="{$theme_path}/js/swiper-bundle.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="{$theme_path}/js/soft_index.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+    <script src="{$theme_path}/js/awsc.js"></script>
+    <script src="{$theme_path}/js/wdj-dl-highspeed-sec.js"></script>
+    <script>
+        function GetQueryString(a) {
+            a = new RegExp("(^|\x26)" + a + "\x3d([^\x26]*)(\x26|$)");
+            a = window.location.search.substr(1).match(a);
+            return null != a ? unescape(a[2]) : null
+        }
+        if (GetQueryString("iframe") || GetQueryString("frmstyle")) {
+            var resizeWindow = function () {
+                i_body.style.width = document.body.offsetWidth + "px"
+            },
+                i_body = document.getElementsByTagName("body")[0];
+            resizeWindow();
+            window.onresize = resizeWindow
+        };
+    </script>
+    <!-- header -->
+    <header class="header" style="font-size: 14px;">
+        <a href="/" title="18183手游网" class="u-logo">
+            <img src="{$theme_path}/images/logo.png" alt>
+        </a>
+        <div class="u-crm">
+
+        </div>
+        <div class="u-menu-ser">
+            <div class="getAPP" style="display: none;">
+                获取APP
+            </div>
+            <div class="item" id="f-menu-ser">
+                <span class="hicon-1"></span>
+            </div>
+        </div>
+        <div class="u-menu-ser-wrap">
+            <ul class="n_c" data-row="6">
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            </ul>
+            <ul class="n_c" data-row="6">
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            </ul>
+            <ul class="n_c" data-row="6">
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            </ul>
+
+
+            <a href="{随机栏目URL}" class="u-wznav" title="{随机栏目}">{随机栏目}</a>
+        </div>
+    </header>
+    <link rel="stylesheet" href="{$theme_path}/css/header.css">
+    <script src="{$theme_path}/js/heaader.js"></script>
+    <script language="javascript" type="text/javascript" src="{$theme_path}/js/passport.js"></script>
+    <script language="javascript" type="text/javascript" src="{$theme_path}/js/headerUser.js"></script>
+
+    <nav class="nav" id="topNav">
+        <div class="swiper-container nav-swp">
+            <div class="swiper-wrapper">
+                {loop type="arclist" row="8" tpl="" islist=""}
+                    <div class="swiper-slide">
+                        <a href="{$vo.url}" target="_blank" title="{$vo.title}">{$vo.title}</a>
+                    </div>
+                {/loop}
+            </div>
+        </div>
+        <div class="u-s-btn">
+            <i class="wire"></i>
+            <a class="f-btn" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+        </div>
+    </nav>
+    <script src="{$theme_path}/js/matchingSearch.js"></script>
+    <div class="u-s-box" id="uSBox" style="font-size: 14px;">
+        <form method="get" onsubmit="return false">
+            <figure>
+                <figcaption>
+                    <input type="hidden" name="s" value="2207325287948193293" id="bdcs-search-form-s">
+                    <input type="hidden" name="entry" value="1" id="bdcs-search-form-entry">
+                    <input class="u-ipt" id="serch-text-1" autocomplete="off" name="q" placeholder="请输入关键字"
+                        type="search">
+                </figcaption>
+                <button class="u-btn" id="uSBoxSubmit" style="display: none;" name type="submit">
+                    <i></i>
+                </button>
+                <input type="hidden" value="SE_hldp07461_tf7tzn3j" name="tn">
+            </figure>
+        </form>
+        <a href="{随机栏目URL}" class="hide-box" title="{随机栏目}">{随机栏目}</a>
+    </div>
+
+    <!-- /nav -->
+
+    <div data-engineer="3_719"></div>
+    <div data-engineer="3_537"></div>
+    <div data-engineer="3_542"></div>
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?1a196fc6bb0ee7c617001b6fd25ce4b7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s)
+        }
+        )();
+    </script>
+    <div class="main_page">
+
+        <!--  轮播1   -->
+        <div class="row2_swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    {loop type="arclist" row="4" tpl="" islist=""}
+                        <div class="swiper-slide">
+                            <a href="{$vo.url}">
+                                <img src="{$vo.pic}" alt="{$vo.title}">
+                                <div class="black_bg"></div>
+                                <p>{$vo.title}</p>
+                            </a>
+                        </div>
+                    {/loop}
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- 热门推荐 -->
+        <div class="hot_tj">
+            <div class="common_title">
+                <span class="title">热门推荐</span>
+            </div>
+            <div class="content">
+                {loop type="arclist" row="4" tpl="" islist=""}
+                    <a class="item" href="{$vo.url}">
+                        <img src="{$vo.pic}" alt>
+    
+                        <p>{$vo.title}</p>
+                        <span>下载</span>
+                    </a>
+                {/loop}
+            </div>
+        </div>
+        <!-- 手机软件分类 -->
+        <div class="m_classify m_classify_1">
+            <div class="types">
+                <a href="{随机栏目URL}" class="active" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <div class="list_item_wrap active">
+                {loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">
+                {loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+
+        </div>
+
+        <!-- m推荐专题 -->
+        <div class="m_tj_zt">
+            <div class="common_title">
+                <span class="title">推荐专题</span>
+                <a href="{随机栏目URL}" target="_blank" title="{随机栏目}" class="to_more">{随机栏目}</a>
+            </div>
+            <div class="content">
+                {loop type="arclist" row="2" tpl="" islist=""}
+                <a href="/soft" target="_blank">
+                    <img src="{$vo.pic}" alt>
+                    <p>{随机栏目}</p>
+                </a>
+                {/loop}
+            </div>
+        </div>
+        <!-- 手机软件分类 -->
+        <div class="m_classify m_classify_2">
+            <div class="types">
+                <a href="{随机栏目URL}" class="active" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <div class="list_item_wrap active">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">{loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">
+                {loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">
+                {loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+            <div class="list_item_wrap">
+                {loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+
+            </div>
+            <div class="list_item_wrap">
+                {loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="list_item">
+                    <img class="softImg" src="{$vo.pic}" alt>
+                    <div class="info">
+                        <p class="title">{随机栏目}</p>
+                        <p class="matter">
+                            <span>简体中文</span>
+                            <span>{$vo.postdate}</span>
+                        </p>
+                        <span class="stars"><span class="stars-empty"></span><span class="stars-light"
+                                score="8"></span></span>
+                    </div>
+                    <span class="down"></span>
+                </a>
+                {/loop}
+            </div>
+
+        </div>
+
+        <!-- m推荐专题 -->
+        <div class="m_tj_zt">
+            <div class="common_title">
+                <span class="title">PC推荐专题</span>
+                <a href="{随机栏目URL}" target="_blank" title="{随机栏目}" class="to_more">{随机栏目}</a>
+            </div>
+            <div class="content">
+                {loop type="arclist" row="2" tpl="" islist=""}
+                <a href="/soft" target="_blank">
+                    <img src="{$vo.pic}" alt>
+                    <p>{随机栏目}</p>
+                </a>
+                {/loop}
+            </div>
+        </div>
+        <div class="hot_list">
+            <div class="common_title">
+                <span class="title">热门推荐</span>
+            </div>
+            <div class="list_wrap">
+                {loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" class="item">
+                    <div class="left">
+                        <p class="title">{$vo.title}</p>
+                        <p class="tim_typ">
+                            <span>{$vo.postdate}</span>
+                            <span>短剧推荐</span>
+                        </p>
+                    </div>
+                    <img src="{$vo.pic}" alt>
+                </a>
+                {/loop}
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <ul class="footer" data-row="2">
+
+        <li><a href="/"><span class="icon_sprites-home"></span>回到首页</a></li>
+
+        <li><a class="back_top"><span class="icon_sprites-back"></span>返回顶部</a></li>
+    </ul>
+    <script type="text/javascript" src="{$theme_path}/js/c.php"></script>
+    <script>
+        $('.footer .back_top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            },
+                500);
+        })
+    </script>
+    <div style="display:none;">
+        <script type="text/javascript" src="{$theme_path}/js/q.js?id=1280833347&amp;l=3"></script>
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?1a196fc6bb0ee7c617001b6fd25ce4b7";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </div>
+
+</body>
+</html>

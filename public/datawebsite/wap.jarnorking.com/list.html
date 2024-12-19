@@ -1,0 +1,676 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="renderer" content="webkit">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta property="og:locale" content="zh-CN">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{$keywords}">
+    <meta property="og:title" content="{$toptitle}">
+    <meta property="og:description" content="{$description}">
+    <link rel="canonical" href="{$theme_path}/css/jarnorking.com">
+    <meta name="generator" content="Z-BlogPHP 1.7.3">
+    <link rel="stylesheet" rev="stylesheet" href="{$theme_path}/css/animate.css" type="text/css" media="all">
+    <link href="{$theme_path}/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="{$theme_path}/css/favicon.ico" type="image/x-icon">
+    <script src="{$theme_path}/js/jquery-2.2.4.min.js"></script>
+    <script src="{$theme_path}/js/zblogphp.js"></script>
+    <script src="{$theme_path}/js/c_html_js_add.php"></script>
+    <script type="text/javascript" src="{$theme_path}/js/sticky-left.js"></script>
+    <script src="{$theme_path}/js/swiper.min.js"></script>
+    <link href="{$theme_path}/css/style.css?t=2024-09-25" type="text/css" media="all" rel="stylesheet">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="{$theme_path}/css/?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{$theme_path}/css/wlwmanifest.xml">
+</head>
+
+<body class="custom-background">
+    <div id="header_content">
+        <div id="header">
+            <div class="header">
+                {loop type="arclist" row="1" image="1" info="1"}
+                <h1 id="logo"> <a href="/"><img src="https://wap.jarnorking.com/zb_users/theme/viewlee/style/images/logo.png"
+                            title="{$vo.title}" alt="{$vo.title}"></a> </h1>
+                {/loop}
+                <div id="mainnav" class="header-nav" data-type="article" data-infoid="5">
+                    <ul id="nav" class="nav-pills" data-row="6">
+                        {loop type="catelog" row="6" image="1" info="1"}
+                        <li id="nvabar-item-index"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                        {/loop}
+                    </ul>
+                </div>
+                <div class="rightnav">
+                    <ul data-row="1">
+                        <li>{$keywords} {随机标题}</li>
+                    </ul>
+                </div>
+                <div class="mini_search"><!-- Search begin -->
+                    <form name="search" class="searchform" method="post"
+                        action=""> <input class="searchInput"
+                            type="text" name="q" size="11" placeholder="请输入搜索内容..." id="ls"> <input
+                            class="searchBtn radius" type="submit" title="搜索" value="搜 索"> </form><!-- Search end -->
+                </div> <a id="mo-so" href="javascript:void(0);"><i class="fa fa-search icon-search"></i></a>
+            </div>
+        </div>
+        <div id="wrapper" class="index">
+            <div class="ads index-ad">
+                <script src="{$theme_path}/js/xgstj.js"></script>
+            </div>
+            <div id="main">
+                <div class="visible-lg-block main-left ">
+                    <div id="sidebar-left-xf">
+                        <section class="sideleft-author">
+                            <section class="author_info">
+                                {loop type="arclist" row="1" image="1" info="1"}
+                                <div class="widget_avatar"
+                                    style="background-image: url({$vo.pic});">
+                                    <a href="{$vo.url}" title="admin"
+                                        class="widget_avatar"><img class="widget_avatar" src="{$vo.pic}" alt="admin"><i
+                                            title="admin" class="author-ident author1"></i></a>
+                                </div>
+                                <h3>admin<span class="admin_field">游客</span></h3>
+                                <div class="author-social">
+                                    <span class="author-weixin"><a title="微信"><i class="fa fa-weixin"></i><em
+                                                style="background-image: url({$vo.pic});"></em></a></span>
+                                    <span class="author-qq"><a
+                                            href=""
+                                            rel="nofollow" target="_blank" title="QQ联系我"><i
+                                                class="fa fa-qq"></i></a></span>
+                                </div>
+                                {/loop}浏览
+                            </section>
+                            <section class="author_count">
+                                <ul data-row="2">
+                                    <li><span>浏览</span><strong>{随机数字}</strong></li>
+                                    <li><span>浏览</span><strong>{随机数字}</strong></li>
+                                </ul>
+                            </section>
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="divPrevious">
+                            <h3 class="sidebox_title">{随机栏目}</h3>
+                            <ul class="sidebar_content divPrevious" data-row="6">
+                                {loop type="arclist" row="6" image="1" info="1"}
+                                <li class="clr">
+                                    <a href="{$vo.url}" title="探究托管规模与效益平衡，合理托管人数是多少？">
+                                        <div class="time">
+                                            <span class="r">10</span>/<span class="y">12月</span>
+                                        </div>
+                                        <div class="title">{$vo.title}</div>
+                                    </a>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="divPrevious">
+                            <h3 class="sidebox_title">{随机栏目}</h3>
+                            <ul class="sidebar_content divPrevious" data-row="6">
+                                {loop type="arclist" row="6" image="1" info="1"}
+                                <li class="clr">
+                                    <a href="{$vo.url}" title="探究托管规模与效益平衡，合理托管人数是多少？">
+                                        <div class="time">
+                                            <span class="r">10</span>/<span class="y">12月</span>
+                                        </div>
+                                        <div class="title">{$vo.title}</div>
+                                    </a>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="divPrevious">
+                            <h3 class="sidebox_title">{$keywords} {随机栏目}</h3>
+                            <ul class="sidebar_content divPrevious" data-row="6">
+                                {loop type="arclist" row="6" image="1" info="1"}
+                                <li class="clr">
+                                    <a href="{$vo.url}" title="探究托管规模与效益平衡，合理托管人数是多少？">
+                                        <div class="time">
+                                            <span class="r">10</span>/<span class="y">12月</span>
+                                        </div>
+                                        <div class="title">{$vo.title}</div>
+                                    </a>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div id="wrap">
+                    <div id="article">
+                        <div class="wemedia">
+                            <!--<div class="swiper-main">-->
+                            <!--    <div class="swiper-container swiper-home">-->
+                            <!--        <div class="swiper-wrapper">-->
+                            <!--        </div>-->
+                            <!--        <div class="swiper-pagination swiper-home-pagination"></div>-->
+                            <!--        <div class="swiper-button swiper-home-button-next swiper-button-next"><i-->
+                            <!--                class="fa fa-chevron-right"></i></div>-->
+                            <!--        <div class="swiper-button swiper-home-button-prev swiper-button-prev"><i-->
+                            <!--                class="fa fa-chevron-left"></i></div>-->
+                            <!--    </div>-->
+                            <!--</div>-->
+                        </div>
+                        <div class="posts">
+                            <div class="loop wow fadeInDown" id="list1">
+                                <div class="content">
+                                    <div class="content-img">
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <a href="{$vo.url}"
+                                            title="南通多元魅力与独特风采深度解析"><img src="{$vo.pic}" alt="南通多元魅力与独特风采深度解析"
+                                                class="thumbnail"></a>
+                                        {/loop}
+                                    </div>
+                                    <div class="content_body">
+                                        <h2><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></h2>
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <p>{$vo.info}</p>
+                                        <div class="content_infor">
+                                            <span class="more"><a href="{$vo.url}"
+                                                    title="阅读全文">{$vo.title}<i
+                                                        class="fa fa-chevron-circle-right"></i></a></span>
+                                            <span class="auther"><a href="{$vo.url}"
+                                                    class="post-author mr15"><img alt="由鱼鱼发布" src="{$vo.pic}"
+                                                        class="avatar avatar-96 photo" height="96"
+                                                        width="96">鱼鱼</a></span>
+                                            <span><i class="fa fa-eye"></i>910 次浏览</span>
+                                            <span><i class="fa fa-calendar"></i>2024-12-09</span>
+                                            <span><i class="fa fa-list-alt"></i><a href="{随机栏目URL}" title="{随机栏目}"
+                                                    target="_blank">{随机栏目}</a></span>
+                                        </div>
+                                        {/loop}
+                                    </div>
+                                </div>
+                                <div class="loop-new"></div>
+                            </div>
+                            <div class="loop wow fadeInDown" id="list2">
+                                <div class="content">
+                                    <div class="content-img">
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <a href="{$vo.url}"
+                                            title="南通多元魅力与独特风采深度解析"><img src="{$vo.pic}" alt="南通多元魅力与独特风采深度解析"
+                                                class="thumbnail"></a>
+                                        {/loop}
+                                    </div>
+                                    <div class="content_body">
+                                        <h2><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></h2>
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <p>{$vo.info}</p>
+                                        <div class="content_infor">
+                                            <span class="more"><a href="{$vo.url}"
+                                                    title="阅读全文">{$vo.title}<i
+                                                        class="fa fa-chevron-circle-right"></i></a></span>
+                                            <span class="auther"><a href="{$vo.url}"
+                                                    class="post-author mr15"><img alt="由鱼鱼发布" src="{$vo.pic}"
+                                                        class="avatar avatar-96 photo" height="96"
+                                                        width="96">鱼鱼</a></span>
+                                            <span><i class="fa fa-eye"></i>910 次浏览</span>
+                                            <span><i class="fa fa-calendar"></i>2024-12-09</span>
+                                            <span><i class="fa fa-list-alt"></i><a href="{随机栏目URL}" title="{随机栏目}"
+                                                    target="_blank">{随机栏目}</a></span>
+                                        </div>
+                                        {/loop}
+                                    </div>
+                                </div>
+                                <div class="loop-new"></div>
+                            </div>
+                            <div class="loop wow fadeInDown" id="list3">
+                                <div class="content">
+                                    <div class="content-img">
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <a href="{$vo.url}"
+                                            title="南通多元魅力与独特风采深度解析"><img src="{$vo.pic}" alt="南通多元魅力与独特风采深度解析"
+                                                class="thumbnail"></a>
+                                        {/loop}
+                                    </div>
+                                    <div class="content_body">
+                                        <h2><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></h2>
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <p>{$vo.info}</p>
+                                        <div class="content_infor">
+                                            <span class="more"><a href="{$vo.url}"
+                                                    title="阅读全文">{$vo.title}<i
+                                                        class="fa fa-chevron-circle-right"></i></a></span>
+                                            <span class="auther"><a href="{$vo.url}"
+                                                    class="post-author mr15"><img alt="由鱼鱼发布" src="{$vo.pic}"
+                                                        class="avatar avatar-96 photo" height="96"
+                                                        width="96">鱼鱼</a></span>
+                                            <span><i class="fa fa-eye"></i>910 次浏览</span>
+                                            <span><i class="fa fa-calendar"></i>2024-12-09</span>
+                                            <span><i class="fa fa-list-alt"></i><a href="{随机栏目URL}" title="{随机栏目}"
+                                                    target="_blank">{随机栏目}</a></span>
+                                        </div>
+                                        {/loop}
+                                    </div>
+                                </div>
+                                <div class="loop-new"></div>
+                            </div>
+                            <div class="loop wow fadeInDown" id="list4">
+                                <div class="content">
+                                    <div class="content-img">
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <a href="{$vo.url}"
+                                            title="南通多元魅力与独特风采深度解析"><img src="{$vo.pic}" alt="南通多元魅力与独特风采深度解析"
+                                                class="thumbnail"></a>
+                                        {/loop}
+                                    </div>
+                                    <div class="content_body">
+                                        <h2><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{$keywords} {随机栏目}</a></h2>
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <p>{$vo.info}</p>
+                                        <div class="content_infor">
+                                            <span class="more"><a href="{$vo.url}"
+                                                    title="阅读全文">{$vo.title}<i
+                                                        class="fa fa-chevron-circle-right"></i></a></span>
+                                            <span class="auther"><a href="{$vo.url}"
+                                                    class="post-author mr15"><img alt="由鱼鱼发布" src="{$vo.pic}"
+                                                        class="avatar avatar-96 photo" height="96"
+                                                        width="96">鱼鱼</a></span>
+                                            <span><i class="fa fa-eye"></i>910 次浏览</span>
+                                            <span><i class="fa fa-calendar"></i>2024-12-09</span>
+                                            <span><i class="fa fa-list-alt"></i><a href="{随机栏目URL}" title="{随机栏目}"
+                                                    target="_blank">{随机栏目}</a></span>
+                                        </div>
+                                        {/loop}
+                                    </div>
+                                </div>
+                                <div class="loop-new"></div>
+                            </div>
+                            <div class="loop wow fadeInDown" id="list5">
+                                <div class="content">
+                                    <div class="content-img">
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <a href="{$vo.url}"
+                                            title="南通多元魅力与独特风采深度解析"><img src="{$vo.pic}" alt="南通多元魅力与独特风采深度解析"
+                                                class="thumbnail"></a>
+                                        {/loop}
+                                    </div>
+                                    <div class="content_body">
+                                        <h2><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></h2>
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <p>{$vo.info}</p>
+                                        <div class="content_infor">
+                                            <span class="more"><a href="{$vo.url}"
+                                                    title="阅读全文">{$vo.title}<i
+                                                        class="fa fa-chevron-circle-right"></i></a></span>
+                                            <span class="auther"><a href="{$vo.url}"
+                                                    class="post-author mr15"><img alt="由鱼鱼发布" src="{$vo.pic}"
+                                                        class="avatar avatar-96 photo" height="96"
+                                                        width="96">鱼鱼</a></span>
+                                            <span><i class="fa fa-eye"></i>910 次浏览</span>
+                                            <span><i class="fa fa-calendar"></i>2024-12-09</span>
+                                            <span><i class="fa fa-list-alt"></i><a href="{随机栏目URL}" title="{随机栏目}"
+                                                    target="_blank">{随机栏目}</a></span>
+                                        </div>
+                                        {/loop}
+                                    </div>
+                                </div>
+                                <div class="loop-new"></div>
+                            </div>
+                            <div class="loop wow fadeInDown" id="list6">
+                                <div class="content">
+                                    <div class="content-img">
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <a href="{$vo.url}"
+                                            title="南通多元魅力与独特风采深度解析"><img src="{$vo.pic}" alt="南通多元魅力与独特风采深度解析"
+                                                class="thumbnail"></a>
+                                        {/loop}
+                                    </div>
+                                    <div class="content_body">
+                                        <h2><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></h2>
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <p>{$vo.info}</p>
+                                        <div class="content_infor">
+                                            <span class="more"><a href="{$vo.url}"
+                                                    title="阅读全文">{$vo.title}<i
+                                                        class="fa fa-chevron-circle-right"></i></a></span>
+                                            <span class="auther"><a href="{$vo.url}"
+                                                    class="post-author mr15"><img alt="由鱼鱼发布" src="{$vo.pic}"
+                                                        class="avatar avatar-96 photo" height="96"
+                                                        width="96">鱼鱼</a></span>
+                                            <span><i class="fa fa-eye"></i>910 次浏览</span>
+                                            <span><i class="fa fa-calendar"></i>2024-12-09</span>
+                                            <span><i class="fa fa-list-alt"></i><a href="{随机栏目URL}" title="{随机栏目}"
+                                                    target="_blank">{随机栏目}</a></span>
+                                        </div>
+                                        {/loop}
+                                    </div>
+                                </div>
+                                <div class="loop-new"></div>
+                            </div>
+                            <div class="loop wow fadeInDown" id="list7">
+                                <div class="content">
+                                    <div class="content-img">
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <a href="{$vo.url}"
+                                            title="南通多元魅力与独特风采深度解析"><img src="{$vo.pic}" alt="南通多元魅力与独特风采深度解析"
+                                                class="thumbnail"></a>
+                                        {/loop}
+                                    </div>
+                                    <div class="content_body">
+                                        <h2><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{$keywords} {随机栏目}</a></h2>
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <p>{$vo.info}</p>
+                                        <div class="content_infor">
+                                            <span class="more"><a href="{$vo.url}"
+                                                    title="阅读全文">{$vo.title}<i
+                                                        class="fa fa-chevron-circle-right"></i></a></span>
+                                            <span class="auther"><a href="{$vo.url}"
+                                                    class="post-author mr15"><img alt="由鱼鱼发布" src="{$vo.pic}"
+                                                        class="avatar avatar-96 photo" height="96"
+                                                        width="96">鱼鱼</a></span>
+                                            <span><i class="fa fa-eye"></i>910 次浏览</span>
+                                            <span><i class="fa fa-calendar"></i>2024-12-09</span>
+                                            <span><i class="fa fa-list-alt"></i><a href="{随机栏目URL}" title="{随机栏目}"
+                                                    target="_blank">{随机栏目}</a></span>
+                                        </div>
+                                        {/loop}
+                                    </div>
+                                </div>
+                                <div class="loop-new"></div>
+                            </div>
+                            <div class="loop wow fadeInDown" id="list8">
+                                <div class="content">
+                                    <div class="content-img">
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <a href="{$vo.url}"
+                                            title="南通多元魅力与独特风采深度解析"><img src="{$vo.pic}" alt="南通多元魅力与独特风采深度解析"
+                                                class="thumbnail"></a>
+                                        {/loop}
+                                    </div>
+                                    <div class="content_body">
+                                        <h2><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></h2>
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <p>{$vo.info}</p>
+                                        <div class="content_infor">
+                                            <span class="more"><a href="{$vo.url}"
+                                                    title="阅读全文">{$vo.title}<i
+                                                        class="fa fa-chevron-circle-right"></i></a></span>
+                                            <span class="auther"><a href="{$vo.url}"
+                                                    class="post-author mr15"><img alt="由鱼鱼发布" src="{$vo.pic}"
+                                                        class="avatar avatar-96 photo" height="96"
+                                                        width="96">鱼鱼</a></span>
+                                            <span><i class="fa fa-eye"></i>910 次浏览</span>
+                                            <span><i class="fa fa-calendar"></i>2024-12-09</span>
+                                            <span><i class="fa fa-list-alt"></i><a href="{随机栏目URL}" title="{随机栏目}"
+                                                    target="_blank">{随机栏目}</a></span>
+                                        </div>
+                                        {/loop}
+                                    </div>
+                                </div>
+                                <div class="loop-new"></div>
+                            </div>
+                            <div class="loop wow fadeInDown" id="list9">
+                                <div class="content">
+                                    <div class="content-img">
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <a href="{$vo.url}"
+                                            title="南通多元魅力与独特风采深度解析"><img src="{$vo.pic}" alt="南通多元魅力与独特风采深度解析"
+                                                class="thumbnail"></a>
+                                        {/loop}
+                                    </div>
+                                    <div class="content_body">
+                                        <h2><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{$keywords} {随机栏目}</a></h2>
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <p>{$vo.info}</p>
+                                        <div class="content_infor">
+                                            <span class="more"><a href="{$vo.url}"
+                                                    title="阅读全文">{$vo.title}<i
+                                                        class="fa fa-chevron-circle-right"></i></a></span>
+                                            <span class="auther"><a href="{$vo.url}"
+                                                    class="post-author mr15"><img alt="由鱼鱼发布" src="{$vo.pic}"
+                                                        class="avatar avatar-96 photo" height="96"
+                                                        width="96">鱼鱼</a></span>
+                                            <span><i class="fa fa-eye"></i>910 次浏览</span>
+                                            <span><i class="fa fa-calendar"></i>2024-12-09</span>
+                                            <span><i class="fa fa-list-alt"></i><a href="{随机栏目URL}" title="{随机栏目}"
+                                                    target="_blank">{随机栏目}</a></span>
+                                        </div>
+                                        {/loop}
+                                    </div>
+                                </div>
+                                <div class="loop-new"></div>
+                            </div>
+                            <div class="loop wow fadeInDown" id="list10">
+                                <div class="content">
+                                    <div class="content-img">
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <a href="{$vo.url}"
+                                            title="南通多元魅力与独特风采深度解析"><img src="{$vo.pic}" alt="南通多元魅力与独特风采深度解析"
+                                                class="thumbnail"></a>
+                                        {/loop}
+                                    </div>
+                                    <div class="content_body">
+                                        <h2><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></h2>
+                                        {loop type="arclist" row="1" image="1" info="1"}
+                                        <p>{$vo.info}</p>
+                                        <div class="content_infor">
+                                            <span class="more"><a href="{$vo.url}"
+                                                    title="阅读全文">{$vo.title}<i
+                                                        class="fa fa-chevron-circle-right"></i></a></span>
+                                            <span class="auther"><a href="{$vo.url}"
+                                                    class="post-author mr15"><img alt="由鱼鱼发布" src="{$vo.pic}"
+                                                        class="avatar avatar-96 photo" height="96"
+                                                        width="96">鱼鱼</a></span>
+                                            <span><i class="fa fa-eye"></i>910 次浏览</span>
+                                            <span><i class="fa fa-calendar"></i>2024-12-09</span>
+                                            <span><i class="fa fa-list-alt"></i><a href="{随机栏目URL}" title="{随机栏目}"
+                                                    target="_blank">{随机栏目}</a></span>
+                                        </div>
+                                        {/loop}
+                                    </div>
+                                </div>
+                                <div class="loop-new"></div>
+                            </div>
+                        </div>
+                        <footer class="pagination wow fadeInDown">
+                            <ul data-row="13">
+                                {loop type="page" tpl="list" row="13"}
+                                    <li><a href="{$vo.url}">{$vo.title}</a></li>
+                                {/loop}
+                            </ul>
+                            <div id="loadmore" class="load-more-wrap loadmore"><a class="load-more" href="{随机栏目URL}"
+                                    id="post_over" title="{随机栏目}">{随机栏目}</a></div>
+                        </footer>
+                    </div>
+                    <div id="sidebar-right">
+
+                        <section class="sidebox wow fadeInDown" id="divPrevious">
+                            <h3 class="sidebox_title">{$keywords} {随机栏目}</h3>
+                            <ul class="sidebar_content divPrevious" data-row="6">
+                                {loop type="arclist" row="6" image="1" info="1"}
+                                <li class="clr">
+                                    <a href="{$vo.url}" title="探究托管规模与效益平衡，合理托管人数是多少？">
+                                        <div class="time">
+                                            <span class="r">{随机数字}</span>/<span class="y">{随机数字}</span>
+                                        </div>
+                                        <div class="title">{$vo.title}</div>
+                                    </a>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="divPrevious">
+                            <h3 class="sidebox_title">{随机栏目}</h3>
+                            <ul class="sidebar_content divPrevious" data-row="6">
+                                {loop type="arclist" row="6" image="1" info="1"}
+                                <li class="clr">
+                                    <a href="{$vo.url}" title="探究托管规模与效益平衡，合理托管人数是多少？">
+                                        <div class="time">
+                                            <span class="r">{随机数字}</span>/<span class="y">{随机数字}</span>
+                                        </div>
+                                        <div class="title">{$vo.title}</div>
+                                    </a>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="side_con">
+                            <h3 class="sidebox_title">{随机栏目}</h3>
+                            <ul class="sidebar_content side_con" data-row="4">
+                                {loop type="arclist" row="4" image="1" info="1"}
+                                <li><a href="{$vo.url}"
+                                        title="{$vo.title}" target="_blank">
+                                        <div class="hotcom-img"><img src="{$vo.pic}"
+                                                alt="{$vo.title}"></div>
+                                        <div class="hotcom-left">
+                                            <div class="hot-com-title"><span
+                                                    class="num1">{$vo.postdate}</span>{$vo.title}
+                                            </div>
+                                            <div class="hot-com-clock">评论：0 条</div>
+                                        </div>
+                                    </a></li>
+                                {/loop}
+                            </ul>
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="side_tabrmtj">
+                            <ul class="sidebar_content side_tabrmtj" data-row="22">
+                                    <li id="con_title" class="con_post_title">
+                                        <ul id="tab" data-row="2">
+                                            <li id="one1" class="tabhover">{随机标题}</li>
+                                            <li id="one2">{随机标题} </li>
+                                        </ul>
+                                    </li>
+                                    <li id="con_one" class="con_one_list">
+                                        <ul id="con_one_1" style="display:block;" data-row="9">
+                                            {loop type="arclist" row="9" image="1" info="1"}
+                                                <li><span class="li-icon li-icon-1">{$vo.postdate}</span><a href="{$vo.url}"
+                                                    title="{$vo.title}">{$vo.title}</a></li>
+                                            {/loop}
+                                        </ul>
+                                        <ul id="con_one_2" style="display:none" data-row="9">
+                                            {loop type="arclist" row="9" image="1" info="1"}
+                                                <li><span class="li-icon li-icon-1">{$vo.postdate}</span><a href="{$vo.url}"
+                                                    title="{$vo.title}">{$vo.title}</a></li>
+                                            {/loop}
+                                        </ul>
+                                    </li>
+                                
+                            </ul>
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="divStatistics">
+                            <h3 class="sidebox_title">{$keywords} {随机栏目}</h3>
+                            <ul class="sidebar_content divStatistics" data-row="6">
+                                {loop type="arclist" row="6" image="1" info="1"}
+                                <li>{$vo.title}</li>
+								{/loop}
+                            </ul>
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="divCalendar">
+                            <ul class="sidebar_content divCalendar" data-row="0">
+                                <table id="tbCalendar">
+                                    <caption><a title="{随机栏目}" href="{随机栏目URL}">{随机栏目}</a>&nbsp;&nbsp;&nbsp;<a
+                                            href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>&nbsp;&nbsp;&nbsp;<a
+                                            title="{随机栏目}" href="{随机栏目URL}">{随机栏目}</a></caption>
+                                    <thead>
+                                        <tr>
+                                            <th title="星期一" scope="col"><small>一</small></th>
+                                            <th title="星期二" scope="col"><small>二</small></th>
+                                            <th title="星期三" scope="col"><small>三</small></th>
+                                            <th title="星期四" scope="col"><small>四</small></th>
+                                            <th title="星期五" scope="col"><small>五</small></th>
+                                            <th title="星期六" scope="col"><small>六</small></th>
+                                            <th title="星期日" scope="col"><small>日</small></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></td>
+                                            <td><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></td>
+                                            <td><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></td>
+                                            <td><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></td>
+                                            <td><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></td>
+                                            <td><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></td>
+                                            <td><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>30</td>
+                                            <td>31</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </ul>
+                        </section>
+                        <section class="sidebox wow fadeInDown" id="divLinkage">
+                            <h3 class="sidebox_title">{随机栏目}</h3>
+                            <ul class="sidebar_content divLinkage" data-row="5">
+                                {loop type="arclist" row="5" image="1" info="1"}
+                                <li class="link-item"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+								{/loop}
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{$theme_path}/js/jquery.ias.min.js"></script>
+        <div id="footer">
+            <div id="footer-bottom">
+                <div class="nav-foot">
+                    <div class="credit"> Copyright<i class="fa fa-copyright"></i>2015-2019
+                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> {$keywords} 基于
+                        <a href="{随机栏目URL}" title="{随机栏目}" target="_blank" rel="noopener norefferrer">{随机栏目}</a>搭建 
+                    </div>
+                    <div class="footernav"> 
+                        <a class="beian-ico" target="_blank" href="" title="京公网安备11000000000001号">
+                            京公网安备11000000000001号
+                        </a>
+                        <a class="beian-ico" href="" rel="nofollow" target="_blank" title="京ICP备11000001号">
+                            蜀ICP备2022005971号-1
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="{随机栏目URL}" class="cd-top" title="{随机栏目}">{随机栏目}</a>
+        <div class="none">
+            <script type="text/javascript" src="{$theme_path}/js/viewlee.js?t=2024-09-25"></script>
+            <script type="text/javascript" src="{$theme_path}/js/sticky-sidebar.js"></script>
+            <script>var swiper = new Swiper('.swiper-home', { pagination: '.swiper-home-pagination', nextButton: '.swiper-home-button-next', prevButton: '.swiper-home-button-prev', paginationClickable: true, centeredSlides: true, autoplay: 5000, autoplayDisableOnInteraction: false, lazyLoading: true, mousewheelControl: false, keyboardControl: true, loop: true });</script>
+            <script src="{$theme_path}/js/wow.min.js"></script>
+        </div>
+    </div>
+</body>

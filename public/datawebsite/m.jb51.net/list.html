@@ -1,0 +1,78 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="address=no;email=no;telphone=no">
+    <meta name="applicable-device" content="mobile">
+    <meta http-equiv="cache-control" content="no-transform">
+    <meta http-equiv="cache-control" content="no-siteapp">
+    <meta name="referrer" content="always">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link rel="canonical" href="{$theme_path}/css/list967_1.html">
+    <link href="{$theme_path}/css/soft.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <section id="search">
+        <form action="/do/search.html" method="get" target="_blank" class="bdcs-search-form" id="bdcs-search-form">
+            <div class="searchbg"></div>
+            <div class="searchbox">
+                <input type="text" class="key" maxlength="18" name="q" placeholder="请输入您感兴趣的关键字">
+                <input type="submit" class="searchsub" value>
+                <i id="searchclose">取消</i>
+            </div>
+        </form>
+
+    </section>
+    <section class="wechat">
+        <div class="wechatbg"></div>
+        <div class="wechatbox">
+            <i id="wechatclose">关闭</i>
+        </div>
+    </section>
+    <nav id="nav">
+        <ul data-row="13">
+            {loop type="catelog" row="5" tpl="" islist=""}
+            <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+            {/loop}
+            <li class="navdown"></li>
+            {loop type="catelog" row="6" tpl="" islist=""}
+            <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+            {/loop}
+            <li class="navup"></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="classname">
+            {$keywords}>
+        </h1>
+        <section class="softlist"> 
+            {loop type="arclist" row="8" tpl="" islist=""}
+                <a href="{$vo.url}">
+                    <figure><img src="{$vo.pic}" alt="{$vo.title}"></figure>
+                    <aside>
+                        <p>{$vo.title}</p>
+                        <blockquote> <em>144MB</em> / <time>2018-08-15</time> </blockquote>
+                    </aside>
+                </a>
+            {/loop}
+        </section>
+        <section class="fenye">
+            <span class="rest"><span class="page-i">共10页：<i class="pCur">1</i>/<i class="pTotal">10</i></span></span><span class="upno">上一页</span><a href="{随机栏目URL}" class="down">下一页</a>
+            </section>
+    </main>
+	<footer>
+		<p><a href="javascript:void(0)" class="pc">电脑版</a> - <a href="/">返回首页</a></p><p>2006-2024 脚本之家 JB51.Net , All Rights Reserved.<br>苏ICP备14036222号</p>
+	</footer>
+    <div id="gotop"></div> <!--底部立即下载按钮-->
+    <script src="{$theme_path}/js/jquery.min.js"></script>
+    <script src="{$theme_path}/js/swiper4.min.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/soft1.js"></script>
+    <div class="count">
+        <script src="{$theme_path}/js/mbot.js"></script>
+    </div>
+</body>

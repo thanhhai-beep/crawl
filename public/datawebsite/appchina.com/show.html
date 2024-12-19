@@ -1,0 +1,120 @@
+<head>
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="applicable-device" content="mobile">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="google" value="notranslate">
+    <meta name="theme-color" content="#43B753">
+    <meta name="generate_time" content="2024-12-11 09:49:14">
+    <meta name="baidu-site-verification" content="codeva-B4kr1xfidl">
+    <meta name="google-site-verification" content="Rp_kqs_jBu5f_sRR5MPjXD5qm4mNtTlpSuqOqohWy8I">
+    <link rel="apple-touch-icon" href="{$theme_path}/css/yyh.png">
+    <link rel="shortcut icon" type="image/ico" href="{$theme_path}/css/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{$theme_path}/css/common20241010.css">
+    <script src="{$theme_path}/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/jquery.cookie.js"></script>
+    <script src="{$theme_path}/js/common20241010.js"></script>
+</head>
+
+<body>
+    <header class="Header">
+        <div id="yyh-bottom" class="yyh-bottom"> <a class="a" id="yyh-download"
+                onclick="_czc.push(['_trackEvent', 'top', '{网站名称} 下载', 'com.yingyonghui.market','','yyh-download']);"
+                href=""> <img class="img" alt src="{$theme_path}/images/top_download.png"> </a> </div>
+        <div class="Top"> <a href="/" class="logo"><img alt class="logo_img" src="{$theme_path}/images/logo3.png"></a>
+            <div class="SearchBox">
+                <form action="/search/" method="GET" onsubmit="return search();">
+                    <div class="Search_Input"> <input type="text" id="keyword" class="s_input" placeholder="搜索"> </div>
+                    <div class="i-input" onclick="return search();"> <img src="{$theme_path}/images/search_icon.png" /> </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <li class="navi-index"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+        <li class="navi-soft"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+        <li class="navi-game Navigation_Check"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+        <li class="navi-appset"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+        <li class="navi-column"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+        <li class="navi-article"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+    </nav>
+    <div class="main">
+        <div class="mainpage mbt_27">
+            <section class="ClassifyBox">
+                <ul data-row="14">
+                    <li class="Classify_Checked"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                </ul>
+            </section>
+            <ul class="list_con" data-row="20">
+                {loop type="arclist" row="30" tpl="" islist=""}
+                <li class="app-list-con">
+                    <a href="{$vo.url}">
+                        <img class="app-list-img" alt="无限暖暖" title="无限暖暖" src="{$vo.pic}">
+                    </a>
+
+                    <div class="app-list-details">
+                        <div class="app-list-name">
+                            <h2>
+                                <a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+                            </h2>
+                        </div>
+                        <div class="app-list-info">
+                            <div>579.10MB</div>
+                            <div>|</div>
+                            <div>0好评</div>
+                        </div>
+                        <div class="app-list-des">
+                            <h3>{$vo.title}</h3>
+                        </div>
+                    </div>
+                    <div class="app-list-download">
+                        <a href="{$vo.url}" title="{$vo.title}">下载</a>
+                    </div>
+                </li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="Footer">
+            <div class="Footer-line"></div>
+            <div class="Footer-Company"> <span>{$keywords} 北京掌汇天下科技有限公司 版权所有</span> </div>
+            <div class="Footer-Other"> <span>公司地址：北京市西城区西绒线胡同51号南门</span> </div>
+            <div class="Footer-Other"> <a href="{随机栏目URL}" rel="nofollow" target="_blank" title="{随机栏目}">{随机栏目}</a> | <a
+                    href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+            <div class="Footer-Other"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> | <a href="{随机栏目URL}"
+                    rel="nofollow" target="_blank" title="{随机栏目}">{随机栏目}</a> </div>
+            <div class="Footer-Other"> <span class="Footer-com">{网站名称} <a title="{随机栏目}" href="{随机栏目URL}">{随机栏目}</a>
+                    -安卓手机网上最贴心的Android软件应用平台!</span> </div>
+        </div>
+        <div class="fixed-footer"> <a class="a" id="yyh-footer-download"
+                onclick="_czc.push(['_trackEvent', 'bottom', '{网站名称} 下载', 'com.yingyonghui.market','','yyh-download']);"
+                href=""> <img alt src="{$theme_path}/images/fixed_footer_v2.png"> </a> </div>
+        <div id="none_display" style="display:none;">
+            <script
+                type="text/javascript">         /*<![CDATA[*/         var blackSpiderUa = ['Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36', 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; Baiduspider-render/2.0; )']; if (blackSpiderUa.indexOf(navigator.userAgent) < 0) { var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1257962242'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1257962242' type='text/javascript'%3E%3C/script%3E")); $(document).ready(function () { getId(); }); }         /*]]>*/     </script>
+        </div>
+        <script
+            type="text/javascript">     /*<![CDATA[*/     (function () { if (readCookie("yyhchannel") != null) { return; } var from = getParameterByName("from"); if (from != undefined && from != null) { return; } if (window.location.hostname == "") { var bp = document.createElement('script'); bp.src = '//push.zhanzhang.baidu.com/push.js'; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(bp, s); } })();       /*]]>*/ </script>
+    </div>
+</body>

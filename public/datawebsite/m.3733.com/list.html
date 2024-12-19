@@ -1,0 +1,217 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link rel="stylesheet" href="{$theme_path}/css/hamlet.css">
+    <link rel="stylesheet" href="{$theme_path}/css/game_list.css">
+    <script src="{$theme_path}/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="{$theme_path}/css/dropload.css">
+    <script src="{$theme_path}/js/dropload.min.js"></script>
+    <link rel="canonical" href="{$theme_path}/css/wangyou">
+    <script src="{$theme_path}/js/loading.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="/">
+                <img src="https://s7apic5.pic3733.com/icon/202307/27eae8cc2d385fcff5ebd9ab96cecf55.png?auth_key=1734148800-0-0-3451ab26a3e8d2c76dedf80b7d6638f4" alt="{网站地址}">
+            </a>
+        </div>
+        <div class="search">
+            <a href="/search.html">
+                <div>
+                    <span>请输入游戏名称</span>
+                    <img src="{$vo.pic}" alt>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div id="gsy-screen-mark"></div>
+        <nav class="gsy-screen gsy-fixed">
+            <ul class="gsy-screen-wrapper" data-row="31">
+                <li class="gsy-screen-item">
+                    <div class="now"> <em>平台</em> <i class="icf i-triangledownfill"></i> </div>
+                    <ul class="order" data-row="4">
+                        <li class="active"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    </ul>
+                </li>
+                <li class="gsy-screen-item">
+                    <div class="now"> <em>网游</em> <i class="icf i-triangledownfill"></i> </div>
+                    <ul class="order" data-row="5">
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class="active"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    </ul>
+                </li>
+                <li class="gsy-screen-item">
+                    <div class="now"><em>类型</em> <i class="icf i-triangledownfill"></i> </div>
+                    <ul class="order" id="0" data-row="10">
+                        <li class="active"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    </ul>
+                </li>
+                <li class="gsy-screen-item">
+                    <div class="now"><em>题材</em> <i class="icf i-triangledownfill"></i> </div>
+                    <ul class="order" id="0" data-row="8">
+                        <li class="active"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                        <li class> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="site"> <a href="/" title="{随机栏目}">{随机栏目}</a> &gt; <h1>{$keywords}</h1>
+        </div>
+        <div class="top_game box">
+            <div class="top-box-gg">
+                {loop type="arclist" row="1" tpl="" islist=""}
+                <a class="down-btn" href="{$vo.url}" rel="nofollow">
+                    <div class="box-pic"> <img src="{$vo.pic}" alt> <img src="{$vo.pic}" alt> <img src="{$vo.pic}" alt>
+                    </div>
+                    <div class="box-info"> <img class="box-img" src="{$vo.pic}" alt="{网站名称}">
+                        <div class="info">
+                            <div class="name"> {网站名称} <span>官方版</span> </div>
+                            <div class="pf"> <i></i> <i></i> <i></i> <i></i> <i></i> <span>
+                                {randstr type="2" num="3"/}.{randstr type="2" num="2"/}</span> </div>
+                            <div class="box-desc">{随机关键词}</div>
+                        </div>
+                        <div class="btn">立即安装</div>
+                    </div>
+                </a> <a href="{随机栏目URL}" class="install_tips" title="{$keywords}">{$keywords}</a>
+                {/loop}
+            </div>
+        </div>
+        <div class="menuReco">
+            <ul data-row="3">
+                <li><a href="{随机栏目URL}" class="active" title="{$vo.title}">{$vo.title}</a></li>
+                <li><a href="{随机栏目URL}" class title="{随机栏目}">{随机栏目}</a></li>
+                <li><a href="/zhekou/"><img src="{$vo.pic}" alt>折扣手游·0.1折<p class="sp-chip">{随机栏目}</p></a> </li>
+            </ul>
+        </div>
+        <div class="rankCon" id="rankCon">
+            <div class="gameList">
+                <ul data-row="10">
+                    {loop type="arclist" row="50" tpl="" islist=""}
+                    <li> <a href="{$vo.url}">
+                            <div class="img"> <img class="lazyload" src="{$vo.pic}" data-src="{$vo.pic}"
+                                    alt="{$vo.title}"> </div>
+                            <div class="con"> <em class="name">{$vo.title}</em>
+                                <p class="info"><span class="spec">
+                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}分</span>
+                                    <span>{randstr type="2" num="3"/}.{randstr type="2" num="2"/}
+                                        MB</span><span></span></p>
+                                <p class="info">{$vo.info}</p>
+                            </div> <span class="btn">下载</span>
+                        </a> </li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="page"> <a href="{随机栏目URL}" class="gray-page" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                    class="gray-page" title="{随机栏目}">{随机栏目}</a> <span>1</span> <a href="{随机栏目URL}" class
+                    title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" class title="{随机栏目}">{随机栏目}</a> </div>
+        </div>
+        <section class="app-download-box">
+            {loop type="arclist" row="1" tpl="" islist=""}
+            <a href="{$vo.url}" class="box-btn" rel="nofollow"> <img src="{$vo.pic}" alt="{网站名称}">
+                <div class="box-info"> <span>{网站名称}</span>
+                    <p><i></i>{随机关键词}</p>
+                    <div class="desc"> {$vo.info}</div>
+                </div>
+                <div class="btn">下载</div>
+            </a> <a href="{随机栏目URL}" class="install_tips" title="{$keywords}">{$keywords}</a>
+            {/loop}
+        </section>
+    </div>
+    <div class="footer2">
+        <a href="/" class="on">
+            <div class="icon icon1"></div>
+            <div>首页</div>
+        </a>
+        <a href="/game">
+            <div class="zk01"></div>
+            <div class="icon icon2"></div>
+            <div>游戏</div>
+        </a>
+        <a href="/card/libao">
+            <div class="icon icon3"></div>
+            <div>礼包</div>
+        </a>
+        <a href="/kf">
+            <div class="icon icon4"></div>
+            <div>开服表</div>
+        </a>
+        <a href="/kefu">
+            <div class="icon icon5"></div>
+            <div>客服</div>
+        </a>
+    </div>
+    <script>
+        function isBangs() {
+            if (/iphone/gi.test(window.navigator.userAgent)) {             /* iPhone X、iPhone XS、iPhone 11 Pro */
+                var xa = (window.screen.width === 375 && window.screen.height === 812);             /* iPhone XR、iPhone XS Max、iPhone 11、iPhone 11 Pro Max */
+                var xb = (window.screen.width === 414 && window.screen.height === 896);             /* iPhone SE */
+                var xc = (window.screen.width === 375 && window.screen.height === 667);             /* iPhone 12 mini */
+                var xd = (window.screen.width === 360 && window.screen.height === 780);             /* iPhone 12、iPhone 12 Pro */
+                var xe = (window.screen.width === 390 && window.screen.height === 844);             /* iPhone 12 Pro Max */
+                var xf = (window.screen.width === 428 && window.screen.height === 926);
+                if (xa || xb || xc || xd || xe || xf) {
+                    return true;
+                } else { return false; }
+            } else { return false }
+        }
+        var uu = navigator.userAgent.toLowerCase(); function userAgentBrowser() {
+            var isWX = uu.match(/MicroMessenger\/[0-9]/i); //weixin
+            var isQQ = uu.match(/QQ\/[0-9]/i); //qq         
+            var isSafari = uu.indexOf('applewebkit') > -1 && uu.indexOf('mobile') > -1 &&
+                uu.indexOf('safari') > -1 && uu.indexOf('browser') === -1 && uu.indexOf('linux') === -1 && uu.indexOf('android') === -1 &&
+                uu.indexOf('chrome') === -1 && uu.indexOf('ios') === -1; if (isWX) { return 'wechat'; } else if (isSafari) {
+                    return 'safari';
+                } else if (isQQ) { return 'qq' }
+        } var ub = userAgentBrowser(); if (isBangs()) {
+            if (ub == 'safari') {
+                var oldHeight = window.innerHeight; window.addEventListener("resize", function () {
+                    if (window.innerHeight > oldHeight) {
+                        document.querySelector(".footer2").style.paddingBottom = "22px";
+                    } else {
+                        document.querySelector(".footer2").style.paddingBottom = "0px";
+                    }
+                }, false);
+            } else if (ub == 'qq' || ub == 'wechat') { document.querySelector(".footer2").style.paddingBottom = "22px"; }
+        } 
+    </script>
+    <script src="{$theme_path}/js/lazyload_double.js"></script>
+    <script src="{$theme_path}/js/game_list.js"></script>
+    <script>
+        $(function () {
+            var ua = navigator.userAgent.toLowerCase();
+            var platform = { ios: function () { return (/iphone|ipad|ipod|ios/i.test(ua)); } }
+            let iosLink = ""; let androidLink = "";
+            if (platform.ios()) { $(".top_game .down-btn").attr("href", iosLink); } else { $(".top_game .down-btn").attr("href", androidLink); }
+        }) 
+    </script>
+    <script>     $(function () { var az_box_url = ""; var ios_box_url = ""; var user = navigator.userAgent; var isAndroid = user.indexOf('Android') > -1 || user.indexOf('Adr') > -1; if (isAndroid) { $(".box-btn").attr("href", az_box_url); } else { $(".box-btn").attr("href", ios_box_url); } })
+
+    </script>
+</body>

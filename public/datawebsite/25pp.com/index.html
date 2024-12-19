@@ -1,0 +1,204 @@
+<head>
+  <title>{$toptitle}</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="{$keywords}">
+  <meta name="description" content="{$description}">
+   <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta name="shenma-site-verification" content="90a25a1ab24d423761f3455f2b8be3f6_1701238134">
+  <meta name="360-site-verification" content="e5016f0bb6532760d05334ab6516beac">
+  <meta name="sogou_site_verification" content="RFwaxWltMt">
+  <link rel="shortcut icon" href="{$theme_path}/css/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="{$theme_path}/css/indexpc.bc748919.css"><link rel="stylesheet" href="{$theme_path}/css/header.bc748919.css"><link rel="stylesheet" href="{$theme_path}/css/footer.bc748919.css">
+</head>
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&trid=215041c817338052726177909eeaa0&asid=AQAAAADYxFdnpr08LQAAAACix977Z2Ebgw==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+<script type="text/javascript" charset="utf-8" src="{$theme_path}/js/nc.js?t=2015052012"></script>
+<div class="header-container">
+  <div class="wrap-neo">
+    <div class="logo">
+      <a class="btn-logo" href="{随机栏目URL}" title="{随机栏目}"></a>
+    </div>
+    <div class="search-right">
+      <div class="user-info">
+          {loop type="arclist" row="1" tpl="" islist=""}
+        <img class="avatar" id="header_avatar" src="{$vo.pic}" alt>
+        {/loop}
+      </div>
+    </div>
+  </div>
+</div>
+<div id="login_modal" class="login-modal">
+  <div class="modal-wrap login-wrap pc">
+    <span class="close-btn" id="login_close"></span>
+    <div class="login-modal-content">
+      <div class="title">登录</div>
+      <div class="tips">未注册的手机号码验证后自动创建账号</div>
+      <div class="input-wrap">
+        <input type="text" id="login_phone" class="inner-input" placeholder="请输入手机号码">
+        <span id="login_phone_clear" class="clear-input"></span>
+      </div>
+      <div class="input-error-tips">
+        <div class="error-text" id="login_phone_error"></div>
+      </div>
+      <div class="input-wrap">
+        <input type="number" id="login_code" class="inner-input" placeholder="请输入手机验证码">
+        <span id="login_getCode" class="verify-btn active">获取验证码</span>
+      </div>
+      <div class="input-error-tips">
+        <div class="error-text" id="login_code_error"></div>
+      </div>
+      <div id="login_nc" class="nc-wrap"></div>
+      <div class="check-privacy">
+        <span id="login_readAgree" class="checkbox active"></span>
+        已阅读并同意<a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a>和<a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a>
+      </div>
+      <div id="login_submit" class="login-btn active">立即登录</div>
+    </div>
+  </div>
+</div>
+
+<div id="user_modal" class="user-modal">
+  <div class="modal-wrap pc">
+    <span class="close-btn" id="user_close"></span>
+    <div class="user-modal-content">
+      <div class="user-info">
+        {loop type="arclist" row="1" tpl="" islist=""}
+          <img id="user_avatar" src="{$vo.pic}" class="avatar">
+        {/loop}
+        <div id="user_name" class="name">****</div>
+      </div>
+      <div class="logout-btn" id="user_logout">
+        退出登录
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="header__global__tips" class="modal-tips"></div>
+<div class="full-wrap swiper-conta iner">
+    <div class="swiper-wrapper" style="height: auto;">
+        <div class="swiper-slide">
+          <a href="/android" class="banner">
+            <div class="banner-image pp">
+            </div>
+          </a>
+        </div>
+    </div>
+</div>
+<div class="main">
+  
+      <div class="selection"> 
+        <div class="tab-nav">
+          <ul data-row="2">
+              <li class="tab-nav-li current" data-id="must">{$vo.title}</li>
+              <li class="block"></li>
+          </ul>
+        </div>
+
+        <div class="tab-container">
+          <div class="tab tab-must app-list current">
+            <ol data-row="12">
+              {loop type="arclist" row="12" tpl="" islist=""}
+                <li>
+                  <a href="{$vo.url}" target="_blank">
+                    <img src="{$vo.pic}" class="icon" alt="{$vo.title}">
+                    <p class="title">{$vo.title}</p>
+                    <div class="detail-check-btn">查看</div>
+                  </a>
+                </li>
+              {/loop}
+            </ol>
+          </div>
+        </div>
+      </div>
+  
+      <div class="selection"> 
+        <div class="tab-nav">
+          <ul data-row="2">
+              <li class="tab-nav-li current" data-id="must">{$vo.title}</li>
+              <li class="block"></li>
+          </ul>
+        </div>
+
+        <div class="tab-container">
+          <div class="tab tab-must app-list current">
+            <ol data-row="12">
+              {loop type="arclist" row="12" tpl="" islist=""}
+                <li>
+                  <a href="{$vo.url}" target="_blank">
+                    <img src="{$vo.pic}" class="icon" alt="{$vo.title}">
+                    <p class="title">{$vo.title}</p>
+                    <div class="detail-check-btn">查看</div>
+                  </a>
+                </li>
+              {/loop}
+            </ol>
+          </div>
+        </div>
+      </div>
+  
+</div>
+
+<!-- footer begin-->
+<div class="full-wrap clearfix">
+  <div class="footer">
+    <div class="wrap-neo">
+      <div class="friendLink clearfix" id="J_friendLink">
+        <div id="btn_link" class="btn_link_d"></div>
+        <div class="links" data-row="42">
+          {loop type="arclist" row="42" tpl="" islist=""}
+            <a href="{$vo.url}" title="{$vo.title}" target="_blank">{$vo.title}</a>
+          {/loop}
+        </div>
+      </div>
+      
+      <div class="copyright clearfix">
+        <p>PP助手是一款很受欢迎的<strong>{随机栏目}</strong>，让您的安卓手机更简单好用，轻松管理心爱手机。免费下载应用、视频和音乐、管理通讯录、快速备份手机等应有尽有。</p>
+        <p>{随机栏目}</p>
+        <p>
+          <span>广州皮皮信息技术有限公司 版权所有&nbsp;&nbsp;</span>
+          <span><a href="{随机栏目URL}" target="_blank" rel="nofollow" title="{随机栏目}">{随机栏目}</a>
+            &nbsp;</span>
+          <span>增值电信业务经营许可证：粤B2-20230571&nbsp;&nbsp;</span>
+          <span><a href="{随机栏目URL}" target="_blank" rel="nofollow" title="{随机栏目}">{随机栏目}</a></span>
+        </p><p style="margin-top: 6px;">
+          <span><a class="license-icon" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" charset="utf-8" src="{$theme_path}/js/broadcast.js"></script>
+
+  <script type="text/javascript" src="{$theme_path}/js/indexpc.bc748919.js"></script><script type="text/javascript" src="{$theme_path}/js/header.bc748919.js"></script><script type="text/javascript" src="{$theme_path}/js/footer.bc748919.js"></script>
+<div style="display:none;height:0;overflow:hidden;z-index:0;">
+  <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1254037891'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/stat.php%3Fid%3D1254037891' type='text/javascript'%3E%3C/script%3E"));
+
+    var _hmt = _hmt || [];
+    (function () {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a1d32bbc9f9ad08ccc61f48368082d62";
+
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</div>
+
+</body>

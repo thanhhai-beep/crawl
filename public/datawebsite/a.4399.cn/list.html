@@ -1,0 +1,62 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,minimal-ui">
+    <meta content="email=no,telephone=no" name="format-detection">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link rel="shortcut icon" href="{$theme_path}/css/favicon.ico?1">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="MobileOptimized" content="320">
+    <link href="{$theme_path}/css/androidMobile.css?3458e8b" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="m_page_header"> <a href="javascript:history.back();" class="back fl" marks="wap-a-xinyou-back">
+            <i></i> 新游推荐 </a>
+        <div class="fr"> <a href="{随机栏目URL}" class="back_home" marks="wap-a-xinyou-shoye" title="{随机栏目}">{随机栏目}</a> <a
+                href="/mobile/search.html" class="search" marks="wap-a-xinyou-search"> <i></i> </a> </div>
+    </section>
+    <section class="m_tab">
+        <ul data-row="3">
+            <li class="active" marks="wap-a-xinyou-zuixin"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </li>
+            <li class marks="wap-a-xinyou-kaice"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+            <li class marks="wap-a-xinyou-yuyue"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+        </ul>
+    </section>
+    <h1 class="tdk-h1">{$keywords}</h1>
+    <section class="m_game_list">
+        <div class="box" id="j-list">
+            <ul data-row="20">
+                {loop type="arclist" row="100" tpl="" islist=""}
+                <li href="{$vo.url}" markpre="321078">
+                    <div class="logo"> <img src="{$vo.pic}" data-src="{$vo.pic}" alt="{$vo.title}"> </div>
+                    <div class="info" data-kid="2">
+                        <p class="name">{$vo.tilte}</p>
+                        <p class="other">{randstr type="2" num="2"/}.{randstr type="2" num="2"/} MB万+ 下载 <em>
+                                {randstr type="2" num="2"/}.{randstr type="2" num="2"/} G</em></p>
+                        <p class="decs">{$vo.postdate}</p>
+                    </div>
+                    <div data-href="{$vo.url}" class="btn j-download" data-id="321078" data-dlurl="{$vo.url}"
+                        data-name="{$vo.title}" data-status="1">下载</div>
+                </li>
+                {/loop}
+            </ul>
+        </div>
+    </section>
+    <section class="m_tips_dialog" id="j-limit-dialog" style="display: none">
+        <div class="filter"></div> <i class="wxDownload_arrow"></i>
+        <div class="wxDownload_tips"></div>
+    </section>
+    <p>{$keywords}</p>
+</body>
+<script type="text/javascript" src="{$theme_path}/js/androidMobile.js?3458e8b"></script>
+<script type="text/javascript" src="{$theme_path}/js/filtrateBrowser.js?3458e8b"></script>
+<script src="{$theme_path}/js/vendors.js?3458e8b"></script>
+<script src="{$theme_path}/js/commJs.js?3458e8b"></script>

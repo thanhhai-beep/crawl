@@ -1,0 +1,164 @@
+<head>
+    <meta charset="utf-8">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta name="applicable-device" content="mobile">
+    <meta id="viewport" name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <link rel="canonical" href="{$theme_path}/css/51017.html">
+    <script type="text/javascript" src="{$theme_path}/js/jquery.min.js"></script>
+    <link href="{$theme_path}/css/webdown.css" rel="stylesheet" type="text/css">
+    <script src="{$theme_path}/js/general.js"></script>
+</head>
+
+<body>
+    <header class="g-top-full"> <a href="{随机栏目URL}" class="g-back-home" title="{随机栏目}">{随机栏目}</a> 角色扮演 <p><a
+                href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a><b class="m-navshow-btn">展开</b></p>
+        <ul class="m-navshow-ul" data-row="4">
+            <li><a href="/"><b></b><strong>{随机栏目}</strong></a></li>
+            <li><a href="/ruanj.html"><b></b><strong>{随机栏目}</strong></a></li>
+            <li><a href="/youxi.html"><b></b><strong>{随机栏目}</strong></a></li>
+            <li><a href="/news.html"><b></b><strong>{随机栏目}</strong></a></li>
+        </ul> <b class="m-black"></b>
+    </header>
+    <nav class="g-nav-full"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>| <a href="{随机栏目URL}"
+            title="{随机栏目}">{随机栏目}</a>| <a href="{随机栏目URL}" class="m-hover" title="{随机栏目}">{随机栏目}</a>| <a
+            href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>| <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </nav>
+    <section class="g-down-game">
+        <dl class="g-game-top">
+            <dt><img src="{$pic}"></dt>
+            <dd>
+                <h1>{$keywords}</h1>
+                <h2>{$title}</h2> <b><em>大小：<span class="f-game-size">{randstr type="2" num="2"/}.{randstr type="2" num="2"/}MB</span></em><em>语言：{随机关键词}</em></b>
+                <b><em>类别：{随机关键词}</em><em>系统：安卓</em></b>
+            </dd>
+        </dl>
+        <div id="downAddress">
+            <ul class="g-game-btn m-down-ul" data-row="1">
+                <li class="m-down-last"><a href="{随机栏目URL}" class="down" id="address" title="点击下载">点击下载</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="g-down-nav"> <b class="m-hover" id="m-game-introd">简介</b>|<b id="m-game-tutorail">教程</b>|<b
+            id="m-game-comment">评论(0)</b> </section>
+    <section class="g-down-previmg " style="height: 200px">
+        <div class="g-previmg-bo2">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                {loop type="arclist" row="5" tpl="" islist=""}
+                <div class="item"><a rel="jietu" class="swipebox"><img src="{$vo.pic}"></a></div>
+                {/loop}
+            </div>
+        </div>
+        <div class="g-theme-info">
+            <ul class="g-theme-ul" data-row="1">
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <section class="g-down-information"> <strong><em>版本：v{randstr type="2" num="2"/}.{randstr type="2" num="2"/}.0</em><em>时间：{$postdate}</em></strong>
+        <p> <span class="u-bq-txt">标签：</span> </p>
+    </section>
+    <section class="g-down-introd">
+        <dl class="g-title">
+            <dt>游戏介绍</dt>
+            <dd></dd>
+        </dl>
+        <div class="g-down-content">
+            {$body}
+        </div> <b class="m-show-content">
+            <p>加载全部内容<b></b></p>
+        </b>
+    </section>
+    <section class="g-down-recomd">
+        <dl class="g-title">
+            <dt>热门推荐</dt>
+            <dd></dd>
+        </dl>
+        <div class="g-ishot-isbest">
+            <ul data-row="2">
+                <li><a href="/azdj/5515.html"><img src="{$vo.pic}"
+                            alt="深空之眼官方手游1.0_中文安卓app手机游戏下载"><strong>{$vo.postdate}</strong></a></li>
+                <li><a href="/azdj/5516.html"><img src="{$vo.pic}"
+                            alt="山海计划手游1.0.0_中文安卓app手机游戏下载"><strong>{随机栏目}</strong></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="g-cms-relatedcms">
+        <dl class="g-title">
+            <dt>推荐教程</dt>
+            <dd></dd>
+        </dl>
+        <ul class="g-cmslist" data-row="6">
+            {loop type="arclist" row="6" tpl="" islist=""}
+            <li><b></b><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+            {/loop}
+        </ul>
+    </section>
+    <div class="g-box" id="g-keyword">
+        <div class="g-game-recomd m-tab-box">
+            <dl class="g-title">
+                <dt>猜你喜欢</dt>
+                <dd></dd>
+            </dl>
+            <div class="g-keyword-cont m-tab-cont">
+                <ul data-row="10">
+                    {loop type="arclist" row="10" tpl="" islist=""}
+                    <li><a href="{$vo.url}"><img src="{$vo.pic}"><strong>{$vo.title}</strong></a></li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="margin10 clearfix">
+            <div class="g-title-top"><strong>{随机栏目}</strong></div>
+            <div class="g-zthj scroll-module clearfix">
+                <span></span>
+                {loop type="arclist" row="6" tpl="" islist=""}
+                <a href="{$vo.url}" title="{$vo.title}">
+                    <img src="{$vo.pic}" alt="{$vo.title}">
+                    <strong>{$vo.title}</strong>
+                </a>
+                {/loop}
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section class="m-comment">
+        <dl class="g-title">
+            <dt>{$keywords} 用户评论</dt>
+            <dd></dd>
+        </dl>
+        <div class="g-commentbox g-game-comment">
+            <div class="g-game2-ly" id="comment_list"> <!--PC版-->
+                <div id="SOHUCS"></div>
+                <script charset="utf-8" type="text/javascript" src="{$theme_path}/js/changyan.js"></script>
+                <script
+                    type="text/javascript"> window.changyan.api.config({ appid: 'cyrbiKxmG', conf: 'prod_8e11cfb50c20f2a0b31d59926e9e42c7' }); </script>
+            </div>
+        </div>
+    </section>
+    <section id="tonglei">
+        <div class="g-game-recomd g-relate-cms">
+            <dl class="g-title">
+                <dt>本类排行</dt>
+                <dd></dd>
+            </dl>
+            <ul class="g-rank-ul g-scoll-ul" data-row="10">
+                {loop type="arclist" row="6" tpl="" islist=""}
+                <li class="m-rank-1 "><a href="{$vo.url}" class="g-a-left"><img src="{$vo.pic}">
+                        <p><strong>{$vo.title}</strong><b><span>{randstr type="2" num="3"/}.{randstr type="2" num="2"/}M</span><span><em>{$vo.hits}</em>人在玩</span></b><b>{$vo.info}</b>
+                        </p>
+                    </a><a href="{$vo.url}" class="g-a-right" title="下载">下载</a></li>
+                {/loop}
+            </ul>
+        </div>
+    </section>
+    <footer> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> | <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </footer>
+    <div style="display:none"></div>
+    <script type="text/javascript" src="{$theme_path}/js/game.js"></script>
+    <script src="{$theme_path}/js/webdown.min.js"></script>
+</body>

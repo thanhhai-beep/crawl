@@ -1,0 +1,190 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link rel="stylesheet" href="{$theme_path}/css/bootstrap.css">
+    <link rel="stylesheet" href="{$theme_path}/css/index.css">
+    <link rel="stylesheet" href="{$theme_path}/css/swiper.css">
+    <script src="{$theme_path}/js/jquery.min.js"></script>
+    <script src="{$theme_path}/js/swiper.js"></script>
+    <script src="{$theme_path}/js/index.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container" style="height: 100%;">
+            <div class="row" style="height: 100%;">
+                <div class="col-xs-3" style="height: 100%;"> <a href="/"
+                        style="height: 100%;height: 100%;display: block;"> <img src="{$theme_path}/images/logo.png" alt
+                            style="height: 30px;width: 78px;margin-top: 7px;position: absolute;left: 8px;"> </a> </div>
+                <div class="col-xs-8">
+                    <form class="search-software" onsubmit="return false;">
+                        <div class="input-group"> <input type="search" class="form-control" placeholder="请输入关键字"
+                                id="keyword"> <span class="input-group-addon" id="basic-addon">搜索</span> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navs">
+        <ul class="nav nav-pills" style="height: 100%;" data-row="6">
+            {loop type="catelog" row="6" tpl="" islist=""}
+            <li> <a href="{$vo.url}" class="click" title="{$vo.title}">{$vo.title}</a> </li>
+            {/loop}
+        </ul>
+    </div>
+    <div>
+        <div class="swiper-container swiper-container1 swiper-container-horizontal swiper-container-android" style="height: 200px;">
+            <div class="swiper-wrapper" style="transform: translate3d(-734px, 0px, 0px); transition-duration: 0ms;">
+                {loop type="arclist" row="6" tpl="" islist=""}
+                    <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="0"
+                        style="width: 367px;"> <a href="{$vo.url}"><img src="{$vo.pic}"
+                                style="height: 210px;"></a> </div>
+                {/loop}
+            </div>
+            <div class="swiper-pagination swiper-pagination-bullets"> <span class="swiper-pagination-bullet"></span>
+                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+            </div>
+        </div>
+    </div>
+    <div class="cont_1 basebox">
+        <h1>{$keywords}</h1>
+        <div class="bt">
+            {loop type="catelog" row="1" tpl="" islist=""}
+            <p>{$vo.title}</p><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+            {/loop}
+        </div>
+        <div class="list">
+            <ul data-row="8">
+                {loop type="arclist" row="8" tpl="" islist=""}
+                <li> <a href="{$vo.url}">
+                        <div class="img"><img src="{$vo.pic}" alt="{$vo.title}"> </div>
+                        <p class="name">{$vo.title}</p>
+                    </a> </li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="cont_1 basebox">
+        <div class="bt">
+            {loop type="catelog" row="1" tpl="" islist=""}
+            <p>{$vo.title}</p><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+            {/loop}
+        </div>
+        <div class="list">
+            <ul data-row="8">
+                {loop type="arclist" row="8" tpl="" islist=""}
+                <li> <a href="{$vo.url}">
+                        <div class="img"><img src="{$vo.pic}" alt="{$vo.title}"> </div>
+                        <p class="name">{$vo.title}</p>
+                    </a> </li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="cont_1 basebox">
+        <div class="bt">
+            {loop type="catelog" row="1" tpl="" islist=""}
+            <p>{$vo.title}</p><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+            {/loop}
+        </div>
+        <div class="hj_index">
+            <ul data-row="4">
+                {loop type="arclist" row="4" tpl="" islist=""}
+                <li> <a href="{$vo.url}">
+                        <div class="pic"><img src="{$vo.pic}"> </div>
+                        <p>{$vo.title}</p>
+                    </a> </li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="cont_1 basebox">
+        <div class="bt">
+            {loop type="catelog" row="1" tpl="" islist=""}
+            <p>{$vo.title}</p><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+            {/loop}
+        </div>
+        <div class="list">
+            <ul data-row="8">
+                {loop type="arclist" row="8" tpl="" islist=""}
+                <li> <a href="{$vo.url}">
+                        <div class="img"><img src="{$vo.pic}" alt="{$vo.title}"> </div>
+                        <p class="name">{$vo.title}</p>
+                    </a> </li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div class="cont_5 basebox">
+        <div class="bt">
+            {loop type="catelog" row="1" tpl="" islist=""}
+            <p>{$vo.title}</p><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+            {/loop}
+        </div>
+        <div class="cont5_lis">
+            {loop type="arclist" row="8" tpl="" islist=""}
+            <a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+            {/loop}
+        </div>
+        <div class="cont_6 basebox">
+            <div class="cont6_top cli">
+                <p class="on">游戏排行榜<i></i></p>
+                <p>软件排行榜<i></i></p>
+            </div>
+            <div class="cont6_lis">
+                <ul data-row="10">
+                    {loop type="arclist" row="10" tpl="" islist=""}
+                    <li> <a href="{$vo.url}" class="img"><img src="{$vo.pic}"></a> <a href="{$vo.url}" class="downl"
+                            title="详情">详情</a>
+                        <div class="info">
+                            <div> <a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+                                <p class="size">{$vo.hits}M</p>
+                                <p class="miaoshu">{$vo.postdate}</p>
+                            </div>
+                        </div>
+                    </li>
+                    {/loop}
+                </ul>
+                <ul style="display:none;" data-row="10">
+                    {loop type="arclist" row="10" tpl="" islist=""}
+                    <li> <a href="{$vo.url}" class="img"><img src="{$vo.pic}"></a> <a href="{$vo.url}" class="downl"
+                            title="详情">详情</a>
+                        <div class="info">
+                            <div> <a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+                                <p class="size">{$vo.hits}M</p>
+                                <p class="miaoshu">{$vo.postdate}</p>
+                            </div>
+                        </div>
+                    </li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+        <div class="YQ_link basebox">
+            <div class="bt">
+                <p>{随机栏目URL}</p>
+            </div>
+            <div class="lis"> </div>
+        </div>
+        <link rel="shortcut icon" href="{$theme_path}/css/favicon.ico">
+        <script src="{$theme_path}/js/jq.min.js"></script>
+        <footer class="QZfoot">
+            <p>Copyright © 2024</p>
+            <p>
+                <a href="/" rel="nofollow" target="_blank">湘ICP备2021014062号-1</a>
+            </p>
+            <p>举报邮箱：info@163disk.com&nbsp;(本站所提供的资源均来自互联网，侵权及网站其他事宜处理请邮箱联系)</p>
+        </footer>
+        <script> var _hmt = _hmt || []; (function () { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?3f70ddf3744f7e81043d02bac1c990dc"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>
+        <script>     var s = new Swiper(".swiper-container1", {
+                loop: true, //->运动到最后一张可以实现无缝衔接         
+                autoplay: 3000, //->每隔3000ms自动轮播         
+                autoplayDisableOnInteraction: false, //->手动切换完成后,继续自动轮播,默认是false,切换完成就停止自动了         
+                pagination: ".swiper-pagination", //->设置分页器         
+                speed: 500 //->切换的速度,默认是300ms    
+            }); </script>
+        <script src="{$theme_path}/js/n_l.js"></script>
+</body>

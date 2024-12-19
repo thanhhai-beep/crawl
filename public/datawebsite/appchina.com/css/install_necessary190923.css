@@ -1,0 +1,139 @@
+#install-necessary .soft-necessary .pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#install-necessary {
+    height: 180px;
+    margin-top: 20px;
+    float: left;
+}
+
+#install-necessary .install-necessary-app-classify {
+    width: 700px;
+    margin-top: 5px;
+    margin-left: 20px;
+    height: 25px;
+    vertical-align: bottom;
+}
+
+#install-necessary .install-necessary-app-classify h1 {
+    font-size: 17px;
+    color: #000;
+    float: left;
+    margin-right: 29px;
+}
+
+
+#install-necessary .pagination {
+    width: 998px;
+    float: left;
+}
+
+#install-necessary .pagination #necessary-content {
+    position:relative;
+    width:938px;
+    height:123px;
+    display:inline-block;
+    overflow:hidden;
+    float:left;
+}
+
+#install-necessary .pagination #necessary-content #necessary-list {
+    position: absolute;
+    width: 5000px;
+}
+
+#install-necessary .pagination #necessary-content #necessary-list dl {
+    width:122px;
+    height:115px;
+    float:left;
+    margin-top: 3px;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+}
+
+#install-necessary .pagination #necessary-content #necessary-list dt img{
+    width: 72px;
+    height: 72px;
+    border: none;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+
+#install-necessary .pagination #necessary-content #necessary-list dd h2 {
+    text-align: center;
+    color: #000;
+    display: block;
+    overflow: hidden;
+    width: 120px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 auto;
+    position: relative;
+    top: -9px;
+    line-height: 2;
+}
+
+#install-necessary .pagination .page {
+    color: #999;
+    padding: 4px 8px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    cursor: pointer;
+    margin-top: 50px;
+    display:inline-block;
+    background-color: rgba(238, 207, 203, 0);
+}
+
+#install-necessary .pagination .forward {
+    float: left;
+    margin-left: 1px;
+
+}
+
+#install-necessary .pagination .backward {
+    float: right;
+    margin-right: 4px;
+}
+
+.necessary-app-more-active {
+    display: block;
+    position: absolute;
+    width: 110px;
+    background-color: #fff;
+    height: 115px;
+    margin-left: 115px;
+    z-index: 99;
+    border: 2px solid #53bf1d;
+    border-left: 0;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.necessary-app-more-active-left {
+    display: block;
+    position: absolute;
+    width: 110px;
+    background-color: #fff;
+    height: 115px;
+    margin-right: 115px;
+    z-index: 99;
+    border: 2px solid #53bf1d;
+    border-right: 0;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+#index-app-active-left {
+    border: 2px solid #53bf1d;
+    width: 114px;
+    height: 120px;
+    border-left: 0;
+}

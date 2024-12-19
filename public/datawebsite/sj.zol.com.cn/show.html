@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="gbk">
+
+    <meta name="referrer" content="unsafe-url">
+	<title>{$toptitle}</title>
+	<meta name="description" content="{$description}" />
+	<meta name="keywords" content="{$keywords}" />
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <link href="{$theme_path}/static/css/mobile_detailnew.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" href="{$theme_path}/static/css/webHead.css" rel="stylesheet" />
+    <link type="text/css" href="{$theme_path}/static/css/webHead1100.css" rel="stylesheet" />
+    <script src="{$theme_path}/static/js/detail.js"></script>
+    <script src="{$theme_path}/static/js/swfobject.js" type="text/javascript"></script>
+    <script type="text/javascript" src="{$theme_path}/static/js/webHeadNew.js"></script>
+</head>
+
+<body seriesId="112835" seriesName="中关村在线">
+    <div class="header clearfix">
+        <a class="logo" href="/">
+            <img src="{$theme_path}/static/picture/logo-yyxz.png" width="214" height="32" alt="">
+        </a>
+        <ul class="header-links">
+            <li><a target="_blank" href="{$host}/android/">安卓专区</a></li>
+            <li><a target="_blank" href="{$host}/iphone/">iPhone专区</a></li>
+            <li><a target="_blank" href="{$host}/windowsphone/">Windows Phone</a></li>
+            <li><a target="_blank" href="{$host}/baike/">安卓百科</a></li>
+        </ul>
+        <div class="searchbox">
+            <form id="globalForm" action="//xiazai.zol.com.cn/search" target="_blank">
+                <div id="globalSelectBox" class="selectbox">
+                    <span id="showText" class="showText">软件</span>
+                    <ul id="globalSelectUl" style="display: none">
+                        <li searchId="8" class="">机型</li>
+                        <li searchId="1">软件</li>
+                        <li searchId="5">壁纸</li>
+                        <li searchId="11">小程序</li>
+                    </ul>
+                </div>
+                <div class="stext">
+                    <input type="hidden" value="1" id="searchId" name="type">
+                    <input type="hidden" value="2" name="workType">
+                    <input id="showkeyword" type="text" name="wd"
+                        onclick="JavaScript:if(this.value=='请输入手机应用名称'){this.value='';this.style.color='#000'};"
+                        onblur="JavaScript:if(this.value==''){this.value='请输入手机应用名称';this.style.color='#999999'};"
+                        value="请输入手机应用名称">
+                </div>
+                <input id="globalSearch" class="sbtn" type="submit" value="搜索">
+            </form>
+        </div>
+    </div>
+    <!-- //header -->
+
+    <div class="main-nav">
+		<div class="other-channel">
+			<a target="_blank" href="/">软件资讯</a>
+		</div>
+
+		<ul class="nav clearfix">
+			<li class="first current"><a href="/android/">Android</a></li>
+			<li><a href="/iphone/">iPhone</a></li>
+			<li><a href="/windowsphone/">Windows Phone</a></li>
+			<li><a href="/s60v5/">塞班V5</a></li>
+			<li><a href="/s60v3/">软件</a></li>
+			<li><a href="/symbian3/">塞班^3^3</a></li>
+			<li><a href="/java/">Java</a></li>
+		</ul>
+	</div>
+
+    <div class="location">
+        <a href="javascript:;" target="_blank" id="myXiazaiCenter" class="collect">我的下载中心</a>
+        <a class="home" href="/" title="首页">首页</a><i>&gt;</i>
+        <a href="{随机栏目URL}" title="网络软件" target="_blank">网络软件</a><i>&gt;</i>
+        <span>中关村在线下载</span>
+    </div>
+    <div class="wrapper main-wrapper clearfix">
+        <div class="main">
+            <div class="sideBar">
+                <div class="soft-div">
+                    <span class="pic">
+                        <img src="{$pic}"
+                            alt="" width="130" height="130"><i class="marsk"></i>
+                    </span>
+                    <ul class="soft-text">
+                        <li><span>分类：</span><a target="_blank" href="{随机栏目URL}">{随机栏目}</a></li>
+                        <li><span>授权：</span><em title="免费软件">{随机关键词}</em></li>
+                        <li><span>语言：</span><em title="简体中文">{随机关键词}</em></li>
+                        <li><span>更新：</span><em>{$postdate|jiequ:###,10}</em></li>
+                    </ul>
+                </div>
+                <ul class="side-nav" id="xiding">
+                    <li class="sideNav-item current-item">
+                        <div class="link-warp"><i class="icon"></i><span class="text">综述</span></div>
+                    </li>
+                    <li class="sideNav-item">
+                        <div class="link-warp"><i class="icon summary-icon"></i><span class="text">简介</span></div>
+                    </li>
+                    <li class="sideNav-item">
+                        <div class="link-warp"><i class="icon screenshot-icon"></i><span class="text">截图壁纸</span></div>
+                    </li>
+                    <li class="sideNav-item">
+                        <div class="link-warp"><i class="icon evaluation-icon"></i><span class="text">评测攻略</span></div>
+                    </li>
+                    <li class="sideNav-item">
+                        <div class="link-warp"><i class="icon comment-icon"></i><span class="text">评论 (11)</span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="soft-summary">
+                    <h1 class="soft-title">{主标题}</h1>
+                    <ul class="summary-text clearfix">
+                        <li class="item-1">
+                            <span class="item-title">用户评分：</span>
+                            <div class="rate-box">
+                                <span class="rate-bar">
+                                    <span style="width: 87.2%;"></span>
+                                </span>
+                                <em>8.7</em>
+                            </div>
+                            <a href="javascript:;" onclick="pageskip(5)" class="join-num">共 <em>11</em> 人参与</a>
+                        </li>
+                        <li class="item-2">
+                            <span class="item-title">用户推荐：</span>
+                            <span class="good" title="喜欢，推荐一下" id="re_num" onclick="recommend(112835,1);">15</span>
+                            <span class="bad" title="不喜欢" id="no_re" onclick="recommend(112835,2);">0</span>
+                        </li>
+                        <li class="item-3">
+                            <span class="item-title">下载次数：</span>
+                            <span>105,330,588次</span>
+                        </li>
+                        <li class="item-4">
+                            <ul class="user-box clearfix">
+                                <li class="user-item"><a href="//my.zol.com.cn/zoladd/" title="该用户已注销 1年前推荐过"
+                                        target="_blank" class="pic"><img
+                                            src="{$theme_path}/static/picture/zoler_50.jpg" alt=""
+                                            width="20" height="20"><span class="marsk"></span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <style>
+                        .btn-box {
+                            margin: 10px 0px 0px;
+                        }
+
+                        .btn-box {
+                            display: block;
+                            position: relative;
+                            height: 54px;
+                            width: 250px;
+                            border-radius: 3px;
+                            background: #fff;
+                            font: normal 18px/54px 'Microsoft YaHei', '\5FAE\8F6F\96C5\9ED1';
+                            text-align: center;
+                        }
+
+                        .btn-box a.pc-button {
+                            font-size: 22px;
+                            border-color: #67c03e;
+                            color: #fff;
+                            background-color: #67c03e;
+                        }
+
+                        .btn-box a.pc-button:hover {
+                            border-color: #5fb736;
+                            background-color: #5fb736;
+                        }
+
+                        .btn-box a.pc-button:hover span {
+                            border-color: #55a631;
+                            background-color: #55a631;
+                        }
+
+                        .btn-box a.pc-button span {
+                            border-color: #55a631;
+                            background-color: #55a631;
+                        }
+
+                        .btn-box.pc-button .icon i {
+                            background: url(https://icon.zol-img.com.cn/sj/images/downbtn1.png) no-repeat;
+                            width: 24px;
+                            height: 24px;
+                        }
+
+                        .video-list .video-item {
+                            padding: 4px 0 15px;
+                        }
+
+                        .downLoad-none a.pc-button {
+                            width: 128px;
+                            text-align: center;
+                            padding: 0 10px;
+                            border-color: #ddd;
+                            color: #fff;
+                            background-color: #ddd;
+                            cursor: default;
+                        }
+
+                        .downLoad-none a.pc-button:hover {
+                            border-color: #ddd;
+                            color: #fff;
+                            background-color: #ddd;
+                        }
+
+                        .downLoad-none a.pc-button span {
+                            display: none;
+                        }
+
+                        .pc-downLoad-box .pc-button .icon i {
+                            background: url(//icon.zol-img.com.cn/sj/img/pc-icon_03.png) no-repeat;
+                            margin-top: -10px;
+                        }
+
+                        .pc-downLoad-box.blue .pc-button {
+                            background-color: #4993e1;
+                            border-color: #4993e1;
+                        }
+
+                        .pc-downLoad-box.blue a.pc-button span {
+                            background-color: #3a84d2;
+                            border-color: #3a84cd;
+                        }
+
+                        .pc-downLoad-box.blue a.pc-button:hover {
+                            background-color: #428ddb;
+                            border-color: #428ddb;
+                        }
+                    </style>
+
+                    <div class="downLoad-box btn-box">
+                    </div>
+                </div>
+                <div class="switch-content">
+                    <div class="summarize-container" date-id="1" style="display:block">
+                        <div class="section summary-section">
+                            <div class="section-header">
+                                <h2 class="section-title">应用简介</h2>
+                            </div>
+                            <div class="text">
+                                <p>{$body}</p>
+                                <a href="javascript:;" onclick="pageskip(2)" class="more">更多简介&raquo;</a>
+                            </div>
+                        </div>
+                        <div class="section screenshot-section">
+                            <div class="section-header">
+                                <h2 class="section-title">应用截图</h2>
+                            </div>
+                            <div class="screenshot-box">
+                                <ul class="screenshot-items clearfix">
+                                    {loop type="arclist" row="3" image="1" info="1"}
+                                        <li class="item">
+                                            <a target="_blank" href="{$vo.url}" class="pic">
+                                                <img src="{$vo.pic}"
+                                                title="点击查看大图" alt="中关村在线">
+                                            </a>
+                                        </li>
+                                    {/loop}
+                                </ul>
+                            </div>
+                            <a href="javascript:;" onclick="pageskip(3)" class="more">更多截图&raquo;</a>
+                        </div>
+                        <div class="section evaluation-section">
+                            <div class="section-header">
+                                <h2 class="section-title">评测攻略</h2>
+                            </div>
+                            <ul class="evaluation-list">
+                                {loop type="arclist" row="2" image="1" info="1"}
+                                    <li class="item clearfix">
+                                        <a href="{$vo.url}" target="_balnk" class="pic"><img loadsrc="{$vo.pic}" src="{$vo.pic}" title="{$vo.title}" alt="{$vo.title}" width="120" height="90"></a>
+                                        <div class="evaluation-summary">
+                                            <h4 class="evaluation-title"><a target="_balnk" href="{$vo.url}">{$vo.title}</a></h4>
+                                            <div class="evaluation-infor"><span>软件资讯</span><span>11月15日</span></div>
+                                            <p class="text">{$vo.info}</p>
+                                        </div>
+                                    </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                        <div class="section">
+                            <div class="section-header">
+                                <h2 class="section-title">用户还看了</h2>
+                            </div>
+                            <div class="picList-box">
+                                <ul class="pic-list clearfix">
+                                    {loop type="arclist" row="6" image="1" info="1"}
+                                        <li>
+                                            <a target="_blank" href="{$vo.url}" title="去哪儿旅行" class="pic">
+                                                <img loadsrc="{$vo.pic}" src="{$vo.pic}" alt="去哪儿旅行" width="80" height="80">
+                                                <span class="img-title">去哪儿旅行</span>
+                                            </a>
+                                        </li>
+                                    {/loop}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section sendPost-section" id="Dianping">
+                            <div class="section-header">
+                                <h2 class="section-title">发表评论</h2>
+                            </div>
+                            <div class="send-post">
+                                <div class="sendPost-header clearfix">
+                                    <div class="error-tip">
+                                        <span class="trigger">下载错误请举报</span>
+                                        <div class="error-box surveyDiv" id="surveyDiv" style="display:none">
+                                            <span class="closed-btn">&times;</span>
+                                            <i class="arrow-icon">箭头</i>
+                                            <ul class="suggest-list clearfix" id="surveyUl1">
+                                                <li class="error-item"><label for="item-1">
+                                                    <input type="checkbox" id="item-1" class="surveyVal" sruvey-id="1">无法下载</label>
+                                                </li>
+                                                <li class="error-item"><label for="item-2"><input type="checkbox" id="item-2" class="surveyVal" sruvey-id="2">速度慢</label></li>
+                                                <li class="error-item"><label for="item-3"><input type="checkbox" id="item-3" class="surveyVal" sruvey-id="3">安装包不对</label></li>
+                                            </ul>
+                                            <div class="error-bar clearfix">
+                                                <input type="text" name="surveyCon" class="error-input"><button
+                                                    date-type="1" class="error-button surveyBut">提交</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-score">
+                                        <span>用户评分：</span>
+                                        <ul class="rate-bar rateBarScore" id="rateBarScore1">
+                                            <li class="rate-item h-item"></li>
+                                            <li class="rate-item h-item"></li>
+                                            <li class="rate-item h-item"></li>
+                                            <li class="rate-item h-item" is-checked="checked"></li>
+                                            <li class="rate-item"></li>
+                                        </ul>
+                                        <span>很好</span>
+                                    </div>
+                                </div>
+                                <div class="post-text">
+                                    <textarea name="submitBtn1" id="submitBtn1" cateId="1"
+                                        class="send-textarea"></textarea>
+                                </div>
+                                <div class="operate-bar clearfix">
+                                    <div class="face faceList" id="faceList">
+                                        <span class="icon smile-icon">表情</span>
+                                    </div>
+                                    <input type="submit" class="button" onclick="submitBtn(this,1)" value="提交">
+                                    <div class="captcha">
+                                        <span>验证码</span>
+                                        <input type="text" class="check-code" value="" id="showCapt1" maxlength="4"
+                                            name="checkimg">
+                                        <span class="tips"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ad-div" style="width:600px;margin:10px auto;">
+                            <div>
+                                <script>write_ad('sj_series_under_comment');</script>
+                            </div>
+                        </div>
+                        <ul class="discuss-area" id="newComment1"></ul>
+                        <div class="section comment-section">
+                            <div class="section-header">
+                                <h2 class="section-title">用户评论</h2>
+                            </div>
+                            <div class="discuss-tip">共<em>11</em>个用户点评，综合评分<em>8.7</em>分，<a class="more"
+                                    href="javascript:;" onclick="pageskip(5)">查看全部&raquo;</a></div>
+                            <ul class="discuss-area">
+                                {loop type="arclist" row="5" image="1" info="1"}
+                                    <li class="discuss-item">
+                                        <div class="user-avatar">
+                                            <span href="javascript:;" target="_blank" class="pic"><img loadsrc="{$theme_path}/static/picture/sj2_50x50.jpg" width="40" height="40"></span>
+                                        </div>
+                                        <div class="item-header clearfix">
+                                            <span class="support-link">9</span>
+                                            <input type="hidden" value="273254" class="comId" />
+                                            <div class="user-name">
+                                                <span href="javascript:;" target="_blank">{随机内容URL}</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <p>{$vo.title}</p>
+                                        </div>
+                                        <div class="operate-bar clearfix">
+                                            <div class="reply-box">
+                                                <span class="reply-link replyLink">回复 (<em>0</em>)</span>
+                                                <div class="reply-area" style="display:none">
+                                                    <i class="arrow-icon">箭头</i>
+                                                    <div class="reply-bar clearfix">
+                                                        <input type="hidden" value="273254" child-id="0" class="reyId" />
+                                                        <button class="reply-btn" type="button">回复</button>
+                                                        <div class="face commentFace"><i class="smile-icon"></i></div>
+                                                        <div class="reply-text"><input type="text" maxlength="140"
+                                                                class="replyText"></div>
+                                                    </div>
+                                                    <ul class="reply-items">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="item-infor clearfix">
+                                                <span class="time">1年前</span>
+                                                <span class="source">&nbsp;来自<em>河南郑州</em></span>
+                                                <span class="rate-bar"><span style="width: 100%;"></span></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                {/loop}
+                            </ul>
+                            <div class="discuss-tip bottomDiscuss-tip clearfix"><a href="#Dianping"
+                                    class="send-link">我要发表评论</a>共<em>11</em>个用户点评，综合评分<em>8.7</em>分，<a class="more"
+                                    href="javascript:;" onclick="pageskip(5)">查看全部&raquo;</a></div>
+                        </div>
+                    </div>
+                    <div class="summary-container" date-id="2" style="display: none">
+                        <div class="section summary-section">
+                            <div class="section-header">
+                                <h2 class="section-title">{主标题}</h2>
+                            </div>
+                            <div class="text">
+                                {$body}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-container" date-id="3" style="display: none">
+                        <div class="section">
+                            <div class="section-header">
+                                <h2 class="section-title">中关村在线截图</h2>
+                            </div>
+                            <div class="screenshot-panel">
+                                <ul class="pic-list clearfix loadSrc">
+                                    {loop type="arclist" row="5" image="1" info="1"}
+                                        <li>
+                                            <a target="_blank" href="{$vo.url}" class="pic">
+                                                <img .src="{$vo.pic}" alt="{$vo.title}">
+                                            </a>
+                                        </li>
+                                    {/loop}
+                                </ul>
+                                <a target="_blank" href="{随机内容URL}" class="more">查看5张中关村在线
+                                    10.10.01高清大图&raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="evaluation-container" date-id="4" style="display: none">
+                        <div class="section">
+                            <div class="section-header">
+                                <h2 class="section-title">中关村在线评测攻略</h2>
+                            </div>
+                        </div>
+                        <ul class="evaluation-list" id="addArticle">
+                            {loop type="arclist" row="10" image="1" info="1"}
+                                <li class="item clearfix">
+                                    <a href="{$vo.url}" target="_balnk" class="pic">
+                                        <img loadsrc="{$vo.pic}" title="{$vo.title}" src="{$vo.pic}" alt="{$vo.title}" width="120" height="90"></a>
+                                    <div class="evaluation-summary">
+                                        <h4 class="evaluation-title"><a target="_balnk" href="{$vo.url}">{$vo.title}</a></h4>
+                                        <div class="evaluation-infor"><span>软件资讯</span><span>11月15日</span></div>
+                                        <p class="text">{$vo.info}</p>
+                                    </div>
+                                </li>
+                            {/loop}
+                        </ul>
+                        <a href="javascript:;" id="moreArticle" pageId='1' pageNum="2665" documentName="中关村在线" class="more"><i></i>查看更多</a>
+                    </div>
+                    <div class="comment-container" date-id="5" style="display: none">
+                        <div class="section sendPost-section">
+                            <div class="section-header">
+                                <h3 class="section-title">发表评论</h3>
+                            </div>
+                            <div class="send-post">
+                                <div class="sendPost-header clearfix">
+                                    <div class="error-tip">
+                                        <span class="trigger">下载错误请举报</span>
+                                        <div class="error-box surveyDiv" style="display:none">
+                                            <span class="closed-btn">&times;</span>
+                                            <i class="arrow-icon">箭头</i>
+                                            <ul class="suggest-list clearfix" id="surveyUl2">
+                                                <li class="error-item"><label for="item-4"><input type="checkbox"
+                                                            id="item-4" class="surveyVal" sruvey-id="1">无法下载</label>
+                                                </li>
+                                                <li class="error-item"><label for="item-5"><input type="checkbox"
+                                                            id="item-5" class="surveyVal" sruvey-id="2">速度慢</label></li>
+                                                <li class="error-item"><label for="item-6"><input type="checkbox"
+                                                            id="item-6" class="surveyVal" sruvey-id="3">安装包不对</label>
+                                                </li>
+                                            </ul>
+                                            <div class="error-bar clearfix">
+                                                <input type="text" name="surveyCon" class="error-input">
+                                                <button date-type="2" class="error-button surveyBut">提交</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-score">
+                                        <span>用户评分：</span>
+                                        <ul class="rate-bar rateBarScore" id="rateBarScore2">
+                                            <li class="rate-item h-item"></li>
+                                            <li class="rate-item h-item"></li>
+                                            <li class="rate-item h-item"></li>
+                                            <li class="rate-item h-item" is-checked="checked"></li>
+                                            <li class="rate-item"></li>
+                                        </ul>
+                                        <span>很好</span>
+                                    </div>
+                                </div>
+                                <div class="post-text">
+                                    <textarea name="submitBtn2" id="submitBtn2" cateId="1"
+                                        class="send-textarea"></textarea>
+                                </div>
+                                <div class="operate-bar clearfix">
+                                    <div class="face faceList">
+                                        <span class="icon smile-icon">表情</span>
+                                    </div>
+                                    <script language="javascript">
+                                        //if (userInfo.id) {	
+                                        document.write('<div class="upload-box">' +
+                                            '<iframe id="uploadframe" name="uploadframe2"  scrolling="no" width="274" height="32" marginwidth="0" frameborder="0" src="//image.zol.com.cn/mobile_soft/comment/up_pic_series2.php?misid=112835&ptype=2"></iframe>' +
+                                            '<input type="hidden"  name="com_pic" id="com_pic2" value=""/></div>');
+
+                                        // }
+                                    </script>
+                                    <input type="submit" class="button" onclick="submitBtn(this,2)" value="提交">
+                                    <!-- captcha -->
+                                    <div class="captcha">
+                                        <span>验证码</span>
+                                        <input type="text" class="check-code" value="" id="showCapt2" maxlength="4"
+                                            name="checkimg">
+                                        <span class="tips"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="discuss-area" id="newComment2"></ul>
+                        <div class="section comment-section">
+                            <div class="section-header">
+                                <h2 class="section-title">用户评论</h2>
+                            </div>
+                            <ul class="discuss-area" id="appendComment">
+                                {loop type="arclist" row="5" image="1" info="1"}
+                                    <li class="discuss-item">
+                                        <div class="user-avatar">
+                                            <span href="javascript:;" target="_blank" class="pic"><img src="{$theme_path}/static/picture/sj2_50x50.jpg" loadsrc="{$theme_path}/static/picture/sj2_50x50.jpg" width="40" height="40"></span>
+                                        </div>
+                                        <div class="item-header clearfix">
+                                            <span class="support-link">9</span>
+                                            <input type="hidden" value="273254" class="comId" />
+                                            <div class="user-name">
+                                                <span href="javascript:;" target="_blank">{随机内容URL}</span>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <p>{$vo.title}</p>
+                                        </div>
+                                        <div class="operate-bar clearfix">
+                                            <div class="reply-box">
+                                                <span class="reply-link replyLink">回复 (<em>0</em>)</span>
+                                                <div class="reply-area" style="display:none">
+                                                    <i class="arrow-icon">箭头</i>
+                                                    <div class="reply-bar clearfix">
+                                                        <input type="hidden" value="273254" child-id="0" class="reyId" />
+                                                        <button class="reply-btn" type="button">回复</button>
+                                                        <div class="face commentFace"><i class="smile-icon"></i></div>
+                                                        <div class="reply-text"><input type="text" maxlength="140"
+                                                                class="replyText"></div>
+                                                    </div>
+                                                    <ul class="reply-items">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="item-infor clearfix">
+                                                <span class="time">1年前</span>
+                                                <span class="source">&nbsp;来自<em>河南郑州</em></span>
+                                                <span class="rate-bar"><span style="width: 100%;"></span></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside">
+            <div class="section downLoad-section">
+                <div class="section-header">
+                    <h3 class="section-title">下载地址</h3>
+                </div>
+                <div class="downLoad-box">
+                    <ul class="download-items">
+                        <li class="item">
+
+                            <a id="down_main_android" href='javascript:void(0);' target="_blank"
+                                class="downLoad-button androidDown-button">
+                                <span class="icon"><i>Android</i></span>Android版下载
+                            </a>
+                            <span class="tip">系统要求：Android 2.2 或更高版本</span>
+
+
+                            <div class="dimensional-layerBox" style="display:none">
+                                <i class="arrow-icon">箭头</i>
+                                <h4 class="soft-title">中关村在线 10.10.01</h4>
+                                <div class="clearfix">
+                                    <span class="pic">
+                                        <img src="https://qr-fd.zol-img.com.cn/qrcode/qrcodegen.php?sizeNum=14&logotype=pure&url=http://app.zol.com.cn/series_112835.html&token=5b30c8740b"
+                                            alt=""></span>
+                                    <p>扫描<a href="/" target="_blank">二维码</a>下载应用到手机</p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <a class="" onclick="pageskip(6)" href="javascript:;">更多版本&raquo;</a>
+                </div>
+                <div class="downLoad-box btn-box pc-downLoad-box">
+                    <a target="_blank" id="tongjiId"
+                        href=""
+                        class="downLoad-button symbianDown-button pc-button">
+                        <span class="icon"><i>pc</i></span>在电脑上用
+                    </a>
+                </div>
+            </div>
+            <div id="cmsLive"></div>
+            <div class="ad-div" id="iscms">
+                <div>
+                    <script>write_ad('sj_series_right_tonglan');</script>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h3 class="section-title">其他用户还推荐了的软件</h3>
+                </div>
+                <ul class="pic-list clearfix">
+                    {loop type="arclist" row="6" image="1" info="1"}
+                        <li>
+                            <a href="{$vo.url}" target="_blank" title="携程无线" class="pic">
+                                <img onerror="this.src='{$vo.pic}'" src="{$vo.pic}" alt="携程无线" width="70" height="70">
+                                <span title="携程无线" class="img-title">{$vo.title}</span>
+                            </a>
+                        </li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h3 class="section-title">手机软件最新更新</h3>
+                </div>
+                <ul class="pic-list clearfix">
+                    {loop type="arclist" row="6" image="1" info="1"}
+                        <li>
+                            <a href="{$vo.url}" target="_blank" title="携程无线" class="pic">
+                                <img onerror="this.src='{$vo.pic}'" src="{$vo.pic}" alt="携程无线" width="70" height="70">
+                                <span title="携程无线" class="img-title">{$vo.title}</span>
+                            </a>
+                        </li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h3 class="section-title">大家正在讨论的应用</h3>
+                </div>
+                <ul class="discuss-softs">
+                    {loop type="arclist" row="5" image="1" info="1"}
+                        <li class="item">
+                            <a href="{$vo.url}" target="_blank" title="{$vo.title}" class="pic">
+                                <img onerror="this.src='{$vo.pic}'" src="{$vo.pic}" alt="{$vo.title}" width="70" height="70">
+                                <span title="{$vo.title}" class="img-title">{$vo.title}</span>
+                            </a>
+                            <p>
+                                <span>ZOL网友</span>
+                                <span class="time">2天前</span>点评了
+                            </p>
+                            <p><a target="_balnk" href="{随机栏目URL}" title="囚禁计划">{随机栏目}</a></p>
+                            <p><span class="rate-bar"><span style="width: 100%;"></span></span><span>TA认为<em>完美</em></span>
+                            </p>
+                        </li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <a href="{当前栏目URL}" target="_blank" class="more">更多&raquo;</a>
+                    <h3 class="section-title">高清手机壁纸推荐</h3>
+                </div>
+                <ul class="wallpaper-list clearfix">
+                    {loop type="arclist" row="4" image="1" info="1"}
+                        <li class="item">
+                            <a target="_blank" href="{$vo.url}" title="{$vo.title}"
+                                class="pic">
+                                <img alt="{$vo.title}" width="120" height="180" src="{$vo.pic}" loadsrc="{$vo.pic}">
+                                <span class="text">{$vo.title}</span>
+                            </a>
+                        </li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="ad-div">
+                <div>
+                    <script>write_ad('sj_series_right_down');</script>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="wrapper bottom-tuiguang clearfix">
+        <div class="bottom-tuiguang-left">中关村在线推广</div>
+        <div class="bottom-tuiguang-right">
+            <script>write_ad("sj_series_hotsoft_top");</script>
+        </div>
+    </div>
+    <div class="wrapper section hotSofts-section">
+        <div class="section-header">
+            <a href="{当前地址}" target="_blank" class="more">更多应用系列&raquo;</a>
+            <h3 class="section-title">热门手机软件</h3>
+        </div>
+        <div class="tag-list clearfix">
+            {loop type="catelog" row="40"}
+                <a href="{$vo.url}" target="_blank">{$vo.title}</a>
+            {/loop}
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var __publicNavWidth = 1100;
+    </script>
+    <!-- <script type="text/javascript" src="{$theme_path}/static/public/js/web_footc.js"></script> -->
+    <script type="text/javascript" src="{$theme_path}/static/public/js/web_foot.js"></script>
+    <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=1&amp;pos=right"></script>
+    <script>window._bd_share_config = { "common": { "wbUid": "", "bdSnsKey": { "douban": "038da04052b48ba40aa8e0c0f81da2ec", "qzone": "99d207b90670adceaaa416b63528d92c", "tsina": "4028615622", "tqq": "99d207b90670adceaaa416b63528d92c" }, "bdText": "#ZOL应用分享#我正在浏览ZOL手机软件下载专区，这里的应用和游戏都很多哦。我把她分享给大家，一起来看吧。『中关村在线』下载地址：", "bdMini": "2", "bdMiniList": false, "bdPic": "//zn.fd.zol-img.com.cn/t_s500x362/g7/M00/02/0E/ChMkK2VVh5KIFd8wAACom4VV_8IAAXKDwGDeSMAAKiz699.jpg", "bdStyle": "0", "bdSize": "16" }, "slide": { "type": "slide", "bdImg": "1", "bdPos": "right", "bdTop": "100" } }; with (document) 0[(getElementsByTagName("head")[0] || body).appendChild(createElement("script")).src = "//icon.zol-img.com.cn/public/bdshare/{$theme_path}/static/api/js/share.js?v=89343201.js?cdnversion=" + ~(-new Date() / 36e5)];</script>
+    <script type="text/javascript" src="{$theme_path}/static/sj/Mobile_detailNew.js?v=13375"></script>
+
+    <script>$(document).survey({ pageType: 'sjSeries' });</script>
+    <script type="text/javascript" src="{$theme_path}/static/sj/js/tongji.js"></script>
+
+</body>
+
+</html>

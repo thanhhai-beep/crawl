@@ -1,0 +1,313 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>{$toptitle}</title>
+	<meta name="description" content="{$description}">
+	<script>
+		function is_pc() {
+			var userAgentInfo = navigator.userAgent;
+			var ua = userAgentInfo;
+			var AgentsStr = 'WindowsNT|Windows NT|Macintosh|Ubuntu|iPad';
+			var Agents1 = AgentsStr.split("|");
+			var flag1 = 0;
+			for (var v = 0; v < Agents1.length; v++) {
+				if (ua.indexOf(Agents1[v]) > -1) {
+					flag1 = 1;
+					break;
+				}
+			}
+			if ((ua.indexOf('baidu Transcoder') > -1) || (ua.indexOf('Google Wireless Transcoder') > -1)) {
+				flag1 = 0;
+			}
+			if ((ua.indexOf('X11;') > -1) && (ua.indexOf('Firefox') > -1 || ua.indexOf('Edg') > -1 || ua.indexOf('Chrome') > -1)) {
+				flag1 = 1;
+			}
+			if (flag1 > 0) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		function is_mobile() {
+			var userAgentInfo = navigator.userAgent;
+			var ua = userAgentInfo;
+			var AgentsStr = 'Windows Phone|IEMobile|Mobile Safari|iPhone|Android|android|X11;|UCWEB|Google Wireless Transcoder|baidu Transcoder|baiduboxapp';
+			var Agents1 = AgentsStr.split("|");
+			var flag1 = 0;
+			for (var v = 0; v < Agents1.length; v++) {
+				if (ua.indexOf(Agents1[v]) > -1) {
+					flag1 = 1;
+					break;
+				}
+			}
+			if ((ua.indexOf('X11;') > -1) && (ua.indexOf('Firefox') > -1 || ua.indexOf('Edg') > -1 || ua.indexOf('Chrome') > -1)) {
+				flag1 = 0;
+			}
+			if (ua.indexOf('iPad') > -1) {
+				flag1 = 0;
+			}
+			if (flag1 > 0) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		function get_urlos_from_device() {
+			var nA = navigator.userAgent;
+			var device_urlos = '';
+			if (nA.indexOf("Android") > -1)
+				device_urlos = 'android';
+			else if ((nA.indexOf("UCWEB") > -1 || nA.indexOf("UCBrowser") > -1 || nA.indexOf("MQQBrowser") > -1) && nA.indexOf("Adr ") > -1)
+				device_urlos = 'android';
+			else if (nA.indexOf("iPad") > -1 || nA.indexOf("iOS ") > -1 || nA.indexOf("iOS;") > -1 || nA.indexOf("CPU iPhone OS") > -1 || nA.indexOf("iPod") > -1 || nA.indexOf("iTouch") > -1)
+				device_urlos = 'ios';
+			return device_urlos;
+		}
+		function is_bot() {
+			var nA = navigator.userAgent;
+			var kw_spiders = 'Baiduspider|Googlebot|Feedfetcher-Google|Yahoo! Slurp|MSNBOT|QBCrawler|Mobier|iaskspider|YodaoBot|YoudaoBot|Sosospider|bingbot|Sosoimagespider|Sogou Web Sprider|Sogou Orion spider|pic.sogou.com|Sogou-Test-Spider|Sogou web spider|New-Sogou-Spider|JikeSpider|qihoobot@qihoo.net|360Spider|HaosouSpider|EasouSpider|YisouSpider|www.baidu.com/search/spider.html';
+			var arr_kw_spiders = kw_spiders.split('|');
+			for (var i = 0; i < arr_kw_spiders.length; i++) {
+				if (nA.toLowerCase().indexOf(arr_kw_spiders[i].toLowerCase()) > -1) return true;
+			}
+			return false;
+		}
+		function getCookie(name) {
+			var strcookie = document.cookie;
+			var arrcookie = strcookie.split("; ");
+			for (var i = 0; i < arrcookie.length; i++) {
+				var arr = arrcookie[i].split("=");
+				if (arr[0] == name) {
+					return arr[1];
+				}
+			}
+			return '';
+		}
+		function setCookie(cname, cvalue, exdays) {
+			var d = new Date();
+			d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+			var expires = ";expires=" + d.toGMTString();
+			document.cookie = cname + "=" + escape(cvalue) + (exdays ? expires : '') + ";path=/";
+		}
+		if (is_pc() && !is_mobile() && getCookie("force_www_or_wap") != 'wap') {
+			var wap_node_url = window.location.href;
+			if (wap_node_url.indexOf("?page=") > -1) {
+				wap_node_url = wap_node_url.replace(/\?page=(\d+)/i, '?');
+			}
+			else if (wap_node_url.indexOf("&page=") > -1) {
+				wap_node_url = wap_node_url.replace(/&page=(\d+)/i, '&');
+			}
+		}
+	</script>
+	<link rel="shortcut icon" href="{$theme_path}/css/favicon.ico" type="image/x-icon">
+	<link type="text/css" href="{$theme_path}/css/style.css?v=20240418" rel="stylesheet">
+</head>
+
+<body onload="loaded()">
+	<div class="sear_box">
+
+		<a href="" title="">历趣</a>
+		<div class="search">
+			<form action="/search/s.php" method="get">
+				<input type="text" value="" class="sear_txt fl" name="words">
+				<input type="hidden" value="app" name="table_flag">
+				<input type="submit" value="" class="sear_btn fl">
+			</form>
+		</div>
+	</div>
+	<div class="menu">
+		<table cellpadding="0" cellspacing="0" frame="void">
+			<tr>
+                {loop type="catelog" row="4" tpl="" islist=""}
+				<td><a href="{$vo.url}"><i class="m0{$vo.i}"></i>{$vo.title}</a></td>
+				{/loop}
+			</tr>
+			<tr>
+                {loop type="catelog" row="3" tpl="" islist=""}
+				<td><a href="{$vo.url}"><i class="m0{$vo.i}"></i>{$vo.title}</a></td>
+				{/loop}
+			</tr>
+		</table>
+	</div>
+	<div class="wrap">
+		<div class="focus">
+			<ul data-row="5">
+                {loop type="arclist" row="1" tpl="" islist=""}
+				<li><a href="{$vo.url}" target="_blank"><img src="{$vo.pic}">
+						<p>{$vo.title}</p>
+					</a></li>
+				{/loop}
+			</ul>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="title" style="display: flex;">
+			<span class="fr">
+				<a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+			</span>
+			<b>热门</b>
+			<h1>{$keywords}</h1>
+		</div>
+		<ul class="hotlists" data-row="8">
+			{loop type="arclist" row="8" tpl="" islist=""}
+			<li><a href="{$vo.url}" target="_blank"><img src="{$vo.pic}">
+					<p>{$vo.title}</p>
+				</a></li>
+			{/loop}
+		</ul>
+	</div>
+	<div class="wrap">
+		<div class="bg_wy">
+			<div class="scro_tit" style="color: black;">大家最爱玩</div>
+			<ul class="rank_list_1030" data-row="6">
+				{loop type="arclist" row="6" tpl="" islist=""}
+				<li><a href="{$vo.url}" target="_blank"><img src="{$vo.pic}">
+						<p>{$vo.title}</p>
+					</a></li>
+				{/loop}
+			</ul>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="title"><span class="fr"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></span><b>热门</b>安卓软件
+		</div>
+		<ul class="hotlists" data-row="8">
+			{loop type="arclist" row="8" tpl="" islist=""}
+			<li><a href="{$vo.url}" target="_blank"><img src="{$vo.pic}">
+					<p>{$vo.title}</p>
+				</a></li>
+			{/loop}
+		</ul>
+	</div>
+	<div class="wrap">
+		<div class="bg_sj">
+			<div class="scro_tit" style="color: black;">大家最爱玩</div>
+			<ul class="rank_list_1030" data-row="8">
+				{loop type="arclist" row="8" tpl="" islist=""}
+				<li><a href="{$vo.url}"><img src="{$vo.pic}">
+						<p>{$vo.title}</p>
+					</a></li>
+				{/loop}
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="wrap">
+		<div class="title"><span class="fr"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></span><b>合集</b>专题合集
+		</div>
+		<div class="tags_pic">
+			<ul data-row="2">
+				{loop type="arclist" row="2" tpl="" islist=""}
+				<li><a href="{$vo.url}" target="_blank"><img src="{$vo.pic}">
+						<p>{$vo.title}</p>
+					</a></li>
+				{/loop}
+			</ul>
+		</div>
+		<div class="tags_list">
+			{loop type="arclist" row="20" tpl="" islist=""}
+				<a href="{$vo.url}" class="link_green" title="{$vo.title}">{$vo.title}</a>
+			{/loop}
+		</div>
+	</div>
+
+	<div class="wrap">
+		<div class="title"><b>惊喜</b>apk最近更新</div>
+		<ul class="hotlists timelist" data-row="8">
+			{loop type="arclist" row="8" tpl="" islist=""}
+			<li><a href="{$vo.url}"><img src="{$vo.pic}">
+					<p>{$vo.title}</p>
+				</a></li>
+			{/loop}
+		</ul>
+	</div>
+	<div class="wrap">
+		<div class="title"><span class="fr"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></span><b>发现</b>玩转APP
+		</div>
+		{loop type="arclist" row="8" tpl="" islist=""}
+			<ul class="tj_news" data-row="1">
+				<li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+			</ul>
+		{/loop}
+	</div>
+	<div class="foot">
+		<div class="finner">
+			<em>android版专区</em><br>
+			<a href="{当前地址}" title="{$vo.title}">{网站地址}</a>|<a href="{当前地址}"
+				title="{$keywords}">{$keywords}</a> <br>声明：为严格遵守广告法，站点已将"第一","最"等极限词汇屏蔽，请知悉
+		</div>
+	</div>
+	<script type="text/javascript" src="{$theme_path}/js/zepto.min.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/script.js?v=20240514"></script>
+	<script type="text/javascript" src="{$theme_path}/js/iscroll.js?v=20190110"></script>
+	<script type="text/javascript" src="{$theme_path}/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/layer.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/fly-zomm-img.js?v=20200803"></script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			var str_bdtj_code = "lqf7dc19c0893ea0350eba4fe5a5f1e8e" + "f";
+			hm.src = "//hm.bai" + "du.com/hm.js?" + str_bdtj_code.substr(2);
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script>
+		function a_replace() {
+			var a = document.getElementsByTagName("a");
+			for (var i = 0; i < a.length; i++) {
+				if (a[i].href.indexOf('spam#') != -1 && a[i].href.indexOf('(dot)') != -1) {
+					a[i].href = a[i].href.replace('spam#', '@');
+					a[i].href = a[i].href.replace('(dot)', '.');
+				}
+				if (a[i].innerHTML.indexOf('spam#') != -1 && a[i].innerHTML.indexOf('(dot)') != -1) {
+					a[i].innerHTML = a[i].innerHTML.replace('spam#', '@');
+					a[i].innerHTML = a[i].innerHTML.replace('(dot)', '.');
+				}
+			}
+		}
+		a_replace();
+	</script>
+	<script type="text/javascript">
+
+		var myScroll;
+		var myScroll2;
+
+		function loaded() {
+			myScroll = new IScroll('#wrapper', {
+				scrollX: true,
+				scrollY: false,
+				momentum: false,
+				snap: true,
+				snapSpeed: 400,
+				keyBindings: true
+			});
+
+			myScroll2 = new IScroll('#wrapper2', {
+				scrollX: true,
+				scrollY: false,
+				momentum: false,
+				snap: true,
+				snapSpeed: 400,
+				keyBindings: true
+			});
+		}
+
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+			capture: false,
+			passive: false
+		} : false);
+	</script>
+	<script>
+		window.onload = function () {
+			var current_page_urlos = "android";
+			var device_urlos = get_urlos_from_device();
+		}
+	</script>
+
+</body>

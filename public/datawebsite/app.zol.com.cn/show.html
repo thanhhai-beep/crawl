@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="referrer" content="unsafe-url">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta name="author" content="m.zol.com.cn">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="false">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="applicable-device" content="mobile">
+    <meta name="wap-font-scale" content="no">
+    <link rel="stylesheet" href="{$theme_path}/css/appdownshow.css">
+    <script src="{$theme_path}/js/detail.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/getcook.js?111"></script>
+    <style>
+        .down-head,
+        .downBtn {
+            height: auto;
+        }
+
+        .downBtn {
+            display: inline-block;
+            font-size: 15px;
+            color: #fff !important;
+            line-height: 50px;
+            padding: 0 10px;
+            height: 50px;
+            -webkit-border-radius: 15px;
+            border-radius: 5px;
+        }
+
+        .wdjSafe {
+            background: #fe9900;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+        }
+
+        .wdjSafe b {
+            display: block;
+            margin-top: 6px;
+            font-size: 17px;
+            font-weight: normal;
+        }
+
+        .wdjNormal {
+            background: #fe9900;
+            text-align: center;
+            line-height: 50px;
+            font-size: 18px;
+        }
+
+        .isWdj {
+            float: left;
+            margin: .11rem 0 0 2%;
+            line-height: 45px;
+            color: #5a5a5a;
+            font-size: 12px;
+        }
+
+        .isWdj .icon {
+            float: left;
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-top: 10px;
+            margin-right: 3px;
+            background: url(//doc-fd.zol-img.com.cn/g2/M00/06/0E/ChMlWV0VeZ-IF2bvAAADSzDu5-EAALVIgP_62AAAANj671.jpg) 0 0 no-repeat;
+            line-height: 45px;
+        }
+
+        .isWdj .checkhover {
+            background-position: 0 -20px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app-down-container" style="display:block;"></div>
+    <header class="global-page-header">
+        <div class="side-box" rel="top-search-box"> <a href="{随机栏目URL}" class="iconfont" title="{随机栏目}">{随机栏目}</a>
+        </div>
+        <div class="logo-box">
+            <h2><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></h2>
+        </div>
+        <h2><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></h2>
+    </header>
+    <section class="pl pr p15">
+        <div class="breadcrumbs" style="display: flex"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                title="{随机栏目}">{随机栏目}</a> <h1>{$keywords}</h1> </div>
+        <div class="soft-summary mt clearfix">
+            <div class="app-info flex-box"> <span class="pic"><img src="{$pic}" alt="UC浏览器"></span>
+                <div class="app-misc">
+                    <p class="soft-title f17">{$title}</p>
+                    <p class="soft-details flex-box f12">
+                        <label>版本：v{randstr type="2" num="3"/}.{randstr type="2" num="2"/}.0</label>
+                        <label>时间：{$postdate}</label>
+                    </p>
+                    <p class="soft-details flex-box f12"> <label>
+                            大小：{randstr type="2" num="3"/}.{randstr type="2" num="2"/}MB
+                        </label>
+                        <label>分类：<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></label>
+                    </p>
+                </div>
+            </div>
+            <div class="button-box" data-kuake>
+                <div class="down-head mt flex-box"> <a href="javascript:;" class="downBtn wdjSafe"
+                        style="display: none;width:110px;"><b>安全下载</b><span>{$title}</span></a> <a href="{随机栏目URL}"
+                        class="downBtn android-bg " style="display: none;width:110px;text-align: center;"
+                        title="{随机栏目}">立即下载</a> </div>
+            </div>
+        </div>
+        <div class="pro-pics-box border-top mt">
+            <div class="pro-pics swiper-container pt">
+                <div class="swiper-wrapper">
+                    <ul class="container clearfix swiper-slide" data-row="5">
+                        {loop type="arclist" row="5" tpl="" islist=""}
+                        <li><img src="{$vo.pic}"></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="article-content border-top mt pt pb">
+            <div class="app-mol-tit">
+                <h3>{$keywords} 软件介绍</h3>
+            </div>
+            <div class="game-introduce">
+                {$body}
+                <span class="moreTxt"><i>展开</i></span>
+            </div>
+        </section>
+        <div id="commitPosition"></div>
+        <section class="border-top pt pb mt">
+            <div class="app-mol-tit clearfix">
+                <h3 class="fl">{随机栏目}</h3>
+                <div class="total-bar"> <strong>{随机栏目}</strong> 评论，评分<em>7.9</em> 分 </div>
+            </div>
+            <div id="discuss">
+                <div class="discuss-box">
+                    <div class="users-rating clearfix"> <span>用户评分：</span> <select name id="rate-control">
+                            <option value="5">五星 完美</option>
+                            <option value="4">四星 很好</option>
+                            <option value="3">三星 一般</option>
+                            <option value="2">二星 较差</option>
+                            <option value="1">一星 很烂</option>
+                        </select> </div>
+                    <div class="post-box"> <textarea name id="content" placeholder="请输入您对该软件的评价"></textarea> </div>
+                    <div class="submit-box clearfix mt">
+                        <input type="hidden" name="com_pic" id="com_pic" value> <input type="hidden" name="softId"
+                            id="softId" value="20018"> <input type="hidden" name="softName" id="softName" value="UC浏览器">
+                        <input type="submit" id="submit" value="提 交">
+                        <ul class="upload-list clearfix" id="upload-list" data-row="0"></ul>
+                    </div>
+                    <ul class="discuss-list" id="morelist" data-row="3">
+                        {loop type="arclist" row="5" tpl="" islist=""}
+                        <li class="list-item">
+                            <div class="comm-head"> <span class="status-tag" data-id="299266"
+                                    id="sup299266">{$vo.hits}</span> <a href="javascript:;" class="comm-pic"> <img
+                                        src="{$theme_path}/images/sj2_50x50.jpg" alt>
+                                    <div class="name clearfix">{网站地址}</div>
+                                </a> </div>
+                            <div class="discuss-infor">
+                                <div class="discuss-content">
+                                    <p>{$vo.title}</p>
+                                </div>
+                                <div class="discuss-toolbar clearfix"> 
+                                    <span class="date-tag">{$vo.postdate}</span>
+                                    <span class="rate-bar"> 
+                                        <span
+                                            style="width:80%;">
+                                        </span> 
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        {/loop}
+                    </ul> <span id="viewMore" class="g-btn view-more" data-id="20018" data-total="221" page="1">更多评论
+                    </span>
+                </div>
+            </div>  
+        </section> 
+        <section class="app-recommend pt pb">
+            <div class="app-mol-tit">
+                <h3>{随机栏目}</h3>
+            </div>
+            <ul class="apps-mol-list apps-lives-end software-end-bgpic clearfix" data-row="8">
+                {loop type="arclist" row="32" tpl="" islist=""}
+                <li> <a href="{$vo.url}"> <img alt="{$vo.title}" src="{$vo.pic}"></a>
+                    <span>{$vo.title}</span>
+                </li>
+                {/loop}
+            </ul>
+        </section>
+        <section class=" mt" id="morelist">
+            <div class="app-mol-tit">
+                <h3>{随机栏目}</h3>
+            </div>
+            <ul class="apps-list" data-row="15">
+                {loop type="arclist" row="30" tpl="" islist=""}
+                <li> 
+                    <a href="{$vo.url}"> <span class="pic"> <img src="{$vo.pic}" alt="{$vo.title}"> </span>
+                        <div class="apps-info">
+                            <h3 class="tit">{$vo.title}</h3>
+                            <p class="txt">{$vo.postdate}</p>
+                            <div class="install-btn"> <span class="apps-btn">安装</span>
+                            </div>
+                        </div>
+                    </a> 
+                </li>
+                {/loop}
+            </ul>
+        </section>
+        <section class="app-recommend pt pb">
+            <div class="app-mol-tit">
+                <h3>{$keywords} {随机栏目}</h3>
+            </div>
+            <ul class="apps-mol-list apps-lives-end clearfix" data-row="7">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                <li> <a href="{$vo.url}"> <img alt="{$vo.title}" src="{$vo.pic}"></a> <span>{$vo.title}</span> </li>
+                {/loop}
+            </ul>
+        </section> <!-- E 大家都在看 --> <!-- S 经验攻略 -->
+        <section class="app-recommend border-top pt pb">
+            <div class="app-mol-tit">
+                <h3>{随机栏目}</h3>
+            </div>
+            <ul class="jy-list" data-row="6">
+                    {loop type="arclist" row="12" tpl="" islist=""}
+                    <li> <a target="_blank" href="{$vo.url}">
+                            <h4>{$vo.title}</h4>
+                            <p>{$vo.hits}</p> <span>{randstr type="2" num="3"/}.{randstr type="2" num="2"/}MB</span> <span>{$vo.postdate}</span>
+                        </a> </li>
+                    {/loop}
+            </ul>
+        </section> <!-- E 经验攻略 -->
+    </section>
+    <div class="comment-pop bottom-fixed-item">
+        <p class="bottom-comment-tip">发评论，赚金豆<i class="close"></i></p> <span class="bottom-share__btn">分享</span> <a
+            href="{随机栏目URL}" class="comment-num" title="{随机栏目}">{随机栏目}</a>
+    </div>
+    <footer class="white-bg global-page-footer"> <!-- 广告 -->
+        <script type="text/javascript" src="{$theme_path}/js/index.js"></script>
+        <div style="margin: -10px 0 10px 0; text-align: center;">
+            <script>write_ad('app_xiazai_tonglan');</script>
+        </div>
+        <nav id="bottom-nav">
+            <ul data-row="5">
+                <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+                <li> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </li>
+            </ul>
+        </nav>
+        <div class="mt">
+            <div class="versions m15 ml mr"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> | <a href="{随机栏目URL}"
+                    title="{随机栏目}">{随机栏目}</a> <a class="feedback view-more" rel="nofollow" href="{随机栏目URL}"
+                    title="{随机栏目}">{$keywords} {随机栏目}</a> </div>
+        </div>
+    <p id="copyright"></p>
+    <script src="{$theme_path}/js/wappv.js"></script>
+    <script src="{$theme_path}/js/tongji.js"></script> <!-- ad -->
+    <script src="{$theme_path}/js/appbar.1.0.1.js" data-selector="#app-down-container"></script>
+    <script src="{$theme_path}/js/zepto.js"></script>
+    <script src="{$theme_path}/js/z.min.js"></script>
+    <script src="{$theme_path}/js/z.m.page.appDown-details.1.0.1.js"></script>
+</body>

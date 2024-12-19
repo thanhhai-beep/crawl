@@ -1,0 +1,560 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Cache-Control" content="no-transform">
+	<title>{$toptitle}</title>
+	<meta name="keywords" content="{$keywords}">
+	<meta name="description" content="{$description}">
+	<link href="{$theme_path}/css/public.css" rel="stylesheet" type="text/css">
+	<link href="{$theme_path}/css/detail.css" rel="stylesheet" type="text/css">
+	<script src="{$theme_path}/js/public.js?20240410" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="t-nav clearfix mw1300">
+            <div class="fl top_left">
+                <a href="{随机栏目URL}" class="navigation" title="{随机栏目}">{随机栏目}</a>
+                <a href="{随机栏目URL}" class="mobile" title="{随机栏目}">{随机栏目}</a>
+                <div class="slideMobile"><img src="{$vo.pic}"></div>
+                <div class="hover_nav clearfix">
+                    <ul class="top_sli_list" data-row="10">
+                        {loop type="arclist" row="10" tpl="" islist=""}
+                        <li class="title"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                        {/loop}
+                    </ul>
+                    <ul class="top_sli_list" data-row="11">
+                        {loop type="arclist" row="11" tpl="" islist=""}
+                        <li class="title"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                        {/loop}
+                    </ul>
+                    <ul class="top_sli_list" data-row="13">
+                        {loop type="arclist" row="13" tpl="" islist=""}
+                        <li class="title"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                        {/loop}
+                    </ul>
+                    <ul class="top_sli_list" data-row="6">
+                        {loop type="arclist" row="6" tpl="" islist=""}
+                        <li class="title"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                        {/loop}
+                    </ul>
+                    <ul class="top_sli_list" data-row="6">
+                        {loop type="arclist" row="6" tpl="" islist=""}
+                        <li class="title"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                        {/loop}
+                    </ul>
+                    <ul class="top_sli_list" data-row="11">
+                        {loop type="arclist" row="11" tpl="" islist=""}
+                        <li class="title"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                        {/loop}
+                    </ul>
+                    <ul class="top_sli_list" data-row="7">
+                        {loop type="arclist" row="7" tpl="" islist=""}
+                        <li class="title"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                        {/loop}
+                    </ul>
+                    <ul class="top_sli_list last" data-row="6">
+                        {loop type="arclist" row="6" tpl="" islist=""}
+                        <li class="title"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+            <div class="fr top_right">
+                <a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a>
+                <span>|</span>
+                <a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a>
+                <span>|</span>
+                <a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a>
+                <span>|</span>
+                <a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="n-top mw1300">
+            <div class="seLog fl"><a href="" target="_blank"><img src="{$theme_path}/images/logo.png"></a></div>
+            <div class="fl searth_box">
+                <div class="searth">
+                    <div class="searth_inp inline"><input type="text" autocomplete="off" value placeholder="请输入关键词"
+                            id="searchkeyword" class="inp"><button id="but" class="searchBtn"></button></div>
+                </div>
+                <p>热门：<a target="_blank" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a target="_blank" class="red"
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a target="_blank" href="{随机栏目URL}"
+                        title="{随机栏目}">{随机栏目}</a> </p>
+            </div>
+            <ul class="seMenu" data-row="7">
+                {loop type="catelog" row="7" tpl="" islist=""}
+                <li>
+                    <h3><a href="{$vo.url}"><b class="icon1"></b>{$vo.title}</a></h3>
+                </li>
+                {/loop}
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="n-bot">
+            <div class="mw1300">
+                <ul class="clearfix" data-row="12">
+                    {loop type="arclist" row="12" tpl="" islist=""}
+                    <li>
+                        <h3><a href="{$vo.url}" class="ioc i-jian"><b class="icon1"></b>{$vo.title}</a></h3>
+                    </li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+    </div>
+	<div class="mainContent">
+		<div class="comm_part mw1300">
+			<div class="pageposition">
+				<div class="fl">{$keywords}  当前位置：<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> &gt; <a href="{随机栏目URL}"
+						title="{随机栏目}">{随机栏目}</a> &gt; <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> &gt; xmind mac版
+				</div>
+			</div>
+			<div class="w920 fl main_Left">
+				<div class="comm_itembox">
+					<div class="con_main_name">
+						<div class="fl pcsfdet_pic"><img src="{$pic}"></div>
+						<div class="w780 fl">
+							<div class="pcsf_name" id="state" cuser="linxiang" guser="linxiang" ctime="1634171795"
+								ch="0" pc pa="1">
+								<h1>{随机栏目}</h1>
+							</div>
+							<div class="w560 fl spn_type"> <span>版本：v24.07</span> <span>大小：249.94M</span>
+								<span>语言：简体中文</span> <span>类别：<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="con_main_info">
+						<div class="fl w550">
+							<ul class="p_sfSum" data-row="5">
+								<li><em>类型：</em><span>{$postdate}</span></li>
+								<li><em>授权：</em><span>共享软件</span></li>
+								<li><em>更新：</em><span>2024-11-18</span></li>
+								<li><em>厂商：</em><span>深圳市爱思软件技术有限公司</span></li>
+								<li class="wall"> <em>标签：</em> <span class="tagspan"><a href="{随机栏目URL}"
+											class="ywAblack" title="{随机栏目}">{随机栏目}</a><a href="{随机栏目URL}"
+											class="ywAblack" title="{随机栏目}">{随机栏目}</a><a href="{随机栏目URL}"
+											class="ywAblack" title="{随机栏目}">{随机栏目}</a></span> </li>
+							</ul>
+							<div class="pcde_btnBox">
+								<ul class="top_download" data-row="1">
+									<li><span class="download_pt"><i class="iconpt"></i>本地下载</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="fr w300">
+							<div class="score_box" id="softinfo" sid="112187">
+								<div class="score_num"> <span>8.9</span> </div>
+								<div class="score_star"><span class="app_starBox"><span class="star"><span
+												id="starlevel" class="star4"></span></span></span></div>
+							</div>
+							<div class="mood">
+								<div id="dingandcai"> <a href="javascript:;" id="showding"><span
+											class="dcico"></span><span class="bfk"><span id="ding_1"
+												style="width:0%;"><em id="ding_2">0%</em></span></span></a> <a
+										href="javascript:;" id="showcai"><span class="dcico"></span><span
+											class="bfk"><span id="cai_1" style="width:0%;"><em
+													id="cai_2">0%</em></span></span></a> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comm_itembox" id="xqjs">
+					<div class="syDeReTitle">
+						<h2><em><b></b><big>详</big></em>情介绍</h2>
+					</div>
+					<div class="des">
+						{$body}
+					</div>
+					<div class="loadMore"><span><i class="Tclose"></i><i class="Topen"></i></span></div>
+				</div>
+				<div class="comm_itembox" id="qtbb">
+					<div class="syDeReTitle">
+						<h2><em><b></b><big>其</big></em>他版本</h2> <a href="{随机栏目URL}" class="fr click_more"
+							title="{随机栏目}">{随机栏目}</a>
+					</div>
+					<div class="con_boxinfo">
+						<ul class="pcsf_listBB" data-row="6">
+							<li> <a href="https://www.32r.com/soft/58988.html" target="_blank" class="img"><img
+										src="{$vo.pic}"></a>
+								<p> <a href="{随机栏目URL}" target="_blank" title="{$vo.title}">{$vo.title}</a> <span><a
+											href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a> / 207.85M</span> <span
+										class="app_starBox"><span class="star"><span class="star3"></span></span></span>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="comm_itembox pbt0" id="xzdz">
+					<div class="syDeReTitle">
+						<h2><em><b></b><big>下</big></em>载地址</h2>
+						<ul class="fr tab_toplist tab_head1" data-row="4">
+							<li><span><i></i>Mac版</span></li>
+						</ul>
+					</div>
+					<div class="con_boxinfo" style="position: relative; min-height: 380px;">
+						<div class="down_kinList tab_body1">
+							<div class="fl dw_addressList deta_cont_item">
+								<div class="dw_name"><span>xmind mac版 v24.07</span></div>
+								<div class="w300 gsxzdz">
+									<dl class="pt_dwload">
+										<dt>{$keywords} 本地下载通道：</dt>
+										{loop type="arclist" row="4" tpl="" islist=""}
+											<dd><a href="{$vo.url}" target="_blank"
+													rel="nofollow"><i></i>{$vo.title}</a></dd>
+										{/loop}
+									</dl>
+								</div>
+							</div>
+							<div class="fl dw_addressList deta_cont_item" style="display: none">
+								<div class="dw_name"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></div>
+								<div class="w300">
+									<dl class="pt_dwload">
+										<dt>本地下载通道：</dt>
+										{loop type="arclist" row="4" tpl="" islist=""}
+											<dd><a href="{$vo.url}" target="_blank"
+													rel="nofollow"><i></i>{$vo.title}</a></dd>
+										{/loop}
+									</dl>
+								</div>
+							</div>
+							<div class="fl dw_addressList deta_cont_item" style="display: none">
+								<div class="dw_name"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></div>
+								<div class="w300">
+									<dl class="gs_dwload">
+										<dt>本地下载通道：</dt>t>
+										{loop type="arclist" row="1" tpl="" islist=""}
+										<dd class="azbnt"><a href="{$vo.url}" rel="nofollow"><i
+													class="icon az"></i>安卓版下载</a></dd>
+										{/loop}
+									</dl>
+									<dl class="pt_dwload">
+										<dt>扫描下方二维码进入手机下载界面：</dt>
+										{loop type="arclist" row="1" tpl="" islist=""}
+										<dd class="ewm_img"><img src="{$vo.pic}"></dd>
+										{/loop}
+									</dl>
+								</div>
+							</div>
+							<div class="fl dw_addressList deta_cont_item" style="display: none">
+								<div class="dw_name"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></div>
+								<div class="w300">
+									<dl class="gs_dwload">
+										<dt>本地下载通道(需跳转至苹果官网下载)：</dt>
+										{loop type="arclist" row="1" tpl="" islist=""}
+										<dd class="azbnt"><a href="{$vo.url}" rel="nofollow"><i
+													class="icon az"></i>安卓版下载</a></dd>
+										{/loop}
+									</dl>
+									<dl class="pt_dwload">
+										<dt>扫描下方二维码进入手机下载界面：</dt>
+										{loop type="arclist" row="1" tpl="" islist=""}
+										<dd class="ewm_img"><img src="{$vo.pic}"></dd>
+										{/loop}
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="bot_ad" id="mybottom"></div>
+					</div>
+					<div class="down_addr"></div>
+				</div>
+				<div class="comm_itembox" id="xghj">
+					<div class="syDeReTitle">
+						<h2><em><b></b><big>猜</big></em>您喜欢</h2>
+					</div>
+					<div class="con_boxinfo">
+						<div class="tab_BoxList">
+							<ul class="tab_list tab_head3" data-row="3">
+								<li class="cur"><a><i></i>电脑装机软件</a></li>
+								<li><a><i></i>思维导图</a></li>
+								<li><a><i></i>流程图制作软件</a></li>
+							</ul>
+						</div>
+						<div class="comm_contBox tab_body3">
+							<div class="qcwCnxhBox">
+								{loop type="arclist" row="1" tpl="" islist=""}
+								<div class="qcwCnxhIn"> <a href="{$vo.url}" title="电脑装机必备软件大全"><img
+											src="{$vo.pic}" alt="电脑装机必备软件大全"></a>
+									<dl>
+										<dt><a href="{$vo.url}" title="{随机栏目}" class="ywAblack">{$vo.title}</a></dt>
+										<dd>{$vo.info}<strong>{$vo.title}</strong>
+										</dd>
+									</dl>
+								</div>
+								{/loop}
+								<ul class="pcsf_listBB box_borlist" data-row="6">
+									{loop type="arclist" row="6" tpl="" islist=""}
+										<li> <a href="{$vo.url}" target="_blank"
+										class="img"><img src="{$vo.pic}"></a>
+											<p> <a href="{$vo.url}" target="_blank" title="{$vo.title}">{$vo.title}</a>
+												<span><a href="{$vo.url}" title="{$vo.title}">{$vo.hits}</a> / 3.74M</span>
+												<span class="app_starBox"><span class="star"><span
+															class="star5"></span></span></span> </p>
+										</li>
+									{/loop}
+								</ul>
+							</div>
+							<div class="qcwCnxhBox" style="display: none">
+								{loop type="arclist" row="1" tpl="" islist=""}
+								<div class="qcwCnxhIn"> <a href="{$vo.url}" title="电脑装机必备软件大全"><img
+											src="{$vo.pic}" alt="电脑装机必备软件大全"></a>
+									<dl>
+										<dt><a href="{$vo.url}" title="{随机栏目}" class="ywAblack">{$vo.title}</a></dt>
+										<dd>{$vo.info}<strong>{$vo.title}</strong>
+										</dd>
+									</dl>
+								</div>
+								{/loop}
+								<ul class="pcsf_listBB box_borlist" data-row="6">
+									{loop type="arclist" row="6" tpl="" islist=""}
+										<li> <a href="{$vo.url}" target="_blank"
+										class="img"><img src="{$vo.pic}"></a>
+											<p> <a href="{$vo.url}" target="_blank" title="{$vo.title}">{$vo.title}</a>
+												<span><a href="{$vo.url}" title="{$vo.title}">{$vo.hits}</a> / 3.74M</span>
+												<span class="app_starBox"><span class="star"><span
+															class="star5"></span></span></span> </p>
+										</li>
+									{/loop}
+								</ul>
+							</div>
+							<div class="qcwCnxhBox" style="display: none">
+								{loop type="arclist" row="1" tpl="" islist=""}
+								<div class="qcwCnxhIn"> <a href="{$vo.url}" title="电脑装机必备软件大全"><img
+											src="{$vo.pic}" alt="电脑装机必备软件大全"></a>
+									<dl>
+										<dt><a href="{$vo.url}" title="{随机栏目}" class="ywAblack">{$vo.title}</a></dt>
+										<dd>{$vo.info}<strong>{$vo.title}</strong>
+										</dd>
+									</dl>
+								</div>
+								{/loop}
+								<ul class="pcsf_listBB box_borlist" data-row="6">
+									{loop type="arclist" row="6" tpl="" islist=""}
+										<li> <a href="{$vo.url}" target="_blank"
+										class="img"><img src="{$vo.pic}"></a>
+											<p> <a href="{$vo.url}" target="_blank" title="{$vo.title}">{$vo.title}</a>
+												<span><a href="{$vo.url}" title="{$vo.title}">{$vo.hits}</a> / 3.74M</span>
+												<span class="app_starBox"><span class="star"><span
+															class="star5"></span></span></span> </p>
+										</li>
+									{/loop}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comm_itembox" id="tlrj">
+					<div class="syDeReTitle">
+						<h2><em><b></b><big>{$keywords} 同</big></em>类软件</h2>
+					</div>
+					<div class="con_boxinfo">
+						<ul class="sfpc_bblist" data-row="8">
+							{loop type="arclist" row="8" tpl="" islist=""}
+								<li><a href="{$vo.url}" class="tc ellipse"><img src="{$vo.pic}"
+										alt="{$vo.title}"><br>{$vo.title}</a></li>
+							{/loop}
+						</ul>
+					</div>
+				</div>
+				<div class="comm_itembox pbt0" id="xgwz">
+					<div class="syDeReTitle">
+						<h2><em><b></b><big>相</big></em>关文章</h2>
+						<ul class="fr tab_toplist tab_head4" data-row="1">
+							<li class="cur"><span><i></i>教程</span></li>
+						</ul>
+					</div>
+					<div class="con_boxinfo tab_body4">
+						<div class="con_bilist">
+							<ul class="c-new_delArt" data-row="1">
+								{loop type="arclist" row="1" tpl="" islist=""}
+									<li> <a href="{随机栏目URL}" class="u_title" title="{$vo.title}">{$vo.title}</a>
+										<div class="u_img clearfix"> <a href="{$vo.url}"><img
+													src="{$vo.pic}" alt="xmind电脑版入门指南" class="fl "></a>
+											<p class="u_txt">{$vo.postdate}</p>
+										</div>
+									</li>
+								{/loop}
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="comm_itembox pbt0" id="wypl">
+					<div class="syDeReTitle">
+						<h2><em><b></b><big>网</big></em>友评论</h2> <span class="fr scom_span">共<font id="cmnum" count="0"
+								isnew="true"></font>条评论</span>
+					</div>
+					<div class="con_boxinfo">
+						<div id="commentBox" class="s_comment"> <textarea name="pycontent" id="vcontent"
+								placeholder="友善发言，温暖评论区"></textarea>
+							<div class="code_name"><input type="text" id="vcode" placeholder="请输入验证码"><span
+									class="tips">（您的评论需要经过审核才能显示）</span></div>
+							<div class="comment_btn"><input type="button" value="发表评论" id="submitBtn"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w340 fr main_Right">
+				<div class="comm_rigbox">
+					<div class="com_titOne">
+						<h3>{随机栏目}</h3>
+					</div>
+					<ul class="sort_uli_del" data-row="10">
+						{loop type="catelog" row="10" tpl="" islist=""}
+							<li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+						{/loop}
+					</ul>
+				</div>
+				<div class="comm_rigbox">
+					<div class="com_titOne">
+						<h3>{随机栏目}</h3>
+					</div>
+					<ul class="mob_listBB" data-row="5">
+						{loop type="arclist" row="5" tpl="" islist=""}
+							<li> <a href="{$vo.url}" target="_blank" class="img"><img
+										src="{$vo.pic}"></a>
+								<p> <a href="{$vo.url}" target="_blank" title="{$vo.title}">{$vo.title}</a> <span><a
+											href="{$vo.url}" title="{$vo.title}">{$vo.title}</a> / 97.72M</span> <span
+										class="app_starBox"><span class="star"><span class="star5"></span></span></span>
+								</p>
+							</li>
+						{/loop}
+					</ul>
+				</div>
+				<div class="comm_rigbox">
+					<div class="com_titOne">
+						<h3>{$keywords} {随机栏目}</h3><a rel="nofollow" href="{随机栏目URL}" class="fr chg_btn" id="chgBtn"
+							title="{随机栏目}">{随机栏目}</a>
+					</div>
+					<div class="con_biItem">
+						<ul class="comRec_list" data-row="6">
+							{loop type="arclist" row="6" tpl="" islist=""}
+								<li> <a href="{$vo.url}" class="ywAwhite"
+										title="Day One日记mac版 v2024.18"><img src="{$vo.pic}"></a> <a href="{$vo.url}"
+										class="ywName" title="{$vo.title}">{$vo.title}</a> </li>
+							{/loop}
+						</ul>
+					</div>
+					<div class="con_biItem" style="display: none">
+						<ul class="comRec_list" data-row="6">
+							{loop type="arclist" row="6" tpl="" islist=""}
+								<li> <a href="{$vo.url}" class="ywAwhite"
+										title="Day One日记mac版 v2024.18"><img src="{$vo.pic}"></a> <a href="{$vo.url}"
+										class="ywName" title="{$vo.title}">{$vo.title}</a> </li>
+							{/loop}
+						</ul>
+					</div>
+				</div>
+				<div class="comm_rigbox">
+					<div class="com_titOne">
+						<h3>{随机栏目}</h3>
+					</div>
+					<ul class="mob_listBB mob_listjp" data-row="5">
+						{loop type="arclist" row="5" tpl="" islist=""}
+							<li> <a href="{$vo.url}" target="_blank" class="img"><img
+										src="{$vo.pic}"></a>
+								<p> <a href="{$vo.url}" target="_blank" title="{$vo.title}">{$vo.title}</a> <span
+										class="app_starBox"><span class="star"><span class="star5"></span></span></span>
+									<span><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a> / 9.3M</span> </p> <a
+									href="{$vo.url}" class="tps_btn"><i></i>查看</a>
+							</li>
+						{/loop}
+					</ul>
+				</div>
+				<div class="comm_rigbox">
+					<div class="com_titOne">
+						<h3>{随机栏目}</h3>
+					</div>
+					<div class="jdsy_con">
+						<ul data-row="4">
+							{loop type="arclist" row="4" tpl="" islist=""}
+								<li><a href="{$vo.url}" class="jdsyImg"><img src="{$vo.pic}"></a><a
+										href="{$vo.url}" class="jdsyName" title="{$vo.title}">{$vo.title}</a></li>
+							{/loop}
+						</ul>
+					</div>
+					<div class="jdsy_conbotm">
+						<ul data-row="6">
+							{loop type="arclist" row="4" tpl="" islist=""}
+							<li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+							{/loop}
+						</ul>
+					</div>
+				</div>
+				<div class="comm_rigbox">
+					<div class="com_titOne">
+						<h3>{$keywords} {随机栏目}</h3>
+						<div class="fr gmList_tab"><span class="cur">月排行</span><span>总排行</span></div>
+					</div>
+					<div class="tab_body2">
+						<div class="gl_tab_item">
+							<ul class="com_topsecList" data-row="10">
+								{loop type="arclist" row="8" tpl="" islist=""}
+								<li> <span class="fl pm nbone">{$vo.postdate}</span>
+									<div class="fl clearfix tps_info"> <a href="{$vo.url}" class="tps_tit"
+											title="{$vo.title}">{$vo.title}</a> <a
+											href="{$vo.url}" class="fl"><img src="{$vo.pic}"
+												alt="wps office mac版"></a>
+										<div class="fl l_text"> <span class="app_starBox"> <span class="star"><span
+														class="star4"></span></span> </span>
+											<p><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a> / <em>4.86M</em>
+											</p>
+										</div>
+									</div> <a href="{$vo.url}"
+										class="fr tps_btn"><i></i>查看</a>
+								</li>
+								{/loop}
+							</ul>
+						</div>
+						<div class="gl_tab_item" style="display: none;">
+							<ul class="com_topsecList" data-row="10">
+								{loop type="arclist" row="8" tpl="" islist=""}
+								<li> <span class="fl pm nbone">{$vo.postdate}</span>
+									<div class="fl clearfix tps_info"> <a href="{$vo.url}" class="tps_tit"
+											title="{$vo.title}">{$vo.title}</a> <a
+											href="{$vo.url}" class="fl"><img src="{$vo.pic}"
+												alt="wps office mac版"></a>
+										<div class="fl l_text"> <span class="app_starBox"> <span class="star"><span
+														class="star4"></span></span> </span>
+											<p><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a> / <em>4.86M</em>
+											</p>
+										</div>
+									</div> <a href="{$vo.url}"
+										class="fr tps_btn"><i></i>查看</a>
+								</li>
+								{/loop}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="f-links mw1300">
+			<div class="about">
+				<div class="clearfix text">
+					<div class="fl tc text-top">
+						<p class="one"><a href="{随机栏目URL}" rel="nofollow" title="{随机栏目}">{$keywords} {随机栏目}</a><span>|</span><a
+								href="{随机栏目URL}" rel="nofollow" title="{随机栏目}">{随机栏目}</a><span>|</span><a
+								href="{随机栏目URL}" rel="nofollow" title="{随机栏目}">{随机栏目}</a><span>|</span><a
+								href="{随机栏目URL}" rel="nofollow" title="{随机栏目}">{随机栏目}</a><span>|</span><a
+								href="{随机栏目URL}" rel="nofollow" title="{随机栏目}">{随机栏目}</a><span>|</span><a
+								href="{随机栏目URL}" rel="nofollow" title="{随机栏目}">{随机栏目}</a></p>
+						<p class="two">声明:3322软件站为非盈利性网站 不接受任何赞助和广告 <br>Copyright2007-2024 3322软件站(www.32r.com).All
+							Rights Reserved</p>
+						<p class="three">备案编号:<a href="{随机栏目URL}" target="_blank" rel="nofollow"
+								title="{随机栏目}">{随机栏目}</a><a target="_blank"
+								href="">赣公网安备 36010602000087号</a></p>
+					</div>
+					<div class="fr tc text-button">
+						<p>{随机栏目}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="cover"></div> <a href="{随机栏目URL}" id="gotoTop" title="{随机栏目}">{随机栏目}</a>
+	<script src="{$theme_path}/js/detail.js?20240423" type="text/javascript"></script>
+	<script type="application/ld+json"> { "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld", "@id": "https://www.32r.com/soft/112187.html", "title": "xmind mac版下载-xmind思维导图苹果电脑版下载 v24.07 - 3322软件站", "images": ["https://img.32r.com/uppic/20241118/bab9125e12dfaf220a7f44d020bdd12f.jpg"], "description": "xmind mac版是一款专为macOS操作系统打造的思维导图软件。利用xmind mac版可以高效快速的实现导图的制作、逻辑的清理等等，以此最大程度的帮助用户提高工作效率，节省工作时间。提供了多种结构和主题，比如六边形、胶囊形、圆形等不同主题形的状，以此来满足不同用户的不同需求。", "pubDate": "2021-10-14T08:36:35", "upDate": "2024-11-18T15:19:36", "data":{ "WebPage":{ "pcUrl":"https://www.32r.com/soft/112187.html", "wapUrl":"https://m.32r.com/soft/112187.html", "fromSrc":"3322软件站" } } } </script>
+</body>

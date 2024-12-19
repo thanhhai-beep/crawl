@@ -1,0 +1,156 @@
+/* 首页slide */
+#itunes.slide {
+    width: 740px;
+    height: 280px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+#itunes .big {
+    float: left;
+    width: 600px;
+}
+#itunes .big img {
+    width: 600px;
+    height: 280px;
+}
+#itunes .small {
+    float: right;
+    width: 140px;
+    height: 280px;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+#itunes .small li {
+    margin: 0;
+    float: left;
+}
+#itunes .small img {
+    width: 140px;
+    height: 70px;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+}
+#itunes .list {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#itunes .next-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 5px;
+    left: 50px;
+    background: url('http://img.yingyonghui.com/wsrc/app_plus/public/images/turnNext.png') center 3px no-repeat;
+    display: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.index-hot-app-list .Content_Icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 15px;
+}
+.Content_Label {
+    position: absolute;
+    margin-left: -72px;
+    margin-left: -75px\9;
+    border: 0px solid #FFF;
+}
+
+/* 首页 */
+.focus {
+    height: 280px;
+}
+.mainbar {
+    width: 740px;
+    float: left;
+    height: 280px;
+}
+.mainbar-right {
+    width: 255px;
+    height: 280px;
+    float: left;
+}
+a.huibaoimg{
+    display: block;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 11px;
+}
+.mainbar-right a img {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 215px;
+}
+.focus-title {
+    margin-left: 20px;
+}
+.focus-title a {
+	display: block;
+    width: 215px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #000;
+    text-decoration: none;
+}
+.topic-short {
+    margin-left: 20px;
+    height: 23px;
+    width: 217px;
+    overflow: hidden;    
+    margin-top: 6px;
+    line-height: 150%;
+}
+.column .focus-title {
+    border-top: 1px solid #e0e0e0;
+    width: 155px;
+    padding-top: 5px;
+    float: left;
+}
+.column a.has-border {
+    width: 29px;
+    height: 20px;
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+a#up {
+    border-right: none;
+    background-image: url("../images/banner_up.png");
+}
+a#down {    
+    background-image: url("../images/banner_down.png");
+}
+a#up:active{
+    background-color: #666;
+    background-image: url("../images/banner_up_click.png");
+}
+a#down:active{
+    background-color: #666;
+    background-image: url("../images/banner_down_click.png");
+}
+a.topic {
+    margin-left: 20px;
+    display: block;
+    height: 263px;
+    overflow: hidden;
+}
+a.topic img {
+    width: 233px;
+    margin-bottom: -12px;
+}
+.main-content {
+    margin-top: 20px;
+    min-height: 2000px;
+}
+#left {
+	width: 697px;
+	margin-left: 20px;
+}

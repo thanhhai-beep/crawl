@@ -1,0 +1,1 @@
+$(function(){var clientH=document.body.clientHeight;var liW=document.body.clientWidth-20;var dot=$("#dot");var bar=$("#menu-bar");dot.on("click",function(){$(".full").show();bar.animate({right:"0%"})});function stopScroll(e){e.preventDefault()}});

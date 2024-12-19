@@ -1,0 +1,123 @@
+article.pt-10{padding:0;}
+article.pt-10 section{margin:10px;}
+.g-box{display:block;overflow:hidden;box-sizing:border-box;margin-bottom:10px;padding:10px 10px 0;width:100%;height:auto;background:#fff;}
+.g-box .hd{padding:0 10px;height:2.375rem;border-bottom:.125rem solid #f1f2f6;}
+.g-box .hd h3{font-size:1rem;line-height:2.375rem;}
+#g-related-box .g-game-recomd{box-sizing:border-box;margin:0 0 10px 0;}
+.g-game-recomd{display:block;overflow:hidden;box-sizing:border-box;margin:10px 0 0 0;width:100%;height:auto;background:#fff;}
+.g-game-recomd strong{display:block;overflow:hidden;box-sizing:border-box;padding:10px 0 8px;width:100%;height:auto;border-bottom:2px solid #eee;color:#333;text-indent:14px;font-weight:400;font-size:16px;}
+.g-keyword-btn{display:-webkit-box;overflow:hidden;width:100%;height:46px;border-bottom:1px solid #eee;}
+.g-keyword-btn li{position:relative;display:block;overflow:hidden;box-sizing:border-box;padding:0 14px;width:auto;height:46px;zoom:1;-webkit-box-flex:1;}
+.g-keyword-btn li b{display:block;overflow:hidden;box-sizing:border-box;width:100%;height:45px;color:#333;text-align:center;font-weight:400;font-size:14px;line-height:45px;}
+.g-keyword-btn .m-hover b{border-bottom:2px solid #12aaec;color:#12aaec;}
+.g-keyword-btn li i{position:absolute;top:10px;right:0;display:block;overflow:hidden;padding-top:15px;padding-right:0;width:1px;height:16px;background:#ccc;}
+.g-keyword-cont{display:block;overflow:hidden;width:100%;height:auto;}
+.g-keyword-cont dl{position:relative;display:block;overflow:hidden;box-sizing:border-box;padding:10px 14px 10px;width:100%;height:auto;zoom:1;}
+.g-keyword-cont dl dt{display:none;overflow:hidden;width:100%;height:auto;color:#333;font-weight:400;font-size:14px;}
+.g-keyword-cont dl dd{display:block;overflow:hidden;margin:4px 0 0 0;width:100%;height:60px;color:#999;font-weight:400;font-size:12px;line-height:20px;}
+.g-keyword-cont dl .g-keyword-info{position:absolute;right:11px;bottom:0;display:block;overflow:hidden;margin:0;padding:0;padding:5px 6px 6px 69px;width:auto;height:auto;background:#fff;}
+.g-keyword-cont dl .g-keyword-info a{display:block;overflow:hidden;padding:2px 6px;width:auto;height:auto;border-radius:6px;background:#ffa351;color:#fff;text-decoration:none;font-weight:400;font-size:12px;}
+.g-keyword-cont dl .g-keyword-info a:active{background:#ff5182;}
+.g-keyword-cont ul{display:block;overflow:hidden;box-sizing:border-box;padding:0 14px 12px 0;width:100%;height:auto;}
+.g-keyword-cont ul li{float:left;display:inline;overflow:hidden;box-sizing:border-box;padding:14px 0 0 14px;width:25%;height:auto;}
+.g-keyword-cont ul li a{display:block;overflow:hidden;width:100%;height:auto;}
+.g-keyword-cont ul li a img{display:block;overflow:hidden;width:100%;height:18vw;border-radius:16px;}
+.g-keyword-cont ul li a strong{display:block;overflow:hidden;margin:6px 0 0 0;padding:0;width:100%;height:20px;border:0;color:#333;text-align:center;text-indent:0;font-weight:400;font-size:14px;line-height:20px;}
+#g-keyword .g-game-recomd{margin:0;}
+.neirongye_xzxx{margin-top: 10px;}
+.label{float:left;display:block;margin:.11rem 0 0 2%;width:35%;height:45px;line-height: 45px;color:#5a5a5a;}
+.label .icon{float:left;display:block;width:25px;height:25px;margin-top:10px;margin-right: 3px;;background:url("../images/checkbox1.png") 0 0 no-repeat;}
+.label .checkhover{background-position:0 -25px!important;}
+.tx_text{margin:2% auto 0;border-bottom:1px solid #ccc;}
+.tx_text {color: #333;width: 100%;clear: both;font-size:12px;text-align: center;position: relative;}
+.tx_text p{height: 32px;line-height: 32px;}
+.tx_text p::before{font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;font-size:28px;color:#CCCCCC;position: absolute;left:-5px;top:-5px;content: "“"}
+.tx_text p::after{font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;font-size:28px;color:#CCCCCC;position: absolute;right:-5px;top:-5px;content: "”"}
+.tx_text .text1{color:#333;}
+.tx_text .text2{color:#333;}
+.pswp{z-index: 10000;}
+#download .neirongye_xzxx_btn{display:inline-block;margin-top:.11rem;margin-left:2.5%;padding:0;height:1.5rem;border:0;border-radius:.05rem;background:#fff;text-align:center;width:60%;line-height:1.5rem;height:45px;line-height: 45px;color:#22C485;font-size: 16px;border:1px solid #22C485;text-align: center;}
+.neirongye_xzxx button{display:inline-block;margin-top:.11rem;margin-left:2.5%;padding:0;width:207px;height:1.5rem;border:0;border-radius:.05rem;background:#fff;text-align:center;line-height:1.5rem;height:45px;line-height: 45px;color:#22C485;font-size: 16px;border:1px solid #22C485;text-align: center;}
+#pc_android .neirongye_xzxx_btn{display:inline-block;margin-top:.11rem;margin-left:2.5%;padding:0;height:1.5rem;border:0;border-radius:.05rem;background:#fff;text-align:center;width:207px;line-height:1.5rem;height:45px;line-height: 45px;color:#22C485;font-size: 16px;border:1px solid #22C485;text-align: center;}
+#spdownload .neirongye_xzxx_btn{display:inline-block;margin-top:.11rem;margin-left:2.5%;padding:0;height:1.5rem;border:0;border-radius:.05rem;color:#fff;text-align:center;width:60%;line-height:1.5rem;height:45px;line-height: 45px;background-color:#22C485;font-size: 16px;border:1px solid #22C485;text-align: center;}
+#spdownload .neirongye_xzxx_btn p:nth-of-type(1){height:26px;line-height: 26px;font-size: 16px;}
+#spdownload .neirongye_xzxx_btn p:nth-of-type(2){height: 12px;line-height: 12px;color:#fff;font-size: 12px;}
+#spdownload .neirongye_xzxx_btn p:nth-of-type(2) i{display: inline-block;width:12px;height: 12px;font-size:12px;background:url(../images/u8.png) center no-repeat;background-size: contain;margin-right: 5px;}
+#con-soft__info .neirongye_xzxx_btn_ios{background:#000;color:#fff;height: 45px;line-height: 45px;font-size: 14px;border-radius: 0;font-family: 'Arial Negreta', 'Arial Normal', 'Arial';font-weight: 700;border:0;margin:0 auto;width: 240px;display: block;}
+.xzxx_btn1{float:left;margin-left:.15rem;}
+.xzxx_btn2{float:right;margin-right:.15rem;}
+.smsearch{overflow:hidden;margin:0;}
+.smsearch input{display:inline-block;margin:0;padding:0;font-size:14px;}
+.smsearch .inputk{float:left;margin-right:5px;width:60%;height:1.5rem;line-height:1.5rem;}
+.smsearch .inputb{float:right;width:35%;border:2px solid #b1cee1;border-radius:5px;background-color:#12aaec;color:#fff;text-align:center;line-height:1.5rem;}
+
+.xgBox{padding: .625rem;padding-top: 0;}
+.xgBox .hd{border-bottom: .125rem solid #f1f2f6;}
+.xgBox .hd h3{line-height: 2.375rem;font-size: 1rem;}
+.xgBox .hd h3 a{color:#000;}
+
+.qiehuanBox .hd h3{float: left;height:2.375rem;line-height:2.375rem;width: 49.9%;text-align: center;}
+.qiehuanBox .hd ul {width: 100%; height: 2.75rem/* 44px */ ; border-bottom: 1px solid #efefef; margin-right: -3%; overflow: hidden; }
+.qiehuanBox .hd ul li {width: 49.6%; display: block; float: left; height: 2.75rem/* 44px */ ; display: block; overflow: hidden; -webkit-box-flex: 1; text-align: center; line-height: 2.75rem/* 44px */ ; }
+.qiehuanBox .hd ul .icon-shu {left: 50%; top: 0; height: 100%; font-size: 3.875rem/* 62px */ ; width: .0625rem/* 1px */ ; overflow: hidden; border-left: .0625rem solid #ddd; }
+.qiehuanBox .hd ul li.on {color: #36c; border-bottom: .125rem/* 2px */ solid #008ee1; height: 2.625rem/* 42px */ ; line-height: 2.75rem/* 44px */ ; }
+.qiehuanBox .hd ul li:hover .on {display: none; }
+.qiehuanBox .hd ul li.on a {color: #36c; }
+.qiehuanBox .hd ul li a {color: #333;font-size: 1rem;}
+.qiehuanItm{display: none;}
+.qiehuanItm.on{display: block;}
+
+.xgWzbox{padding:10px;}
+.xgWzbox p{height: 30px;line-height: 30px;text-overflow: ellipsis;overflow: hidden;white-space: pre;}
+.xgWzbox p a{color:#333;}
+.index-soft_speciallist dl {height: auto; display: block; padding: 10px; overflow: hidden; border-top: 1px solid #f7f7f7; background: #fff; }
+.index-soft_speciallist dl a {display: -webkit-box; }
+.index-soft_speciallist dl dt img {width: 120px; height: 74px; display: block; overflow: hidden; margin: 0 10px 0 0; }
+.index-soft_speciallist dl dd {width: auto; height: 74px; display: block; overflow: hidden; -webkit-box-flex: 1; }
+.index-soft_speciallist dl dd strong {width: 100%; height: 16px; line-height: 16px; font-size: 16px; font-weight: normal; color: #333; margin: 5px 0 8px 0; display: block; overflow: hidden; }
+.index-soft_speciallist dl dd p {width: 100%; line-height: 12px; font-size: 12px; font-weight: normal; color: #999; margin: 5px 0 0 0; display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.index-soft_speciallist dl dd span {padding: 0; width: 100%; line-height: 12px; font-size: 12px; font-weight: normal; color: #999; margin: 15px 0 0 0; display: block; overflow: hidden; }
+.index-soft_speciallist dl dd span b {color: #f66; }
+
+.pllist .cominfo{background-color: #F3FBF0;height: 26px;padding-left: 10px;height: 24px;line-height: 24px;}
+.pllist .cominfo .level{color:#528100;}
+.pllist .plcontent {padding-top: 10px; color: #666666; font-size: 14px; max-height: 80px; overflow: hidden; line-height: 24px; padding-left: 10px; }
+
+.hoxGjc li{border:1px solid #ccc;margin-left:-1px;margin-top:-1px;float: left;width: 33%;text-align: center;height: 30px;line-height: 30px;overflow: hidden;background-color: #FFF;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.hoxGjc li a{color:#333;}
+.ftlink a{color:#000;margin:5px;}
+
+/*关联软件*/
+.othesoft{padding: 5px;overflow: hidden;}
+.othesoft strong{color:#008EE1;float: left;width: 50px;height: 30px;line-height: 30px;}
+.othesoft div{margin-left: 55px;}
+.othesoft a{display: inline-block;vertical-align: middle;width:82px;text-align: center;border-radius:10px;height: 30px;line-height: 30px;font-size:12px;margin-bottom: 2px;margin-right: 2px;}
+.othesoft a.pc{background-color: #FFF;color:#000;border:1px solid #000;}
+.othesoft a.an{background-color:#8bc34a;color:#000;border:1px solid #8bc34a;}
+.othesoft a.ios{background-color:#000;color:#fff;border:1px solid #000;}
+.othesoft a.mac{background-color:#ccc;color:#fff;border:1px solid #ccc;color:#000;}
+.othesoft a img{width: 25px;display: inline-block;vertical-align: middle;}
+.othesoft a.pc em{background-image:url(../images/gpc.png);}
+.othesoft a.an em{background-image:url(../images/gan.png);}
+.othesoft a.ios em{background-image:url(../images/gios.png);}
+.othesoft a.mac em{background-image:url(../images/gmac.png);}
+/* 微信弹窗 */
+.winxinalert{position: fixed;width: 100%;height: 100%;box-sizing:border-box;padding:150px 20px 0px;font-size:20px;line-height: 30px;background-color: rgba(0,0,0,.8);z-index:10000;top:0;left:0;color:#fff;text-align: center;background-image:url(../images/jt.png); background-position: right top; background-repeat: no-repeat;display: none;}
+.winxinalert span{color:red;}
+/*移动安全管理中心图标*/
+.con-soft_info{position: relative;}
+.cnaacIcon{position: absolute;right:0;top:0;width: 50px;height: 50px;}
+/*优先调取远程地址字段【普通下载按钮】*/
+.remote-down{display: flex;justify-content: space-between;margin-top: .5rem;}
+.remote-download {display: block;width: 280px;height: 40px;text-align: center;color: #28c4fe;border-radius: 18.5px;line-height: 40px;font-size: 15px;border: 1px solid #28c4fe;margin: .8rem auto;}
+/*电脑软件详情页软件下载助手*/
+.wandoujia-down{display: flex;margin-top: .5rem;}
+.wandoujia-down .wandoujia-btn { width: 55%;text-align: center;}
+#normal-down{display: block;text-align: center;color: #47a920;font-size: 1rem;line-height: 2.4;padding: .1rem;border-radius: 5px;border: 1px solid #47a920;}
+#zhushou {display: block;color: #fff;height: auto;font-size: 1rem;background-color: #008ee1;line-height: 1.4; padding: .1rem;border-radius: 5px;background-image: -webkit-linear-gradient(35deg, #25cdff, #467bf3);float: none;}
+#zhushou .neirongye_xzxx_btn {display: inline-block;width: 100%;height: 1.5rem;line-height: 1.5rem;background: none;color: #fff;text-align: center;border: 0;border-radius: 0.05rem;padding: 0;font-size: 1rem;margin: 0;}
+#zhushou p {font-size: .5rem;color: #e8e8e8;}
+/*软件详情的tag*/
+.tags{margin: 10px;font-size: 14px;line-height: 20px;padding:0 .625rem}
+.tags b{display: inline-block;margin-right: 5px;text-indent: 20px;background: url(../images/icon-tj.png) no-repeat left center;}
+.tags a{margin-right: 10px;text-decoration: underline;color: #0984c5;}

@@ -1,0 +1,95 @@
+.index-top-detail {
+    width: 698px;
+    overflow: hidden;
+    margin-top: 34px;
+    margin-left: 1px;
+}
+
+.index-top-detail .rank-table {
+    float: left;
+    vertical-align: middle;
+    width: 339px;
+    margin-right: 10px;
+}
+
+.index-top-detail .rank-table tr td {
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.index-top-detail .detail-title tr {
+    height: 36px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.detail-title-name {
+    width: 130px;
+}
+
+.detail-title-name span {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+}
+
+.detail-title-more span {
+    margin-left: 170px;
+    font-size: 14px;
+}
+
+.detail-title-more .more-info {
+    text-decoration:none;
+    cursor: pointer;
+    color: black;
+}
+
+.index-top-detail .detail-list tr {
+    height: 90px;
+}
+
+.index-top-detail .detail-list .icon {
+    width: 110px;
+    text-align: left;
+}
+
+.index-top-detail .detail-list .icon img {
+    vertical-align: middle;
+    margin-left: 5px;
+    width: 72px;
+    height: 72px;
+}
+
+.index-top-detail .detail-list .icon .last-img {
+    margin-left: 0;
+}
+
+.index-top-detail .detail-list .info {
+    width: 229px;
+}
+
+.index-top-detail .detail-list .info p {
+    width: 229px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.index-top-detail .detail-list .info .name {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px
+}
+
+.index-top-detail .detail-list .info .short-info {
+    text-decoration: none;
+    color: #666;
+}
+
+.index-top-detail .detail-list .info .category {
+    text-decoration: none;
+    color: #666;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    border: 1px solid #a1a1a1;
+}

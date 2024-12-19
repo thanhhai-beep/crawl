@@ -1,0 +1,249 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-Control" content="no-transform ">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link rel="canonical" href="{$theme_path}/css/51443435.html">
+    <link rel="shortcut icon" href="{$theme_path}/css/favicon.ico" type="image/x-icon">
+    <link href="{$theme_path}/css/main.css" rel="stylesheet" type="text/css">
+    <link href="{$theme_path}/css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="{$theme_path}/css/search.css" rel="stylesheet" type="text/css">
+    <link href="{$theme_path}/css/software.css?v=20240129" rel="stylesheet" type="text/css">
+    <script src="{$theme_path}/js/"></script>
+    <script src="{$theme_path}/js/hm.js?470d3f33a6c00a39587a88066ffaa4ff"></script>
+    <script src="{$theme_path}/js/hm.js?1f413e64151452ca7dd6652d3bf4b9da"></script>
+    <script src="{$theme_path}/js/antidom_240527.js"></script>
+    <script src="{$theme_path}/js/interfaceacting240527.js"></script>
+    <script src="{$theme_path}/js/jquery-2.14.min.js"></script>
+    <script src="{$theme_path}/js/main.js?v=20240129"></script>
+    <script src="{$theme_path}/js/swiper.js"></script>
+</head>
+
+<body id="main">
+    <div id="content">
+        <div class="header"> <a href="/" class="logo"><img src="{$theme_path}/images/logo.png" alt="{网站地址}"> </div>
+        <div class="nav">
+            <a href="/" class="on"><span>首页</span></a>
+            <a href="{随机栏目URL}"><span>{随机栏目}</span></a>
+            <a href="{随机栏目URL}"><span>{随机栏目}</span></a>
+            <a href="{随机栏目URL}"><span>{随机栏目}</span></a>
+        </div>
+        <div class="yAlert_bg"></div>
+        <div class="yAlert">
+            <div class="yAlert_t cfix"><span class="yAlert_c">×</span>请输入预约的手机号码</div><input type="text" id="yPhone"
+                placeholder="输入手机号码">
+            <div class="yAlert_b">
+                <div class="yAlert_bs">确定</div>
+                <div class="yAlert_br">取消</div>
+            </div>
+        </div>
+        <div class="brednav allbox">
+            <p>位置：<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a><span> &gt; </span><a href="{随机栏目URL}"
+                    title="{随机栏目}">{随机栏目}</a><span> &gt;
+                </span>{$title}</p>
+        </div>
+        <div class="downls">
+            <div class="item"> <a href="" class="img"> <img src="{$pic}" alt="{$title}"> </a>
+                <div class="info">
+                    <div class="bt">
+                        <h1>{$keywords}</h1>
+                        <h2>{$title}</h2>
+                    </div>
+                    <div class="type">
+                        <div class="star"><span style="width:100%;"></span></div>
+                    </div>
+                    <p>类型：<a href="{随机栏目URL}" title="{随机关键词}">{随机关键词}</a></p>
+                    <p>{$postdate}</p>
+                    <p>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}MB</p>
+                </div>
+            </div>
+            <div class="downl_wd" id="download">
+                <a id="download_url" style="background: #66cc00" href="" class="downl_b" onclick="return false;"
+                    rel="nofollow"> <span>急速下载</span>
+                </a>
+                <a id="download_safe" style="" class="downl_b down_safe" rel="nofollow"> <span>安全下载</span>
+                    <span class="small">需下载应用市场</span>
+                </a>
+            </div>
+            <div class="down_text" style="margin-bottom: 10px;">
+                <span>说明:</span>安全下载是直接下载应用市场，用户下载后可自行搜索目标软件进行更高速，更安全下载。
+            </div>
+        </div>
+        <div class="boxwrap">
+            <div class="img_list desc_cont">
+                <ul data-row="3">
+                    {loop type="arclist" row="1" tpl="" islist=""}
+                    <li><img class="pic" src="{$vo.pic}" alt="{$vo.title}" id="j-video" data-imgsrc="0">
+                    </li>
+                    {/loop}
+                    {loop type="arclist" row="2" tpl="" islist=""}
+                    <li><img class="pic" src="{$vo.pic}" alt="{$vo.title}" id="j-video" data-imgsrc="{$vo.i}">
+                    </li>
+                    {/loop}
+                </ul>
+            </div> <!-- video -->
+            <div class="game_tags"> <a>{随机栏目}</a> <a>{随机栏目}</a> </div> <!-- 描述 -->
+            <div class="desc_bd">
+                <div class="desc_cont">
+                    {$body}
+                </div>
+            </div>
+        </div>
+        <div class="apk_info"><span>手游信息 </span></div>
+        <section class="bottom_bor compy" style="margin:0;font-size:14px;">
+            <div class="d_title pname"><em>包名：{随机关键词}</em></div>
+            <div class="d_title md5"><em>MD5：{随机关键词}</em></div>
+        </section> <!--相关专题-->
+        <div class="boxwrap boxwrap-show">
+            <div class="box_title"><span>{$keywords}相关专题</span></div>
+            <div class="cnxh">
+                <div class="ctcon">
+                    <div class="c_text">
+                        <div class="c_top"> <span class="c_title"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></span>
+                        </div>
+                        <p class="c_jj">{随机栏目}</p>
+                        <ul class="c_app" data-row="3">
+                            {loop type="arclist" row="3" tpl="" islist=""}
+                            <li> <a href="{$vo.url}" class="gimg"> <img src="{$vo.pic}" alt="{$vo.title}">
+                                    <p>{$vo.title}</p>
+                                </a> </li>
+                            {/loop}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!--推荐专题-->
+        <div class="boxwrap boxwrap-show recommend">
+            <div class="box_title"> <span>推荐专题</span>
+                <ul class="cn_lb" data-row="2">
+                    <li class="hover"><a>{随机栏目}</a></li>
+                    <li><a>{随机栏目}</a></li>
+                </ul>
+            </div>
+            <div class="box_content">
+                <div class="cnxh swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-android"
+                    data-name="射击游戏" id="sw1" style="height: 300px;">
+                    <div class="ctcon swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                        {loop type="arclist" row="4" tpl="" islist=""}
+                        <div class="c_text swiper-slide swiper-slide-active" style="width: 320px;">
+                            <div class="c_top"> <span class="c_title"><a href="{$vo.url}"
+                                        title="{$vo.title}">{$vo.title}</a></span> </div>
+                            <p class="c_jj">{$vo.postdate}</p>
+                            <div class="c_text_img"> <a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}"></a>
+                            </div>
+                        </div>
+                        {/loop}
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-bullets" id="swp1"><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+                            class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
+                            class="swiper-pagination-bullet"></span></div> <span class="swiper-notification"
+                        aria-live="assertive" aria-atomic="true"></span>
+                </div>
+                <div class="cnxh swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-android"
+                    data-name="射击冒险" id="sw2" style="display: none;">
+                    <div class="ctcon swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                        {loop type="arclist" row="4" tpl="" islist=""}
+                        <div class="c_text swiper-slide swiper-slide-active" style="width: 320px;">
+                            <div class="c_top"> <span class="c_title"><a href="{$vo.url}"
+                                        title="{$vo.title}">{$vo.title}</a></span> </div>
+                            <p class="c_jj">{$vo.postdate}</p>
+                            <div class="c_text_img"> <a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}"></a>
+                            </div>
+                        </div>
+                        {/loop}
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-bullets" id="swp2"><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+                            class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
+                            class="swiper-pagination-bullet"></span></div> <span class="swiper-notification"
+                        aria-live="assertive" aria-atomic="true"></span>
+                </div>
+            </div>
+        </div> <!--猜你喜欢-->
+        <div class="boxwrap boxwrap-show" id="boxwrap">
+            <div class="box_title"><span>{$keywords} 猜你喜欢</span> </div>
+            <div class="cnxh">
+                <ul class="cn_lb" data-row="2">
+                    <li class="hover"><a>{随机栏目}</a></li>
+                    <li><a>{随机栏目}</a></li>
+                </ul>
+                <div class="ctcon">
+                    <div class="c_text">
+                        <ul class="c_app" data-row="20">
+                            {loop type="arclist" row="20" tpl="" islist=""}
+                            <li> <a href="{$vo.url}" class="gimg"> <img src="{$vo.pic}" alt="{$vo.title}">
+                                    <p>{$vo.title}</p>
+                                </a> </li>
+                            {/loop}
+                        </ul>
+                    </div>
+                    <div class="c_text" style="display: none;">
+                        <ul class="c_app" data-row="20">
+                            {loop type="arclist" row="20" tpl="" islist=""}
+                            <li> <a href="{$vo.url}" class="gimg"> <img src="{$vo.pic}" alt="{$vo.title}">
+                                    <p>{$vo.title}</p>
+                                </a> </li>
+                            {/loop}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- 本类最新 -->
+        <div class="boxwrap boxwrap-show">
+            <div class="box_title"><span>本类最新</span> <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a></div>
+            <ul class="other_list" data-row="4">
+                {loop type="arclist" row="50" tpl="" islist=""}
+                <li> <a href="{$vo.url}" class="img"> <img src="{$vo.pic}" alt="{$vo.title}"></a>
+                    <div class="info"> <a href="{$vo.url}" class="bt" title="{$vo.title}">{$vo.title}</a>
+                        <div class="type">{随机关键词} | {randstr type="2" num="2"/}.{randstr type="2" num="2"/}MB</div>
+                        <div class="type">{$vo.postdate}</div>
+                    </div> <a href="{$vo.url}" class="downl" title="下载">下载</a>
+                </li>
+                {/loop}
+            </ul>
+        </div>
+        <div id="Top" style="display: block;"></div>
+    </div>
+    <div class="imgshow">
+        <div class="swiper-container swiperbox">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container"><img src="{随机图片}"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container"><img src="{随机图片}"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container"><img src="{随机图片}"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container"><img src="{随机图片}"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container"><img src="{随机图片}"></div>
+                </div>
+            </div>
+        </div>
+        <div class="closebtn" style="display: none;"></div>
+    </div>
+    <div id="footer">
+        <p>{$keywords} {随机栏目}</p>
+    </div>
+    <script
+        type="text/javascript"> var _webInfo = {}; _webInfo = { Username: "224", Type: "1", DateTime: "2024-12-15 09:47:37", Did: "51443435", Trash: "0", Tags: "射击游戏,射击冒险" };</script>
+    <script
+        type="text/javascript"> var _DOWN_STAT = {}; _DOWN_STAT = { did: "51443435", cid: "sheji", cate: "飞行射击", title: "盗者之王(King of Thieves)", page: "0" };</script>
+    <script src="{$theme_path}/js/software.js?v=20240129"></script>
+    <script src="{$theme_path}/js/soft_init.js"></script>
+    <script src="{$theme_path}/js/soft_stat.js"></script> <span id="PING_IFRAME_FORM_DETECTION"
+        style="display: none;"></span>
+</body>

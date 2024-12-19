@@ -1,0 +1,283 @@
+<head>
+
+
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>{$toptitle}</title>
+	<meta content="{$keywords}" name="keywords">
+	<meta content="{$description}" name="description" itemprop="description">
+	<meta itemprop="name" content="当乐网_手机游戏从当乐开始">
+	<meta itemprop="image" content="https://raw.d.cn/xdcn/170808/images/head_icon.jpg">
+	<link rel="shortcut icon" type="image/x-icon" href="{$theme_path}/css/favicon.ico">
+	<script type="text/javascript" src="{$theme_path}/js/pv_baidu.js"></script>
+
+	<script src="{$theme_path}/js/js-cookie.js"></script>
+	<script type="text/javascript">
+		const userAgentTest1 = /AppleWebKit.*mobile/i;
+		const userAgentTest2 = /MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/
+	</script>
+
+	<script src="{$theme_path}/js/rem.js"></script>
+	<link rel="stylesheet" href="{$theme_path}/css/reset.css">
+	<link rel="stylesheet" href="{$theme_path}/css/swiper.min.css">
+	<link rel="stylesheet" href="{$theme_path}/css/index.css">
+	<link rel="stylesheet" href="{$theme_path}/css/common.css">
+</head>
+
+<body>
+
+
+	<header class="newHeader">
+		<div>
+			<a href="" class="logo">
+				<h1>{随机栏目}</h1>
+			</a>
+
+		</div>
+		<div class="btnBox">
+			<a href="/search/goSearch" class="search">
+				<img src="https://raw.d.cn/xdcn/170808/images/v4/ic_home_search_white.png" alt>
+			</a>
+			<a href="" class="user">
+				<img src="https://raw.d.cn/xdcn/170808/images/v4/ic_home_personaldata.png" alt>
+			</a>
+		</div>
+	</header>
+
+	<div id="site-choose">
+		<div class="panel">
+			<p>{随机栏目}</p>
+			<div class="andriod">
+				{loop type="arclist" row="1" tpl="" islist=""}
+				<img class="icon" src="{$vo.pic}">
+				<span>{$vo.title}</span>
+				{/loop}
+			</div>
+			<div class="ios">
+				{loop type="arclist" row="1" tpl="" islist=""}
+				<img class="icon" src="{$vo.pic}">
+				<span>{$vo.title}</span>
+				{/loop}
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 导航 -->
+	<nav class="nav">
+		<ul class="tab" data-row="4">
+			<li class="active"><a href="{随机栏目URL}" onclick="return false" title="{随机栏目}">{随机栏目}</a></li>
+
+			<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+			<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+			<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+		</ul>
+		<div class="tabCtn">
+			<div
+				class="bannerSwiper">
+				<div class="swiper-wrapper">
+					{loop type="arclist" row="6" tpl="" islist=""}
+					<div class="swiper-slide" data-swiper-slide-index="{$vo.i}" style="width: 320px;" >
+						<a href="{$vo.url}"><img src="{$vo.pic}" alt="">
+						</a>
+					</div>
+					{/loop}
+				</div>
+				<div class="banner-pagination swiper-pagination swiper-pagination-bullets"><span
+						class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+						class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
+						class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+				<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+			</div>
+		</div>
+	</nav>
+	<article>
+		<section class="otherLinks">
+			{loop type="arclist" row="1" tpl="" islist=""}
+			<a href class="item">
+				<div class="imgbox">
+					<img src="{$vo.pic}" alt>
+				</div>
+				<span>{$vo.title}</span>
+			</a>
+			{/loop}
+		</section>
+		<section class="recommend">
+			<div class="reTop">
+				<h2>今日推荐</h2>
+				<a href="{随机栏目URL}" title="更多推荐">更多推荐</a>
+			</div>
+			<div class="reBtm">
+				<div class="swiper-container todaySwiper">
+					<div class="swiper-wrapper">
+						{loop type="arclist" row="8" tpl="" islist=""}
+						<a href class="item swiper-slide">
+							<div class="imgbox">
+								<img src="{$vo.pic}" alt>
+							</div>
+							<h4 class="title noWrap">{$vo.title}</h4>
+							<p class="desc noWrap">{$vo.info}</p>
+						</a>
+						{/loop}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="hotGame">
+			<div class="left-ctn">
+				<h2>{随机栏目}</h2>
+				<a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a>
+			</div>
+			<div class="right-ctn">
+				<div class="swiper-container hotGameSwiper">
+					<div class="swiper-wrapper">
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="preparation">
+			<div class="preTop">
+				<h2>{随机栏目}</h2>
+				<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+			</div>
+			<div class="preBtm">
+				<div class="preGameSwiper swiper-container">
+					<div class="swiper-wrapper" id="gameCtnBox">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="dcn-jx">
+			<div class="dcnTop">
+				<h2>{随机栏目}</h2>
+				<span class="refresh"><i></i>获取新内容</span>
+			</div>
+			<div class="dcnBtm">
+				<div class="refineSwiper swiper-container">
+					<div class="swiper-wrapper">
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="activity">
+			<div class="actTop">
+				<h2></h2>
+			</div>
+			{loop type="arclist" row="1" tpl="" islist=""}
+			<div class="actBtm">
+				<div class="imgbox">
+					<img src="{$vo.pic}" alt>
+				</div>
+				<p>{$vo.title}</p>
+			</div>
+			{/loop}
+		</section>
+		<section class="dcn-video">
+			<h2>{随机栏目}</h2>
+			<div class="videoWrap"> <video src="https://video.d.cn/dcn/20240822/20240822100053388.mp4"
+					id="gameBigVideo"></video>
+				<div class="initial"> <img
+						src="https://img-android.d.cn/new/smtpfbackend/new/game_snapshot/97/1724293250397/gameSnapshot.jpeg">
+					<span class="play" onclick="videoObj.play(this)"></span>
+				</div>
+				<div class="time">
+					<div class="cols">
+						<div class="col"></div>
+						<div class="col"></div>
+						<div class="col"></div>
+					</div> <span>02:05</span>
+				</div>
+			</div>
+			<p></p>
+
+			{loop type="arclist" row="1" tpl="" islist=""}
+			<div onclick="indexObj.goDetail(12404)" class="gameFoot">
+				<p>{$vo.title}</p>
+				<div class="ctnWrap">
+					<a href="{$vo.url}" style="">诛仙</a>
+					<div>
+						<div class="comment"><i></i><span>1</span></div>
+						<div class="support " onclick="indexObj.liked(event,12404,this)"><i></i><span>{$vo.hits}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			{/loop}
+		</section>
+		<section class="dcn-yc">
+			<div class="ycTop">
+				<h2>{随机栏目}</h2>
+				<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+			</div>
+			<div class="ycBtm">
+				{loop type="arclist" row="3" tpl="" islist=""}
+				<div class="article-item">
+					<div class="imgbox">
+						<img src="{$vo.pic}" alt>
+					</div>
+					<div class="detail">
+						<h3>{$vo.title}</h3>
+						<p><i></i><span></span></p>
+					</div>
+				</div>
+				{/loop}
+			</div>
+		</section>
+	</article>
+
+	<!-- footer-->
+
+
+	<!--NEW_XUANBAN_INDEX_PAGEADV_36-->
+
+	<!--/NEW_XUANBAN_INDEX_PAGEADV_36-->
+
+	<link rel="stylesheet" href="{$theme_path}/css/common.css">
+	<!--footer b-->
+
+	<footer>
+		<div class="border"></div>
+		<div class="business-info">
+			<div class="infoTop">
+				<div class="logo">
+					<div class="imgbox">
+						<img src="{$vo.pic}" alt>
+					</div>
+				</div>
+			</div>
+			<div class="infoBtm">
+				<p>Copyright © 2004-
+					<script type="text/javascript">document.write(new Date().getFullYear());</script>&nbsp;<a
+						href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>. All Rights Reserved.
+				</p>
+				<p>{随机栏目}</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?90c94e57654e93a962780b0824092a1f";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+
+
+
+	<script src="{$theme_path}/js/jquery-2.2.4.min.js"></script>
+	<script src="{$theme_path}/js/swiper.min.js"></script>
+	<script src="{$theme_path}/js/js-cookie.js"></script>
+	<script src="{$theme_path}/js/common.js"></script>
+	<script src="{$theme_path}/js/index.js"></script>
+
+</body>

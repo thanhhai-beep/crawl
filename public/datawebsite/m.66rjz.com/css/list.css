@@ -1,0 +1,24 @@
+﻿.pic{margin: 13px 4%;}
+.pic .pic-top{width: 100%; border: 1px solid #58b029; border-radius: 5px; display: -webkit-box; text-align: center; overflow: hidden;}
+.pic .pic-top li{display: block; height: 30px; line-height: 30px; text-align: center; font-size: 16px; -webkit-box-flex: 1;}
+.pic .pic-top .cur{background: #58b029; color: #FFF;}
+
+
+.con{margin: 0 4%;}
+.con ul li{padding: 11px 0; height: 70px; overflow: hidden; zoom: 1; position: relative; border-top: 1px solid #efefef;}
+.con ul li .img{margin-right: 10px; display: block; width: 70px; float: left;}
+.con ul li .img img{width: 70px; height: 70px; border-radius: 8px;}
+.con ul li .mi{-webkit-box-flex: 1; color: #777; overflow: hidden; padding-right: 70px;}
+.con ul li .mi a{display: block; height: 24px; line-height: 20px; overflow: hidden; font-size: 15px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap;}
+.con ul li .mi .az{display: block; line-height: 24px; height: 24px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #929292;font-size: 12px;}
+.con ul li .mi .az em{margin-right: 1px;}
+.con ul li .bt{-webkit-box-flex: 1; color: #777; overflow: hidden; padding-right: 10px;}
+.con ul li .bt span{display: block; line-height: 24px; height: 24px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #666;}
+.con ul li .xz{width: 60px; height: 30px; line-height: 30px; text-align: center; color: #fff; background: #58b029; position: absolute; right: 0; top: 23px; border-radius: 3px;}
+
+
+.pic .pic-top li:not(:last-child) {
+    border-right: 1px solid #58b029;
+}
+
+.con .n-f{width: auto; height: 40px; font-size: 14px; font-weight: normal; color: #aaa; text-align: center; background: #fff; padding: 10px; box-sizing: border-box; display: block; overflow: hidden; border-top: 2px solid #f7f7f7;position: relative;}

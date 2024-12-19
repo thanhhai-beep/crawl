@@ -1,0 +1,1 @@
+keywordjsx="´«Ææ°ÔÖ÷";if(!serachObj.value){serachObj.value=keywordjsx;}

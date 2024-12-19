@@ -1,0 +1,121 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-Control" content="no-transform ">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link rel="shortcut icon" href="{$theme_path}/css/favicon.ico" type="image/x-icon">
+    <link href="{$theme_path}/css/main.css" rel="stylesheet" type="text/css">
+    <link href="{$theme_path}/css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="{$theme_path}/css/search.css" rel="stylesheet" type="text/css">
+
+    <link href="{$theme_path}/css/index.css" rel="stylesheet" type="text/css">
+    <script src="{$theme_path}/js/antidom_240527.js"></script>
+    <script src="{$theme_path}/js/interfaceacting240527.js"></script>
+    <script src="{$theme_path}/js/jquery-2.14.min.js"></script>
+    <script src="{$theme_path}/js/main.js?v=20240129"></script>
+    <script src="{$theme_path}/js/swiper.js"></script>
+</head>
+
+<body id="main">
+    <div id="content">
+        <div class="header">
+            <a href="/" class="logo"><img src="{$theme_path}/images/logo.png" alt="{网站地址}"></a>
+        </div>
+        <div class="nav">
+            <a href="/" class="on"><span>首页</span></a>
+            <a href="{随机栏目URL}"><span>{随机栏目}</span></a>
+            <a href="{随机栏目URL}"><span>{随机栏目}</span></a>
+            <a href="{随机栏目URL}"><span>{随机栏目}</span></a>
+        </div>
+        <div class="hd_wrap">
+            <div class="swiper-container" id="hd_wrap" style="height: 161px;">
+                <div class="swiper-wrapper">
+                    {loop type="arclist" row="4" tpl="" islist=""}
+                        <div class="swiper-slide">
+                            <a href="{$vo.url}">
+                                <img src="{$vo.pic}" alt="{$vo.title}">
+                            </a>
+                        </div>
+                    {/loop}
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="boxwrap">
+            <div class="box_title" style="display: flex; justify-content: space-between;"><h1>{$keywords}</h1> <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a></div>
+            <ul class="games" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}" class="info"> <img src="{$vo.pic}"
+                            alt="{$vo.title}">
+                        <p>{$vo.title}</p>
+                    </a> <a href="{$vo.url}" class="downl" title="下载">下载</a></li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="boxwrap">
+            <div class="box_title"><span>最新软件</span> <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a></div>
+            <ul class="games" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}" class="info"> <img src="{$vo.pic}"
+                            alt="{$vo.title}">
+                        <p>{$vo.title}</p>
+                    </a> <a href="{$vo.url}" class="downl" title="下载">下载</a></li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="boxwrap">
+            <div class="box_title"><span>{$keywords} 热门手游</span> <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a></div>
+            <ul class="games" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}" class="info"> <img src="{$vo.pic}"
+                            alt="{$vo.title}">
+                        <p>{$vo.title}</p>
+                    </a> <a href="{$vo.url}" class="downl" title="下载">下载</a></li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="boxwrap">
+            <div class="box_title"><span>常用软件</span> <a href="{随机栏目URL}" class="more" title="{随机栏目}">{随机栏目}</a></div>
+            <ul class="games" data-row="12">
+                {loop type="arclist" row="12" tpl="" islist=""}
+                <li><a href="{$vo.url}" class="info"> <img src="{$vo.pic}"
+                            alt="{$vo.title}">
+                        <p>{$vo.title}</p>
+                    </a> <a href="{$vo.url}" class="downl" title="下载">下载</a></li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="boxwrap">
+            <div class="box_title"><span>下拉有惊喜</span></div>
+            <ul class="other_list" data-row="20">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                    <li>
+                        <a href="{$vo.url}" class="img">
+                            <img src="{$vo.pic}" alt="{$vo.title}"></a>
+                        <div class="info">
+                            <a href="{$vo.url}" class="bt" title="{$vo.title}">{$vo.title}</a>
+                            <div class="type">效率办公 | 26.74MB </div>
+                            <div class="type">v{randstr type="2" num="2"/}.{randstr type="2" num="2"/}.00 | <span style="color: red">{$vo.postdate}</span></div>
+                        </div>
+                        <a href="{$vo.url}" class="downl" title="下载">下载</a>
+                    </li>
+                {/loop}
+            </ul>
+        </div>
+        <!-- up -->
+        <div id="Top"></div>
+    </div>
+    <div id="footer">
+        <p>{$keywords} {随机栏目}</p>
+    </div>
+
+    <script type="text/javascript" src="{$theme_path}/js/init.js?v=518"></script>
+</body>

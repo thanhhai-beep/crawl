@@ -1,0 +1,357 @@
+<head>
+    <link rel="canonical" href="{$theme_path}/css/danji">
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="applicable-device" content="mobile">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link href="{$theme_path}/css/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="{$theme_path}/css/app.css">
+</head>
+
+<body data-wapvch="game" data-page="1">
+    <script type="text/javascript" id="beacon-aplus" src="{$theme_path}/js/aplus_v2.js"
+        exparams="clog=o&amp;aplus&amp;sidx=aplusSidx&amp;ckx=aplusCkx"></script>
+    <script src="{$theme_path}/js/baxiaCommon.js"></script>
+    <header id="header" class="header home" data-page="home">
+        <div class="btn-category" data-wach="header_cat" data-wapvch="home"></div>
+        <a class="header-logo" href="{随机栏目URL}" data-wach="header_logo" data-wapvch="home" title="{随机栏目}"></a>
+        <div class="header-search">
+            <a class="header-search-a" href="{随机栏目URL}" rel="nofollow" title="{随机栏目}">{随机栏目}</a>
+            <a class="header-search-button" href="{随机栏目URL}" rel="nofollow" data-wach="header_search" data-wapvch="home"
+                title="{随机栏目}"></a>
+        </div>
+    </header>
+    <nav id="headerNav" class="header-nav home">
+        <ul class="nav" data-row="5">
+
+            <li class="current"><a class="home" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a class="soft" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a class="game" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a class="game" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a class="news" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+
+        </ul>
+    </nav>
+    <div class="hnblock"></div>
+    <div id="pop-category-mask" style="display: none"></div>
+    <div id="pop-category" style="display: none">
+        <div class="top">
+            <div class="btn-back"></div>
+            <h3>{随机栏目}</h3>
+        </div>
+        <ul class="nav" data-row="2">
+            <li class="current" data-wach="header_cat_soft" data-wapvch="home">{$vo.title}</li>
+            <li data-wach="header_cat_game" data-wapvch="home">游戏分类</li>
+        </ul>
+        <ul class="category soft" data-row="123">
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/0/1_1c33728a3f1a49fa0462b853cdc04b39.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{$vo.title}">{$vo.title}</a>
+                <ul class="category-sub" data-row="6">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/7/1_64cae015dda8c86c5f6057763cb9986b.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="9">
+                    {loop type="catelog" row="9" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/11/1_c7625e4cf3ea6f743df6dae39abd3c5c.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="6">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/8/1_368390ea7e032990b313376c534e8a45.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="7">
+                    {loop type="catelog" row="7" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/6/1_c8eda61a26095d1084b54873be29e248.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="7">
+                    {loop type="catelog" row="7" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/9/1_7c206308b9191e53026097d29a9ea6da.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="6">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/10/1_8adb2737771119250af44c4aa94681ac.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="6">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/2/1_605fbf4be8d8a57402e608018687d2b3.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="5">
+                    {loop type="catelog" row="5" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/2/1_6093c5b0ffd45661de2512523c508dca.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="11">
+                    {loop type="catelog" row="11" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/4/1_8584dd4ef15425aefc16d521695f86bc.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="11">
+                    {loop type="catelog" row="11" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/9/1_118d61c75cc11575087851073d1a598d.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="7">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/1/1_8b1788d0501fbab6f0f38a0c0676a5ac.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="7">
+                    {loop type="catelog" row="7" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/10/1_88d8dabd07fafd1459347fead2c3f6d6.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="5">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/1/1_dfd303401e90023636e9bad610dfca2b.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="6">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2023/12/20/2/1_a8ab19966b650ecfee1b6afbce108bb2.png') no-repeat center 0;background-size:30px 30px;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="9">
+                    {loop type="catelog" row="9" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+        </ul>
+        <ul class="category game" style="display:none" data-row="77">
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/3/1_ef90ff6dc0d570468287685ad27d20e8.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{$vo.title}">{$vo.title}</a>
+                <ul class="category-sub" data-row="6">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/7/1_ac5e5adf04c7c640d7786ab8266724e3.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="5">
+                    {loop type="catelog" row="5" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/0/1_cb54aee585ed19907bec54e70d17f1d6.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="6">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/8/1_27a7ca3c4ccc793bd46a92b67309785b.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="6">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/2/1_bfa654ad0c3a19be3f9c0acb78d49f8b.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="6">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/3/1_215b4f858447d9f4a303b674427325e1.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="7">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/7/1_1a3aea19d0819cf92a3e84c48f440e8c.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="15">
+                    {loop type="catelog" row="15" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/0/1_70485deeb454790f079af21572fdf7f5.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="6">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/9/1_efa7f029a28884ce87956894dafd2130.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="6">
+                    {loop type="catelog" row="6" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+            <li class="item clearfix">
+                <a class="category-icon" href="{随机栏目URL}"
+                    style="background: url('//android-artworks.25pp.com//fs08/2017/09/23/4/1_6b006e967a164e92b5516580830df4e1.png') no-repeat center 0;background-size:30px 30px;color:#28292F;"
+                    title="{随机栏目}">{随机栏目}</a>
+                <ul class="category-sub" data-row="4">
+                    {loop type="catelog" row="4" tpl="" islist=""}
+                    <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+                    {/loop}
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <h1 class="tdk-h1">{$keywords}</h1>
+    <div class="wrap clearfix" style="margin-top: 20px">
+        <div id="crumb"> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> &gt; <a href="{随机栏目URL}"
+                title="{随机栏目}">{随机栏目}</a> </div>
+        <ul class="applist-tab" data-row="3">
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li class="current"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+        </ul>
+
+        <ul class="applist" data-row="9">
+            {loop type="arclist" row="500" tpl="" islist=""}
+            <li class="app-list-li" data-appid="z5DOcxyudcxD" data-appname="哈啰" data-wach="home_soft_new" data-order="0"
+                data-listorder="0">
+                <a href="{$vo.url}" class="app-list-link">
+                    <img class="icon img-lazy" data-img="{$vo.pic}" src="{$vo.pic}">
+                    <div class="app-info">
+                        <div class="app-info-name dot">{$vo.title}</div>
+                        <div class="app-info-size dot">
+                            {$vo.hits}万次下载 &nbsp;&nbsp;
+                            {randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB
+                        </div>
+                    </div>
+                    <div class="app-info-desc dot">{$vo.info}</div>
+                </a>
+                <a class="app-btn-down" href="{$vo.url}" data-appid="z5DOcxyudcxD" data-appname="哈啰"
+                    data-wach="home_soft_new" data-order="0" data-listorder="0" rel="nofollow"
+                    title="{$vo.title}">下载</a>
+                <a class="pp-space-dynamic" href="{$vo.url}" target="_blank" data-wach="pp_space_dynamic"
+                    rel="nofollow"> <i class="left">&gt;&gt;</i> 安装<span class="pp-title">{$vo.postdate}</span>发现更多 <i
+                        class="right"></i> </a>
+
+            </li>
+            {/loop}
+        </ul>
+        <div class="part-base pb0">
+            <div class="page-controll"> <span class="page-ico page-first-disable"></span> <span
+                    class="page-ico page-prev-disable"></span> <span class="page-text">第 1 页</span> <a
+                    class="page-ico page-next" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a class="page-ico page-last"
+                    href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+        </div>
+        <div class="pro-ad-pageend"> <a class="pp-space-pageend" href="/" target="_blank" data-wach="pp_space_pageend"
+                data-wapvch="game" rel="nofollow"> <i class="left">&gt;&gt;</i> 到底了，安装<span
+                    class="pp-title">「PP助手」</span>发现更多 <i class="right"></i> </a>
+        </div>
+        <div id="footer" class="clearfix">
+            <p class="copyright">{$keywords} {随机栏目}</p>
+        </div>
+        <div id="goTop"></div>
+        <div id="noDisplayArea" class="none">
+        </div>
+    </div>
+</body>

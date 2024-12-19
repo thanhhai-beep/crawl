@@ -1,0 +1,292 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="sogou_site_verification" content="0v0qMlOQXO">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="mobile">
+    <meta name="sogou_site_verification" content="KbrIuBJLNl">
+    <link rel="stylesheet" href="{$theme_path}/css/hamlet.css">
+    <link rel="stylesheet" href="{$theme_path}/css/index.css">
+    <script src="{$theme_path}/js/jquery.min.js"></script>
+    <script src="{$theme_path}/js/index.js?v=2206"></script>
+    <link rel="canonical" href="{$theme_path}/css/m.3733.com">
+    <script src="{$theme_path}/js/loading.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="/">
+                <img src="https://s7apic5.pic3733.com/icon/202307/27eae8cc2d385fcff5ebd9ab96cecf55.png?auth_key=1734148800-0-0-3451ab26a3e8d2c76dedf80b7d6638f4" alt="{网站地址}">
+            </a>
+        </div>
+        <div class="search">
+            <a href="/search.html">
+                <div>
+                    <span>请输入游戏名称</span>
+                    <img src="{$vo.pic}" alt>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="carousel2 carousel-nav">
+            <div class="swiper-container-index2">
+                <div class="swiper-wrapper" style="height: 200px">
+                    <div class="swiper-slide ad-count-item">
+                        <a href=""
+                            class="img ad-count-click yueyou">
+                            <img class="big-img" src="{随机图片}" title="3733游戏盒" alt="3733游戏盒">
+                            <div class="content" style="color: #000">
+                                <div class="bottom-text">
+                                    <div class="game-info">
+                                        <div class="game-icon">
+                                            <img src="{随机图片}" title="3733游戏盒" alt="3733游戏盒">
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title">{网站名称}</h2>
+                                            <div class="tags">
+                                                <span>{随机关键词}</span>
+                                            </div>
+                                        </div>
+                                        <div class="game-score">
+                                            <div class="score">9.1</div>
+                                            <div class="score-info">
+                                                <div class="score-star" data-score="9.1"></div>
+                                                <div class="score-count">{随机数字} 点评</div>
+                                                <div class="score-star">
+                                                    <i class="light"></i>
+                                                    <i class="light"></i>
+                                                    <i class="light"></i>
+                                                    <i class="light"></i>
+                                                    <i class="light"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="more-btn">立即下载</div>
+                                    <object>
+                                        <a href="{随机栏目URL}" class="install_tips" title="{随机栏目}">{随机栏目}</a>
+                                        <h1>{$keywords}</h1>
+                                    </object>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                var u = navigator.userAgent;
+                var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+                if (isIOS) {
+                    $(".install_tips").parent().remove();
+                }
+            })
+        </script>
+        <div class="navbar">
+            <div class="gsy-box">
+                <div class="gsy-index-nav">
+                    <p>
+                        {loop type="catelog" row="5" tpl="" islist=""}
+                            <a href="{$vo.url}" title="{$vo.url}" class="small"><i class="navi"></i>{$vo.title}</a>
+                        {/loop}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tape"></div>
+
+        <div class="fixxx">
+            <div>
+                <span class="on">人气榜</span>
+                <span>新游榜</span>
+            </div>
+        </div>
+
+        <div class="game_list">
+            <div class="active rqbang">
+                <ul data-row="30">
+                    {loop type="arclist" row="50" tpl="" islist=""}
+                    <li>
+                        <a href="{$vo.url}">
+                            <div class="tag">
+                                <div class="num no{$vo.i}">
+                                    <span style="color: #444444 !important;">{$vo.i}</span>
+                                    <i></i>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <div class="jiaobiao">
+                                    <img src="{$vo.pic}"
+                                        data-src="{$vo.pic}"
+                                        alt="御剑红尘（0.1折每日送648）" class="lazyload">
+                                    <span>0.1折</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h4 class="ellipsis">{$vo.title}</h4>
+                                <h6>{随机关键词} | <span>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</span>
+                                </h6>
+                                <p class="ellipsis">{$vo.info}</p>
+                            </div>
+                            <div class="btn">
+                                <div>下载</div>
+                            </div>
+                        </a>
+                    </li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="xybang">
+                <ul data-row="100">
+                    {loop type="arclist" row="100" tpl="" islist=""}
+                    <li>
+                        <a href="{$vo.url}">
+                            <div class="tag">
+                                <div class="num no{$vo.i}">
+                                    <span style="color: #444444 !important;">{$vo.i}</span>
+                                    <i></i>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <div class="jiaobiao">
+                                    <img src="{$vo.pic}"
+                                        data-src="{$vo.pic}"
+                                        alt="御剑红尘（0.1折每日送648）" class="lazyload">
+                                    <span>0.1折</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h4 class="ellipsis">{$vo.title}</h4>
+                                <h6>{随机关键词} | <span>{randstr type="2" num="3"/}.{randstr type="2" num="2"/} MB</span>
+                                </h6>
+                                <p class="ellipsis">{$vo.info}</p>
+                            </div>
+                            <div class="btn">
+                                <div>下载</div>
+                            </div>
+                        </a>
+                    </li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">{$keywords} 
+        3733游戏平台是一家为手游玩家们提供手游公益服、无限元宝手游变态版、满VIP手机游戏私服下载的bt手游平台，平台全天24小时搜罗全网火爆、折扣大、福利高的好玩的公益服手游sf游戏，竭尽全力为广大游戏大佬献上精心打造值得信赖的最佳游戏推介平台！
+        3733游戏网，还为玩家们提供3733游戏盒APP，方便BT游戏玩家们可以更好的下载体验bt版公益服手游。
+        3733游戏，良心打造企业品牌，只做原版正品BT版手机游戏，绝对保证游戏质量，绝对保障游戏品质，提供稳定高速绿色无毒的下载环境，只为实现为广大游戏玩家提供良好的游戏体验。
+        3733游戏平台，为海内外广大游戏爱好者提供全方位全平台的深度专业服务，不仅提供BT版手游私服资源大全，热门游戏的游戏攻略，准确的游戏新闻，丰富的游戏礼包，好玩的火爆的手机网游游戏排行榜，精彩的游戏精选合集，让你可以放心玩，开心玩，尽心玩，各大厂商热门的手游变态版游戏已为你做好精准的筛选分类，全网搜罗数千款不同类型的精彩满vip版、公益服游戏，3733游戏网，欢迎您的光临，3733游戏网期待您带上朋友再次光临！您的快乐是我们的使命！
+    </div>
+    <div class="footer2">
+        <a href="/" class="on">
+            <div class="icon icon1"></div>
+            <div>首页</div>
+        </a>
+        <a href="/game">
+            <div class="zk01"></div>
+            <div class="icon icon2"></div>
+            <div>游戏</div>
+        </a>
+        <a href="/card/libao">
+            <div class="icon icon3"></div>
+            <div>礼包</div>
+        </a>
+        <a href="/kf">
+            <div class="icon icon4"></div>
+            <div>开服表</div>
+        </a>
+        <a href="/kefu">
+            <div class="icon icon5"></div>
+            <div>客服</div>
+        </a>
+    </div>
+    <script>
+        function isBangs() {
+            if (/iphone/gi.test(window.navigator.userAgent)) {
+                var xa = (window.screen.width === 375 && window.screen.height === 812);
+                var xb = (window.screen.width === 414 && window.screen.height === 896);
+                var xc = (window.screen.width === 375 && window.screen.height === 667);
+                var xd = (window.screen.width === 360 && window.screen.height === 780);
+                var xe = (window.screen.width === 390 && window.screen.height === 844);
+                var xf = (window.screen.width === 428 && window.screen.height === 926);
+
+                if (xa || xb || xc || xd || xe || xf) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false
+            }
+        }
+
+        var uu = navigator.userAgent.toLowerCase();
+        function userAgentBrowser() {
+            var isWX = uu.match(/MicroMessenger\/[0-9]/i); //weixin
+            var isQQ = uu.match(/QQ\/[0-9]/i); //qq
+            var isSafari = uu.indexOf('applewebkit') > -1 &&
+                uu.indexOf('mobile') > -1 &&
+                uu.indexOf('safari') > -1 &&
+                uu.indexOf('browser') === -1 &&
+                uu.indexOf('linux') === -1 &&
+                uu.indexOf('android') === -1 &&
+                uu.indexOf('chrome') === -1 &&
+                uu.indexOf('ios') === -1;
+            if (isWX) {
+                return 'wechat';
+            } else if (isSafari) {
+                return 'safari';
+            } else if (isQQ) {
+                return 'qq'
+            }
+        }
+        var ub = userAgentBrowser();
+
+        if (isBangs()) {
+            if (ub == 'safari') {
+                var oldHeight = window.innerHeight;
+                window.addEventListener("resize", function () {
+                    if (window.innerHeight > oldHeight) {
+                        document.querySelector(".footer2").style.paddingBottom = "22px";
+                    } else {
+                        document.querySelector(".footer2").style.paddingBottom = "0px";
+                    }
+                }, false);
+            } else if (ub == 'qq' || ub == 'wechat') {
+                document.querySelector(".footer2").style.paddingBottom = "22px";
+            }
+        }
+    </script>
+
+    <script src="{$theme_path}/js/wxqq.js"></script>
+    <script src="{$theme_path}/js/lazyload_double.js"></script>
+    <script>
+        $(function () {
+            var user = navigator.userAgent;
+            var isAndroid = user.indexOf('Android') > -1 || user.indexOf('Adr') > -1;
+            var isWX = user.match(/MicroMessenger\/[0-9]/i)
+            $('.ad-count-down,.ad-count-click').click(function (e) {
+                if (isWX) {
+                    e.preventDefault();
+                    $('.wxqq-modal').show();
+                }
+            })
+        })
+    </script>
+
+    <script>
+        $('.footer a').eq(0).addClass('on');
+    </script>
+</body>

@@ -1,0 +1,163 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>{$toptitle}</title>
+    <meta name="description" content="{$description}">
+    <meta name="keywords" content="{$keywords}">
+    <link rel="canonical" href="{$theme_path}/css/yx">
+    <link rel="shortcut icon" href="{$theme_path}/css/favicon.ico" type="image/x-icon">
+    <link type="text/css" href="{$theme_path}/css/style.css?v=20240418" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sear_box"> <a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+        <div class="search">
+            <form action="https://m.liqucn.com/search/s.php" method="get"> <input type="text" value=""
+                    class="sear_txt fl" name="words"> <input type="hidden" value="app" name="table_flag"> <input
+                    type="submit" value="" class="sear_btn fl"> </form>
+        </div>
+    </div>
+	<div class="menu">
+		<table cellpadding="0" cellspacing="0" frame="void">
+			<tr>
+                {loop type="catelog" row="4" tpl="" islist=""}
+				<td><a href="{$vo.url}"><i class="m0{$vo.i}"></i>{$vo.title}</a></td>
+				{/loop}
+			</tr>
+			<tr>
+                {loop type="catelog" row="3" tpl="" islist=""}
+				<td><a href="{$vo.url}"><i class="m0{$vo.i}"></i>{$vo.title}</a></td>
+				{/loop}
+			</tr>
+		</table>
+	</div>
+    <div class="wrap">
+        <div class="tip_list">
+            {loop type="catelog" row="13" tpl="" islist=""}
+                <a href="{$vo.url}" class="" title="{$vo.title}">{$vo.title}</a>|
+            {/loop}
+        </div>
+        <p class="tip_more">查看更多</p>
+    </div>
+    <div class="wrap">
+        <div class="tit">
+            <span class="fr newest_tab">
+                <a href="{随机栏目URL}" class="newest_tab_show"
+                    title="安卓游戏">安卓游戏</a>
+                    <a href="{随机栏目URL}"
+                    title="最新更新">最新更新</a>
+                </span><b>安卓游戏
+                    <span class="tab_0 tab_show">{$keywords}</span>
+                    <span
+                    class="tab_1">排行榜</span>
+                </b>
+            </div>
+        <div class="newest">
+            <ul class="list_app" data-row="20">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                    <li> <a class="alist" href="{$vo.url}">
+                            <div class="list_litpic fl"><img src="{$vo.pic}"></div>
+                            <div class="list_info">
+                                <h3>{$vo.title}</h3>
+                                <p>1.82GB　热度：<span class="star" title="热度评级：1/10"><span style="width:10%"></span></span></p>
+                                <p><span>{$vo.postdate}</span></p>
+                            </div>
+                        </a> </li>
+				{/loop}
+                <div class="page"> <span>1/50</span> <a href="{$vo.url}" class="fr" title="{$vo.title}">{$vo.title}</a>
+                </div>
+            </ul>
+        </div>
+        <div class="newest" style="display:none">
+            <ul class="list_app" data-row="20">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                    <li> <a class="alist" href="{$vo.url}">
+                            <div class="list_litpic fl"><img src="{$vo.pic}"></div>
+                            <div class="list_info">
+                                <h3>{$vo.title}</h3>
+                                <p>1.82GB　热度：<span class="star" title="热度评级：1/10"><span style="width:10%"></span></span></p>
+                                <p><span>{$vo.postdate}</span></p>
+                            </div>
+                        </a> </li>
+				{/loop}
+            </ul>
+        </div>
+        <div class="foot">
+            <div class="finner">
+                <em>android版专区</em><br>
+                <a href="{当前地址}" title="{$vo.title}">{网站地址}</a>|<a href="{当前地址}"
+                    title="{$keywords}">{$keywords}</a> <br>声明：为严格遵守广告法，站点已将"第一","最"等极限词汇屏蔽，请知悉
+            </div>
+        </div>
+        <script type="text/javascript" src="{$theme_path}/js/zepto.min.js"></script>
+        <script type="text/javascript" src="{$theme_path}/js/script.js?v=20240514"></script>
+        <script type="text/javascript" src="{$theme_path}/js/iscroll.js?v=20190110"></script>
+        <script type="text/javascript" src="{$theme_path}/js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="{$theme_path}/js/layer.js"></script>
+        <script type="text/javascript" src="{$theme_path}/js/fly-zomm-img.js?v=20200803"></script>
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                var str_bdtj_code = "lqf7dc19c0893ea0350eba4fe5a5f1e8e" + "f";
+                hm.src = "//hm.bai" + "du.com/hm.js?" + str_bdtj_code.substr(2);
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+        <script>
+            function a_replace() {
+                var a = document.getElementsByTagName("a");
+                for (var i = 0; i < a.length; i++) {
+                    if (a[i].href.indexOf('spam#') != -1 && a[i].href.indexOf('(dot)') != -1) {
+                        a[i].href = a[i].href.replace('spam#', '@');
+                        a[i].href = a[i].href.replace('(dot)', '.');
+                    }
+                    if (a[i].innerHTML.indexOf('spam#') != -1 && a[i].innerHTML.indexOf('(dot)') != -1) {
+                        a[i].innerHTML = a[i].innerHTML.replace('spam#', '@');
+                        a[i].innerHTML = a[i].innerHTML.replace('(dot)', '.');
+                    }
+                }
+            }
+            a_replace();
+        </script>
+        <script type="text/javascript">
+    
+            var myScroll;
+            var myScroll2;
+    
+            function loaded() {
+                myScroll = new IScroll('#wrapper', {
+                    scrollX: true,
+                    scrollY: false,
+                    momentum: false,
+                    snap: true,
+                    snapSpeed: 400,
+                    keyBindings: true
+                });
+    
+                myScroll2 = new IScroll('#wrapper2', {
+                    scrollX: true,
+                    scrollY: false,
+                    momentum: false,
+                    snap: true,
+                    snapSpeed: 400,
+                    keyBindings: true
+                });
+            }
+    
+            document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+                capture: false,
+                passive: false
+            } : false);
+        </script>
+        <script>
+            window.onload = function () {
+                var current_page_urlos = "android";
+                var device_urlos = get_urlos_from_device();
+            }
+        </script>
+    
+    </body>
