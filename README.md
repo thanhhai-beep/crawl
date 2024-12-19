@@ -64,3 +64,13 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+- Serec key admin
+qq429572204|vbnq4dtjeang24teo7vqlvtfmaxg4vthw4pu65as34zt4oc|neabz3mzu5izaq5djm4zfg6xtfebsgaxuhwte35tj3oaiq6ljmlbog4lke5aho5hu2ztgylxq3hbdqabuhebjqabt4szagmvu3eaeg5bgkizhqarggmaoymht2ezhw44temb
+https://154.23.179.153:10657/6b29df57
+ username: k6hw0csi
+ password: e3b51f81
+ http://www.mr888slot.one/adminhuangfu.php   admin   admin
