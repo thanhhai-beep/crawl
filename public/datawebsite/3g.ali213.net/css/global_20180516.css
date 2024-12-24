@@ -1,0 +1,159 @@
+@CHARSET "UTF-8";*{
+    outline:0;margin:0;padding:0;font-family:"微软雅黑"}
+html{width:100%;overflow-x:hidden}
+body{width:7.5rem!important;font-size:14px;font-family:"微软雅黑";text-align:center;margin:0 auto!important;color:#404040;overflow:hidden}
+table{text-align:center}
+a:link{text-decoration:none}
+a{color:#9c999c}
+li{list-style-type:none}
+td{white-space:normal;letter-spacing:1px}
+button,textarea,input{outline:0;border:0;padding:0;margin:0;-webkit-appearance:none}
+.overLay{position:fixed;top:0;left:0;bottom:0;right:0;z-index:99999;background:#FFF;display:none}
+.magicbx{position:absolute;width:70px;height:70px;top:50%;left:50%;margin-left:-35px;margin-top:-35px;z-index:100000;overflow:hidden}
+.magicbx .static{width:70px;height:70px;overflow:hidden;background:url(../images/loading-logo-ali213.png) top center no-repeat;background-size:100% 200%}
+.magicbx .rounding{position:absolute;width:70px;height:70px;top:0;left:0;z-index:100001;overflow:hidden;background:url(../images/loading-logo-ali213.png) bottom center no-repeat;background-size:100% 200%;animation:rtMv 6s infinite alternate;-webkit-animation:rtMv 6s linear infinite}
+@-webkit-keyframes rtMv{
+    0%{-webkit-transform:rotate(0deg)}
+    100%{-webkit-transform:rotate(360deg)}
+}
+@keyframes rtMv{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
+.placeholderforpromotion{width:100%;clear:both;overflow:hidden}
+.uaHolder{width:100%;height:1.71rem;clear:both;position:relative;z-index:1000}
+.uaHolder.new-3g-head{height:.82rem}
+.uaHolder .staticPart{position:relative;width:100%;height:.88rem;clear:both;overflow:hidden;z-index:1000;background:white;display:none}
+.uaHolder .staticPart ul{height:.85rem;float:left;overflow:hidden}
+.uaHolder .staticPart ul li{height:.85rem;line-height:.85rem;padding:0 10px 0 5px;float:left;overflow:hidden}
+.uaHolder .staticPart ul li a{width:1.37rem;height:.82rem;position:absolute;top:.16rem;left:.2rem;background:url(../images/mg11.png) no-repeat;background-size:100% 100%}
+.uaHolder .staticPart ul li a img{display:none;margin:2px 0 2px 3px;height:.85rem;overflow:hidden}
+.uaHolder .staticPart .header_right{width:2.7rem;height:.85rem;float:right;line-height:.85rem;z-index:1010;color:#5f5f5f}
+.uaHolder .staticPart .header_right .to_down,.uaHolder .staticPart .header_right .appdown{float:left;height:.54rem;line-height:.54rem;border-radius:10px;margin:.18rem 0}
+.uaHolder .staticPart .header_right .to_down a,.uaHolder .staticPart .header_right .appdown a{width:1.88rem;height:.5rem;box-sizing:border-box;border-radius:.25rem;border:solid 1px #ff8439;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#ff8439;font-size:.24rem}
+.uaHolder .staticPart .header_right .to_down a:before,.uaHolder .staticPart .header_right .appdown a:before{content:'';display:block;width:.21rem;height:.27rem;background:url(../images/mg8.png) no-repeat;background-size:100% 100%;margin-right:.05rem}
+.uaHolder .staticPart .header_right .header_menu{width:.38rem;height:.28rem;margin-right:.21rem;background:url(../images/mg13.png) no-repeat;background-size:100% 100%;cursor:pointer;float:right;margin-top:.28rem}
+.uaHolder .staticPart .header_right .header_menu_open{width:.42rem;height:.34rem;background-image:url(../images/mg42.png)}
+.uaHolder .staticPart .header_right .header_menu .icon-menu{display:none}
+.uaHolder .staticPart .header_right div i{font-size:25px;line-height:40px;-webkit-text-stroke-width:.2px}
+.uaHolder .staticPart .header_right .search{position:absolute;width:30px;height:40px;line-height:40px;top:0;right:48px;z-index:1020;cursor:pointer;font-size:22px}
+.uaHolder .staticPart .header_right .history{position:absolute;width:30px;height:40px;line-height:40px;top:0;right:48px;z-index:1020;cursor:pointer;font-size:22px}
+.uaHolder .activePart{display:none;background:#f6f6f6;width:100%;clear:both;overflow:hidden}
+.uaHolder .activePart .header_daohang{width:100%;clear:both;overflow:hidden}
+.uaHolder .activePart .header_daohang a{width:33.33%;height:35px;line-height:35px;font-size:14px;display:block;text-indent:44px;float:left;text-align:left;color:#5f5f5f}
+.uaHolder .activePart .header_daohang a:link{color:#5f5f5f}
+.uaHolder .activePart .header_daohang a:visited{color:#5f5f5f}
+.uaHolder .activePart .header_daohang .header_daohang_news{background:url(../images/news.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .header_daohang .header_daohang_vr{background:url(../images/vr.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .header_daohang .header_daohang_tuku{background:url(../images/tuku.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .header_daohang .header_daohang_yxk{background:url(../images/yxk.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .header_daohang .header_daohang_gl{background:url(../images/gl.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .header_daohang .header_daohang_az{background:url(../images/h5y.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .header_daohang .header_daohang_ios{background:url(../images/sy.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .header_daohang .header_daohang_bbs{background:url(../images/bbs.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .header_daohang .header_daohang_video{background:url(../images/video.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .header_daohang .header_daohang_danji{background:url(../images/danji.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .header_daohang .header_daohang_zt{background:url(../images/zt.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .header_daohang .header_daohang_shop{background:url(../images/shop.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .header_daohang .header_daohang_yingjian{background:url(../images/yingjian.png) no-repeat 25px 9px;background-size:16px 16px}
+.uaHolder .activePart .searchbar{position:relative;height:30px;margin:9px 10px 3px 10px;clear:both;overflow:hidden;z-index:1000;border:1px solid #ccc;border-radius:15px;vertical-align:bottom;box-shadow:inset 0 0 2px rgba(0,0,0,.2),0 1px 0 #fff;background:#fff}
+.uaHolder .activePart .searchbar .search_input{display:block;height:30px;margin:0 40px 0 0;overflow:hidden}
+.uaHolder .activePart .searchbar .search_input input{display:block;width:100%;height:30px;line-height:30px;padding:5px 6px;text-indent:18px;vertical-align:bottom}
+.uaHolder .activePart .searchbar .search_btn_outter{position:absolute;width:30px;height:40px;top:-4px;right:10px;overflow:hidden;z-index:1010}
+.uaHolder .activePart .searchbar .search_btn_outter .search_btn_pretend,.staticPart .search_btn_pretend{position:absolute;display:block;width:22px;height:22px;top:9px;right:4px;z-index:1020}
+.uaHolder .activePart .searchbar .search_btn_outter .search_btn_pretend::before,.staticPart .search_btn_pretend::before{position:absolute;content:"";display:block;width:18px;height:18px;-webkit-border-radius:18px;border-radius:18px;background:#b6b6b6}
+.uaHolder .activePart .searchbar .search_btn_outter .search_btn_pretend::after,.staticPart .search_btn_pretend::after{position:absolute;content:"";display:block;background:#b6b6b6;width:4px;height:8px;top:14px;right:4px;-webkit-border-radius:2px;border-radius:2px;-webkit-transform:rotate(-35deg);-ms-transform:rotate(-35deg);-moz-transform:rotate(-35deg)}
+.uaHolder .activePart .searchbar .search_btn_outter .search_btn_pretend em{display:block;position:absolute;width:12px;height:12px;background:#FFF;margin:3px;-webkit-border-radius:12px;border-radius:12px}
+.uaHolder .activePart .searchbar .search_btn_outter .search_submit{position:absolute;width:30px;height:40px;background-color:transparent;border:0;top:0;right:0;z-index:1030}
+.news_tab{width:100%;height:.86rem;overflow:hidden;background-color:#fff;box-shadow:0 2px 5px #b8b8b8}
+.news_tab a{position:relative;float:left;width:100%;height:.86rem;line-height:.86rem;text-align:center;font-size:.32rem;color:#707070!important}
+.news_tab a.active{color:#000!important;font-weight:bold}
+.news_tab a.active em{width:40%;height:3px;background:#0078ff;position:absolute;z-index:10000;left:29%;line-height:3px;border-radius:5px;bottom:.15rem}
+.swiper-slide{width:16.6%}
+.uaMargin{width:100%;height:1px;clear:both;overflow:hidden}
+.news_bottom{width:100%;height:auto;position:relative;clear:both}
+.news_bottom_top{width:100%;height:1.45rem;background-color:#f2f2f2;overflow:hidden}
+.news_bottom_top_con{width:100%;text-align:center;height:.30rem;line-height:.30rem;font-size:.30rem;color:#666;margin-top:.40rem}
+.news_bottom_top_con a{color:#666}
+.news_bottom_top_des{width:100%;height:1.45rem;line-height:1.45rem;color:#666;text-align:center;font-size:.30rem}
+table{border-collapse:collapse;margin:auto;border-color:#434343}
+table tbody a{color:#0a0a0a}
+.p_no_download{display:none!important}
+.footer{width:7.1rem;margin:auto;height:1.15rem;display:flex;align-items:center;justify-content:space-between}
+.footer a{display:block;height:.6rem;color:#666;line-height:.6rem}
+.footer a img{height:.6rem;vertical-align:bottom;margin-right:.18rem;width:auto;display:inline}
+.footer a:last-child img{margin-right:0}
+.game-nav{width:100%;display:block!important}
+.game-nav1{height:.84rem;width:100%;display:flex!important;align-items:center;justify-content:flex-start;margin-bottom:.12rem}
+.game-nav1 a{display:block;position:relative;font-size:.34rem;color:#666;margin:0 .24rem;font-weight:bold}
+.game-nav1 a.checked{color:#000;font-size:.36rem}
+.game-nav1 a.checked:after{content:"";width:.3rem;height:.08rem;background-color:#ff5a39;border-radius:.04rem;position:absolute;left:0;right:0;margin:auto;bottom:-0.14rem}
+.down-app-bg{width:100%;height:100%;position:fixed;top:0;left:0;z-index:10000;background:rgba(0,0,0,0.5);display:none}
+.app-download-aware{position:fixed;width:5.9rem;height:3.76rem;overflow:hidden;top:0;left:0;background-color:#fff;border-radius:.1rem;z-index:10002;display:none;bottom:0;right:0;margin:auto}
+.app-download-aware .titlex1{margin:.43rem auto 0 auto;width:1.4rem;height:.35rem;font-size:.32rem;font-weight:bold;font-stretch:normal;line-height:.35rem;letter-spacing:0rem;color:#242424}
+.app-download-aware .sumaryx1{margin:.4rem auto 0 auto;width:3.5rem;height:.78rem;font-size:.32rem;line-height:.47rem;color:#242424;text-align:center}
+.app-download-aware .btn-grp-holder1{margin:.68rem .33rem 0 .33rem;height:.75rem;clear:both;overflow:hidden}
+.app-download-aware .btn-grp-holder1 .cancelx{width:2.41rem;height:.75rem;background-color:#f7f7f7;border-radius:.38rem;overflow:hidden;float:left;color:#7f7f7f;font-size:.32rem;text-align:center;line-height:.75rem;cursor:pointer}
+.app-download-aware .btn-grp-holder1 .confirmx{width:2.41rem;height:.75rem;background-image:linear-gradient(16deg,#ff4800 0,#ff7800 100%);border-radius:.38rem;overflow:hidden;float:right;font-size:.32rem;color:#fff;text-align:center;line-height:.75rem;cursor:pointer}
+.search-container{display:none}
+.head_3g-top{height:1.19rem;background:#fff;width:100%}
+.head_3g2020{width:100%;background-color:#eee;height:1.04rem;margin:auto;position:fixed;left:0;top:0;z-index:10001;right:0}
+.head_3g2020 .head_3g-top{height:1.04rem;width:100%;padding:0 .21rem;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;background:white;overflow:hidden}
+.head_3g-top .head_3g-logo{width:4.98rem;height:.6rem;line-height:.6rem;display:flex;align-items:center;justify-content:flex-start}
+.head_3g-top .head_3g-logo img{width:.6rem;height:.6rem;vertical-align:middle}
+.head_3g-top .head_3g-logo div{padding-left:.16rem;height:.75rem;font-size:0;display:flex;flex-direction:column;text-align:left}
+.head_3g-top .head_3g-logo span{font-size:.3rem;line-height:.4rem;color:#454545;height:.4rem;font-weight:bold}
+.head_3g-top .head_3g-logo p{width:100%;font-size:.22rem;line-height:.3rem;color:#858585;height:.3rem}
+.head_3g-top .head_3g-down{width:1.26rem;height:.48rem;background-image:linear-gradient(30deg,#ff4800 0,#ff7800 100%);border-radius:.24rem;font-size:.22rem;text-align:center;line-height:.48rem;color:#fff;margin-right:.4rem}
+.head_3g-top .head_3g-more{width:.42rem;height:.4rem;background:url(../images/head_menu.png);cursor:pointer;background-size:100% 100%}
+.head_3g-shadow{width:100%;height:.15rem;margin:auto;background:linear-gradient(to bottom,rgba(255,255,255,0.6) 0,#eee 100%)}
+.head_3g-con{height:4.5rem;box-sizing:border-box;padding-top:.5rem;padding-bottom:.5rem;border-radius:0 0 .1rem .1rem;background:white;display:none}
+.head_3g-con .head_3g-form{width:5.84rem;height:.7rem;background-color:#f5f5f5;border-radius:.35rem;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 .28rem;box-sizing:border-box;margin-bottom:.42rem}
+.head_3g-form .search-input{display:block;width:4.5rem;line-height:.7rem;height:.7rem;font-size:.24rem;color:#b1b1b1;background:transparent}
+.head_3g-form .search-submit{width:.38rem;height:.38rem;background:url(../images/head_search.png) no-repeat center center;display:block;background-size:100% 100%}
+.head_3g-icon{display:flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;width:7rem;margin:auto}
+.head_3g-icon a{width:.5rem;margin:0 .62rem .5rem;display:block;font-size:.24rem;line-height:.28rem;color:#595959;flex-grow:1}
+.head_3g-icon a div{width:.48rem;height:.48rem;display:flex;align-items:center;justify-content:center;margin:0 auto .12rem}
+.head_3g-icon a img{width:.45rem}
+.pswp{z-index:100001}
+.youxi618Box{width:100%}
+.youxi618Box img{width:100%!important;height:100%!important}
+.head-container{height:3.53rem;width:100%;position:relative;margin-bottom:.3rem}
+.head-container-noimg{padding-top:.4rem}
+.head-container-noimg .head-img-con,.head-container-noimg .head-game-xz{display:none}
+.head-container-noimg{margin-bottom:.2rem}
+.head-container .head-img-con{width:100%;height:28.3vw;max-height:213px;position:relative}
+.head-container .img{width:100%;display:block;height:100%;vertical-align:bottom}
+.head-container .head-img-con.head-img-con .img{height:100%;width:auto;position:absolute;left:50%;right:0;bottom:0;transform:translateX(-50%)}
+.head-container .head-game-con{width:6.82rem;margin:auto;position:absolute;bottom:0;left:0;height:1.7rem;right:0}
+.head-container .head-game-con .head-game-img{float:left;width:1.7rem;height:1.7rem;background:white;border-radius:24%;box-sizing:border-box;padding:.08rem;margin-right:.12rem}
+.head-container .head-game-con .head-game-img .img{border-radius:24%}
+.head-container .head-game-con .head-game-content{float:left;height:1.22rem;display:flex;flex-direction:column;margin-top:.35rem}
+.head-container .head-game-content .game-name{height:.4rem;line-height:.36rem;font-size:.34rem;color:#333;font-weight:bold;display:flex;align-items:center;justify-content:flex-start;overflow:hidden}
+.head-container .head-game-content .game-name .head-game-name{max-width:2.9rem;height:.36rem;overflow:hidden;text-align:left;word-break:break-all}
+.head-container .head-game-content .game-name .head-game-ios{width:.21rem;height:.25rem;background:url(../images/m_ios.png) no-repeat center center;background-size:100% 100%;margin-left:.12rem}
+.head-container .head-game-content .game-name .head-game-android{width:.24rem;height:.25rem;background:url(../images/m_android.png) no-repeat center center;background-size:100% 100%;margin-left:.12rem}
+.head-container .head-game-content .head-game-type{width:100%;overflow:hidden;text-align:left;height:.48rem;line-height:.48rem;color:#666;font-size:.24rem}
+.head-container .head-game-content .head-game-type p{float: left;color: #cccccc;margin-right: .1rem}
+.head-container .head-game-content .head-game-type .time{color: #666666;float: left}
+.head-container .head-game-content .head-game-label{height:.4rem;display:flex;align-items:center;justify-content:flex-start;margin-top:.1rem}
+.head-container .head-game-content .head-game-label .game-label{background-color: #f3f3f3;border-radius: 0.08rem;text-align: center;color: #999;font-size: .2rem;margin-right: 0.12rem;width: 1.4rem;overflow: hidden;height: 0.4rem;line-height: .4rem;}
+.head-container .down-btn{width:1.2rem;height:.54rem;background-image:linear-gradient(0deg,#ff9639 0,#fd742d 50%,#fa4f20 100%),linear-gradient(#fa4f20,#fa4f20);background-blend-mode:normal,normal;border-radius:.33rem;border:solid 6px #fff;display:flex;align-items:center;justify-content:center;color:#fff;position:absolute;right:0;top:0;line-height:.54rem;font-size:.22rem;vertical-align:text-top}
+.head-container .down-btn .down-logo{width:.18rem;height:.22rem;background:url(../images/m_down.png) no-repeat;background-size:100% 100%;margin-right:.08rem}
+.head-container .game-img-container{width:7.16rem;margin:.3rem 0 .2rem .34rem}
+.head-container .game-img-container .img-div{display:block;width:3.2rem;overflow:hidden;flex-shrink:0;margin-left:.16rem}
+.head-container .game-img-container .img-div .img{border-radius:.12rem}
+.head-container .game-img-container .img-div:first-child{margin-left:0}
+.head-container .head-game-xz{display:flex;align-items:center;justify-content:center;height:.88rem;width:100%;margin:.2rem auto 0;margin-top: 1.5rem;}
+.head-container .head-game-xz >a{width:3.3rem;height:.88rem;display:flex;align-items:center;justify-content:center;font-size:.28rem;line-height:.4rem;color:#fff;background-image:linear-gradient(236deg,#61e9a0 0,#40c971 100%);border-radius:.44rem;margin:0 .13rem;cursor:pointer}
+.head-container .head-game-xz >a:before{content:"";display:block;width:.54rem;height:.54rem;background:url(../images/ztdetail1.png) no-repeat center center;background-size:100% 100%}
+.head-container .head-game-xz >a.toxiazai:before,.head-container .head-game-xz >a.tozturl:before{display: none}
+.head-container .head-game-xz .ios-xz{background-image:linear-gradient(242deg,#333 0,#767676 100%)}
+.head-container .head-game-xz .ios-xz:before{background-image:url(../images/ztdetail2.png)}
+.head-container .head-game-xz .no-xz{background:#ddd}
+.head-container .head-game-xz .toxiazai{background-image: linear-gradient(236deg,#e1a390 0,#ec6941 100%);height: .7rem;line-height: .7rem}
+.head-container .head-game-xz .tozturl{height: .7rem;line-height: .7rem;color: #666666;border: solid 1px #cccccc;background-image:unset;box-sizing: border-box}
+
+
+
+

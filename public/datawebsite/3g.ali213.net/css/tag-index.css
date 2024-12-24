@@ -1,0 +1,104 @@
+body {
+    width: 100%;
+    font-size: 12px;
+    font-family: STHeiti,Arial;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+.detail-table{width: 97.2%;height: .65rem;text-align: left;line-height: .65rem;  padding-left: 10px;  font-size: .24rem;  background: #efefef;}
+.detail-table a{color:#9c999c;}
+.all {
+    width: 100%;
+    display: table;
+    margin-bottom: 20px;
+}
+.fenlei{
+    float: left;
+    background-color: rgb(255,255,255);
+    display: table;
+    width: 100%;
+}
+.fenlei a{
+    float: left;
+    width: 1.58rem;
+    height: .50rem;
+    line-height: .50rem;
+    background: #eeeeee;
+    color: rgb(83,83,83);
+    font-size: .24rem;
+    margin-left: .20rem;
+    margin-top: .30rem;
+    border-radius: .30rem;
+    overflow: hidden;
+}
+.fenlei a.active{
+    border: 1px solid rgb(0,120,255);
+    color: rgb(0,120,255);
+    background: #fff;
+    height: .45rem;
+    line-height: .45rem;
+}
+.fenlei a:nth-child(4).active{
+    height: .48rem;
+}
+.youxiheji{
+    background-color: rgb(255,255,255);
+    padding-bottom: 20px;
+    padding-top: .50rem;
+    float: left;
+}
+.content{background-color: rgb(255,255,255);padding-bottom:20px;padding-top: .50rem;display: table;}
+.content:after{
+    content:'';
+    clear:both;
+    height:0;
+    display:block;
+}
+.heji img{
+    width: 100%;
+    border-radius: 10px;
+}
+.heji{
+    margin-top: .20rem;
+    width: 45%;
+    float: left;
+    display: table;
+    padding-left: .20rem;
+    background-color: rgb(255,255,255);
+}
+.heji:nth-child(2n){
+    float: right;
+    padding-left: 0px;
+    padding-right: .20rem;
+}
+.heji span{
+    font-size: 14px;
+    color: #535353;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    overflow: hidden;
+}
+.youxiheji:after{
+    content:'';
+    clear:both;
+    height:0;
+    display:block;
+}
+.tag_more{width:100%;height: 1.0rem;background: #fff;float: left;}
+.more{
+    text-decoration: none;
+    display: table;
+    width: 3.20rem;
+    height: .52rem;
+    line-height: .52rem;
+    color: #8f8f8f;
+    font-size: .24rem;
+    border: 1px solid #8f8f8f;
+    text-align: center;
+    margin: .24rem auto;
+    border-radius: .26rem;
+}
+.abdd{background: #fff;padding: 0 2%;width: 96%;overflow: hidden;}

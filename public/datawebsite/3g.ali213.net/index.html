@@ -1,0 +1,351 @@
+<head>
+	<meta charset="utf-8">
+	<title>{$toptitle}</title>
+	<meta name="keywords" content="{$keywords}">
+	<meta name="description" content="{$description}">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<meta name="format-detection" content="address=no;email=no;telphone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="cache-control" content="no-transform">
+	<meta http-equiv="cache-control" content="no-siteapp">
+	<!-- Le styles -->
+	<link href="{$theme_path}/css/global.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="{$theme_path}/css/swiper-3.4.2.min.css?1" media="screen" rel="stylesheet" type="text/css">
+	<link href="{$theme_path}/css/www.ali213.net" rel="canonical">
+	<link href="{$theme_path}/css/mip.ali213.net" rel="miphtml">
+	<link href="{$theme_path}/css/index.css?1735024965" media="screen" rel="stylesheet" type="text/css">
+	<link href="{$theme_path}/css/swiper-3.4.2.min.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="{$theme_path}/css/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="{$theme_path}/css/yx.png" rel="apple-touch-icon-precomposed"><!-- Scripts -->
+	<script type="text/javascript" src="{$theme_path}/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/rem.js"></script>
+	</script>
+</head>
+
+<body>
+	<div class="search-container">
+		<div class="search-con">
+			<div class="top-header">
+				<a href="/" class="top-game-logo"></a>
+				<div class="top-more"></div>
+			</div>
+			<div class="search-content">
+				<div class="swiper-container nav-swiper search-nav-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="" class="checked"><span>首页</span></a>
+							{loop type="catelog" row="12" tpl="" islist=""}
+							<a href="{$vo.url}"><span>{$vo.title}</span></a>
+							{/loop}
+						</div>
+					</div>
+				</div>
+				<div class="search-bar has-margins">
+					<form action="/search.html" method="get">
+						<input type="search" class="search-input" name="keyword" value placeholder="英雄联盟手游"
+							autocomplete="off">
+						<input type="submit" class="search-submit" value>
+					</form>
+				</div>
+				<div class="has-margins hot-search">
+					<span>热门搜索：</span>
+				</div>
+				<div class="has-margins search-result"></div>
+			</div>
+		</div>
+		<div class="close-search"></div>
+	</div>
+	<script type="text/javascript" src="{$theme_path}/js/global.js"></script>
+	<div class="container">
+		<div class="swiper-container nav-swiper index-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="/" class="checked"><span>首页</span></a>
+					{loop type="catelog" row="10" tpl="" islist=""}
+					<a href="{$vo.url}"><span>{$vo.title}</span></a>
+					{/loop}
+				</div>
+			</div>
+		</div>
+		<div class="swiper-container banner-swiper">
+			<div class="swiper-wrapper">
+				{loop type="arclist" row="12" tpl="" islist=""}
+				<div class="swiper-slide"><a href="{$vo.url}"><img src="{$vo.pic}"
+							alt="{$vo.title}"><span>{$vo.title}</span></a></div>
+				{/loop}
+			</div>
+			<div class="banner-pagination"></div>
+		</div>
+		<div class="head-news has-margins">
+			<div class="hot-news-t">
+				<div></div>
+				<div>
+					<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+				</div>
+			</div>
+			<div class="hot-news">
+				{loop type="arclist" row="12" tpl="" islist=""}
+				<a href="{$vo.url}"><b>号外</b>{$vo.title}</a>
+				{/loop}
+			</div>
+		</div>
+		<div class="news-container has-margins">
+			<div class="news-toggle toggle-ul">
+				<span class="checked">资讯</span>
+				<span>大侠号</span>
+				<span>评测</span>
+			</div>
+			<div class="news-ul">
+				<ul class="news-li toggle-li" data-row="12">
+					{loop type="arclist" row="12" tpl="" islist=""}
+					<li>
+						<a href="{$vo.url}"><img src="{$vo.pic}"></a>
+						<div>
+							<a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+							<div class="news-info">
+								<span>{$vo.hits}分钟以前</span>
+								<label><i></i>{随机数字}</label>
+							</div>
+						</div>
+					</li>
+					{/loop}
+				</ul>
+				<ul class="news-li toggle-li" data-row="12">
+					{loop type="arclist" row="12" tpl="" islist=""}
+					<li>
+						<a href="{$vo.url}"><img src="{$vo.pic}"></a>
+						<div>
+							<a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+							<div class="news-info">
+								<span>{$vo.hits}分钟以前</span>
+								<label><i></i>{随机数字}</label>
+							</div>
+						</div>
+					</li>
+					{/loop}
+				</ul>
+				<ul class="news-li toggle-li" data-row="12">{loop type="arclist" row="12" tpl="" islist=""}
+					<li>
+						<a href="{$vo.url}"><img src="{$vo.pic}"></a>
+						<div>
+							<a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+							<div class="news-info">
+								<span>{$vo.hits}分钟以前</span>
+								<label><i></i>{随机数字}</label>
+							</div>
+						</div>
+					</li>
+					{/loop}
+				</ul>
+			</div>
+		</div>
+		<a href="{随机栏目URL}" class="read-more" rel="nofollow" title="{随机栏目}">{随机栏目}</a>
+		<!--<div class="abdd"></div>-->
+		<div class="part-title">手游下载<a href="//app.ali213.net" rel="nofollow">更多 <i></i></a></div>
+		<!------include-prefix-data-path="/include/qztf_3g.html"------>
+		<div class="qztfbox">
+			<link rel="stylesheet" href="{$theme_path}/css/qztf.css">
+			<div class="qztf noshow" id="qztf-android">
+				<div class="qztf-t">
+					<span>精品手游推荐</span>
+				</div>
+				<div class="qztf-c">
+					{loop type="arclist" row="15" tpl="" islist=""}
+					<a href="{$vo.url}"><img src="{$vo.pic}"><span>{$vo.title}</span></a>
+					{/loop}
+				</div>
+			</div>
+			<div class="qztf noshow" id="qztf-ios">
+				<div class="qztf-t">
+					<span>精品手游推荐</span>
+				</div>
+				<div class="qztf-c">
+					{loop type="arclist" row="15" tpl="" islist=""}
+					<a href="{$vo.url}"><img src="{$vo.pic}"><span>{$vo.title}</span></a>
+					{/loop}
+				</div>
+			</div>
+			<script src="{$theme_path}/js/qztf.js"></script>
+		</div><!------include-suffix------>
+		<div class="down-container has-margins">
+			<div class="down-toggle toggle-ul">
+				<span class="checked">热门推荐</span>
+				<span>最新游戏</span>
+			</div>
+			<div class="down-ul">
+				<ul class="down-li toggle-li" data-row="6">
+					{loop type="arclist" row="6" tpl="" islist=""}
+					<li>
+						<a href="{$vo.url}" class="down-img"><img src="{$vo.pic}" alt="鸣潮"></a>
+						<div class="down-content">
+							<a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+							<p><span>{随机时间}</span>|
+								<span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}MB</span>
+							</p>
+						</div>
+						<a href="{$vo.url}" class="down-btn" title="下载">下载</a>
+					</li>
+					{/loop}
+				</ul>
+				<ul class="down-li toggle-li" data-row="6">
+					{loop type="arclist" row="6" tpl="" islist=""}
+					<li>
+						<a href="{$vo.url}" class="down-img"><img src="{$vo.pic}" alt="鸣潮"></a>
+						<div class="down-content">
+							<a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+							<p><span>{随机时间}</span>|
+								<span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}MB</span>
+							</p>
+						</div>
+						<a href="{$vo.url}" class="down-btn" title="下载">下载</a>
+					</li>
+					{/loop}
+				</ul>
+			</div>
+		</div>
+		<!--热门游戏-->
+		<div class="part-title">热门游戏<a href="/yxk/" rel="nofollow">更多 <i></i></a></div>
+		<div class="swiper-container hot-swiper">
+			<div class="swiper-wrapper">
+				{loop type="arclist" row="10" tpl="" islist=""}
+				<div class="swiper-slide">
+					<a href="{$vo.url}">
+						<img src="{$vo.pic}" alt="{$vo.title}">
+						<span>{$vo.title}</span>
+					</a>
+					<a href="{随机内容URL}">
+						<img src="{随机图片}" alt="{随机标题}">
+						<span>{随机标题}</span>
+					</a>
+				</div>
+				{/loop}
+			</div>
+		</div>
+		<!--攻略推荐-->
+		<div class="part-title">攻略推荐<a href="/gl/" rel="nofollow">更多 <i></i></a></div>
+		<div class="strategy-container has-margins">
+			<div class="strategy-toggle toggle-ul">
+				<span class="checked">单机攻略</span>
+				<span>手游攻略</span>
+			</div>
+			<div class="strategy-ul">
+				<ul class="strategy-li toggle-li" data-row="1">
+					<li>
+						{loop type="arclist" row="10" tpl="" islist=""}
+						<a href="{$vo.url}">
+							<span>
+								<b></b>{$vo.title}</span>
+							<i>{随机时间}</i>
+						</a>
+						{/loop}
+					</li>
+				</ul>
+				<ul class="strategy-li toggle-li" data-row="1">
+					<li>
+						{loop type="arclist" row="10" tpl="" islist=""}
+						<a href="{$vo.url}">
+							<span>
+								<b></b>{$vo.title}</span>
+							<i>{随机时间}</i>
+						</a>
+						{/loop}
+					</li>
+				</ul>
+			</div>
+		</div>
+		<a href="{随机栏目URL}" class="read-more" rel="nofollow" title="{随机栏目}">{随机栏目}</a>
+		<!--排行榜-->
+		<div class="rank-container has-margins">
+			<div class="rank-toggle">
+				<span class="checked">游戏榜</span>
+				<span>销量榜</span>
+			</div>
+			<div class="game-ranking">
+				<div class="game-toggle toggle-ul">
+					<span class="checked">新游期待榜</span>
+					<span>新游人气榜</span>
+				</div>
+				<div class="game-ul">
+					<ul class="game-li toggle-li" data-row="10">
+						{loop type="arclist" row="10" tpl="" islist=""}
+						<li class="game-top3">
+							<i></i>
+							<b>{$vo.i}</b>
+							<a href="{$vo.url}">
+								<img src="{$vo.pic}" alt="{$vo.title}">
+							</a>
+							<div class="game-info">
+								<a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a>
+								<p><span>{$vo.postdate}</span><em>期待值</em>{$vo.hits}</p>
+								<div class="game-links">
+									<a href="{随机栏目URL}">{随机栏目}</a><a href="{随机栏目URL}" class="active"
+										title="{随机栏目}">{随机栏目}</a>
+								</div>
+							</div>
+						</li>
+						{/loop}
+					</ul>
+					<ul class="game-li toggle-li" data-row="10">
+						{loop type="arclist" row="10" tpl="" islist=""}
+						<li class="game-top3">
+							<i></i>
+							<b>{$vo.i}</b>
+							<a href="{$vo.url}">
+								<img src="{$vo.pic}" alt="{$vo.title}">
+							</a>
+							<div class="game-info">
+								<a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a>
+								<p><span>{$vo.postdate}</span><em>期待值</em>{$vo.hits}</p>
+								<div class="game-links">
+									<a href="{随机栏目URL}">{随机栏目}</a><a href="{随机栏目URL}" class="active"
+										title="{随机栏目}">{随机栏目}</a>
+								</div>
+							</div>
+						</li>
+						{/loop}
+					</ul>
+					<a href="{随机栏目URL}" class="read-more" rel="nofollow" title="{随机栏目}">{随机栏目}</a>
+				</div>
+			</div>
+			<div class="sell-ranking">
+				{loop type="arclist" row="10" tpl="" islist=""}
+				<div class="sell-li" style="background-image:url('{$vo.pic}')">
+					<a href="{$vo.url}" style="background:rgba(0,0,0,0.8);">
+						<div class="sell-title" style="background:rgba(0,0,0,0.8);">
+							<span>{randstr type="2" num="4"/}年</span>
+							<p>{randstr type="2" num="2"/}月第{randstr type="2" num="2"/}期</p>
+						</div>
+						<ul data-row="3">
+							<li class="new">
+								<span>1.{$vo.title}</span>
+								<i></i>
+							</li>
+							<li class="new">
+								<span>2.全面战争：{随机关键词}</span>
+								<i></i>
+							</li>
+							<li class="up">
+								<span>3.赛博朋克{randstr type="2" num="4"/}</span>
+								<i></i>
+							</li>
+						</ul>
+					</a>
+				</div>
+				{/loop}
+				<a href="{随机栏目URL}" class="read-more" rel="nofollow" title="{随机栏目}">{随机栏目}</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<a href="https://3g.ali213.net/" class="to-index"><img src="{$vo.pic}"></a>
+		<a class="to-client"><img src="{$vo.pic}">客户端</a>
+		<a class="to-top"><img src="{$vo.pic}">回顶部</a>
+	</div>
+	<script type="text/javascript" src="{$theme_path}/js/index.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/common.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/zprotxtpicurl.js?r=1735024965"></script>
+</body>
+<script type="text/javascript" src="{$theme_path}/js/foot_tj.js"></script>

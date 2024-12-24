@@ -1,0 +1,218 @@
+<head>
+	<meta charset="UTF-8">
+	<title>{$toptitle}</title>
+	<meta name="keywords" content="{$keywords}">
+	<meta name="description" content="{$description}">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<meta name="format-detection" content="address=no;email=no;telphone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="cache-control" content="no-transform">
+	<link href="{$theme_path}/css/index.html" rel="canonical">
+	<link href="{$theme_path}/css/global.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="{$theme_path}/css/tag-index.css?r=1735023664" media="screen" rel="stylesheet" type="text/css">
+	<link href="{$theme_path}/css/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="{$theme_path}/css/yx.png" rel="apple-touch-icon-precomposed">
+	<link href="{$theme_path}/css/font-awesome.yx.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="{$theme_path}/css/swiper-3.4.2.min.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="{$theme_path}/css/global_20180516.css" media="screen" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="{$theme_path}/js/jquery.min.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/rem.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/swiper-3.4.2.min.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/jquery.lazyload.min.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/iscroll-probe.js"></script>
+</head>
+
+<body>
+	<div class="overLay">
+		<div class="magicbx">
+			<div class="static"></div>
+			<div class="rounding"></div>
+		</div>
+	</div>
+	<div class="zadmainholder" zpro-data-type="10">
+		<div class="zadmainclosebtn"></div>
+	</div>
+	<div class="uaHolder">
+		<div class="staticPart">
+			<ul data-row="1">
+				<li><a href="/"></a></li>
+			</ul>
+			<div class="header_right">
+				<div class="header_menu"><i class="icon-menu"></i></div>
+			</div>
+		</div>
+		<div class="activePart">
+			<div class="searchbar">
+				<form class="floatform" action="/android/search.html" method="get">
+					<span class="search_input"><input type="search" name="keyword" value placeholder="侍魂：胧月传说"
+							autocomplete="off"></span>
+					<div class="search_btn_outter">
+						<b class="search_btn_pretend"><em></em></b>
+						<input type="submit" class="search_submit" value>
+					</div>
+				</form>
+			</div>
+			<nav class="header_daohang">
+				<a href="{随机栏目URL}" class="header_daohang_danji" title="{随机栏目}">{随机栏目}</a>
+				<a href="{随机栏目URL}" class="header_daohang_news" title="{随机栏目}">{随机栏目}</a>
+				<a href="{随机栏目URL}" class="header_daohang_zt" title="{随机栏目}">{随机栏目}</a>
+				<a href="{随机栏目URL}" class="header_daohang_gl" title="{随机栏目}">{随机栏目}</a>
+				<a href="{随机栏目URL}" class="header_daohang_shop" title="{随机栏目}">{随机栏目}</a>
+				<a href="{随机栏目URL}" class="header_daohang_yxk" title="{随机栏目}">{随机栏目}</a>
+				<a href="{随机栏目URL}" class="header_daohang_bbs" title="{随机栏目}">{随机栏目}</a>
+				<a href="{随机栏目URL}" class="header_daohang_yingjian" title="{随机栏目}">{随机栏目}</a>
+				<a href="{随机栏目URL}" class="header_daohang_ios" title="{随机栏目}">{随机栏目}</a>
+			</nav>
+		</div>
+
+		<div class="swiper-container nav-swiper index-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="swiper-slide">
+						<a href=""><span>首页</span></a>
+						{loop type="catelog" row="12" tpl="" islist=""}
+						<a href="{$vo.url}"><span>{$vo.title}</span></a>
+						{/loop}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="uaMargin"></div>
+	<div class="all">
+		<div class="fenlei">
+			<a class="active">{随机栏目}</a>
+			<a>{随机栏目}</a>
+			<a>{随机栏目}</a>
+			<a>{随机栏目}</a>
+			<a>{随机栏目}</a>
+			<a>{随机栏目}</a>
+			<a>{随机栏目}</a>
+			<a>{随机栏目}</a>
+			<a style="display: none;" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+		</div>
+		<div class="abdd"></div>
+		<div class="youxiheji">
+			<ul data-row="0">
+				{loop type="arclist" row="15" tpl="" islist=""}
+				<a href="{$vo.url}" class="heji">
+					<img src="{$vo.pic}" alt="{$vo.title}">
+					<span>{$vo.title}</span>
+				</a>
+				{/loop}
+			</ul>
+			<div class="tag_more"><span class="more all_more" rel="1">点击查看更多</span></div>
+		</div>
+		<div class="content tag-game" style="display: none;">
+			<ul data-row="0">
+				{loop type="arclist" row="15" tpl="" islist=""}
+				<a href="{$vo.url}" class="heji">
+					<img src="{$vo.pic}" alt="{$vo.title}">
+					<span>{$vo.title}</span>
+				</a>
+				{/loop}
+			</ul>
+			<div class="tag_more"><span class="more game_more" rel="1">点击查看更多</span></div>
+		</div>
+		<div class="content tag-soft" style="display: none;">
+			<ul data-row="0">
+				{loop type="arclist" row="15" tpl="" islist=""}
+				<a href="{$vo.url}" class="heji">
+					<img src="{$vo.pic}" alt="{$vo.title}">
+					<span>{$vo.title}</span>
+				</a>
+				{/loop}
+			</ul>
+			<div class="tag_more"><span class="more soft_more" rel="1">点击查看更多</span></div>
+		</div>
+		<div class="content cs_con" style="display: none;">
+			{loop type="arclist" row="50" tpl="" islist=""}
+			<a href="{$vo.url}" class="heji">
+				<img src="{$vo.pic}" alt="{$vo.title}">
+				<span>{$vo.title}</span>
+			</a>
+			{/loop}
+		</div>
+		<div class="content ts_con" style="display: none;">
+			{loop type="arclist" row="30" tpl="" islist=""}
+			<a href="{$vo.url}" class="heji">
+				<img src="{$vo.pic}" alt="{$vo.title}">
+				<span>{$vo.title}</span>
+			</a>
+			{/loop}
+		</div>
+		<div class="content zlz_con" style="display: none;">
+			{loop type="arclist" row="40" tpl="" islist=""}
+			<a href="{$vo.url}" class="heji">
+				<img src="{$vo.pic}" alt="{$vo.title}">
+				<span>{$vo.title}</span>
+			</a>
+			{/loop}
+		</div>
+		<div class="content pd_con" style="display: none;">
+			{loop type="arclist" row="40" tpl="" islist=""}
+			<a href="{$vo.url}" class="heji">
+				<img src="{$vo.pic}" alt="{$vo.title}">
+				<span>{$vo.title}</span>
+			</a>
+			{/loop}
+		</div>
+		<div class="content hd_con" style="display: none;">
+			{loop type="arclist" row="10" tpl="" islist=""}
+			<a href="{$vo.url}" class="heji">
+				<img src="{$vo.pic}" alt="{$vo.title}">
+				<span>{$vo.title}</span>
+			</a>
+			{/loop}
+		</div>
+
+		<div style="display: none;">
+			{loop type="arclist" row="1500" tpl="" islist=""}
+			<a href="{$vo.url}" class="heji">
+				<img src="{$vo.pic}" alt="{$vo.title}">
+				<span>{$vo.title}</span>
+			</a>
+			{/loop}
+		</div>
+	</div>
+	<div class="footer">
+		<a class="to-client"><img src="{$vo.pic}">客户端</a>
+		<a href="https://app.ali213.net/top/hot.html" class="to-pc"><img src="{$vo.pic}">排行榜</a>
+		<a href="https://app.ali213.net/" class="to-index"><img src="{$vo.pic}"></a>
+	</div>
+	<div style="display: none;">
+		<script src="{$theme_path}/js/realtime_hits.js" language="JavaScript"></script>
+	</div>
+
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?d8ab2d96f825f2b3b3fa0980881a4700";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script type="text/javascript" src="{$theme_path}/js/global_20180516.js?r=1735023664"></script>
+	<script type="text/javascript" src="{$theme_path}/js/common.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/overlay.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/zprotxtpicurl.js?r=1735023664"></script>
+	<script type="text/javascript" src="{$theme_path}/js/tag-index.js?r=1735023664"></script>
+	<script>
+		(function () {
+			var bp = document.createElement('script');
+			var curProtocol = window.location.protocol.split(':')[0];
+			if (curProtocol === 'https') {
+				bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+			}
+			else {
+				bp.src = '//push.zhanzhang.baidu.com/push.js';
+			}
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(bp, s);
+		})();
+	</script>
+</body>

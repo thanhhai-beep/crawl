@@ -1,0 +1,182 @@
+.allplay{
+	background:#FFF;
+	overflow:hidden;
+	}
+.allplay .nav{
+    display:block;
+    height:40px;
+	border-bottom:2px solid #e8e8e8;
+	background:#FFF;
+	}
+.allplay .nav h4{
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	font-weight:100;
+	width:88px;
+	text-align:center;
+	margin-left:10px;
+	border-bottom:2px solid #16b3de;
+	
+	}
+.allplay .gmp .cn{
+ display:block;	
+ overflow:hidden;
+ padding-bottom:40px;
+	}
+.allplay .gmp .nwap{
+	display:block;
+	padding-bottom:40px;
+	width:300%;
+}	
+.gmp .cn li,.gmp .nwap li{
+	width:25%;
+	height:114px;
+	float:left;
+	display:block;
+	text-align:center;
+	margin-top:20px;
+	}	
+.gmp .nwap li{
+	width:94px;
+	margin-bottom:10px;
+}	
+.gmp .cn li .gu,.gmp .nwap li .gu{
+	display:inline-block;	
+	}	
+.gmp .cn li .gu img,.gmp .nwap li .gu img{
+	width:70px;
+	height:70px;
+	border-radius:13px;
+	}	
+.gmp .cn li .gu p,.gmp .nwap li .gu p{
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	width:70px;
+	text-align:center;
+	}
+.gmp .cn li .dow a,.gmp .nwap li .dow a {
+	padding:3px 8px;
+	border:1px solid #16b3de;
+	border-radius:3px;
+	color:#16b3de;
+	}
+.gump{
+	overflow-x:auto;
+	overflow-y:hidden;
+}	
+.nmore{
+	margin-top:-30px;
+}	
+/*cata list*/
+.cata_game{
+	background:#FFF;
+	overflow:hidden;
+	border-top:1px solid #ddd;
+	padding-top:5px;
+	}	
+.cata_game .tit h4{
+	font-weight:100;
+	font-size:16px;
+	border-left:4px solid #16b3de;
+	margin:4px 0 0 15px;
+	padding-left:10px;
+	}	
+.cata_game .tit .more{
+	 margin-top:-12px;
+	}	
+.cata_game .cata_con{
+	display:block;
+	margin-top:10px;
+	}	
+.cata_game .cata_con li{
+	display:block;
+	padding:10px;
+	position:relative;
+	border-bottom:1px solid #ddd;
+	}
+.cata_game .cata_con li .yz{
+	display:block;
+    width:70px;
+	height:70px;
+	overflow:hidden;
+	border-radius:10px;
+	float:left;
+	margin-right:10px;
+	}
+.cata_game .cata_con li .yz img{
+   width:70px;
+   height:70px;	
+	}					
+.cata_game .cata_con li .con{
+	overflow:hidden;
+	}	
+.cata_game .cata_con li .con .ba{
+	margin:7px 0;
+	display:block;
+	}	
+.cata_game .cata_con li .con .ba i{
+	 color:#666;
+	}	
+.cata_game .cata_con li .con .ba a{
+	padding:0 5px;
+	font-size:12px;
+	border-radius:3px;
+	margin-right:5px;
+	}	
+.cata_game .cata_con li .con .ba .gq1{
+	border:1px solid #39F;
+	color:#39F;
+	}
+.cata_game .cata_con li .con .ba .gq2{
+	border:1px solid #FC0;
+	color:#FC0;
+	}	
+.cata_game .cata_con li .con .ba .gq3{
+	border:1px solid #9C0;
+	color:#9C0;
+	}
+.cata_game .cata_con li .con .ba .gq4{
+	border:1px solid #C3F;
+	color:#C3F;
+	}			
+.cata_game .cata_con li .ms{
+	color:#999;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	}	
+.cata_game .cata_con li a.dbtn{
+	padding:5px 17px;
+	background:#16b3de;
+	color:#fff;
+	position:absolute;
+	right:2%;
+	top:27px;
+	border-radius:3px;
+	}	
+	
+/*load*/
+.yxload{
+ width:100%;
+ background:#FFF;	
+ margin:10px auto;	
+}	
+.yxload img{
+	width:30px;
+	display:block;
+	margin:0 auto;
+	padding:5px 0;
+}
+
+/*jianju*/
+.gmp .nwap li .dow{
+	margin-top:7px;	
+}
+.more {
+    float: right;
+    color: #858585;
+    font-size: 14px;
+    padding-right: 10px;
+}

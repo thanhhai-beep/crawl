@@ -1,0 +1,387 @@
+<head>
+  <meta name="applicable-device" content="mobile">
+  <meta charset="utf-8">
+  <title>{$toptitle}</title>
+  <meta name="keywords" content="{$keywords}">
+  <meta name="Description" content="{$description}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="canonical" href="{$thisurl}">
+  <link rel="stylesheet" href="{$theme_path}/css/base.css">
+  <link rel="stylesheet" href="{$theme_path}/css/app_game.css">
+  <script type="text/javascript" src="{$theme_path}/js/jquery.js"></script>
+  <script type="text/javascript" src="{$theme_path}/js/config.js"></script>
+</head>
+
+<body>
+  <div class="Header">
+    <div id="QZhead2">
+      <div class="box"><a href="/" class="logo"></a>
+        <p>{网站名称}</p><span class="meun"></span>
+      </div>
+      <div class="QZburger2">
+        <ul data-row="5">
+          <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+          <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+          <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+          <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+          <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+        </ul>
+        <div class="search">
+          <div class="search_box">
+            <form name="search" action="/ajax/search/" method="get">
+              <input type="hidden" name="s" value="13839653606129666196">
+              <input type="hidden" name="entry" value="1">
+              <input type="text" name="q" placeholder="请输入游戏名称" maxlength="25" class="search-input">
+              <input type="submit" class="search-btn" value>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menuwrap">
+      <span class="l-y"></span><span class="r-y"></span>
+      <div class="menu index">
+        <ul data-row="7">
+          <li><a class="current" href="/" title="{随机栏目}">{随机栏目}</a></li>
+          <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+          <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+          <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+          <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+          <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+          <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <article class="allplay">
+    <nav class="nav">
+      <h1>{$keywords}</h1>
+    </nav>
+    <div class="gmp">
+      <ul class="cn " data-row="8">
+        {loop type="arclist" row="10" tpl="" islist=""}
+        <li>
+          <a class="gu" href="{$vo.url}">
+            <img src="{$vo.pic}" alt="{$vo.title}">
+            <p>{$vo.title}</p>
+          </a>
+          <p class="dow"><a href="" title="详情">详情</a></p>
+        </li>
+        {/loop}
+      </ul>
+    </div>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>角色扮演</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>{$keywords}</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>{$keywords}</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>体育运动</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>{$keywords}</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>棋牌游戏</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>模拟经营</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>{$keywords}</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>养成游戏</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>射击游戏</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>格斗游戏</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>{$keywords}</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>竞速游戏</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+  <article class="cata_game">
+    <nav class="tit">
+      <h4>音乐游戏</h4><a href="{随机栏目URL}" class="more">更多></a>
+    </nav>
+    <ul class="cata_con" data-row="4">
+      {loop type="arclist" row="10" tpl="" islist=""}
+      <li>
+        <a href="{$vo.url}" class="yz"><img src="{$vo.pic}"></a>
+        <div class="con">
+          <h3><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h3>
+          <span class="ba"><i>{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</i> |
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            <a class="gq1" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span>
+          <p class="ms">{$vo.info}</p>
+        </div>
+        <a class="dbtn" href="{$vo.url}" title="详情">详情</a>
+      </li>
+      {/loop}
+    </ul>
+  </article>
+
+
+
+  <script type="text/javascript" src="{$theme_path}/js/app.js"></script>
+  <script type="text/javascript" src="{$theme_path}/js/common.js"></script>
+  <script type="text/javascript" src="{$theme_path}/js/hotlist.js"></script>
+  <footer class="QZfoot">
+    <span></span>
+    <p>{随机栏目}</p>
+    <div>
+      <a href="/"><em>首页</em></a>
+      <a href="#"><em>{$keywords}</em></a>
+    </div>
+  </footer>
+  <div class="QZ-up"></div>
+  <script type="text/javascript" src="{$theme_path}/js/tj.js"></script>
+</body>

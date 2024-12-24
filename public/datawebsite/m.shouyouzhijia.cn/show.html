@@ -1,0 +1,243 @@
+<head>
+	<meta name="applicable-device" content="mobile">
+	<meta charset="utf-8">
+	<title>{$toptitle}</title>
+	<meta name="keywords" content="{$keywords}">
+	<meta name="description" content="{$description}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Cache-Control" content="no-transform">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="canonical" href="{$thisurl}">
+	<link rel="stylesheet" href="{$theme_path}/css/base.css">
+	<link rel="stylesheet" href="{$theme_path}/css/appinfo.css">
+	<script type="text/javascript" src="{$theme_path}/js/jquery.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/config.js"></script>
+</head>
+
+<body>
+	<div class="Header">
+		<div id="QZhead2">
+			<div class="box"><a href="/" class="logo"></a>
+				<p>{网站名称}</p><span class="meun"></span>
+			</div>
+			<div class="QZburger2">
+				<ul data-row="5">
+					<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+					<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+					<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+					<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+					<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+				</ul>
+				<div class="search">
+					<div class="search_box">
+						<form name="search" action="/ajax/search/" method="get">
+							<input type="hidden" name="s" value="13839653606129666196">
+							<input type="hidden" name="entry" value="1">
+							<input type="text" name="q" placeholder="请输入游戏名称" maxlength="25" class="search-input">
+							<input type="submit" class="search-btn" value>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menuwrap">
+			<span class="l-y"></span><span class="r-y"></span>
+			<div class="menu index">
+				<ul data-row="7">
+					<li><a class="current" href="/" title="{随机栏目}">{随机栏目}</a></li>
+					<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+					<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+					<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+					<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+					<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+					<li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>D_top()</script>
+	<div class="dvideo"></div>
+	<div id="appBox" class="downl_wrap appBox" data-id="363074" data-appname="{$title}" isgametype="0" data-llip="False"
+		data-fixed="0" data-code>
+		<div id="infocont" class="info">
+			<span class="tx"><img src="{$pic}" alt="{$title}"></span>
+			<h2 class="bt">{$title}</h2>
+			<div class="txt">更新:{$postdate}<span class="discu">评论</span></div>
+			<div class="txt2">{randstr type="5" num="20"/}</div>
+			<div class="btn topdown"><a href="" class="btn" rel="nofollow">立即下载</a></div>
+		</div>
+	</div>
+	<script>D_1()</script>
+	<div class="basebox">
+		<div class="img_item Qimgs">
+			<ul data-row="3">
+				{loop type="arclist" row="3" tpl="" islist=""}
+				<li><img src="{$vo.pic}" alt="{$title}"></li>
+				{/loop}
+			</ul>
+		</div>
+		<h1 style="font-size: 16px;">{$keywords}</h1>
+		<div class="txtwrap">
+			<div class="txtcont">
+				{$body}
+			</div>
+			<div class="txt_foot">
+				<div class="open_btn">展开</div>
+			</div>
+		</div>
+	</div>
+	<div class="basebox bq_wrap">
+		<ul data-row="5">
+			<li>大小：<span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}MB</span></li>
+			<li>分类：<a href="{随机栏目URL}" class="ncatalog" title="{随机栏目}">{随机栏目}</a></li>
+			<li>版本：<span>v{randstr type="2" num="2"/}.{randstr type="2" num="2"/}</span></li>
+			<li>小编：<span><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></span></li>
+			<li class="cs">厂商：<span>{随机关键词}</span></li>
+		</ul>
+	</div>
+
+	<script>D_2()</script>
+	<div class="cont_3 xgcs basebox">
+		<div class="Q_title">
+			<h2>{$keywords} {随机栏目}</h2>
+		</div>
+		<ul class="lisstyl1" data-row="5">
+			{loop type="arclist" row="10" tpl="" islist=""}
+			<li>
+				<a href="{$vo.url}" class="img"><img src="{$vo.pic}"></a>
+				<a href="{$vo.url}" class="downl">详情</a>
+				<div class="info">
+					<div>
+						<a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a>
+						<p class="size">{randstr type="2" num="2"/}.{randstr type="2" num="2"/}MB</p>
+						<p class="miaoshu">{$vo.info}</p>
+					</div>
+				</div>
+			</li>
+			{/loop}
+		</ul>
+	</div>
+	<script>D_xgxz()</script>
+	<div class="bb_wrap">
+		<h2 class="bt">猜你喜欢</h2>
+		<div class="like_tab">
+			<p class="on">脑力</p>
+			<p class="">趣味</p>
+		</div>
+		<div class="like_item">
+
+			<div class="item cur">
+				<div class="item_info">
+					{loop type="arclist" row="1" tpl="" islist=""}
+					<div class="time">
+						<a class="bt" href="{$vo.url}" title="{随机栏目}">{随机栏目}</a>
+						<i></i>
+						<span>共{随机数字}款游戏</span>
+						<a class="mr" href="{$vo.url}" title="更多>">更多></a>
+					</div>
+					<p class="miaoshu">{$vo.info}</p>
+					{/loop}
+				</div>
+				<ul data-row="8">
+					{loop type="arclist" row="10" tpl="" islist=""}
+					<li>
+						<a href="{$vo.url}" class="img"><img src="{$vo.pic}"></a>
+						<p class="name">{$vo.title}</p>
+						<p class="bq">{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</p>
+						<a href="{$vo.url}" class="downl_btn" title="详情">详情</a>
+					</li>
+					{/loop}
+				</ul>
+			</div>
+
+			<div class="item ">
+				<div class="item_info">
+					{loop type="arclist" row="1" tpl="" islist=""}
+					<div class="time">
+						<a class="bt" href="{$vo.url}" title="{随机栏目}">{$keywords} {随机栏目}</a>
+						<i></i>
+						<span>共{随机数字}款游戏</span>
+						<a class="mr" href="{$vo.url}" title="更多>">更多></a>
+					</div>
+					<p class="miaoshu">{$vo.info}</p>
+					{/loop}
+				</div>
+				<ul data-row="8">
+					{loop type="arclist" row="10" tpl="" islist=""}
+					<li>
+						<a href="{$vo.url}" class="img"><img src="{$vo.pic}"></a>
+						<p class="name">{$vo.title}</p>
+						<p class="bq">{randstr type="2" num="2"/}.{randstr type="2" num="3"/}MB</p>
+						<a href="{$vo.url}" class="downl_btn" title="详情">详情</a>
+					</li>
+					{/loop}
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<script>D_zxzx()</script>
+	<div class="cont_5 basebox">
+		<div class="Q_title">
+			<h2>{$keywords} {随机栏目}</h2>
+		</div>
+		<div class="cont5_lis tis">
+			{loop type="arclist" row="10" tpl="" islist=""}
+			<a href="{$vo.url}" title="{$vo.title}">{$vo.title}<span>{$vo.postdate}</span></a>
+			{/loop}
+		</div>
+	</div>
+	<script>D_xgwz()</script>
+	<div class="cont_5 basebox">
+		<div class="Q_title">
+			<h2>{随机栏目}</h2>
+		</div>
+		<div class="cont5_lis">
+			{loop type="arclist" row="10" tpl="" islist=""}
+			<a href="{$vo.url}" title="{$vo.title}">{$vo.title}<span>{$vo.postdate}</span></a>
+			{/loop}
+		</div>
+	</div>
+
+	<script>D_ping()</script>
+	<div class="cont_p basebox">
+		<div class="Q_title">
+			<h2>{随机栏目}</h2>
+		</div>
+		<div class="plhtml">
+			<div class="pllist">
+				<ul data-row="0"></ul>
+				<div id="loadmore" class="loadmore">加载更多</div>
+			</div>
+			<div class="pladd">
+				<span class="reping"><input type="hidden" id="glPID" value="0">回复 [<em>1</em>楼 ]<i>取消回复</i></span>
+				<input type="hidden" id="objID" value="363074">
+				<input type="hidden" id="objType" value="1">
+				<textarea id="cmtMsg" placeholder="说点什么吧…"></textarea>
+				<span class="bom">
+					<input id="userName" type="text" value="手游之家玩家">
+					<input type="button" value="提 交" id="subCmt">
+				</span>
+			</div>
+		</div>
+	</div>
+	<script>D_foot()</script>
+	<script type="text/javascript" src="{$theme_path}/js/app.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/iscrollc.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/common.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/appinfo.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/comment.js"></script>
+	<footer class="QZfoot">
+		<span></span>
+		<p>{随机栏目}</p>
+		<div>
+			<a href="/"><em>首页</em></a>
+			<a href="#"><em>{$keywords}</em></a>
+		</div>
+	</footer>
+	<div class="QZ-up"></div>
+	<script type="text/javascript" src="{$theme_path}/js/tj.js"></script>
+
+	<script>app_dj();</script>
+</body>

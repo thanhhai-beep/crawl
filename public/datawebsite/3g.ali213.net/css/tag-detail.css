@@ -1,0 +1,135 @@
+body{width:100%;font-size:12px;font-family:"寰蒋闆呴粦";text-align:center;background-color:#f2f2f2;margin:0}
+.detail-table{width:97.2%;height:.65rem;text-align:left;line-height:.65rem;padding-left:10px;font-size:.24rem;background:#efefef}
+.detail-table a{color:#9c999c}
+.all{margin:0 auto;display:block;width:7.5rem;position:relative}
+.zhanqiindex_tab{width:100%;height:50px;background-color:#fff}
+.zhanqiindex_tab a{float:left;width:20%;border:0;height:50px;line-height:50px;text-align:center;font-size:18px;color:#575757;text-decoration:none}
+.zhanqiindex_tab a.active{position:relative;color:red}
+.zhanqiindex_tab a.active::before{content:'';position:absolute;width:100%;height:2px;background:red;left:0;bottom:0}
+.zhanqiindex_tab a.active::after{content:'';position:absolute;border-bottom:5px solid red;border-right:5px solid transparent;border-left:5px solid transparent;bottom:2px;left:50%;margin-left:-4px}
+.zhanqiindex_pic{margin:0 auto;position:relative}
+.zhanqiindex_pic img{width:100%;display:table}
+.all .hp{position:absolute;left:0;top:1.7rem;background:transparent;width:7.5rem;height:1.9rem}
+.all .hp:before{content:'';width:7.5rem;height:1.9rem;background:#000;opacity:.5;display:block;position:absolute;left:0;top:0}
+.all .hp .uponea{height:.4rem;position:relative}
+.all .hp .uponea h1{color:#fff}
+.all .hp .uponeb{position:relative}
+.all .hp .uponeb p{height:.8rem;line-height:.4rem;color:#fff}
+.all .hp .uponec{height:.4rem;color:#fff;position:relative}
+.upone{width:100%;background-color:#fff}
+.uponea{display:table;float:left;width:94%;padding:.1rem .20rem 0 .20rem}
+.uponea p{font-size:.36rem;font-weight:bold;margin:0;text-align:left;color:#232323}
+.uponea h1{font-size:.3rem;font-weight:bold;margin:0;text-align:left;color:#232323}
+.uponeb{text-indent:5%;width:100%;float:left;font-size:15px;display:table}
+.uponeb p{display:block;float:left;text-align:left;margin:0 15px;overflow:hidden;height:1.5rem;line-height:.50rem;font-size:.24rem;}
+.uponec{display:table;width:92%;margin:0 auto;text-align:right}
+.end .uponec{text-align:center}
+.uponec a{float:left;height:.50rem;line-height:.50rem;background:#eee;border-radius:.30rem;font-size:.30rem;color:#0078ff;text-decoration:none;overflow:hidden;width:2.0rem;margin-right:3%;margin-top:.30rem;margin-bottom:.30rem}
+.uponec a:nth-child(3n){margin-right:0}
+/*.uponec a:link{color:#0078ff}*/
+.tjdown{width:100%;background:#fff;padding-top:.3rem;display:table}
+.tjdown .tjdown-l{width:1.4rem;height:1.4rem;float:left;margin-left:.3rem;display:inline-block}
+.tjdown .tjdown-l img{width:100%;height:100%}
+.tjdown .tjdown-r{width:5.2rem;height:1.4rem;float:left;margin-left:.3rem}
+.tjdown .tjdown-r a{width:100%;display:block;height:.6rem;line-height:.6rem;overflow:hidden;color:#444;text-align:left;font-size:.3rem}
+.tjdown .tjdown-r span{width:100%;display:block;height:.4rem;line-height:.4rem;overflow:hidden;color:#888;text-align:left}
+.tjdown .tjdown-r p{width:100%;display:block;height:.4rem;line-height:.4rem;overflow:hidden;color:#888;text-align:left}
+.tjdown .tjdown-b{width:6.9rem;height:.6rem;line-height:.6rem;background:url(../images/hejitjdownbg.png) no-repeat;background-size:100%;text-indent:.3rem;float:left;margin-left:.3rem;margin-top:.3rem;color:#fff;font-size:.28rem;display:inline-block}
+
+.tjdown .tjdownbox{
+    width: 6.9rem;
+    margin-top: .3rem;
+    float: left;
+    margin-left: .3rem;
+}
+.tjdown .tjdownbox .tjdown-b1{
+    width: 3.33rem;
+    height: .6rem;
+    border-radius: .3rem;
+    border: solid 1px #3070f6;
+    line-height: .6rem;
+    float: left;
+    color: #3d6ff6;
+    font-size: .28rem;
+}
+.tjdown .tjdownbox .tjdown-b2{
+    width: 3.33rem;
+    height: .6rem;
+    border-radius: .3rem;
+    border: solid 1px #3070f6;
+    background: #3070f6;
+    line-height: .6rem;
+    float: right;
+    color: #fff;
+    font-size: .28rem;
+}
+.tjdown .tjdownbox .tjdown-b3{
+    width: 3.33rem;
+    height: .4rem;
+    line-height: .4rem;
+    float: right;
+    color: #3070f6;
+    font-size: .24rem;
+
+}
+
+.down{width:100%;background-color:#fff;padding-top:15px;float:left}
+.list ul{list-style:none;margin:0;padding:0}
+.list ul >a{float:left;width:7.5rem;height:1.0rem;border-bottom:3px solid #e9e9e9;padding:.30rem 0 .30rem 0}
+.list ul >a >img{display:block;width:1.0rem;border-radius:24%;float:left;margin-left:.20rem}
+.list ul >a >p{color:#535353;font-size:.30rem;line-height:.40rem;height:.40rem;overflow:hidden;width:50%;float:left;text-align:left;padding-left:.30rem}
+.list ul >a >em.tj{font-style:normal;float:left;width:33px;height:20px;margin-top:10px;background:url(../images/hjdetail_iocn.png) -13px -10px no-repeat}
+.list ul >a >em.rm{font-style:normal;float:left;width:33px;height:20px;margin-top:10px;background:url(../images/hjdetail_iocn.png) -13px -36px no-repeat}
+.list ul >a >.type-size{width:50%;float:left;text-align:left;padding-left:.30rem;color:#adadad;margin-top:.20rem;font-size:.24rem}
+.list ul >a >.down{margin-right:.20rem;margin-top:-2%;width:1.30rem;float:right;height:.50rem;line-height:.50rem;color:#0078ff;background:#eaeaea;border-radius:.25rem;font-size:.24rem;padding:0}
+.more{width:7.5rem;float:left}
+.more span{text-align:center;text-decoration:none;height:.50rem;line-height:.50rem;width:3.2rem;display:table;margin:0 auto;color:#8f8f8f;border:1px solid #8f8f8f;border-radius:.26rem;font-size:.24rem;margin-top:.30rem}
+.hot{margin-top:.60rem;float:left}
+.hot p{display:inline-block;float:left;width:80%;text-align:left;color:#232323;font-size:.30rem;font-weight:bold;margin:0 0 0 .20rem}
+.hot p em{width:.10rem;height:.26rem;margin-top:.10rem;float:left;background:#0079ff;margin-right:5px;border-radius:.04rem}
+.hotgame{width:3.4rem;float:left;background-color:#fff;margin-left:.20rem;margin-top:.30rem}
+.hotgame:nth-child(2n){float:right;margin-right:.20rem;margin-left:0}
+.hotgame img{width:100%;float:left;border-radius:10px}
+.hot:after{content:'';clear:both;height:0;display:block}
+.hotgame span{font-size:.24rem;color:#535353;height:.50rem;line-height:.50rem;float:left;width:100%;overflow:hidden}
+.moretwo{background-color:#fff;clear:both;padding:10px}
+.moretwo a{text-align:center;text-decoration:none;height:.50rem;line-height:.50rem;width:3.2rem;display:table;margin:0 auto;color:#8f8f8f;border:1px solid #8f8f8f;border-radius:.26rem;font-size:.24rem;margin-top:.30rem}
+.end{float:left;background-color:#fff;display:table;width:100%;margin-bottom:.30rem}
+.end p{display:inline-block;float:left;width:97%;text-align:left;color:#232323;font-size:.30rem;margin:0 0 0 .20rem;font-weight:bold}
+.end p em{width:.10rem;height:.26rem;margin-top:.10rem;float:left;background:#0079ff;margin-right:5px;border-radius:.04rem}
+.end a{float:left;width:1.58rem;height:.50rem;line-height:.50rem;background:#eee;color:#535353;font-size:.24rem;margin-left:.20rem;margin-top:.30rem;border-radius:.30rem;overflow:hidden}
+/*.end a:nth-child(2n){color:#fd6571}
+.end a:nth-child(3n){color:#1bcf7b}
+.end a:nth-child(4n){color:#ffbf3e}
+.end a:nth-child(5n){color:#fc489c}
+.end a:nth-child(6n){color:#1da1b3}
+.end a:nth-child(7n){color:#b44bfd}*/
+.down .list{overflow: hidden}
+.down .list li{float:left;width:7.5rem;border-bottom:3px solid #e9e9e9;padding: .10rem 0 .30rem 0}
+.down .list li .idown{overflow: hidden;display:block;width:1.0rem;height:1.0rem;border-radius:22%;float:left;margin-top: .15rem;margin-left:.20rem}
+.down .list li .idown img{width:100%}
+.down .list li .tdown{color:#535353;font-size:.30rem;line-height:.40rem;height:.40rem;overflow:hidden;width:50%;float:left;text-align:left;padding-left:.30rem}
+.down .list li .type-size{width:50%;float:left;text-align:left;padding-left:.30rem;color:#adadad;margin-top:.05rem;font-size:.24rem}
+.down .list li .xiazaidown{margin-right:.20rem;margin-top:-7%;width:1.30rem;float:right;height:.50rem;line-height:.50rem;color:#0078ff;background:#eaeaea;border-radius:.25rem;font-size:.24rem;padding:0}
+.down .list li .listdes{color:#ff8128;font-size: .24rem;float: left;padding-left: .30rem;width: 50%;height: .4rem;line-height: .4rem;overflow: hidden;text-align: left;margin-top: .05rem;}
+.down .list li.hide{display: none}
+.articlebox{overflow: hidden;border-bottom: 1px solid #e9e9e9;width: 96%;margin: auto;margin-top: .3rem;margin-bottom: .3rem;padding-bottom: .3rem;}
+.articlebox p{display: inline-block;float: left;width: 97%;text-align: left;color: #232323;font-size: .30rem;margin: 0 0 0 .20rem;font-weight: bold;margin: .2rem 0;}
+.articlebox p em{width: .10rem;height: .26rem;margin-top: .10rem;float: left;background: #0079ff;margin-right: 5px;border-radius: .04rem;}
+.articlebox p a{float: right;margin-right: 5px;color: #232323;font-size: .30rem;}
+.articlebox p a i{color: #0078ff;font-style: normal;}
+.xgwzlist {width: 100%;height: .45rem;line-height: .45rem;text-align: left;overflow: hidden;position: relative;margin-bottom: .1rem;}
+.xgwzlist::before {position: absolute;top: .2rem;display: inline-block;content: '';width: .08rem;height: .08rem;border-radius: 50%;background: #373737;vertical-align: middle;margin: 0 .2rem;vertical-align: text-top;}
+.xgwzlist a {overflow: hidden;text-indent: .4rem;display: inline-block;color: #373737;font-size: .26rem;max-width: 6.5rem;height: .45rem;}
+
+.gjb{width: 6.41rem;height: 3.24rem;position: fixed;left: 50%;margin-left: -3.2rem;top: 50%;margin-top: -1.62rem;background: url(../images/gjbbg.png) no-repeat;background-size:100%;z-index: 9;display:none;}
+.gjb em{width: .2rem;height: .2rem;position: absolute;right: .5rem;top: .5rem;background: url(../images/gjbclosedbtn.png) no-repeat;background-size:100%;cursor:pointer;}
+.gjb .gjb_tit{width: 5.2rem;height: .4rem;line-height: .4rem;font-size:.32rem;margin:.5rem auto 0;text-align:left;color: #333;}
+.gjb .gjb_con{width: 5.2rem;height: .4rem;line-height:.4rem;font-size:.22rem;margin:.2rem auto;text-align:left;color: #333;}
+.gjb .gjb_con font{font-weight:bold;}
+.gjb .gogjb{width: 2.1rem;height:.52rem;line-height: .52rem;background: #ff5000;border-radius: .08rem;float: left;margin-left:.8rem;display: inline-block;text-align: center;font-size:.24rem;color: #fff;}
+.gjb .closed{width: 2.08rem;height:.5rem;line-height:.5rem;border: #d4d0d0 .01rem solid;border-radius:.08rem;box-shadow: 0 .03rem .26rem 0 rgba(0, 0, 0, 0.1);float: left;margin-left:.7rem;display: inline-block;text-align: center;font-size:.24rem;color: #333;cursor: pointer;}
+.gjb .gjb_warn{width: 5.2rem;height:.4rem;line-height:.4rem;font-size:.22rem;text-align:center;margin:1.16rem auto 0;color: #fff;clear:both;}
+.oldbtn{width: 45%;height: .65rem;line-height: .65rem;border-radius: 5px;overflow: hidden;color: #fff;text-align: center;font-size: .28rem;margin: 0 auto;}
+
+.zwzybc{text-indent: 0.9rem!important;}
