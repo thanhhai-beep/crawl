@@ -15,7 +15,7 @@
     <meta name="full-screen" content="yes">
     <meta name="browsermode" content="application"> <!--ms-->
     <meta name="MobileOptimized" content="320">
-    <link href="{$theme_path}/css/androidMobile.css?3458e8b" type="text/css" rel="stylesheet">
+    <link href="{$theme_path}/css/androidmobile.css?3458e8b" type="text/css" rel="stylesheet">
     <link href="{$theme_path}/css/swiper-3.4.2.min.css?3458e8b" type="text/css" rel="stylesheet">
 </head>
 
@@ -38,17 +38,17 @@
         <div class="m_ellips">
             <div class="m_ellips-bg"></div>
             <ul class="m_ellips-list" data-row="1">
-                <li class="j-report_btn" data-type="image" data-id="99346"
-                    data-iurl="{$pic}"
-                    data-url="{$url}">{$title}</li>
+                <li class="j-report_btn" data-type="image" data-id="99346" data-iurl="{$pic}" data-url="{$url}">{$title}
+                </li>
             </ul>
         </div>
     </section>
     <section class="m_game_details">
         <div class="game"> <img src="{$pic}" alt="贪吃蛇大作战" class="logo">
             <div class="info">
-                <p class="name">{$vo.title}</p>
-                <div class="meta"> <span>{randstr type="2" num="2"/}千万+ 下载</span><em></em> <span>{randstr type="2" num="3"/}.{randstr type="2" num="2"/}M</span> </div>
+                <p class="name">{$title}</p>
+                <div class="meta"> <span>{randstr type="2" num="2"/}千万+ 下载</span><em></em> <span>
+                        {randstr type="2" num="3"/}.{randstr type="2" num="2"/}M</span> </div>
                 <div class="go_halves"> <span class="star_box fl"> <span class="star"></span> <span
                             class="mark j-detail-star"></span> </span> <span class="soure fl j-detail-score"> </span>
                 </div>
@@ -56,37 +56,43 @@
         </div>
         <div class="downlow_box" id="j-downlow_box" data-kid="10" data-f="0" data-fast="1"> <a data-href="/"
                 class="j-launchApp top_speed" marks="wap-a-details-gaosu" data-target="downloadManager"
-                data-type="gaosu" elementname="下载按钮" elementcontent="wap游戏详情页中心">{随机栏目}</a>
-            <p class="tip">{随机栏目}</p>
+                data-type="gaosu" elementname="下载按钮" elementcontent="wap游戏详情页中心">高速下载</a>
+            <p class="tip">{网站地址}</p>
         </div>
-        <div class="center"> <a href="{随机栏目URL}" elementname="下载引导" elementcontent="中心点击" class="sy-link_b j-link_btit"
-                title="{随机栏目}">{随机栏目}</a> </div>
     </section> <!-- 下载 -->
     <section class="m_detail_download">
-        <div marks="wap-a-details-middleDowanload"
-            data-href="https://sj.img4399.com/v/8.7.0.26/4399Game_8.7.0.26..5339.wap4399.b944.apk"
-            class="box j-launchApp j-hfck" data-target="main"> <span class="logo"></span> <a class="btn">{随机栏目}</a>
-            <em>好游戏，一起玩</em> <em class="txt">更多精品游戏尽在4399游戏盒</em>
+        <div marks="wap-a-details-middleDowanload" data-href="/" class="box j-launchApp j-hfck" data-target="main">
+            <span class="logo"><img src="{随机图片}" data-src="{随机图片}" style="width: 40px"></span>
+            <a class="btn">{随机栏目}</a>
+            <em>好游戏，一起玩</em> <em class="txt">{随机标题}</em>
         </div>
     </section> <!-- 切换 -->
     <section class="m_tab_detail">
         <ul id="j-tab" data-row="4">
-            <li data-index="0" marks="wap-a-details-introduction"> <a>{$vo.title}</a> </li>
-            <li data-index="1" marks="wap-a-details-commend" id="j-comment_tab" style="display: none;"> <a>{随机栏目}</a>
+            <li data-index="0" marks="wap-a-details-introduction"> <a>{随机栏目}</a> </li>
+            <li data-index="1" marks="wap-a-details-commend" id="j-comment_tab"> <a>{随机栏目}</a>
             </li>
             <li data-index="2" marks="wap-a-details-forum" id="j-forum_tab"> <a>{随机栏目}</a> </li>
             <li data-index="3" marks="wap-a-details-gonglue" id="j-strate_tab"> <a>{随机栏目}</a> </li>
         </ul>
     </section>
-    <div class="m_content_loading" id="j-content_loading"><i></i></div>
     <h1 class="tdk-h1">{$keywords}</h1>
     <section class="m_content" id="j-content">
-        <div data-index="0" style="display: none">
+        <div data-index="0" style="display: block">
             <div class="m_introduce_warp">
                 <ul class="m_game-infos" data-row="1">
                     <li class="m-spec">
-                        <span class="label">{$vo.postdate}</span>
-                        <span class="title">{$vo.postdate}</span>
+                        <span class="label">{随机栏目}</span>
+                        <span class="title">{随机标题}</span>
+                        </li>
+                        
+                    <li class="m-spec">
+                        <span class="label">{随机栏目}</span>
+                        <span class="title">{随机标题}</span>
+                        </li>
+                    <li class="m-spec">
+                        <span class="label">{随机栏目}</span>
+                        <span class="title">{随机标题}</span>
                         <span class="m-all j-btn_all">
                             <svg width="11" height="10" viewBox="0 0 11 10" fill="none">
                                 <g clip-path="url(#clip0_845_19112)">
@@ -138,7 +144,7 @@
                     </ul>
                 </section> <!-- 游戏描述 -->
                 <section class="m_description j-closetParent">
-                    <div id="j-desc">
+                    <div id="j-desc" style="height: auto;">
                         <div class="j-box">
                             {$body}
                         </div>
@@ -146,26 +152,17 @@
                     <section class="u_extension" id="j-desc-btn" marks="wap-a-details-Intro-unfolded"> <span>展开</span><i
                             class="down"></i> </section>
                 </section> <!-- 温馨提示 -->
-                <section class="m_warm_prompt j-closetParent">
-                    <section class="content" id="j-warm">
-                        <div class="j-box">
-                            <p> <em>温馨提示：</em>本游戏现已支持云玩，因云游戏对网络环境有所要求，最好是在良好的网络环境下体验，避免卡顿现象等情况出现。<br>
-                                云玩暂时不支持微信登录/微信认证，如需体验请使用QQ登录/QQ认证/游客登录。 </p>
-                        </div>
-                    </section>
-                    <div class="u_extension" id="j-warm-btn"> <span>展开</span><i class="down"></i> </div>
-                </section>
                 <div class="m_introduce_box">
-                    <div class="m_introduce_info"><span>语言</span>中文</div>
-                    <div class="m_introduce_info"><span>厂商</span>武汉微派网络科技有限公司</div>
-                    <div class="m_introduce_info"><span>版本号</span>5.27.5</div>
+                    <div class="m_introduce_info"><span>语言</span>{随机栏目}</div>
+                    <div class="m_introduce_info"><span>厂商</span>{随机关键词}</div>
+                    <div class="m_introduce_info"><span>版本号</span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}.{randstr type="2" num="2"/}</div>
                     <div class="label">
                         <ul class="game_test clearfix" data-row="3">
-                            <li><i class="right"></i>官方版</li>
+                            <li><i class="right"></i>{随机栏目}</li>
                             <li><i class="sigh"></i>需网络 </li>
                             <li class="m-feedbK"> <span class="m-feedbK_btn j-report_btn" data-type="game"
-                                    data-id="99346" data-url="m4399://gameDetail?gameId=99346"> <i class="ico"></i><span
-                                        class="m_txt">反馈游戏问题</span> </span> </li>
+                                    data-id="99346" data-url="/"> <i class="ico"></i><span class="m_txt">{随机关键词}</span>
+                                </span> </li>
                         </ul>
                     </div>
                 </div>
@@ -237,6 +234,89 @@
                 <div class="m_forum_loading">正在加载更多数据...</div>
             </div>
         </div>
+        <div data-index="3" style="display: block;"> <!-- 攻略 -->
+            <div class="strategy_section">
+                <div class="strategy_title"><span>{随机栏目}</span></div>
+                <div class="strategy_list strategy_toolList">
+                    <ul>
+                        <li> <a href="{随机图片}">{随机标题}</a>
+                        </li>
+                        <li> <a href="{随机图片}">{随机标题}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="j-strategy_columns">
+                <div class="strategy_section">
+                    <div class="strategy_title"><span>{随机栏目}</span></div>
+                    <div class="strategy_columnsList strategy_newsList">
+
+                        {loop type="arclist" row="1" tpl="" islist=""}
+                        <a href="{$vo.url}">
+                            <div class="strategy_news_title line2" style="-webkit-box-orient: vertical;">
+                                {$vo.title}</div>
+                            <div class="strategy_news_time">{随机时间}</div>
+                            <div class="strategy_news_cover"><img src="{$vo.pic}"></div>
+                        </a>
+                        {/loop}
+                    </div>
+                    <div></div>
+                </div>
+                <div class="strategy_section">
+                    <div class="strategy_title"><span>{随机栏目}</span></div>
+                    <div class="strategy_columnsList strategy_columnsListImg strategy_columnsListImg3">
+                        {loop type="arclist" row="15" tpl="" islist=""}
+                        <a href="{$vo.url}"><i><img src="{$vo.pic}"></i>
+                            <p>{$vo.title}</p>
+                        </a>
+                        {/loop}
+                    </div>
+                </div>
+                <div class="strategy_section">
+                    <div class="strategy_title"><span>{随机栏目}</span></div>
+                    <div class="strategy_columnsList strategy_columnsListImg strategy_columnsListImg3">
+                        {loop type="arclist" row="15" tpl="" islist=""}
+                        <a href="{$vo.url}"><i><img src="{$vo.pic}"></i>
+                            <p>{$vo.title}</p>
+                        </a>
+                        {/loop}</div>
+                    <div></div>
+                </div>
+                <div class="strategy_section">
+                    <div class="strategy_title"><span>{随机栏目}</span></div>
+                    <div class="strategy_columnsList strategy_columnsListImg strategy_columnsListImg3">
+                        {loop type="arclist" row="15" tpl="" islist=""}
+                        <a href="{$vo.url}"><i><img src="{$vo.pic}"></i>
+                            <p>{$vo.title}</p>
+                        </a>
+                        {/loop}</div>
+                    <div></div>
+                </div>
+                <div class="strategy_section">
+                    <div class="strategy_title"><span>{随机栏目}</span></div>
+                    <div class="strategy_columnsList strategy_columnsListImg strategy_columnsListImg3">
+                        {loop type="arclist" row="15" tpl="" islist=""}
+                        <a href="{$vo.url}"><i><img src="{$vo.pic}"></i>
+                            <p>{$vo.title}</p>
+                        </a>
+                        {/loop}</div>
+                    <div></div>
+                </div>
+                <div class="strategy_section">
+                    <div class="strategy_title"><span>{随机栏目}</span></div>
+                    <div class="strategy_columnsList strategy_columnsListImg strategy_columnsListImg3">
+                        {loop type="arclist" row="15" tpl="" islist=""}
+                        <a href="{$vo.url}"><i><img src="{$vo.pic}"></i>
+                            <p>{$vo.title}</p>
+                        </a>
+                        {/loop}</div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="strategy_footer">
+                <div class="strategy_loadMore" id="j-strategy_loadMore">点击加载更多</div>
+            </div>
+        </div>
     </section>
     <section class="m_comment_page" id="j-comment-page">
         <section class="m_page_header"> <a class="back fl" href="javascript:history.back();" id="j-comment-cancel">
@@ -299,27 +379,18 @@
         <div class="filter j-report_download_close"></div>
         <div class="md_download">
             <p class="title">{随机栏目}</p>
-            <div class="content">更多精品游戏，新游抢先试玩，珍稀礼包激活码，尽在4399游戏盒</div>
+            <div class="content">{随机关键词} </div>
             <div class="btn"> <a class="fl j-popup-close">{随机栏目}</a> <a class="fr btn_download" href="{随机栏目URL}"
                     data-id="99346" data-target="gameDetail" title="{随机栏目}">{随机栏目}</a> </div>
         </div>
     </section>
     <script type="text/html" id="j-order-gift"
-        class="m_template"> <div class="m_order_gift"> <dl class="gift"> <dt>马上下载4399游戏盒，预约领福利</dt>  </dl> <div class="btn"> <a id="j-order-gift-close" marks="wap-a-details-yuyuePop-cancel" >关闭</a> <a data-href="/" class="j-launchAppDetail j-launchApp" marks="wap-a-details-yuyuePop-yuyue" data-target="gameDetail" data-id="99346">预约</a> </div> </div> </section> <script type="text/html" id="j-nonsupport-tips" class="m_template"> <div class="m_dialog_nonsupport"> <div class="btn"> <a id="j-nonsupport-close" marks="wap-a-details-yuyuePop-cancel" >关闭</a> <a data-href="/" class="j-launchAppDetail j-launchApp" marks="wap-a-details-yuyuePop-yuyue" data-target="gameDetail" data-id="99346">预约</a> </div> </div> </script>
+        class="m_template"> <div class="m_order_gift"> <dl class="gift"> <dt>{$keywords}</dt>  </dl> <div class="btn"> <a id="j-order-gift-close" marks="wap-a-details-yuyuePop-cancel" >关闭</a> <a data-href="/" class="j-launchAppDetail j-launchApp" marks="wap-a-details-yuyuePop-yuyue" data-target="gameDetail" data-id="99346">预约</a> </div> </div> </section> <script type="text/html" id="j-nonsupport-tips" class="m_template"> <div class="m_dialog_nonsupport"> <div class="btn"> <a id="j-nonsupport-close" marks="wap-a-details-yuyuePop-cancel" >关闭</a> <a data-href="/" class="j-launchAppDetail j-launchApp" marks="wap-a-details-yuyuePop-yuyue" data-target="gameDetail" data-id="99346">预约</a> </div> </div> </script>
     <script type="text/html" id="j-null-text"
-        class="m_template"> <div class="m_null_gift"> <dl class="text"> <dt>马上下载客户端预约游戏吧</dt> </dl> <div class="btn"> <a id="j-null-text-close" marks="wap-a-details-yuyuePop-cancel" >关闭</a> <a data-href="/" marks="wap-a-details-yuyuePop-yuyue" class="j-launchAppDetail j-launchApp" data-target="gameDetail" data-id="99346">预约</a> </div> </div> </script>
+        class="m_template"> <div class="m_null_gift"> <dl class="text"> <dt>{随机标题}</dt> </dl> <div class="btn"> <a id="j-null-text-close" marks="wap-a-details-yuyuePop-cancel" >关闭</a> <a data-href="/" marks="wap-a-details-yuyuePop-yuyue" class="j-launchAppDetail j-launchApp" data-target="gameDetail" data-id="99346">预约</a> </div> </div> </script>
     <script type="text/html"
-        id="j-order-text"> <div class="m_order_gift"> <dl class="text"> <dt>马上下载4399游戏盒，预约领福利</dt>  </dl> <div class="btn"> <a id="j-order-text-close" marks="wap-a-details-yuyuePop-cancel" >关闭</a> <a data-href="/" marks="wap-a-details-yuyuePop-yuyue" class="j-launchAppDetail j-launchApp" data-target="gameDetail" data-id="99346">预约</a> </div> </div> </script>
-    <section class="m_video" id="j-video-block" style="display: none">
-        <div class="filter j-filter"></div>
-        <div class="close j-filter" marks="wap-a-details-Intro-videoReturn"></div> <video id="j-my-player"
-            class="video-js" controls preload="auto"
-            poster="http://f1.img4399.com/sj~backend_generic/2023/09/26/10_vlOlk1.720x405.jpg" data-setup="{}">
-            <source src="http://v.3304399.net/yxh/media/37494/9e22a0145c1711eea862c81f66c895c6.mp4" type="video/mp4">
-            <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser
-                that <a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a> </p>
-        </video>
-    </section>
+        id="j-order-text"> <div class="m_order_gift"> <dl class="text"> <dt>{随机关键词} </dt>  </dl> <div class="btn"> <a id="j-order-text-close" marks="wap-a-details-yuyuePop-cancel" >关闭</a> <a data-href="/" marks="wap-a-details-yuyuePop-yuyue" class="j-launchAppDetail j-launchApp" data-target="gameDetail" data-id="99346">预约</a> </div> </div> </script>
+    
     <div class="m_lookPic" id="j-lookPic">
         <div class="filter j-lookPicClose"></div>
         <div class="box"> <i class="close j-lookPicClose" marks="wap-a-details-Intro-imageReturn"></i>
@@ -340,7 +411,7 @@
         </div>
     </div>
     <script type="text/html"
-        id="j-yhxDownloadTpl"> <img src="https://fs.img4399.com/ma~576_20190626144354_5d13142a441c8.png?t=1561531434" alt="贪吃蛇大作战" class="logo"> <div class="info"> <span>4399游戏盒</span> <p>好游戏，一起玩</p> <a data-href="https://sj.img4399.com/v/8.7.0.26/4399Game_8.7.0.26..5339.wap4399.b944.apk" class="j-launchApp" marks="wap-a-details-suspension" data-target="main">免费下载</a> </div> </script>
+        id="j-yhxDownloadTpl"> <img src="{随机图片}" alt="贪吃蛇大作战" class="logo"> <div class="info"> <span>4399游戏盒</span> <p>好游戏，一起玩</p> <a data-href="/" class="j-launchApp" marks="wap-a-details-suspension" data-target="main">免费下载</a> </div> </script>
     <!--公告 大事件-->
     <section class="m_dialog_popup m_template m-dialog_infosList" id="j-dialog_infos">
         <div class="m-cover"></div>
@@ -356,12 +427,57 @@
     <section class="m_tips_dialog" id="j-limit-dialog" style="display: none">
         <div class="filter"></div> <i class="wxDownload_arrow"></i>
         <div class="wxDownload_tips"></div>
+    </section><section class="m_download_tips"> <a data-href="/" class="j-launchApp" data-target="main"> {$keywords} 
+        {随机关键词}<em>免费</em>下载 <i></i> </a> </section> <!-- 友情链接 -->
+    <div class="m_link">
+        <div class="header"> <i></i>{随机关键词} </div>
+        <div class="box"> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian"
+                title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a
+                href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian"
+                title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a
+                href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian"
+                title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a>
+        </div>
+    </div> <!-- 切换 4399 -->
+    <div class="m_switch_4399"> <a href="{随机栏目URL}" marks="wap-a-shouye-qiehuan" title="{随机栏目}">{随机栏目}</a>
+        <div class="m_footer_tips">
+            <p class="title">{网站名称} |&nbsp;<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>&nbsp;|&nbsp;<a
+                    href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></p>
+            <p class="content">{随机栏目}</p>
+            <p class="content">{随机栏目}</p>
+            <p class="title">纠纷处理(客服电话):{随机数字}-{随机数字}-{随机数字} <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></p>
+            <p class="content"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                    title="{随机栏目}">{随机栏目}</a></p>
+            <p class="title"><a href="/"><i class="mww">&nbsp;</i>闽网文〔{随机数字}〕{随机数字}{随机数字}号</a></p>
+            <p class="title"><a href="/"><i class="mgw">&nbsp;</i>闽公网安备 {随机数字}{随机数字}号</a></p>
+            <p class="content">Copyright©2004 - <span id="j-yearTime">{网站地址} All Rights Reserved.</p>
+            <p class="content">{随机栏目}</p>
+            <script>
+                var currentDate = new Date();
+                var year = currentDate.getFullYear();
+                document.getElementById("j-yearTime").innerText = year;
+            </script>
+        </div>
+    </div> <!--返回顶部-->
+    <div class="m_totop" id="j-totop" marks="wap-a-shouye-top"></div>
+    <section class="m_tips_dialog" id="j-limit-dialog" style="display: none">
+        <div class="filter"></div> <i class="wxDownload_arrow"></i>
+        <div class="wxDownload_tips"></div>
     </section>
+    <div class="m_pureMode" id="j-pureMode">
+        <div class="m_pureMode_tips">
+            <div class="m_pureMode_btn" id="j-pureMode_btn">知道了<div> </div>
+            </div>
+        </div>
+    </div>
 </body>
-<script type="text/javascript" src="{$theme_path}/js/androidMobile.js?3458e8b"></script>
-<script type="text/javascript" src="{$theme_path}/js/filtrateBrowser.js?3458e8b"></script>
+<script type="text/javascript" src="{$theme_path}/js/androidmobile.js?3458e8b"></script>
+<script type="text/javascript" src="{$theme_path}/js/filtratebrowser.js?3458e8b"></script>
 <script src="{$theme_path}/js/vendors.js?3458e8b"></script>
-<script src="{$theme_path}/js/commJs.js?3458e8b"></script>
+<script src="{$theme_path}/js/commjs.js?3458e8b"></script>
 
 <script src="{$theme_path}/js/vendors.js?3458e8b"></script>
 <script src="{$theme_path}/js/downtip.js?3458e8b"></script>

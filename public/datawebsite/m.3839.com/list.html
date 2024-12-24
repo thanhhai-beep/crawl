@@ -1,0 +1,2496 @@
+<head>
+    <meta charset="UTF-8">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="好游快爆">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" sizes="60x60" href="{$theme_path}/css/1032463042">
+    <link rel="apple-touch-icon" sizes="76x76" href="{$theme_path}/css/10330766185">
+    <link rel="apple-touch-icon" sizes="120x120" href="{$theme_path}/css/10333073799">
+    <link rel="apple-touch-icon" sizes="152x152" href="{$theme_path}/css/10335763865">
+    <link rel="manifest" href="{$theme_path}/css/manifest.json?v=6">
+    <link href="{$theme_path}/css/home.css?v=9.06" type="text/css" rel="stylesheet">
+    <script src="{$theme_path}/js/jquery.js"></script>
+    <script src="{$theme_path}/js/common.js?v=9.06"></script>
+    <script type="text/javascript" src="{$theme_path}/js/clipboard.min.js"></script>
+</head>
+
+<body class="bodyWhite">
+    <div class="headwp" id="headwp">
+        <div class="headArea"> <a href=""><span class="applogo">好游快爆</span></a>
+            <a class="link-sch" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+        </div>
+    </div>
+    <ul class="breadcrumb" data-row="2">
+        <li><a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a></li>
+        <li><span class="name">好游抢先玩</span></li>
+    </ul>
+    <div class="headTabWrap">
+        <div class="headTab">
+            <ul class="cf" data-row="5">
+                <li class="on" data-type="0">全部</li>
+                <li data-type="1">即将上线</li>
+                <li data-type="2">即将测试</li>
+                <li data-type="3">即将更新</li>
+                <li data-type="4">独家</li>
+            </ul>
+        </div>
+    </div>
+    <div class="NewGameReco">
+        <div class="headTabCon">
+            <div data-type="0">
+                <div class="sortTabWrap">
+                    <div class="sortTab">
+                        <div class="list" id="sort0">
+                            <ul class="swiper-wrapper" data-row="26">
+                                <li class="swiper-slide on" data-index="0">过去7天</li>
+                                {loop type="arclist" row="25" tpl="" islist=""}
+                                <li class="swiper-slide" data-index="{$vo.i}">{随机时间}</li>
+                                {/loop}
+                            </ul>
+                        </div> <span class="prev" data-index="prev">抢先爆料</span>
+                    </div>
+                </div>
+                <div class="NG-wrap">
+                    <div class="NG-panel" data-index="0">
+                        <div class="label"><h1>{$keywords}</h1></div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月14日 上周六</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="14" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月15日 上周日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="4" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月16日 周一</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月17日 周二</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">{$keywords} 12月18日 周三</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月19日 昨天</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="30" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="1">
+                        <div class="label">12月20日 今天</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="25" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="2">
+                        <div class="label">12月21日 明天</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="3">
+                        <div class="label">{$keywords} 12月23日 下周一</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="5" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="4">
+                        <div class="label">12月24日 下周二</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="7" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="5">
+                        <div class="label">12月25日 下周三</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="4" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="6">
+                        <div class="label">12月26日 下周四</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="4" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="7">
+                        <div class="label">{$keywords} 12月27日 下周五</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="12" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="8">
+                        <div class="label">12月30日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="9">
+                        <div class="label">12月31日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="4" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="10">
+                        <div class="label">{$keywords} 01月01日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="11">
+                        <div class="label">01月02日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="12">
+                        <div class="label">01月03日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="13">
+                        <div class="label">01月08日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="14">
+                        <div class="label">01月09日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="15">
+                        <div class="label">{$keywords} 01月16日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="16">
+                        <div class="label">01月23日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="17">
+                        <div class="label">01月24日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="18">
+                        <div class="label">01月31日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="19">
+                        <div class="label">{$keywords} 02月01日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="20">
+                        <div class="label">02月06日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="21">
+                        <div class="label">02月11日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="22">
+                        <div class="label">02月20日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="23">
+                        <div class="label">{$keywords} 02月27日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="1" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="24">
+                        <div class="label">03月07日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="1" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="25">
+                        <div class="label">03月25日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="1" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="prev">
+                        <div class="label">抢先爆料</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="1" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel-on">{$keywords} 12月14日 上周六</div>
+                </div>
+            </div>
+            <div data-type="1" class="hide">
+                <div class="sortTabWrap">
+                    <div class="sortTab">
+                        <div class="list" id="sort1">
+                            <ul class="swiper-wrapper" data-row="20">
+                                <li class="swiper-slide" data-index="0">全部</li>
+                                <li class="swiper-slide on" data-index="1">今天</li>
+                                <li class="swiper-slide" data-index="2">12-23</li>
+                                <li class="swiper-slide" data-index="3">12-24</li>
+                                <li class="swiper-slide" data-index="4">12-26</li>
+                                <li class="swiper-slide" data-index="5">12-27</li>
+                                <li class="swiper-slide" data-index="6">12-31</li>
+                                <li class="swiper-slide" data-index="7">01-01</li>
+                                <li class="swiper-slide" data-index="8">01-02</li>
+                                <li class="swiper-slide" data-index="9">01-03</li>
+                                <li class="swiper-slide" data-index="10">01-08</li>
+                                <li class="swiper-slide" data-index="11">01-09</li>
+                                <li class="swiper-slide" data-index="12">01-16</li>
+                                <li class="swiper-slide" data-index="13">01-31</li>
+                                <li class="swiper-slide" data-index="14">02-01</li>
+                                <li class="swiper-slide" data-index="15">02-06</li>
+                                <li class="swiper-slide" data-index="16">02-11</li>
+                                <li class="swiper-slide" data-index="17">02-27</li>
+                                <li class="swiper-slide" data-index="18">03-07</li>
+                                <li class="swiper-slide" data-index="19">03-25</li>
+                            </ul>
+                        </div> <span class="prev" data-index="prev">抢先爆料</span>
+                    </div>
+                </div>
+                <div class="NG-wrap">
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月13日 上周五</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月14日 上周六</div>
+                        <div class="gameRow">
+                            <ul data-row="5">
+                                <ul data-row="9">
+                                    {loop type="arclist" row="9" tpl="" islist=""}
+                                    <li>
+                                        <div class="g-left"> <a href="{$vo.url}">
+                                                <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                                <div class="g-name"> <em>{$vo.title}</em> <span
+                                                        class="g-type sp1">{$vo.postdate}</span><i
+                                                        class="g-type-hot"></i>
+                                                </div>
+                                                <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                                <div class="g-info"> <i class="score">
+                                                        {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                    {$vo.info}
+                                                </div>
+                                            </a> </div>
+                                        <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                                title="{$vo.title}">试玩</a></div>
+                                    </li>
+                                    {/loop}
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月15日 上周日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月16日 周一</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月17日 周二</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">{$keywords} 12月18日 周三</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月19日 昨天</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="1">
+                        <div class="label">12月20日 今天</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="2">
+                        <div class="label">12月23日 下周一</div>
+                        <div class="gameRow">
+                            <ul data-row="1">
+                                <li>
+                                    <div class="g-left"> <a href="//m.3839.com/a/136196.htm">
+                                            <div class="g-icon"><img src="{$vo.pic}"
+                                                    lz_src="//img.71acg.net/kbdev/opensj/20241126/10591855197"
+                                                    alt="重构：阿塔提斯"></div>
+                                            <div class="g-name"> <em>重构：阿塔提斯</em> </div>
+                                            <div class="g-tags"><i>二次元</i><i>MOBA</i><i>多人联机</i></div>
+                                            <div class="g-info"> <i class="score">8.1</i>9点预下载,12.24上线</div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnY" href="{随机栏目URL}"
+                                            title="{$vo.title}">{$vo.title}</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="3">
+                        <div class="label">12月24日 下周二</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="4">
+                        <div class="label">12月26日 下周四</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="5">
+                        <div class="label">12月27日 下周五</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="6">
+                        <div class="label">12月31日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="7">
+                        <div class="label">{$keywords} 01月01日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="8">
+                        <div class="label">01月02日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="9">
+                        <div class="label">01月03日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="10">
+                        <div class="label">01月08日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="11">
+                        <div class="label">01月09日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="12">
+                        <div class="label">01月16日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="13">
+                        <div class="label">01月31日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="14">
+                        <div class="label">02月01日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="15">
+                        <div class="label">02月06日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="16">
+                        <div class="label">{$keywords} 02月11日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="17">
+                        <div class="label">02月27日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="18">
+                        <div class="label">03月07日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="19">
+                        <div class="label">03月25日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="prev">
+                        <div class="label">抢先爆料</div>
+                        <div class="gameRow">全部
+                        </div>
+                    </div>
+                    <div class="NG-panel-on">12月14日 上周六</div>
+                </div>
+            </div>
+            <div data-type="2" class="hide">
+                <div class="sortTabWrap">
+                    <div class="sortTab">
+                        <div class="list" id="sort2">
+                            <ul class="swiper-wrapper" data-row="12">
+                                <li class="swiper-slide" data-index="0">全部</li>
+                                <li class="swiper-slide on" data-index="1">今天</li>
+                                <li class="swiper-slide" data-index="2">明天</li>
+                                <li class="swiper-slide" data-index="3">12-23</li>
+                                <li class="swiper-slide" data-index="4">12-24</li>
+                                <li class="swiper-slide" data-index="5">12-25</li>
+                                <li class="swiper-slide" data-index="6">12-26</li>
+                                <li class="swiper-slide" data-index="7">12-27</li>
+                                <li class="swiper-slide" data-index="8">12-31</li>
+                                <li class="swiper-slide" data-index="9">01-08</li>
+                                <li class="swiper-slide" data-index="10">01-09</li>
+                                <li class="swiper-slide" data-index="11">01-24</li>
+                            </ul>
+                        </div> <span class="prev" data-index="prev">抢先爆料</span>
+                    </div>
+                </div>
+                <div class="NG-wrap">
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">{$keywords} 12月13日 上周五</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月14日 上周六</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月16日 周一</div>
+                        <div class="gameRow">
+                            <ul data-row="1">
+                                <li>
+                                    <div class="g-left"> <a href="https://www.onebiji.com/tools/cfsy/tyf/wap/">
+                                            <div class="g-icon"><img src="{$vo.pic}"
+                                                    lz_src="//img.71acg.net/kbyx/gicon/85069/20240309-00.png"
+                                                    alt="穿越火线：枪战王者-体验服"></div>
+                                            <div class="g-name"> <em>穿越火线：枪战王者-体验服</em> </div>
+                                            <div class="g-tags"><i>射击</i><i>枪战</i><i>生存</i></div>
+                                            <div class="g-info"> <i class="score">8.7</i>12.18早10点开启资格招募</div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">{$vo.title}</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月17日 周二</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月18日 周三</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月19日 昨天</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="1">
+                        <div class="label">12月20日 今天</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="2">
+                        <div class="label">{$keywords} 12月21日 明天</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="3">
+                        <div class="label">12月23日 下周一</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="4">
+                        <div class="label">12月24日 下周二</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="5">
+                        <div class="label">12月25日 下周三</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="6">
+                        <div class="label">12月26日 下周四</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="7">
+                        <div class="label">{$keywords} 12月27日 下周五</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="8">
+                        <div class="label">12月31日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="9">
+                        <div class="label">01月08日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="10">
+                        <div class="label">01月09日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="11">
+                        <div class="label">{$keywords} 01月24日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="prev">
+                        <div class="label">抢先爆料</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel-on">12月14日 上周六</div>
+                </div>
+            </div>
+            <div data-type="3" class="hide">
+                <div class="sortTabWrap">
+                    <div class="sortTab">
+                        <div class="list" id="sort3">
+                            <ul class="swiper-wrapper" data-row="12">
+                                <li class="swiper-slide" data-index="0">{$vo.title}</li>
+                                <li class="swiper-slide on" data-index="1">今天</li>
+                                <li class="swiper-slide" data-index="2">明天</li>
+                                <li class="swiper-slide" data-index="3">12-24</li>
+                                <li class="swiper-slide" data-index="4">12-27</li>
+                                <li class="swiper-slide" data-index="5">12-30</li>
+                                <li class="swiper-slide" data-index="6">12-31</li>
+                                <li class="swiper-slide" data-index="7">01-02</li>
+                                <li class="swiper-slide" data-index="8">01-16</li>
+                                <li class="swiper-slide" data-index="9">01-23</li>
+                                <li class="swiper-slide" data-index="10">02-06</li>
+                                <li class="swiper-slide" data-index="11">02-20</li>
+                            </ul>
+                        </div> <span class="prev" data-index="prev">抢先爆料</span>
+                    </div>
+                </div>
+                <div class="NG-wrap">
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月13日 上周五</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月14日 上周六</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月17日 周二</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">{$keywords} 12月18日 周三</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月19日 昨天</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="1">
+                        <div class="label">12月20日 今天</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="2">
+                        <div class="label">12月21日 明天</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="3">
+                        <div class="label">12月24日 下周二</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="4">
+                        <div class="label">{$keywords} 12月27日 下周五</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="5">
+                        <div class="label">12月30日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="6">
+                        <div class="label">12月31日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="7">
+                        <div class="label">01月02日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="8">
+                        <div class="label">01月16日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="9">
+                        <div class="label">{$keywords} 01月23日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="10">
+                        <div class="label">02月06日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="11">
+                        <div class="label">02月20日</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="prev">
+                        <div class="label">抢先爆料</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel-on">12月14日 上周六</div>
+                </div>
+            </div>
+            <div data-type="4" class="hide">
+                <div class="sortTabWrap">
+                    <div class="sortTab">
+                        <div class="list" id="sort4">
+                            <ul class="swiper-wrapper" data-row="2">
+                                <li class="swiper-slide" data-index="0">{$vo.title}</li>
+                                <li class="swiper-slide on" data-index="1">12-27</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="NG-wrap">
+                    <div class="NG-panel" data-index="0">
+                        <div class="label">12月14日 上周六</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel" data-index="1">
+                        <div class="label">12月27日 下周五</div>
+                        <div class="gameRow">
+                            <ul data-row="9">
+                                {loop type="arclist" row="9" tpl="" islist=""}
+                                <li>
+                                    <div class="g-left"> <a href="{$vo.url}">
+                                            <div class="g-icon"><img src="{$vo.pic}" alt="{$vo.title}"></div>
+                                            <div class="g-name"> <em>{$vo.title}</em> <span
+                                                    class="g-type sp1">{$vo.postdate}</span><i class="g-type-hot"></i>
+                                            </div>
+                                            <div class="g-tags"><i>{随机栏目}</i><i>{随机栏目}</i><i>{随机栏目}</i></div>
+                                            <div class="g-info"> <i class="score">
+                                                    {randstr type="2" num="2"/}.{randstr type="2" num="2"/}</i>
+                                                {$vo.info}
+                                            </div>
+                                        </a> </div>
+                                    <div class="g-right"> <a class="btn btnG" href="{随机栏目URL}"
+                                            title="{$vo.title}">试玩</a></div>
+                                </li>
+                                {/loop}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="NG-panel-on">12月27日 下周五</div>
+                </div>
+            </div>
+        </div>
+        <div class="NG-foot">
+            <div class="item"></div>
+            <ul class="list" data-row="4">
+                <li> <span class="it1"></span>
+                    <p>{$keywords} {随机栏目}</p>
+                </li>
+                <li> <span class="it2"></span>
+                    <p>{随机栏目}</p>
+                </li>
+                <li> <span class="it3"></span>
+                    <p>{随机栏目}</p>
+                </li>
+                <li> <span class="it4"></span>
+                    <p>{随机栏目}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="{$theme_path}/js/footer_wap_v2.js?v=9.06"></script>
+    <script src="{$theme_path}/js/bom_down_div.js?v=9.06"></script>
+    <script type="text/javascript">     init_ios_desk('bottom:1.5rem;'); </script> <a id="gotop" class="gotop"
+        style="display:none" onclick="go_to2($('body'))">{随机栏目}</a>
+    <script language="javascript">     if (is_ios) { loadIosPop(); } $('#bomDownDiv').show(); </script>
+    <script>     var default_img = '//img.71acg.net/sykb~bbs/default/20210225/1336181783651'; </script>
+    <script src="{$theme_path}/js/swiper.min.js"></script>
+    <script src="{$theme_path}/js/timeline.js?v2"></script>
+    <script type="text/javascript" src="{$theme_path}/js/lzimg.js"></script>
+    <script src="{$theme_path}/js/wxshare.js" type="text/javascript"></script>
+    <script
+        language="javascript">     var share_title = document.title, share_icon = 'https://img.71acg.net/kbyx~sykb/20210128/11211446667', share_desc = '好游快爆开发者榜为您展示高口碑的游戏开发者，了解行业开发者情况，为您喜欢的开发者打call，关注开发者榜就能了解开发者新游戏动态。'; wshare(share_title, share_desc, share_icon, window.location.href); </script>
+    <script type="text/javascript" src="{$theme_path}/js/mtj.js"></script>
+</body>

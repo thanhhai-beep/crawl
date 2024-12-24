@@ -1,0 +1,445 @@
+<head>
+    <meta charset="UTF-8">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="好游快爆">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" sizes="60x60" href="{$theme_path}/css/1032463042">
+    <link rel="apple-touch-icon" sizes="76x76" href="{$theme_path}/css/10330766185">
+    <link rel="apple-touch-icon" sizes="120x120" href="{$theme_path}/css/10333073799">
+    <link rel="apple-touch-icon" sizes="152x152" href="{$theme_path}/css/10335763865">
+    <link rel="manifest" href="{$theme_path}/css/manifest.json?v=6">
+    <link rel="canonical" href="{$thisurl}">
+    <link href="{$theme_path}/css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="{$theme_path}/css/gamenew.min.css?v=9.06" type="text/css" rel="stylesheet">
+    <link href="{$theme_path}/css/comment.css?v=9.06" type="text/css" rel="stylesheet">
+    <script src="{$theme_path}/js/jquery.js"></script>
+    <script src="{$theme_path}/js/common.js?v=9.06"></script>
+    <script type="text/javascript" src="{$theme_path}/js/openApp.js?v=9.06"></script>
+</head>
+
+<body>
+    <div class="headwp" id="headwp">
+        <div class="headArea"> <a href="/"><span class="applogo">{网站地址}</span></a>
+            <a class="link-sch" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+        </div>
+    </div>
+    <div class="game-img"> <video style="width:100%; height:100%;margin: 0 auto;" controls="controls" preload="none"
+            controlslist="nodownload" poster="{$pic}" x5-video-player-type="h5">
+            <img src="{$pic}" /> </div>
+    <div class="game-main">
+        <div class="inner">
+            <div class="game-info cf"> <img src="{$pic}" alt="{$title}">
+                <div class="con"> <em class="name beta"> <span class="sp-name">{$title}</span></em>
+                    <p class="desc">{随机关键词}</p>
+                    <p class="tag"> <span><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></span><span><a href="{随机栏目URL}"
+                                title="{随机栏目}">{随机栏目}</a></span></p>
+                </div>
+                <div class="vote" id="game_pj" style="display:none"> <span class="sp1">快爆评分<sup>®</sup></span><span
+                        class="score">9.2</span>
+                    <div class="star"> <span style="width: 92%"></span> </div> <span class="sp2"></span>
+                </div>
+                <div class="vote novote" id="game_nopj"> <span class="sp1">快爆评分<sup>®</sup></span>
+                    <div class="star"></div> <span class="sp2">暂无评分</span>
+                </div>
+            </div>
+            <div id="game_down_btn" class="game-down"><a class="down_btn yellow" href="{随机栏目URL}"
+                    title="{随机栏目}">下载试玩</a></div>
+            <div class="down-tip">{随机关键词}</div>
+            <ul class="game-otbtn" data-row="2">
+                <li id="gameorder"> <a class="game-order" href="{随机栏目URL}" onclick="pop2('yzw');return false;"
+                        title="{$vo.title}">{$vo.title}</a> </li>
+                <li><a class="game-share" href="{随机栏目URL}" id="share_link" data-role="share" title="{随机栏目}">{随机栏目}</a>
+                </li>
+            </ul>
+            <div class="game-notice">
+                <p class> <a class="lk" href="{随机栏目URL}" onclick="pop2('udlog');return false;" title="{随机栏目}">{随机栏目}</a>
+                </p>
+            </div>
+            <div class="game-honor">
+                <div class="rank" id="gamecon_rank"> <a href="/">
+                        <p><i class="Cgreen">#</i>14</p>
+                        <p>{随机栏目}</p>
+                    </a> </div>
+                <div class="total" id="gamecon_down">
+                    <p>{随机栏目}</p>
+                    <p>{随机栏目}</p>
+                </div>
+            </div>
+            <div class="game-app">
+                <script>
+                    document.write('<a ' + (is_ios ? 'href="javascript:void(0);" onclick="_base.goto_kb_ios_app();return false;"' : 'href="' + _base.android_down_url + '"') + ' class="wxdowntip">\n' + '<img src="//img.71acg.net/kbyx~sykb/20201026/19484284931" alt="立即下载好游快爆，抢先玩新鲜好游戏">\n' + '<p>立即下载好游快爆，抢先玩新鲜好游戏</p>\n' + '<span class="btn"></span></a>');            
+                </script>
+            </div>
+        </div>
+    </div>
+    <ul class="game-tab" id="tabMenu1" data-row="4">
+        <li class="on" style="width:25%">详情</li>
+        <li style="display:none;width:25%">专区</li>
+        <li style="width:25%">评价<span id="pl_num" style="display:none"></span></li>
+        <li style="width:25%"> <a href="{随机栏目URL}" target="_blank">论坛<span id="p2_num">683</span></a></li>
+    </ul>
+    <div class="game-con">
+        <div class="wrap">
+            <div class="offArea">
+                <ul class="list" data-row="2">
+                    {loop type="arclist" row="2" tpl="" islist=""}
+                    <li> <a href="{$vo.url}"><img src="{$vo.pic}">
+                            <p>{$vo.title}</p> <span class="morelk">{$vo.postdate}</span>
+                        </a> </li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="titHd"> <em>温馨提示</em> <a class="morelk Cgreen" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></div>
+            <div class="tipArea">
+                {$body}
+            </div>
+            <div class="titHd"> <em>开发者的话</em> <a class="morelk Cgreen" href="{随机栏目URL}"><i
+                        class="ico-off"></i>官方已入驻</a></div>
+            <div class="game-desc over" id="zinfo2">
+                <div id="zcontent2">
+                    {$body}
+                </div> <span class="showmore" id="btn_zhan2" style="display:none">更多</span>
+            </div>
+        </div>
+        <div class="wrap mt20">
+            <div class="titHd"> <em>{$keywords}</em> </div>
+            <ul class="game-class" data-row="12">
+                <li><a href="{随机栏目URL}"><span>#</span>高自由度</a></li>
+                <li><a href="{随机栏目URL}"><span>#</span>近期热门预约</a></li>
+                <li><a href="{随机栏目URL}"><span>#</span>角色扮演</a></li>
+                <li><a href="{随机栏目URL}"><span>#</span>策略</a></li>
+                <li><a href="{随机栏目URL}"><span>#</span>武侠</a></li>
+                <li><a href="{随机栏目URL}"><span>#</span>独立游戏</a></li>
+                <li><a href="{随机栏目URL}"><span>#</span>江湖</a></li>
+                <li><a href="{随机栏目URL}"><span>#</span>中国风</a></li>
+                <li><a href="{随机栏目URL}"><span>#</span>剧情</a></li>
+                <li><a href="{随机栏目URL}"><span>#</span>迷宫</a></li>
+                <li><a href="{随机栏目URL}"><span>#</span>探索</a></li>
+                <li><a href="{随机栏目URL}"><span>#</span>卡牌</a></li>
+            </ul>
+            <div class="game-pic horizontal">
+                <ul class="swiper-wrapper cf" id="game_pic" data-row="6" style="height: 122px">
+                    {loop type="arclist" row="6" tpl="" islist=""}
+                    <li class="swiper-slide"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}" alt="{$vo.title}"></li>
+                    {/loop}
+                </ul>
+            </div>
+            <ul class="gamesup" data-row="1">
+                {loop type="arclist" row="6" tpl="" islist=""}
+                <li><span class="img"><img src="{$vo.pic}" alt></span>{$vo.title}</li>
+                {/loop}
+            </ul>
+            <div id="commentAnli"></div>
+            <div class="titHd"> <em>游戏信息</em><a class="morelk feed" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </div>
+            <ul class="game-data" data-row="0">
+                <table>
+                    <tr>
+                        <td width="50%">
+                            <p class="sp1">{随机栏目}</p>
+                            <p class="sp2"></p>
+                        </td>
+                        <td width="50%">
+                            <p class="sp1">{随机栏目}</p>
+                            <p class="sp2">{随机栏目}</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%">
+                            <p class="sp1">{随机栏目}</p>
+                            <p class="sp2">{随机栏目}</p>
+                        </td>
+                        <td width="50%">
+                            <p class="sp1">{随机栏目}</p>
+                            <p class="sp2"><a href="{随机栏目URL}" class="Cgreen" title="{随机栏目}">{随机栏目}</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%">
+                            <p class="sp1">{随机栏目}</p>
+                            <p class="sp2 Cgreen"><span id="qq1">832741983</span><a class="btnCopy"
+                                    data-clipboard-action="copy" data-clipboard-target="#qq1">{随机栏目}</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </ul>
+            <div class="titHd"> <em>官方帖子</em> <a class="morelk" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></div>
+            <ul class="list-bbs" data-row="5">
+                {loop type="arclist" row="5" tpl="" islist=""}
+                <li><a href="{$vo.url}">
+                        <div class="img"> <img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}">
+                        </div>
+                        <p>{$vo.title}</p>
+                    </a> </li>
+                {/loop}
+            </ul>
+        </div>
+        <div id="commentReco"></div>
+        <div class="wrap mt20">
+            <div class="tabHd">
+                <div class="tabMenu recommendtab"> <span class="on" rel="0">相关游戏</span> <span class
+                        rel="1">{$keywords}</span> </div> <a class="morelk kbothergame" href="{随机栏目URL}"
+                    style="display:none" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <ul class="list-game recommendgame" data-row="8">
+                {loop type="arclist" row="8" tpl="" islist=""}
+                <li class="beta"><a href="{$vo.url}">
+                        <div class="img"> <img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}">
+                        </div>
+                        <span class="name">{$vo.title}</span>
+                        <p class="score"><i></i>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}</p>
+                    </a> </li>
+                {/loop}
+            </ul>
+            <ul class="list-game recommendgame" style="display:none" data-row="4">
+                {loop type="arclist" row="8" tpl="" islist=""}
+                <li class="beta"><a href="{$vo.url}">
+                        <div class="img"> <img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}">
+                        </div>
+                        <span class="name">{$vo.title}</span>
+                        <p class="score"><i></i>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}</p>
+                    </a> </li>
+                {/loop}
+            </ul>
+            <div class="otArea">
+                <div class="tit"><em>快爆独家精品游戏</em> <a class="more" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></div>
+                <p>{随机栏目}</p>
+            </div>
+            <ul class="list-game" data-row="20">
+                {loop type="arclist" row="21" tpl="" islist=""}
+                <li class="beta"><a href="{$vo.url}">
+                        <div class="img"> <img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}">
+                        </div>
+                        <span class="name">{$vo.title}</span>
+                        <p class="score"><i></i>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}</p>
+                    </a> </li>
+                {/loop}
+            </ul>
+            <div class="otArea">
+                <div class="tit"><em>每日新发现</em><a class="more" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></div>
+                <p>{随机栏目}</p>
+            </div>
+            <ul class="list-game" data-row="5">
+                {loop type="arclist" row="6" tpl="" islist=""}
+                <li class="beta"><a href="{$vo.url}">
+                        <div class="img"> <img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}">
+                        </div>
+                        <span class="name">{$vo.title}</span>
+                        <p class="score"><i></i>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}</p>
+                    </a> </li>
+                {/loop}
+            </ul>
+        </div>
+    </div>
+    <div id="zhuanqu" class="hide"></div>
+    <div id="weixin_warn" style="display:none;">
+        <div class="bgmark"></div>
+        <div class="wxtips"></div>
+    </div>
+    <div id="plun">
+        <div id="commentList" class="hide"></div>
+    </div>
+    <div class="friLink" id="friLink">
+        <dt>友情链接</dt>
+        <dd><a href="{随机栏目URL}"><strong>{随机栏目}</strong></a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}"><strong>{随机栏目}</strong></a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}"><strong>{随机栏目}</strong></a></dd>
+    </div>
+    <script src="{$theme_path}/js/footer_wap_v2.js?v=9.06"></script>
+    <script src="{$theme_path}/js/bom_down_div.js?v=9.06"></script>
+    <div class="swiper-container swiper-container2" id="swiper-container2">
+        <div class="swiper-pagination2" id="swiper-pagination2"> <span class="swiper-curr"></span>/<span
+                class="swiper-count"></span></div>
+        <ul class="swiper-wrapper" data-row="6">
+            {loop type="arclist" row="6" tpl="" islist=""}
+            <li class="swiper-slide"><img src="{$vo.pic}" class="empty"><img src="{$vo.pic}" alt="{$vo.title}">
+            </li>
+            {/loop}
+        </ul>
+    </div> <a class="openApp" href="{随机栏目URL}" onclick="openapp(1);return false;" style="bottom:1.5rem; display:none"
+        title="{随机栏目}">{随机栏目}</a> <a id="gotop" class="gotop" style="display:none" onclick="go_to($('body'))">{随机栏目}</a>
+    <div class="downAppPop" id="downAppPop">
+        <div class="inner"> <a class="hideit" href="{随机栏目URL}" onclick="$('#downAppPop').hide()"
+                title="{随机栏目}">{随机栏目}</a> <a href="" rel="external nofollow">
+                <div class="hd" id="downAppPop_hd"> <img src="{随机图片}" alt>
+                    <p class="p1">{随机栏目}</p>
+                    <p class="p2"></p>
+                </div>
+            </a>
+            <div class="bd" id="downAppPop_bd"> <a href="" rel="external nofollow">
+                    <div class="baoDesc"> <img src="{随机图片}" alt>
+                        <div class="con"> <em>用好游快爆的理由</em><span></span> </div>
+                    </div>
+                    <ul class="baoList" data-row="3">
+                        <li><i class="it1"></i>精品好游戏</li>
+                        <li><i class="it2"></i>高品质游戏社区</li>
+                        <li><i class="it3"></i>{$keywords} 权威游戏榜单</li>
+                    </ul>
+                </a> </div>
+        </div>
+    </div>
+    <script src="{$theme_path}/js/AndroidConnect_game.js"></script>
+    <script src="{$theme_path}/js/hykb_qd_version.js"></script>
+    <script src="{$theme_path}/js/swiper-4.3.5.min.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/clipboard.min.js"></script>
+    <script src="{$theme_path}/js/smcp.min.js"></script>
+    <script>     var downInfo = { "kb_id": "178085", "apkurl": null, "package": "hykb.init.game.default.38744", "appname": "\u5bf9\u51b3\uff01\u5251\u4e4b\u5ddd-\u6c49\u5bb6\u6c5f\u6e56\u7eed\u4f5c", "icon": "\/\/img.71acg.net\/kbdev\/opensj\/20241213\/11535833336", "md5": null }, downurl = 'https://d.3839app.net/pg/g/' + lastHykbQdVersion + '/gaosu3/' + downInfo['kb_id'] + '.hykb_' + lastHykbQdVersion + '_gaosu3.apk'; var is_wechat = ua.match(/MicroMessenger/i) == 'micromessenger'; var gameId = 178085; var item_title = '对决！剑之川-汉家江湖续作'; var open_app_url = 'hykb://openTopic?type=gamedetail&gameId=' + gameId; var share_info = { "title": "\u5bf9\u51b3\uff01\u5251\u4e4b\u5ddd-\u6c49\u5bb6\u6c5f\u6e56\u7eed\u4f5c(9.2\u5206\uff0c15927\u9884\u7ea6)_\u597d\u6e38\u5feb\u7206app \u62a2\u5148\u73a9\u65b0\u9c9c\u597d\u6e38\u620f", "desc": "\u5bf9\u51b3\uff01\u5251\u4e4b\u5ddd-\u6c49\u5bb6\u6c5f\u6e56\u7eed\u4f5c,\u8d76\u5feb\u6765\u597d\u6e38\u5feb\u7206app\uff0c\u62a2\u5148\u73a9\u65b0\u9c9c\u597d\u6e38\u620f\uff01\uff01", "img": "\/\/img.71acg.net\/kbdev\/opensj\/20241213\/11535833336" }; var share_icon = (document.location.protocol == "https:" ? "https:" : "http:") + share_info.img; var _ios_gameId = '178085'; var _ios_app_url = _ios_gameId ? 'hykb://openTopic?type=gamedetail&gameId=' + gameId : 'hykb://openforumsummary';     </script>
+    <script src="{$theme_path}/js/detail.js?v=9.06" type="text/javascript"></script>
+    <script
+        type="text/javascript">      // 微信提示点击隐藏     
+            $('#weixin_warn').click(function () {
+                $(this).hide();
+            })     // 滚动     
+            var scrollTop = getScrollTop(),
+                clientHeight = getClientHeight();
+            $("#bomDownDiv").hide();
+            var bomDownshow = 1;
+            $("#bomDownDiv .btn-hide").click(function () { bomDownshow = 0; });
+            $(window).scroll(function () {
+                var scrollTop1 = getScrollTop();         // 顶部浮动         
+                if (scrollTop1 >= $('.game-main').eq(0).offset().top - 100) {
+                    if (bomDownshow == 1) { $("#bomDownDiv").show(); }
+                } else {
+                    if (bomDownshow == 1) { $("#bomDownDiv").hide(); }
+                }
+                if (scrollTop1 >= $("#tabMenu1").offset().top) { $(".openApp").show(); } else {
+                    $(".openApp").hide();
+                }
+            }); $('#tabMenu1>li').click(function () {
+                var i = $(this).index();
+                tab2(i);
+            }); var showiframe = 0; var ntype = 0; function show_comment_num(star, star_usernum, star_usernum_str) {
+                if (star_usernum == '0') { $("#pl_num").html('').hide(); } else { $("#pl_num").html(star_usernum_str).show(); }
+                if (star && star > 0) { $('#game_pj').html('<span class="sp1">快爆评分<sup>&reg;</sup></span>' + '<span class="score">' + star + '</span>' + '<div class="star">' + '<span style="width: ' + star * 10 + '%"></span>' + '</div>' + '<span class="sp2">' + (star_usernum == '0' ? '' : star_usernum + '人') + '</span>').show(); $('#game_nopj').hide(); } else { $('#game_pj').hide(); $('#game_nopj').show(); }
+            } function tab2(i) {
+                if (i == 3) { return false; } var li = $('#tabMenu1>li').eq(i); if (li.attr('rel')) { pop($(this).attr('rel')); return false; } else {
+                    li.addClass('on').siblings().removeClass('on'); $("#zhuanqu").addClass('hide'); $('.game-con').addClass('hide'); $("#plun").addClass('hide'); if (i == 0 || i == 2) {
+                        $(".friLink").show(); if (i == 0) { var obj = $('.game-con'); } if (i == 2) { var obj = $('#plun'); } obj.removeClass('hide').find('img[lz_src]').attr('src', function () {
+                            return $(this).attr('lz_src')
+                        }).removeAttr('lz_src');
+                    } if (i == 2) {
+                        $("#plun").removeClass('hide'); comInit.comPanel();
+                    } if (i == 1) {
+                        $(".friLink").hide();
+                        var str = '<iframe id="zq" width="100%"  scrolling="no" allowtransparency="true" frameborder="0" style="border:0px;margin-bottom:5px;min-height:500px;margin-top:10px" src="/zhuanqu/0/0.htm"></iframe>';
+                        if (showiframe == 0) { showiframe = 1; $("#zhuanqu").html(str); } $("#zhuanqu").removeClass('hide');
+                    } return false;
+                }
+            }
+            function pjPanel() {
+                go_to($('#tabMenu1')); $("#zhuanqu").addClass('hide'); $('.game-con').addClass('hide'); $('#tabMenu1 li').removeClass('on').eq(2).addClass('on'); $(".friLink").show();
+                var obj = $('#plun'); obj.removeClass('hide').find('img[lz_src]').attr('src', function () { return $(this).attr('lz_src') }).removeAttr('lz_src'); $("#plun").removeClass('hide');
+                comInit.comPanel();
+            }      //切换到专区     
+            function tab_zhuan() {
+                tab2(1);
+                var obj = $("#tabMenu1"); var top = obj.offset().top - 80;
+                $("body,html").animate({ scrollTop: top }, 1); return false;
+            }
+            if (is_ios) { loadIosPop(); } for (kj = 1; kj <= 4; kj++) {
+                if ($('#btn_zhan' + kj).length) {
+                    if (kj == 4) { h = 6; } else { h = 3; }
+                    shuoZhannew($('#btn_zhan' + kj), 'zinfo' + kj, 'zcontent' + kj, h);
+                }
+            } function shuoZhannew(btn, id1, id2, h) {
+                var lh = $('#' + id2).css('line-height').replace('px', ''); lh = parseInt(lh);
+                var h2 = $('#' + id2).innerHeight(); if (h2 > lh * h) {
+                    if (id2 == 'applogdiv') { btn.parent().show(); } else { btn.show(); }
+                    btn.click(function () {
+                        if ($(this).hasClass('hidebtn')) { $('#' + id1).addClass('over'); $(this).removeClass('hidebtn'); } else {
+                            $('#' + id1).removeClass('over'); $(this).addClass('hidebtn');
+                        }
+                    });
+                }
+            } function pjnumFormatenew(num) {
+                if (num > 10e4) {
+                    return (num / 10e3).toFixed(1) + 'W';
+                } else if (num > 10e3) { return (num / 10e3).toFixed(2) + 'W'; } return num;
+            } function introext(game_id) {
+                $.ajax({ url: "/app/hykb_web_wap/ajax.php", data: { game_id: game_id }, type: "get", dataType: "json", success: function (data) { if (data.code == 100) { data = data.data; var pm_link = '//m.3839.com/top/hot.html'; if (data.pm.t.indexOf('新品飙升') != -1) pm_link = '//m.3839.com/top/sugar.html'; else if (data.pm.t.indexOf('新游期待') != -1) pm_link = '//m.3839.com/top/expect.html'; $('#gamecon_rank').html('<a href="' + pm_link + '"><p><i class="Cgreen">#</i>' + data.pm.i + '</p><p>' + data.pm.t + '</p></a>'); var price_info = 0; var gamecon_down = ''; if (data.num.n && data.num.t) { gamecon_down = '<p>' + data.num.n + '</p><p>' + data.num.t + '</p>'; } $('#gamecon_down').html(gamecon_down); var star_usernum_str = ''; if (typeof data['star_usernum_str'] != 'undefined' && data['star_usernum_str']) { star_usernum_str = data['star_usernum_str']; } else { star_usernum_str = pjnumFormatenew(data.star_usernum); } show_comment_num(data.star, data.star_usernum, star_usernum_str); } } });
+            } introext(gameId); var swiper1 = new Swiper('.game-pic', { slidesPerView: 'auto', freeMode: true, observer: true, observeParents: true });     // 截图切换     var swiper2 = new Swiper('#swiper-container2', {         on: {             slideChangeTransitionStart: function () {                 $("#swiper-pagination2 .swiper-curr").text(this.activeIndex + 1);             }         }     });     // 点击放大     $("#game_pic .swiper-slide").on("click", function (e) {         if ($('#swiper-container2 .swiper-slide').length == 0) {             $('#swiper-container2>ul').html($('#game_pic').html());         }         var _index = $(this).index("#game_pic .swiper-slide");         $("#swiper-container2").show();         swiper2.update();//更新         swiper2.slideTo(_index, 0);//定位1         $("#swiper-pagination2 .swiper-curr").text(_index + 1);//定位2         $("#swiper-pagination2 .swiper-count").text(swiper2.slides.length);//计算总页数     });      // 设置高度+点击消失     $("#swiper-container2").height($(window).height()).on("click", function () {         $(this).hide()     });     $(window).resize(function () {         $("#swiper-container2").height($(window).height());     });      //倒计时     var tt;     var can_send_sms = 1;     var yy_djs = 0;      $('#mobile').bind('input propertychange', function () {         var mobile = $.trim($('#mobile').val());         if (!/^1[3-9]\d{9}$/.test(mobile)) return false;         $.ajax({             url: "/app/hykb_web_wap/index.php?m=game_detail&ac=check_use_yzm_num",             data: {mobile: mobile},             type: "post",             dataType: "json",             success: function (msg) {                 if (msg.status == 1) {                     $('.checkcode').hide();                 } else {                     $('.checkcode').show();                 }             }         });     });      //数美检验     var isHttps = location.protocol == "https:" ? true : false;     var smc_obj = '';     initSMCaptcha({         organization: '3c9ULb1QEk3nLrolvANr',         product: 'popup',         width: 300,         https: isHttps     }, smCaptchaCallback);      function smCaptchaCallback(SMCaptcha) {         smc_obj = SMCaptcha;         SMCaptcha.onSuccess(function (data) {             var pass = data.pass;             var rid = data.rid;             if (pass) {                 get_yuyue_sns(rid);             }         });          //预约发送验证码         $(".yzcbtn").on('click', function (e) {             if (yy_djs == 1) {//倒计时                 return false;             }             var mobile = $("#mobile").val();             if (!check_yy_mobile(mobile)) return false;              $.ajax({                 url: "/app/hykb_web_wap/index.php?m=game_detail&ac=check_send",                 data: {mobile: mobile},                 type: "post",                 dataType: "json",                 async: false,                 success: function (msg) {                     if (msg.code == 'OK') {                         e.preventDefault();                         var result = SMCaptcha.getResult();                         var pass = result.pass;                          if (!pass) {                             SMCaptcha.verify();                         } else {                             var rid = result.rid;                             get_yuyue_sns(rid);                         }                     } else {                         _alert(msg.msg);                     }                 }             });              return false;         });          function get_yuyue_sns(rid) {             var mobile = $("#mobile").val();             if (!check_yy_mobile(mobile)) return false;             $.ajax({                 url: "/app/hykb_web_wap/index.php?m=game_detail&ac=sendsms2",                 data: {mobile: mobile, rid: rid},                 type: "post",                 dataType: "json",                 success: function (msg) {                     smc_obj.reset();                     if (msg.code == 'OK') {                         $("#jsn").html(60);                         $(".jssnbtn").show();                         $(".yzcbtn").hide();                         daojishi();                     } else {                         _alert(msg.msg, function () {                             pop2('yzw');                             return false;                         });                     }                 }             });         }     }      function check_yy_mobile(mobile) {         if (mobile == '') {             _alert('请输入手机号码', function () {                 pop2('yzw');                 return false;             });             return false;         }         var partter = /^1[3-9]\d{9}$/;         if (!partter.test(mobile)) {             _alert('请输入正确的手机号码', function () {                 pop2('yzw');                 return false;             });             return false;         }         return true;     }       function daojishi() {         var jsn = parseInt($("#jsn").html());         jsn = jsn - 1;         if (jsn <= 0) {             clearTimeout(tt);             $("#jsn").html(60);             $(".jssnbtn").hide();             $(".yzcbtn").show();             yy_djs = 0;         } else {             $("#jsn").html(jsn);             tt = setTimeout("daojishi()", 1000);             yy_djs = 1;         }     }      //开始预约     $("#yybtn,.yybtn").click(function () {         var mobile = $("#mobile").val();         var yzm = '';         var game_id =178085;         if ($('.checkcode').is(':visible')) {             yzm = $("#yzm").val();             if (mobile == '') {                 _alert('请输入手机号码', function () {                     pop2('yzw');                     return false;                 });                 can_send_sms = 1;                 return false;             }             if (yzm == '') {                 _alert('请输入验证码', function () {                     pop2('yzw');                     return false;                 });                 can_send_sms = 1;                 return false;             }         }          var partter = /^1[3-9]\d{9}$/;         if (!partter.test(mobile)) {             _alert('请输入正确的手机号码', function () {                 pop2('yzw');                 can_send_sms = 1;                 return false;             });             return false;         }         var source = sem_qd_info != '' ? 'sem' : 'wap';         $.ajax({             url: "/app/hykb_web_wap/index.php?m=game_detail&ac=yygame2",             data: {mobile: mobile, yzm: yzm, game_id: game_id, 'source': source},             type: "post",             dataType: "json",             success: function (msg) {                 can_send_sms = 1;                 if (msg.code == 100) {                     pop2('yzs');                     return false;                 } else {                     if (msg.code == 'error1') {                         pop2('yymore');                         return false;                     } else {                         _alert(msg.msg, function () {                             pop2('yzw');                             return false;                         });                     }                 }             }         });         return false;     });      if (is_wechat) {         $('#weixin_warn').show();         $('.wxdowntip').click(function () {             $('#weixin_warn').show();             // return false;         });     }      (function () {         // 下载         function downClick() {             var detail_downurl = downInfo['apkurl'];             var detail_package = downInfo['package'];             var detail_title = downInfo['appname'];             var detail_pic = (document.location.protocol == "https:" ? "https:" : "http:") + downInfo['icon'];             var detail_md5 = downInfo['md5'];             AndroidConnect.launch('hykb://downloadManager?url=' + detail_downurl + '&packageName=' + detail_package + '&name=' + encodeURIComponent(detail_title) + '&icon=' + encodeURIComponent(detail_pic) + '&md5=' + detail_md5 + '&uid=0&vid=0', function () {                 document.location.href = downurl;             });         }          function to_ios_game_detail() {             openApp.launch(_ios_app_url, function () {                 pop('todownapp');             });         }           $(document).on('click', 'a.down_btn', function () {             if (is_ios) {                 to_ios_game_detail();                 return false;             }             if (is_wechat) {                 $('#weixin_warn').show();                 return false;             }             if ($(this).text() != '查看详情') {                 $('#downAppPop').find('.hd').html('<img src="' + downInfo['icon'] + '" alt="' + downInfo['appname'] + '下载"><p class="p1">打开好游快爆，' + '立即预约' + '</p><p class="p2">' + downInfo['appname'] + '</p>');                 $('#downAppPop').show();             }             downClick();             return false;         });          $('#downAppPop').click(function (event) {             if ($(event.target).attr('id') == 'downAppPop') {                 $(this).hide();             }         });          // 联动打开游戏详情页         $(document).on('click', 'a.btn_goto', function () {             pop_hide();             if (is_ios) {                 to_ios_game_detail();                 return false;             }             if (is_wechat) {                 $('#weixin_warn').show();                 return false;             }             AndroidConnect.launch('hykb://openTopic?type=gamedetail&gameId=' + gameId, function () {                 document.location.href = downurl;             });             return false;         });         // 联动打开快爆首页         $(document).on('click', 'a.btn_app', function () {             pop_hide();             if (is_ios) {                 to_ios_game_detail();                 return false;             }             if (is_wechat) {                 $('#weixin_warn').show();                 return false;             }             AndroidConnect.launch(open_app_url, function () {                 document.location.href = downurl;             });             return false;         });         // 弹窗         $(document).on('click', 'a.pop_btn', function () {             if ($(this).attr('rel')) {                 pop($(this).attr('rel'));                 return false;             }         });         $('.game-con a').click(function () {             var href = $(this).attr('href');             var reg1 = /hykb\/short/;             if (is_ios) {             } else {                 if (reg1.test(href)) {                     pop('detail');                     return false;                 }                 if (href && href.indexOf('//') != -1) {                     if (href.indexOf('3839.com') == -1 && href.indexOf('.onebiji.com') == -1 && href.indexOf('.yxhhdl.com') == -1) {                         pop('detail');                         return false;                     } else {                         return true;                     }                 }             }         });     })();      function jump_url(url) {         top.location.href = url;     }      function set_iframe_h(h) {         $("#zq").css("height", h + "px");     }      function showDialog(id, text) {         if (!id) {             return false;         }         _alert(text);         return false;     }      //网页打开app     function openapp(jump) {         if (jump == 0) {             setCookie("autoopenapp", 1, 24 * 60 * 60)         }         if (is_ios) {             openApp.launch(_ios_app_url, function () {                 if (jump == 1) {                     pop('todownapp');                 }             });             return false;         } else {             AndroidConnect.launch(open_app_url, function () {                 if (jump == 1) {                     document.location.href = 'https://m.3839.com/';                 }             });             return false;         }     }      function setCookie(name, value, expires) {         var exp = new Date();         exp.setTime(exp.getTime() + expires * 1000);         document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();     }      function getCookie(name) {         var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");         if (arr = document.cookie.match(reg)) return unescape(arr[2]);         else return null;     }      //复制     var clipboard = new Clipboard('.btnCopy');     clipboard.on('success', function (e) {         alert("复制成功");         return false;     });     clipboard.on('error', function (e) {         alert("复制失败");         return false;     });     //相关游戏和开发者游戏切换     var ctab =1;     $(".recommendtab span").click(function () {         if (ctab == 0) {             return false;         }         var rel = $(this).attr("rel");         $(".recommendtab span").removeClass("on");         $(".recommendtab span").eq(rel).addClass("on");         $(".recommendgame").hide();         $(".recommendgame").eq(rel).show().find('img[lz_src]').attr('lzimg', 1);         lzimg_load();         if (rel == 1) {             $(".kbothergame").show();         } else {             $(".kbothergame").hide();         }     }); </script>
+    <script src="{$theme_path}/js/wxshare.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function () {         // 分享         
+            wshare(share_info.title, share_info.desc, share_icon, window.location.href);
+            $('#share_link').attr('data-share-title', share_info.title);
+            $('#share_link').attr('data-share-url', window.location.href);
+            $('#share_link').attr('data-share-img', share_icon);
+            $('#share_link').attr('data-share-description', share_info.desc);
+            document.write('<script type="text/javascript" src="//f2.3839img.com/etweixin/v2/js/zepto.min.js"><\/script>');
+            document.write('<script type="text/javascript" src="//f2.3839img.com/etweixin/v2/js/jshare.js"><\/script>');
+        })();
+        if (!getCookie('autoopenapp')) setTimeout(function () { openapp(0); }, 3000); (function () {
+            $('.game-pic').each(function (index, element) {
+                var imgSrc = $(this).find('img').eq(0).attr('src');
+                imgReady(index, imgSrc, function () {
+                    if (this.width / this.height > 1) {
+                        $('.game-pic').eq(index).addClass("horizontal");
+                    }
+                });
+            });
+        })();
+        popData['toapp4'] = '<div class="pop" style="display:block"><a class="pclose">关闭</a>' + '    <div class="ptit">更多精彩功能 前往好游快爆</div>' + '    <div class="pcon">' + '        <p class="pf24 grey tac">发现好玩游戏  预约抢先尝鲜<br>领取游戏礼包  体验内测资格<br>更多新鲜活动  尽在好游快爆</p>' + '    </div>' + '    <div class="pbtn">' + '        ' + (is_ios ? '<a onclick="pop(\'ios\')" rel="external nofollow">马上下载</a>' : '<a href="' + _qd_url + '">马上下载</a>') + '    </div>' + '</div>'; popData['toapp5'] = '<div class="pop" style="display:block"><a class="pclose">关闭</a>' + '    <div class="ptit">更多精彩内容，需下载好游快爆</div>' + '    <div class="pcon">' + '        <p class="pf24 grey tac">下载速度更快，断点可继续下载<br>第一时间收到游戏最新消息推送<br>开发者入驻，有问题可及时反馈</p>' + '    </div>' + '    <div class="pbtn">' + '        ' + (is_ios ? '<a onclick="pop(\'ios\')" rel="external nofollow">马上下载</a>' : '<a href="' + _qd_url + '">马上下载</a>') + '    </div>' + '</div>'; 
+    </script>
+    <script>// 评论技术配置    
+        var pid = 1;//项目ID     
+        var fid = 178085;//内容ID     
+        var fscore = '9.2';//文章评分   
+        var fscore = parseFloat(fscore);
+        var comInit = {         //下载弹窗提示      
+            downTips: function () { pop('comment'); },         //设置评论数        
+            comTotal: function (o) {
+                var count_str = '';
+                if (typeof o['count_str_1565'] != 'undefined' && o['count_str_1565']) {
+                    count_str = o['count_str_1565'];
+                } else if (typeof o['count_str'] != 'undefined' && o['count_str']) {
+                    count_str = o['count_str'];
+                } else { count_str = pjnumFormatenew(o.count); }
+                show_comment_num(o.star, o.count, count_str);
+            },         //详情评论面板         
+            comPanel: function () {
+                comList.$mount("#commentList");
+            }
+        }
+        var tempTime; var isCommentLoad = true; function loadCom() {
+            if (window.commentDetail && isCommentLoad) {
+                isCommentLoad = false;
+                clearInterval(tempTime); commentDetail();
+            } else { tempTime = setTimeout(loadCom, 200); }
+        }
+        $(window).bind("scroll", init_comment_load); $(window).bind("resize", init_comment_load); init_comment_load();      //初始化加载   
+        function init_comment_load() {
+            if ($(window).scrollTop() + $(window).height() > $('#commentAnli').offset().top - 100) {
+                loadCom();
+                $(window).unbind("scroll", init_comment_load); $(window).unbind("resize", init_comment_load);
+            }
+        } 
+    </script>
+    <script src="{$theme_path}/js/chunk-vendors.js?v=9.06"></script>
+    <script src="{$theme_path}/js/app.js?v=9.06"></script>
+    <script
+        language="javascript">     var jumpzuan = getQueryVariable("jumpzuan"); if (jumpzuan == 1) { var topp = $("#tabMenu1").offset().top; tab_zhuan(); window.scrollTo(0, topp); } function getQueryVariable(variable) { var query = window.location.search.substring(1); var vars = query.split("&"); for (var i = 0; i < vars.length; i++) { var pair = vars[i].split("="); if (pair[0] == variable) { return pair[1]; } } return (false); } </script>
+    <script type="text/javascript" src="{$theme_path}/js/lzimg.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/mtj.js"></script>
+</body>

@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('../fonts/font_1631810_4drehjsmfd.eot'); /* IE9 */
+  src: url('../fonts/font_1631810_4drehjsmfd.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/c65c035cbd1b4e76a074f283935bab8b.woff') format('woff2'),
+  url('../fonts/font_1631810_4drehjsmfd.woff') format('woff'),
+  url('../fonts/font_1631810_4drehjsmfd.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('../fonts/font_1631810_4drehjsmfd.svg') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon_heart:before {
+  content: "\e622";
+}
+
+.icon_star:before {
+  content: "\e67e";
+}
+
+.icon_warn:before {
+  content: "\eba1";
+}
+
+.icon-heart-round-copy:before {
+  content: "\eba2";
+}
+

@@ -1,0 +1,1 @@
+(function hitokoto(){var hitokoto="不努力就只能听到别人的好消息。";var dom=document.querySelector('#hitokoto');Array.isArray(dom)?dom[0].innerText=hitokoto:dom.innerText=hitokoto;})()

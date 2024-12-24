@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+body{background: #f2f2f2;}
+
+.section-title h3{
+    margin: 0 0 10px 0;
+    padding: 0 0 0 8px;
+    line-height: 20px;
+    font-size: 18px;
+    border-left: 4px solid #0066cc;
+    }
+.section-title{border-bottom: 1px solid #ddd;margin: 15px 0;}
+
+.content-list{width: 1200px;margin: 20px auto;}
+.content-list ul{margin: -6px -6px 0;}
+.taptap-app-list::after{content:"";display:table;clear:both}
+.list-item{float:left;display:block;width: 161px;margin: 6px;overflow:hidden;background:#fff;border-radius:3px;box-shadow:0 2px 2px rgba(0,0,0,.05);}
+.list-item .item-image{display:block;margin:16px;width:128px;height:128px;border-radius:31px}
+.list-item .item-image>img{display:block!important;width:100%;}
+.list-item .item-image>img.show{opacity:1}
+.list-item .item-caption{position:relative;padding:0 16px 10px;overflow:hidden}
+.list-item .item-caption::after{content:"";display:table;clear:both}
+.list-item .item-caption .item-caption-title{display:block;margin:0 0 10px;max-width:100%;overflow:hidden}
+.list-item .item-caption .item-caption-title>h4{margin:0;line-height:20px;font-size:16px;white-space:nowrap}
+.list-item .item-caption .item-caption-title>h4 .card-label{margin-top:0}
+.list-item .item-caption .item-caption-title .caption-title-end{display:block;position:absolute;top:0;right:16px;width:45px;height:20px;background-color:rgba(255,255,255,0);background-image:linear-gradient(90deg,rgba(255,255,255,0),#fff);-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=rgba(255, 255, 255, 0), endColorstr=white)"}
+.list-item .item-caption .item-caption-category{color:#14B9C8}
+.list-item .item-caption .item-caption-label{display:block;line-height:20px;font-size:14px}
+.list-item .item-caption .item-caption-label a{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;max-width:80px;display:inline-block;color:#666}
+.list-item .item-caption .item-caption-label .caption-label-rating::after,.list-item .item-caption .item-caption-label::after{content:"";display:table;clear:both}
+.list-item .item-caption .item-caption-label .caption-label-rating{margin:2px 0 0;line-height:15px;text-align:right;color:#999;float: right;}
+.list-item .item-caption .item-caption-label .caption-label-rating>span{float:left;display:block}
+.list-item .item-caption .item-caption-label .caption-label-rating>i{float:left;margin:0 0 0 5px;display:block;width:14px;height:14px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAQAAADYBBcfAAAA90lEQVQ4y93UPQrCMBTA8eAFdCooghZXwV0PoPfQvUdwEbroVCn8Bydv0MVB7yAuCqIgiFcQQepzET/ThLpp3vbID17eS6LUPyzqNL6DEdE3rMqFC9X0cIwgjNOyMmcE4Uw5HRwitximYQ7HOzzi2LZncGniETK/M0GYE+LRxCXzibosOL1s18WJBd334lZWJgjLj8IpsLayNQXdGYtsjWxDMak9JXaJbEfJ1NkKey3bU7ENJdDCwD78mRZO7fCghQcbyyU2J2t79Y872qP3dGfrZthBEGJG5JVSijwjYgShbYYDhAm1l1yNCULfDH1a2nwL/2d/3SuVL2Mp5zjvIgAAAABJRU5ErkJggg==) repeat-x;background-size:14px}
+.list-item .item-caption .item-caption-app-price{padding-top:8px;margin-top:5px;font-size:14px;line-height:20px;color:#14B9C8;border-top:1px solid #eee}
+.list-item .app-item-order{display:inline-block;margin:10px 0 0 -8px;width:55px;line-height:20px;text-align:center;color:#999;border-radius:10px;background:#e6e6e6}
+
+
+/* 分页 */
+#pages{height:40px;padding:10px 0;clear:both;text-align:center}
+#pages a,#pages a:hover,#pages a:visited{padding:0 14px;font-size:16px;border:1px solid #e4e4e4;display:inline-block;height:36px;line-height:36px;text-decoration:none;color:#777;margin:0 3px;background:#fff}
+#pages .active a,#pages .cur a,#pages a:hover{border: 1px solid #06c;color:#fff;background: #06c;}
+
+
+.breadcrumb{width: 1200px;margin: 20px auto 0;}
+.category-tags{width: 100%;overflow: auto;white-space: nowrap;}
+.category-tags .tag{font-size:16px;height:34px;line-height:34px;padding:0 15px;background: #06c;border-radius:18px;display: inline-block;margin-right: 10px;}
+.category-tags .tag a{color: #fff;}
+
+
+@media only screen and (max-width:767px){
+  .content-list{width: 100%;}
+  .list-item{float: none;width: auto;margin: 0;padding: 10px 0;border-bottom: 1px solid #eee;}
+  .list-item .item-image{float:left;width: 80px;height: 80px;margin: 0;}
+  .content-list ul {margin:0;padding:10px;background: #fff;}
+  .list-item .item-caption .item-caption-title>h4{margin:0;line-height:20px;font-size:16px;white-space:nowrap;text-overflow: ellipsis;overflow: hidden;}
+    .list-item .item-caption{padding: 10px 0 10px 10px;}
+    .list-item .item-caption .item-caption-title{margin-bottom: 20px;}
+    #pages a,#pages a:hover,#pages a:visited{padding: 0 10px;font-size: 14px;height: 30px;line-height: 30px;}
+    .breadcrumb{width: 100%;margin: 10px auto 0;}
+}

@@ -13,13 +13,13 @@
     <meta name="full-screen" content="yes">
     <meta name="browsermode" content="application">
     <meta name="MobileOptimized" content="320">
-    <link href="{$theme_path}/css/androidMobile.css?3458e8b" type="text/css" rel="stylesheet">
+    <link href="{$theme_path}/css/androidmobile.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
     <section class="m_page_header"> <a href="javascript:history.back();" class="back fl" marks="wap-a-xinyou-back">
             <i></i> 新游推荐 </a>
-        <div class="fr"> <a href="{随机栏目URL}" class="back_home" marks="wap-a-xinyou-shoye" title="{随机栏目}">{随机栏目}</a> <a
+        <div class="fr"> <a href="/" class="back_home" marks="wap-a-xinyou-shoye" title="{随机栏目}">{随机栏目}</a> <a
                 href="/mobile/search.html" class="search" marks="wap-a-xinyou-search"> <i></i> </a> </div>
     </section>
     <section class="m_tab">
@@ -38,7 +38,7 @@
                 <li href="{$vo.url}" markpre="321078">
                     <div class="logo"> <img src="{$vo.pic}" data-src="{$vo.pic}" alt="{$vo.title}"> </div>
                     <div class="info" data-kid="2">
-                        <p class="name">{$vo.tilte}</p>
+                        <p class="name">{$vo.title}</p>
                         <p class="other">{randstr type="2" num="2"/}.{randstr type="2" num="2"/} MB万+ 下载 <em>
                                 {randstr type="2" num="2"/}.{randstr type="2" num="2"/} G</em></p>
                         <p class="decs">{$vo.postdate}</p>
@@ -53,8 +53,52 @@
     <section class="m_tips_dialog" id="j-limit-dialog" style="display: none">
         <div class="filter"></div> <i class="wxDownload_arrow"></i>
         <div class="wxDownload_tips"></div>
-    </section>
-    <p>{$keywords}</p>
+    </section><section class="m_download_tips"> <a data-href="/" class="j-launchApp" data-target="main"> {$keywords} 
+            {随机关键词}<em>免费</em>下载 <i></i> </a> </section> <!-- 友情链接 -->
+        <div class="m_link">
+            <div class="header"> <i></i>{随机关键词} </div>
+            <div class="box"> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                    marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian"
+                    title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a
+                    href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                    marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian"
+                    title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a
+                    href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                    marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian"
+                    title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}" marks="wap-a-shouye-youlian" title="{随机栏目}">{随机栏目}</a>
+            </div>
+        </div> <!-- 切换 4399 -->
+        <div class="m_switch_4399"> <a href="{随机栏目URL}" marks="wap-a-shouye-qiehuan" title="{随机栏目}">{随机栏目}</a>
+            <div class="m_footer_tips">
+                <p class="title">{网站名称} |&nbsp;<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>&nbsp;|&nbsp;<a
+                        href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></p>
+                <p class="content">{随机栏目}</p>
+                <p class="content">{随机栏目}</p>
+                <p class="title">纠纷处理(客服电话):{随机数字}-{随机数字}-{随机数字} <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></p>
+                <p class="content"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> <a href="{随机栏目URL}"
+                        title="{随机栏目}">{随机栏目}</a></p>
+                <p class="title"><a href="/"><i class="mww">&nbsp;</i>闽网文〔{随机数字}〕{随机数字}{随机数字}号</a></p>
+                <p class="title"><a href="/"><i class="mgw">&nbsp;</i>闽公网安备 {随机数字}{随机数字}号</a></p>
+                <p class="content">Copyright©2004 - <span id="j-yearTime">{网站地址} All Rights Reserved.</p>
+                <p class="content">{随机栏目}</p>
+                <script>
+                    var currentDate = new Date();
+                    var year = currentDate.getFullYear();
+                    document.getElementById("j-yearTime").innerText = year;
+                </script>
+            </div>
+        </div> <!--返回顶部-->
+        <div class="m_totop" id="j-totop" marks="wap-a-shouye-top"></div>
+        <section class="m_tips_dialog" id="j-limit-dialog" style="display: none">
+            <div class="filter"></div> <i class="wxDownload_arrow"></i>
+            <div class="wxDownload_tips"></div>
+        </section>
+        <div class="m_pureMode" id="j-pureMode">
+            <div class="m_pureMode_tips">
+                <div class="m_pureMode_btn" id="j-pureMode_btn">知道了<div> </div>
+                </div>
+            </div>
+        </div>
 </body>
 <script type="text/javascript" src="{$theme_path}/js/androidMobile.js?3458e8b"></script>
 <script type="text/javascript" src="{$theme_path}/js/filtrateBrowser.js?3458e8b"></script>

@@ -1,0 +1,642 @@
+<head>
+    <meta charset="UTF-8">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta itemprop="name" content="好游快爆游戏推荐_好玩手机游戏推荐-抢先玩新鲜好游戏">
+    <meta itemprop="image" content="https://img.71acg.net/kbyx~sykb/20210128/11211446667">
+    <meta name="description" itemprop="description" content="{$description}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="好游快爆">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" sizes="60x60" href="{$theme_path}/css/1032463042">
+    <link rel="apple-touch-icon" sizes="76x76" href="{$theme_path}/css/10330766185">
+    <link rel="apple-touch-icon" sizes="120x120" href="{$theme_path}/css/10333073799">
+    <link rel="apple-touch-icon" sizes="152x152" href="{$theme_path}/css/10335763865">
+    <link rel="manifest" href="{$theme_path}/css/manifest.json?v=6">
+    <link rel="canonical" href="{$thisurl}">
+    <link href="{$theme_path}/css/home.css?v=9.06" type="text/css" rel="stylesheet">
+    <!--<script src="{$theme_path}/js/common.js?v=9.06"></script>-->
+    <script src="{$theme_path}/js/jquery.js"></script>
+</head>
+
+<body>
+    <style>
+        :root {
+            --headBg: 39, 43, 57;
+        }
+    </style>
+    <div style="display:none"><img src="{$vo.pic}"></div>
+    <script src="{$theme_path}/js/top_down_area.js?v=9.06"></script>
+    <div class="headwp" id="headwp">
+        <div class="headArea">
+            <a href="/"><span class="applogo">{网站地址}</span></a>
+            <a class="link-sch" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+        </div>
+    </div>
+    <div class="homeWrap" id="mainDiv">
+        {loop type="arclist" row="1" tpl="" islist=""}
+        <div class="cardReco" id="header_slide">
+            <a href="/">
+                <img class="img" src="{$vo.pic}" alt="{$vo.title}">
+                <div class="mask"></div>
+                <div class="card">
+                    <div class="c-tags"><span>{随机关键词}</span></div>
+                    <div class="c-info">
+                        <div class="it-fl">
+                            <div class="name"><em>{$vo.title}</em></div>
+                            <div class="desc">{$vo.info}</div>
+                        </div>
+                        <div class="it-fr">
+                            <span class="sp-score">{randstr type="2" num="2"/}.{randstr type="2" num="2"/}</span>
+                            <span class="sp-reply">{randstr type="2" num="2"/}.{randstr type="2" num="2"/}万人评价</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {/loop}
+
+        <script>
+
+            (function () {
+                var header_slide_json = ["<a href=\"\/\/\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241219\/18144064601\" alt=\"\u8424\u706b\u7a81\u51fb-\u5168\u65b0SS3\u8d5b\u5b63\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u9ed1\u79d1\u6280\u201c\u9274\u5b9d\u5f00\u95e8\u201d<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u8424\u706b\u7a81\u51fb-\u5168\u65b0SS3\u8d5b\u5b63<\/em><\/div>\r\n<div class=\"desc\">\u54df\uff0c\u8424\u706b\u8fd8\u5305\u53d1\u201c\u5bf9\u8c61\u201d\uff0c\u8dd1\u5200\u517b\u5ab3\u5987\uff1f\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.2<\/span><span class=\"sp-reply\">1.4\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"https:\/\/m.bbs.3839.com\/thread-7504346.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/sykb~bbs\/section1\/20241218\/1426328349317\" alt=\"\u660e\u5e74\u817e\u8baf\u53c8\u8981\u653e\u5927\u4e86\uff1f\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u5c55\u671b2025 | \u817e\u8baf\u6e38\u620f\u7bc7<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u660e\u5e74\u817e\u8baf\u53c8\u8981\u653e\u5927\u4e86\uff1f<\/em><\/div>\r\n<div class=\"desc\">\u5c04\u51fb\u3001\u5f00\u653e\u4e16\u754c\u3001\u683c\u6597...\u9e45\u5382\u5e95\u724c\u5230\u5e95\u6709\u591a\u5c11<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>94<\/span><span class=\"sp-reply\">63\u8ba8\u8bba<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/58581.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241220\/09175945652\" alt=\"\u7403\u7403\u5927\u4f5c\u6218-\u9886\u5723\u8bde\u5c0f\u661f\u661f\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u5723\u8bde\u9650\u5b9a\u901a\u884c\u8bc1\u4e0a\u7ebf<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u7403\u7403\u5927\u4f5c\u6218-\u9886\u5723\u8bde\u5c0f\u661f\u661f<\/em><\/div>\r\n<div class=\"desc\">oi\uff01\u5723\u8bde\u661f\u4e50\u56ed\u5df2\u52a0\u8f7d100%\uff0c\u8de8\u5e74\u72c2\u6b22\u5f00\u542f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.8<\/span><span class=\"sp-reply\">1.6\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/c\/174481.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240904\/17390511503\" alt=\"\u6c99\u5a01\u739b\u4f20\u5947\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7f16\u8f91\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u6c99\u5a01\u739b\u4f20\u5947<\/em><span>\u6d4b\u8bd5<\/span><\/div>\r\n<div class=\"desc\">\u9b54\u6027\u6e38\u620f\u914d\u97f3\uff0c\u6296\u97f3\u7206\u706b\u7684\u7ecf\u8425\u6e38\u620f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.1<\/span><span class=\"sp-reply\">2914\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/190608.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220411\/14173347856\" alt=\"\u5408\u8f91|\u89c6\u89d2\u8f6c\u6362\uff0c\u552f\u7f8e\u89e3\u8c1c\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7cbe\u9009\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91|\u89c6\u89d2\u8f6c\u6362\uff0c\u552f\u7f8e\u89e3\u8c1c<\/em><\/div>\r\n<div class=\"desc\">\u552f\u7f8e\u70e7\u8111\u89e3\u8c1c\uff0c\u6765\u4e00\u573a\u72ec\u5177\u5320\u5fc3\u7684\u7a7a\u95f4\u9b54\u672f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>420<\/span><span class=\"sp-reply\">25\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/111175.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/sykb~bbs\/default\/20241018\/1709587283917\" alt=\"\u6328\u997f\u8352\u91ce-\u6c99\u76d2\u751f\u5b58\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7279\u8272\u54c1\u9274<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u6328\u997f\u8352\u91ce-\u6c99\u76d2\u751f\u5b58<\/em><\/div>\r\n<div class=\"desc\">\u5f00\u653e\u6c99\u76d2\u6c42\u751f\u6a21\u62df\uff0c\u5728\u5404\u79cd\u73af\u5883\u4e2d\u6311\u6218\u751f\u5b58<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.0<\/span><span class=\"sp-reply\">1.5\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/94906.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240711\/10310438066\" alt=\"\u6211\u7684\u52c7\u8005-\u65b0\u706bBD\u767b\u573a\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u6211\u7684\u52c7\u8005-\u65b0\u706bBD\u767b\u573a<\/em><\/div>\r\n<div class=\"desc\">\u65b0\u7248\u672c\u3010\u8bdb\u795e\u4e4b\u6218\u3011\uff0c\u5168\u65b0\u706b\u9b54\u5973-\u5b89\u6d1b\u5148\u767b\u573a<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.5<\/span><span class=\"sp-reply\">5518\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/156001.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241205\/10200021401\" alt=\"\u4ee3\u53f7:\u65e0\u9650\u5927\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n                    \r\n                    <div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u4ee3\u53f7:\u65e0\u9650\u5927<\/em><\/div>\r\n<div class=\"desc\">\u7f51\u6613\u5168\u65b0\u90fd\u5e02\u5f00\u653e\u4e16\u754c\uff0c\u72ec\u5bb6\u5b9e\u673a\u66dd\u5149\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.3<\/span><span class=\"sp-reply\">1796\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/133689.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241216\/15100271299\" alt=\"\u822a\u6d77\u738b\uff1a\u58ee\u5fd7\u96c4\u5fc3\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u822a\u6d77\u738b\uff1a\u58ee\u5fd7\u96c4\u5fc3<\/em><\/div>\r\n<div class=\"desc\">\u9b54\u65b9\u7ade\u6280\u683c\u6597\u65b0\u6e38\uff0c\u6bcf\u4e2a\u4f19\u4f34\u90fd\u662f\u68a6\u60f3\u7684\u4e3b\u89d2<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.5<\/span><span class=\"sp-reply\">1097\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/115784.htm\">\r\n<img class=\"img\" src=\"http:\/\/img.71acg.net\/kbyx~sykb\/20200619\/16284586066\" alt=\"\u50cf\u7d20\u5c0f\u5c4b~\u9003\u79bb\u4e0d\u53ef\u601d\u8bae\u4e4b\u5bb6\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u661f\u63a2\u56e2\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u50cf\u7d20\u5c0f\u5c4b~\u9003\u79bb\u4e0d\u53ef\u601d\u8bae\u4e4b\u5bb6<\/em><\/div>\r\n<div class=\"desc\">\u50cf\u7d20\u98ce\u6e29\u60c5\u50ac\u6cea\u89e3\u8c1c\uff0c\u5e26\u7740\u7231\u72ac\u5bfb\u627e\u79bb\u5f00\u7684\u7ebf\u7d22<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.4<\/span><span class=\"sp-reply\">741\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/141227.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220126\/18461916649\" alt=\"\u901f\u964d\u738b\u8005-\u4ee3\u53f7\uff1a\u901f\u964d\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7f16\u8f91\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u901f\u964d\u738b\u8005-\u4ee3\u53f7\uff1a\u901f\u964d<\/em><\/div>\r\n<div class=\"desc\">Steam\u597d\u8bc4\u5982\u6f6e\uff0c\u81ea\u884c\u8f66\u6781\u9650\u7ade\u901f\u624b\u6e38<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.3<\/span><span class=\"sp-reply\">529\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/c\/135264.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240313\/17004576505\" alt=\"\u975e\u5e38\u666e\u901a\u7684\u9e7f-\u9b54\u6027\u6076\u641e\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u5feb\u7206\u72ec\u5bb6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u975e\u5e38\u666e\u901a\u7684\u9e7f-\u9b54\u6027\u6076\u641e<\/em><\/div>\r\n<div class=\"desc\">Steam\u6b63\u7248\u79fb\u690d\uff0c\u9b54\u6027\u6c99\u96d5\u9e7f\u7eb5\u6a2a\u5f00\u653e\u4e16\u754c<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.7<\/span><span class=\"sp-reply\">1.1\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/138857.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241219\/1307265709\" alt=\"\u4e03\u65e5\u4e16\u754c-\u5f00\u653e\u4e16\u754c\u751f\u5b58\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u4e03\u65e5\u4e16\u754c-\u5f00\u653e\u4e16\u754c\u751f\u5b58<\/em><\/div>\r\n<div class=\"desc\">\u8d85\u81ea\u7136\u5f00\u653e\u4e16\u754c\u6e38\u620f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.0<\/span><span class=\"sp-reply\">2371\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/136998.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20230420\/16570061326\" alt=\"\u4ed9\u5251\u4e16\u754c-\u5f00\u653e\u5927\u4e16\u754c\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u4ed9\u5251\u4e16\u754c-\u5f00\u653e\u5927\u4e16\u754c<\/em><\/div>\r\n<div class=\"desc\">\u4ed9\u5251\u5947\u4fa0\u4f20IP\uff0c\u6a2a\u8de8\u591a\u5e73\u53f0\u7684\u4ed9\u4fa0\u5f00\u653e\u4e16\u754c<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.6<\/span><span class=\"sp-reply\">632\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/155136.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20210107\/10130998070\" alt=\"\u5408\u8f91|\u6c38\u4e0d\u8fc7\u65f6\u7684\u7ae5\u5e74\u7ecf\u5178\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91|\u6c38\u4e0d\u8fc7\u65f6\u7684\u7ae5\u5e74\u7ecf\u5178<\/em><\/div>\r\n<div class=\"desc\">\u4e2a\u4eba\u624b\u673a\u4e0a\u7559\u5b58\u65f6\u95f4\u6700\u957f\u7c7b\u578b\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>1118<\/span><span class=\"sp-reply\">85\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/124072.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241219\/0945518122\" alt=\"\u5927\u83e0\u841d\u9a6c\u620f\u56e2\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7f16\u8f91\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5927\u83e0\u841d\u9a6c\u620f\u56e2<\/em><\/div>\r\n<div class=\"desc\">\u624b\u7ed8\u98ce\u70e7\u8111\u89e3\u5bc6\uff0c\u9996\u53d1\u9650\u65f6\u6298\u6263\u5f00\u542f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.3<\/span><span class=\"sp-reply\">97\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/128686.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241205\/21291992325\" alt=\"\u8303\u5f0f\uff1a\u8d77\u6e90\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7f16\u8f91\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u8303\u5f0f\uff1a\u8d77\u6e90<\/em><\/div>\r\n<div class=\"desc\">5\u9996\u8d85\u4eba\u6c14\u4e50\u66f2\u514d\u8d39\u9886\uff0c\u4e3b\u7ebf\u7b2c4\u7ae0\u4e0a\u7ebf<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.0<\/span><span class=\"sp-reply\">1941\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/90818.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241204\/20385866638\" alt=\"\u660e\u65e5\u65b9\u821f\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7f16\u8f91\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u660e\u65e5\u65b9\u821f<\/em><\/div>\r\n<div class=\"desc\">\u201c\u7f57\u5fb7\u5c9b\u201d\u7684\u6218\u672f\u5934\u8111\uff0c\u4f60\u51c6\u5907\u597d\u4e86\u5417\uff1f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.4<\/span><span class=\"sp-reply\">1.4\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/173892.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241218\/10222348021\" alt=\"\u6597\u7f57\u5927\u9646\uff1a\u730e\u9b42\u4e16\u754c-\u6597\u7f57MMO\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u6597\u7f57\u5927\u9646\uff1a\u730e\u9b42\u4e16\u754c-\u6597\u7f57MMO<\/em><\/div>\r\n<div class=\"desc\">\u8fd9\u4e00\u6b21\uff0c\u91cd\u65b0\u5b9a\u4e49\u6597\u7f57\u5927\u4e16\u754c<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.8<\/span><span class=\"sp-reply\">287\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/177716.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241205\/16350615772\" alt=\"\u661f\u75d5\u5171\u9e23\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u661f\u75d5\u5171\u9e23<\/em><\/div>\r\n<div class=\"desc\">\u201c\u84dd\u8272\u534f\u8bae\u201d\u6b63\u7248\u624b\u6e38\uff0c\u9884\u7ea6\u6b63\u5f0f\u5f00\u542f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.1<\/span><span class=\"sp-reply\">49\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/146640.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240221\/10153796475\" alt=\"\u5408\u8f91 | \u826f\u5fc3\u5de5\u4f5c\u5ba4\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7cbe\u54c1\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91 | \u826f\u5fc3\u5de5\u4f5c\u5ba4<\/em><\/div>\r\n<div class=\"desc\">\u597d\u73a9\u4e0d\u817b\u518d\u6765\u4e00\u6b21\uff0c\u597d\u6e38\u201c\u5fc3\u201d\u4f53\u9a8c\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>1381<\/span><span class=\"sp-reply\">151\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/152952.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20201105\/15104962211\" alt=\"\u5408\u8f91 | \u7cbe\u54c1\u5355\u673a\u5c0f\u5185\u5b58\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91 | \u7cbe\u54c1\u5355\u673a\u5c0f\u5185\u5b58<\/em><\/div>\r\n<div class=\"desc\">\u6e38\u620f\u4e0d\u5361\uff0c\u624b\u673a\u4e0d\u70eb\uff0c\u9488\u4e0d\u6233\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>275<\/span><span class=\"sp-reply\">31\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/152021.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240229\/16195758963\" alt=\"\u51b3\u80dc\u5dc5\u5cf0\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u51b3\u80dc\u5dc5\u5cf0<\/em><\/div>\r\n<div class=\"desc\">\u5168\u7403\u6d41\u884c\u76845V5\u516c\u5e73\u7ade\u6280\u624b\u6e38<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.8<\/span><span class=\"sp-reply\">299\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/c\/175340.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241218\/09362331315\" alt=\"\u4e91\u00b7\u7edd\u533a\u96f6\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u4e91\u00b7\u7edd\u533a\u96f6<\/em><\/div>\r\n<div class=\"desc\">\u7c73\u54c8\u6e38\u90fd\u5e02\u52a8\u4f5c\uff0c\u4e91\u73a9\u7248\u6b63\u5f0f\u4e0a\u7ebf<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.7<\/span><span class=\"sp-reply\">80\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/112460.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240612\/16554281251\" alt=\"\u9b54\u5bfc\u6218\u4e89\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u661f\u63a2\u56e2\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u9b54\u5bfc\u6218\u4e89<\/em><\/div>\r\n<div class=\"desc\">\u63a7\u5236\u9b54\u5bfc\u58eb\u593a\u56de\u65d7\u5e1c!\u81ea\u5e26\u5173\u5361\u7f16\u8f91\u5668\u7684\u591a\u4eba\u6e38\u620f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.0<\/span><span class=\"sp-reply\">3879\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"https:\/\/m.bbs.3839.com\/thread-6999961.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/sykb~bbs\/default\/20240613\/1805019542426\" alt=\"\u76d8\u70b9\u90a3\u4e9b\u9b54\u6027\u6076\u641e\u624b\u6e38\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u6df1\u5ea6\u76d8\u70b9<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u76d8\u70b9\u90a3\u4e9b\u9b54\u6027\u6076\u641e\u624b\u6e38<\/em><\/div>\r\n<div class=\"desc\">\u6574\u6d3b\u7edd\u4e0d\u6389\u7ebf\uff0c\u4f53\u9a8c\u65e0\u5398\u5934\u7684\u9b45\u529b&gt;&gt;<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>63<\/span><span class=\"sp-reply\">21\u8ba8\u8bba<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/122984.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240627\/17013078771\" alt=\"\u9006\u6c34\u5bd2-\u6b66\u4fa0\u5f00\u653e\u4e16\u754c\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n                    \r\n                    <div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u9006\u6c34\u5bd2-\u6b66\u4fa0\u5f00\u653e\u4e16\u754c<\/em><\/div>\r\n<div class=\"desc\">\u540c\u540d\u7aef\u6e38\u79fb\u690d\uff0c\u5f00\u653e\u4e16\u754c3D\u52a8\u4f5c\u5192\u9669<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.2<\/span><span class=\"sp-reply\">7954\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/143127.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220408\/21192519467\" alt=\"\u53ef\u53e3\u7684\u6bd4\u8428\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u53ef\u53e3\u7684\u6bd4\u8428<\/em><\/div>\r\n<div class=\"desc\">\u66fe\u98ce\u9761\u7f51\u7edc\u7684\u62ab\u8428\u5e97\u6a21\u62df\u5668, \u5236\u4f5c\u7f8e\u5473\u62ab\u8428<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.6<\/span><span class=\"sp-reply\">95\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/173836.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240912\/10493130423\" alt=\"\u4ee3\u53f7:\u5947\u65c5-\u7f51\u6613\u52a8\u68eelike\u65b0\u6e38\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n                    \r\n                    <div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u4ee3\u53f7:\u5947\u65c5-\u7f51\u6613\u52a8\u68eelike\u65b0\u6e38<\/em><\/div>\r\n<div class=\"desc\">\u53ef\u793e\u4ea4\u7684\u5bb6\u56ed\u751f\u6d3b\u6a21\u62df\uff0c\u5efa\u9020\u4f60\u7684\u7a7a\u5c9b\u5bb6\u56ed<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.1<\/span><span class=\"sp-reply\">277\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/86684.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20230103\/09240293392\" alt=\"\u9b54\u5973\u4e4b\u6cc92\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u5feb\u7206\u72ec\u5bb6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u9b54\u5973\u4e4b\u6cc92<\/em><\/div>\r\n<div class=\"desc\">\u9ad8\u53e3\u7891\u5267\u60c5\u5411\u7cfb\u5217\u7b2c2\u4f5c\uff0c\u5feb\u7206\u72ec\u5bb6\u9650\u514d\u4e0b\u8f7d<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.0<\/span><span class=\"sp-reply\">491\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/164274.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241111\/15443734293\" alt=\"\u84dd\u8272\u661f\u539f\uff1a\u65c5\u8c23\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u84dd\u8272\u661f\u539f\uff1a\u65c5\u8c23<\/em><\/div>\r\n<div class=\"desc\">\u4e88\u4f60\u7684\uff0c138\u4ebf\u5e74\u7684\u661f\u5149<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.5<\/span><span class=\"sp-reply\">683\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/175801.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220430\/19392325614\" alt=\"\u9b54\u6027\u6c99\u96d5\uff01\u4e00\u8d77\u5feb\u4e50\u5440~\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7cbe\u54c1\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u9b54\u6027\u6c99\u96d5\uff01\u4e00\u8d77\u5feb\u4e50\u5440~<\/em><\/div>\r\n<div class=\"desc\">\u653e~\u8f7b~\u677e~\u7ed9\u751f\u6d3b\u6dfb\u70b9\u201c\u6c99\u96d5\u201d\u6c14\u606f\u5427~<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>655<\/span><span class=\"sp-reply\">41\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/105882.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241106\/18101280520\" alt=\"\u6d1b\u514b\u738b\u56fd\uff1a\u4e16\u754c\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u6d1b\u514b\u738b\u56fd\uff1a\u4e16\u754c<\/em><\/div>\r\n<div class=\"desc\">\u6d1b\u514b\u738b\u56fd\u5927\u4e16\u754c\u7cbe\u7075\u6536\u96c6\u5bf9\u6218\u6e38\u620f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.2<\/span><span class=\"sp-reply\">2.2\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/120924.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241011\/17122484886\" alt=\"\u5149\u4e0e\u591c\u4e4b\u604b-\u9ad8\u6c89\u6d78\u4e92\u52a8\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7248\u672c\u66f4\u65b0<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5149\u4e0e\u591c\u4e4b\u604b-\u9ad8\u6c89\u6d78\u4e92\u52a8<\/em><\/div>\r\n<div class=\"desc\">\u4e30\u5bcc\u591a\u7ebf\u7ed3\u5c40\uff0c\u8d70\u5411\u5c5e\u4e8e\u81ea\u5df1\u7684\u547d\u5b9a\u76f8\u9047<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.8<\/span><span class=\"sp-reply\">1644\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"https:\/\/m.bbs.3839.com\/thread-7488577.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/sykb~bbs\/default\/20241209\/1507022290027\" alt=\"\u5f02\u4eba\u4e4b\u4e0b-\u6d4b\u8bd5\u4e00\u624b\u62a5\u544a\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u9b54\u65b9\u9ad8\u54c1\u8d28\u683c\u6597\u65b0\u6e38<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5f02\u4eba\u4e4b\u4e0b-\u6d4b\u8bd5\u4e00\u624b\u62a5\u544a<\/em><\/div>\r\n<div class=\"desc\">\u5e05\uff01\u8ba9\u6211\u73a9\u5230\u771f\u7684\u4e86\uff01\u53cc\u53a8\u72c2\u559c\u7684\u6d4b\u8bd5\u4f53\u9a8c<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>849<\/span><span class=\"sp-reply\">338\u8ba8\u8bba<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/98964.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241218\/19265394418\" alt=\"\u6218\u53cc\u5e15\u5f25\u4ec0\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u6218\u53cc\u5e15\u5f25\u4ec0<\/em><\/div>\r\n<div class=\"desc\">\u672b\u4e16\u79d1\u5e7b3D\u52a8\u4f5c\uff0c\u7ed3\u5408\u5373\u65f6\u6d88\u9664\u7684\u786c\u6838ACT\u624b\u6e38<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.0<\/span><span class=\"sp-reply\">1.1\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/110127.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240709\/20395744103\" alt=\"\u5143\u6c14\u9a91\u58eb\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7f16\u8f91\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5143\u6c14\u9a91\u58eb<\/em><\/div>\r\n<div class=\"desc\">\u50cf\u7d20Roguelike\uff0c\u548c\u597d\u53cb\u4e00\u8d77\u95ef\u5730\u7262\u6253\u602a\u517d<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.1<\/span><span class=\"sp-reply\">2.6\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/145689.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241204\/19525491382\" alt=\"\u8d85\u9608\u9650\u7a7a\u95f4-\u4e2d\u6587\u6b63\u7248\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7f16\u8f91\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u8d85\u9608\u9650\u7a7a\u95f4-\u4e2d\u6587\u6b63\u7248<\/em><\/div>\r\n<div class=\"desc\">\u6240\u89c1\u5373\u4e3a\u73b0\u5b9e\uff0c\u8f6c\u6362\u89c6\u89d2\uff0c\u6253\u7834\u5e38\u89c4\u624d\u80fd\u89e3\u5f00\u8c1c\u9898<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.8<\/span><span class=\"sp-reply\">898\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/104963.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241219\/1727508064\" alt=\"\u91cd\u751f\u7ec6\u80de\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7f16\u8f91\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u91cd\u751f\u7ec6\u80de<\/em><\/div>\r\n<div class=\"desc\">Steam\u79fb\u690d\u786c\u6838\u52a8\u4f5c\uff0c\u5728\u6740\u622e\u4e0e\u6b7b\u4ea1\u7684\u53cd\u590d\u8f6e\u56de\u4e2d\u63a2\u7d22\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.3<\/span><span class=\"sp-reply\">1.1\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/143230.htm\">\r\n<img class=\"img\" src=\"\" alt=\"\u4e00\u53ea\u9c7c-\u591a\u4eba\u8054\u673a\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u5feb\u7206\u72ec\u5bb6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u4e00\u53ea\u9c7c-\u591a\u4eba\u8054\u673a<\/em><\/div>\r\n<div class=\"desc\">\u5feb\u4e50\u9c7c\u9c7c\u751f\u5b58\u6a21\u62df\u5668\uff0c\u4ee5\u9c7c\u4e4b\u529b\u51c0\u5316\u6d77\u6d0b<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.8<\/span><span class=\"sp-reply\">750\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/142198.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241214\/10532671247\" alt=\"\u660e\u65e5\u65b9\u821f\uff1a\u7ec8\u672b\u5730(\u5b98\u670d)\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u660e\u65e5\u65b9\u821f\uff1a\u7ec8\u672b\u5730(\u5b98\u670d)<\/em><\/div>\r\n<div class=\"desc\">\u8de8\u8d8a\u8fb9\u5883\uff0c\u76f4\u81f3\u524d\u7ebf\u3002\u5168\u5e73\u53f0\u9884\u7ea6\u73b0\u5df2\u5f00\u542f\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.7<\/span><span class=\"sp-reply\">1425\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/141216.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220125\/17494545070\" alt=\"\u6b66\u58eb\u96f6\u624b\u6e38-\u5feb\u8282\u594f\u52a8\u4f5c\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u6b66\u58eb\u96f6\u624b\u6e38-\u5feb\u8282\u594f\u52a8\u4f5c<\/em><\/div>\r\n<div class=\"desc\">Steam\u597d\u8bc4\u5982\u6f6e\uff0c\u751f\u6b7b\u4e00\u5ff5\u95f4\u4e00\u5200\u65a9\u6069\u4ec7<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.7<\/span><span class=\"sp-reply\">1290\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/151285.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20230417\/15302640446\" alt=\"\u5408\u8f91|\u7ecf\u5178\u4e2d\u521b\u65b0\u7684\u8857\u673a\u65f6\u4ee3\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91|\u7ecf\u5178\u4e2d\u521b\u65b0\u7684\u8857\u673a\u65f6\u4ee3<\/em><\/div>\r\n<div class=\"desc\">\u590d\u53e4\u53c8\u89e3\u538b\uff0c\u91cd\u56de\u7ae5\u5e74<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>315<\/span><span class=\"sp-reply\">22\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/121718.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20200727\/08413533976\" alt=\"\u76ae\u5f71\u4eac\u5267:\u9501\u9e9f\u56ca\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u661f\u63a2\u56e2\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u76ae\u5f71\u4eac\u5267:\u9501\u9e9f\u56ca<\/em><\/div>\r\n<div class=\"desc\">\u7528\u76ae\u5f71\u6253\u5f00\u4eac\u5267\uff0c15\u5206\u949f\u6b23\u8d4f\u4f20\u7edf\u827a\u672f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.1<\/span><span class=\"sp-reply\">752\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"https:\/\/m.bbs.3839.com\/thread-7479359.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241205\/16441078038\" alt=\"\u76ef\u5e27\u7ea7\u69a8\u5e72<\u65e0\u9650\u5927>\u65b0PV\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u76ef\u5e27\u7ea7\u89e3\u6790<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u76ef\u5e27\u7ea7\u69a8\u5e72<\u65e0\u9650\u5927>\u65b0PV<\/em><\/div>\r\n<div class=\"desc\">\u95ed\u5173\u4e0a\u4e07\u5c0f\u65f6\u7684\u7f51\u6613\u5f00\u653e\u90fd\u5e02\u65b0\u6e38,\u7a76\u7adf\u5982\u4f55?<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>441<\/span><span class=\"sp-reply\">99\u8ba8\u8bba<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/122195.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241120\/11210994563\" alt=\"\u661f\u9645\u6218\u7532-Warframe\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u661f\u9645\u6218\u7532-Warframe<\/em><\/div>\r\n<div class=\"desc\">\u8d85\u80fd\u52a8\u4f5c\u5c04\u51fb\uff0c\u79d1\u5e7b\u5fcd\u8005\u6765\u88ad\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.6<\/span><span class=\"sp-reply\">2170\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/137468.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241127\/11582614233\" alt=\"\u843d\u6a312:\u5343\u4e50\u4e4b\u7ae0\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u661f\u63a2\u56e2\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u843d\u6a312:\u5343\u4e50\u4e4b\u7ae0<\/em><\/div>\r\n<div class=\"desc\">\u9ad8\u6c89\u6d78\u5f0f\u5267\u60c5\u4e92\u52a8\uff0c\u6e29\u6696\u6545\u4e8b\u4ece\u8fd9\u91cc\u5f00\u59cb<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.2<\/span><span class=\"sp-reply\">4182\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/96988.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240221\/09543152562\" alt=\"\u9006\u6218\uff1a\u672a\u6765-\u9006\u6218\u624b\u6e38\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u9006\u6218\uff1a\u672a\u6765-\u9006\u6218\u624b\u6e38<\/em><\/div>\r\n<div class=\"desc\">\u7b2c\u4e00\u4eba\u79f0\u5c04\u51fb \u9006\u6218\u9769\u65b0\u7eed\u4f5c<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.5<\/span><span class=\"sp-reply\">5459\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/173687.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241209\/10041251397\" alt=\"\u95ee\u5251\u957f\u751f\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u95ee\u5251\u957f\u751f<\/em><\/div>\r\n<div class=\"desc\">\u5fa1\u5251\u98de\u884c\u6597\u6cd5\uff0c\u5343\u4eba\u4fee\u4ed9\u5927\u6218<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.9<\/span><span class=\"sp-reply\">44\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/151557.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241113\/15503792200\" alt=\"\u6843\u6e90\u8bb02\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u6843\u6e90\u8bb02<\/em><\/div>\r\n<div class=\"desc\">\u56fd\u753b\u98ce\u751f\u5b58\u5efa\u9020\uff0c12.4\u4e0d\u9650\u91cf\u9996\u6d4b<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.3<\/span><span class=\"sp-reply\">163\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/175577.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241213\/11282463422\" alt=\"\u9ed1\u795e\u8bdd\u50cf\u7d20\u7248-\u7b2c\u4e8c\u7ae00.3\u7248\u672c\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7f16\u8f91\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u9ed1\u795e\u8bdd\u50cf\u7d20\u7248-\u7b2c\u4e8c\u7ae00.3\u7248\u672c<\/em><span>\u6d4b\u8bd5<\/span><\/div>\r\n<div class=\"desc\">\u9ec4\u98ce\u5927\u5723\u5f00\u653e\u6311\u6218\uff010.3\u7248\u672c\u5df2\u66f4\u65b0\u4e0a\u7ebf<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.2<\/span><span class=\"sp-reply\">608\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/105128.html\">\r\n<img class=\"img\" src=\"http:\/\/img.71acg.net\/sykb~sykb\/20190429\/15493876513\" alt=\"\u5408\u8f91 | \u4e2d\u56fd\u5f0f\u4eba\u751f\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n                    \r\n                    <div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91 | \u4e2d\u56fd\u5f0f\u4eba\u751f<\/em><\/div>\r\n<div class=\"desc\">\u4e16\u754c\u8fd9\u4e48\u5927 \u603b\u6709\u4e00\u79cd\u4eba\u751f\u9002\u5408\u4f60\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>2540<\/span><span class=\"sp-reply\">175\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/84747.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241218\/19503276610\" alt=\"\u7b2c\u4e94\u4eba\u683c-1v4\u5bf9\u6297\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u7b2c\u4e94\u4eba\u683c-1v4\u5bf9\u6297<\/em><\/div>\r\n<div class=\"desc\">\u5723\u8bde\u4e3b\u9898\u6d3b\u52a8\u5f00\u542f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.4<\/span><span class=\"sp-reply\">3.4\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/94015.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241202\/22484376792\" alt=\"\u6253\u9020\u4e16\u754c-\u6b63\u5f0f\u7248\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7f16\u8f91\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u6253\u9020\u4e16\u754c-\u6b63\u5f0f\u7248<\/em><\/div>\r\n<div class=\"desc\">\u672c\u4f53\u53f2\u4f4e\u6298\u6263\u5f00\u542f\uff0c\u300c\u5916\u661f\u5165\u4fb5\u300dDLC\u66f4\u65b0<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.4<\/span><span class=\"sp-reply\">9430\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/130605.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241219\/18144064601\" alt=\"\u8424\u706b\u7a81\u51fb(Lost Light)\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n                    \r\n                    <div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u8424\u706b\u7a81\u51fb(Lost Light)<\/em><\/div>\r\n<div class=\"desc\">\u7f51\u6613\u771f\u5b9e\u6218\u4e89\u64a4\u79bb\u6e38\u620f\uff0c\u4e3a\u751f\u5b58\u505a\u51fa\u6289\u62e9<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.2<\/span><span class=\"sp-reply\">1.4\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/89222.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241218\/21060598669\" alt=\"\u5149\u00b7\u9047-\u59c6\u660e\u5b63\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5149\u00b7\u9047-\u59c6\u660e\u5b63<\/em><\/div>\r\n<div class=\"desc\">\u72fc\u4eba\u6740\u7279\u522b\u6d3b\u52a8\u3010\u51a5\u9f99\u4e4b\u591c\u3011\u6b63\u5f0f\u5f00\u542f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.6<\/span><span class=\"sp-reply\">3.8\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/177337.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241128\/20312935158\" alt=\"\u8352\u91ce\u8d77\u6e90-\u673a\u68b0\u8352\u91ce\u751f\u5b58\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u8352\u91ce\u8d77\u6e90-\u673a\u68b0\u8352\u91ce\u751f\u5b58<\/em><\/div>\r\n<div class=\"desc\">\u673a\u68b0\u6587\u660e\u8352\u91ce\u751f\u5b58\u6e38\u620f\uff0c\u6362\u4e2a\u4e16\u754c\u6362\u4e2a\u6d3b\u6cd5<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.2<\/span><span class=\"sp-reply\">434\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/195470.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20231016\/19163191794\" alt=\"\u5408\u8f91 | \u5728\u6e38\u620f\u4e16\u754c\u76f8\u9047\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7cbe\u54c1\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91 | \u5728\u6e38\u620f\u4e16\u754c\u76f8\u9047<\/em><\/div>\r\n<div class=\"desc\">\u4e0d\u671f\u800c\u9047\u7684\u7f8e\u597d\uff0c\u7ed3\u4ea4\u597d\u53cb\u7545\u73a9\u6e38\u620f\u4e16\u754c<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>321<\/span><span class=\"sp-reply\">48\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/184966.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20230414\/16595096218\" alt=\"\u5408\u8f91|\u57cb\u5728\u8bb0\u5fc6\u6df1\u5904\u7684\u7ecf\u5178\u6e38\u620f\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7cbe\u54c1\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91|\u57cb\u5728\u8bb0\u5fc6\u6df1\u5904\u7684\u7ecf\u5178\u6e38\u620f<\/em><\/div>\r\n<div class=\"desc\">\u6253\u5f00\u8fd9\u4e9b\u7ecf\u5178\u6e38\u620f\uff0c\u54ea\u4e9b\u662f\u4f60\u96be\u5fd8\u7684\u9752\u6625\u8bb0\u5fc6\uff1f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>2210<\/span><span class=\"sp-reply\">810\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/90902.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20200827\/19295476450\" alt=\"\u58f0\u4e4b\u5bc4\u6258SP\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u661f\u63a2\u56e2\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u58f0\u4e4b\u5bc4\u6258SP<\/em><span>\u6d4b\u8bd5<\/span><\/div>\r\n<div class=\"desc\">\u4eba\u6c14\u58f0\u97f3\u89e3\u8c1c\u9003\u8131\u6e38\u620f\u300a\u58f0\u4e4b\u5bc4\u6258\u300b\u7eed\u4f5c\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.0<\/span><span class=\"sp-reply\">444\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/148947.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20200907\/12400298148\" alt=\"\u4f11\u95f2\u6e38\u620f\u5408\u8f91 | \u6e38\u620f\u7684\u7b2c\u4e5d\u827a\u672f\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u4f11\u95f2\u6e38\u620f\u5408\u8f91 | \u6e38\u620f\u7684\u7b2c\u4e5d\u827a\u672f<\/em><\/div>\r\n<div class=\"desc\">\u6cbb\u6108\u6216\u538b\u6291\u7684\u5267\u60c5\uff0c\u76f4\u5165\u5fc3\u7075\u7684\u827a\u672f\u5728\u8fd9\u91cc\u5c55\u73b0<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>278<\/span><span class=\"sp-reply\">37\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/151743.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241129\/19054195039\" alt=\"\u4e09\u89d2\u6d32\u884c\u52a8-\u591a\u73a9\u6cd5\u6218\u672f\u5c04\u51fb\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u4e09\u89d2\u6d32\u884c\u52a8-\u591a\u73a9\u6cd5\u6218\u672f\u5c04\u51fb<\/em><\/div>\r\n<div class=\"desc\">\u54c8\u592b\u514b\u5de5\u4e1a\u6346\u7ed1\u5305\u4e0a\u7ebf<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.8<\/span><span class=\"sp-reply\">2.3\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/178365.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241219\/18105758472\" alt=\"\u795e\u63a2\u8be1\u4e8b\u5f55\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u795e\u63a2\u8be1\u4e8b\u5f55<\/em><span>\u6d4b\u8bd5\u670d<\/span><\/div>\r\n<div class=\"desc\">\u6c34\u58a8\u98ce\u6697\u9ed1\u6b66\u4fa0\u63a2\u6848\uff0c\u8be1\u5f02\u4e8b\u4ef6\u795e\u63a2\u65ad\u6848<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.5<\/span><span class=\"sp-reply\">8\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/104351.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220509\/15171759521\" alt=\"\u7b51\u68a6\u516c\u9986-\u591a\u7ed3\u5c40AVG\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7279\u8272\u54c1\u9274<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u7b51\u68a6\u516c\u9986-\u591a\u7ed3\u5c40AVG<\/em><\/div>\r\n<div class=\"desc\">\u591a\u6289\u62e9\u5f00\u653e\u5267\u60c5\uff0c\u9ad8\u6c89\u6d78\u60ac\u7591\u6545\u4e8b\u4f53\u9a8c<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.8<\/span><span class=\"sp-reply\">327\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/161078.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240131\/19522110238\" alt=\"\u827e\u5e0c-\u56fd\u4ea7\u7ecf\u5178\u52a8\u4f5c\u795e\u4f5c\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7f16\u8f91\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u827e\u5e0c-\u56fd\u4ea7\u7ecf\u5178\u52a8\u4f5c\u795e\u4f5c<\/em><\/div>\r\n<div class=\"desc\">\u56fd\u4ea7\u7ecf\u5178\u52a8\u4f5c\u795e\u4f5c\uff0c\u4eca\u5929\u4f60\u8c03\u620f\u65c1\u767d\u541b\u4e86\u5417<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.7<\/span><span class=\"sp-reply\">2282\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/143516.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241217\/22260344846\" alt=\"\u7edd\u533a\u96f6(\u5b98\u670d)-1.4\u7248\u672c\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u7edd\u533a\u96f6(\u5b98\u670d)-1.4\u7248\u672c<\/em><\/div>\r\n<div class=\"desc\">\u65b0\u89d2\u8272\u661f\u89c1\u96c5\u767b\u573a\uff0c\u767b\u5f55\u9886S\u7ea7\u89d2\u8272\u6d45\u7fbd\u60a0\u771f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.7<\/span><span class=\"sp-reply\">2.1\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/124918.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20230921\/09352197879\" alt=\"\u822a\u6d77\u738b:\u70ed\u8840\u822a\u7ebf-\u6b63\u7248\u6388\u6743\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n                    \r\n                    <div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u822a\u6d77\u738b:\u70ed\u8840\u822a\u7ebf-\u6b63\u7248\u6388\u6743<\/em><\/div>\r\n<div class=\"desc\">\u4eba\u6c14IP\u822a\u6d77\u738b\u6b63\u7248\u6388\u6743,3D\u52a8\u4f5c\u5192\u9669\u624b\u6e38<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.4<\/span><span class=\"sp-reply\">1.2\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/166310.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220527\/19175867984\" alt=\"\u6e38\u620f\u5355|\u957f\u5f97\u8d8a\u840c\uff0c\u6740\u4f24\u529b\u8d8a\u5927\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7cbe\u54c1\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u6e38\u620f\u5355|\u957f\u5f97\u8d8a\u840c\uff0c\u6740\u4f24\u529b\u8d8a\u5927<\/em><\/div>\r\n<div class=\"desc\">\u8c01\u8bf4\u6218\u529b\u548cQ\u840c\u4e0d\u80fd\u5171\u5b58\uff1f\u5b83\u5f88\u840c\u4e5f\u8d85\u731b\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>787<\/span><span class=\"sp-reply\">55\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/96485.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20230103\/09232291706\" alt=\"\u9b54\u5973\u4e4b\u6cc9\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u5feb\u7206\u72ec\u5bb6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u9b54\u5973\u4e4b\u6cc9<\/em><\/div>\r\n<div class=\"desc\">\u5feb\u7206\u72ec\u5bb6\u9650\u514d\u4e0b\u8f7d\uff0c\u4f60\u613f\u505a\u9b54\u5973\u7684\u5b88\u62a4\u8005\u5417\uff1f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.0<\/span><span class=\"sp-reply\">270\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/176856.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241119\/16035975994\" alt=\"\u6700\u7ec8\u5e7b\u60f314\uff1a\u6c34\u6676\u4e16\u754c\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u6700\u7ec8\u5e7b\u60f314\uff1a\u6c34\u6676\u4e16\u754c<\/em><\/div>\r\n<div class=\"desc\">\u6700\u7ec8\u5e7b\u60f314\u6b63\u7248\u624b\u6e38\uff0c\u7ee7\u627f\u7aef\u6e38\u7ecf\u5178\u5143\u7d20<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.4<\/span><span class=\"sp-reply\">169\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/192650.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20221019\/17373162399\" alt=\"\u5408\u8f91 | Windows\u6000\u65e7\u7ecf\u5178\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u6e38\u620f\u5408\u8f91<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91 | Windows\u6000\u65e7\u7ecf\u5178<\/em><\/div>\r\n<div class=\"desc\">\u98ce\u9761\u4e00\u65f6\u7684win\u7cfb\u7edf\u6e38\u620f\uff0c\u5524\u9192\u513f\u65f6\u60c5\u6000<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>228<\/span><span class=\"sp-reply\">10\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/184965.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220613\/09362325671\" alt=\"\u5408\u8f91 | \u767e\u6837\u4eba\u751f\u5404\u4e0d\u540c\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7cbe\u54c1\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91 | \u767e\u6837\u4eba\u751f\u5404\u4e0d\u540c<\/em><\/div>\r\n<div class=\"desc\">\u5982\u679c\u4eba\u751f\u80fd\u591f\u91cd\u6765\uff1f\u4f60\u4f1a\u5982\u4f55\u8fc7\u597d\u65b0\u7684\u4e00\u751f<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>637<\/span><span class=\"sp-reply\">28\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"https:\/\/m.bbs.3839.com\/thread-7264445.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/sykb~bbs\/default\/20240828\/1603312678274\" alt=\"\u300a\u5f69\u8679\u516d\u53f7\u300b\u4e3a\u4f55\u706b\u7206\u81f3\u4eca\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u6df1\u5ea6\u6742\u8c08<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u300a\u5f69\u8679\u516d\u53f7\u300b\u4e3a\u4f55\u706b\u7206\u81f3\u4eca<\/em><\/div>\r\n<div class=\"desc\">9\u5e74\u524d\u7684FPS\u6e38\u620f\u8fc7\u5ba1\uff0c\u73a9\u5bb6\u5374\u76f4\u547c\u201c\u8fc7\u5e74\u201d<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>31<\/span><span class=\"sp-reply\">16\u8ba8\u8bba<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/102014.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220930\/0958086561\" alt=\"\u5408\u8f91 | \u5feb\u8282\u594f\u9ad8\u723d\u5ea6\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7cbe\u54c1\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91 | \u5feb\u8282\u594f\u9ad8\u723d\u5ea6<\/em><\/div>\r\n<div class=\"desc\">\u6d88\u78e8\u65f6\u95f4\u968f\u5f00\u968f\u73a9\uff0c\u5341\u5206\u949f\u4e00\u5c40\u901f\u6218\u901f\u51b3<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>1857<\/span><span class=\"sp-reply\">171\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/115282.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220121\/19151464063\" alt=\"\u672a\u5b9a\u4e8b\u4ef6\u7c3f\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u672a\u5b9a\u4e8b\u4ef6\u7c3f<\/em><\/div>\r\n<div class=\"desc\">\u7c73\u54c8\u6e38\u5973\u6027\u5411\u65b0\u4f5c\uff0c\u6311\u6218\u604b\u7231X\u63a8\u7406\u5192\u9669\u4e4b\u65c5\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.5<\/span><span class=\"sp-reply\">1139\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/118069.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240925\/18222699515\" alt=\"\u5984\u60f3\u5c71\u6d77-\u5f00\u653e\u4e16\u754c\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5984\u60f3\u5c71\u6d77-\u5f00\u653e\u4e16\u754c<\/em><\/div>\r\n<div class=\"desc\">\u5c71\u6d77\u7ecf\u9898\u6750\u5f00\u653e\u4e16\u754c\uff0c\u8d85\u9ad8\u81ea\u7531\u5ea6\u6218\u6597\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.7<\/span><span class=\"sp-reply\">2.7\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/146289.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220824\/17365594734\" alt=\"\u71d5\u4e91\u5341\u516d\u58f0-\u5f00\u653e\u4e16\u754c\u6b66\u4fa0\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u71d5\u4e91\u5341\u516d\u58f0-\u5f00\u653e\u4e16\u754c\u6b66\u4fa0<\/em><\/div>\r\n<div class=\"desc\">\u6b66\u4fa0\u6e38\u620f\uff0c\u53ea\u6709\u71d5\u4e91\u548c\u5176\u4ed6<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.0<\/span><span class=\"sp-reply\">1372\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/142317.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240806\/15535273239\" alt=\"\u73b0\u4ee3\u6218\u8230-\u56fd\u670d\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u73b0\u4ee3\u6218\u8230-\u56fd\u670d<\/em><\/div>\r\n<div class=\"desc\">\u5168\u74035000\u4e07\u73a9\u5bb6\u7684\u9009\u62e9<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.5<\/span><span class=\"sp-reply\">2956\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"https:\/\/huodong3.3839.com\/n\/hykb\/rdyxhz\/html\/127.html?imm=0\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241129\/21221780869\" alt=\"\u7701\u6d41\u7248\uff0112\u6708\u65b0\u6e38\u6e05\u5355\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u5feb\u7206\u7f16\u8f91\u90e8\u8d34\u5fc3\u6574\u7406<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u7701\u6d41\u7248\uff0112\u6708\u65b0\u6e38\u6e05\u5355<\/em><\/div>\r\n<div class=\"desc line2\">&lt;\u822a\u6d77\u738b\u58ee\u5fd7\u96c4\u5fc3&gt;\u6628\u5929\u4e0a\u7ebf\uff01&lt;\u5f02\u4eba\u4e4b\u4e0b&gt;\u5c06\u6d4b<\/div>\r\n<\/div>\r\n                        \r\n                    <\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/fenlei\/cat_304.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220429\/21060581765\" alt=\"\u9080\u4f60\u4e00\u8d77\u73a9\u5feb\u7206\u72ec\u5bb6\u7cbe\u54c1\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u5feb\u7206\u72ec\u5bb6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u9080\u4f60\u4e00\u8d77\u73a9\u5feb\u7206\u72ec\u5bb6\u7cbe\u54c1<\/em><\/div>\r\n<div class=\"desc line2\">\u8d85\u591a\u6e38\u620f\u55e8\u7ffb\u5047\u671f\uff0c\u4f53\u9a8c\u4e0d\u4e00\u6837\u7684\u7279\u8272\u597d\u6e38<\/div>\r\n<\/div>\r\n                        \r\n                    <\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/90981.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220824\/18561367600\" alt=\"\u9b54\u5973\u4e4b\u6cc93\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u5feb\u7206\u72ec\u5bb6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u9b54\u5973\u4e4b\u6cc93<\/em><\/div>\r\n<div class=\"desc\">\u5feb\u7206\u72ec\u5bb6\u9650\u514d\u4e0b\u8f7d\uff0c\u4e3a\u9b54\u5973\u827e\u9732\u8fea\u6307\u5f15\u65b9\u5411\u5427<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.7<\/span><span class=\"sp-reply\">937\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/142950.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241210\/10572660299\" alt=\"\u82cd\u7ffc\uff1a\u6df7\u6c8c\u6548\u5e94-\u53cc\u4eba\u8054\u673a\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u82cd\u7ffc\uff1a\u6df7\u6c8c\u6548\u5e94-\u53cc\u4eba\u8054\u673a<\/em><\/div>\r\n<div class=\"desc\">\u53cc\u4eba\u8054\u673a\u6a21\u5f0f\u4e0a\u7ebf\uff0c\u652f\u6301\u8de8\u6e20\u9053\u8054\u673a<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.3<\/span><span class=\"sp-reply\">898\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/95362.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220429\/14054454794\" alt=\"\u5fcd\u8005\u5fc5\u987b\u6b7b3\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5fcd\u8005\u5fc5\u987b\u6b7b3<\/em><\/div>\r\n<div class=\"desc\">\u516d\u5468\u5e74\u8d44\u6599\u7247\u300c\u795e\u6728\u591c\u7eee\u68a6\u300d\u4e0a\u7ebf<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.3<\/span><span class=\"sp-reply\">1.2\u4e07\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/176154.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20241113\/15073017924\" alt=\"\u4f0d\u516d\u4e03\uff1a\u6697\u5f71\u4ea4\u950b\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u4f0d\u516d\u4e03\uff1a\u6697\u5f71\u4ea4\u950b<\/em><\/div>\r\n<div class=\"desc\">\u4e00\u8d77\u5b88\u62a4\u5c0f\u9e21\u5c9b\uff0c\u5e2e\u52a9\u963f\u4e03\u627e\u56de\u9996\u5e2d\u8bb0\u5fc6\u5427\uff01<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.5<\/span><span class=\"sp-reply\">226\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/184879.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220811\/14202858243\" alt=\"\u5408\u8f91|\u8ba9\u4eba\u6b32\u7f62\u4e0d\u80fd\u7684\u5c0f\u6e38\u620f\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7cbe\u54c1\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91|\u8ba9\u4eba\u6b32\u7f62\u4e0d\u80fd\u7684\u5c0f\u6e38\u620f<\/em><\/div>\r\n<div class=\"desc\">\u5185\u5b58\u4e0d\u5927\u7686\u662f\u7cbe\u534e\uff0c\u6c89\u8ff7\u5176\u4e2d\u65e0\u6cd5\u81ea\u62d4<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>876<\/span><span class=\"sp-reply\">80\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/124032.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20230928\/16070889364\" alt=\"\u9965\u56f0\u8352\u91ce-\u9965\u8352\uff1a\u65b0\u5bb6\u56ed\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u9965\u56f0\u8352\u91ce-\u9965\u8352\uff1a\u65b0\u5bb6\u56ed<\/em><\/div>\r\n<div class=\"desc\">\u9965\u8352IP\u591a\u4eba\u8054\u673a\u6c99\u76d2\u751f\u5b58<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">7.9<\/span><span class=\"sp-reply\">3971\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/150291.htm\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20240709\/10310585927\" alt=\"\u7206\u88c2\u5c0f\u961f\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u70ed\u95e8\u9884\u7ea6<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u7206\u88c2\u5c0f\u961f<\/em><\/div>\r\n<div class=\"desc\">\u591a\u4eba\u7ade\u6280\u6218\u672f\u593a\u5b9d\u624b\u6e38<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">8.0<\/span><span class=\"sp-reply\">531\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/heji\/102642.html\">\r\n<img class=\"img\" src=\"https:\/\/img.71acg.net\/kbyx~sykb\/20220902\/09482578934\" alt=\"\u5408\u8f91 | \u7ef5\u5ef6\u5343\u5e74 \u56fd\u98ce\u5927\u7f8e\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u7cbe\u54c1\u6e38\u620f\u5355<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u5408\u8f91 | \u7ef5\u5ef6\u5343\u5e74 \u56fd\u98ce\u5927\u7f8e<\/em><\/div>\r\n<div class=\"desc\">\u4e00\u5c71\u4e00\u6c34\u4e00\u4e2d\u534e\uff0c\u6d41\u4f20\u5343\u5e74\u4f20\u627f\u5927\u7f8e\u56fd\u98ce<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-value\"><i class=\"it-good\"><\/i>542<\/span><span class=\"sp-reply\">81\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>", "<a href=\"\/\/m.3839.com\/a\/122169.htm\">\r\n<img class=\"img\" src=\"http:\/\/img.71acg.net\/kbyx~sykb\/20200523\/01210367026\" alt=\"\u6211\u57287\u5e74\u540e\u7b49\u7740\u4f60(\u4ed8\u8d39\u4e0b\u8f7d\u7248)\">\r\n<div class=\"mask\"><\/div>\r\n<div class=\"card\">\r\n<div class=\"c-tags\"><span>\u661f\u63a2\u56e2\u63a8\u8350<\/span><\/div>\r\n<div class=\"c-info\">\r\n<div class=\"it-fl\">\r\n<div class=\"name\"><em>\u6211\u57287\u5e74\u540e\u7b49\u7740\u4f60(\u4ed8\u8d39\u4e0b\u8f7d\u7248)<\/em><\/div>\r\n<div class=\"desc\">\u5267\u60c5\u89e3\u8c1c\u4f73\u4f5c\uff0c\u53ea\u4e3a\u90a3\u4e00\u4e2a\u80fd\u4e0e\u4f60\u76f8\u9047\u7684\u5947\u8ff9<\/div>\r\n<\/div>\r\n<div class=\"it-fr\"><span class=\"sp-score\">9.9<\/span><span class=\"sp-reply\">1156\u4eba\u8bc4\u4ef7<\/span><\/div>\r\n<\/div>\r\n<\/div>\r\n<\/a>"];
+                if (sessionStorage.getItem("ReloadTimes")) {
+                    var i = parseInt(sessionStorage.getItem("ReloadTimes")) + 1;
+                    sessionStorage.setItem("ReloadTimes", i);
+                    i = i % header_slide_json.length;
+                    show_header_slide(header_slide_json[i]);
+                } else {
+                    sessionStorage.setItem("ReloadTimes", "0");
+                }
+
+                function show_header_slide(data_str) {
+                    var $s = $("#header_slide");
+                    $s.html(data_str);
+                }
+            })();
+        </script>
+        <div class="menuReco">
+            <ul class="swiper-wrapper" data-row="8">
+                {loop type="arclist" row="10" tpl="" islist=""}
+                <li class="swiper-slide"><a href="{$vo.url}"><img src="{$vo.pic}" alt>{$vo.title}</a>
+                </li>
+                {/loop}
+            </ul>
+        </div>
+        <script>
+            $(function () {
+                var slide01 = new Swiper(".menuReco", {
+                    slidesPerView: "auto",
+                });
+            })
+        </script>
+        <div class="cardBeta">
+            <a href="{随机内容URL}"><div class="img"><img src="{随机图片}" alt="{随机标题}"></div><div class="con"><div class="g-name">{随机标题}</div><div class="g-desc">{随机关键词}</div></div></a>
+        </div>
+        {loop type="arclist" row="1" tpl="" islist=""}
+        <div class="cardGame card-game-fix promgameDiv">
+            <div class="card-img promgame_img">
+                <div class="vidPlay"><a href="{$vo.url}"><img class="img" src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                            alt="{$vo.title}"><i class="vico"></i></a></div>
+                <div class="coopTip">
+                    <div class="type">来自合作<i class="it-ico arrow"></i></div>
+                    <div class="info"><a href="{$vo.url}">{$vo.title}<i class="it-ico note"></i></a></div>
+                </div>
+            </div>
+            <div class="card-con">
+                <div class="card-game">
+                    <div class="gamelabel">
+                        <div class="g-icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}" alt="{$vo.title}下载"></div>
+                        <div class="g-info">
+                            <div class="i-name">
+                                <h1>{$keywords}</h1>
+                            </div>
+                            <div class="i-tags"><span class>{随机栏目}</span><span class>{随机栏目}</span><span
+                                    class>{随机栏目}</span>
+                            </div>
+                        </div>
+                        <div class="g-score">
+                            <em> {randstr type="2" num="1"/}.{randstr type="2" num="1"/}</em>
+                            <span> {randstr type="2" num="2"/}人评价</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="desc">{$vo.info}</p>
+                </div>
+            </div>
+        </div>
+        {/loop}
+        {loop type="arclist" row="2" tpl="" islist=""}
+        <div class="cardGame"><a href="{$vo.url}">
+                <div class="card-img">
+                    <div class="vidPlay"><img class="img" src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                            alt="{$vo.title}"><i class="vico"></i>
+                        <div class="tag"><i class="ico"><img src="{$vo.pic}"></i>飙升榜 #{$vo.hits}</div>
+                    </div>
+                </div>
+                <div class="card-con">
+                    <div class="card-game">
+                        <div class="gamelabel">
+                            <div class="g-icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}" alt="{$vo.title}下载">
+                            </div>
+                            <div class="g-info">
+                                <div class="i-name">
+                                    <em>{$vo.title}</em>
+                                </div>
+                                <div class="i-tags"><span class>{随机栏目}</span><span class>{随机栏目}</span><span
+                                        class>{随机栏目}</span>
+                                </div>
+                            </div>
+                            <div class="g-score">
+                                <em> {randstr type="2" num="1"/}.{randstr type="2" num="1"/}</em>
+                                <span> {randstr type="2" num="2"/}人评价</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <p class="desc">{$vo.info}</p>
+                    </div>
+                </div>
+            </a></div>
+        {/loop}
+        <div class="panel">
+            <div class="panel-head">
+                <div class="ph-tit"><i class="ico pos-prev"><img src="{$vo.pic}" lzimg="1"
+                            lz_src="//f2.3839img.com/hykb/static/hykb_web_wap/v2/images/home/icon-hot.png"
+                            alt></i>{$keywords} · 热点资讯</div>
+                <a class="ph-more" href="{随机栏目URL}" onclick="toAppPop();return false;" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <div class="bbsListWarp">
+                <div class="bbsList" data-id="2" id="bbsList_2" style="height: 225px">
+                    <ul class="swiper-wrapper" data-row="6">
+                        {loop type="arclist" row="6" tpl="" islist=""}
+                        <li class="swiper-slide"><a href="{$vo.url}">
+                                <div class="cardBBS">
+                                    <div class="img"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                                            alt="{$vo.title}"></div>
+                                    <div class="mask">
+                                        <div class="con">
+                                            <em>{$vo.title}</em>
+                                            <p>{$vo.postdate}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-head">
+                <div class="ph-tit">好游抢鲜玩（精选&amp;重磅）</div>
+                <a class="ph-more" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </div>
+
+            <div class="cardSlot mt10">
+                <div class="riliTab" id="riliTab01">
+                    <ul class="swiper-wrapper" data-row="24">
+                        <li class="swiper-slide">
+                            <div class="item">{随机栏目}</div>
+                            <span class="dot"></span>
+                        </li>
+                        <li class="swiper-slide on">
+                            <div class="item">{随机栏目}</div>
+                            <span class="dot"></span>
+                        </li>
+                        {loop type="arclist" row="20" tpl="" islist=""}
+                        <li class="swiper-slide">
+                            <div class="item">{$vo.title}</div>
+                            <div class="item" style="display:none">{随机时间}</div>
+                            <span class="dot"></span>
+                        </li>
+                        {/loop}
+                    </ul>
+                </div>
+
+                <div class="riliCon" id="riliList01">
+                    <div class="gameRow swiper-wrapper">
+                        <ul class="gameRow3 swiper-slide " data-row="3" data-item="0">
+                            {loop type="arclist" row="3" tpl="" islist=""}
+                            <li><a href="{$vo.url}">
+                                    <div class="g-icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                                            data-src="{$vo.pic}" alt="{$vo.title}"></div>
+                                    <div class="g-name"><em>{$vo.title}</em></div>
+                                    <div class="g-tags"><i>{$vo.postdate}</i><i>高画质</i><i>{随机栏目}</i></div>
+                                    <div class="g-info">
+                                        <i class="score">{$vo.hits}</i>{$vo.info}
+                                    </div>
+                                </a></li>
+                            {/loop}
+                        </ul>
+                        {loop type="arclist" row="20" tpl="" islist=""}
+                        <ul class="gameRow3 swiper-slide " data-row="3" data-item="{$vo.i}">
+                            {loop type="arclist" row="3" tpl="" islist=""}
+                            <li><a href="{$vo.url}">
+                                    <div class="g-icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                                            data-src="{$vo.pic}" alt="{$vo.title}"></div>
+                                    <div class="g-name"><em>{$vo.title}</em></div>
+                                    <div class="g-tags"><i>{$vo.postdate}</i><i>高画质</i><i>{随机栏目}</i></div>
+                                    <div class="g-info">
+                                        <i class="score">{$vo.hits}</i>{$vo.info}
+                                    </div>
+                                </a></li>
+                            {/loop}
+                        </ul>
+                        {/loop}
+                    </div>
+                </div>
+                <ul class="topicList" data-row="3">
+                    <li><a href="{随机栏目URL}" onclick="toAppPop();return false;" title="{随机栏目}">{随机栏目}</a></li>
+                    <li><a href="{随机栏目URL}" onclick="toAppPop();return false;" title="{随机栏目}">{随机栏目}</a></li>
+                    <li><a href="{随机栏目URL}" onclick="toAppPop();return false;" title="{随机栏目}">{随机栏目}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-head">
+                <div class="ph-tit">{$keywords} 近期热门游戏<i class="ico"><img src="{$vo.pic}" lzimg="1"
+                            lz_src="//f2.3839img.com/hykb/static/hykb_web_wap/v2/images/home/icon-update.png" alt></i>
+                </div>
+                <a class="ph-more" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </div>
+
+            <div class="hotGame" data-id="4" id="hotGame_4">
+                <ul class="swiper-wrapper" data-row="12">
+                    {loop type="arclist" row="12" tpl="" islist=""}
+                    <li class="swiper-slide">
+                        <div class="item">
+                            <div class="gshow"><a href="{$vo.url}"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                                        alt="{$vo.title}"></a></div>
+                            <div class="ginfo">
+                                <div class="con"><a href="{$vo.url}">
+                                        <div class="label">
+                                            <div class="icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                                                    alt="{$vo.title}"></div>
+                                            <div class="name">
+                                                <em>{$vo.title}</em>
+
+                                            </div>
+                                        </div>
+                                        <p class="desc">{$vo.info}</p>
+                                    </a></div>
+                                <a class="btn bt1" href="{随机栏目URL}" title="{随机栏目}">下载</a>
+                            </div>
+                        </div>
+                    </li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-head">
+                <div class="ph-tit">爆友热玩 · 近期都在玩的热门游戏</div>
+                <a class="ph-more" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <div class="cardSlot">
+                <div class="card3h" data-id="5" id="card3h_5">
+                    <div class="gameRow swiper-wrapper">
+                        {loop type="arclist" row="10" tpl="" islist=""}
+                        <ul class="gameRow3 swiper-slide " data-row="3" data-item="{$vo.i}">
+                            {loop type="arclist" row="3" tpl="" islist=""}
+                            <li><a href="{$vo.url}">
+                                    <div class="g-icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                                            data-src="{$vo.pic}" alt="{$vo.title}"></div>
+                                    <div class="g-name"><em>{$vo.title}</em></div>
+                                    <div class="g-tags"><i>{$vo.postdate}</i><i>高画质</i><i>{随机栏目}</i></div>
+                                    <div class="g-info">
+                                        <i class="score">{$vo.hits}</i>{$vo.info}
+                                    </div>
+                                </a></li>
+                            {/loop}
+                        </ul>
+                        {/loop}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-head">
+                <div class="ph-tit">{$keywords} · 免费体验试玩</div>
+                <a class="ph-more" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <div class="cardSlot">
+                <div class="card3h" data-id="6" id="card3h_6">
+                    <div class="gameRow swiper-wrapper">
+                        {loop type="arclist" row="20" tpl="" islist=""}
+                        <ul class="gameRow3 swiper-slide " data-row="3">
+                            {loop type="arclist" row="3" tpl="" islist=""}
+                            <li><a href="{$vo.url}">
+                                    <div class="g-icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                                            data-src="{$vo.pic}" alt="{$vo.title}"></div>
+                                    <div class="g-name"><em>{$vo.title}</em></div>
+                                    <div class="g-tags"><i>{$vo.postdate}</i><i>高画质</i><i>{随机栏目}</i></div>
+                                    <div class="g-info">
+                                        <i class="score">{$vo.hits}</i>{$vo.info}
+                                    </div>
+                                </a></li>
+                            {/loop}
+                        </ul>
+                        {/loop}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-head">
+                <div class="ph-tit">买断制 · 精品付费好游戏</div>
+                <a class="ph-more" href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <div class="cardSlot">
+                <div class="card3h" data-id="7" id="card3h_7">
+                    <div class="gameRow swiper-wrapper">
+                        {loop type="arclist" row="15" tpl="" islist=""}
+                        <ul class="gameRow3 swiper-slide " data-row="3">
+                            {loop type="arclist" row="3" tpl="" islist=""}
+                            <li><a href="{$vo.url}">
+                                    <div class="g-icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                                            data-src="{$vo.pic}" alt="{$vo.title}"></div>
+                                    <div class="g-name"><em>{$vo.title}</em></div>
+                                    <div class="g-tags"><i>{$vo.postdate}</i><i>高画质</i><i>{随机栏目}</i></div>
+                                    <div class="g-info">
+                                        <i class="score">{$vo.hits}</i>{$vo.info}
+                                    </div>
+                                </a></li>
+                            {/loop}
+                        </ul>
+                        {/loop}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {loop type="arclist" row="2" tpl="" islist=""}
+        <div class="cardGame"><a href="{$vo.url}">
+                <div class="card-img">
+                    <div class="vidPlay"><img class="img" src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                            alt="{$vo.title}"><i class="vico"></i>
+                        <div class="tag"><i class="ico"><img src="{$vo.pic}"></i>飙升榜 #{$vo.hits}</div>
+                    </div>
+                </div>
+                <div class="card-con">
+                    <div class="card-game">
+                        <div class="gamelabel">
+                            <div class="g-icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}" alt="{$vo.title}下载">
+                            </div>
+                            <div class="g-info">
+                                <div class="i-name">
+                                    <em>{$vo.title}</em>
+                                </div>
+                                <div class="i-tags"><span class>{随机栏目}</span><span class>{随机栏目}</span><span
+                                        class>{随机栏目}</span>
+                                </div>
+                            </div>
+                            <div class="g-score">
+                                <em> {randstr type="2" num="1"/}.{randstr type="2" num="1"/}</em>
+                                <span> {randstr type="2" num="2"/}人评价</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <p class="desc">{$vo.info}</p>
+                    </div>
+                </div>
+            </a></div>
+        {/loop}
+        {loop type="arclist" row="1" tpl="" islist=""}
+        <div class="cardGame card-game-fix promgameDiv">
+            <div class="card-img promgame_img">
+                <div class="vidPlay"><a href="{$vo.url}"><img class="img" src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                            alt="{$vo.title}"><i class="vico"></i></a></div>
+                <div class="coopTip">
+                    <div class="type">{$keywords}<i class="it-ico arrow"></i></div>
+                    <div class="info"><a href="{$vo.url}">{$vo.title}<i class="it-ico note"></i></a></div>
+                </div>
+            </div>
+            <div class="card-con">
+                <div class="card-game">
+                    <div class="gamelabel">
+                        <div class="g-icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}" alt="{$vo.title}下载"></div>
+                        <div class="g-info">
+                            <div class="i-name">
+                                <em>{$vo.title}</em>
+                            </div>
+                            <div class="i-tags"><span class>{随机栏目}</span><span class>{随机栏目}</span><span
+                                    class>{随机栏目}</span>
+                            </div>
+                        </div>
+                        <div class="g-score">
+                            <em> {randstr type="2" num="1"/}.{randstr type="2" num="1"/}</em>
+                            <span> {randstr type="2" num="2"/}人评价</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="desc">{$vo.info}</p>
+                </div>
+            </div>
+        </div>
+        {/loop}
+        {loop type="arclist" row="4" tpl="" islist=""}
+        <div class="cardGame"><a href="{$vo.url}">
+                <div class="card-img">
+                    <div class="vidPlay"><img class="img" src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                            alt="{$vo.title}"><i class="vico"></i>
+                        <div class="tag"><i class="ico"><img src="{$vo.pic}"></i>飙升榜 #{$vo.hits}</div>
+                    </div>
+                </div>
+                <div class="card-con">
+                    <div class="card-game">
+                        <div class="gamelabel">
+                            <div class="g-icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}" alt="{$vo.title}下载">
+                            </div>
+                            <div class="g-info">
+                                <div class="i-name">
+                                    <em>{$vo.title}</em>
+                                </div>
+                                <div class="i-tags"><span class>{随机栏目}</span><span class>{随机栏目}</span><span
+                                        class>{随机栏目}</span>
+                                </div>
+                            </div>
+                            <div class="g-score">
+                                <em> {randstr type="2" num="1"/}.{randstr type="2" num="1"/}</em>
+                                <span> {randstr type="2" num="2"/}人评价</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <p class="desc">{$vo.info}</p>
+                    </div>
+                </div>
+            </a></div>
+        {/loop}
+        <div class="panel">
+            <div class="panel-head">
+                <div class="ph-tit">{$keywords} 老爆er说</div>
+                <p class="ph-desc">{随机栏目}</p>
+                <a class="ph-more" href="{随机栏目URL}" onclick="toAppPop();return false;" title="{随机栏目}">{随机栏目}</a>
+            </div>
+            <div class="baoList" data-id="15" id="baoList_15">
+                <ul class="swiper-wrapper" data-row="10">
+                    {loop type="arclist" row="10" tpl="" islist=""}
+                    <li class="swiper-slide">
+                        <div class="baoCard">
+                            <a href="{$vo.url}">
+                                <div class="user">
+                                    <div class="img">
+                                        <img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}" class="avatar" alt>
+
+                                    </div>
+                                    <div class="name">
+                                        <em>{$vo.title}</em>
+
+                                        <i>推主</i>
+                                    </div>
+                                    <p class="desc"></p>
+                                </div>
+                                <div class="starLabel">
+                                    <span class="star" style="width:80%"></span>
+                                </div>
+                                <div class="text">
+                                    {$vo.info}
+                                </div>
+                            </a>
+                            <div class="info">
+                                <div class="fl">来自<a class="Cg" href="/" title="{$vo.title}">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    {/loop}
+
+                </ul>
+            </div>
+            <script>
+                $(function () {
+                    var baoList = new Swiper(".baoList", {
+                        slidesPerView: "auto",
+                    });
+                })
+            </script>
+        </div>
+        {loop type="arclist" row="4" tpl="" islist=""}
+        <div class="cardGame"><a href="{$vo.url}">
+                <div class="card-img">
+                    <div class="vidPlay"><img class="img" src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                            alt="{$vo.title}"><i class="vico"></i>
+                        <div class="tag"><i class="ico"><img src="{$vo.pic}"></i>飙升榜 #{$vo.hits}</div>
+                    </div>
+                </div>
+                <div class="card-con">
+                    <div class="card-game">
+                        <div class="gamelabel">
+                            <div class="g-icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}" alt="{$vo.title}下载">
+                            </div>
+                            <div class="g-info">
+                                <div class="i-name">
+                                    <em>{$vo.title}</em>
+                                </div>
+                                <div class="i-tags"><span class>{随机栏目}</span><span class>{随机栏目}</span><span
+                                        class>{随机栏目}</span>
+                                </div>
+                            </div>
+                            <div class="g-score">
+                                <em> {randstr type="2" num="1"/}.{randstr type="2" num="1"/}</em>
+                                <span> {randstr type="2" num="2"/}人评价</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <p class="desc">{$vo.info}</p>
+                    </div>
+                </div>
+            </a></div>
+        {/loop}
+        {loop type="arclist" row="1" tpl="" islist=""}
+        <div class="cardCate"><a href="{$vo.url}">
+                <div class="card-tit">
+                    <p>{$keywords} {$vo.title}</p><em class="item">{$vo.title}（{$vo.postdate}）</em>
+                </div>
+                <div class="card-img"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}" alt="{$vo.title}"></div>
+            </a></div>
+        {/loop}
+        {loop type="arclist" row="32" tpl="" islist=""}
+        <div class="cardGame"><a href="{$vo.url}">
+                <div class="card-img">
+                    <div class="vidPlay"><img class="img" src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}"
+                            alt="{$vo.title}"><i class="vico"></i>
+                        <div class="tag"><i class="ico"><img src="{$vo.pic}"></i>飙升榜 #{$vo.hits}</div>
+                    </div>
+                </div>
+                <div class="card-con">
+                    <div class="card-game">
+                        <div class="gamelabel">
+                            <div class="g-icon"><img src="{$vo.pic}" lzimg="1" lz_src="{$vo.pic}" alt="{$vo.title}下载">
+                            </div>
+                            <div class="g-info">
+                                <div class="i-name">
+                                    <em>{$vo.title}</em>
+                                </div>
+                                <div class="i-tags"><span class>{随机栏目}</span><span class>{随机栏目}</span><span
+                                        class>{随机栏目}</span>
+                                </div>
+                            </div>
+                            <div class="g-score">
+                                <em> {randstr type="2" num="1"/}.{randstr type="2" num="1"/}</em>
+                                <span> {randstr type="2" num="2"/}人评价</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <p class="desc">{$vo.info}</p>
+                    </div>
+                </div>
+            </a></div>
+        {/loop}
+    </div>
+
+    <div class="friLink" id="friLink">
+        <dt>友情链接</dt>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+        <dd><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></dd>
+    </div>
+    <script src="{$theme_path}/js/footer_wap_v2.js?v=9.06"></script>
+    <div class="navFootWp">
+        <div class="navFoot">
+            <ul class="cf" data-row="5">
+                <li class="on"><a href="{随机栏目URL}"><i class="reco"></i>{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}"><i class="rank"></i>{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}"><i class="spec"></i>{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}"><i class="wall"></i>{随机栏目}</a></li>
+                <li><a href="{随机栏目URL}"><i class="bbs"></i>{随机栏目}</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        init_ios_desk('bottom:1.2rem;');
+    </script>
+    <a id="gotop" class="gotop" style="display:none" onclick="go_to($('body'))">{$keywords} {随机栏目}</a>
+    <script src="{$theme_path}/js/swiper.min.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/clipboard.min.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/lzimg.js"></script>
+    <script src="{$theme_path}/js/wxshare.js" type="text/javascript"></script>
+    <script src="{$theme_path}/js/home.js?v2"></script>
+    <script type="text/javascript" src="{$theme_path}/js/mtj.js"></script>
+</body>
