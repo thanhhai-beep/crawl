@@ -193,3 +193,192 @@ button,textarea{outline:0;border:0;padding:0;margin:0;-webkit-appearance:none}
     width:100%;
     height:100%;
 }
+
+/*新公共头*/
+.search-container {
+    display: none;
+}
+
+.head_3g-top {
+    height: 1.19rem;
+    background: #ffffff;
+    width: 100%;
+}
+
+.head_3g2020 {
+    width: 100%;
+    background-color: #eeeeee;
+    height: 1.04rem;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10001;
+    right: 0;
+}
+
+.head_3g2020 .head_3g-top {
+    height: 1.04rem;
+    width: 100%;
+    padding: 0 0.21rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    overflow: hidden;
+}
+
+.head_3g-top .head_3g-logo {
+    width: 4.98rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.head_3g-top .head_3g-logo img {
+    width: 0.6rem;
+    height: 0.6rem;
+    vertical-align: middle;
+}
+
+.head_3g-top .head_3g-logo div {
+    padding-left: 0.16rem;
+    height: 0.75rem;
+    font-size: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.head_3g-top .head_3g-logo span {
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+    color: #454545;
+    height: 0.4rem;
+    font-weight: bold;
+}
+
+.head_3g-top .head_3g-logo p {
+    width: 100%;
+    font-size: 0.22rem;
+    line-height: 0.3rem;
+    color: #858585;
+    height: 0.3rem;
+}
+
+.head_3g-top .head_3g-down {
+    width: 1.26rem;
+    height: 0.48rem;
+    background-image: linear-gradient(30deg, #ff4800 0%, #ff7800 100%);
+    border-radius: 0.24rem;
+    font-size: 0.22rem;
+    text-align: center;
+    line-height: 0.48rem;
+    color: #ffffff;
+    margin-right: 0.4rem;
+}
+
+.head_3g-top .head_3g-more {
+    width: 0.42rem;
+    height: 0.4rem;
+    background: url(https://3g.ali213.net/images/head_menu.png);
+    cursor: pointer;
+    background-size: 100% 100%;
+}
+
+.head_3g-shadow {
+    width: 100%;
+    height: 0.15rem;
+    margin: auto;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, #eee 100%);
+}
+
+.head_3g-con {
+    height: 4.5rem;
+    box-sizing: border-box;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0 0 0.1rem 0.1rem;
+    background: white;
+    display: none;
+}
+
+.head_3g-con .head_3g-form {
+    width: 5.84rem;
+    height: 0.7rem;
+    background-color: #f5f5f5;
+    border-radius: 0.35rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.28rem;
+    box-sizing: border-box;
+    margin-bottom: 0.42rem;
+}
+
+.head_3g-form .search-input {
+    display: block;
+    width: 4.5rem;
+    line-height: 0.7rem;
+    height: 0.7rem;
+    font-size: 0.24rem;
+    color: #b1b1b1;
+    background: transparent;
+}
+
+.head_3g-form .search-submit {
+    width: 0.38rem;
+    height: 0.38rem;
+    background: url(https://3g.ali213.net/images/head_search.png) no-repeat center center;
+    display: block;
+    background-size: 100% 100%;
+}
+
+.head_3g-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 7rem;
+    margin: auto;
+}
+
+.head_3g-icon a {
+    width: 0.5rem;
+    margin: 0 0.62rem 0.5rem;
+    display: block;
+    font-size: 0.24rem;
+    line-height: 0.28rem;
+    color: #595959;
+    flex-grow: 1;
+}
+
+.head_3g-icon a div {
+    width: 0.48rem;
+    height: 0.48rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.12rem;
+}
+
+.head_3g-icon a img {
+    width: 0.45rem;
+}
+
+.pswp {
+    z-index: 100001 !important;
+}
+
+.swiper-ztnav {
+    overflow-x: auto !important;
+}
+
+.keylink {
+    color: #ff5e00 !important;
+}

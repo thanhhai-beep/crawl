@@ -35,7 +35,7 @@
     <div class="uaHolder">
         <div class="staticPart">
             <ul data-row="1">
-                <li><a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a></li>
+                <li><a href="/"></a></li>
             </ul>
             <div class="header_right">
                 <div class="header_menu"><i class="icon-menu"></i></div>
@@ -106,10 +106,10 @@
         </div>
         <div class="upone hp">
             <div class="uponea">
-                <h1>{$title}</h1>
+                <h1>{$keywords}</h1>
             </div>
             <div class="uponeb">
-                <p>{随机关键词}</p>
+                <p>{$title}</p>
             </div>
             <div class="uponec">{$postdate}</div>
         </div>
@@ -153,7 +153,7 @@
             </div>
 
             <div class="articlebox">
-                <p><em></em>最新攻略<a href="{随机栏目URL}">MORE<i>+</i></a></p>
+                <p><em></em>{$keywords} 最新攻略<a href="{随机栏目URL}">MORE<i>+</i></a></p>
                 <div class="inbox">
                     {loop type="arclist" row="10" tpl="" islist=""}
                     <div class="xgwzlist"><a href="{$vo.url}">{$vo.title}</a></div>
@@ -202,7 +202,7 @@
     </div>
     <div class="footer">
         <a class="to-client"><img src="{$theme_path}/images/mg43.png">客户端</a>
-        <a href="{随机内容URL}" class="to-pc"><img src="{$theme_path}/images/mg16.png">排行榜</a>
+        <a href="{随机内容URL}" class="to-pc"><img src="{$theme_path}/images/mg16.png">{$keywords}</a>
         <a href="{随机内容URL}" class="to-index"><img src="{$theme_path}/images/mg12.png"></a>
     </div>
     <div style="display: none;">

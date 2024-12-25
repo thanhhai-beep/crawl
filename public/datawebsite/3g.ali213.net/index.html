@@ -13,8 +13,7 @@
 	<!-- Le styles -->
 	<link href="{$theme_path}/css/global.css" media="screen" rel="stylesheet" type="text/css">
 	<link href="{$theme_path}/css/swiper-3.4.2.min.css?1" media="screen" rel="stylesheet" type="text/css">
-	<link href="{$theme_path}/css/www.ali213.net" rel="canonical">
-	<link href="{$theme_path}/css/mip.ali213.net" rel="miphtml">
+	<link rel="canonical" href="{$thisurl}">
 	<link href="{$theme_path}/css/index.css?1735024965" media="screen" rel="stylesheet" type="text/css">
 	<link href="{$theme_path}/css/swiper-3.4.2.min.css" media="screen" rel="stylesheet" type="text/css">
 	<link href="{$theme_path}/css/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
@@ -25,41 +24,41 @@
 </head>
 
 <body>
-	<div class="search-container">
-		<div class="search-con">
-			<div class="top-header">
-				<a href="/" class="top-game-logo"></a>
-				<div class="top-more"></div>
-			</div>
-			<div class="search-content">
-				<div class="swiper-container nav-swiper search-nav-swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<a href="" class="checked"><span>首页</span></a>
-							{loop type="catelog" row="12" tpl="" islist=""}
-							<a href="{$vo.url}"><span>{$vo.title}</span></a>
-							{/loop}
-						</div>
-					</div>
-				</div>
-				<div class="search-bar has-margins">
-					<form action="/search.html" method="get">
-						<input type="search" class="search-input" name="keyword" value placeholder="英雄联盟手游"
-							autocomplete="off">
-						<input type="submit" class="search-submit" value>
-					</form>
-				</div>
-				<div class="has-margins hot-search">
-					<span>热门搜索：</span>
-				</div>
-				<div class="has-margins search-result"></div>
-			</div>
-		</div>
-		<div class="close-search"></div>
-	</div>
+	<!--<div class="search-container">-->
+	<!--	<div class="search-con">-->
+	<!--		<div class="top-header">-->
+	<!--			<a href="/" class="top-game-logo"></a>-->
+	<!--			<div class="top-more"></div>-->
+	<!--		</div>-->
+	<!--		<div class="search-content">-->
+	<!--			<div class="swiper-container nav-swiper search-nav-swiper">-->
+	<!--				<div class="swiper-wrapper">-->
+	<!--					<div class="swiper-slide">-->
+	<!--						<a href="" class="checked"><span>首页</span></a>-->
+	<!--						{loop type="catelog" row="12" tpl="" islist=""}-->
+	<!--						<a href="{$vo.url}"><span>{$vo.title}</span></a>-->
+	<!--						{/loop}-->
+	<!--					</div>-->
+	<!--				</div>-->
+	<!--			</div>-->
+	<!--			<div class="search-bar has-margins">-->
+	<!--				<form action="/search.html" method="get">-->
+	<!--					<input type="search" class="search-input" name="keyword" value placeholder="英雄联盟手游"-->
+	<!--						autocomplete="off">-->
+	<!--					<input type="submit" class="search-submit" value>-->
+	<!--				</form>-->
+	<!--			</div>-->
+	<!--			<div class="has-margins hot-search">-->
+	<!--				<span>热门搜索：</span>-->
+	<!--			</div>-->
+	<!--			<div class="has-margins search-result"></div>-->
+	<!--		</div>-->
+	<!--	</div>-->
+	<!--	<div class="close-search"></div>-->
+	<!--</div>-->
 	<script type="text/javascript" src="{$theme_path}/js/global.js"></script>
 	<div class="container">
-		<div class="swiper-container nav-swiper index-swiper">
+		<div class="swiper-container nav-swiper index-swiper" style="height: 17px">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<a href="/" class="checked"><span>首页</span></a>
@@ -82,7 +81,7 @@
 			<div class="hot-news-t">
 				<div></div>
 				<div>
-					<a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+					<h1>{$keywords}</h1>
 				</div>
 			</div>
 			<div class="hot-news">
@@ -95,7 +94,7 @@
 			<div class="news-toggle toggle-ul">
 				<span class="checked">资讯</span>
 				<span>大侠号</span>
-				<span>评测</span>
+				<span>{$keywords}</span>
 			</div>
 			<div class="news-ul">
 				<ul class="news-li toggle-li" data-row="12">
@@ -143,7 +142,7 @@
 		</div>
 		<a href="{随机栏目URL}" class="read-more" rel="nofollow" title="{随机栏目}">{随机栏目}</a>
 		<!--<div class="abdd"></div>-->
-		<div class="part-title">手游下载<a href="//app.ali213.net" rel="nofollow">更多 <i></i></a></div>
+		<div class="part-title">手游下载<a href="/" rel="nofollow">更多 <i></i></a></div>
 		<!------include-prefix-data-path="/include/qztf_3g.html"------>
 		<div class="qztfbox">
 			<link rel="stylesheet" href="{$theme_path}/css/qztf.css">
@@ -171,7 +170,7 @@
 		</div><!------include-suffix------>
 		<div class="down-container has-margins">
 			<div class="down-toggle toggle-ul">
-				<span class="checked">热门推荐</span>
+				<span class="checked">{$keywords}</span>
 				<span>最新游戏</span>
 			</div>
 			<div class="down-ul">
@@ -206,9 +205,9 @@
 			</div>
 		</div>
 		<!--热门游戏-->
-		<div class="part-title">热门游戏<a href="/yxk/" rel="nofollow">更多 <i></i></a></div>
+		<div class="part-title">热门游戏<a href="" rel="nofollow">更多 <i></i></a></div>
 		<div class="swiper-container hot-swiper">
-			<div class="swiper-wrapper">
+			<div class="swiper-wrapper" style="height: 234px">
 				{loop type="arclist" row="10" tpl="" islist=""}
 				<div class="swiper-slide">
 					<a href="{$vo.url}">
@@ -224,7 +223,7 @@
 			</div>
 		</div>
 		<!--攻略推荐-->
-		<div class="part-title">攻略推荐<a href="/gl/" rel="nofollow">更多 <i></i></a></div>
+		<div class="part-title">{$keywords}<a href="/gl/" rel="nofollow">更多 <i></i></a></div>
 		<div class="strategy-container has-margins">
 			<div class="strategy-toggle toggle-ul">
 				<span class="checked">单机攻略</span>
@@ -259,7 +258,7 @@
 		<!--排行榜-->
 		<div class="rank-container has-margins">
 			<div class="rank-toggle">
-				<span class="checked">游戏榜</span>
+				<span class="checked">{$keywords}</span>
 				<span>销量榜</span>
 			</div>
 			<div class="game-ranking">
@@ -339,9 +338,9 @@
 		</div>
 	</div>
 	<div class="footer">
-		<a href="https://3g.ali213.net/" class="to-index"><img src="{$vo.pic}"></a>
-		<a class="to-client"><img src="{$vo.pic}">客户端</a>
-		<a class="to-top"><img src="{$vo.pic}">回顶部</a>
+		<a class="to-client"><img src="{$theme_path}/images/mg43.png">客户端</a>
+		<a href="{随机内容URL}" class="to-pc"><img src="{$theme_path}/images/mg16.png">{$keywords}</a>
+		<a href="{随机内容URL}" class="to-index"><img src="{$theme_path}/images/mg12.png"></a>
 	</div>
 	<script type="text/javascript" src="{$theme_path}/js/index.js"></script>
 	<script type="text/javascript" src="{$theme_path}/js/common.js"></script>
