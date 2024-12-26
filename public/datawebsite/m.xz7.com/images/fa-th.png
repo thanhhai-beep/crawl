@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+	<meta name="wap-font-scale" content="no">
+	<title>404</title>
+	<link rel="stylesheet" href="/static/css/main.css" />
+	<script src="/static/js/jq.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="content">
+				<!-- 404 -->
+		<div class="page404">
+			<img src="/static/images/404.png" alt="">
+			<p>哎呀亲...你的访问页面出错了！</p>
+			<a href="/" >返回首页</a>
+		</div>
+			</div>
+	<script src="/static/js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="applicable-device" content="mobile" />
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>404页面未找到_极光下载</title>
+	<link rel="stylesheet" href="/skins/css/xz7.css">
+	<style>
+		.qqtn404 {
+			background-color: #fff;
+			width: 100%;
+			margin: 10px 0 auto;
+			overflow: hidden;
+			text-align: center
+		}
+		/* 404 */
+
+		.m-img404 {
+			text-align: center;
+			display: block;
+			margin: 0 auto 20px auto;
+			width: 100%;
+			padding-top: 20px
+		}
+
+		h2 {
+			font-size: 22px;
+			width: 100%;
+			margin: 0 auto;
+			font-weight: normal;
+			font-family: "microsoft yahei";
+			text-align: center;
+		}
+
+		.m-zdtz {
+			width: auto;
+			margin: 0 auto;
+			background: url(/skins/img/loading2.gif) no-repeat left 0 center;
+			text-indent: 22px;
+			line-height: 34px;
+			display: inline-block;
+			overflow: hidden;
+		}
+
+		.m-zdtz a {
+			color: #23A7F1
+		}
+
+		.m-atz {
+			text-align: center;
+			padding: 10px 0px 20px 0;
+		}
+
+		.m-atz a {
+			height: 108px;
+			display: inline-block;
+			height: 36px;
+			background: #18cf7c;
+			border-bottom: 4px #3eb37e solid;
+			color: #fff;
+			line-height: 36px;
+			padding: 0 20px;
+			margin: 0 10px;
+		}
+
+		.m-atz a:hover {
+			background-color: #10be6f
+		}
+	</style>
+</head>
+
+<body id="index-page">
+<header class="top">
+	<a href="http://m.xz7.com/" id="logo">极光下载站</a>
+	<p id="mcate"><b>分类</b></p><div id="mcateCont"><p><span class="cur">安卓应用</span><span>安卓游戏</span><span>安卓单机</span></p><ul class="on"><li><a href="/downlist/s_623_1.html"><span>电视应用</span>2百+款应用</a></li><li><a href="/downlist/s_624_1.html"><span>综合软件</span>3千+款应用</a></li><li><a href="/downlist/s_625_1.html"><span>手机助手</span>4百+款应用</a></li><li><a href="/downlist/s_626_1.html"><span>桌面主题</span>5百+款应用</a></li><li><a href="/downlist/s_627_1.html"><span>影音播放</span>3千+款应用</a></li><li><a href="/downlist/s_628_1.html"><span>社交通讯</span>2千+款应用</a></li><li><a href="/downlist/s_629_1.html"><span>购物支付</span>5千+款应用</a></li><li><a href="/downlist/s_630_1.html"><span>系统工具</span>4千+款应用</a></li><li><a href="/downlist/s_631_1.html"><span>旅游出行</span>2千+款应用</a></li><li><a href="/downlist/s_632_1.html"><span>新闻资讯</span>2千+款应用</a></li><li><a href="/downlist/s_633_1.html"><span>教育学习</span>1万+款应用</a></li><li><a href="/downlist/s_634_1.html"><span>生活相关</span>1万+款应用</a></li><li><a href="/downlist/s_657_1.html"><span>医疗健康</span>2千+款应用</a></li><li><a href="/downlist/s_658_1.html"><span>美化照片</span>1千+款应用</a></li><li><a href="/downlist/s_683_1.html"><span>金融理财</span>2千+款应用</a></li><li><a href="/downlist/s_684_1.html"><span>小说动漫</span>1千+款应用</a></li><li><a href="/downlist/s_685_1.html"><span>趣味娱乐</span>1千+款应用</a></li><li><a href="/downlist/s_686_1.html"><span>商务办公</span>4千+款应用</a></li><li><a href="/downlist/s_703_1.html"><span>阅读工具</span>1千+款应用</a></li></ul><ul><li><a href="/downlist/s_702_1.html"><span>新游预约</span>4千+款游戏</a></li><li><a href="/downlist/s_530_1.html"><span>网络游戏</span>6千+款游戏</a></li><li><a href="/downlist/s_551_1.html"><span>电视游戏</span>5个+款游戏</a></li><li><a href="/downlist/s_523_1.html"><span>仙侠网游</span>6千+款游戏</a></li><li><a href="/downlist/s_524_1.html"><span>飞行射击</span>2千+款游戏</a></li><li><a href="/downlist/s_526_1.html"><span>角色扮演</span>1万+款游戏</a></li><li><a href="/downlist/s_528_1.html"><span>体育竞技</span>1千+款游戏</a></li><li><a href="/downlist/s_522_1.html"><span>模拟经营</span>3千+款游戏</a></li><li><a href="/downlist/s_520_1.html"><span>动作冒险</span>7千+款游戏</a></li><li><a href="/downlist/s_531_1.html"><span>益智休闲</span>7千+款游戏</a></li><li><a href="/downlist/s_549_1.html"><span>游戏辅助</span>2千+款游戏</a></li><li><a href="/downlist/s_681_1.html"><span>h5游戏</span>5百+款游戏</a></li><li><a href="/downlist/s_687_1.html"><span>变态手游</span>4千+款游戏</a></li><li><a href="/downlist/s_688_1.html"><span>卡牌手游</span>4千+款游戏</a></li><li><a href="/downlist/s_689_1.html"><span>赛车竞速</span>6百+款游戏</a></li><li><a href="/downlist/s_690_1.html"><span>策略塔防</span>5千+款游戏</a></li></ul><ul><li><a href="/downlist/s_692_1.html"><span>破解游戏</span>1万+款游戏</a></li><li><a href="/downlist/s_704_1.html"><span>动作格斗</span>1千+款游戏</a></li><li><a href="/downlist/s_701_1.html"><span>休闲益智</span>1万+款游戏</a></li><li><a href="/downlist/s_693_1.html"><span>体育竞技</span>6百+款游戏</a></li><li><a href="/downlist/s_694_1.html"><span>策略塔防</span>2千+款游戏</a></li><li><a href="/downlist/s_695_1.html"><span>模拟经营</span>6千+款游戏</a></li><li><a href="/downlist/s_696_1.html"><span>角色扮演</span>3千+款游戏</a></li><li><a href="/downlist/s_697_1.html"><span>飞行射击</span>3千+款游戏</a></li><li><a href="/downlist/s_698_1.html"><span>冒险解谜</span>4千+款游戏</a></li><li><a href="/downlist/s_699_1.html"><span>赛车竞速</span>1千+款游戏</a></li><li><a href="/downlist/s_700_1.html"><span>卡牌战棋</span>6百+款游戏</a></li></ul></div>
+	<form method="get" action="http://s.xz7.com/cse/search" accept-charset="utf-8">
+		<div class="soBox">
+			<div class="soInput">
+				<input class="search-input" type="text" name="q" id="bdcs-search-form-input" value="" size="50" maxlength="100" autocomplete="off">
+				<input type="hidden" name="nsid" id="headSearchType" value="1">
+				<input type="hidden" name="s" value="3598303762173887053">
+			</div>
+			<div class="soBtn"><button id="bdcs-search-form-submit" type="submit" label="搜索"></button></div>
+		</div>
+	</form>
+</header>
+<p id="sNav" style="margin-top:10px;">
+	<a href="http://m.xz7.com/yp/azzjbbrj/" id="is1"><em></em>必备</a>
+	<a href="http://m.xz7.com/d/Catalogid/681/1/" id="is2"><em></em>小游戏</a>
+	<a href="http://m.xz7.com/d/Catalogid/530/1/" id="is3"><em></em>手游库</a>
+	<a href="http://m.xz7.com/yp/androidsy/" id="is4"><em></em>排行榜</a>
+</p>
+<div class="g-recomd-images-box row qqtn404 ">
+	<div class="m-img404"><img src="/skins/img/404.jpg"></div>
+	<h2>很抱歉，您访问的页面不存在....</h2>
+	<div class="m-zdtz"><span id="time"></span>正在自动跳转到首页，如没有跳转请
+		<a href="http://m.xz7.com/">点击此链接</a>
+	</div>
+	<div class="m-atz">
+		<a href="http://m.xz7.com/">返回首页</a>
+		<a href="javascript:history.back();">返回上一页</a>
+	</div>
+</div>
+<script type="text/javascript" charset="UTF-8" src="/skins/js/error.min.js"></script>
+<script>
+	//设定倒数秒数
+	var t = 10;
+	//显示倒数秒数
+	function showTime() {
+		t -= 1;
+		//document.getElementById('time').innerHTML= t;
+		if(t == 0) {
+			location.href = 'http://m.xz7.com/';
+		}
+		//每秒执行一次,showTime()
+		setTimeout("showTime()", 1000);
+	}
+	//执行showTime()
+	showTime();
+</script>
+</body>
+</html>

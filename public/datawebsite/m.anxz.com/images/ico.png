@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=no">
+<meta name="applicable-device" content="mobile" />
+<link rel="dns-prefetch" href="//m.pc6.com" />
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection"/>
+<title>404页面未找到_pc6下载站</title>
+<link rel="stylesheet" href="/public/css/404.css">
+</head>
+<body id='p404'>
+<header class="top"><a href="/" id="logo">PC6下载站</a>
+  <p id="mcate"><b>分类</b></p><div id="mcateCont"><p><span class="cur">网游分类</span><span>软件分类</span></p><ul class="on"><li><a href="/x/Catalogid/634/1/"><span>角色扮演</span>3百+款游戏</a></li><li><a href="/x/Catalogid/695/1/"><span>动作游戏</span>1千+款游戏</a></li><li><a href="/x/Catalogid/594/1/"><span>益智休闲</span>3千+款游戏</a></li><li><a href="/x/Catalogid/696/1/"><span>卡牌游戏</span>2百+款游戏</a></li><li><a href="/x/Catalogid/697/1/"><span>策略塔防</span>3百+款游戏</a></li><li><a href="/x/Catalogid/712/1/"><span>冒险解谜</span>6百+款游戏</a></li><li><a href="/x/Catalogid/598/1/"><span>模拟经营</span>5百+款游戏</a></li><li><a href="/x/Catalogid/592/1/"><span>飞行射击</span>1千+款游戏</a></li><li><a href="/x/Catalogid/596/1/"><span>赛车游戏</span>5百+款游戏</a></li><li><a href="/x/Catalogid/593/1/"><span>体育竞技</span>5百+款游戏</a></li><li><a href="/x/Catalogid/595/1/"><span>棋牌游戏</span>1千+款游戏</a></li><li><a href="/x/Catalogid/637/1/"><span>音乐游戏</span>1百+款游戏</a></li><li><a href="/x/Catalogid/713/1/"><span>儿童教育</span>5百+款游戏</a></li><li><a href="/x/Catalogid/638/1/"><span>修改版游戏</span>5百+款游戏</a></li></ul><ul><li><a href="/x/Catalogid/589/1/"><span>即时聊天</span>5百+款应用</a></li><li><a href="/x/Catalogid/588/1/"><span>图片拍照</span>6百+款应用</a></li><li><a href="/x/Catalogid/584/1/"><span>影音播放</span>1千+款应用</a></li><li><a href="/x/Catalogid/585/1/"><span>生活服务</span>5百+款应用</a></li><li><a href="/x/Catalogid/583/1/"><span>网络通讯</span>2千+款应用</a></li><li><a href="/x/Catalogid/590/1/"><span>手机qq</span>5百+款应用</a></li><li><a href="/x/Catalogid/709/1/"><span>健康美食</span>5百+款应用</a></li><li><a href="/x/Catalogid/589/1/"><span>社交社区</span>3百+款应用</a></li><li><a href="/x/Catalogid/582/1/"><span>系统工具</span>5百+款应用</a></li><li><a href="/x/Catalogid/586/1/"><span>安全防护</span>2百+款应用</a></li><li><a href="/x/Catalogid/587/1/"><span>资讯阅读</span>5百+款应用</a></li><li><a href="/x/Catalogid/600/1/"><span>地图出行</span>5百+款应用</a></li><li><a href="/x/Catalogid/703/1/"><span>学习理财</span>5百+款应用</a></li><li><a href="/x/Catalogid/599/1/"><span>美女壁纸</span>7百+款应用</a></li><li><a href="/x/Catalogid/704/1/"><span>商务办公</span>9百+款应用</a></li><li><a href="/x/Catalogid/627/1/"><span>动态壁纸</span>5百+款应用</a></li><li><a href="/x/Catalogid/628/1/"><span>趣味娱乐</span>1千+款应用</a></li><li><a href="/x/Catalogid/705/1/"><span>主题美化</span>5百+款应用</a></li><li><a href="/x/Catalogid/706/1/"><span>桌面扩展</span>7百+款应用</a></li><li><a href="/x/Catalogid/708/1/"><span>游戏辅助</span>8百+款应用</a></li></ul></div>
+  <form action="/search/" method="get" id="Search_form" name="SearchForm"><div class="soBox">
+    <div class="soInput"><input type="text" name="k" id="bdcs-search-form-input" value="" size="50" maxlength="100" autocomplete="off"></div>
+    <div class="soBtn"><button id="bdcs-search-form-submit" type="submit" label="搜索"></button></div>
+</div></form>
+</header>
+<nav id="topNav"><ul class="mainNav"><li><a href="/">首页</a></li><li><a href="/ruanj.html">应用</a></li><li><a href="/wangyou.html">手游</a></li><li><a href="/zt/top/syyx/">排行榜</a></li><li><a href="/h5/">小游戏</a></li><li class="hide"><a href="/znyj.html">智能</a></li><li class="hide"><a href="/article.html">资讯</a></li><li class="hide"><a href="/k.html">专题</a></li><li class="hide"><a href="/company.html">厂商</a></li><li class="hide"><a href="http://m.libao.pc6.com">礼包</a></li><li class="hide"><a href="/ku.html">手游库</a></li></ul></nav>
+<p class="notFound"><span>很抱歉，您要访问的页面不存在！</span></p>
+<section class="newlist">
+    <ul class="list ddbox">
+      <li><a href="https://ddyxh-api.iddgame.cn/download?source=0003" onclick="_hmt.push(['_trackEvent','dd404-top','click','dd4041']);">
+        <img src="http://7.pic.pc6.com/thumb/n131y31816v1a/16f5eb670acec3b9_100_100.png" />
+        <p><b>东东游戏盒</b>
+          <span>9.7MB<u>v1.0.8</u></span>
+          <i>你想要的都在这里</i>
+        </p>
+        <s class="btn">立即下载</s>
+      </a></li>
+    </ul>
+    <!--<p class="bt"><b>推荐下载</b><a href="/">更多</a></p>
+    <ul class="list">          
+          <li><a href="https://gg.0006266.com/20300117674/2590001/70500058907" class="img" onclick="myclick(['_trackEvent','tuijian','tuijian1','九游游戏中心'])">
+            <img src="https://thumb.jfcdns.com/thumb/up/2016-10/201610181519374315324_100_100.png"></a>
+            <p><a href="https://gg.0006266.com/20300117674/2590001/70500058907" onclick="myclick(['_trackEvent','tuijian','tuijian1','九游游戏中心'])">九游游戏中心</a>
+              <span>13.7MB<u>v5.1.2.3</u></span>
+              <i>热门游戏，随心下载，有趣好玩，尽在其中</i>
+            </p>
+            <a href="https://gg.0006266.com/20300117674/2590001/70500058907" class="btn"  onclick="myclick(['_trackEvent','tuijian','tuijian1','九游游戏中心'])"><em class="bg"></em>高速下载</a>
+          </li>
+          <li><a href="https://gg.0006266.com/06102036240/2420001/21805065698" class="img" onclick="myclick(['_trackEvent','tuijian','tuijian2','乐嗨嗨游戏'])">
+            <img src="https://thumb10.jfcdns.com/thumb/2017-10/bce59e9986280e40_100_100.jpeg"></a>
+            <p><a href="https://gg.0006266.com/06102036240/2420001/21805065698" onclick="myclick(['_trackEvent','tuijian','tuijian2','乐嗨嗨游戏'])">乐嗨嗨游戏</a>
+              <span>12.3MB<u>v2.3.8</u></span>
+              <i>全网最大的BT变态手游以及手游折扣充值平台</i>
+            </p>
+            <a href="https://gg.0006266.com/06102036240/2420001/21805065698" class="btn"  onclick="myclick(['_trackEvent','tuijian','tuijian2','乐嗨嗨游戏'])"><em class="bg"></em>高速下载</a>
+          </li>
+          <li><a href="https://gg.0006266.com/04100739024/0130001/07401513745" class="img" onclick="myclick(['_trackEvent','tuijian','tuijian3','星辰奇缘'])">
+            <img src="https://thumb10.jfcdns.com/thumb/2018-08/21/bce5b7b83f419143_100_100.png"></a>
+            <p><a href="https://gg.0006266.com/04100739024/0130001/07401513745" onclick="myclick(['_trackEvent','tuijian','tuijian3','星辰奇缘'])">星辰奇缘</a>
+              <span>173.9MB<u>v2.3.7</u></span>
+              <i>首款带翅膀，5V5战斗系统，五大职业，尽情发挥</i>
+            </p>
+            <a href="https://gg.0006266.com/04100739024/0130001/07401513745" class="btn"  onclick="myclick(['_trackEvent','tuijian','tuijian3','星辰奇缘'])"><em class="bg"></em>高速下载</a>
+          </li>
+          <li><a href="https://gg.0006266.com/50600732589/7610001/49901490415" class="img" onclick="myclick(['_trackEvent','tuijian','tuijian4','永恒纪元'])">
+            <img src="https://thumb12.jfcdns.com/thumb/2018-07/bce5b5abd3803222_100_100.jpeg"></a>
+            <p><a href="https://gg.0006266.com/50600732589/7610001/49901490415" onclick="myclick(['_trackEvent','tuijian','tuijian4','永恒纪元'])">永恒纪元</a>
+              <span>207.5MB<u>v3.52.1</u></span>
+              <i>跨服天梯，战者成神! 新玩法、新体验，开启新纪元</i>
+            </p>
+            <a href="https://gg.0006266.com/50600732589/7610001/49901490415" class="btn"  onclick="myclick(['_trackEvent','tuijian','tuijian4','永恒纪元'])"><em class="bg"></em>高速下载</a>
+          </li>
+          <li><a href="https://gg.0006266.com/35600525074/0560001/18700434709" class="img" onclick="myclick(['_trackEvent','tuijian','tuijian5','问道'])">
+            <img src="https://thumb12.jfcdns.com/thumb/2018-08/27/bce5b835982c3545_100_100.png"></a>
+            <p><a href="https://gg.0006266.com/35600525074/0560001/18700434709" onclick="myclick(['_trackEvent','tuijian','tuijian5','问道'])">问道</a>
+              <span>637.5MB<u>v2.034.0219</u></span>
+              <i>非纯移植，微创新</i>
+            </p>
+            <a href="https://gg.0006266.com/35600525074/0560001/18700434709" class="btn"  onclick="myclick(['_trackEvent','tuijian','tuijian5','问道'])"><em class="bg"></em>高速下载</a>
+          </li>
+          <li><a href="https://gg.0006266.com/92602092855/3380001/90405225761" class="img" onclick="myclick(['_trackEvent','tuijian','tuijian6','三国点将录'])">
+            <img src="https://thumb11.jfcdns.com/thumb/2018-05/bce5b0287b9b8954_100_100.jpeg"></a>
+            <p><a href="https://gg.0006266.com/92602092855/3380001/90405225761" onclick="myclick(['_trackEvent','tuijian','tuijian6','三国点将录'])">三国点将录</a>
+              <span>95.47MB<u>v1.0.17</u></span>
+              <i>还原三国经典战役，传承三国策略玩法</i>
+            </p>
+            <a href="https://gg.0006266.com/92602092855/3380001/90405225761" class="btn"  onclick="myclick(['_trackEvent','tuijian','tuijian6','三国点将录'])"><em class="bg"></em>高速下载</a>
+          </li>
+          <li><a href="https://gg.0006266.com/65601182705/1130001/01102814646" class="img" onclick="myclick(['_trackEvent','tuijian','tuijian7','三国志2017'])">
+            <img src="https://thumb.jfcdns.com/thumb/n13132a714329/16f5c8eed144dd91_100_100.png"></a>
+            <p><a href="https://gg.0006266.com/65601182705/1130001/01102814646" onclick="myclick(['_trackEvent','tuijian','tuijian7','三国志2017'])">三国志2017</a>
+              <span>390.28MB<u>v2.3.0</u></span>
+              <i>继承了三国志系列游戏的玩法和画风</i>
+            </p>
+            <a href="https://gg.0006266.com/65601182705/1130001/01102814646" class="btn"  onclick="myclick(['_trackEvent','tuijian','tuijian7','三国志2017'])"><em class="bg"></em>高速下载</a>
+          </li>
+          <li><a href="https://gg.0006266.com/76102267549/1790001/19405991583" class="img" onclick="myclick(['_trackEvent','tuijian','tuijian8','八门神器'])">
+            <img src="https://thumb.jfcdns.com/thumb/n331vy42ax1o137jm32/16f5c6e6d8a9aab9_100_100.png"></a>
+            <p><a href="https://gg.0006266.com/76102267549/1790001/19405991583" onclick="myclick(['_trackEvent','tuijian','tuijian8','八门神器'])">八门神器</a>
+              <span>26.57MB<u>v3.6.1</u></span>
+              <i>八门神器创造出的游戏乐趣</i>
+            </p>
+            <a href="https://gg.0006266.com/76102267549/1790001/19405991583" class="btn"  onclick="myclick(['_trackEvent','tuijian','tuijian8','八门神器'])"><em class="bg"></em>高速下载</a>
+          </li>
+          <li><a href="https://gg.0006266.com/63802067900/5470001/99005159254" class="img" onclick="myclick(['_trackEvent','tuijian','tuijian9','云电脑'])">
+            <img src="https://thumb10.jfcdns.com/thumb/2018-06/bce5b237fdd7d640_100_100.png"></a>
+            <p><a href="https://gg.0006266.com/63802067900/5470001/99005159254" onclick="myclick(['_trackEvent','tuijian','tuijian9','云电脑'])">云电脑</a>
+              <span>15.16MB<u>v5.0.1.52</u></span>
+              <i>让手机瞬间变身成PC电脑</i>
+            </p>
+            <a href="https://gg.0006266.com/63802067900/5470001/99005159254" class="btn"  onclick="myclick(['_trackEvent','tuijian','tuijian9','云电脑'])"><em class="bg"></em>高速下载</a>
+          </li>
+    </ul>-->
+  </section>
+  <!--<div class="ddbox"> 
+    <a href="https://ddyxh-api.iddgame.cn/download?source=0003" onclick="_hmt.push(['_trackEvent','dd404-down','click','dd4042']);">
+      <img src="http://7.pic.pc6.com/thumb/n131y31816v1a/16f5eb670acec3b9_100_100.png" />
+      <p><b>下载东东盒子</b><i>（你想要的都在这里）</i></p>
+    </a>
+  </div>-->
+  <section class="tszj">
+      <p class="bt"><b>特色专辑</b><a href="/k.html">更多</a></p>
+      <ul class="cfix">
+          <li><a href="/z/duanship">短视频软件</a></li><li><a href="/z/feijipiao"><font color="#008800">飞机票</font></a></li><li><a href="/z/shares">手机炒股软件</a></li><li><a href="/z/clear">手机垃圾清理</a></li><li><a href="/z/zhifurj">手机支付</a></li><li><a href="/z/androidwar">战争题材手游</a></li><li><a href="/z/shoujimonifeixingyouxi">模拟飞行游戏</a></li><li><a href="/z/shaheyouqidaquan">手机沙盒游戏</a></li><li><a href="/z/fingerprintunlocking">手机指纹解锁</a></li><li><a href="/z/shoujijiaowaimairuanjian">手机叫外卖</a></li><li><a href="/z/jianshenruanjian">健身软件</a></li><li><a href="/z/azsjxsyx">像素游戏</a></li>
+      </ul>
+  </section>
+  <footer class="bottom">
+      <a id="goTop" href="#">返回顶部</a><p><a href="/map.html">网站地图</a>|<a href="/">返回首页</a></p>
+  </footer>
+  <script type="text/javascript" charset="UTF-8" src="https://m.pc6.com/public/js/top.min.js"></script>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_30098597'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D30098597' type='text/javascript'%3E%3C/script%3E"));</script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?0f55e872dd0e45e238ab8d884e9ad0c8";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+</body>
+</html>

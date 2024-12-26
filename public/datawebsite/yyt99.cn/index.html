@@ -1,0 +1,369 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+  <meta name="applicable-device" content="pc,mobile">
+  <title>{$toptitle}</title>
+  <meta name="keywords" content="{$keywords}">
+  <meta name="description" content="{$description}">
+  <link href="{$theme_path}/css/font.css" rel="stylesheet">
+  <link href="{$theme_path}/css/style.css" rel="stylesheet">
+  <link href="{$theme_path}/css/swiper.min.css" rel="stylesheet">
+  <script src="{$theme_path}/js/jquery.min.js"></script>
+  <script src="{$theme_path}/js/zblogphp.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+  <header id="header" class="header header-fixed sb">
+    <div class="h-wrap container clearfix">
+      <div class="logo-area fl"> <a href="/"> <img class="img" src="{$theme_path}/images/1695705285879894.png"
+            alt="{网站地址}"> </a> </div>
+      <div class="m-nav-btn"><i class="iconfont icon-menu"></i></div>
+      <nav class="responsive-nav">
+        <div class="pc-nav m-nav fl" data-type="article" data-infoid="9">
+          <ul class="nav-ul" data-row="8">
+            <li><a class="active" href="{随机栏目URL}">{随机栏目}</a></li>
+            {loop type="catelog" row="8" tpl="" islist=""}
+            <li><a href="{$vo.url}">{$vo.title}</a></li>
+            {/loop}
+          </ul>
+        </div>
+      </nav>
+      <span id="search-button" class="search-button hidden fr"><i class="iconfont icon-search"></i></span>
+      <div id="search-area" class="container br">
+        <form class="searchform clearfix" name="formsearch" action="/search/" method="get">
+          <input class="s-input br fl" type="text" name="keyword" placeholder="请输入关键词...">
+          <button class="s-button fr br iconfont icon-search" type="submit" id="submit"></button>
+        </form>
+      </div>
+    </div>
+
+  </header>
+
+  <p class="index-breadcrumb"></p>
+  <div id="index-content" class="content container">
+    <div class="swiper-container br">
+      <ul class="swiper-wrapper" data-row="1">
+        {loop type="arclist" row="3" tpl="" islist=""}
+        <li class="swiper-slide"> <a class="link" href="{$vo.url}" title="{$vo.title}">
+            <p class="p ellipsis">{$vo.title}</p>
+            <img src="{$vo.pic}" alt="{$vo.title}">
+          </a> </li>
+        {/loop}
+      </ul>
+      <div class="swiper-pagination"></div>
+      <div class="hidden-sm-md-lg swiper-button-next iconfont icon-right"></div>
+      <div class="hidden-sm-md-lg swiper-button-prev iconfont icon-left"></div>
+    </div>
+    <div class="apply-banner related-item sb br mb">
+      <h1 class="c-title mb10">{$keywords}</h1>
+      <div class="apply-banner-content">
+        <div class="justify-between cont_l">
+          <div class="item_l flex-1 centerV">
+            <a href="{随机内容URL}"><img src="{$theme_path}/images/weixin.png" class="icon_img img-fluid hvr-bob"
+                alt="{随机标题}"></a>
+            <div class="cont_l_tit"><a href="{随机内容URL}">{随机标题}</a></div>
+            <a href="{随机内容URL}"><button class="seek_btn">联系专员</button></a>
+          </div>
+          <div class="item_r_cont column justify-between">
+            <div class="item_r justify-between align-center">
+              <div><a href="{随机内容URL}">{随机标题}</a></div>
+              <a href="{随机内容URL}"><img src="{$theme_path}/images/aa.png" class="icon_img img-fluid hvr-bob"
+                  alt="{随机标题}"></a>
+            </div>
+            <div class="item_r justify-between align-center">
+              <div><a href="{随机内容URL}">{随机标题}</a></div>
+              <a href="{随机内容URL}"><img src="{$theme_path}/images/about.png" class="icon_img img-fluid hvr-bob"
+                  alt="{随机标题}"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="top_recommend" class="related-item sb br mb"> <span class="tips">推荐</span>
+      <ul class="ul clearfix" data-row="9">
+        {loop type="arclist" row="9" tpl="" islist=""}
+        <li class="item fl"> <a class="thumbnail" href="{$vo.url}" title="{$vo.title}"> <img class="img-cover br"
+              src="{$vo.pic}" alt="{$vo.title}" title="{$vo.title}"> </a>
+          <h2 class="title ellipsis"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a><span
+              class="sub ellipsis">{随机数字}人看过</span></h2>
+          <a rel="nofollow" class="download br" href="{$vo.url}">查看</a>
+        </li>
+        {/loop}
+      </ul>
+    </div>
+
+    <div class="clearfix">
+      <div id="index-right" class="index-right hidden-sm-md-lg fr">
+        <div class="theiaStickySidebar">
+          <section id="top10" class="widget widget_top10 sb br mb">
+            <ul class="widget-content top10" data-row="14">
+              <div class="table_card">
+                <ul class="tab" data-row="2">
+                  <li class="active">{$keywords}</li>
+                  <li>热门游戏</li>
+                </ul>
+                <div class="tabCon">
+                  <ul class="list on" data-row="3">
+                    {loop type="arclist" row="9" tpl="" islist=""}<li class="item">
+                      <div class="clearfix"> <span
+                          class="fl iconfont icon-top10 list list-1"><small>{$vo.i}</small></span> <a
+                          class="thumbnail fl" href="{$vo.url}" title="{$vo.title}"> <img class="img img-cover br"
+                            src="{$vo.pic}" alt="{$vo.title}" title="{$vo.title}"> </a>
+                        <div class="fr-wrap">
+                          <div class="title-wrap">
+                            <h2 class="title ellipsis"> <a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a> </h2>
+                            <p class="intro br clearfix ellipsis">{随机数字}人看过</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    {/loop}
+                  </ul>
+                  <ul class="list" data-row="9">
+                    {loop type="arclist" row="9" tpl="" islist=""}<li class="item">
+                      <div class="clearfix"> <span
+                          class="fl iconfont icon-top10 list list-1"><small>{$vo.i}</small></span> <a
+                          class="thumbnail fl" href="{$vo.url}" title="{$vo.title}"> <img class="img img-cover br"
+                            src="{$vo.pic}" alt="{$vo.title}" title="{$vo.title}"> </a>
+                        <div class="fr-wrap">
+                          <div class="title-wrap">
+                            <h2 class="title ellipsis"> <a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a> </h2>
+                            <p class="intro br clearfix ellipsis">{随机数字}人看过</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    {/loop}
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </section>
+          <section id="divPrevious" class="widget widget_previous sb br mb">
+            <p class="c-title mb10"><span class="name">最近发表</span></p>
+            <ul class="widget-content divPrevious" data-row="5">
+              {loop type="arclist" row="5" tpl="" islist=""}
+              <li><a href="{$vo.url}">{$vo.title}</a></li>
+              {/loop}
+            </ul>
+          </section>
+          <section id="divComments" class="widget widget_comments sb br mb">
+            <p class="c-title mb10"><span class="name">最新资讯</span></p>
+            <ul class="widget-content divComments" data-row="5">
+              {loop type="arclist" row="5" tpl="" islist=""}
+              <li class="list clearfix"> <span class="avatar fl"><a href="{$vo.url}"><img src="{$vo.pic}"
+                      alt="{$vo.title}" title="{$vo.title}"></a></span>
+                <div class="title"> <a class="a ellipsis" href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+                  <div class="info ellipsis"> <span class="time"><i class="iconfont icon-time"></i>{随机时间}</span> </div>
+                </div>
+              </li>
+              {/loop}
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div id="index-middle" class="fr mr">
+
+        <section>
+          <div id="middle_2" class="wrap sb br mb clearfix">
+
+            <p class="c-title"> <span>{$keywords} 游戏攻略</span> <a class="more" href="{随机栏目URL}">更多</a> </p>
+
+            {loop type="arclist" row="1" tpl="" islist=""}
+            <article class="item top">
+              <h2 class="top-title ellipsis"><a href="{$vo.url}">{$vo.title}</a></h2>
+              <p class="intro multi-ellipsis"> <i class="iconfont icon-yin"></i> {$vo.info}...</p>
+              </h2>
+            </article>
+            {/loop}
+            {loop type="arclist" row="20" tpl="" islist=""}
+            <article class="item fl">
+              <h2 class="title ellipsis"><i class="iconfont icon-dot"></i><a href="{$vo.url}"
+                  title="{$vo.title}">{$vo.title}</a></h2>
+            </article>
+            {/loop}
+          </div>
+        </section>
+        <section>
+          <div id="middle_1" class="wrap sb br mb clearfix">
+
+            <p class="c-title"> <span>手机游戏</span> <a class="more" href="{随机栏目URL}" title="更多手机游戏">更多</a> </p>
+
+            {loop type="arclist" row="15" tpl="" islist=""}
+            <article class="item fl"> <a class="thumbnail" href="{$vo.url}" title="{$vo.title}"> <img
+                  class="img-cover br" src="{$vo.pic}" alt="{$vo.title}" title="{$vo.title}"> </a>
+              <h2 class="title ellipsis"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a><span
+                  class="sub ellipsis">{随机数字}人看过</span></h2>
+              <a rel="nofollow" class="download br" href="{$vo.url}">查看</a>
+            </article>
+            {/loop}
+          </div>
+
+
+          <div id="middle_1" class="wrap sb br mb clearfix">
+
+            <p class="c-title"> <span>攻略合集丨手机软件</span> <a class="more" href="{随机栏目URL}" title="更多攻略合集丨手机软件">更多</a>
+            </p>
+
+            {loop type="arclist" row="15" tpl="" islist=""}
+            <article class="item fl"> <a class="thumbnail" href="{$vo.url}" title="{$vo.title}"> <img
+                  class="img-cover br" src="{$vo.pic}" alt="{$vo.title}" title="{$vo.title}"> </a>
+              <h2 class="title ellipsis"><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a><span
+                  class="sub ellipsis">{随机数字}人看过</span></h2>
+              <a rel="nofollow" class="download br" href="{$vo.url}">查看</a>
+            </article>
+            {/loop}
+          </div>
+        </section>
+      </div>
+      <div id="index-left" class="fr mr">
+        <section id="left_1" class="sb br mb">
+          <p class="c-title mb10"><span>{$keywords} 每日一荐</span></p>
+          <div class="br mb">
+            <div class="wrap clearfix">
+              {loop type="arclist" row="1" tpl="" islist=""}
+              <article class="item fl">
+                <div class="clearfix"> <a class="thumbnail fl" href="{$vo.url}" title="{$vo.title}"> <img
+                      class="img img-cover br" src="{$vo.pic}" alt="{$vo.title}" title="{$vo.title}"> </a>
+                  <div class="fr-wrap">
+                    <div class="title-wrap">
+                      <h2 class="title ellipsis"> <a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a> </h2>
+                      <a class="category transition br" href="{$vo.url}">{随机关键词}</a>
+                      <div class="div"><a rel="nofollow" class="download brightness transition br"
+                          href="{$vo.url}">查看</a></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="intro br clearfix multi-ellipsis">{$vo.info}</p>
+              </article>
+              {/loop}
+
+            </div>
+          </div>
+        </section>
+        <section id="left_2" class="sb br mb">
+          <div class="clearfix">
+            <div class="br">
+
+              <p class="c-title"> <span>游戏活动</span> <a class="more" href="{随机栏目URL}" title="更多游戏活动">更多</a> </p>
+              {loop type="arclist" row="1" tpl="" islist=""}
+              <article class="item mb10"> <a class="thumbnail" href="{$vo.url}" title="{$vo.title}"> <img
+                    class="img-cover br" src="{$vo.pic}" alt="{$vo.title}" title="{$vo.title}">
+                  <div class="absolute">
+                    <p class="p-title ellipsis">{$vo.title}</p>
+                  </div>
+                  <i class="mask br"></i>
+                </a> </article>
+              {/loop}
+
+              <ul class="ul" data-row="10">
+                {loop type="arclist" row="15" tpl="" islist=""}
+                <li class="title clearfix"> <a class="a ellipsis fl" href="{$vo.url}" title="{$vo.title}"> <i
+                      class="iconfont icon-dot"></i>{$vo.title}</a>
+                </li>
+                {/loop}
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div id="left_3" class="wrap sb br mb">
+            <p class="c-title"> <span>手游排行</span> </p>
+            {loop type="arclist" row="9" tpl="" islist=""}
+            <article class="item">
+              <div class="clearfix"> <a class="thumbnail fl" href="{$vo.url}" title="{$vo.title}"> <img
+                    class="img img-cover br" src="{$vo.pic}" alt="{$vo.title}" title="{$vo.title}"> </a>
+                <div class="fr-wrap">
+                  <div class="title-wrap">
+                    <h2 class="title ellipsis"> <a href="{$vo.url}" title="{$vo.title}">{$vo.url}</a> </h2>
+                    <p class="intro br clearfix ellipsis">{随机数字}人看过</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            {/loop}
+            <a class="more" href="{随机栏目URL}">更多</a>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+    <div id="full-post" class="sb br mb">
+
+      <p class="c-title mb10"> <span>{$keywords} 手游资讯</span> <a class="more" href="{随机栏目URL}">更多</a> </p>
+
+      <div class="clearfix">
+        {loop type="arclist" row="16" tpl="" islist=""}
+        <article class="item fl"> <a class="thumbnail" href="{$vo.url}" title="{$vo.title}"> <img class="img-cover br"
+              src="{$vo.pic}" alt="{$vo.title}" title="{$vo.title}">
+            <div class="absolute">
+              <p class="p-title ellipsis">{$vo.title}</p>
+            </div>
+            <i class="mask br"></i>
+          </a> </article>
+        {/loop}
+      </div>
+    </div>
+
+    <div id="shuoming-post" class="sb br mb"> <img src="{$theme_path}/images/1695705285879894.png" alt="{网站地址}">
+      <p class="shuoming-title">{网站地址}</p>
+    </div>
+    <div class="flink sb br mb">
+      <p class="c-title">友情链接
+      </p>
+      <ul id="flink" class="f-list clearfix" data-row="9">
+        {loop type="arclist" row="10" tpl="" islist=""}
+        <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+        {/loop}
+      </ul>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="main container">
+      <div class="f-about">
+        Copyright © <a href="/">荧虎游戏官网</a> 版权所有 <a href="">网站地图</a> -
+        <a href="" rel="nofollow" target="_blank">{$keywords}</a>
+      </div>
+    </div>
+    <div id="toolbar" class="toolbar ">
+      <div id="totop" class="btn hidden br transition"><i class="iconfont icon-totop"></i></div>
+    </div>
+  </footer>
+  <div style="display:none">
+
+  </div>
+  <div id="mask-hidden" class="mask-hidden transition"></div>
+  <script src="{$theme_path}/js/common.js"></script>
+  <script src="{$theme_path}/js/headroom.min.js"></script>
+  <script src="{$theme_path}/js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      centeredSlides: true,
+      autoplay: 3500,
+      slidesPerView: 1,
+      paginationClickable: true,
+      autoplayDisableOnInteraction: false,
+      spaceBetween: 0,
+      loop: true
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function (e) {
+      $(".table_card .tab li").click(function () {
+        $(".table_card .tab li").eq($(this).index()).addClass("active").siblings().removeClass("active");
+        $(".table_card .tabCon ul").hide().eq($(this).index()).show();
+      })
+    });
+  </script>
+  <script src="{$theme_path}/js/?url=" async="async"></script>
+</body>

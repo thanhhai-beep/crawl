@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="applicable-device" content="mobile" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<title>错误404 - 安下载</title>
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="stylesheet" href="/static/css/so.css">
+</head>
+<body id="hsearch">
+<header class="top"><div><a href="/" id="logo">安下载</a> 
+</header>
+<style>
+.notFound{padding:0 15px 15px 15px;}
+.notFound span{padding:10px 15px;line-height: 30px;font-size: 16px;}
+.notFound{background: #fff;padding:0 10px 15px 10px;}
+.notFound span{display: block; background: #efefef;}
+</style>
+<nav id="topNav"><ul class="mainNav"><li><a href="/">首页</a></li><li><a href="/downlist/r_184_1.html">应用</a></li><li><a href="/az/game/">游戏</a></li><li><a href="/special/">专题</a></li><li><a href="/news/top.html">排行榜</a></li></ul></nav>
+<p class="notFound"><span>很抱歉，您要访问的页面不存在！</span></p>
+<section id="hots">
+    <dl>
+        <dt>大家都在搜</dt>
+        <dd><p><a href="/down/28773.html">篮球俱乐部物语</a><a href="/down/28278.html">点杀泰坦2</a><a href="/down/27320.html">挨饿荒野</a></p><p><a href="/down/25351.html">Battle Disc</a><a href="/down/28773.html">篮球俱乐部物语</a><a href="/down/25964.html">艾诺迪亚4</a></p><p><a href="/down/26820.html">暗影格斗2</a><a href="/down/27320.html">挨饿荒野</a><a href="/down/29426.html">暗黑3</a></p>
+        </dd>
+    </dl>
+</section>
+<section id="scover"></section>
+
+<script type="text/javascript" src="/static/js/so.min.js"></script>
+</body>
+</html>

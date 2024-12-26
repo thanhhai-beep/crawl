@@ -20,7 +20,7 @@
 	<link rel="alternate" type="application/rss+xml" href="{$theme_path}/css/feed.php" title="{$toptitle}" />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="{$theme_path}/css/?rsd" />
 	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{$theme_path}/css/wlwmanifest.xml" />
-	<link rel="canonical" href="{$theme_path}/css/www.heiliao-bu-dayang.com" />
+	<link rel="canonical" href="{$thisurl}">
 </head>
 
 <body>
@@ -59,9 +59,9 @@
 					<li class="sharebtn" id="share">
 						<i class="icon-share"></i>
 						<div class="drop">
-							<a class="wb" href="{随机栏目URL}" onclick="shareUrl('weibo');" title="{$keywords}">{随机栏目}</a>
-							<a class="qq" href="{随机栏目URL}" onclick="shareUrl('qq');" title="{随机栏目}">{随机栏目}</a>
-							<a class="wx" href="{随机栏目URL}" onclick="shareUrl('weixin');" title="{随机栏目}">{随机栏目}</a>
+							<a class="wb" href="{随机内容URL}" onclick="shareUrl('weibo');" title="{$keywords}">{随机标题}</a>
+							<a class="qq" href="{随机内容URL}" onclick="shareUrl('qq');" title="{随机标题}">{随机标题}</a>
+							<a class="wx" href="{随机内容URL}" onclick="shareUrl('weixin');" title="{随机标题}">{随机标题}</a>
 						</div>
 					</li>
 				</ul>
@@ -123,7 +123,7 @@
 			</section>
 			<div class="clear"></div>
 			<div class="mainpic wow fadeIn">
-				<a href="{随机栏目URL}"><img src="{$vo.pic}" alt="黑料不打烊" style="height: 50px" /></a>
+				<a href="{随机内容URL}"><img src="{随机图片}" alt="{随机标题}" style="height: 50px" /></a>
 			</div>
 			<div class="content">
 				<h3 class="hmTitle">{随机栏目}</h3>
@@ -234,7 +234,7 @@
 		</aside>
 	</div>
 	<div class="inner mainpic">
-		<a href="{随机栏目URL}"><img src="{随机图片}" alt="黑料不打烊" style="height: 50px" /></a>
+		<a href="{随机内容URL}"><img src="{随机图片}" alt="黑料不打烊" style="height: 50px" /></a>
 	</div>
 	<section id="friendlinks" class="wow fadeIn">
 		<div class="inner">
@@ -244,7 +244,7 @@
 			</div>
 			<ul data-row="1">
 				<li>
-					<a href="{随机栏目URL}" target="_blank" title="{$vo.title}">{$vo.title}</a>
+					<a href="{随机内容URL}" target="_blank" title="{$vo.title}">{随机标题}</a>
 				</li>
 			</ul>
 		</div>
@@ -258,8 +258,8 @@
 		<div class="inner">
 			<div id="copyright">
 				Powered By
-				<a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a>. Theme By
-				<a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{$keywords}</a>
+				<a href="{随机内容URL}" target="_blank">{随机标题}</a>. Theme By
+				<a href="{随机内容URL}" target="_blank">{$keywords}</a>
 			</div>
 		</div>
 	</footer>
@@ -268,7 +268,7 @@
 			<div id="qr"></div>
 			<div class="text">
 				<p>{随机栏目}</p>
-				<p>{随机栏目}</p>
+				<p>{网站地址}</p>
 			</div>
 		</div>
 	</div>

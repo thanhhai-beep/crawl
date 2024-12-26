@@ -18,6 +18,7 @@ return [
         'meta'                      => '',
         'keywords'                  => '{$keywords}',
         'description'               => '{$description}',
+        'alt_img'                  => '{$vo.title}',
         'a[href=""]'                => '{随机栏目URL}',
         'h2, h3, h1, p, strong, font, a'            => '{随机栏目}',
         'img'                       => '{$vo.pic}',

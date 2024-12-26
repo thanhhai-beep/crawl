@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>404错误_格展网络</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="/style/404/css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<!-----start-wrap--------->
+	<div class="wrap">
+		<!-----start-content--------->
+		<div class="content">
+			<!-----start-logo--------->
+			<div class="logo">
+				<h1><a href="https://www.91084.com/"><img src="/style/404/images/logo.png"/></a></h1>
+				<span style="font-family:微软雅黑;color:#333"><img src="/style/404/images/signal.png"/>错误提示：抱歉。您找到页面走丢了！！</span>
+			</div>
+			<!-----end-logo--------->
+			<!-----start-search-bar-section--------->
+			<div class="buttom">
+				<div class="seach_bar">
+					<p style="font-family:微软雅黑;">你可以返回 <span><a style="font-family:微软雅黑; text-decoration:none;" href="http://www.91084.com">网站模板</a> 首页</span>  或者搜索</p>
+
+					<!-----start-sear-box--------->
+
+					<div class="search_box">
+
+					<form action="https://www.91084.com/plus/search.php" method="get">
+
+					   <input name="q"autocomplete="off" id="keyword" type="text" value="模板" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '模板';}"><input type="submit" value="">
+
+				    </form>
+
+				  </div>
+
+				</div>
+
+			</div>
+		</div>
+	<p class="copy_right">&#169; 2022 by<a href="http://www.91084.com/" >&nbsp;www.91084.com</a> </p>
+	</div>
+</body>
+
+</html>

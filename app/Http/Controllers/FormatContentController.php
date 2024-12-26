@@ -284,7 +284,6 @@ class FormatContentController extends Controller
         if ($domNode->nodeName === 'a') {
             if ($domNode->hasAttribute('href')) {
                 $domNode->setAttribute('href', $variables['a[href=""]'] ?? '#');
-                $domNode->setAttribute('title', $value);
             }
             $domNode->nodeValue = $value;
         }
@@ -312,6 +311,7 @@ class FormatContentController extends Controller
         if ($domNode->nodeName === 'img') {
             if ($domNode->hasAttribute('src')) {
                 $domNode->setAttribute('src', $value);
+                $domNode->setAttribute('alt', $variables['alt_img']);
             }
         }
 

@@ -1,0 +1,895 @@
+html {
+    font-size: 13.3333333333333vw;
+}
+
+.news_box p {
+    margin-bottom: 0;
+}
+
+.news_box * {
+    color: inherit;
+}
+
+.bg {
+    background: #ffffff;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.news_detail {
+    padding: 10px .3rem;
+}
+
+.news_detail h1 {
+    font-size  : .38rem;
+    color      : #000;
+    font-weight: 700;
+    text-align : center;
+    line-height: 1.5;
+}
+
+.news_detail .tips {
+    text-align   : center;
+    font-size    : 12px;
+    color        : #666;
+    padding      : .26rem 0 .22rem 0;
+    border-bottom: 1px solid #e7e7e7;
+    overflow     : hidden;
+    white-space  : nowrap;
+}
+
+.news_detail .tips span {
+    margin-right: 10px;
+}
+
+.article .box {
+    font-size  : 16px;
+    line-height: 1.4375;
+    color      : #333
+}
+
+.article .box p {
+    margin    : 5px 0;
+    word-break: break-all;
+}
+
+.article .box img {
+    max-width: 100%;
+    height   : auto;
+    display  : block;
+    margin   : 10px auto
+}
+
+.article .box iframe {
+    width : 95%;
+    height: 205px
+}
+
+.article .box h2 strong {
+    font-size: 18px;
+    color    : #ff0000
+}
+
+
+/* 3733盒子 */
+
+
+/* app下载 */
+
+.app_down {
+    width     : 100%;
+    padding   : 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.app_down .info-super {
+    margin-top      : 18px;
+    width           : 100%;
+    border-radius   : 2px;
+    position        : relative;
+    background-color: #f5f5f5;
+    display         : flex;
+    flex-wrap       : wrap;
+    padding         : 16px;
+    overflow        : hidden;
+}
+
+.app_down .info-super::before {
+    position     : absolute;
+    content      : " ";
+    display      : block;
+    width        : 0;
+    height       : 0;
+    right        : 18px;
+    top          : -8px;
+    border-left  : 8px solid transparent;
+    border-right : 8px solid transparent;
+    border-bottom: 8px solid #f5f5f5;
+}
+
+.app_down .info-super .info-item {
+    display      : inline-block;
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    width        : 50%;
+    height       : 18px;
+    line-height  : 13px;
+    text-align   : left;
+    margin-bottom: 16px;
+}
+
+.app_down .info-super .more_btn,
+.app_down .info-super .close_more_btn {
+    text-align : center;
+    color      : #9fa09f;
+    font-size  : 13px;
+    width      : 100%;
+    line-height: 1;
+}
+
+.app_down .info-super .info-item:nth-of-type(2n+1) {
+    left: 18px;
+    top : 18px;
+    width: 53%;
+}
+
+.app_down .info-super .info-item:nth-of-type(2n) {
+    top : 18px;
+    left: 52.28070175%;
+    width: 47%;
+}
+
+.app_down .info-super .info-item i {
+    float            : left;
+    display          : inline-block;
+    background-repeat: no-repeat;
+}
+
+.app_down .info-super .info-item:nth-of-type(1) i {
+    height          : 18px;
+    width           : 18px;
+    background-size : 18px 18px;
+    background-image: url(../images/item-2_39108e9.png);
+}
+
+.app_down .info-super .info-item:nth-of-type(2) i {
+    height          : 16px;
+    width           : 19px;
+    background-size : 19px 16px;
+    background-image: url(../images/ico_flag_12_defdba0.png);
+}
+
+.app_down .info-super .info-item:nth-of-type(3) i {
+    height          : 16px;
+    width           : 19px;
+    background-size : 19px 16px;
+    background-image: url(../images/ico_freedoc_3_2a0b51d.png);
+}
+
+.app_down .info-super .info-item:nth-of-type(4) i {
+    height          : 16px;
+    width           : 19px;
+    background-size : 19px 16px;
+    background-image: url(../images/ico_sharedoc_4_4cd4c81.png);
+}
+
+.app_down .info-super .info-item:nth-of-type(5) i {
+    height          : 16px;
+    width           : 19px;
+    background-size : 19px 16px;
+    background-image: url(../images/ico_fufeidoc_6_d55de04.png);
+}
+
+.app_down .info-super .info-item:nth-of-type(6) i {
+    height          : 16px;
+    width           : 19px;
+    background-size : 19px 16px;
+    background-image: url(../images/ico_search_8_e2de9d1.png);
+}
+
+.app_down .info-super .info-item:nth-of-type(7) i {
+    height          : 16px;
+    width           : 19px;
+    background-size : 19px 16px;
+    background-image: url(../images/ico_flag_12_defdba0.png);
+}
+
+.app_down .info-super .info-item:nth-of-type(8) i {
+    height          : 16px;
+    width           : 19px;
+    background-size : 19px 16px;
+    background-image: url(../images/ico_copy_10_f0f3df6.png);
+}
+
+.app_down .info-super .info-item:nth-of-type(9) i {
+    height          : 16px;
+    width           : 19px;
+    background-size : 19px 16px;
+    background-image: url(../images/ico_customer_11_fea4d95.png);
+}
+
+.app_down .info-super .info-item .text-super {
+    text-overflow : ellipsis;
+    overflow      : hidden;
+    margin-left   : 6px;
+    vertical-align: middle;
+    display       : inline-block;
+    font-size     : 12px;
+    color         : #666;
+    letter-spacing: 0;
+}
+
+.app_download .app_box {
+    height         : 40px;
+    line-height    : 40px;
+    background     : #d8b879;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin         : 0 auto;
+    border-radius  : 4px;
+}
+
+.app_download .app_box img {
+    width        : 20px;
+    height       : 20px;
+    border-radius: 4px;
+    margin-right : 5px;
+}
+
+.app_download .app_box p {
+    color    : #fff;
+    font-size: 14px;
+}
+
+@media screen and (max-width:360px) {
+    .app_download .app_box p {
+        color    : #fff;
+        font-size: 12px;
+    }
+}
+
+
+/* 游戏下载 */
+
+.game-item {
+    position  : relative;
+    display   : block;
+    border    : 1px solid transparent;
+    padding   : 0 16px;
+    margin-top: 10px;
+    border-top: 2px solid #00c4c4;
+}
+
+.game-item .game-icon {
+    width        : 60px;
+    height       : 60px;
+    border-radius: 10px;
+    margin       : auto
+}
+
+.game-item .game-icon img {
+    width        : 100%;
+    height       : 100%;
+    border-radius: 10px
+}
+
+.game-item .game-info,
+.game-item .game-one-word {
+    color        : #8f8f94;
+    font-size    : 12px;
+    overflow     : hidden;
+    white-space  : nowrap;
+    text-overflow: ellipsis
+}
+
+.game-item .game-info i,
+.game-item .game-one-word i {
+    display         : inline-block;
+    width           : 1px;
+    height          : 9px;
+    background-color: #979797;
+    vertical-align  : middle;
+    margin          : -.04rem .08rem 0
+}
+
+.game-item .game-score {
+    font-size  : 10px;
+    overflow   : hidden;
+    line-height: 14px;
+    margin-top : 5px
+}
+
+.game-item .game-score .score {
+    color       : #00c4c4;
+    margin-right: 5px
+}
+
+.game-item .game-score .score-count {
+    color      : #999;
+    margin-left: 5px
+}
+
+.game-item .game-score>div {
+    float: left
+}
+
+.game-item .game-inner {
+    position     : relative;
+    padding      : 10px 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.game-item .game-icon {
+    position: absolute;
+    left    : 0
+}
+
+.game-item .game-detail {
+    height            : 60px;
+    margin            : 0 56px 0 60px;
+    padding           : 0 20px 0 10px;
+    display           : -ms-flexbox;
+    display           : flex;
+    -ms-flex-direction: column;
+    flex-direction    : column;
+    -ms-flex-pack     : center;
+    justify-content   : center;
+    text-overflow     : ellipsis;
+    overflow          : hidden;
+    white-space       : nowrap
+}
+
+.game-item .game-name {
+    font-size  : 14px;
+    line-height: 21px;
+    color      : #555;
+}
+
+.game-item .down-btn {
+    position: absolute;
+    right   : 0;
+    top     : 0;
+    bottom  : 0;
+    margin  : auto
+}
+
+.game-item .down-btn {
+    display      : block;
+    font-size    : 13px;
+    width        : 59px;
+    height       : 26px;
+    line-height  : 24px;
+    text-align   : center;
+    color        : #00c4c4;
+    border-radius: 4px;
+    border       : 1px solid #00c4c4;
+    margin       : auto
+}
+
+.download-select {
+    font-size : 10px;
+    color     : #666;
+    position  : relative;
+    top       : 4px;
+    text-align: right;
+    left      : 30px;
+    transform : scale(.8)
+}
+
+.download-select .select-btn {
+    position       : relative;
+    margin-right   : 10px;
+    right          : -8px;
+    transform      : scale(.9);
+    display        : inline-block;
+    height         : 15px;
+    width          : 15px;
+    background     : url(../images/checkbox_n.png) no-repeat;
+    background-size: cover
+}
+
+.download-select .select-btn.select {
+    background     : url(../images/checkbox_s.png) no-repeat;
+    background-size: cover
+}
+
+.download-select .text {
+    vertical-align: top;
+    display       : inline-block
+}
+
+.download-select-recommend {
+    float   : left;
+    top     : -1px;
+    left    : -5px;
+    position: relative
+}
+
+
+/* 礼包样式 */
+
+.game-item .diy-gift {
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    padding          : 10px 0 0;
+}
+
+.game-item .diy-gift .logo {
+    width           : 50px;
+    height          : 50px;
+    background-image: url("../images/gift_pic.png");
+    background-size : 100% 100%;
+    margin-right    : 10px
+}
+
+.game-item .diy-gift .main {
+    -webkit-box-flex: 1;
+    -ms-flex        : 1;
+    flex            : 1;
+}
+
+.game-item .diy-gift .main .title {
+    color        : #000;
+    font-size    : 14px;
+    line-height  : 14px;
+    margin-bottom: 5px;
+}
+
+.game-item .diy-gift .main .desc {
+    color             : #8f8f94;
+    font-size         : 12px;
+    line-height       : 12px;
+    height            : 12px;
+    display           : -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow     : ellipsis;
+    overflow          : hidden;
+    -webkit-line-clamp: 2
+}
+
+.game-item .diy-gift .main .desc .num {
+    color: #F67B29
+}
+
+
+/* 游戏礼包样式 */
+
+.game-item ul {
+    background   : #f5f5f5;
+    margin-bottom: 10px;
+    padding      : 16px 12px 0;
+    margin-top: 10px;
+}
+
+.game-item ul .t_title {
+    color        : #666;
+    line-height  : 1;
+    font-size    : 14px;
+    display      : flex;
+    align-items  : center;
+    margin-bottom: 14px;
+}
+
+.game-item ul .t_title::before {
+    content     : '';
+    display     : inline-block;
+    height      : 14px;
+    width       : 4px;
+    background  : #00c4c4;
+    margin-right: 10px;
+}
+
+.normal-app-list .btn {
+    background   : #fff;
+    color        : #00c4c4;
+    border-radius: 4px;
+    border       : 1px solid #00c4c4;
+    line-height  : 25px;
+    height       : 27px;
+    font-size    : 13px;
+}
+
+.hot_strategy li a {
+    line-height: 41px;
+    font-size  : 14px;
+    height     : 41px;
+}
+
+.hot_strategy li {
+    height       : 41px;
+    line-height  : 41px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.hot_strategy li i {
+    width              : 5px;
+    height             : 6px;
+    margin-right       : 5px;
+    background-position: 0 -45.5px;
+    top                : 17.5px;
+    background-size    : 300px 300px;
+}
+
+.hot_strategy li span {
+    margin-left: 30px;
+    font-size  : 11px;
+    color      : #999;
+}
+
+.tab_list {
+    display    : flex;
+    height     : 39px;
+    line-height: 38px;
+}
+
+.tab_list li {
+    padding  : 0 6px;
+    font-size: 14px;
+    color    : #666;
+}
+
+.tab_list li.on {
+    color        : #00c4c4;
+    border-bottom: 2px #00c4c4 solid;
+}
+
+.Cont-J {
+    display: block;
+}
+
+.Cont-J ul {
+    display : block;
+    overflow: hidden;
+    padding : 0 10px;
+}
+
+.Cont-J ul li {
+    position          : relative;
+    padding           : 13px 0;
+    border-bottom     : 1px solid #f5f5f5;
+    box-sizing        : border-box;
+    -moz-box-sizing   : border-box;
+    -webkit-box-sizing: border-box;
+    overflow          : hidden;
+}
+
+.Cont-J ul li:last-child {
+    border-bottom: none;
+}
+
+.Cont-J ul li>a.CJ-explain {
+    display: inline-block;
+    float  : left;
+}
+
+.Cont-J ul li:active {
+    background: #eee;
+}
+
+.CJ-explain div {
+    display : inline-block;
+    position: relative;
+}
+
+.CJ-explain div img {
+    display      : inline-block;
+    width        : 60px;
+    height       : 60px;
+    border-radius: 10px;
+    background   : #969696;
+}
+
+.CJ-explain div .span1 {
+    display      : block;
+    position     : absolute;
+    top          : -5px;
+    left         : -5px;
+    width        : 40px;
+    height       : 17px;
+    text-align   : center;
+    line-height  : 17px;
+    color        : #fff;
+    border-radius: 10px;
+    background   : #14ccad;
+    font-size    : 11px;
+}
+
+.Cont-J {
+    display: none;
+}
+
+.Cont-J ul li .CJ-sub {
+    display    : block;
+    height     : 40px;
+    margin-left: 75px;
+    position   : relative;
+}
+
+.Cont-J ul li .CJ-sub>div {
+    position         : absolute;
+    top              : 50%;
+    transform        : translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform   : translateY(-50%);
+    display          : block;
+    margin-right     : 67.5px;
+}
+
+.CJ-sub>div a {
+    display      : block;
+    height       : 18px;
+    line-height  : 18px;
+    margin-bottom: 3px;
+    color        : #333;
+    font-size    : 16px;
+    overflow     : hidden;
+    margin-top   : 4px;
+}
+
+.Cont-J ul li>p {
+    display      : block;
+    height       : 24px;
+    margin-left  : 75px;
+    line-height  : 24px;
+    color        : #555;
+    font-size    : 12px;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+    overflow     : hidden;
+    margin-bottom: 0;
+}
+
+.CJ-sub dl {
+    display   : block;
+    overflow  : hidden;
+    margin-top: 6px;
+}
+
+.CJ-sub dt {
+    border-right : 1px solid #8f8f94;
+    padding-right: 4px;
+}
+
+.CJ-sub dt,
+.CJ-sub dd {
+    display    : inline-block;
+    font-size  : 12px;
+    float      : left;
+    color      : #8f8f94;
+    line-height: 1.2;
+    margin     : 0 2px 0 2px;
+}
+
+.CJ-sub dd {
+    margin-left: 0;
+}
+
+.Cont-J ul li a.JC_btn2 {
+    display      : block;
+    font-size    : 14px;
+    text-align   : center;
+    color        : #fff;
+    line-height  : 28px;
+    width        : 59.5px;
+    background   : #00c4c4;
+    border-radius: 3px;
+    position     : absolute;
+    top          : 10px;
+    right        : 0;
+}
+
+.Cont-J ul li a.JC_btn2:active {
+    opacity: .8;
+}
+
+.newLoad-tag {
+    padding: 16px 10px 6px;
+}
+
+.newLoad-tag a {
+    margin       : 0 5px 10px 0;
+    font-size    : 12px;
+    position     : relative;
+    display      : inline-block;
+    padding      : 0 12.5px;
+    border-radius: 2px;
+    line-height  : 24px;
+}
+
+.article {
+    line-height: 25px;
+    font-size  : 14px;
+    color      : #333;
+}
+
+.article img {
+    display  : block;
+    max-width: 100% !important;
+    height   : auto !important;
+    margin   : 15px auto;
+}
+
+.article p {
+    margin: 15px 0;
+}
+
+.article h3 {
+    display: block;
+    margin       : 30px 0 0;
+    width: max-content;
+    padding      : 0 20px 0 5px;
+    font-size    : 15px;
+    border-left  : 1px solid #00c4c4;
+    border-bottom: 1px solid #00c4c4;
+    line-height  : 25px;
+}
+
+.article .game-info {
+    display         : block;
+    position        : relative;
+    width           : 100%;
+    height          : 84px;
+    margin          : 20px 0 0;
+    background-color: #f3f3f3;
+}
+
+.article .game-info .game-img {
+    position: absolute;
+    top     : 10px;
+    left    : 10px;
+    width   : 64px;
+    height  : 64px;
+    margin  : 0;
+}
+
+.article .game-info .game-detail {
+    padding: 10px 70px 10px 84px;
+}
+
+.article .game-info .game-detail .name {
+    margin       : 5px 0;
+    font-size    : 14px;
+    color        : #181818;
+    overflow     : hidden;
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+    line-height  : 25px;
+}
+
+.article .game-info .game-detail .type {
+    font-size    : 12px;
+    color        : #999;
+    overflow     : hidden;
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+    line-height  : 25px;
+}
+
+.article .game-info .download {
+    position        : absolute;
+    top             : 27px;
+    right           : 20px;
+    width           : 64px;
+    height          : 30px;
+    text-align      : center;
+    line-height     : 30px;
+    background-color: #00c4c4;
+    color           : #ffffff;
+    border-radius   : 5px;
+    font-size       : 12px;
+}
+
+.prev-next {
+    margin-top: 20px;
+}
+
+.prev,
+.next {
+    font-size    : 14px;
+    color        : #181818;
+    line-height  : 2;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+}
+.position_box{
+    color: #8f8f94 !important;
+}
+
+
+.game-banner {margin-bottom: 10px;background: #fff;padding-top: 10px;}
+.game-banner .gamehbtn{background:#fff;padding:12px 9px;overflow:hidden;position: relative;}
+.game-banner .gamename{padding-left:72px;padding-right:110px;position:relative;overflow:hidden;font-size:12px;color:#333}
+.game-banner .gamename img{width:62px;height:62px;display:block;position:absolute;top:0;left:0;margin: 0;}
+.game-banner .gamename strong{height:26px;line-height:28px;overflow:hidden;font-size:15px;display:block}
+.game-banner .gamename p{height:16px;line-height:16px;margin-top:2px;overflow:hidden;color:#999;margin-bottom: 0;}
+.game-banner .gamename p:last-of-type{width: calc(100% + 110px);}
+.gamename p em{color:#999}
+.game-banner .gamehbtn .download{display: block;width: 80px;height: 29px;line-height: 29px;text-align: center;font-size: 12px;color: #fff;background-color: #20c3cc;border-radius: 5px;position: absolute;top: 15px;right: 11px;}
+.game-banner  .alw {
+  display: -webkit-box;
+  display: box;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.game-banner  .alw em {
+  display: -webkit-box;
+  display: box;
+  width: 10%;
+  height: 2px;
+  background: #20c3cc;
+  box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  margin-top: 10px;
+  position: relative;
+}
+
+.game-banner  .alw em:before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: -5px;
+  background: #20c3cc;
+}
+
+.game-banner .alw em:after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  right: -5px;
+  background: #20c3cc;
+}
+
+.game-banner .alw h2 {
+  font-size: 14px;
+  padding: 3px 5px;
+  background: #20c3cc;
+  color: #FFF;
+  margin: 0 25px;
+  box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  text-align: center;
+  width: 25%;
+  position: relative;
+}
+
+.game-banner .alw h2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: -6px;
+  top: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 6px solid #20c3cc;
+}
+
+.game-banner .alw h2:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  right: -6px;
+  top: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 6px solid #20c3cc;
+}

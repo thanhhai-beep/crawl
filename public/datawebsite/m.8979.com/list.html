@@ -1,0 +1,332 @@
+<head>
+    <meta charset="utf-8">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="{$theme_path}/css/base.css">
+    <link rel="stylesheet" href="{$theme_path}/css/news.css">
+    <link href="{$theme_path}/css/mui.min.css" rel="stylesheet">
+    <link href="{$theme_path}/css/stylesheet.css" rel="stylesheet">
+    <script src="{$theme_path}/js/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+        var contextRoot = "https://m.8979.com";
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+            "@id": "https://m.8979.com/news/",
+            "appid": "1604501895309487",
+            "title": "热门BT手游资讯_变态手游攻略大全-8979下载站",
+            "images": [
+                ""
+            ],
+            "description": "8979游戏官网热门BT手游资讯栏目为热爱变态手游玩家实时提供变态手游攻略、活动参考。玩BT手游就上8979游戏，让您体验不一样的游戏享受！",
+            "pubDate": "2024-12-26T10:19:24",
+            "upDate": "2024-12-26T10:19:24"
+        }
+    </script>
+    <script src="{$theme_path}/js/toWWW.js"></script>
+    <meta name="sogou_site_verification" content="fK87qJ0HLC">
+    <meta name="baidu-site-verification" content="codeva-Au5DNYKPqG">
+</head>
+
+<body>
+    <script src="{$theme_path}/js/loading.js"></script>
+    <style>
+        .mui-search .mui-placeholder {
+            height: 43px;
+            line-height: 43px;
+        }
+    </style>
+    <script>
+        function goSearch() {
+            location.href = "/search.html";
+        }
+
+    </script>
+    <header class="mui-bar mui-bar-nav">
+        <div class="logo mui-table mui-pull-left">
+            <div class="mui-table-cell">
+                <a href="/">
+                    <img src="{$theme_path}/images/logo.png" alt="{网站地址}">
+                </a>
+            </div>
+        </div>
+        <div class="mui-input-row mui-search mui-pull-left" style="display:none">
+            <input type="search" class placeholder="请输入游戏名称" onclick="goSearch();" readonly="readonly">
+        </div>
+        <div class="mui-pull-right header-right">
+            <div class="mui-table">
+                <div class="mui-table-cell mui-col-xs-12">
+                    <input type="button" value>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <script>
+        var username = "";
+        isDetail = false;
+        $(function () {
+            init();
+        })
+
+        function init() {
+            if (!isDetail) {
+                sessionStorage.setItem('dlName', username);
+            }
+            setHm(username);
+        }
+
+        // 个人百度统计
+        function setHm(name) {
+            if (name != "") {
+                let id = "";
+                if (name == "wuyingjie") {
+                    id = "ffc4ae2cd610beea354f166d15825615";
+                }
+                if (name == "chenlifeng") {
+                    id = "7c28735e384ba374110721d854fb1b57";
+                }
+                if (name == "caizhihua") {
+                    id = "50b1b075ce1a5c1cda42d0f2ad3accc8";
+                }
+                if (id) {
+                    let str = `<script type="text/javascript">
+                    var _hmt = _hmt || [];
+                    (function() {
+                        var hm = document.createElement("script");
+                        hm.src = "https://hm.baidu.com/hm.js?` + id + `";
+                        var s = document.getElementsByTagName("script")[0]; 
+                        s.parentNode.insertBefore(hm, s);
+                    })();
+                <\/script>`;
+                    $("body").append(str);
+                }
+            }
+        }
+
+        // 修改个人渠道号
+        function setUrl(azurl = "", iosurl = "", azboxurl = "", iosboxurl = "") {
+            let name = sessionStorage.getItem("dlName");
+            let id = "";
+            if (name == "wuyingjie") {
+                id = "3975";
+            }
+            if (name == "chenlifeng") {
+                id = "5060";
+            }
+            if (name == "caizhihua") {
+                id = "5106";
+            }
+            let Channel_Number = '3417,3401,2933,2805,1173'.split(",");
+            for (let i in Channel_Number) {
+                if (id) {
+                    if (azurl && azurl.indexOf("3733") != -1 && azurl.indexOf(Channel_Number[i]) != -1) {
+                        azurl = azurl.replace(("c=" + Channel_Number[i]), ("c=" + id));
+                        azurl = azurl.replace(("cps" + Channel_Number[i]), ("cps" + id));
+                    }
+                    if (iosurl && iosurl.indexOf("3733") != -1 && iosurl.indexOf(Channel_Number[i]) != -1) {
+                        iosurl = iosurl.replace(("c=" + Channel_Number[i]), ("c=" + id));
+                        iosurl = iosurl.replace(("cps" + Channel_Number[i]), ("cps" + id));
+                    }
+                    if (azboxurl && azboxurl.indexOf("3733") != -1 && azboxurl.indexOf(Channel_Number[i]) != -1) {
+                        azboxurl = azboxurl.replace(("c=" + Channel_Number[i]), ("c=" + id));
+                        azboxurl = azboxurl.replace(("cps" + Channel_Number[i]), ("cps" + id));
+                    }
+                    if (iosboxurl && iosboxurl.indexOf("3733") != -1 && iosboxurl.indexOf(Channel_Number[i]) != -1) {
+                        iosboxurl = iosboxurl.replace(("c=" + Channel_Number[i]), ("c=" + id));
+                        iosboxurl = iosboxurl.replace(("cps" + Channel_Number[i]), ("cps" + id));
+                    }
+                }
+            }
+
+            return {
+                "azurl": azurl,
+                "iosurl": iosurl,
+                'azboxurl': azboxurl,
+                'iosboxurl': iosboxurl
+            }
+        }
+    </script>
+    <div class="mui-content">
+        <div class="header-nav">
+            {loop type="arclist" row="6" tpl="" islist=""}
+            <a href="{$vo.url}" class="header-nav-item">{$vo.title}</a>
+            {/loop}
+            <a href="{随机栏目URL}" class="header-nav-item active">{随机栏目}</a>
+        </div>
+        <div class="crumbs">
+            <a href="/">首页</a>&nbsp;&gt;&nbsp;
+            <a href="{随机内容URL}">{随机标题}</a>&nbsp;&gt;&nbsp;
+            <span>列表</span>
+        </div>
+        <div class="daily-selection">
+            <div class="section-title">
+                <h1>{$keywords}</h1>
+            </div>
+            <div class="selection-list">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                <a href="{$vo.url}" class="selection-item">
+                    <span>{随机栏目}</span>
+                    <div class="text">{$vo.title}</div>
+                </a>
+                {/loop}
+            </div>
+        </div>
+        <div class="all-news">
+            <div class="section-title">
+                <h3>{$keywords} 每日精选</h3>
+            </div>
+            <div class="news-list">
+                {loop type="arclist" row="50" tpl="" islist=""}
+                <a href="{$vo.url}" class="news-item">
+                    <img src="{$vo.pic}" alt="{$vo.title}">
+                    <div class="right">
+                        <div class="title">{$vo.title}</div>
+                        <div class="date">{$vo.postdate}</div>
+                    </div>
+                </a>
+                {/loop}
+            </div>
+        </div>
+        <div class="pages">
+            <a href="javascript:void(0);" class="disabled">上一页</a>
+            <span class="active">1</span>
+            <a href="{随机栏目URL}">2</a>
+            <span class="disabled">...</span>
+            <a href="{随机栏目URL}" class>{随机数字}</a>
+            <a href="{随机栏目URL}">下一页</a>
+        </div>
+    </div>
+    <a href="javascript:void(0);" title="返回顶部" class="goTop"></a>
+    <div>
+        <div class="footer_text">
+            <p>
+                © Copyright8979下载站<br>
+                {网站名称}|{$keywords}
+            </p>
+        </div>
+        <!--底部导航-->
+        <nav class="mui-bar mui-bar-tab footer">
+            <a class="abtn-go-item mui-active" href="/">
+                <span class="mui-icon mui-icon-home"></span>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="abtn-go-item " href="{随机栏目URL}">
+                <span class="mui-icon mui-icon-gear"></span>
+                <span class="mui-tab-label">{随机栏目}</span>
+            </a>
+            <a class="abtn-go-item " href="{随机栏目URL}">
+                <span class="mui-icon mui-icon-list"></span>
+                <span class="mui-tab-label">{随机栏目}</span>
+            </a>
+            <a class="abtn-go-item " href="{随机栏目URL}">
+                <span class="mui-icon mui-icon-flag"></span>
+                <span class="mui-tab-label">{随机栏目}</span>
+            </a>
+            <a class="abtn-go-item " href="{随机栏目URL}">
+                <span class="mui-icon mui-icon-settings"></span>
+                <span class="mui-tab-label">{随机栏目}</span>
+            </a>
+        </nav>
+        <footer class="ui-footer ui-footer-btn ui-footer-btnall" style="display:none">
+        </footer>
+        <script src="{$theme_path}/js/jquery-1.11.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#apkclose").click(function () {
+                    $(".ui-footer-btnall").hide();
+                });
+            });
+        </script>
+        <footer style="display: none">
+            <small>© Copyright8979下载站<br>
+                {网站名称}|{$keywords}
+            </small>
+        </footer>
+    </div>
+    <footer class="ui-footer ui-footer-btn ui-footer-btnall" style="display:none">
+    </footer>
+    <script src="{$theme_path}/js/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#apkclose").click(function () {
+                $(".ui-footer-btnall").hide();
+            });
+        });
+    </script>
+    <footer style="display: none">
+        <small>©8979手机游戏&nbsp; 手游公益服首发平台 All rights reserved 备案号：闽ICP备20009202号-8
+
+        </small>
+    </footer>
+    <script>
+        // 全面屏适应
+        function isBangs() {
+            if (/iphone/gi.test(window.navigator.userAgent)) {
+                /* iPhone X、iPhone XS、iPhone 11 Pro */
+                var xa = (window.screen.width === 375 && window.screen.height === 812);
+                /* iPhone XR、iPhone XS Max、iPhone 11、iPhone 11 Pro Max */
+                var xb = (window.screen.width === 414 && window.screen.height === 896);
+                /* iPhone SE */
+                var xc = (window.screen.width === 375 && window.screen.height === 667);
+                /* iPhone 12 mini */
+                var xd = (window.screen.width === 360 && window.screen.height === 780);
+                /* iPhone 12、iPhone 12 Pro */
+                var xe = (window.screen.width === 390 && window.screen.height === 844);
+                /* iPhone 12 Pro Max */
+                var xf = (window.screen.width === 428 && window.screen.height === 926);
+
+                if (xa || xb || xc || xd || xe || xf) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false
+            }
+        }
+        if (isBangs()) {
+            if (ub == 'safari') {
+                var oldHeight = window.innerHeight;
+                window.addEventListener("resize", function () {
+                    if (window.innerHeight > oldHeight) {
+                        document.querySelector(".footer").style.paddingBottom = "22px";
+                    } else {
+                        document.querySelector(".footer").style.paddingBottom = "0px";
+                    }
+                }, false);
+            } else if (ub == 'qq' || ub == 'wechat') {
+                document.querySelector(".footer").style.paddingBottom = "22px";
+            }
+        }
+    </script>
+    <script>
+        $(function () {
+            $(".goTop").hide();
+            $(window).bind('scroll', function () {
+                var scrollTop = $(this).scrollTop();
+                if (scrollTop > 300) {
+                    $(".goTop").show()
+                } else {
+                    $(".goTop").hide()
+                }
+            });
+            $(".goTop").bind('click', function () {
+                $("html,body").animate({
+                    scrollTop: 0
+                }, 500)
+            })
+        })
+    </script>
+
+    <script src="{$theme_path}/js/wxqq.js"></script>
+    <script src="{$theme_path}/js/tongji.js"></script>
+    <script src="{$theme_path}/js/noSafariPopup.js"></script>
+</body>

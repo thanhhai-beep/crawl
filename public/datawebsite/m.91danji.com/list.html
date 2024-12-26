@@ -1,0 +1,157 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="applicable-device" content="mobile">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta name="viewport"
+        content="width=720,width=device-width, initial-scale=1,  initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <link rel="canonical" href="{$thisurl}">
+    <link rel="stylesheet" href="{$theme_path}/css/swiper.min.css">
+    <link rel="stylesheet" href="{$theme_path}/css/style.css">
+    <script src="{$theme_path}/js/resize.js"></script>
+    <script src="{$theme_path}/js/jquery.js"></script>
+    <script src="{$theme_path}/js/swiper.min.js"></script>
+    <style>
+        .m-pager {
+            text-align: center;
+            background: #eee;
+            padding: 10px;
+            color: #999;
+            font-size: 0.8em;
+        }
+
+        .m-pager a {
+            display: inline-block;
+            padding: 3px 10px;
+            border: 1px solid #ddd;
+            margin-right: 5px;
+            color: #333;
+        }
+    </style>
+    <link rel="shortcut icon" href="{$theme_path}/css/favicon.ico" type="image/x-icon">
+    <link rel="Bookmark" href="{$theme_path}/css/favicon.ico">
+</head>
+
+<body>
+    <header class="hd_top" id="hTop">
+        <a href="{随机栏目URL}" class="logo" title="{随机栏目}"></a>
+        <div class="t_cate">
+            <i class="t_cate_icon topBg" id="t_cate_icon"></i>
+        </div>
+    </header>
+    <div class="headerActive" id="headerActive"></div>
+    <div class="mask" id="mask"></div>
+    <div class="cateContent jsTab" id="cateContent">
+        <ul class="clearfix part_nav r_3 tabNav" data-row="3">
+            <li class="active"><a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+        </ul>
+        <ul class="clearfix cateContentList tablist" style="display: block;" data-row="13">
+            {loop type="catelog" row="13" tpl="" islist=""}
+            <li><a href="{$vo.url}"><strong>{$vo.title}</strong>约{随机数字}款游戏</a></li>
+            {/loop}
+        </ul>
+        <ul class="clearfix cateContentList tablist" data-row="21">
+            {loop type="catelog" row="21" tpl="" islist=""}
+            <li><a href="{$vo.url}"><strong>{$vo.title}</strong>约{随机数字}款游戏</a></li>
+            {/loop}
+        </ul>
+        <ul class="clearfix cateContentList tablist" data-row="11">
+            {loop type="catelog" row="11" tpl="" islist=""}
+            <li><a href="{$vo.url}"><strong>{$vo.title}</strong>约{随机数字}款游戏</a></li>
+            {/loop}
+        </ul>
+    </div>
+    <nav class="t_nav">
+        <ul class="clearfix" data-row="11">
+            {loop type="catelog" row="13" tpl="" islist=""}
+            <li><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></li>
+            {/loop}
+            <li id="navOpen"><span class="topBg"></span></li>
+        </ul>
+    </nav>
+    <div class="catelist">
+        <div class="clearfix"></div>
+    </div>
+    <div class="bgfffbox">
+        <ul class="clearfix part_nav r_2" data-row="2">
+            <li class="active"><a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a></li>
+            <li><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+        </ul>
+
+        <ul class="applist JS-list" id="yxtj" style="display: block;" data-row="45">
+            <li>
+                <h1>{$keywords}</h1>
+            </li>
+            {loop type="arclist" row="50" tpl="" islist=""}
+            <li>
+                <a href="{$vo.url}" class="sPic"><img src="{$vo.pic}" alt="{$vo.title}"></a>
+                <h5><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h5>
+                <p>
+                    <a href="{$vo.url}"><span>学习教育</span></a>
+                    <i>|</i>
+                    <span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}MB</span>
+                </p>
+                <a href="{$vo.url}">
+                    <p>
+                        <span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}.{randstr type="2" num="2"/}</span>
+                        <i>|</i>
+                        <span>{$vo.postdate}</span>
+                    </p>
+                </a>
+                <a href="{$vo.url}" class="sDown" title="{$vo.title}">下载</a>
+            </li>
+            {/loop}
+        </ul>
+        <ul class="applist JS-list" id="rjtj" style="display: none;" data-row="45">
+            <li>{$keywords}</li>
+            {loop type="arclist" row="50" tpl="" islist=""}
+            <li>
+                <a href="{$vo.url}" class="sPic"><img src="{$vo.pic}" alt="{$vo.title}"></a>
+                <h5><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></h5>
+                <p>
+                    <a href="{$vo.url}"><span>学习教育</span></a>
+                    <i>|</i>
+                    <span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}MB</span>
+                </p>
+                <a href="{$vo.url}">
+                    <p>
+                        <span>{randstr type="2" num="2"/}.{randstr type="2" num="2"/}.{randstr type="2" num="2"/}</span>
+                        <i>|</i>
+                        <span>{$vo.postdate}</span>
+                    </p>
+                </a>
+                <a href="{$vo.url}" class="sDown" title="{$vo.title}">下载</a>
+            </li>
+            {/loop}
+        </ul>
+    </div>
+    <footer class="sfooter">
+        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a>
+        <i>|</i>
+        <a href="/" title="{随机栏目}">{网站名称}</a>
+        <i>|</i>
+        {$keywords}
+    </footer>
+    <script>
+        //选项卡
+        $('.part_nav li').each(function () {
+            var rjtj = document.getElementById('rjtj');
+            var yxtj = document.getElementById('yxtj');
+            $(this).click(function () {
+                $('.part_nav li').removeClass('active');
+                $(this).addClass('active');
+                if ($(this).index() == 0) {
+                    yxtj.style.display = "block";
+                    rjtj.style.display = "none";
+                } else {
+                    yxtj.style.display = "none";
+                    rjtj.style.display = "block";
+                }
+            })
+        });
+    </script>
+    <script src="{$theme_path}/js/commen.js"></script>
+</body>

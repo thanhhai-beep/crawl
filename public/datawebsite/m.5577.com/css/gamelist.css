@@ -1,0 +1,44 @@
+body{text-align:left;font-size: 12px;padding:0; background:#f2f2f2; padding:0;font-family:arial,"Microsoft YaHei","\5fae\8f6f\96c5\9ed1";}
+
+
+.down_tab{ width:100%; height:45px; display:block; background:#ededed; margin:82px 0 0 0;}
+.down_tab h1{ height:45px; line-height:45px;  display:block; overflow:hidden; padding-left:10px; font-size:16px; font-weight:bold}
+.down_tab h1 span{ color:#F00}
+.down_tab a{ float:left; height:45px; line-height:45px; width:33.3%; text-align:center; display:inline; overflow:hidden; font-size:18px; font-weight:normal; color:#000;}
+.down_tab .hover{ background:#FFF; color:#e65303; font-weight:bold}
+
+
+
+
+
+#infocon{ width:100%; height:auto; background:#fff; margin:0; display:block; overflow:hidden; padding:0 10px; box-sizing:border-box;}
+.nav_down{ display:block; padding:0;}
+.nav_down .new_list>li{ width:100%; height:94px; border-bottom:1px solid #d9d9d9; display:-webkit-box;}
+.nav_down .new_list>li .list_img{height:100%;}
+.nav_down .new_list>li .list_img img{ width:70px; height:70px; margin:10px 0 0 0; border-radius:10px; box-shadow:1px 1px 2px #bebebe}
+.nav_down .new_list>li .list_img1 img{ width:auto; height:70px; margin:10px 0 0 0; box-shadow:1px 1px 2px #bebebe}
+.nav_down .new_list>li .list_img2 img{ width:120px; height:70px; margin:11px 0 0 0; border-radius:10px; box-shadow:1px 1px 2px #bebebe}
+.nav_down .new_list>li .list_img3 img{ width:150px; height:70px; margin:10px 0 0 0; border-radius:10px; box-shadow:1px 1px 2px #bebebe}
+.nav_down .new_list>li .list_font{display:-webkit-box; -webkit-box-flex:1;}
+.nav_down .new_list>li .list_font > div{ margin-left:13px;  font-family:"microsoft yahei"}
+.nav_down .new_list>li .list_font > p:nth-child(1){ width:100%; display:block; font-size:16px; height:40px; line-height:46px; overflow:hidden; }
+.nav_down .new_list>li .list_font > p:nth-child(2){ width:100%; display:block; font-size:12px; line-height:18px; height:22px; overflow:hidden; color:#808080;}
+.nav_down .new_list>li .fict_name div.nr{ height:39px; margin:0; overflow:hidden;}
+.nav_down .new_list>li .fict_name div.nr p{ line-height:21px; font-size:12px; }
+.nav_down .new_list>li .list_font img{ height:13px;}
+.nav_down .new_list>li .list_btn{width:65px;height:31px; line-height:32px;margin:30px 0 0 0; background:#13b2ff; text-align:center; font-size:16px; font-weight:bold; color:#fff; display:block; border-radius:4px; overflow:hidden}
+.nav_down .new_list>li .list_fct{width:17px;height:34px;margin:29px 0 0 0; display:block; overflow:hidden; margin-right:2%}
+.nav_down .new_list>li .list_img3 img.small{ width:75px;}
+
+.new_list>li .list_font p:nth-child(1){ width:100%; display:block; font-size:16px; height:40px; line-height:46px; overflow:hidden; text-align:left }
+.new_list>li .list_font p:nth-child(2){ width:100%; display:block; font-size:12px; line-height:16px; height:16px; overflow:hidden; color:#808080; text-align:left }
+.new_list>li .list_font p:nth-child(3){ width:100%; display:block; font-size:12px; line-height:16px; height:16px; overflow:hidden; color:#808080; text-align:left }
+
+
+
+.nav_down .new_list>li .fict_name{display:-webkit-box; -webkit-box-flex:1;}
+.nav_down .new_list>li .fict_name div{ margin-left:13px;}
+.nav_down .new_list>li .fict_name p:nth-child(1){ width:100%; display:block; font-size:18px; height:40px; line-height:46px; overflow:hidden; }
+.nav_down .new_list>li .fict_name p:nth-child(2){ display:block; font-size:14px; line-height:20px; height:40px; overflow:hidden; color:#808080;}
+.nav_down .new_list>li .fict_name p:nth-child(3){ display:block; font-size:14px; line-height:20px; height:40px; overflow:hidden; color:#808080;}
+.more{ font-size:20px; width:100%; height:50px; line-height:50px; display:block; overflow:hidden; text-align:center; color:#7dcf0b; border:0; border-bottom:2px solid #76bb00; background:none;}

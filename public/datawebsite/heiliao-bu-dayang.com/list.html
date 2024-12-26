@@ -17,18 +17,18 @@
     <script src="{$theme_path}/js/zblogphp.js" type="text/javascript"></script>
     <script src="{$theme_path}/js/c_html_js_add.php" type="text/javascript"></script>
     <script type="text/javascript" src="{$theme_path}/js/fastclick.js"></script>
-    <link rel="canonical" href="{$theme_path}/css/category-2.html">
+    <link rel="canonical" href="{$thisurl}">
 </head>
 
 <body>
     <header id="header">
         <div class="inner">
-            <h2 id="logo" class="animated fadeInLeft"> <a href="/" title="黑料不打烊-黑料官方网站"
-                    style="background-image: url(https://www.heiliao-bu-dayang.com/zb_users/upload/2024/06/202406011717248975511666.jpg);"><i>黑料不打烊-黑料官方网站</i></a>
+            <h2 id="logo" class="animated fadeInLeft"> <a href="/"
+                    style="background-image: url(https://www.heiliao-bu-dayang.com/zb_users/upload/2024/06/202406011717248975511666.jpg);"><i>{$keywords}</i></a>
             </h2>
             <nav id="nav">
                 <ul class="menu" data-row="4">
-                    <li id="nvabar-item-index"><a href="{随机栏目URL}" title="{$vo.title}">{$vo.title}</a></li>
+                    <li id="nvabar-item-index"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
                     <li id="navbar-category-2"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
                     <li id="navbar-category-3"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
                     <li id="navbar-page-1074"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
@@ -39,10 +39,11 @@
                     <li class="navbtn"> <i class="icon-menu"></i> </li>
                     <li class="schbtn"> <i class="icon-search"></i> </li>
                     <li class="sharebtn" id="share"> <i class="icon-share"></i>
-                        <div class="drop"> <a class="wb" href="{随机栏目URL}" onclick="shareUrl('weibo');"
-                                title="{随机栏目}">{随机栏目}</a> <a class="qq" href="{随机栏目URL}" onclick="shareUrl('qq');"
-                                title="{随机栏目}">{随机栏目}</a> <a class="wx" href="{随机栏目URL}" onclick="shareUrl('weixin');"
-                                title="{随机栏目}">{随机栏目}</a> </div>
+                        <div class="drop">
+                            <a class="wb" href="{随机内容URL}" onclick="shareUrl('weibo');" title="{$keywords}">{随机标题}</a>
+                            <a class="qq" href="{随机内容URL}" onclick="shareUrl('qq');" title="{随机标题}">{随机标题}</a>
+                            <a class="wx" href="{随机内容URL}" onclick="shareUrl('weixin');" title="{随机标题}">{随机标题}</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -205,18 +206,18 @@
     </div>
     <footer id="footer">
         <div class="inner">
-            <div id="copyright"> Powered By <a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a>. Theme By <a
-                    href="{随机栏目URL}" title="{随机栏目}" target="_blank">{$keywords}</a> </div>
-
+            <div id="copyright">
+                Powered By
+                <a href="{随机内容URL}" target="_blank">{随机标题}</a>. Theme By
+                <a href="{随机内容URL}" target="_blank">{$keywords}</a>
+            </div>
         </div>
     </footer>
     <div id="shareWX">
         <div class="box">
             <div id="qr"></div>
-            <div class="text">
-                <p>{随机栏目}</p>
-                <p>{随机栏目}</p>
-            </div>
+            <p>{随机栏目}</p>
+            <p>{网站地址}</p>
         </div>
     </div>
     <script type="text/javascript" src="{$theme_path}/js/jquery.flexslider-min.js"></script>

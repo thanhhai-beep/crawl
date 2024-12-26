@@ -17,21 +17,21 @@
     <script src="{$theme_path}/js/zblogphp.js" type="text/javascript"></script>
     <script src="{$theme_path}/js/c_html_js_add.php" type="text/javascript"></script>
     <script type="text/javascript" src="{$theme_path}/js/fastclick.js"></script>
+    <link rel="canonical" href="{$thisurl}">
 </head>
 
 <body>
     <header id="header">
         <div class="inner">
-            <div id="logo" class="animated fadeInLeft"> <a href="/"
-                    title="黑料不打烊-黑料官方网站"
-                    style="background-image: url(https://www.heiliao-bu-dayang.com/zb_users/upload/2024/06/202406011717248975511666.jpg);"><i>黑料不打烊-黑料官方网站</i></a>
-            </div>
+            <h2 id="logo" class="animated fadeInLeft"> <a href="/"
+                    style="background-image: url(https://www.heiliao-bu-dayang.com/zb_users/upload/2024/06/202406011717248975511666.jpg);"><i>{$keywords}</i></a>
+            </h2>
             <nav id="nav">
                 <ul class="menu" data-row="4">
-                    <li id="nvabar-item-index"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
-                    <li id="navbar-category-2"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
-                    <li id="navbar-category-3"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
-                    <li id="navbar-page-1074"><a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a></li>
+                    <li id="nvabar-item-index"><a href="{随机栏目URL}">{随机栏目}</a></li>
+                    <li id="navbar-category-2"><a href="{随机栏目URL}">{随机栏目}</a></li>
+                    <li id="navbar-category-3"><a href="{随机栏目URL}">{随机栏目}</a></li>
+                    <li id="navbar-page-1074"><a href="{随机栏目URL}">{随机栏目}</a></li>
                 </ul>
             </nav>
             <div id="button">
@@ -39,10 +39,11 @@
                     <li class="navbtn"> <i class="icon-menu"></i> </li>
                     <li class="schbtn"> <i class="icon-search"></i> </li>
                     <li class="sharebtn" id="share"> <i class="icon-share"></i>
-                        <div class="drop"> <a class="wb" href="{随机栏目URL}" onclick="shareUrl('weibo');"
-                                title="{$keywords}">{随机栏目}</a> <a class="qq" href="{随机栏目URL}" onclick="shareUrl('qq');"
-                                title="{随机栏目}">{随机栏目}</a> <a class="wx" href="{随机栏目URL}" onclick="shareUrl('weixin');"
-                                title="{随机栏目}">{随机栏目}</a> </div>
+                        <div class="drop">
+                            <a class="wb" href="{随机内容URL}" onclick="shareUrl('weibo');" title="{$keywords}">{随机标题}</a>
+                            <a class="qq" href="{随机内容URL}" onclick="shareUrl('qq');" title="{随机标题}">{随机标题}</a>
+                            <a class="wx" href="{随机内容URL}" onclick="shareUrl('weixin');" title="{随机标题}">{随机标题}</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -51,24 +52,23 @@
     <div id="searchbar">
         <div class="inner">
             <div id="search">
-                <form name="search" method="post"
-                    action="/zb_system/cmd.php?act=search"> <input type="text"
+                <form name="search" method="post" action="/zb_system/cmd.php?act=search"> <input type="text"
                         class="text" name="q" id="edtSearch" value placeholder="输入关键词搜索..."> <button type="submit"
                         name="submit" id="btnPost"><i class="icon-search"></i></button> </form>
             </div>
-            <div id="quick"> <span>快捷搜索：</span> <a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a><a
-                    href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a><a href="{随机栏目URL}" title="{随机栏目}"
-                    target="_blank">{随机栏目}</a> </div>
+            <div id="quick"> <span>快捷搜索：</span> <a href="{随机栏目URL}" target="_blank">{随机栏目}</a><a href="{随机栏目URL}"
+                    target="_blank">{随机栏目}</a><a href="" target="_blank">{$title}</a> </div>
         </div>
     </div>
-    <div class="blank"></div><div class="inner toppic wow fadeIn">
-        <a href="{随机栏目URL}"><img src="{随机图片}" alt="{随机栏目URL}" style="height: 50px" /></a>
+    <div class="blank"></div>
+    <div class="inner toppic wow fadeIn">
+        <a href="{随机内容URL}"><img src="{随机图片}" alt="{随机内容URL}" style="height: 50px" /></a>
     </div>
     <div class="inner container">
         <main class="main">
             <div class="content">
-                <div class="breadcrumb"> <span><i class="icon-home"></i> <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> /
-                        <a href="{随机栏目URL}" title="{随机栏目}">{随机栏目}</a> </span> </div>
+                <div class="breadcrumb"> <span><i class="icon-home"></i> <a href="{随机栏目URL}">{随机栏目}</a> /
+                        <a href="{随机内容URL}">{随机标题}</a> </span> </div>
                 <article class="post wow fadeIn cate2  auth1">
                     <h2 class="postTitle">{$title}</h2>
                     <div class="postmeta"> <span><i class="icon-user-circle-o"></i> {随机关键词}</span> <span><i
@@ -78,46 +78,45 @@
                     <div class="entry">
                         {$body}
                     </div>
-                    <div class="toppic wow fadeIn"> <a href="{随机栏目URL}"><img src="{随机图片}" alt="{随机栏目URL}"></a> </div>
+                    <div class="toppic wow fadeIn"> <a href="{随机栏目URL}"><img src="{随机图片}" alt="{随机标题}"></a> </div>
                     <div class="postnavi">
-                        <div class="prev"> <a href="{随机内容URL}"
-                                title="{随机标题}"><i>&lt;&lt;</i> {随机标题}</a> </div>
-                        <div class="next"> <a href="{随机内容URL}"
-                                title="{随机标题}">{随机标题} <i>&gt;&gt;</i></a> </div>
+                        <div class="prev"> <a href="{随机内容URL}" title="{随机标题}"><i>&lt;&lt;</i> {随机标题}</a> </div>
+                        <div class="next"> <a href="{随机内容URL}" title="{随机标题}">{随机标题} <i>&gt;&gt;</i></a> </div>
                     </div>
                     <section class="box related-post">
                         <h3 class="name"><i class="icon-list-alt"></i> {$keywords}</h3>
-                        <p>{随机栏目}</p>
+                        <p>{$title}</p>
                     </section>
                     <section class="box related-pic">
                         <h3 class="name"><i class="icon-file-image"></i> 相关文章</h3>
                         <ul data-row="8">
                             {loop type="arclist" row="10" tpl="" islist=""}
-                                <li>
-                                    <div class="thumbnail"> <a href="{$vo.url}" target="_blank"
-                                            title="{$vo.title}"><img alt="{$vo.title}" src="{$vo.pic}"></a> </div>
-                                    <p><a href="{$vo.url}" target="_blank" title="{$vo.title}">{$vo.title}</a></p>
-                                </li>
+                            <li>
+                                <div class="thumbnail"> <a href="{$vo.url}" target="_blank" title="{$vo.title}"><img
+                                            alt="{$vo.title}" src="{$vo.pic}"></a> </div>
+                                <p><a href="{$vo.url}" target="_blank" title="{$vo.title}">{$vo.title}</a></p>
+                            </li>
                             {/loop}
                         </ul>
                     </section>
                     <section class="box commentslist">
                         <h3 class="name"><i class="icon-commenting-o"></i> {$keywords}</h3> <label
                             id="AjaxCommentBegin"></label> <label id="cmt5"></label>
-                            {loop type="arclist" row="10" tpl="" islist=""}
-                            <ol data-row="1">
-                                <li>
-                                    <div class="cmt-wrap">
-                                        <div class="thumbnail"> <img alt="LLib" src="{$vo.pic}"> </div>
-                                        <div class="cmt-user"> <a href="{$vo.url}" rel="nofollow" target="_blank"
-                                                title="{$vo.title}">{$vo.title}</a> </div>
-                                        <div class="cmt-meta"> <span>{$vo.postdate}</span> <span class="reply"><a href="{$vo.url}"
-                                                    onclick="zbp.comment.reply('5')" title="{$vo.title}">{$vo.title}</a></span> </div>
-                                        <div class="cmt-txt"> 非常好！<label id="AjaxComment5"></label> </div>
-                                    </div>
-                                </li>
-                            </ol> <label id="cmt6"></label>
-                            {/loop}
+                        {loop type="arclist" row="10" tpl="" islist=""}
+                        <ol data-row="1">
+                            <li>
+                                <div class="cmt-wrap">
+                                    <div class="thumbnail"> <img alt="LLib" src="{$vo.pic}"> </div>
+                                    <div class="cmt-user"> <a href="{$vo.url}" rel="nofollow" target="_blank"
+                                            title="{$vo.title}">{$vo.title}</a> </div>
+                                    <div class="cmt-meta"> <span>{$vo.postdate}</span> <span class="reply"><a
+                                                href="{$vo.url}" onclick="zbp.comment.reply('5')"
+                                                title="{$vo.title}">{$vo.title}</a></span> </div>
+                                    <div class="cmt-txt"> 非常好！<label id="AjaxComment5"></label> </div>
+                                </div>
+                            </li>
+                        </ol> <label id="cmt6"></label>
+                        {/loop}
                         <div class="pagenavi"> </div> <label id="AjaxCommentEnd"></label>
                     </section>
                     <div class="comment-form" id="divCommentPost">
@@ -144,7 +143,7 @@
                             </div>
                             <div class="btn"> <input type="submit" class="submit" value="立即提交" tabindex="6"
                                     onclick="return zbp.comment.post()"> <a rel="nofollow" id="cancel-reply"
-                                    href="{随机栏目URL}" style="display:none;" title="{随机栏目}">{随机栏目}</a> </div>
+                                    href="{随机栏目URL}" style="display:none;">{随机栏目}</a> </div>
                         </form>
                     </div>
                 </article>
@@ -152,26 +151,27 @@
         </main>
         <aside class="sidebar">
             <section class="widget theme-widget wow fadeInUp" id="zbsixth_new">
-                <h3 class="hmTitle">{随机栏目}</h3>
+                <h3 class="hmTitle">{随机关键词}</h3>
                 <ul data-row="10">
-                    {loop type="arclist" row="10" tpl="" islist=""}
+                    {loop type="arclist" row="20" tpl="" islist=""}
                     <li>
-                        <div class="thumbnail"><a href="{$vo.url}" target="_blank"><img
-                                    src="{$vo.pic}" alt="{$vo.title}"></a></div>
+                        <div class="thumbnail"><a href="{$vo.url}" target="_blank"><img src="{$vo.pic}"
+                                    alt="{$vo.title}"></a></div>
                         <p><a href="{$vo.url}" title="{$vo.title}" target="_blank">{$vo.title}</a></p>
                     </li>
                     {/loop}
                 </ul>
             </section>
             <section class="widget theme-widget wow fadeInUp" id="zbsixth_cmts">
-                <h3 class="hmTitle">{随机栏目}</h3>
+                <h3 class="hmTitle">{随机关键词}</h3>
                 <ul data-row="10">
-                    {loop type="arclist" row="10" tpl="" islist=""}
-                        <li class="list cur">
-                            <div class="thumbnail"><a href="{$vo.url}" target="_blank"><img
-                                        src="{$vo.pic}" alt="{$vo.title}"></a></div>
-                            <p><i class="icon-right-open-mini"></i> <a href="{$vo.url}" title="{$vo.title}" target="_blank">{$vo.title}</a></p>
-                        </li>
+                    {loop type="arclist" row="20" tpl="" islist=""}
+                    <li class="list cur">
+                        <div class="thumbnail"><a href="{$vo.url}" target="_blank"><img src="{$vo.pic}"
+                                    alt="{$vo.title}"></a></div>
+                        <p><i class="icon-right-open-mini"></i> <a href="{$vo.url}" title="{$vo.title}"
+                                target="_blank">{$vo.title}</a></p>
+                    </li>
                     {/loop}
                 </ul>
             </section>
@@ -180,21 +180,20 @@
                 <ul data-row="10">
                     <li class="hots"><i class="first">1</i><a href="{随机栏目URL}" title="{$vo.title}"
                             target="_blank">{$vo.title}</a></li>
-                    <li class="hots"><i class="second">2</i><a href="{随机栏目URL}" title="{随机栏目}"
-                            target="_blank">{随机栏目}</a></li>
-                    <li class="hots"><i class="third">3</i><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a>
+                    <li class="hots"><i class="second">2</i><a href="{随机内容URL}" target="_blank">{随机标题}</a></li>
+                    <li class="hots"><i class="third">3</i><a href="{随机内容URL}" target="_blank">{随机标题}</a>
                     </li>
-                    <li class="hots"><i>4</i><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></li>
-                    <li class="hots"><i>5</i><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></li>
-                    <li class="hots"><i>6</i><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></li>
-                    <li class="hots"><i>7</i><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></li>
-                    <li class="hots"><i>8</i><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></li>
-                    <li class="hots"><i>9</i><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></li>
-                    <li class="hots"><i>10</i><a href="{随机栏目URL}" title="{随机栏目}" target="_blank">{随机栏目}</a></li>
+                    <li class="hots"><i>4</i><a href="{随机栏目URL}" target="_blank">{随机栏目}</a></li>
+                    <li class="hots"><i>5</i><a href="{随机栏目URL}" target="_blank">{随机栏目}</a></li>
+                    <li class="hots"><i>6</i><a href="{随机栏目URL}" target="_blank">{随机栏目}</a></li>
+                    <li class="hots"><i>7</i><a href="{随机栏目URL}" target="_blank">{随机栏目}</a></li>
+                    <li class="hots"><i>8</i><a href="{随机栏目URL}" target="_blank">{随机栏目}</a></li>
+                    <li class="hots"><i>9</i><a href="{随机栏目URL}" target="_blank">{随机栏目}</a></li>
+                    <li class="hots"><i>10</i><a href="{随机栏目URL}" target="_blank">{随机栏目}</a></li>
                 </ul>
             </section>
             <section class="widget theme-widget wow fadeInUp" id="zbsixth_follow">
-                <h3 class="hmTitle">{随机栏目}</h3>
+                <h3 class="hmTitle">{随机内容URL}</h3>
                 <div class="follow">
                     <div class="qrcode">
                         <ul data-row="1">
@@ -218,18 +217,18 @@
     </div>
     <footer id="footer">
         <div class="inner">
-            <div id="copyright"> Powered By <a href="{随机栏目URL}" target="_blank" title="{随机栏目}">{随机栏目}</a>. Theme By <a
-                    href="" title="{随机栏目}" target="_blank">{$keywords}</a> </div>
-            
+            <div id="copyright">
+                Powered By
+                <a href="{随机内容URL}" target="_blank">{随机标题}</a>. Theme By
+                <a href="{随机内容URL}" target="_blank">{$keywords}</a>
+            </div>
         </div>
     </footer>
     <div id="shareWX">
         <div class="box">
             <div id="qr"></div>
-            <div class="text">
-                <p>{随机栏目}</p>
-                <p>{随机栏目}</p>
-            </div>
+            <p>{随机栏目}</p>
+            <p>{网站地址}</p>
         </div>
     </div>
     <script> 	var _url = 'https://www.heiliao-bu-dayang.com/category-2.html'; </script>

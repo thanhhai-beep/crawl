@@ -1,0 +1,170 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="applicable-device" content="mobile">
+	<meta http-equiv="Cache-Control" content="no-transform">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<meta id="viewport" name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>{$toptitle}</title>
+	<meta name="description" content="{$description}">
+	<meta name="Keywords" content="{$keywords}">
+	<script>var _webInfo = { Username: "", Type: "0", Id: "61675", SoftName: "我就要吃鸡", cid: "205", rid: "204", is_ordered: "0", ordered_num: "0" };</script>
+	<script type="text/javascript" src="{$theme_path}/js/jq1.9.js"></script>
+	<script type="text/javascript" src="{$theme_path}/js/commons.js?v3.0"></script>
+	<link rel="stylesheet" href="{$theme_path}/css/down.css?v1.0">
+</head>
+
+<body id="down-page">
+	<header class="xq-top">
+		<a href="/" id="logo" class="sback"></a>
+		<p class="title"><a href="/">{网站地址}</a> ● <a href="{随机栏目URL}">{随机栏目}</a></p>
+
+		<p id="mcate"><em>分类</em><b>分类</b></p>
+		<div class="xq-nav">
+			<ul data-row="5">
+				{loop type="catelog" row="5" tpl="" islist=""}
+				<li><a href="{$vo.url}">{$vo.title}</a></li>
+				{/loop}
+			</ul>
+		</div>
+	</header>
+	<header id="info" class="bottom_bor" tort="0">
+		<img src="{$pic}" alt="{$title}">
+		<div class="name">
+			<h2>{$title}</h2>
+			<h1 style="font-size: 16px;">{$keywords}</h1>
+			<span class="ver">
+				{randstr type="2" num="1,2"/}.{randstr type="2" num="2"/}
+			</span>
+		</div>
+		<p>
+			<span>大小：{randstr type="2" num="1,2"/}.{randstr type="2" num="2"/}MB</span>
+			<span>更新：{$postdate}</span>
+		</p>
+		<p><span>类别：<s class="cata">{randstr type="3" num="4,6"/}</s></span>
+			<span id="ResSystem">系统：{randstr type="4" num="4,6"/}</span>
+		</p>
+		<span id="btns">
+			<a href="" class="dbtn" rel="nofollow" isdown="2" referrerpolicy="unsafe-url">立即下载</a>
+		</span>
+	</header>
+	<!-- 游戏介绍 -->
+	<nav id="tab"><span class="cur">内容介绍</span><span><i class="plnum"></i></span></nav>
+	<section class="cont bottom_bor">
+		<section class="xyc">
+			<div id="wrapper">
+				<div id="scroller">
+					<ul id="thelist" data-row="4">
+						{loop type="arclist" row="4" tpl="" islist=""}
+						<li>
+							<img src="{$vo.pic}" alt="{$vo.title}">
+						</li>
+						{/loop}
+					</ul>
+				</div>
+			</div>
+		</section>
+		<div class="intro">
+			<div id="details">
+				{$keywords}
+				{$body}
+			</div>
+		</div>
+		<div id="xgk">
+			<ul data-row="0">
+			</ul>
+		</div>
+	</section>
+	<section class="bottom_bor rela_down pictxt p10">
+		<div class="d_title"><em>{$keywords} 相关下载</em></div>
+		<div id="tags-main3">
+			<div class="tags-main-ul">
+				{loop type="arclist" row="30" tpl="" islist=""}
+				<li>
+					<a href="{$vo.url}" class="img">
+						<img class="lazy" data-original="{$vo.pic}" src="{$vo.pic}" alt="{$vo.title}">
+						<span>{$vo.title}</span>
+						<em>详情</em>
+					</a>
+				</li>
+				{/loop}
+			</div>
+		</div>
+		<div class="pagenum"></div>
+	</section>
+	<!-- 排行榜 -->
+	<section class="bottom_bor rank p10">
+		<div class="d_title">
+			<div class="tab-panel d_title_r">
+				<ul data-row="2">
+					<li>游戏排行榜</li>
+					<li class="active">最热排行</li>
+				</ul>
+			</div><em>{$keywords} 游戏排行榜</em>
+		</div>
+		<div class="tab-content">
+			<div class="list">
+				<ul data-row="20">
+					{loop type="arclist" row="30" tpl="" islist=""}
+					<li>
+						<a href="{$vo.url}" class="img">
+							<img class="lazy" data-original="{$vo.pic}" src="{$vo.pic}">
+						</a>
+						<p>
+							<a href="{$vo.url}">{$vo.title}</a>
+							<em class="lstar4"></em>
+							<span>{randstr type="3" num="4,6"/}<u>
+									{randstr type="2" num="1,2"/}.{randstr type="2" num="2"/}MB</u>
+								{randstr type="2" num="1,2"/}.{randstr type="2" num="2"/}
+							</span>
+						</p>
+						<a href="{$vo.url}" class="cir_btn">详情</a>
+					</li>
+					{/loop}
+				</ul>
+			</div>
+		</div>
+		<div class="tab-content">
+			<div class="list">
+				<ul data-row="30">
+					{loop type="arclist" row="30" tpl="" islist=""}
+					<li>
+						<a href="{$vo.url}" class="img">
+							<img class="lazy" data-original="{$vo.pic}" src="{$vo.pic}">
+						</a>
+						<p>
+							<a href="{$vo.url}">{$vo.title}</a>
+							<em class="lstar3"></em>
+							<span>
+								{randstr type="3" num="4,6"/}<u>
+									{randstr type="2" num="1,2"/}.{randstr type="2" num="2"/}MB</u>
+								{randstr type="2" num="1,2"/}.{randstr type="2" num="2"/}
+							</span>
+						</p><a href="{$vo.url}" class="cir_btn">详情</a>
+					</li>
+					{/loop}
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- 实时热词 -->
+	<section class="hot_gamerec bottom_bor p10">
+		<div class="d_title"><em>实时热词</em></div>
+		<div class="dcatetory hot_game">
+		</div>
+	</section>
+	<ul class="i-f-nav" data-row="3">
+		{loop type="arclist" row="3" tpl="" islist=""}
+		<li><a href="{$vo.url}">{$vo.title}</a></li>
+		{/loop}
+	</ul>
+	<footer class="bottom"><a id="goTop" href="#">返回顶部</a>
+		<p><a href="/sitemap.html">网站地图</a>|<a href="/">{网站地址}</a></p>
+		<p>{$keywords}</p>
+	</footer>
+	<script type="text/javascript" charset="UTF-8" src="{$theme_path}/js/down.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="{$theme_path}/js/down.min.js?v5.0"></script>
+	<script type="text/javascript" charset="UTF-8" src="{$theme_path}/js/count.js?v2.0"></script>
+	<script type="text/javascript">viewscount("204", "2", "61675", "1");</script>
+</body>

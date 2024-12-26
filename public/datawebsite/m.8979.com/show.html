@@ -1,0 +1,485 @@
+<head>
+    <meta charset="utf-8">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="{$theme_path}/css/mui.min.css" rel="stylesheet">
+    <link href="{$theme_path}/css/app.css" rel="stylesheet">
+    <link href="{$theme_path}/css/dropload.css" rel="stylesheet">
+    <link href="{$theme_path}/css/stylesheet.css" rel="stylesheet">
+    <link href="{$theme_path}/css/new_game_detail.css" rel="stylesheet">
+    <link href="{$theme_path}/css/new_news.css" rel="stylesheet">
+    <link href="{$theme_path}/css/photoswipe.css" rel="stylesheet">
+    <link href="{$theme_path}/css/default-skin.css" rel="stylesheet">
+    <script src="{$theme_path}/js/jquery-1.11.1.js"></script>
+    <script src="{$theme_path}/js/toWWW.js"></script>
+</head>
+
+<body>
+    <script src="{$theme_path}/js/loading.js"></script>
+    <script>
+        var username = "chenlifeng";
+        isDetail = false;
+        $(function () {
+            init();
+        })
+
+        function init() {
+            if (!isDetail) {
+                sessionStorage.setItem('dlName', username);
+            }
+        }
+
+        // 修改个人渠道号
+        function setUrl(azurl = "", iosurl = "", azboxurl = "", iosboxurl = "") {
+            let name = sessionStorage.getItem("dlName");
+            let id = "";
+            if (name == "wuyingjie") {
+                id = "3975";
+            }
+            if (name == "chenlifeng") {
+                id = "5060";
+            }
+            if (name == "caizhihua") {
+                id = "5106";
+            }
+            let Channel_Number = '3417,3401,2933,2805,1173'.split(",");
+            for (let i in Channel_Number) {
+                if (id) {
+                    if (azurl && azurl.indexOf("3733") != -1 && azurl.indexOf(Channel_Number[i]) != -1) {
+                        azurl = azurl.replace(("c=" + Channel_Number[i]), ("c=" + id));
+                        azurl = azurl.replace(("cps" + Channel_Number[i]), ("cps" + id));
+                    }
+                    if (iosurl && iosurl.indexOf("3733") != -1 && iosurl.indexOf(Channel_Number[i]) != -1) {
+                        iosurl = iosurl.replace(("c=" + Channel_Number[i]), ("c=" + id));
+                        iosurl = iosurl.replace(("cps" + Channel_Number[i]), ("cps" + id));
+                    }
+                    if (azboxurl && azboxurl.indexOf("3733") != -1 && azboxurl.indexOf(Channel_Number[i]) != -1) {
+                        azboxurl = azboxurl.replace(("c=" + Channel_Number[i]), ("c=" + id));
+                        azboxurl = azboxurl.replace(("cps" + Channel_Number[i]), ("cps" + id));
+                    }
+                    if (iosboxurl && iosboxurl.indexOf("3733") != -1 && iosboxurl.indexOf(Channel_Number[i]) != -1) {
+                        iosboxurl = iosboxurl.replace(("c=" + Channel_Number[i]), ("c=" + id));
+                        iosboxurl = iosboxurl.replace(("cps" + Channel_Number[i]), ("cps" + id));
+                    }
+                }
+            }
+
+            return {
+                "azurl": azurl,
+                "iosurl": iosurl,
+                'azboxurl': azboxurl,
+                'iosboxurl': iosboxurl
+            }
+        }
+    </script>
+    <style>
+        .mui-search .mui-placeholder {
+            height: 43px;
+            line-height: 43px;
+        }
+    </style>
+    <header class="mui-bar mui-bar-nav new-header">
+        <div class="back_btn">
+            <a href="/"></a>
+        </div>
+        <p class="page_title">{网站名称}</p>
+        <div class="right_box">
+            <a href="/" class="box"></a>
+            <a href="/" class="home"></a>
+        </div>
+    </header>
+    <div class="news_box mui-content t_container">
+        <div class="header-nav">
+            {loop type="catelog" row="6" tpl="" islist=""}
+            <a href="{$vo.url}" class="header-nav-item">{$vo.title}</a>
+            {/loop}
+            <a href="{随机栏目URL}" class="header-nav-item active">{随机栏目}</a>
+        </div>
+        <div class="position_box">
+            <a href="/">{$toptitle}</a> &gt;
+            <a href="{随机栏目URL}">{随机栏目}</a> &gt;
+            <span>{$title}</span>
+        </div>
+
+        <div class="article news_detail bg gradient">
+            <h1>{$keywords}</h1>
+            <p class="tips"><span>{$postdate}</span><span>来源：{随机数字}下载站
+                </span><span>作者：{randstr type="3" num="4,6"/}</span>
+            </p>
+            <div class="u-content-box box">
+                {$body}
+            </div>
+        </div>
+        <div class="ckgd clearfix">
+            <div class="more_btn">展开 ↓</div>
+        </div>
+        <div class="app_down bg">
+            <div class="app_download">
+                <a href="{随机内容URL}" class="app_box yueyou">
+                    <img src="{随机图片}" alt="{随机标题}">
+                    <p>{$keywords} {随机标题}</p>
+                </a>
+            </div>
+            <div class="info-super">
+                {loop type="arclist" row="20" tpl="" islist=""}
+                <div class="info-item"><i></i>
+                    <div class="text-super">
+                        {$vo.title}
+                    </div>
+                </div>
+                {/loop}
+                <p class="close_more_btn">收起权益∧</p>
+            </div>
+        </div>
+        <!-- 游戏下载 -->
+        <div class="game-item bg">
+            {loop type="arclist" row="1" tpl="" islist=""}
+            <div class="game-inner gd-ad2-stat-recsys-click  gd-ad2-explore">
+                <a href="{$vo.url}">
+                    <div class="game-icon">
+                        <img src="{$vo.pic}" alt="{$vo.title}">
+                    </div>
+                    <div class="game-detail">
+                        <div class="game-name">
+                            {$keywords} {$vo.title}
+                        </div>
+                        <div class="game-info">
+                            {randstr type="3" num="4,6"/}&nbsp;
+                            <i></i>{randstr type="2" num="2"/}.{randstr type="2" num="2,3"/}GB
+                        </div>
+                        <div class="game-one-word">
+                            {$vo.info}
+                        </div>
+                    </div>
+                </a>
+                <a href="{$vo.url}" class="game-recommend-download down-btn gameBox_loadBtn yueyou">专区</a>
+                <a href="{$vo.url}" class="game-recommend-download down-btn game_loadBtn">安装</a>
+            </div>
+            {/loop}
+            <ul data-row="3">
+                <div class="t_title">安装<span style="color: #fb9143;">逆水寒手游</span>的人还会下载</div>
+                {loop type="arclist" row="10" tpl="" islist=""}
+                <li>
+                    <div class="game-inner gd-ad2-stat-recsys-click  gd-ad2-explore ">
+                        <a href="{$vo.url}">
+                            <div class="game-icon">
+                                <img src="{$vo.pic}" alt="{$vo.title}">
+                            </div>
+                            <div class="game-detail">
+                                <div class="game-name">
+                                    {$vo.title}
+                                </div>
+                                <div class="game-info">
+                                    {randstr type="3" num="4,6"/}&nbsp;
+                                    <i></i>{randstr type="2" num="2"/}.{randstr type="2" num="2,3"/}GB
+                                </div>
+                                <div class="game-one-word">
+                                    {$vo.info}
+                                </div>
+                            </div>
+                        </a>
+                        <a href="{随机栏目URL}" class="game-recommend-download down-btn">安装</a>
+                    </div>
+                </li>
+                {/loop}
+            </ul>
+        </div>
+        <!-- 礼包领取 -->
+        <!-- 更多游戏推荐 -->
+        <div class="game_info_box mt10">
+            <div class="hd-one">
+                <h2>{$keywords} 其他玩家还在玩的游戏推荐</h2>
+                <a href="{随机栏目URL}">更多></a>
+            </div>
+            <ul class="normal-app-list" style="display: block;" data-row="4">
+                {loop type="arclist" row="10" tpl="" islist=""}
+                <li class="count-list-item">
+                    <a href="{$vo.url}" class="count-click">
+                        <img class="game-icon" src="{$vo.pic}" alt="{$vo.title}">
+                        <p class="game-title">{$vo.title}</p>
+                        <p class="type-game-detail">
+                            {randstr type="3" num="4,6"/} |
+                            {randstr type="2" num="2"/}.{randstr type="2" num="2,3"/}GB
+                        </p>
+                    </a>
+                    <a href="{$vo.url}" class="btn">安装</a>
+                </li>
+                {/loop}
+            </ul>
+        </div>
+        <!-- 相关文章 -->
+        <div class="item_box news_box">
+            <div class="hd-one">
+                <h2>{随机栏目}</h2>
+                <a href="{随机栏目URL}">{随机栏目}</a>
+            </div>
+            <div class="hot_strategy bg">
+                <ul data-row="10">
+                    {loop type="arclist" row="10" tpl="" islist=""}
+                    <li class="flex">
+                        <i class="icon_i"></i>
+                        <a class="flex_grow" href="{$vo.url}" title="{$vo.title}">{$vo.title}</a>
+                        <span>{随机时间}</span>
+                    </li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+        <!-- 热门游戏 -->
+        <div class="item_box news_box">
+            <div class="hd-one">
+                <h2>{$keywords} 本周热门游戏</h2>
+                <ul class="tab_list" data-row="3">
+                    <li class="on">满VIP版</li>
+                    <li class>
+                        变态版
+                    </li>
+                    <li class>
+                        折扣版
+                    </li>
+                </ul>
+            </div>
+            <div class="Cont-J">
+                <ul data-row="4">
+                    {loop type="arclist" row="10" tpl="" islist=""}
+                    <li>
+                        <a class="CJ-explain" href="{$vo.url}">
+                            <div>
+                                <img src="{$vo.pic}" data-src="{$vo.pic}" alt="{$vo.title}" class="loaded"
+                                    data-was-processed="true">
+                            </div>
+                        </a>
+                        <div class="CJ-sub">
+                            <div><a href="{$vo.url}">{$vo.title}</a>
+                                <dl>
+                                    <dt>{randstr type="3" num="4,6"/}&nbsp;</dt>
+                                    <dd>{randstr type="2" num="2"/}.{randstr type="2" num="2,3"/}MB</dd>
+                                </dl>
+                            </div>
+                            <a href="{$vo.url}" class="JC_btn2">下 载</a>
+                        </div>
+                        <p>{$vo.info}</p>
+                    </li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="Cont-J">
+                <ul data-row="4">
+                    {loop type="arclist" row="10" tpl="" islist=""}
+                    <li>
+                        <a class="CJ-explain" href="{$vo.url}">
+                            <div>
+                                <img src="{$vo.pic}" data-src="{$vo.pic}" alt="{$vo.title}" class="loaded"
+                                    data-was-processed="true">
+                            </div>
+                        </a>
+                        <div class="CJ-sub">
+                            <div><a href="{$vo.url}">{$vo.title}</a>
+                                <dl>
+                                    <dt>{randstr type="3" num="4,6"/}&nbsp;</dt>
+                                    <dd>{randstr type="2" num="2"/}.{randstr type="2" num="2,3"/}MB</dd>
+                                </dl>
+                            </div>
+                            <a href="{$vo.url}" class="JC_btn2">下 载</a>
+                        </div>
+                        <p>{$vo.info}</p>
+                    </li>
+                    {/loop}
+                </ul>
+            </div>
+            <div class="Cont-J">
+                <ul data-row="4">
+                    {loop type="arclist" row="10" tpl="" islist=""}
+                    <li>
+                        <a class="CJ-explain" href="{$vo.url}">
+                            <div>
+                                <img src="{$vo.pic}" data-src="{$vo.pic}" alt="{$vo.title}" class="loaded"
+                                    data-was-processed="true">
+                            </div>
+                        </a>
+                        <div class="CJ-sub">
+                            <div><a href="{$vo.url}">{$vo.title}</a>
+                                <dl>
+                                    <dt>{randstr type="3" num="4,6"/}&nbsp;</dt>
+                                    <dd>{randstr type="2" num="2"/}.{randstr type="2" num="2,3"/}MB</dd>
+                                </dl>
+                            </div>
+                            <a href="{$vo.url}" class="JC_btn2">下 载</a>
+                        </div>
+                        <p>{$vo.info}</p>
+                    </li>
+                    {/loop}
+                </ul>
+            </div>
+        </div>
+        <div class="bg mt10">
+            <div class="hd-one">
+                <h2>{$keywords}</h2>
+            </div>
+            <div class="newLoad-tag">
+                {loop type="arclist" row="4" tpl="" islist=""}
+                <a target="_blank" class="tag_type{$vo.i}" href="{$vo.url}">{$vo.title}</a>
+                {/loop}
+                {loop type="arclist" row="4" tpl="" islist=""}
+                <a target="_blank" class="tag_type{$vo.i}" href="{$vo.url}">{$vo.title}</a>
+                {/loop}
+            </div>
+        </div>
+        <!-- 推荐应用 -->
+        <div class="game_box_down">
+            <div class="game-app">
+                <a href="javascript:;" class="yueyou">
+                    <img src="{$vo.pic}" alt="{$vo.title}">
+                    <p>{随机栏目}</p>
+                    <span class="btn"></span>
+                </a>
+            </div>
+        </div>
+        <!-- 底部文字 -->
+        <div class="footer_text noNav_footer">
+            <footer>
+                <small>© Copyright8979下载站<br>
+                    {网站名称}|{$keywords}
+                </small>
+            </footer>
+        </div>
+    </div>
+    <!-- 大图 -->
+    <div class="my-gallery" data-pswp-uid="1" style="display:none;">
+    </div>
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 返回顶部 -->
+    <div class="backtop">返回顶部</div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#apkclose").click(function () {
+                $(".ui-footer-btnall").hide();
+            });
+        });
+    </script>
+
+    <script src="{$theme_path}/js/swiper.min.js"></script>
+    <script type="text/javascript" src="{$theme_path}/js/netgame.js"></script>
+    <script src="{$theme_path}/js/dropload.min.js"></script>
+    <script src="{$theme_path}/js/photoswipe.js"></script>
+    <script src="{$theme_path}/js/photoswipe-ui-default.min.js"></script>
+    <script src="{$theme_path}/js/common.js"></script>
+
+    <script>
+        addBoxLink('.app_box')
+        addBoxLink('.gameBox_loadBtn')
+        tabClick('.tab_list li', '.Cont-J')
+        clickSelectGameBox()
+        // 图片调取
+        $(function () { //新增 js 2020.6.4
+            var _img = $(".article").find("img");
+            for (var i = _img.length - 1; i >= 0; i--) {
+                if (_img[i].width < 100 && _img[i].height < 100) {
+                    _img.splice(i, 1);
+                }
+            }
+            var res = '';
+            for (var i = 0; i < _img.length; i++) {
+                res += "<figure><div class='img-dv'><a href='" + _img[i].currentSrc + "'><img src='" + _img[i]
+                    .currentSrc + "'></a></div></figure>"
+            }
+            $('.my-gallery').html(res);
+            var _a = _img.parent();
+            var _f = $('figure');
+            jQuery.each(_a, function (i) {
+                $(this).on('click', function (e) {
+                    e.preventDefault();
+                    _f.eq(i).find('a').trigger('click');
+                })
+            });
+        })
+    </script>
+    <script>
+        $(function () {
+            var _h = $(window).height() - 100;
+            var nr_h = $('.news_detail').height();
+            if (nr_h <= _h) {
+                $('.ckgd').hide();
+                $('.news_detail').removeClass('gradient');
+            } else {
+                $('.ckgd').hide();
+                $('.news_detail').removeClass('gradient');
+                // $('.news_detail').css('height', _h);
+            }
+            var useragent = navigator.userAgent;
+            var i = true;
+            $('.ckgd').click(function () {
+                if ($('.mask_box').size()) {
+                    $('.news_detail').css('height', _h).addClass('gradient');
+                    $('.more_btn').text('展开 ↓');
+                    i = !i;
+                } else {
+                    if (i) {
+                        $('.news_detail').css('height', 'auto').removeClass('gradient');
+                        $('.more_btn').text('收起 ↑');
+                    } else {
+                        $('.news_detail').css('height', _h).addClass('gradient');
+                        $('.more_btn').text('展开 ↓');
+                    }
+                    i = !i;
+                }
+            })
+            $("body").on('click', ".popup_box .btns span", function () {
+                $('.mask_box').hide();
+                if (i) {
+                    $('.news_detail').css('height', 'auto').removeClass('gradient');
+                    $('.more_btn').text('收起 ↑');
+                }
+                i = !i;
+            })
+            $(".popup_box .btns .down_btn").click(function () {
+                window.location.href = $(this).data("url")
+            })
+
+        })
+    </script>
+    <script src="{$theme_path}/js/wxqq.js"></script>
+    <script src="{$theme_path}/js/tongji.js"></script>
+    <script src="{$theme_path}/js/noSafariPopup.js"></script>
+</body>
+<script src="{$theme_path}/js/detail_tongji.js"></script>

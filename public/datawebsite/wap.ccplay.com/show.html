@@ -1,0 +1,1317 @@
+<head>
+	<link rel="canonical" href="{$thisurl}">
+	<meta charset="UTF-8">
+	<meta content="{$description}" name="description">
+	<meta content="{$keywords}" name="keywords">
+	<title>{$toptitle}</title>
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="{$theme_path}/css/reset.css?v=20241219">
+	<link rel="stylesheet" href="{$theme_path}/css/common.css?v=20241219">
+	<link rel="stylesheet" href="{$theme_path}/css/basic.css?v=20241219">
+	<link rel="stylesheet" href="{$theme_path}/css/publicity.css?v=20241219">
+	<link rel="shortcut icon" href="{$theme_path}/images/favicon.png" type="image/png">
+	<style>
+		.download-btn-disabled {
+			background: #d8d8d8 !important;
+			color: #929292 !important;
+		}
+	</style>
+	<script>
+		var resourceHost = "/";
+	</script>
+	<link rel="stylesheet" href="{$theme_path}/css/idangerous.swiper.css?v=20241219">
+	<script src="{$theme_path}/js/font.js?v=20241219"></script>
+	<style>
+		.header-top .appoint-load-btn {
+			position: absolute;
+			right: .18rem;
+			top: .2rem;
+			padding: 0 .16rem;
+			height: .5rem;
+			background: #d33d3e;
+			color: #FFF;
+			font-size: .2489rem;
+			border-radius: .08rem;
+		}
+
+		.pop-up-with-ccplay {
+			position: fixed;
+			z-index: 1000;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			display: none;
+			align-items: center;
+			justify-content: center;
+			background: rgba(0, 0, 0, 0.7);
+		}
+
+		.pop-up-with-ccplay .pop-up-with-ccplay-main {
+			position: relative;
+			width: 70%;
+			background: #ffffff;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		.pop-up-with-ccplay .pop-up-with-ccplay-main .img-close {
+			position: absolute;
+			right: 0.2rem;
+			top: 0.2rem;
+			width: 0.3rem;
+			height: 0.3rem;
+		}
+
+		.pop-up-with-ccplay .pop-up-with-ccplay-main div {
+			font-size: 0.20rem !important;
+		}
+
+		.pop-up-with-ccplay .pop-up-with-ccplay-main span {
+			color: #777;
+			font-size: 0.20rem !important;
+		}
+
+		.pop-up-with-ccplay .pop-up-with-ccplay-main>div {
+			margin-bottom: 11px;
+		}
+
+		.pop-up-with-ccplay .pop-up-with-ccplay-main .pop-up-with-title {
+			color: #e60012;
+		}
+
+		.pop-up-with-ccplay .pop-up-with-ccplay-main .pop-up-with-title img {
+			height: 6px;
+			margin-left: 5px;
+			position: relative;
+			top: -1px;
+		}
+
+		.pop-up-with-ccplay .pop-up-with-ccplay-main .pop-up-with-particulars {
+			display: flex;
+			align-items: end;
+		}
+
+		.pop-up-with-ccplay .pop-up-with-ccplay-main .pop-up-with-name {
+			margin-right: 20px;
+		}
+
+		.pop-up-with-ccplay .pop-up-with-ccplay-main .pop-up-with-statement span {
+			color: #e60012;
+			font-weight: bold;
+			margin-right: 22px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="header-top">
+			<dl class="dl fl">
+				<dt><a href="/"><img src="{$theme_path}/images/logo_share.png" alt="{$vo.title}"></a>
+				</dt>
+				<dd>
+					<p class="share_tit">{随机栏目}</p>
+					<h1 class="share_desc">{$keywords}</h1>
+				</dd>
+			</dl>
+
+			<a href="{随机内容URL}" class="button fr ccLoad">立即下载</a>
+		</div>
+		<a style="background: #f9f0f0;padding: 0.15rem 0.2rem;color: #d33d3e;display: flex;align-items: center;justify-content: space-between;font-size: 0.2rem;"
+			href="/">
+			{随机标题}
+			<img src="{随机图片}" style="width: 0.1rem;height: 0.2rem" alt="{$vo.title}">
+		</a>
+		<header class="common_header">
+			<a href="{随机栏目URL}" class="icon icon_back">{随机栏目}</a>
+			<h2 class="overflow">{随机栏目}</h2>
+		</header>
+		<main>
+			<section class="bread-nav">
+				<a href="{随机栏目URL}">{随机栏目}</a>
+				<span>{$title}</span>
+			</section>
+
+			<section>
+				<div class="common_box" style="border-top: none;">
+					<div class="game_item">
+						<dl class="dl" style="height: auto">
+							<dt class="dt-free">
+								<img src="{$pic}" alt="{$title}" title="{$title}">
+							</dt>
+							<dd>
+								<p class="item_tit overflow">{$title}</p>
+								<p class="item_opts">
+									<!-- <span>角色</span> |  -->
+									<span>{$keywords} 人气游戏</span> |
+									<span>{randstr type="2" num="3"/}.{randstr type="2" num="2"/}MB</span>
+								</p>
+								<div class="game_conditions">
+									<span>
+										<i class="icon icon_advert"></i>{随机时间}
+									</span>
+									<span>
+										<i class="icon icon_wifi"></i>需联网
+									</span>
+									<span>
+										<i class="icon icon-google"></i>{随机关键词}
+									</span>
+								</div>
+							</dd>
+						</dl>
+
+						<div class="score">
+							<div class="score-point">v{randstr type="2" num="2"/}.{randstr type="2" num="2"/}</div>
+							<div class="star_score">
+								<div class="star_score_active"></div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="download-xiaomi"
+						style="margin: 0 auto;width: 4.64rem;font-size: 0.2rem;display: none;margin-top: 0.6rem">
+						直接下载游戏
+					</div>
+
+					<a style="display: none;background: #e60012;color: #ffffff" href="/"
+						class="pt-load download-way-pt download-xiaomi">普通下载</a>
+					<div class="download-xiaomi"
+						style="margin: 0 auto;width: 4.64rem;font-size: 0.2rem;display: none;margin-top: 0.6rem">
+						{随机关键词}, {随机关键词}
+					</div>
+					<a href="/" class="gs-load download-way-gs " data-url="/" data-id="220219">虫虫助手下载</a>
+					<div
+						style="display: flex;justify-content: center;align-items: center;color: #a29d9d;padding: 5px 0px;">
+						<span style="border-bottom: 1px solid #e60012;color: #e60012;font-size: 0.2rem"
+							onclick="openPopUpWithCcplay()">
+							关于虫虫
+						</span>
+					</div>
+					<div class="pop-up-with-ccplay" onclick="closePopUpWithCcplay()">
+						<div class="pop-up-with-ccplay-main">
+							<img class="img-close" src="{$vo.pic}" alt="{$vo.title}" onclick="closePopUpWithCcplay()">
+							<div class="pop-up-with-particulars">
+								<div class="pop-up-with-name">
+									<span>应用名：</span>{$keywords}
+								</div>
+								<div class="pop-up-with-versions">
+									<span>版本：</span>V{randstr type="2" num="2"/}.{randstr type="2" num="2"/}
+								</div>
+							</div>
+							<div class="pop-up-with-developers">
+								<span>开发商：</span>{$title}
+							</div>
+							<div class="pop-up-with-statement">
+								<span onclick="openUrl('/')">隐私政策
+									&gt;</span>
+								<span onclick="openUrl('/')">应用权限
+									&gt;</span>
+							</div>
+						</div>
+					</div>
+					<div
+						style="display: flex;justify-content: center;align-items: center;color: #a29d9d;padding: 5px 0px;">
+						<a style="border-bottom: 1px solid #e60012;color: #e60012;font-size: 0.2rem"
+							href="{随机栏目URL}">{随机栏目}</a>
+					</div>
+
+					<div class="download-way-xiaomi"
+						style="display: flex;justify-content: center;align-items: center;color: #a29d9d;padding: 5px 0px;padding-bottom: 20px">
+						<div class="download-way" checked="checked">
+							<div class="download-icon download-icon-opt"></div>
+							<div class="download-icon download-icon-unselected"></div>
+							{随机关键词}
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="common_tab classify_tab clearfix">
+					<a href="{随机栏目URL}" onclick="tabClick(this)" data-taburl="/" class="common_tab_active">{随机栏目}</a>
+					<a href="{随机栏目URL}" onclick="tabClick(this)" data-taburl="/">{随机栏目}</a>
+					<a href="{随机栏目URL}" onclick="tabClick(this)" data-taburl="/">{随机栏目}</a>
+				</div>
+			</section>
+			<div id="tab_content_container">
+				<section>
+					<div class="sec_head clearfix">
+						<h2 class="l">{$keywords} {随机栏目}</h2>
+						<div class="pagination"></div>
+					</div>
+
+					<div class="screenshot">
+						<div class="screenshot_box">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									{loop type="arclist" row="6" tpl="" islist=""}
+									<div class="swiper-slide">
+										<img src="{$vo.pic}" alt="{$vo.title}" title>
+									</div>
+									{/loop}
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="recommond">
+						<h2>{随机栏目}</h2>
+						<p>{随机标题}</p>
+					</div>
+
+					<div class="recommond">
+						<div class="recommond_head">
+							<h2>简介</h2>
+							<a href="javascript:void(0)" class="open_txt">
+								<i class="icon icon_txt_open"></i>
+							</a>
+						</div>
+						<div class="recommond_txt">
+							{$body}
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="recommond">
+						<h2>{$keywords} 相关信息</h2>
+						<div class="detail_related">
+							<p>版本：{randstr type="2" num="2"/}.{randstr type="2" num="1"/}.{randstr type="2" num="2"/}
+							</p>
+							<p>时间：{$postdate}</p>
+							<p>语言：{运行时间}</p>
+							<p style="margin-bottom: 0.08rem">开发商：{随机关键词}</p>
+							<div class="PrivacyRights">
+								<div>{随机栏目}</div>
+								<div>{随机栏目}</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer style="margin-bottom: -0.2rem;">
+			<div class="friend_link">
+				<div class="f_tit">友情链接</div>
+				<div class="f_link">
+					<a target="_blank" href="{随机栏目URL}">{随机栏目}</a>
+					<a target="_blank" href="{随机栏目URL}">{随机栏目}</a>
+					<a target="_blank" href="{随机栏目URL}">{随机栏目}</a>
+					<a target="_blank" href="{随机栏目URL}">{随机栏目}</a>
+					<a target="_blank" href="{随机栏目URL}" rel="external nofollow">{随机栏目}</a>
+					<a target="_blank" href="{随机栏目URL}">{随机栏目}</a>
+				</div>
+			</div>
+			<div class="foot_link">
+				<a href="{随机栏目URL}">{随机栏目}</a>
+				<a href="{随机栏目URL}" class="ccLoad">{随机栏目}</a><a href="{随机栏目URL}">{随机栏目}</a>
+				<a href="{随机栏目URL}">{随机栏目}</a>
+			</div>
+			<p style="position:relative;line-height: 0.2rem;">
+				<a target="_blank" href="{随机栏目URL}"
+					style="color: #adadad;font-size: .2134rem;">{随机栏目}</a>&nbsp;&nbsp;&nbsp;
+				<a target="_blank" href="{随机栏目URL}" style="color: #adadad;font-size: .2134rem;">{随机栏目}</a>
+			</p>
+			<p style="position:relative;line-height: 0.2rem;">
+				<a target="_blank" href="/" style="color: #adadad;font-size: .2134rem;">
+					闽公网备案35020302034141号
+				</a>
+			</p>
+			<p>Copyright © 2014-<span class="now-year">2023</span> Xiamen Chongchong Technology</p>
+			<p>{随机栏目}</p>
+			<p>{随机栏目}</p>
+			<p>{$keywords}</p>
+
+			<div class="lll"
+				style="margin: 0.24rem 0 0 0;height: 0.58rem;display: -webkit-flex;display: flex;align-items: center;justify-content: center;">
+				<a href="/">
+					<img src="https://resource.ccplay.com/wap/wap2/images/img_jz.png"
+						style="margin-top: 0.05rem;height: 0.49rem;width: 0.46rem;" alt="{$vo.title}">
+				</a>&nbsp;&nbsp;&nbsp;
+			</div>
+		</footer>
+
+		<div class="mask">
+			<div class="mask-text">
+				点击右上角，选择用<img src="{$vo.pic}" alt="{$vo.title}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“浏览器”打开可正常下载哦~
+			</div>
+
+			<div class="mask-icon"></div>
+		</div>
+
+		<script type="text/javascript">
+			var downloadUrl = '';
+		</script>
+		<script src="{$theme_path}/js/clipboard.min.js?v=20241219"></script>
+		<div style="position:absolute;bottom:0;height:0;width:0;overflow:hidden;opacity:0;">
+			<script type="text/javascript"
+				src="{$theme_path}/js/z_stat.php?id=1278682560&amp;web_id=1278682560"></script>
+		</div>
+		<a href="{随机栏目URL}" class="toTop">{随机栏目}</a>
+	</div>
+
+	<div class="new-download">
+		<div class="n-mask"></div>
+		<div class="new-content" style="height: 5.5rem;top: 60%">
+			<div class="new-title">请选择下载方式</div>
+			<div class="new-main">
+				<a style="margin-top: 20px" href="javascript:void(0)" class="gs-load"><i
+						class="icon icon-gs"></i>高速下载</a>
+				<p style="margin-bottom: 20px" class="new-download-tips">{随机栏目}</p>
+				<div class="new-txts" style="padding-top: 20px">
+					<p class="new-txt-item clearfix">
+						<strong>{随机栏目}</strong><span>每天上新近百款新游，尝鲜不容错过；</span>
+					</p>
+					<p class="new-txt-item clearfix">
+						<strong>{随机栏目}</strong><span>第一时间更新海内外游戏大作；</span>
+					</p>
+					<p class="new-txt-item clearfix">
+						<strong>{随机栏目}</strong><span>不同机型兼容测试，告别闪退；</span>
+					</p>
+					<p class="new-txt-item clearfix">
+						<strong>{$keywords}</strong><span>许愿想玩的游戏，小编立马上线；</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="select-download official" style="display: none">
+		<div class="select-download-main">
+			<img class="img-close" src="{$vo.pic}" alt="{$vo.title}">
+			<div class="select-download-title">下载提示</div>
+			<div class="select-download-hint">建议使用【虫虫助手】高速下载游戏~</div>
+			<div class="select-download-btn">
+				<div class="download-btn download-btn-gs download-way-gs"><i class="icon icon-gs"
+						style="position: relative;top:2px;"></i>高速下载</div>
+				<div class="download-btn download-btn-pt download-way-pt" style="display: none">普通下载</div>
+			</div>
+			<div class="select-download-describe">
+				<div class="download-way" checked="checked">
+					<div class="download-icon download-icon-opt"></div>
+					<div class="download-icon download-icon-unselected"></div>
+					优先下载安装虫虫助手，启动助手将自动下载游戏
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="select-download xiaomi" style="display: none">
+		<div class="select-download-main">
+			<img class="img-close-xiaomi" src="{$vo.pic}" alt="{$vo.title}">
+			<div class="select-download-title">下载提示</div>
+			<div class="select-download-btn-title">直接下载游戏</div>
+			<div class="select-download-btn">
+				<div class="download-btn download-btn-pt download-way-pt" style="background: #e60012;color: #FFFFFF;">
+					普通下载</div>
+			</div>
+			<div class="select-download-btn-title" style="margin-top: 10px">您也可以安装虫虫助手，启动助手将自动下载游戏</div>
+			<div class="select-download-btn">
+				<div class="download-btn download-btn-gs download-way-gs">
+					虫虫助手下载
+				</div>
+			</div>
+			<div class="with-ccplay">
+				<div class="with-title" onclick="toggleWithMain(this)">
+					关于虫虫<img class="with-title-fold" src="{$vo.pic}" alt="{$vo.title}">
+				</div>
+				<div class="with-main" style="display: none">
+					<div class="with-particulars">
+						<div class="with-name">
+							<span>应用名：</span>虫虫助手
+						</div>
+						<div class="with-versions">
+							<span>版本：</span>V4.7.7
+						</div>
+					</div>
+					<div class="with-developers">
+						<span>开发商：</span>厦门虫虫网络科技有限公司
+					</div>
+					<div class="with-statement">
+						<span onclick="openUrl('/')">隐私政策
+							&gt;</span>
+						<span onclick="openUrl('/')">{$keywords}
+							&gt;</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<style>
+		[v-cloak] {
+			display: none;
+		}
+
+		.common-autonym {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 2000;
+			display: none;
+			justify-content: center;
+			align-items: center;
+			background: rgba(0, 0, 0, 0.4);
+		}
+
+		.common-autonym .common-autonym-main {
+			width: 85%;
+			background: #FFFFFF;
+			border-radius: 0.3rem;
+			position: relative;
+		}
+
+		.common-autonym .common-autonym-main .icon-close {
+			position: absolute;
+			top: 0.25rem;
+			right: 0.25rem;
+			width: 0.25rem;
+			cursor: pointer;
+		}
+
+		.common-autonym .common-autonym-main-title {
+			padding: 0.3rem 0;
+			font-size: 0.3rem;
+			font-family: Source Han Sans CN;
+			font-weight: bold;
+			color: #333333;
+			text-align: center;
+		}
+
+		.common-autonym .common-autonym-main-explain {
+			font-size: 0.23rem;
+			font-family: Source Han Sans CN;
+			font-weight: 400;
+			color: #333333;
+			padding: 0 0.4rem;
+		}
+
+		.common-autonym .common-autonym-main-input {
+			margin: 0 0.2rem;
+			border: 1px solid #EEEEEE;
+			border-radius: 0.07rem;
+			margin-top: 0.22rem;
+			height: 0.6rem;
+		}
+
+		.common-autonym .common-autonym-main-input input {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0 0.2rem;
+			border: none;
+			background: none;
+			box-sizing: border-box;
+			font-size: 0.22rem;
+
+		}
+
+		.common-autonym .common-autonym-main-submit {
+			border-top: 1px solid #EEEEEE;
+			font-size: 0.25rem;
+			font-weight: bold;
+			color: #D33D3E;
+			text-align: center;
+			padding: 0.2rem 0;
+			margin-top: 0.22rem;
+			cursor: pointer;
+		}
+
+		.PrivacyRights {
+			display: flex;
+			align-items: center;
+			margin-bottom: 0.15rem;
+			color: #e60012;
+		}
+
+		.PrivacyRights>div {
+			margin-right: 20px;
+			cursor: pointer;
+			border-bottom: 1px solid #e60012;
+			font-size: .245rem;
+		}
+	</style>
+	<style>
+		.with-ccplay {
+			width: 85%;
+			margin: 0 auto;
+		}
+
+		.with-ccplay div {
+			font-size: 0.20rem !important;
+		}
+
+		.with-ccplay span {
+			color: #777;
+			font-size: 0.20rem !important;
+		}
+
+		.with-ccplay .with-main>div {
+			margin-bottom: 11px;
+		}
+
+		.with-ccplay .with-title {
+			color: #e60012;
+			margin-bottom: 11px;
+		}
+
+		.with-ccplay .with-title img {
+			height: 6px;
+			margin-left: 5px;
+			position: relative;
+			top: -1px;
+		}
+
+		.with-ccplay .with-title .with-title-fold {
+			transform: rotate(-90deg);
+			-ms-transform: rotate(-90deg);
+			/* IE 9 */
+			-webkit-transform: rotate(-90deg);
+			/* Safari and Chrome */
+		}
+
+		.with-ccplay .with-particulars {
+			display: flex;
+			align-items: end;
+		}
+
+		.with-ccplay .with-particulars .with-name {
+			margin-right: 20px;
+		}
+
+		.with-ccplay .with-particulars .with-versions {}
+
+		.with-ccplay .with-developers {}
+
+		.with-ccplay .with-statement span {
+			color: #e60012;
+			font-weight: bold;
+			margin-right: 22px;
+		}
+	</style>
+	<script>
+		function openUrl(url) {
+			window.open(url)
+		}
+	</script>
+	<div class="common-autonym" id="commonAutonymInteraction" v-if="open" v-cloak :style="open?'display: flex;':''">
+		<div class="common-autonym-main">
+			<div class="common-autonym-main-title">{{title}}</div>
+			<div class="common-autonym-main-explain">
+				<span v-html="explain"></span>
+			</div>
+			<div v-if="type=='1'" class="common-autonym-main-input">
+				<input type="text" placeholder="请输入姓名" id="autonymName" v-model="autonymName">
+			</div>
+			<div v-if="type=='1'" class="common-autonym-main-input">
+				<input type="text" placeholder="请输入身份证号" id="autonymNumber" v-model="autonymNumber">
+			</div>
+			<div v-if="type=='1'" class="common-autonym-main-submit" v-on:click="autonymSubmit">{{ submit }}</div>
+			<div v-if="type=='0'" class="common-autonym-main-submit" v-on:click="closeCommonAutonymInteractionVue">{{
+				submit }}</div>
+			<img src="{$vo.pic}" class="icon-close" v-on:click="closeCommonAutonymInteractionVue" alt="{$vo.title}">
+		</div>
+	</div>
+	<script src="{$theme_path}/js/vue.js?v=20241219"></script>
+	<script>
+		var autonymSubmitState = false
+		var download_url;
+		var download_id
+		var commonAutonymInteractionVue = new Vue({
+			el: '#commonAutonymInteraction',
+			data: {
+				open: false,
+				title: "游戏实名通知",
+				explain: '<span>为了加速未成年保护，落实国家先关防沉迷政策要求，游戏用户需实名认证。<span style="color: #D33D3E;">（建议下载虫虫助手，助手内实名后即可下载体验）</span></span>',
+				autonymName: "",
+				autonymNumber: "",
+				submit: "提交",
+				type: "1"
+			},
+			methods: {
+				closeCommonAutonymInteractionVue: function () {
+					this.open = false
+				},
+				autonymSubmit: function () {
+					if (autonymSubmitState) return;
+					let autonymName = $("#autonymName").val()
+					let autonymNumber = $("#autonymNumber").val()
+					if (!autonymName || autonymName == "") {
+						alert("请输入姓名")
+						return
+					}
+					if (!autonymNumber || autonymNumber == "") {
+						alert("请输入身份证号")
+						return
+					}
+					if (!checkIdcard(autonymNumber)) return;
+					if (getAge(autonymNumber) < 18) {
+						commonAutonymInteractionVue.submit = "知道了"
+						commonAutonymInteractionVue.type = "0"
+						commonAutonymInteractionVue.title = ""
+						commonAutonymInteractionVue.explain = '按照平台规则，未成年被禁止下载游戏。建议安装虫虫助手，助手内完成实名认证，搜索下载游戏。'
+						commonAutonymInteractionVue.open = true
+						return;
+					}
+					commonAutonymInteractionVue.submit = "认证中..."
+					autonymSubmitState = true
+					$.ajax({
+						url: '/',
+						dataType: "json",
+						type: "post",
+						data: {
+							data: '{"v3.sdkUser.findUserInfoWap":{"token":"innerToken","userInfo":{"idCard":"' + autonymNumber + '","realName":"' + autonymName + '"}}}'
+						},
+						async: false,
+						success: function (data) {
+							autonymSubmitState = false
+							data = data["v3.sdkUser.findUserInfoWap"]
+							if (data.isSuccess) {
+								if (data.results && data.results.status == 1) {
+									commonAutonymInteractionVue.open = false
+									document.location.href = download_url
+								} else {
+									commonAutonymInteractionVue.submit = "提交"
+									alert("实名信息认证失败，请重新输入")
+								}
+
+							} else {
+								commonAutonymInteractionVue.submit = "提交"
+								alert(data.msg)
+							}
+						},
+						error: function () {
+							autonymSubmitState = false
+							commonAutonymInteractionVue.submit = "提交"
+						}
+					})
+				}
+			}
+		})
+		function openGamePermission(versionId, id) {
+			window.open("/?versionId=" + versionId + "&id=" + id)
+		}
+		function openPrivacyPolicy(id) {
+			$.ajax({
+				url: '/?id=' + id,
+				dataType: "json",
+				success: function (data) {
+					if (data.privacyContent.indexOf("http") == 0) {
+						window.open(data.privacyContent)
+					} else {
+						window.open("/?id=" + id)
+					}
+				},
+				error: function () {
+				}
+			})
+		}
+		function commonAutonymShow(state, target) {
+			state ? $(".common-autonym." + target).css("display", "flex") : $(".common-autonym." + target).css("display", "none")
+		}
+		function realNameConfig(url, id) {
+			download_url = url
+			download_id = id
+			commonAutonymInteractionVue.submit = "提交"
+			commonAutonymInteractionVue.type = "1"
+			commonAutonymInteractionVue.title = "游戏实名通知"
+			commonAutonymInteractionVue.explain = '<span>为了加速未成年保护，落实国家先关防沉迷政策要求，游戏用户需实名认证。<span style="color: #D33D3E;">（建议下载虫虫助手，助手内实名后即可下载体验）</span></span>'
+			$.ajax({
+				url: "/?id=" + id,
+				async: false,
+				success: function (data) {
+					if (data == "1") {
+						commonAutonymInteractionVue.open = true
+					} else {
+						window.location.href = url
+					}
+				}
+			})
+		}
+		function getAge(identityCard) {
+			let len = (identityCard + "").length;
+			let strBirthday = "";
+			if (len == 18) {
+				//处理18位的身份证号码从号码中得到生日和性别代码
+				strBirthday =
+					identityCard.substr(6, 4) +
+					"/" +
+					identityCard.substr(10, 2) +
+					"/" +
+					identityCard.substr(12, 2);
+			}
+			if (len == 15) {
+				let birthdayValue = "";
+				birthdayValue = identityCard.charAt(6) + identityCard.charAt(7);
+				if (parseInt(birthdayValue) < 10) {
+					strBirthday =
+						"20" +
+						identityCard.substr(6, 2) +
+						"/" +
+						identityCard.substr(8, 2) +
+						"/" +
+						identityCard.substr(10, 2);
+				} else {
+					strBirthday =
+						"19" +
+						identityCard.substr(6, 2) +
+						"/" +
+						identityCard.substr(8, 2) +
+						"/" +
+						identityCard.substr(10, 2);
+				}
+			}
+			//时间字符串里，必须是“/”
+			let birthDate = new Date(strBirthday);
+			let nowDateTime = new Date();
+			let age = nowDateTime.getFullYear() - birthDate.getFullYear();
+			//再考虑月、天的因素;.getMonth()获取的是从0开始的，这里进行比较，不需要加1
+			if (
+				nowDateTime.getMonth() < birthDate.getMonth() ||
+				(nowDateTime.getMonth() == birthDate.getMonth() &&
+					nowDateTime.getDate() < birthDate.getDate())
+			) {
+				age--;
+			}
+			return age;
+		}
+		function checkIdcard(num) {
+			num = num.toUpperCase();
+			//身份证号码为15位或者18位，15位时全为数字，18位前17位为数字，最后一位是校验位，可能为数字或字符X。
+			if (!(/(^\d{15}$)|(^\d{17}([0-9]|X)$)/.test(num))) {
+				alert('输入的身份证号不规范，请重新输入');
+				return false;
+			}
+			//校验位按照ISO 7064:1983.MOD 11-2的规定生成，X可以认为是数字10。
+			//下面分别分析出生日期和校验位
+			var len, re;
+			len = num.length;
+			if (len == 15) {
+				re = new RegExp(/^(\d{6})(\d{2})(\d{2})(\d{2})(\d{3})$/);
+				var arrSplit = num.match(re);
+
+				//检查生日日期是否正确
+				var dtmBirth = new Date('19' + arrSplit[2] + '/' + arrSplit[3] + '/' + arrSplit[4]);
+				var bGoodDay;
+				bGoodDay = (dtmBirth.getYear() == Number(arrSplit[2])) && ((dtmBirth.getMonth() + 1) == Number(arrSplit[
+					3])) && (dtmBirth.getDate() == Number(arrSplit[4]));
+				if (!bGoodDay) {
+					alert('输入的身份证号里出生日期不对！');
+					return false;
+				}
+			}
+			if (len == 18) {
+				re = new RegExp(/^(\d{6})(\d{4})(\d{2})(\d{2})(\d{3})([0-9]|X)$/);
+				var arrSplit = num.match(re);
+
+				//检查生日日期是否正确
+				var dtmBirth = new Date(arrSplit[2] + "/" + arrSplit[3] + "/" + arrSplit[4]);
+				var bGoodDay;
+				bGoodDay = (dtmBirth.getFullYear() == Number(arrSplit[2])) && ((dtmBirth.getMonth() + 1) == Number(arrSplit[
+					3])) && (dtmBirth.getDate() == Number(arrSplit[4]));
+				if (!bGoodDay) {
+					alert('输入的身份证号里出生日期不对！');
+					return false;
+				}
+			}
+			return true;
+		}
+	</script>
+
+	<script src="{$theme_path}/js/clipboard.min.js?v=20241219"></script>
+
+	<link rel="stylesheet" type="text/css" href="{$theme_path}/css/font-awesome.min.css">
+	<style>
+		.select-download {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.2);
+			z-index: 1000;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.select-download .select-download-main {
+			width: 85%;
+			background: #FFFFFF;
+			border-radius: 15px;
+			position: relative;
+			padding: 10px;
+			padding-bottom: 20px;
+			max-width: 500px;
+		}
+
+		.select-download .select-download-main .img-close {
+			position: absolute;
+			right: 0.2rem;
+			top: 0.2rem;
+			width: 0.3rem;
+			height: 0.3rem;
+		}
+
+		.select-download .select-download-main .img-close-xiaomi {
+			position: absolute;
+			right: 0.2rem;
+			top: 0.2rem;
+			width: 0.3rem;
+			height: 0.3rem;
+		}
+
+		.select-download-title {
+			text-align: center;
+			margin: 0.3rem 0px;
+			font-size: 0.28rem;
+			font-weight: 600;
+		}
+
+		.select-download-hint {
+			text-align: center;
+			font-size: 0.25rem;
+			margin-bottom: 0.15rem;
+		}
+
+		.select-download-describe {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 2px 0;
+			background: #FFFFFF;
+		}
+
+		.select-download-btn-title {
+			width: 85%;
+			margin: 0 auto;
+			color: rgba(0, 0, 0, 0.75);
+			font-size: 0.20rem;
+		}
+
+		/*下载按钮样式*/
+		.select-download-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0.1rem 0;
+		}
+
+		.download-btn {
+			width: 85%;
+			height: 0.7rem;
+			background: #f5f0f0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #e60012;
+			border-radius: 5px;
+			margin: 0.1rem 0;
+		}
+
+		.download-btn-gs {
+			background: #e60012;
+			color: #FFFFFF;
+		}
+
+		/*下载方式*/
+
+		span {
+			display: inline-block;
+		}
+
+		.download-way {
+			display: flex;
+			align-items: flex-start;
+			cursor: pointer;
+			color: #909090;
+			font-size: 0.21rem;
+		}
+
+		.download-way[checked='checked'] .download-icon-opt {
+			display: inline-block;
+		}
+
+		.download-way[checked='checked'] .download-icon-unselected {
+			display: none;
+		}
+
+		.download-way .download-icon-opt {
+			display: none;
+		}
+
+		.download-way .download-icon-unselected {
+			display: inline-block;
+		}
+
+		.download-icon {
+			width: 0.25rem;
+			height: 0.25rem;
+			border-radius: 0.25rem;
+			padding: 0;
+			margin: 0;
+			border: none;
+			margin-right: 5px;
+			position: relative;
+			top: 0.02rem;
+		}
+
+		.download-icon-opt {
+			background: url("https://resource.ccplay.com/wap/wap2/images/icon-download-opt.png") center no-repeat;
+			background-size: 100%;
+		}
+
+		.download-icon-unselected {
+			background: url("https://resource.ccplay.com/wap/wap2/images/icon-download-unselected.png") center no-repeat;
+			background-size: 100%;
+		}
+	</style>
+	<script>
+		function toggleWithMain(thisDom) {
+			$(".with-ccplay .with-title img").toggleClass('with-title-fold');
+			let state = $(thisDom).attr("state")
+			if (state == 'open') {
+				$(".with-ccplay .with-main").hide()
+				$(thisDom).attr("state", "close")
+			} else {
+				$(".with-ccplay .with-main").show()
+				$(thisDom).attr("state", "open")
+			}
+		}
+		// javascript: (function() {
+		// 	var script = document.createElement('script');
+		// 	script.src = "//cdn.jsdelivr.net/npm/eruda";
+		// 	document.body.appendChild(script);
+		// 	script.onload = function() {
+		// 		eruda.init()
+		// 	}
+		// })();
+		setInterval(function () {
+			try {
+				$('.sec_body').css({
+					display: 'block'
+				})
+				$('.game_box').css({
+					display: 'block'
+				})
+				$('.game_item').css({
+					display: 'block'
+				})
+				/*咨询页*/
+				$('.game-loadbar').css({
+					display: 'block'
+				})
+				$('.game-loadbar .dl').css({
+					display: 'block'
+				})
+				$('.game-loadbar .dl>*').css({
+					display: 'block'
+				})
+			} catch (e) {
+				console.log('#onlineNewGames_div .game_item 不存在')
+			}
+			try {
+				$('section').css({
+					display: 'block'
+				})
+			} catch (e) {
+				console.log('main section 不存在')
+			}
+		}, 0)
+	</script>
+
+	<div class="common-cost-popup">
+		<div class="common-cost-popup-main">
+			<div class="common-cost-popup-main-title">温馨提示</div>
+			<div class="common-cost-popup-main-content">本游戏是付费游戏，网站暂时不支持购买。请安装虫虫助手， 启动助手后在助手里进行购买。</div>
+			<div class="common-cost-popup-main-floor">
+				<div class="floor-btn1" onclick="closeCommonCostPopup(this)">取消</div>
+				<div class="floor-btn2" onclick="commmonAppDownload()">虫虫助手下载</div>
+			</div>
+			<div class="with-ccplay">
+				<div class="with-title" onclick="toggleWithMain(this)">
+					关于虫虫<img class="with-title-fold" src="{$vo.pic}" alt="{$vo.title}">
+				</div>
+				<div class="with-main" style="display: none">
+					<div class="with-particulars">
+						<div class="with-name">
+							<span>应用名：</span>虫虫助手
+						</div>
+						<div class="with-versions">
+							<span>版本：</span>V4.7.7
+						</div>
+					</div>
+					<div class="with-developers">
+						<span>开发商：</span>厦门虫虫网络科技有限公司
+					</div>
+					<div class="with-statement">
+						<span onclick="openUrl('/')">隐私政策
+							&gt;</span>
+						<span onclick="openUrl('/')">应用权限
+							&gt;</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		/** 开关公共付费游戏弹窗方法 */
+		function openCommonCostPopup() {
+			try {
+				$(".common-cost-popup").css('display', 'flex')
+			} catch (e) {
+				console.log(e)
+			}
+		}
+		function closeCommonCostPopup(thisDom) {
+			try {
+				$(thisDom).parents('.common-cost-popup').hide()
+			} catch (e) {
+				console.log(e)
+			}
+		}
+		function commmonAppDownload() {
+			window.open("/")
+		}
+	</script>
+	<div class="appoint-modal">
+		<div class="appoint-modal-mask"></div>
+		<div class="appoint-modal-content">
+			<div class="appint-dialog">
+				<a href="{随机栏目URL}" class="btn-modal-close">{随机栏目}</a>
+				<h2>{随机栏目}</h2>
+				<p>{随机栏目}</p>
+				<a href="{随机栏目URL}" class="appoint-btn appoint-load-btn">{随机栏目}</a>
+			</div>
+		</div>
+	</div>
+	<script src="{$theme_path}/js/zepto.min.js?v=20241219"></script>
+	<script src="{$theme_path}/js/idangerous.swiper.min.js?v=20241219"></script>
+	<script src="{$theme_path}/js/common.js?v=20241219"></script>
+</body>
+<script>
+	if (isXiaoMi()) {
+		$(".download-xiaomi").show()
+		$(".download-way-xiaomi").hide()
+	}
+
+	function prograssShowFunc() {
+		// 进度条显示
+		$(".prograss").each(function () {
+			var num = parseInt($(this).find(".prograss_num").text());
+			$(this).find(".prograss_bar").css({
+				"width": num + "%"
+			})
+		})
+	}
+	function openPopUpWithCcplay() {
+		$(".pop-up-with-ccplay").css('display', 'flex')
+	}
+	function closePopUpWithCcplay() {
+		$(".pop-up-with-ccplay").hide()
+	}
+
+	var downloadUrl = '/';
+
+	var isfromChina = true;
+
+	var abroadLink = '/';
+
+	$(function () {
+		/*温馨提示*/
+		if ($(".recommond_prompt .recommond_txt pre").length >= 1) {
+			$(".recommond_prompt .recommond_txt pre").html($(".recommond_prompt .recommond_txt pre").html().replace(/cc加速器/ig, `<span style="text-decoration: underline;color: #1e1e1e;font-weight:600;cursor: pointer" onclick="window.open('/')" title="永久免费的加速器，虫虫玩家必备！">$&</span>`))
+		}
+
+		$(".appoint-load-btn").on("click", function () {
+			if (isWeiXin()) {
+				$(".mask").show()
+				// window.location = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.lion.market';
+			} else {
+				//window.location = "ccplay://ccplay/gameDetail?id=220219";
+
+				timers = setTimeout(function () {
+					if (!isfromChina) {
+						window.location = abroadLink;
+					} else {
+						window.location = downloadUrl;
+					}
+				}, 3000);
+			}
+		})
+
+		// 2018-10-16 new add js
+		$(".btn-open-modal").on("click", function () {
+			$(".appoint-modal").show();
+		})
+		$(".btn-modal-close").on("click", function () {
+			$(this).parents(".appoint-modal").hide();
+		})
+		// end
+
+		var mySwiper = new Swiper('.swiper-container', {
+			loop: true,
+			slidesPerView: 2,
+			calculateHeight: true,
+			pagination: '.pagination',
+			paginationAsRange: true,
+		});
+	})
+
+	function loadMore(t) {
+		$.ajax({
+			type: "post",
+			url: $(t).attr("data-nextUrl"),
+			dataType: "html",
+			success: function (data) {
+				var fContent = $("<div>" + data + "</div>").find(".sec_body");
+				if (fContent.html().trim() == '') {
+					//$(t).addClass("disabled_click").text("已经没有更多数据！");
+				}
+				$(".sec_body").append(fContent.html());
+				downloadGame();
+				$(t).hide();
+			},
+			error: function (err) {
+				console.log(err);
+			}
+		})
+	}
+
+	function loadCommentMore(t) {
+		$.ajax({
+			type: "post",
+			url: $(t).attr("data-nextUrl"),
+			dataType: "html",
+			success: function (data) {
+				var fContent = $("<div>" + data + "</div>").find("#commentContainer");
+				if (fContent.html().trim() == '') {
+					//$(t).addClass("disabled_click").text("已经没有更多数据！");
+				}
+				$("#commentContainer").append(fContent.html());
+				commonFunc();
+				$(t).hide();
+			},
+			error: function (err) {
+				console.log(err);
+			}
+		})
+	}
+
+	function loadTabComment(t) {
+		$.ajax({
+			type: "post",
+			url: $(t).attr("data-url"),
+			dataType: "html",
+			success: function (data) {
+				var fContent = $("<div>" + data + "</div>").find("#commentContainer");
+				$("#commentContainer").html(fContent.html());
+				commonFunc();
+			},
+			error: function (err) {
+				console.log(err);
+			}
+		})
+	}
+
+	function loadStrategyMore(t) {
+		$.ajax({
+			type: "post",
+			url: $(t).attr("data-nextUrl"),
+			dataType: "html",
+			success: function (data) {
+				var fContent = $("<div>" + data + "</div>").find(".gl_box");
+				if (fContent.html().trim() == '') {
+					//$(t).addClass("disabled_click").text("已经没有更多数据！");
+				}
+				$(".gl_box").append(fContent.html());
+				$(t).hide();
+			},
+			error: function (err) {
+				console.log(err);
+			}
+		})
+	}
+
+	function loadTabStrategy(t) {
+		$.ajax({
+			type: "post",
+			url: $(t).attr("data-url"),
+			dataType: "html",
+			success: function (data) {
+				var fContent = $("<div>" + data + "</div>").find("#strategyContainer");
+				if (fContent.html().trim() == '') {
+					//$(t).addClass("disabled_click").text("已经没有更多数据！");
+				}
+				$("#strategyContainer").html(fContent.html());
+				//$(t).hide();
+			},
+			error: function (err) {
+				console.log(err);
+			}
+		})
+	}
+
+	function loadGiftMore(t) {
+		$.ajax({
+			type: "post",
+			url: $(t).attr("data-nextUrl"),
+			dataType: "html",
+			success: function (data) {
+				var fContent = $("<div>" + data + "</div>").find("#giftContainer");
+				if (fContent.html().trim() == '') {
+					//$(t).addClass("disabled_click").text("已经没有更多数据！");
+				}
+				$("#giftContainer").append(fContent.html());
+				$(t).hide();
+			},
+			error: function (err) {
+				console.log(err);
+			}
+		})
+	}
+
+	function tabClick(t) {
+		$.ajax({
+			type: "post",
+			url: $(t).attr("data-tabUrl"),
+			dataType: "html",
+			success: function (data) {
+				var fContent = $("<div>" + data + "</div>").find("#tab_content_container");
+				//if(fContent.html().trim() == '') {
+				//$(t).addClass("disabled_click").text("已经没有更多数据！");
+				//}
+				$("#tab_content_container").html(fContent.html());
+				commonFunc();
+				prograssShowFunc();
+				var mySwiper = new Swiper('.swiper-container', {
+					loop: true,
+					slidesPerView: 2,
+					calculateHeight: true,
+					pagination: '.pagination',
+					paginationAsRange: true,
+				});
+				$(".btn_search").on("click", function () {
+					$("#searchForm").submit();
+				})
+				//$(t).hide();
+			},
+			error: function (err) {
+				console.log(err);
+			}
+		})
+	}
+	function isWeiXin() {
+		var ua = window.navigator.userAgent.toLowerCase();
+		if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+			return true;
+		} else {
+			return false;
+		}
+	}
+</script>
