@@ -1,0 +1,235 @@
+<head>
+    <meta charset="gb2312">
+    <link rel="dns-prefetch" href="{$theme_path}/css/m.5577.com">
+    <link rel="dns-prefetch" href="{$theme_path}/css/pic.wk2.com">
+    <link rel="dns-prefetch" href="{$theme_path}/css/pic1.5577.com">
+    <link rel="canonical" href="{$theme_path}/css/406303.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{$toptitle}</title>
+    <meta name="keywords" content="{$keywords}">
+    <link href="{$theme_path}/css/base.css" rel="stylesheet" type="text/css">
+    <link href="{$theme_path}/css/downinfo.css" rel="stylesheet" type="text/css">
+    <script src="{$theme_path}/js/jquery.min.js"></script>
+    <script src="{$theme_path}/js/info.js"></script>
+</head>
+
+<body>
+    <div id="top">
+        <div>
+            <a href="/" class="logo"><img src="{$theme_path}/images/mlogo.png" alt="{$vo.title}"></a>
+
+            <div class="search">
+                <input class="key fl search-input" id="keyword" name="keyword" value="蛋仔派对">
+                <input class="btn search-button" name="" type="submit" value="">
+            </div>
+            <span></span>
+        </div>
+    </div>
+    <div class="burger">
+        <div class="m-topdul">
+            <h4>娓告</h4>
+            <ul class="g-hide-cont" data-row="9">
+                {loop type="arclist" row="9" tpl="" islist=""}
+                <li><a href="{$vo.url}"><b></b><strong>{$vo.title}</strong></a></li>
+                {/loop}
+            </ul>
+            <h4>{$keywords} 软件</h4>
+            <ul class="g-hide-cont g-hide-soft" data-row="9">
+                {loop type="arclist" row="14" tpl="" islist=""}
+                <li><a href="{$vo.url}"><b></b><strong>{$vo.title}</strong></a></li>
+                {/loop}
+            </ul>
+            <h4>单机</h4>
+            <ul class="g-hide-cont" data-row="9">
+                {loop type="arclist" row="14" tpl="" islist=""}
+                <li><a href="{$vo.url}"><b></b><strong>{$vo.title}</strong></a></li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="back"><button>关闭菜单</button></div>
+    </div>
+    <div class="m-nav">
+        <ul class="m-navul g-main-nav" data-row="5">
+            <li><a href="/">首页</a></li>
+            {loop type="catelog" row="4" tpl="" islist=""}
+            <li><a href="{$vo.url}">{$vo.title}</a></li>
+            {/loop}
+        </ul>
+    </div>
+    <section class="g-game-down m-newtop">
+        <div class="g-gamedown">
+            <img src="{$pic}" class="m-game-img" alt="{$vo.title}">
+            <div>
+                <h1>{$keywords}</h1>
+                <h2>{$title}</h2>
+                <b><em class="m-b2">存帮<span>{发布时间}</span></em><em class="m-b1">澶у锛<span
+                            class="f-game-size">1.93G</span></em></b>
+                <b><em class="m-b2">绫诲锛<a href="{随机栏目URL}">{随机栏目}</a></em><em class="m-b1">{随机标题}</em></b>
+            </div>
+        </div>
+        <div id="downAddress">
+            <ul class="m-down-ul" data-row="1">
+                <li class="m-down-last"> <a href="" class="g-gamedown-btn down" id="address">点击下载</a>
+                </li>
+            </ul>
+            <div id="Associate" style="display:none">0</div>
+        </div>
+    </section>
+    <div class="g-keytediv">
+        <div class="g-keyText">
+            <div class="keyText">
+                {loop type="arclist" row="10" tpl="" islist=""}
+                <p style="text-wrap: wrap;">{$vo.i}. {$vo.title}</p>
+                {/loop}
+            </div>
+        </div>
+    </div>
+    <section id="g-down-gameprevimg">
+        <ul class="g-previmg-ul g-down-previmg" data-row="3">
+            {loop type="arclist" row="4" tpl="" islist=""}
+            <li><img src="{$vo.pic}" alt="{$vo.title}" style="height: 200px"></li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="g-peo-like" style="height: auto;">
+        <ul data-row="2">
+            {loop type="arclist" row="10" tpl="" islist=""}
+            <li><a href="{$vo.url}">{$vo.title}</a></li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="g-cms-cont g-down-cmscont">
+        <div id="m-cont">
+            {$body}
+        </div>
+    </section>
+    <div class="g-tags-box">
+        <ul>
+            {loop type="arclist" row="20" tpl="" islist=""}
+            <li data-system="Android" data-id="628558" data-size="68.1M" date-catid="24"><a href="{$vo.url}"><i></i>
+                    <p>{$vo.title}</p><b>下载</b>
+                </a></li>
+            {/loop}
+        </ul>
+    </div>
+    <section class="g-introduction-box">
+        <dl class="g-title">
+            <dt>{$title}</dt>
+            <dd></dd>
+        </dl>
+        <ul class="m-soft-other" data-row="3">
+            <li>锛<span><a href="{随机栏目URL}" target="_blank">{随机栏目}</a></span></li>
+            <li>瀹缃锛<span><a href="{随机内容URL}" target="_blank">{随机标题}</a></span></li>
+            <li class="beian-box">{$keywords}<span id="beian"></span></li>
+        </ul>
+    </section>
+    <div class="g-full-box">
+        <dl class="g-title">
+            <dt>╁剁瑷</dt>
+            <dd></dd>
+        </dl>
+        <div class="g-game-box">
+            <fieldset class="w-text">
+                <textarea></textarea>
+            </fieldset>
+            <fieldset class="w-button">
+                <input id="app-id" class="button disable" type="button" value="406303">
+                <div class="g-game-ly" id="comment_list">
+                    <div id="comment_0">
+                        <dl>
+                            <dt><span><i>绗 1 妤</i><b> {$keywords}</b> </span><em> {$postdate} </em></dt>
+                            <dd>好刺激 <p id="159227"><a href="javascript:"><em>(</em><span> {随机数字} </span><em>)</em></a>
+                                    <a href="{随机内容URL}" pid="159227">{随机标题}</a>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <b class="m-backtop">杩椤堕
+                </b>
+            </fieldset>
+        </div>
+    </div>
+    <section class="g-recomd g-hot">
+        <dl class="g-title">
+            <dt>绮惧ㄨ</dt>
+            <dd></dd>
+        </dl>
+    </section>
+    <section class="m-game-scroll" id="g-game-hot">
+        <ul class="g-previmg-ul" data-row="10">
+            {loop type="arclist" row="15" tpl="" islist=""}
+            <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}"><strong>{$vo.title}</strong></a></li>
+            {/loop}
+        </ul>
+    </section>
+    <section class="g-box m-tab-box" id="g-keyword">
+        <strong class="tit">{$keywords}</strong>
+        <ul class="g-keyword-btn m-tab-btn" data-row="0">
+            <li class="f-hover">{随机栏目}</li>
+            <li>{随机栏目}</li>
+        </ul>
+        <div class="g-keyword-cont m-tab-cont">
+            <dl>
+                {loop type="arclist" row="1" tpl="" islist=""}
+                <dt>{$vo.postdate}</dt>
+                <dd>{$vo.info}</dd>
+                <dd class="g-keyword-info"><a href="{$vo.url}">{$vo.title}</a></dd>
+                {/loop}
+            </dl>
+            <ul data-row="8">
+                {loop type="arclist" row="24" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}"><strong>{$vo.title}</strong></a></li>
+                {/loop}
+            </ul>
+        </div>
+        <div class="g-keyword-cont m-tab-cont">
+            <dl>
+                {loop type="arclist" row="1" tpl="" islist=""}
+                <dt>{$vo.postdate}</dt>
+                <dd>{$vo.info}</dd>
+                <dd class="g-keyword-info"><a href="{$vo.url}">{$vo.title}</a></dd>
+                {/loop}
+            </dl>
+            <ul data-row="8">
+                {loop type="arclist" row="24" tpl="" islist=""}
+                <li><a href="{$vo.url}"><img src="{$vo.pic}" alt="{$vo.title}"><strong>{$vo.title}</strong></a></li>
+                {/loop}
+            </ul>
+        </div>
+
+    </section>
+    <section class="g-cms-strategy">
+        <dl class="g-title">
+            <dt>{$keywords} 稿虫绔</dt>
+            <dd></dd>
+        </dl>
+        <ul class="g-cms-strategy-list" data-row="5">
+            {loop type="arclist" row="30" tpl="" islist=""}
+            <li><a href="{$vo.url}">{$vo.title}</a><em>{随机时间}</em></li>
+            {/loop}
+        </ul>
+    </section>
+    <div class="g-tags-box">
+        <ul>
+            {loop type="arclist" row="20" tpl="" islist=""}
+            <li data-system="Android" data-id="628558" data-size="68.1M" date-catid="24"><a href="{$vo.url}"><i></i>
+                    <p>{$vo.title}</p><b>下载</b>
+                </a></li>
+            {/loop}
+        </ul>
+    </div>
+    <script src="{$theme_path}/js/downinfo.js"></script>
+    <script src="{$theme_path}/js/base.js"></script>
+    <footer>
+        <ul class="i-f-nav" data-row="4">
+            {loop type="arclist" row="4" tpl="" islist=""}
+            <li><a href="{$vo.url}">{$vo.title}</a></li>
+            {/loop}
+        </ul>
+        <p>{网站地址}<br>{$keywords}</p>
+    </footer>
+    <div style="display:none">
+        <script type="text/javascript" src="{$theme_path}/js/count.js"></script>
+    </div>
+</body>

@@ -15,8 +15,10 @@
     <div id="top">
         <div>
             <a href="/" class="logo"><img src="{$theme_path}/images/mlogo.png" alt="{$vo.title}"></a>
+
             <div class="search">
-                <input class="key fl search-input" id="keyword" name value btn type="submit">
+                <input class="key fl search-input" id="keyword" name="keyword" value="蛋仔派对">
+                <input class="btn search-button" name="" type="submit" value="">
             </div>
             <span></span>
         </div>
@@ -53,7 +55,9 @@
             <li><a href="{随机栏目URL}">{随机栏目}</a></li>
         </ul>
     </div>
-    <div class="g-index-ppt f-ppt-swiper">
+    <div class="g-index-ppt f-ppt-swiper" style="
+    height: 200px;
+">
         <div class="swiper-wrapper">
             {loop type="arclist" row="5" tpl="" islist=""}
             <a href="{$vo.url}" class="swiper-slide">
@@ -135,7 +139,9 @@
                 <h2>{$keywords}</h2>
                 <a href="{随机栏目URL}" class="m-tmore">村<i>+</i></a>
             </div>
-            <div class="swiper-container3 m-block-zt ">
+            <div class="swiper-container3 m-block-zt " style="
+    height: 150px;
+">
                 <ul class="clearfix swiper-wrapper" data-row="5">
                     {loop type="arclist" row="5" tpl="" islist=""}
                     <li class="swiper-slide"><a href="{$vo.url}" title="{$vo.title}"><img class="tu" src="{$vo.pic}"
@@ -190,7 +196,7 @@
             <div class="m-bjtitle clearfix">
                 <h2>新品首发</h2>
                 <div class="m-tabbtn m-tab-btn">
-                    <a href="javascript:void(0);" title="ㄨ" class="m-hover">娓</a>
+                    <a href="javascript:void(0);" title="ㄨ" class="m-hover f-hover">娓</a>
                     <a href="javascript:void(0);" title="琛">单机</a>
                     <a href="javascript:void(0);" title="琛">软件</a>
                 </div>
@@ -199,16 +205,15 @@
                 <ul class="m-newul" data-row="1">
                     {loop type="arclist" row="30" tpl="" islist=""}
                     <li><a href="{$vo.url}" class="game_con" title="{$vo.title}">
-                            <img class="" src="{$vo.pic}" alt="{$vo.title}">
+                            <img class="lazy" src="{$vo.pic}" alt="{$vo.title}">
                             <div class="game_title">
                                 <p>{$vo.title}</p>
-                                <span>
-                                    <img src="{$theme_path}/images/down-rank4.png" class="m-game-star"
-                                        alt="{$vo.title}"></span>
-                                </p>
-                                <div class="discribe">瑙叉婕<em> / </em>191M / <font color="red">{$vo.postdate}</font>
+                                <span><img src="{$theme_path}/images/down-rank4.png" class="m-game-star"></span>
+                                <div class="discribe">射击<em> / </em>
+                                    {randstr type="2" num="2,3"/}.{randstr type="2" num="2"/}MB / <font color="red">
+                                        {$vo.postdate}</font>
                                 </div>
-                                <span class="game_down">涓杞</span>
+                            </div> <span class="game_down">下载</span>
                         </a></li>
                     {/loop}
                 </ul>
@@ -219,16 +224,15 @@
                 <ul class="m-newul" data-row="1">
                     {loop type="arclist" row="30" tpl="" islist=""}
                     <li><a href="{$vo.url}" class="game_con" title="{$vo.title}">
-                            <img class="" src="{$vo.pic}" alt="{$vo.title}">
+                            <img class="lazy" src="{$vo.pic}" alt="{$vo.title}">
                             <div class="game_title">
                                 <p>{$vo.title}</p>
-                                <span>
-                                    <img src="{$theme_path}/images/down-rank4.png" class="m-game-star"
-                                        alt="{$vo.title}"></span>
-                                </p>
-                                <div class="discribe">瑙叉婕<em> / </em>191M / <font color="red">{$vo.postdate}</font>
+                                <span><img src="{$theme_path}/images/down-rank4.png" class="m-game-star"></span>
+                                <div class="discribe">射击<em> / </em>
+                                    {randstr type="2" num="2,3"/}.{randstr type="2" num="2"/}MB / <font color="red">
+                                        {$vo.postdate}</font>
                                 </div>
-                                <span class="game_down">涓杞</span>
+                            </div> <span class="game_down">下载</span>
                         </a></li>
                     {/loop}
                 </ul>
@@ -238,16 +242,15 @@
                 <ul class="m-newul" data-row="1">
                     {loop type="arclist" row="30" tpl="" islist=""}
                     <li><a href="{$vo.url}" class="game_con" title="{$vo.title}">
-                            <img class="" src="{$vo.pic}" alt="{$vo.title}">
+                            <img class="lazy" src="{$vo.pic}" alt="{$vo.title}">
                             <div class="game_title">
                                 <p>{$vo.title}</p>
-                                <span>
-                                    <img src="{$theme_path}/images/down-rank4.png" class="m-game-star"
-                                        alt="{$vo.title}"></span>
-                                </p>
-                                <div class="discribe">瑙叉婕<em> / </em>191M / <font color="red">{$vo.postdate}</font>
+                                <span><img src="{$theme_path}/images/down-rank4.png" class="m-game-star"></span>
+                                <div class="discribe">射击<em> / </em>
+                                    {randstr type="2" num="2,3"/}.{randstr type="2" num="2"/}MB / <font color="red">
+                                        {$vo.postdate}</font>
                                 </div>
-                                <span class="game_down">涓杞</span>
+                            </div> <span class="game_down">下载</span>
                         </a></li>
                     {/loop}
                 </ul>
@@ -312,7 +315,4 @@
     </footer>
     <script src="{$theme_path}/js/base.js"></script>
     <script src="{$theme_path}/js/all.js"></script>
-    <div style="display:none">
-        <script type="text/javascript" src="{$theme_path}/js/count.js"></script>
-    </div>
 </body>
